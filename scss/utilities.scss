@@ -1,0 +1,12 @@
+.clearfix{ @include clearfix;}
+.pull-right{ float:right;}
+.pull-left{ float:left;}
+
+.center-block{ display:block; margin-right:auto; margin-left:auto; }
+
+
+.hide{ display:none;}
+.show{ display:block;}
+a.show,abbr.show,b.show,big.show,i.show,s.show,strong.show,small.show,span.show,u.show{ display:inline;}
+*.show{ display:unset;}
+

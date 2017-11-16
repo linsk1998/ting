@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="css" type="boolean" value="true" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>辅助类</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/zIndex.css" rel="stylesheet"/>
+	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
+	<link href="../ting/utilities.css" rel="stylesheet"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<script src="/skyjs/sky.js"></script>
+	<script src="../ting/ting.js"></script>
+	<script src="../ting/docs.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
+						<a class="navbar-brand" href="../"><img src="../images/logo.png">Ting Web UI</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../scaffolding/index.html">脚手架</a></li>
+							<li class="active"><a href="index.html">全局样式</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../javascript/index.html">JavaScript插件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
+									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
+									<li><a href="javascript:changeSkin('indigo');void 0"><span class="text-indigo">█</span> indigo</a></li>
+									<li><a href="javascript:changeSkin('purple');void 0"><span class="text-purple">█</span> purple</a></li>
+									<li><a href="javascript:changeSkin('brown');void 0"><span class="text-brown">█</span> brown</a></li>
+									<li><a href="javascript:changeSkin('red');void 0"><span class="text-red">█</span> red</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf108;</i>主题</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeTheme('default');void 0">Default</a></li>
+									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
+									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1 class="page-header">辅助类</h1>
+			<h2>背景</h2>
+			<p>text<span class="text-hide">哈哈哈</span>-hide</p>
+			<p class="text-muted">本行内容是减弱的</p>
+			<p class="text-primary">本行内容带有一个 primary class</p>
+			<p class="text-success">本行内容带有一个 success class</p>
+			<p class="text-info">本行内容带有一个 info class</p>
+			<p class="text-warning">本行内容带有一个 warning class</p>
+			<p class="text-danger">本行内容带有一个 danger class</p>
+			<h2>背景</h2>
+			<p class="bg-primary">该段落使用了类 "bg-primary"。</p>
+			<a class="bg-primary" href="/index.php">该链接使用了类 "bg-primary"。</a>
+			<p class="bg-success">该段落使用了类 "bg-success"。</p>
+			<a class="bg-success" href="/index.php">该链接使用了类 "bg-success"。</a>
+			<p class="bg-info">该段落使用了类 "bg-info"。</p>
+			<a class="bg-info" href="/index.php">该链接使用了类 "bg-info"。</a>
+			<p class="bg-warning">该段落使用了类 "bg-warning"。</p>
+			<a class="bg-warning" href="/index.php">该链接使用了类 "bg-warning"。</a>
+			<p class="bg-danger">该段落使用了类 "bg-danger"。</p>
+			<a class="bg-danger" href="/index.php">该链接使用了类 "bg-danger。</a>
+			<h2>图标颜色</h2>
+			<div class="dialog dialog-primary" style="_width:400px; min-width:400px;">
+				<div class="dialog-header">
+					<span class="dialog-title">primary对话框</span>
+					<a href="javascript:void 0" class="fa close" data-dismiss="modal">&#xf00d;</a>
+				</div>
+				<div class="dialog-body">
+					<i class="fa fa-3x icon-success">&#xf058;</i>
+					<i class="fa fa-3x icon-success">&#xf05d;</i>
+					<i class="fa fa-3x icon-danger">&#xf057;</i>
+					<i class="fa fa-3x icon-danger">&#xf05c;</i>
+					<i class="fa fa-3x icon-info">&#xf059;</i>
+					<i class="fa fa-3x icon-info">&#xf05a;</i>
+					<i class="fa fa-3x icon-warning">&#xf06a;</i>
+					<i class="fa fa-3x icon-warning">&#xf005;</i>
+				</div>
+			</div>
+			<h2>快速浮动</h2>
+			<div class="clearfix">
+				<img class="pull-right" src="http://placeholder.qiniudn.com/200x100"/>
+				<img class="pull-left" src="http://placeholder.qiniudn.com/200x100"/>
+			</div>
+			<h2>字体</h2>
+			<ul>
+				<li>.font-sans 非衬线字体(黑)，通常在标题使用。</li>
+				<li>.font-serif 衬线字体(宋)，通常在正文使用。</li>
+				<li>.font-cursive 手写体(楷)，通常在横幅使用。</li>
+				<li>.font-monospace 等宽字体，通常在代码使用。</li>
+			</ul>
+			<p class="font-sans">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
+				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
+				<br/><b>宇字</b>
+			</p>
+			<p class="font-serif">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
+				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
+			</p>
+			<p class="font-cursive">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
+				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
+			</p>
+			<p class="font-monospace">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
+				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
+			</p>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

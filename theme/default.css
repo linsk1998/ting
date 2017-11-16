@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.text-primary{ color:<%=theme['primary']%>;}
+.bg-primary{ color:#fff; background-color:<%=theme['primary']%>;}
+a.bg-primary:hover{ background-color:<%=theme['dark_primary']%>;}
+
+.btn-outline{ color:<%=theme['primary']%>; border-color:<%=theme['primary']%>;}
+.btn-outline:hover,input.btn-outline:focus,button.btn-outline:focus{ color:#fff; background-color:<%=theme['primary']%>; border-color:<%=theme['primary']%>;}
+.btn-primary{ background-color:<%=theme['primary']%>; border-color:<%=darken(theme['primary'], 0.05)%>;}
+.btn-primary:hover,input.btn-primary:focus,button.btn-primary:focus{ background-color:<%=darken(theme['primary'], 0.1)%>; border-color:<%=darken(theme['primary'], 0.17)%>;}
+html>body .disabled.btn-primary{ background-color:<%=mix(theme['primary'],'#FFFFFF')%>; border-color:<%=mix(darken(theme['primary'], 0.05),'#FFFFFF')%>;}
+

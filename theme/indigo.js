@@ -1,0 +1,10 @@
+var theme={};
+theme['primary']="#337ab7";
+theme['dark_primary']="#286090";
+theme['light_primary']="#C5CAE9";
+theme['text']="#FFFFFF";
+theme['accent']="#FF4081";
+theme['primary_text']="#212121";
+theme['secondary_text']="#757575";
+theme['divider']="#BDBDBD";
+module.exports=theme;

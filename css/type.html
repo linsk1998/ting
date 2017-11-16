@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="css" type="boolean" value="true" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>排版</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/zIndex.css" rel="stylesheet"/>
+	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
+	<link href="../ting/utilities.css" rel="stylesheet"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<script src="/skyjs/sky.js"></script>
+	<script src="../ting/ting.js"></script>
+	<script src="../ting/docs.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
+						<a class="navbar-brand" href="../"><img src="../images/logo.png">Ting Web UI</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../scaffolding/index.html">脚手架</a></li>
+							<li class="active"><a href="index.html">全局样式</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../javascript/index.html">JavaScript插件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
+									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
+									<li><a href="javascript:changeSkin('indigo');void 0"><span class="text-indigo">█</span> indigo</a></li>
+									<li><a href="javascript:changeSkin('purple');void 0"><span class="text-purple">█</span> purple</a></li>
+									<li><a href="javascript:changeSkin('brown');void 0"><span class="text-brown">█</span> brown</a></li>
+									<li><a href="javascript:changeSkin('red');void 0"><span class="text-red">█</span> red</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf108;</i>主题</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeTheme('default');void 0">Default</a></li>
+									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
+									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1 class="page-header">排版</h1>
+			<h2>标题</h2>
+			<p>HTML 中的所有标题标签，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外，还提供了 <code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。</p>
+			<p>在标题内还可以包含 <code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。</p>
+			<h1>我是1级标题 <small>我是标题后的小字</small></h1>
+			<h2>我是2级标题 <small>我是标题后的小字</small></h2>
+			<h3>我是3级标题 <small>我是标题后的小字</small></h3>
+			<h4>我是4级标题 <small>我是标题后的小字</small></h4>
+			<h5>我是5级标题 <small>我是标题后的小字</small></h5>
+			<h6>我是6级标题 <small>我是标题后的小字</small></h6>
+			<h2>对齐</h2>
+			<p class="text-left">文字居左</p>
+			<p class="text-center">文字居中</p>
+			<p class="text-right">文字居右</p>
+			<p class="text-justify">两端对齐</p>
+			<p class="text-nowrap">不换行</p>
+			<h2>缩略语</h2>
+			<p><abbr title="HyperText Markup Language">HTML</abbr> is the best thing since sliced bread.</p>
+			<h2>键盘文本</h2>
+			<p>按<kbd>ctrl</kbd>+<kbd>v</kbd>可以复制。</p>
+			<h2>引用</h2>
+			<blockquote>
+				<p>好好学习，天天向上。</p>
+				<footer>——毛泽东</footer>
+			</blockquote>
+			<h2>列表</h2>
+			<h3>无序列表</h3>
+			<p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Integer molestie lorem at massa</li>
+						<ul>
+							<li>Phasellus iaculis neque</li>
+							<li>Purus sodales ultricies</li>
+							<li>Vestibulum laoreet porttitor sem</li>
+						</ul>
+					</li>
+					<li>Faucibus porta lacus fringilla vel</li>
+					<li>Aenean sit amet erat nunc</li>
+				</ul>
+			</p>
+			<h3>有序列表</h3>
+			<p>
+				<ol>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Integer molestie lorem at massa</li>
+					<li>Faucibus porta lacus fringilla vel</li>
+					<li>Aenean sit amet erat nunc</li>
+				</ol>
+			</p>
+			<h3>内联列表</h3>
+			<p>通过设置 <code>display: inline-block;</code> 并添加少量的内补（padding），将所有元素放置于同一行。</p>
+			<p>
+				<ul class="list-inline">
+					<li>论坛</li>
+					<li>案例</li>
+					<li>捐赠</li>
+					<li>联系</li>
+				</ul>
+			</p>
+			<h3>描述</h3>
+			<p>使用<code>dl</code><code>dt</code><code>dd</code>的列表</p>
+			<p>
+				<dl>
+					<dt>Description lists</dt>
+					<dd>A description list is perfect for defining terms.</dd>
+					<dt>Euismod</dt>
+					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+					<dt>Malesuada porta</dt>
+					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+				</dl>
+			</p>
+			<h3>水平排列的描述</h3>
+			<p><code>.dl-horizontal</code> 可以让 <code>&lt;dl&gt;</code> 内的短语及其描述排在一行。开始是像 <code>&lt;dl&gt;</code> 的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。</p>
+			<p>
+				<dl class="dl-horizontal">
+					<dt>Description lists</dt>
+					<dd>A description list is perfect for defining terms.</dd>
+					<dt>Euismod</dt>
+					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+					<dt>Malesuada porta</dt>
+					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+					<dt>Felis euismod semper eget lacinia</dt>
+					<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+				</dl>
+			</p>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<h4>单行超出出现省略号</h4>
+					<p class="text-truncate">Singapore may be small,but packs in quite a punch.Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer.Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
+				</div>
+				<div class="col-md-4">
+					<h4>强制断词换行</h4>
+					<p class="text-break">hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+				</div>
+				<div class="col-md-4">
+					<h4>多行超出出现省略号</h4>
+					<p class="line-clamp-5">Singapore may be small,but packs in quite a punch.Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer.Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
+				</div>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>
