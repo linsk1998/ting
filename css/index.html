@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="css" type="boolean" value="true" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>全局样式</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/zIndex.css" rel="stylesheet"/>
+	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
+	<link href="../ting/utilities.css" rel="stylesheet"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<script src="/skyjs/sky.js"></script>
+	<script src="../ting/ting.js"></script>
+	<script src="../ting/docs.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
+						<a class="navbar-brand" href="../"><img src="../images/logo.png">Ting Web UI</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../scaffolding/index.html">脚手架</a></li>
+							<li class="active"><a href="index.html">全局样式</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../javascript/index.html">JavaScript插件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
+									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
+									<li><a href="javascript:changeSkin('indigo');void 0"><span class="text-indigo">█</span> indigo</a></li>
+									<li><a href="javascript:changeSkin('purple');void 0"><span class="text-purple">█</span> purple</a></li>
+									<li><a href="javascript:changeSkin('brown');void 0"><span class="text-brown">█</span> brown</a></li>
+									<li><a href="javascript:changeSkin('red');void 0"><span class="text-red">█</span> red</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf108;</i>主题</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeTheme('default');void 0">Default</a></li>
+									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
+									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1>排版</h1>
+			<p>
+				排版定义了各种标题、段落、列表及其他内联元素的样式，您可以创建标题、段落、列表及其他内联元素。
+			</p>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.h1~.h6</td>
+					<td>设置为标题样式</td>
+				</tr>
+				<tr>
+					<td>.text-truncate</td>
+					<td>禁止换行，超出容器部分截断（以 ... 结束）</td>
+				</tr>
+				<tr>
+					<td>.text-break</td>
+					<td>超出文字容器宽度时强制换行</td>
+				</tr>
+				<tr>
+					<td>.line-clamp-*</td>
+					<td>多行文字截断</td>
+				</tr>
+				<tr>
+					<td>.text-left</td>
+					<td>文字居左</td>
+				</tr>
+				<tr>
+					<td>.text-center</td>
+					<td>文字居中</td>
+				</tr>
+				<tr>
+					<td>.text-right</td>
+					<td>文字居右</td>
+				</tr>
+				<tr>
+					<td>.text-justify</td>
+					<td>设定文本对齐,段落中超出屏幕部分文字自动换行</td>
+				</tr>
+				<tr>
+					<td>.text-nowrap</td>
+					<td>段落中超出屏幕部分不换行</td>
+				</tr>
+				<tr>
+					<td>.list-unstyled</td>
+					<td>移除默认的列表样式</td>
+				</tr>
+				<tr>
+					<td>.list-inline</td>
+					<td>将所有列表项放置同一行</td>
+				</tr>
+				<tr>
+					<td>.dl-horizontal</td>
+					<td>水平排列的描述</td>
+				</tr>
+				<tr>
+					<td>.dl-horizontal</td>
+					<td>水平排列的描述</td>
+				</tr>
+			</tbody></table>
+			<p><a href="type.html">例子</a></p>
+			<h1>表格</h1>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.table</td>
+					<td>为任意 &lt;table&gt; 添加基本样式 (只有横向分隔线) </td>
+				</tr>
+				<tr>
+					<td>.table-striped</td>
+					<td>在 &lt;tbody&gt; 内添加斑马线形式的条纹 ( IE8 不支持)</td>
+				</tr>
+				<tr>
+					<td>.table-bordered</td>
+					<td>为所有表格的单元格添加边框</td>
+				</tr>
+				<tr>
+					<td>.table-hover</td>
+					<td>在 &lt;tbody&gt; 内的任一行启用鼠标悬停状态</td>
+				</tr>
+				<tr>
+					<td>.table-condensed</td>
+					<td>让表格更加紧凑</td>
+				</tr>
+			</tbody></table>
+			<p><a href="table.html">例子</a></p>
+			<h1>按钮</h1>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.btn</td>
+					<td>为按钮添加基本样式</td>
+				</tr>
+				<tr>
+					<td>.btn-default</td>
+					<td>默认/标准按钮</td>
+				</tr>
+				<tr>
+					<td>.btn-primary</td>
+					<td>原始按钮样式（未被操作） </td>
+				</tr>
+				<tr>
+					<td>.btn-success</td>
+					<td>表示成功的动作</td>
+				</tr>
+				<tr>
+					<td>.btn-info</td>
+					<td>该样式可用于要弹出信息的按钮</td>
+				</tr>
+				<tr>
+					<td>.btn-warning</td>
+					<td>表示需要谨慎操作的按钮</td>
+				</tr>
+				<tr>
+					<td>.btn-danger</td>
+					<td>表示一个危险动作的按钮操作</td>
+				</tr>
+				<tr>
+					<td>.btn-link</td>
+					<td>让按钮看起来像个链接 (仍然保留按钮行为)</td>
+				</tr>
+				<tr>
+					<td>.btn-lg</td>
+					<td>制作一个大按钮</td>
+				</tr>
+				<tr>
+					<td>.btn-sm</td>
+					<td>制作一个小按钮</td>
+				</tr>
+				<tr>
+					<td>.btn-xs</td>
+					<td>制作一个超小按钮</td>
+				</tr>
+				<tr>
+					<td>.btn-block</td>
+					<td>块级按钮(拉伸至父元素100%的宽度)</td>
+				</tr>
+				<tr>
+					<td>.btn-group</td>
+					<td>按钮组</td>
+				</tr>
+				<tr>
+					<td>.btn-toolbar</td>
+					<td>按钮工具栏</td>
+				</tr>
+			</tbody></table>
+			<p>
+				<a href="button.html" class="btn btn-primary">例子</a>
+				<a href="button-quirks.html" class="btn btn-primary">quirks例子</a>
+			</p>
+			<h1>表单</h1>
+			<p>这里提供了有限的标签和扩展的类来创建出表单。</p>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.form</td>
+					<td>表单 </td>
+				</tr>
+				<tr>
+					<td>.form-group</td>
+					<td>label和一个输入框的组合</td>
+				</tr>
+				<tr>
+					<td>.form-control</td>
+					<td>输入控件</td>
+				</tr>
+				<tr>
+					<td>.checkbox</td>
+					<td>多选</td>
+				</tr>
+				<tr>
+					<td>.radio</td>
+					<td>单选</td>
+				</tr>
+				<tr>
+			</tbody></table>
+			<p><a href="form.html">例子</a> <a href="form-quirks.html">quirks例子</a></p>
+			<h1>辅助类</h1>
+			<table class="table table-bordered table-striped table-condensed">
+				<caption>位置相关</caption>
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.pull-left</td>
+					<td>元素浮动到左边</td>
+				</tr>
+				<tr>
+					<td>.pull-right</td>
+					<td>元素浮动到右边</td>
+				</tr>
+				<tr>
+					<td>.clearfix</td>
+					<td>设置元素为 display:block 并居中显示</td>
+				</tr>
+				<tr>
+					<td>.center-block</td>
+					<td>清除容器内的浮动浮动</td>
+				</tr>
+			</tbody></table>
+			<table class="table table-bordered table-striped table-condensed">
+				<caption>显示相关</caption>
+				<tr>
+					<td>.hidden-desktop</td>
+					<td>在电脑上隐藏隐藏</td>
+				</tr>
+				<tr>
+					<td>.hidden-mobile</td>
+					<td>在手机或平板上隐藏</td>
+				</tr>
+				<tr>
+					<td>.hidden-phone</td>
+					<td>在手机隐藏</td>
+				</tr>
+				<tr>
+					<td>.hidden-tablet</td>
+					<td>在平板隐藏</td>
+				</tr>
+				<tr>
+					<td>.hidden</td>
+					<td>强制元素隐藏</td>
+				</tr>
+				<tr>
+					<td>.block</td>
+					<td>将元素显示为block</td>
+				</tr>
+				<tr>
+					<td>.inline-block</td>
+					<td>将元素显示为inline-block</td>
+				</tr>
+				<tr>
+					<td>.inline</td>
+					<td>将元素显示为inline</td>
+				</tr>
+				<tr>
+					<td>.text-hide</td>
+					<td>隐藏文本</td>
+				</tr>
+			</tbody></table>
+			<table class="table table-bordered table-striped table-condensed">
+				<caption>显示相关</caption>
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>
+						.font-sans<br/>
+						.font-serif<br/>
+						.font-cursive<br/>
+						.font-monospace
+					</td>
+					<td>
+						黑体<br/>
+						宋体<br/>
+						楷体<br/>
+						等宽字体
+					</td>
+				</tr>
+				<tr>
+					<td>.text-muted</td>
+					<td>文本减弱</td>
+				</tr>
+			</tbody></table>
+			<table class="table table-bordered table-striped table-condensed">
+				<caption>颜色相关类</caption>
+				<tbody>
+				<tr>
+					<th>文本颜色</th>
+					<th>背景颜色</th>
+					<th>图标颜色</th>
+				</tr>
+				<tr>
+					<td>.text-success</td>
+					<td>.bg-success</td>
+					<td>.icon-success</td>
+				</tr>
+				<tr>
+					<td>.text-info</td>
+					<td>.bg-info</td>
+					<td>.icon-info</td>
+				</tr>
+				<tr>
+					<td>.text-warning</td>
+					<td>.bg-warning</td>
+					<td>.icon-warning</td>
+				</tr>
+				<tr>
+					<td>.text-danger</td>
+					<td>.bg-danger</td>
+					<td>.icon-danger</td>
+				</tr>
+				<tr>
+					<td>.text-teal</td>
+					<td>.bg-teal</td>
+					<td>.icon-teal</td>
+				</tr>
+				<tr>
+					<td>.text-blue</td>
+					<td>.bg-blue</td>
+					<td>.icon-blue</td>
+				</tr>
+				<tr>
+					<td>.text-indigo</td>
+					<td>.bg-indigo</td>
+					<td>.icon-indigo</td>
+				</tr>
+				<tr>
+					<td>.text-purple</td>
+					<td>.bg-purple</td>
+					<td>.icon-purple</td>
+				</tr>
+				<tr>
+					<td>.text-red</td>
+					<td>.bg-red</td>
+					<td>.icon-red</td>
+				</tr>
+				<tr>
+					<td>.text-brown</td>
+					<td>.bg-brown</td>
+					<td>.icon-brown</td>
+				</tr>
+			</tbody></table>
+			<table class="table table-bordered table-striped table-condensed">
+				<caption>内外边距</caption>
+				<tbody>
+				<tr>
+					<th>外边距</th>
+					<th>内边距</th>
+				</tr>
+				<tr>
+					<td>.margin-{size}</td>
+					<td>.padding-{size}</td>
+				</tr>
+				<tr>
+					<td>.margin-horizontal-{size}</td>
+					<td>.padding-horizontal-{size}</td>
+				</tr>
+				<tr>
+					<td>.margin-vertical-{size}</td>
+					<td>.padding-vertical-{size}</td>
+				</tr>
+				<tr>
+					<td>.margin-left-{size}</td>
+					<td>.padding-left-{size}</td>
+				</tr>
+				<tr>
+					<td>.margin-right-{size}</td>
+					<td>.padding-right-{size}</td>
+				</tr>
+				<tr>
+					<td>.margin-top-{size}</td>
+					<td>.padding-top-{size}</td>
+				</tr>
+				<tr>
+					<td>.margin-bottom-{size}</td>
+					<td>.padding-bottom-{size}</td>
+				</tr>
+				<tr>
+					<td colspan="2">其中 {size} 可以为 0, xs, sm, md, lg, xl</td>
+				</tr>
+				
+			</tbody></table>
+			<p><a href="helper.html">例子</a></p>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

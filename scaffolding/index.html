@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="true" -->
+	<!-- InstanceParam name="css" type="boolean" value="false" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>脚手架</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/zIndex.css" rel="stylesheet"/>
+	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
+	<link href="../ting/utilities.css" rel="stylesheet"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<script src="/skyjs/sky.js"></script>
+	<script src="../ting/ting.js"></script>
+	<script src="../ting/docs.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
+						<a class="navbar-brand" href="../"><img src="../images/logo.png">Ting Web UI</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li class="active"><a href="index.html">脚手架</a></li>
+							<li><a href="../css/index.html">全局样式</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../javascript/index.html">JavaScript插件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
+									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
+									<li><a href="javascript:changeSkin('indigo');void 0"><span class="text-indigo">█</span> indigo</a></li>
+									<li><a href="javascript:changeSkin('purple');void 0"><span class="text-purple">█</span> purple</a></li>
+									<li><a href="javascript:changeSkin('brown');void 0"><span class="text-brown">█</span> brown</a></li>
+									<li><a href="javascript:changeSkin('red');void 0"><span class="text-red">█</span> red</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf108;</i>主题</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeTheme('default');void 0">Default</a></li>
+									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
+									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1 class="page-header">概览</h1>
+			<h2 class="page-header">布局容器</h2>
+			<p><code>.container</code> 类用于固定宽度并支持响应式布局的容器。</p>
+			<pre><code>&lt;div class="container"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+			<p><code>.container-fluid</code> 类用于 100% 宽度，占据全部视口（viewport）的容器。</p>
+			<pre><code>&lt;div class="container-fluid"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+			<p><a href="container.html">普通例子</a> <a href="container-quirks.html">quirks例子</a></p>
+			<h1 class="page-header">栅格系统</h1>
+			<p>不带间隔支持响应式的布局样式类。</p>
+			<pre><code>&lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;col-md-10&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+			<p>带间隔支持响应式的布局样式类。</p>
+			<pre><code>&lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row-separate&quot;&gt;
+		&lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;col-md-10&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.row</td>
+					<td>网格中的行，用于包裹列，清除列的浮动。里面的列没有间隔。</td>
+				</tr>
+				<tr>
+					<td>.row-separate</td>
+					<td>网格中的行，用于包裹列，清除列的浮动。里面的列带间隔。</td>
+				</tr>
+				<tr>
+					<td>.span*</td>
+					<td>列的宽度（总和为12）</td>
+				</tr>
+				<tr>
+					<td>.col-xs-*</td>
+					<td>超小设备手机中的宽度（总和为12）</td>
+				</tr>
+				<tr>
+					<td>.col-sm-*</td>
+					<td>小型设备平板电脑中的宽度（总和为12）</td>
+				</tr>
+				<tr>
+					<td>.col-md-*</td>
+					<td>普通屏幕中的宽度（总和为12）</td>
+				</tr>
+				<tr>
+					<td>.col-lg-*</td>
+					<td>宽屏电脑中的宽度（总和为12）</td>
+				</tr>
+				<tr>
+					<td>.col-avg-5</td>
+					<td>五分之一的宽度</td>
+				</tr>
+			</tbody></table>
+			<p><a href="grid.html">普通例子</a> <a href="grid-quirks.html">quirks例子</a></p>
+			<h2 class="page-header">对齐</h2>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.vertical-align</td>
+					<td>垂直对齐容器。</td>
+				</tr>
+				<tr>
+					<td>.vertical-align-middle</td>
+					<td>垂直居中内容。</td>
+				</tr>
+				<tr>
+					<td>.vertical-bottom</td>
+					<td>底部对齐内容。</td>
+				</tr>
+				<tr>
+					<td>.text-left</td>
+					<td>文字居左</td>
+				</tr>
+				<tr>
+					<td>.text-center</td>
+					<td>文字居中</td>
+				</tr>
+				<tr>
+					<td>.text-right</td>
+					<td>文字居右</td>
+				</tr>
+				<tr>
+					<td>.center-block</td>
+					<td>设置元素为 display:block 并居中显示</td>
+				</tr>
+			</tbody></table>
+			<p><a href="align.html">例子</a></p>
+			<h2 class="page-header">动画</h2>
+			<p>CSS里定义了常用动画，通过-webkit-animation;-moz-animation;animation使用。</p>
+			<p><a href="animation.html">例子</a></p>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

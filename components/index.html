@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="css" type="boolean" value="false" -->
+	<!-- InstanceParam name="components" type="boolean" value="true" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/zIndex.css" rel="stylesheet"/>
+	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
+	<link href="../ting/utilities.css" rel="stylesheet"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<script src="/skyjs/sky.js"></script>
+	<script src="../ting/ting.js"></script>
+	<script src="../ting/docs.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
+						<a class="navbar-brand" href="../"><img src="../images/logo.png">Ting Web UI</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../scaffolding/index.html">脚手架</a></li>
+							<li><a href="../css/index.html">全局样式</a></li>
+							<li class="active"><a href="index.html">组件</a></li>
+							<li><a href="../javascript/index.html">JavaScript插件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
+									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
+									<li><a href="javascript:changeSkin('indigo');void 0"><span class="text-indigo">█</span> indigo</a></li>
+									<li><a href="javascript:changeSkin('purple');void 0"><span class="text-purple">█</span> purple</a></li>
+									<li><a href="javascript:changeSkin('brown');void 0"><span class="text-brown">█</span> brown</a></li>
+									<li><a href="javascript:changeSkin('red');void 0"><span class="text-red">█</span> red</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf108;</i>主题</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeTheme('default');void 0">Default</a></li>
+									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
+									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1 class="page-header">Font Awesome图标字体</h1>
+			<p>Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。</p>
+			<p><a href="font-awesome.html">使用方法</a> <a href="icons.html">Font Awesome 图标字体的代码列表</a></p>
+			<h1 class="page-header">输入框组</h1>
+			<p class="lead">通过在文本输入框 <code>&lt;input&gt;</code> 前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。为 <code>.input-group</code> 赋予 <code>.input-group-addon</code> 或 <code>.input-group-btn</code> 类，可以给 <code>.form-control</code> 的前面或后面添加额外的元素。</p>
+			<p><a href="input.html">示例</a></p>
+			<h1 class="page-header">导航</h1>
+			<p>导航组件都依赖同一个 <code>.nav</code> 类，状态类也是共用的。改变修饰类可以改变样式。提供了选项卡标签页、胶囊标签页、下划线标签页三种。</p>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Profile</a></li>
+						<li><a href="javascript:void 0">Messages</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="nav nav-pills">
+						<li class="active"><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Profile</a></li>
+						<li><a href="javascript:void 0">Messages</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="nav nav-underline">
+						<li class="active"><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Profile</a></li>
+						<li><a href="javascript:void 0">Messages</a></li>
+					</ul>
+				</div>
+			</div>
+			<p><a href="tabs.html">示例</a></p>
+			<h1 class="page-header">分页</h1>
+			<p>为您的网站或应用提供带有展示页码的分页组件，或者可以使用简单的翻页组件。</p>
+			<p><a href="pagination.html">示例</a></p>
+			<h1 class="page-header">标签</h1>
+			<p>
+				<span class="label label-default">Default</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</p>
+			<p><a href="label.html">示例</a></p>
+			<h1 class="page-header">徽章</h1>
+			<p><a href="#">Inbox <span class="badge">2</span></a></p>
+			<div class="page-header">
+				<h1>页头<small>这是例子</small></h1>
+			</div>
+			<div class="page-header">
+				<h2>页头<small>这是例子</small></h2>
+			</div>
+			<h1 class="page-header">缩略图</h1>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<a href="#" class="thumbnail"><img src="http://placeholder.qiniudn.com/300x200" width="100%" height="200"/></a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="thumbnail"><img src="http://placeholder.qiniudn.com/300x200" width="100%" height="200"/></a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="thumbnail"><img src="http://placeholder.qiniudn.com/300x200" width="100%" height="200"/></a>
+				</div>
+			</div>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="http://placeholder.qiniudn.com/300x200" width="100%"/>
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1 class="page-header">警告框</h1>
+			<div class="alert alert-success" role="alert">
+				<strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="alert alert-info" role="alert">
+				<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+			</div>
+			<div class="alert alert-danger" role="alert">
+				<strong>Oh snap!</strong> Change a few things up and try submitting again.
+			</div>
+			<div class="alert alert-warning alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+			</div>
+			<h1 class="page-header">媒体对象</h1>
+			<p><a href="media.html">media</a></p>
+			<h1 class="page-header">列表组</h1>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<ul class="list-group">
+						<li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
+						<li class="list-group-item">Dapibus ac facilisis in</li>
+						<li class="list-group-item">Morbi leo risus</li>
+						<li class="list-group-item">Porta ac consectetur ac</li>
+						<li class="list-group-item">Vestibulum at eros</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+						<a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<h1 class="page-header">面版</h1>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default list-group">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Cras sit amet nibh libero</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
+				</div>
+			</div>
+			<h1 class="page-header">凹陷</h1>
+			<div class="well">Look, I'm in a well!</div>
+			<div class="well well-lg">Look, I'm in a large well!</div>
+			<div class="well well-sm">Look, I'm in a small well!</div>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

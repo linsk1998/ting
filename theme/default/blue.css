@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.text-primary{ color:#2196F3;}
+.bg-primary{ color:#fff; background-color:#2196F3;}
+a.bg-primary:hover{ background-color:#1976D2;}
+
+.btn-outline{ color:#2196F3; border-color:#2196F3;}
+.btn-outline:hover,input.btn-outline:focus,button.btn-outline:focus{ color:#fff; background-color:#2196F3; border-color:#2196F3;}
+.btn-primary{ background-color:#2196F3; border-color:#0d8aee;}
+.btn-primary:hover,input.btn-primary:focus,button.btn-primary:focus{ background-color:#0c7cd5; border-color:#0a68b4;}
+html>body .disabled.btn-primary{ background-color:#90cbf9; border-color:#86c5f7;}
+
