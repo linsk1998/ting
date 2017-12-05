@@ -15,7 +15,7 @@ svg:not(:root){ overflow:hidden;}
 figure{ margin:1em 40px;}
 
 html{ min-font-size:0 !important; -webkit-min-font-size:0 !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
-body{ font-size:14px; line-height:1.42857143; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+body{ font-size:14px; line-height:1.42857143; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif;}
 
 body,dd,dl{margin:0; padding:0;}
 html,body,img{border:0;}
@@ -906,7 +906,7 @@ html>body .caret{ display:inline-block; width:0; height:0; margin-left:2px; vert
 .input-group-btn  .btn{ height:100%; border:0 none; background:#eee; *padding-bottom:10px;}
 
 .navbar{ height:50px; border-bottom:1px solid #ddd;}
-.navbar-brand{ float:left; height:50px; line-height:50px; font-size:18px; display:inline-block; margin-right:16px; white-space:nowrap;}
+.navbar-brand{ float:left; height:50px; font-size:18px; display:inline-block; margin-right:16px; white-space:nowrap;}
 .navbar-brand a,a.navbar-brand{ text-decoration:none; color:#212121}
 .navbar-brand img{ max-height:50px; vertical-align:middle; margin-right:10px;}
 .navbar-toggle{ display:none; float:right; width:44px; height:34px; text-align:center; margin-top:8px; margin-left:15px; border:1px solid #ddd; background:#fff;}
