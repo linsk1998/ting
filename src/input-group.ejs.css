@@ -1,0 +1,11 @@
+
+.input-group{ display:table; width:100%; position:relative; *font-size:0;}
+.input-group .form-control,.input-group-addon,.input-group-btn{ display:table-cell; *display:inline-block; vertical-align:middle;}
+.input-group-addon{ padding:6px 12px; font-size:14px; font-weight:400; line-height:18px; color: #555;}
+.input-group-addon,.input-group-btn{ text-align:center; background-color:#eee; border:1px solid #ccc;}
+.input-group-addon:first-child,.input-group-btn:first-child{ border-right:0;}
+.input-group-addon:last-child,.input-group-btn:last-child{ border-left:0;}
+.input-group-addon,.input-group-btn { width:1px; white-space:nowrap; *border:0 none; *width:25%; *padding-left:0; *padding-right:0; *position:absolute; *right:expression(Sky.getNextElement(this)==null?'0':'auto');}
+.input-group{ *border:1px solid #ccc; *overflow:hidden;}
+.input-group .form-control{ *margin-left:expression( this.previousSibling==null?'0':'26%'); *width:74%; *border:0 none;}
+.input-group-btn  .btn{ height:100%; border:0 none; background:#eee; *padding-bottom:10px;}

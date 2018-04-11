@@ -15,21 +15,17 @@
 	<title>辅助类</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
-	<link href="../ting/zIndex.css" rel="stylesheet"/>
-	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
-	<link href="../ting/utilities.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	<script src="/linsk1998/skyjs/master/sky.js"></script>
 	<script src="../ting/ting.js"></script>
-	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-top pull-front" role="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<div class="navbar-brand vertical-align"><a href="../" class="vertical-align-middle"><img src="../images/logo.png"/>Ting Web UI</a></div>
+						<a href="../" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -41,7 +37,7 @@
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
-							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+							<!--<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
 								<ul class="dropdown-menu">
 									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
 									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
@@ -57,7 +53,7 @@
 									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
 									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
@@ -72,25 +68,20 @@
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
 			<h1 class="page-header">辅助类</h1>
-			<h2>背景</h2>
+			<h2>文字</h2>
 			<p>text<span class="text-hide">哈哈哈</span>-hide</p>
 			<p class="text-muted">本行内容是减弱的</p>
-			<p class="text-primary">本行内容带有一个 primary class</p>
-			<p class="text-success">本行内容带有一个 success class</p>
-			<p class="text-info">本行内容带有一个 info class</p>
-			<p class="text-warning">本行内容带有一个 warning class</p>
-			<p class="text-danger">本行内容带有一个 danger class</p>
+			<p class="text-primary">本行内容带有一个 primary class <a class="text-primary" href="./">该链接使用了类</a></p>
+			<p class="text-success">本行内容带有一个 success class <a class="text-success" href="./">该链接使用了类</a></p>
+			<p class="text-info">本行内容带有一个 info class <a class="text-info" href="./">该链接使用了类</a></p>
+			<p class="text-warning">本行内容带有一个 warning class <a class="text-warning" href="./">该链接使用了类</a></p>
+			<p class="text-danger">本行内容带有一个 danger class <a class="text-danger" href="./">该链接使用了类</a></p>
 			<h2>背景</h2>
 			<p class="bg-primary">该段落使用了类 "bg-primary"。</p>
-			<a class="bg-primary" href="/index.php">该链接使用了类 "bg-primary"。</a>
 			<p class="bg-success">该段落使用了类 "bg-success"。</p>
-			<a class="bg-success" href="/index.php">该链接使用了类 "bg-success"。</a>
 			<p class="bg-info">该段落使用了类 "bg-info"。</p>
-			<a class="bg-info" href="/index.php">该链接使用了类 "bg-info"。</a>
 			<p class="bg-warning">该段落使用了类 "bg-warning"。</p>
-			<a class="bg-warning" href="/index.php">该链接使用了类 "bg-warning"。</a>
 			<p class="bg-danger">该段落使用了类 "bg-danger"。</p>
-			<a class="bg-danger" href="/index.php">该链接使用了类 "bg-danger。</a>
 			<h2>图标颜色</h2>
 			<div class="dialog dialog-primary" style="_width:400px; min-width:400px;">
 				<div class="dialog-header">
@@ -112,6 +103,21 @@
 			<div class="clearfix">
 				<img class="pull-right" src="http://placeholder.qiniudn.com/200x100"/>
 				<img class="pull-left" src="http://placeholder.qiniudn.com/200x100"/>
+			</div>
+			<h2>文本垂直对齐</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="http://placeholder.qiniudn.com/60x60">
+					<span class="text-middle">文本垂直对齐</span>
+				</div>
+				<div class="col-md-4">
+					<img src="http://placeholder.qiniudn.com/60x60">
+					<span class="text-top">文本垂直对齐</span>
+				</div>
+				<div class="col-md-4">
+					<img src="http://placeholder.qiniudn.com/60x60">
+					<span class="text-bottom">文本垂直对齐</span>
+				</div>
 			</div>
 			<h2>字体</h2>
 			<ul>

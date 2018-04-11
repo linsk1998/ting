@@ -1,0 +1,23 @@
+
+.table{ width:100%; max-width:100%; margin-bottom:20px; border-collapse:collapse; border-spacing:0;}
+.table  td,.table  th{ padding:8px; line-height:1.42857143; vertical-align:top; border-top:1px solid #ddd;}
+.table th { vertical-align:bottom; border-bottom:2px solid #ddd;}
+.table tr:first-child td,.table tr:first-child th { border-top:0;}
+.table > tbody + tbody { border-top:2px solid #ddd;}
+.table-condensed td,.table-condensed th{ padding:5px;}
+.table-bordered,.table-bordered td,.table-bordered th{ border:1px solid #ddd;}
+.table-striped tr:nth-of-type(odd) { background-color: #f9f9f9;}
+.table-hover tr:hover{ background-color:#f5f5f5;}
+
+.table td.active,.table th.active,.table .active td,.table .active th{ background-color:#f5f5f5;}
+.table-hover td.active:hover,.table-hover th.active:hover,.table-hover .active:hover td,.table-hover .active:hover th{ background-color:#e8e8e8;}
+.table td.success,.table th.success,.table .success td,.table .success th{ background-color:#dff0d8;}
+.table-hover td.success:hover,.table-hover th.success:hover,.table-hover .success:hover td,.table-hover .success:hover th{ background-color:#d0e9c6;}
+.table td.info,.table th.info,.table .info td,.table .info th{ background-color:#d9edf7;}
+.table-hover td.info:hover,.table-hover th.info:hover,.table-hover .info:hover td,.table-hover .info:hover th{ background-color:#c4e3f3;}
+.table td.warning,.table th.warning,.table .warning td,.table .warning th{ background-color:#fcf8e3;}
+.table-hover td.warning:hover,.table-hover th.warning:hover,.table-hover .warning:hover td,.table-hover .warning:hover th{ background-color:#faf2cc;}
+.table td.danger,.table th.danger,.table .danger td,.table .danger th{ background-color:#f2dede;}
+.table-hover td.danger:hover,.table-hover th.danger:hover,.table-hover .danger:hover td,.table-hover .danger:hover th{ background-color:#ebcccc;}
+
+.table-responsive{ overflow-x:auto;}

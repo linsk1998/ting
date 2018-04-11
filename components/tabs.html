@@ -15,9 +15,6 @@
 	<title>选项卡</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
-	<link href="../ting/zIndex.css" rel="stylesheet"/>
-	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
-	<link href="../ting/utilities.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" -->
 	<style>
 		.nav-tabs{ margin:10px 0;}
@@ -25,15 +22,14 @@
 	<!-- InstanceEndEditable -->
 	<script src="/linsk1998/skyjs/master/sky.js"></script>
 	<script src="../ting/ting.js"></script>
-	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-top pull-front" role="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<div class="navbar-brand vertical-align"><a href="../" class="vertical-align-middle"><img src="../images/logo.png"/>Ting Web UI</a></div>
+						<a href="../" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -45,7 +41,7 @@
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
-							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+							<!--<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
 								<ul class="dropdown-menu">
 									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
 									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
@@ -61,7 +57,7 @@
 									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
 									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
@@ -75,20 +71,17 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
+			<h2 class="page-header">常用</h2>
 			<ul class="nav nav-tabs">
 				<li class="active"><a href="javascript:void 0">Home</a></li>
 				<li><a href="javascript:void 0">Profile</a></li>
 				<li><a href="javascript:void 0">Messages</a></li>
 			</ul>
-		</div>
-		<div class="container">
 			<ul class="nav nav-pills">
 				<li class="active"><a href="javascript:void 0">Home</a></li>
 				<li><a href="javascript:void 0">Profile</a></li>
 				<li><a href="javascript:void 0">Messages</a></li>
 			</ul>
-		</div>
-		<div class="container">
 			<ul class="nav nav-underline">
 				<li class="active"><a href="javascript:void 0">Home</a></li>
 				<li><a href="javascript:void 0">Profile</a></li>
@@ -96,6 +89,7 @@
 			</ul>
 		</div>
 		<div class="container">
+			<h2 class="page-header">两端对齐</h2>
 			<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
 				<table class="nav nav-tabs">
 					<tr>
@@ -118,6 +112,48 @@
 						<td><a href="javascript:void 0">Messages</a></td>
 					</tr>
 				</table>
+			</div>
+			<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a href="javascript:void 0">Home</a></li>
+					<li><a href="javascript:void 0">Profile</a></li>
+					<li><a href="javascript:void 0">Messages</a></li>
+				</ul>
+				<ul class="nav nav-pills nav-justified">
+					<li class="active"><a href="javascript:void 0">Home</a></li>
+					<li><a href="javascript:void 0">Profile</a></li>
+					<li><a href="javascript:void 0">Messages</a></li>
+				</ul>
+				<ul class="nav nav-underline nav-justified">
+					<li class="active"><a href="javascript:void 0">Home</a></li>
+					<li><a href="javascript:void 0">Profile</a></li>
+					<li><a href="javascript:void 0">Messages</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<h2 class="page-header">变换方向的标签页</h2>
+			<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+				<div class="tabbable tabs-left">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Profile</a></li>
+						<li><a href="javascript:void 0">Messages</a></li>
+					</ul>
+					<div class="tab-content">aaa
+					</div>
+				</div>
+			</div>
+			<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+				<div class="tabbable tabs-right">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Profile</a></li>
+						<li><a href="javascript:void 0">Messages</a></li>
+					</ul>
+					<div class="tab-content">aaa
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- InstanceEndEditable -->

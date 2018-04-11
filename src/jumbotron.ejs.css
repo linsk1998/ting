@@ -1,0 +1,15 @@
+
+.jumbotron{ padding-top:48px; padding-bottom:48px; background:#2d3e50; color:#fff;}
+.jumbotron h1,.jumbotron .h1{ font-size:63px;}
+.jumbotron p{ margin-bottom:15px; font-weight:200; font-size:21px;}
+.jumbotron hr{ border-top-color:#d5d5d5; color:#d5d5d5; background:#d5d5d5;}
+@media (min-width:641px) and (max-width:970px){
+	.jumbotron{ padding-top:36px; padding-bottom:36px;}
+	.jumbotron h1,.jumbotron .h1{ font-size:34px;}
+	.jumbotron p{ font-size:18px;}
+}
+@media screen and (max-width:640px){
+	.jumbotron{ padding-top:30px; padding-bottom:30px;}
+	.jumbotron h1,.jumbotron .h1{ font-size:21px;}
+	.jumbotron p{ font-size:16px;}
+}

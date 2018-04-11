@@ -15,21 +15,17 @@
 	<title></title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
-	<link href="../ting/zIndex.css" rel="stylesheet"/>
-	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
-	<link href="../ting/utilities.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	<script src="/linsk1998/skyjs/master/sky.js"></script>
 	<script src="../ting/ting.js"></script>
-	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-top pull-front" role="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<div class="navbar-brand vertical-align"><a href="../" class="vertical-align-middle"><img src="../images/logo.png"/>Ting Web UI</a></div>
+						<a href="../" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -41,7 +37,7 @@
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
-							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+							<!--<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
 								<ul class="dropdown-menu">
 									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
 									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
@@ -57,7 +53,7 @@
 									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
 									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
@@ -77,34 +73,70 @@
 			<h1 class="page-header">输入框组</h1>
 			<p class="lead">通过在文本输入框 <code>&lt;input&gt;</code> 前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。为 <code>.input-group</code> 赋予 <code>.input-group-addon</code> 或 <code>.input-group-btn</code> 类，可以给 <code>.form-control</code> 的前面或后面添加额外的元素。</p>
 			<p><a href="input.html">示例</a></p>
+			<h1 class="page-header">路径导航</h1>
+			<p><code>breadcrumb</code>在一个带有层次的导航结构中标明当前页面的位置。</p>
+			<ol class="breadcrumb">
+				<li><a href="javascript:void 0">Home</a></li>
+				<li><a href="javascript:void 0">Library</a></li>
+				<li class="active">Data</li>
+			</ol>
 			<h1 class="page-header">导航</h1>
 			<p>导航组件都依赖同一个 <code>.nav</code> 类，状态类也是共用的。改变修饰类可以改变样式。提供了选项卡标签页、胶囊标签页、下划线标签页三种。</p>
-			<div class="row-separate">
-				<div class="col-md-4">
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="javascript:void 0">Home</a></li>
-						<li><a href="javascript:void 0">Profile</a></li>
-						<li><a href="javascript:void 0">Messages</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<ul class="nav nav-pills">
-						<li class="active"><a href="javascript:void 0">Home</a></li>
-						<li><a href="javascript:void 0">Profile</a></li>
-						<li><a href="javascript:void 0">Messages</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<ul class="nav nav-underline">
-						<li class="active"><a href="javascript:void 0">Home</a></li>
-						<li><a href="javascript:void 0">Profile</a></li>
-						<li><a href="javascript:void 0">Messages</a></li>
-					</ul>
-				</div>
-			</div>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.tabbable</td>
+					<td>tab切换框总框</td>
+				</tr>
+				<tr>
+					<td>.nav</td>
+					<td>tab导航</td>
+				</tr>
+				<tr>
+					<td>.nav-tabs<br/>.nav-pills<br/>.nav-underline</td>
+					<td>tab导航类型，有三种类型</td>
+				</tr>
+				<tr>
+					<td>.tab-content</td>
+					<td>tab内容</td>
+				</tr>
+				<tr>
+					<td>.tab-pane</td>
+					<td>tab内容项目</td>
+				</tr>
+			</tbody></table>
 			<p><a href="tabs.html">示例</a></p>
 			<h1 class="page-header">分页</h1>
 			<p>为您的网站或应用提供带有展示页码的分页组件，或者可以使用简单的翻页组件。</p>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.pagination</td>
+					<td>分页列表</td>
+				</tr>
+				<tr>
+					<td>.pagination-lg<br/>.pagination-sm<br/>.pagination-xs</td>
+					<td>分页大小</td>
+				</tr>
+				<tr>
+					<td>.pager</td>
+					<td>前后分页</td>
+				</tr>
+				<tr>
+					<td>.previous</td>
+					<td>前页</td>
+				</tr>
+				<tr>
+					<td>.next</td>
+					<td>后页</td>
+				</tr>
+			</tbody></table>
 			<p><a href="pagination.html">示例</a></p>
 			<h1 class="page-header">标签</h1>
 			<p>
@@ -149,22 +181,29 @@
 				</div>
 			</div>
 			<h1 class="page-header">警告框</h1>
-			<div class="alert alert-success" role="alert">
-				<strong>Well done!</strong> You successfully read this important alert message.
-			</div>
-			<div class="alert alert-info" role="alert">
-				<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-			</div>
-			<div class="alert alert-warning" role="alert">
-				<strong>Warning!</strong> Better check yourself, you're not looking too good.
-			</div>
-			<div class="alert alert-danger" role="alert">
-				<strong>Oh snap!</strong> Change a few things up and try submitting again.
-			</div>
-			<div class="alert alert-warning alert-dismissible" role="alert">
-				<button type="button" class="close" data-dismiss="alert">&times;</button>
-				<strong>Warning!</strong> Better check yourself, you're not looking too good.
-			</div>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr>
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.alert</td>
+					<td>警告框</td>
+				</tr>
+				<tr>
+					<td>.alert-dismissable</td>
+					<td>可关闭警告框</td>
+				</tr>
+				<tr>
+					<td>.alert-success<br/>.alert-info<br/>.alert-warning<br/>.alert-danger</td>
+					<td>不同的风格</td>
+				</tr>
+				<tr>
+					<td>.alert-link</td>
+					<td>警告链接</td>
+				</tr>
+			</tbody></table>
+			<p><a href="alert.html">示例</a></p>
 			<h1 class="page-header">媒体对象</h1>
 			<p><a href="media.html">media</a></p>
 			<h1 class="page-header">列表组</h1>

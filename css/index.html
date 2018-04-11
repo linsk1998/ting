@@ -15,21 +15,17 @@
 	<title>全局样式</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
-	<link href="../ting/zIndex.css" rel="stylesheet"/>
-	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
-	<link href="../ting/utilities.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	<script src="/linsk1998/skyjs/master/sky.js"></script>
 	<script src="../ting/ting.js"></script>
-	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-top pull-front" role="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<div class="navbar-brand vertical-align"><a href="../" class="vertical-align-middle"><img src="../images/logo.png"/>Ting Web UI</a></div>
+						<a href="../" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -41,7 +37,7 @@
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
-							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+							<!--<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
 								<ul class="dropdown-menu">
 									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
 									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
@@ -57,7 +53,7 @@
 									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
 									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
@@ -160,6 +156,14 @@
 					<td>.table-condensed</td>
 					<td>让表格更加紧凑</td>
 				</tr>
+				<tr>
+					<td>.table-active<br/>.table-success<br/>.table-info<br/>.table-danger</td>
+					<td>表格背景</td>
+				</tr>
+				<tr>
+					<td>.table-responsive</td>
+					<td>响应式</td>
+				</tr>
 			</tbody></table>
 			<p><a href="table.html">例子</a></p>
 			<h1>按钮</h1>
@@ -224,6 +228,14 @@
 					<td>.btn-toolbar</td>
 					<td>按钮工具栏</td>
 				</tr>
+				<tr>
+					<td>.caret</td>
+					<td>按钮旁的小三角形</td>
+				</tr>
+				<tr>
+					<td>.close</td>
+					<td>关闭按钮</td>
+				</tr>
 			</tbody></table>
 			<p>
 				<a href="button.html" class="btn btn-primary">例子</a>
@@ -275,12 +287,21 @@
 					<td>元素浮动到右边</td>
 				</tr>
 				<tr>
+					<td>.pull-front</td>
+					<td>元素置顶</td>
+				</tr>
+				<tr>
 					<td>.clearfix</td>
 					<td>设置元素为 display:block 并居中显示</td>
 				</tr>
 				<tr>
 					<td>.center-block</td>
 					<td>清除容器内的浮动浮动</td>
+				</tr>
+				<tr>
+					<td>.text-middle<br/>.text-top<br/>.text-bottom
+					</td>
+					<td>文本垂直居中</td>
 				</tr>
 			</tbody></table>
 			<table class="table table-bordered table-striped table-condensed">
@@ -354,97 +375,115 @@
 					<th>文本颜色</th>
 					<th>背景颜色</th>
 					<th>图标颜色</th>
+					<th>边框颜色</th>
 				</tr>
 				<tr>
 					<td>.text-success</td>
 					<td>.bg-success</td>
 					<td>.icon-success</td>
+					<td>.border-success</td>
 				</tr>
 				<tr>
 					<td>.text-info</td>
 					<td>.bg-info</td>
 					<td>.icon-info</td>
+					<td>.border-info</td>
 				</tr>
 				<tr>
 					<td>.text-warning</td>
 					<td>.bg-warning</td>
 					<td>.icon-warning</td>
+					<td>.border-warning</td>
 				</tr>
 				<tr>
 					<td>.text-danger</td>
 					<td>.bg-danger</td>
 					<td>.icon-danger</td>
+					<td>.border-danger</td>
 				</tr>
 				<tr>
 					<td>.text-teal</td>
 					<td>.bg-teal</td>
 					<td>.icon-teal</td>
+					<td>.border-teal</td>
 				</tr>
 				<tr>
 					<td>.text-blue</td>
 					<td>.bg-blue</td>
 					<td>.icon-blue</td>
+					<td>.border-blue</td>
 				</tr>
 				<tr>
 					<td>.text-indigo</td>
 					<td>.bg-indigo</td>
 					<td>.icon-indigo</td>
+					<td>.border-indigo</td>
 				</tr>
 				<tr>
 					<td>.text-purple</td>
 					<td>.bg-purple</td>
 					<td>.icon-purple</td>
+					<td>.border-purple</td>
 				</tr>
 				<tr>
 					<td>.text-red</td>
 					<td>.bg-red</td>
 					<td>.icon-red</td>
+					<td>.border-red</td>
 				</tr>
 				<tr>
 					<td>.text-brown</td>
 					<td>.bg-brown</td>
 					<td>.icon-brown</td>
+					<td>.border-brown</td>
 				</tr>
 			</tbody></table>
 			<table class="table table-bordered table-striped table-condensed">
-				<caption>内外边距</caption>
+				<caption>盒子</caption>
 				<tbody>
 				<tr>
 					<th>外边距</th>
 					<th>内边距</th>
+					<th>边框</th>
 				</tr>
 				<tr>
-					<td>.margin-{size}</td>
-					<td>.padding-{size}</td>
+					<td>.box-m{size}</td>
+					<td>.box-p{size}</td>
+					<td>.box-b</td>
 				</tr>
 				<tr>
-					<td>.margin-horizontal-{size}</td>
-					<td>.padding-horizontal-{size}</td>
+					<td>.box-mv{size}</td>
+					<td>.box-pv{size}</td>
+					<td>.box-bv</td>
 				</tr>
 				<tr>
-					<td>.margin-vertical-{size}</td>
-					<td>.padding-vertical-{size}</td>
+					<td>.box-mh{size}</td>
+					<td>.box-ph{size}</td>
+					<td>.box-bh</td>
 				</tr>
 				<tr>
-					<td>.margin-left-{size}</td>
-					<td>.padding-left-{size}</td>
+					<td>.box-mt{size}</td>
+					<td>.box-pt{size}</td>
+					<td>.box-bt</td>
 				</tr>
 				<tr>
-					<td>.margin-right-{size}</td>
-					<td>.padding-right-{size}</td>
+					<td>.box-mb{size}</td>
+					<td>.box-pb{size}</td>
+					<td>.box-bb</td>
 				</tr>
 				<tr>
-					<td>.margin-top-{size}</td>
-					<td>.padding-top-{size}</td>
+					<td>.box-ml{size}</td>
+					<td>.box-pl{size}</td>
+					<td>.box-bl</td>
 				</tr>
 				<tr>
-					<td>.margin-bottom-{size}</td>
-					<td>.padding-bottom-{size}</td>
+					<td>.box-mr{size}</td>
+					<td>.box-pr{size}</td>
+					<td>.box-br</td>
 				</tr>
 				<tr>
-					<td colspan="2">其中 {size} 可以为 0, xs, sm, md, lg, xl</td>
+					<td colspan="3">其中 {size} 可以为 0, xs, sm, md, lg, xl</td>
 				</tr>
-				
 			</tbody></table>
 			<p><a href="helper.html">例子</a></p>
 		</div>
