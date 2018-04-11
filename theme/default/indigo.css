@@ -1,12 +1,2 @@
 @charset "utf-8";
 /* CSS Document */
-.text-primary{ color:#337ab7;}
-.bg-primary{ color:#fff; background-color:#337ab7;}
-a.bg-primary:hover{ background-color:#286090;}
-
-.btn-outline{ color:#337ab7; border-color:#337ab7;}
-.btn-outline:hover,input.btn-outline:focus,button.btn-outline:focus{ color:#fff; background-color:#337ab7; border-color:#337ab7;}
-.btn-primary{ background-color:#337ab7; border-color:#2d6da3;}
-.btn-primary:hover,input.btn-primary:focus,button.btn-primary:focus{ background-color:#285f8f; border-color:#204d73;}
-html>body .disabled.btn-primary{ background-color:#99bddb; border-color:#96b6d1;}
-

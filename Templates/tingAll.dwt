@@ -16,25 +16,21 @@
 	<!-- TemplateEndEditable --><!-- TemplateBeginIf cond="quirks" -->
 	<link href="../ting/ting-quirks.css" rel="stylesheet"/><!-- TemplateEndIf --><!-- TemplateBeginIf cond="quirks==false" -->
 	<link href="../ting/ting.css" rel="stylesheet"/><!-- TemplateEndIf -->
-	<link href="../ting/zIndex.css" rel="stylesheet"/>
-	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
-	<link href="../ting/utilities.css" rel="stylesheet"/>
 	<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
 	<script src="/linsk1998/skyjs/master/sky.js"></script>
 	<script src="../ting/ting.js"></script>
-	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-top pull-front" role="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<div class="navbar-brand vertical-align"><a href="../" class="vertical-align-middle"><img src="../images/logo.png"/>Ting Web UI</a></div>
+						<a href="../" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav"><!-- TemplateBeginIf cond="_document['getting-started']" -->
-							<li class="active"><a href="../css/getting-started/index.html">起步</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['getting-started']==false" -->
+							<li class="active"><a href="../getting-started/index.html">起步</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['getting-started']==false" -->
 							<li><a href="../getting-started/index.html">起步</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['scaffolding']" -->
 							<li class="active"><a href="../scaffolding/index.html">脚手架</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['scaffolding']==false" -->
 							<li><a href="../scaffolding/index.html">脚手架</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['css']" -->
@@ -47,7 +43,7 @@
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
-							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+							<!--<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
 								<ul class="dropdown-menu">
 									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
 									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
@@ -63,7 +59,7 @@
 									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
 									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>

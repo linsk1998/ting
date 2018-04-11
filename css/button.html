@@ -15,9 +15,6 @@
 	<title>按钮</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
-	<link href="../ting/zIndex.css" rel="stylesheet"/>
-	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
-	<link href="../ting/utilities.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" -->
 	<style>
 .btn{
@@ -27,15 +24,14 @@
 	<!-- InstanceEndEditable -->
 	<script src="/linsk1998/skyjs/master/sky.js"></script>
 	<script src="../ting/ting.js"></script>
-	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-top pull-front" role="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<div class="navbar-brand vertical-align"><a href="../" class="vertical-align-middle"><img src="../images/logo.png"/>Ting Web UI</a></div>
+						<a href="../" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -47,7 +43,7 @@
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
-							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+							<!--<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
 								<ul class="dropdown-menu">
 									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
 									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
@@ -63,7 +59,7 @@
 									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
 									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
@@ -79,115 +75,96 @@
 		<div class="container">
 			<button type="button" class="btn btn-outline">Outline</button>
 			<input type="button" class="btn btn-outline" value="Outline"/>
-			<div class="btn btn-outline">Outline</div>
 			<a href="javascript:void 0" class="btn btn-outline">Outline</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-default">Default</button>
 			<input type="button" class="btn btn-default" value="Default"/>
-			<div class="btn btn-default">Default</div>
 			<a href="javascript:void 0" class="btn btn-default">Default</a>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-default disabled" disabled>Default</button>
-			<input type="button" class="btn btn-default disabled" value="Default" disabled/>
-			<div class="btn btn-default disabled" disabled>Default</div>
-			<a href="javascript:void 0" class="btn btn-default disabled" disabled>Default</a>
+			<button type="button" class="btn btn-default btn-disabled" disabled>Default</button>
+			<input type="button" class="btn btn-default btn-disabled" value="Default" disabled/>
+			<a href="javascript:void 0" class="btn btn-default btn-disabled" disabled>Default</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-primary">Primary</button>
 			<input type="button" class="btn btn-primary" value="Primary"/>
-			<div class="btn btn-primary">Primary</div>
 			<a href="javascript:void 0" class="btn btn-primary">Primary</a>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-primary disabled" disabled>Primary</button>
-			<input type="button" class="btn btn-primary disabled" value="Primary" disabled/>
-			<div class="btn btn-primary disabled" disabled>Primary</div>
-			<a href="javascript:void 0" class="btn btn-primary disabled" disabled>Primary</a>
+			<button type="button" class="btn btn-primary btn-disabled" disabled>Primary</button>
+			<input type="button" class="btn btn-primary btn-disabled" value="Primary" disabled/>
+			<a href="javascript:void 0" class="btn btn-primary btn-disabled" disabled>Primary</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-success">Success</button>
 			<input type="button" class="btn btn-success" value="Success"/>
-			<div class="btn btn-success">Success</div>
 			<a href="javascript:void 0" class="btn btn-success">Success</a>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-success disabled" disabled>Success</button>
-			<input type="button" class="btn btn-success disabled" value="Success" disabled/>
-			<div class="btn btn-success disabled" disabled>Success</div>
-			<a href="javascript:void 0" class="btn btn-success disabled" disabled>Success</a>
+			<button type="button" class="btn btn-success btn-disabled" disabled>Success</button>
+			<input type="button" class="btn btn-success btn-disabled" value="Success" disabled/>
+			<a href="javascript:void 0" class="btn btn-success btn-disabled" disabled>Success</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-info">Info</button>
 			<input type="button" class="btn btn-info" value="Info"/>
-			<div class="btn btn-info">Info</div>
 			<a href="javascript:void 0" class="btn btn-info">Info</a>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-info disabled" disabled>Info</button>
-			<input type="button" class="btn btn-info disabled" value="Info" disabled/>
-			<div class="btn btn-info disabled" disabled>Info</div>
-			<a href="javascript:void 0" class="btn btn-info disabled" disabled>Info</a>
+			<button type="button" class="btn btn-info btn-disabled" disabled>Info</button>
+			<input type="button" class="btn btn-info btn-disabled" value="Info" disabled/>
+			<a href="javascript:void 0" class="btn btn-info btn-disabled" disabled>Info</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-warning">Warning</button>
 			<input type="button" class="btn btn-warning" value="Warning"/>
-			<div class="btn btn-warning">Warning</div>
 			<a href="javascript:void 0" class="btn btn-warning">Warning</a>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-warning disabled" disabled>Warning</button>
-			<input type="button" class="btn btn-warning disabled" value="Warning" disabled/>
-			<div class="btn btn-warning disabled" disabled>Warning</div>
-			<a href="javascript:void 0" class="btn btn-warning disabled" disabled>Warning</a>
+			<button type="button" class="btn btn-warning btn-disabled" disabled>Warning</button>
+			<input type="button" class="btn btn-warning btn-disabled" value="Warning" disabled/>
+			<a href="javascript:void 0" class="btn btn-warning btn-disabled" disabled>Warning</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-danger">Danger</button>
 			<input type="button" class="btn btn-danger" value="Danger"/>
-			<div class="btn btn-danger">Danger</div>
 			<a href="javascript:void 0" class="btn btn-danger">Danger</a>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-danger disabled" disabled>Danger</button>
-			<input type="button" class="btn btn-danger disabled" value="Danger" disabled/>
-			<div class="btn btn-danger disabled" disabled>Danger</div>
-			<a href="javascript:void 0" class="btn btn-danger disabled" disabled>Danger</a>
+			<button type="button" class="btn btn-danger btn-disabled" disabled>Danger</button>
+			<input type="button" class="btn btn-danger btn-disabled" value="Danger" disabled/>
+			<a href="javascript:void 0" class="btn btn-danger btn-disabled" disabled>Danger</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-inverse">Inverse</button>
 			<input type="button" class="btn btn-inverse" value="Inverse"/>
-			<div class="btn btn-inverse">Inverse</div>
 			<a href="javascript:void 0" class="btn btn-inverse">Inverse</a>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-inverse disabled" disabled>Inverse</button>
-			<input type="button" class="btn btn-inverse disabled" value="Inverse" disabled/>
-			<div class="btn btn-inverse disabled" disabled>Inverse</div>
-			<a href="javascript:void 0" class="btn btn-inverse disabled" disabled>Inverse</a>
+			<button type="button" class="btn btn-inverse btn-disabled" disabled>Inverse</button>
+			<input type="button" class="btn btn-inverse btn-disabled" value="Inverse" disabled/>
+			<a href="javascript:void 0" class="btn btn-inverse btn-disabled" disabled>Inverse</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-default btn-lg" >large</button>
 			<input type="button" class="btn btn-default btn-lg" value="large"/>
-			<div class="btn btn-default btn-lg">large</div>
 			<a href="javascript:void 0" class="btn btn-default btn-lg">large</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-default btn-sm" >small</button>
 			<input type="button" class="btn btn-default btn-sm" value="small"/>
-			<div class="btn btn-default btn-sm">small</div>
 			<a href="javascript:void 0" class="btn btn-default btn-sm">small</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-default btn-xs" >Extra small</button>
 			<input type="button" class="btn btn-default btn-xs" value="Extra small"/>
-			<div class="btn btn-default btn-xs">Extra small</div>
 			<a href="javascript:void 0" class="btn btn-default btn-xs">Extra small</a>
 		</div>
 		<div class="container">
 			<button type="button" class="btn btn-primary btn-block" >btn-block</button>
 			<input type="button" class="btn btn-default btn-block" value="btn-block"/>
-			<div class="btn btn-primary btn-block">btn-block</div>
 			<a href="javascript:void 0" class="btn btn-default btn-block">btn-block</a>
 		</div>
 		<div class="container">
@@ -195,7 +172,7 @@
 			<div class="btn-group">
 				<button type="button" class="btn btn-default">按钮 1</button>
 				<button type="button" class="btn btn-default">按钮 2</button>
-				<button type="button" class="btn btn-default">按钮 3</button>
+				<button type="button" class="btn btn-default">按钮 <span class="caret"></span></button>
 			</div>
 		</div>
 		<div class="container">

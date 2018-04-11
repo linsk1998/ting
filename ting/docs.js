@@ -17,10 +17,10 @@
 					s="teal";
 			}
 		}
-		document.getElementById("cssTheme").href=Sky.getAbsPath("../theme/"+theme+"/"+s+".css",base);
+		document.getElementById("cssTheme").href=new URL("../theme/"+theme+"/"+s+".css",base).href;
 	};
 	global.changeSkin=function(s){
 		skin=s;
-		document.getElementById("cssTheme").href=Sky.getAbsPath("../theme/"+theme+"/"+s+".css",base);
+		document.getElementById("cssTheme").href=new URL("../theme/"+theme+"/"+s+".css",base).href;
 	};
 })(this);

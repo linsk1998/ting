@@ -15,22 +15,18 @@
 	<title>对齐</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
-	<link href="../ting/zIndex.css" rel="stylesheet"/>
-	<link href="../theme/default/teal.css" rel="stylesheet" id="cssTheme"/>
-	<link href="../ting/utilities.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" -->
 	<!-- InstanceEndEditable -->
 	<script src="/linsk1998/skyjs/master/sky.js"></script>
 	<script src="../ting/ting.js"></script>
-	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-top pull-front" role="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<div class="navbar-brand vertical-align"><a href="../" class="vertical-align-middle"><img src="../images/logo.png"/>Ting Web UI</a></div>
+						<a href="../" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -42,7 +38,7 @@
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
-							<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
+							<!--<li class="dropdown" role="dropdown"><a href="javascript:void 0"><i class="fa">&#xf1fb;</i>色调</a>
 								<ul class="dropdown-menu">
 									<li><a href="javascript:changeSkin('blue');void 0"><span class="text-blue">█</span> blue</a></li>
 									<li><a href="javascript:changeSkin('teal');void 0"><span class="text-teal">█</span> teal</a></li>
@@ -58,7 +54,7 @@
 									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
 									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
@@ -74,11 +70,37 @@
 		<div class="container">
 			<h1 class="page-header">对齐</h1>
 			<h2 class="page-header">垂直对齐</h2>
-			<div class="vertical-align" style=" height:80px; background:#eee; margin-bottom:20px;">
-				<div class="vertical-align-middle">vertical-align-middle</div>
+			<div style=" height:80px; background:#eee; margin-bottom:20px;">
+				<div class="align-middle">推荐用法</div>
+				<div class="line-middle"><!--用于垂直对齐勿删--></div>
 			</div>
 			<div class="vertical-align" style=" height:80px; background:#eee; margin-bottom:20px;">
-				<div class="vertical-align-bottom">vertical-align-bottom</div>
+				<div class="align-middle">align-middle</div>
+			</div>
+			<div class="vertical-align" style=" height:80px; background:#eee; margin-bottom:20px;">
+				<div class="align-bottom">align-bottom</div>
+			</div>
+			<h3 class="page-header">单行文本使用</h3>
+			<div style=" height:50px; line-height:50px; background:#eee;">
+				<img src="http://placeholder.qiniudn.com/48x24/006666/fff"/>
+				<span class="line-middle">只有单行文字时只要line-height和height相等就行了，有图时要加这个类</span>
+				<span class="badge">2</span>
+			</div>
+			<h3 class="page-header">混合使用</h3>
+			<div class="row-separate">
+				<div class="col-md-6">
+					<div style=" height:100px; background:#eee;">
+						<img class="align-middle" src="http://placeholder.qiniudn.com/48x48/006666/fff"/>
+						<div class="align-middle">推荐用<br/>法</div>
+						<div class="line-middle"><!--用于垂直对齐勿删--></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="vertical-align" style=" height:100px; background:#eee;">
+						<img class="align-middle" src="http://placeholder.qiniudn.com/48x48/006666/fff"/>
+						<span class="align-middle">多行文字<br/>垂直<br/>居中</span>
+					</div>
+				</div>
 			</div>
 			<h2 class="page-header">水平对齐</h2>
 			<p class="text-left">文字居左</p>

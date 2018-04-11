@@ -1,0 +1,63 @@
+
+.dialog{ text-align:left; display:inline-block;*zoom:1;*display:inline; background:#FFF; border:1px solid #DDD; box-shadow:1px 1px 50px rgba(0,0,0,.3); position:relative;}
+.dialog-header{ background:#F8F8F8; border-bottom:1px solid #eee; padding:8px 16px;}
+.dialog-title{ margin:0;}
+<% if(!quirk){%>
+html>body .dialog-header{ *text-align:right;}
+html>body .dialog-header .close{ *float:none;}
+<% } %>
+.dialog-title{ *float:left;}
+.dialog-body{ padding:16px;}
+.dialog-footer{ border-top:1px solid #eee; padding:12px 16px;}
+.dialog-primary .dialog-header .close{ color:#FFF;}
+.dialog-primary .dialog-header{ color:#fff; background-color:#00635a; border-color:#337ab7;}
+.dialog-primary .dialog-footer .btn-default:hover,
+.dialog-primary .dialog-footer input.btn-default:focus
+.dialog-primary .dialog-footer button.btn-default:focus{ border-color:<%=theme['primary']%>;}
+.dialog-danger{ border-color:#ebccd1;}
+.dialog-danger .dialog-header{ color:#a94442; background-color:#f2dede; border-color:#ebccd1;}
+.dialog-danger .dialog-footer .btn-default:hover,
+.dialog-danger .dialog-footer input.btn-default:focus
+.dialog-danger .dialog-footer button.btn-default:focus{ border-color:#d9534f;}
+.dialog-warning{ border-color:#faebcc;}
+.dialog-warning .dialog-header{ color:#8a6d3b; background-color:#fcf8e3; border-color:#faebcc;}
+.dialog-warning .dialog-footer .btn-default:hover,
+.dialog-warning .dialog-footer input.btn-default:focus
+.dialog-warning .dialog-footer button.btn-default:focus{ border-color:#f0ad4e;}
+.dialog-success{ border-color:#d6e9c6;}
+.dialog-success .dialog-header{ color:#3c763d; background-color:#dff0d8; border-color:#d6e9c6;}
+.dialog-success .dialog-footer .btn-default:hover,
+.dialog-success .dialog-footer input.btn-default:focus
+.dialog-success .dialog-footer button.btn-default:focus{ border-color:#5cb85c;}
+.dialog-info{ border-color:#bce8f1;}
+.dialog-info .dialog-header{ color:#31708f; background-color:#d9edf7; border-color:#bce8f1;}
+.dialog-info .dialog-footer .btn-default:hover,
+.dialog-info .dialog-footer input.btn-default:focus
+.dialog-info .dialog-footer button.btn-default:focus{ border-color:#5bc0de;}
+.dialog-inverse .dialog-header .close{ color:#FFF;}
+.dialog-inverse .dialog-header{ color:#fff; background-color:#444; border-color:#ebccd1;}
+.dialog-inverse .dialog-footer .btn-default:hover,
+.dialog-inverse .dialog-footer input.btn-default:focus
+.dialog-inverse .dialog-footer button.btn-default:focus{ border-color:#444;}
+.dialog-rim{ box-shadow:none; background:none; background:rgba(0,0,0,0.5); padding:5px; -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.dialog-rim .dialog-body,.dialog-rim .dialog-footer{ background:#fff;}
+.dialog-close{ font-size:24px; display:inline-block; width:24px; line-height:24px; color:#777;
+position:absolute; top:0; right:0; margin-top:-12px; margin-right:-13px;
+-webkit-text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
+-moz-text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
+text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
+-webkit-filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));}
+.dialog-close:hover{ text-decoration:none;}
+.dialog-close{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+*zoom:expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#xf057;');}
+.dialog-close:before{content:"\f057";}
+
+@media \0screen\,screen\9 {
+	.dialog-rim,.toast{ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
+}
+.toast{ background:rgba(0,0,0,0.5); color:#fff; display:inline-block; *display:inline; *zoom:1; padding:10px 20px; border:0 none;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.msg{ display:inline-block; *display:inline; *zoom:1; border:1px solid #D3D4D3; padding:12px 20px; background:#FFF;
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.msg .fa{ line-height:1; vertical-align:middle; margin-right:4px;}

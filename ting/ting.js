@@ -30,7 +30,7 @@
 }());
 
 $(function(){
-	Sky.attachEvent(document.body,"click",function(e){
+	$(document).on("click",function(e){
 		$.getElementsByClassName(document,"dropdown-menu").forEach(function(ele){
 			var parent=ele.parentNode;
 			while(parent && parent!=document){
@@ -71,12 +71,10 @@ Sky.attachEvent(window,"load",function(e){
 		}
 		var t=setInterval(autoNext,5000);
 		$this.mouseenter(function(){
-			console.log("mouseenter");
 			clearInterval(t);
 			t=0;
 		});
 		$this.mouseleave(function(){
-			console.log("mouseleave");
 			if(!t){
 				t=setInterval(autoNext,5000);
 			}

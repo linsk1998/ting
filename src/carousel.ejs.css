@@ -1,0 +1,28 @@
+
+.carousel{ position:relative; overflow:hidden;}
+.carousel-indicators{ list-style:none; position:absolute; top:10px; right:10px;}
+.carousel-indicators li{ display:inline; float:left; margin-left:0.5em; color:#fff; cursor:pointer; opacity:0.5;}
+.carousel-indicators li.active{ opacity:0.9;}
+.carousel-inner{ overflow:hidden;}
+.carousel-inner .item{ font-size:0; position:absolute; top:0; left:0; width:100%;}
+.carousel-inner .active{ position:relative; -webkit-animation:fadein .5s forwards;-moz-animation:fadein .5s forwards;animation:fadein .5s forwards;}
+.carousel-control .left,.carousel-control .right{ 
+display:block; width:40px; height:40px; margin-top:-23px; font-size:60px; line-height:30px; text-align:center; background:#222222; border:3px solid #ffffff; color:#ffffff; text-decoration:none; position:absolute; top:50%; opacity:0.5;
+-webkit-border-radius:50%;-moz-border-radius:50%;-moz-border-radius:50%;border-radius:50%;}
+.carousel-control .left{ left:10px;}
+.carousel-control .right{ right:10px;}
+.carousel-caption{ font-size:14px; left:0; bottom:0; position:absolute; width:100%; color:#FFFFFF; background:rgba(0,0,0,0.5);
+filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
+.carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin-left:10px; margin-right:10px;}
+@media \0screen\,screen\9{
+	.carousel-indicators li{ filter:alpha(opacity=50);}
+	.carousel-indicators li.active{ filter:alpha(opacity=90);}
+	.carousel-control .left,.carousel-control .right{ filter:alpha(opacity=50);}
+	.carousel-control .left:hover,.carousel-control .right:hover{ filter:alpha(opacity=90);}
+}
+.carousel-control .left:hover,.carousel-control .right:hover{ opacity:0.9; filter:alpha(opacity=90); color:#fff;}
+@media (max-width:480px){
+	.modal-loading:after{ width:30%; padding-bottom:30%; margin-left:-15%; margin-top:-15%;}
+	.carousel-caption{ position:static; padding:10px 0; background:rgba(0,0,0,0.75);}
+	.carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin:10px;}
+}
