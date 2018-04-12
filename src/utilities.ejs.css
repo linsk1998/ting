@@ -11,10 +11,12 @@
 .align-top{ vertical-align:top; display:inline-block; *zoom:1; *display:inline;}
 .align-middle{ vertical-align:middle; display:inline-block; *zoom:1; *display:inline;}
 .align-bottom{ vertical-align:bottom; display:inline-block; *zoom:1; *display:inline;}
-.vertical-align{ *overflow:hidden;}
 .vertical-align:after{ width:0; content:''; display:inline-block; height:100%; vertical-align:middle;}
-.vertical-align .align-middle{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(Math.round(this.parentNode.clientHeight/2-this.offsetHeight/2),0)+'px');}
-.vertical-align .align-bottom{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(this.parentNode.clientHeight-this.offsetHeight,0)+'px');}
+@media screen\9{
+	.vertical-align{ *overflow:hidden;}
+	.vertical-align .align-middle{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(Math.round(this.parentNode.clientHeight/2-this.offsetHeight/2),0)+'px');}
+	.vertical-align .align-bottom{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(this.parentNode.clientHeight-this.offsetHeight,0)+'px');}
+}
 
 
 @media \0screen\,screen\9 {
@@ -56,7 +58,7 @@ for(var i=2;i<10;i++){%>
 
 .text-primary{ color:<%=darken(theme['primary'],0.2).saturate(-0.07)%>;}
 a.text-primary:hover,p.text-primary a:hover{ color:<%=darken(theme['primary'],0.3).saturate(-0.07)%>;}
-.icon-primary{ color:<%=theme['primary']%>;}
+.brand-primary{ color:<%=theme['primary']%>;}
 .bg-primary{ color:#fff; background-color:<%=theme['primary']%>;}
 a.bg-primary:hover,.bg-primary a:hover{ color:#fff; background-color:<%=darken(theme['primary'],0.1)%>;}
 .border-primary{ border-color:<%=darken(theme['primary'],0.05)%>;}
@@ -64,7 +66,7 @@ a.bg-primary:hover,.bg-primary a:hover{ color:#fff; background-color:<%=darken(t
 <% ['success','info','warning','danger'].forEach(function(color){%>
 .text-<%=color%>{ color:<%=eval('$'+color).text%>;}
 a.text-<%=color%>:hover,p.text-<%=color%>a:hover{ color:<%=eval('$'+color).text.darken(0.1)%>;}
-.icon-<%=color%>{ color:<%=eval('$'+color)%>;}
+.brand-<%=color%>{ color:<%=eval('$'+color)%>;}
 .bg-<%=color%>{ background-color:<%=eval('$'+color).bg%>;}
 .border-<%=color%>{ border-color:<%=eval('$'+color).bg.darken(0.05)%>;}
 <% });%>
@@ -74,7 +76,7 @@ var themeColor={'teal':Color(0x009688),'blue':Color(0x2196F3),'indigo':Color(0x3
 for(var color in themeColor){%>
 .text-<%=color%>{ color:<%=themeColor[color].darken(0.2).saturate(-0.07)%>;}
 a.text-<%=color%>:hover,p.text-<%=color%> a:hover{ color:<%=themeColor[color].darken(0.3).saturate(-0.07)%>;}
-.icon-<%=color%>{ color:<%=themeColor[color]%>;}
+.brand-<%=color%>{ color:<%=themeColor[color]%>;}
 .bg-<%=color%>{ background-color:<%=themeColor[color].spin(-17.5).saturate(0.05).lighten(0.35)%>;}
 .border-<%=color%>{ border-color:<%=themeColor[color].spin(-17.5).saturate(0.05).lighten(0.3)%>;}
 <% } %>
@@ -123,12 +125,12 @@ a.text-<%=color%>:hover,p.text-<%=color%> a:hover{ color:<%=themeColor[color].da
 .box-mrlg,.box-mhlg{ margin-right:24px !important;}
 .box-mrxl,.box-mhxl{ margin-right:32px !important;}
  
-.box-p0{ margin:0 !important;}
-.box-pxs{ margin:4xp !important;}
-.box-psm{ margin:8px !important;}
-.box-pmd{ margin:16px !important;}
-.box-plg{ margin:24px !important;}
-.box-pxl{ margin:32px !important;}
+.box-p0{ padding:0 !important;}
+.box-pxs{ padding:4xp !important;}
+.box-psm{ padding:8px !important;}
+.box-pmd{ padding:16px !important;}
+.box-plg{ padding:24px !important;}
+.box-pxl{ padding:32px !important;}
 
 .box-pt0,.box-pv0{ padding-top:0 !important;}
 .box-ptxs,.box-pvxs{ padding-top:4xp !important;}
