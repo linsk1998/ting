@@ -34,3 +34,4 @@ exports.$red=Color(0xC5020D);
 exports.$brown=Color(0x795548);
 
 exports.fontAwesome="http://cdn.bootcss.com/font-awesome/4.6.3/fonts";
+exports.modalAlpha=0.4;

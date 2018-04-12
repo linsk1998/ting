@@ -61,6 +61,9 @@ blockquote p:last-child,blockquote ul:last-child,blockquote ol:last-child{ margi
 blockquote footer,blockquote small,blockquote .small{ display:block; font-size:80%; color:#777;}
 dl{ margin-top:0; margin-bottom:20px;}
 dt{ font-weight:bold;}
+dialog{ position:absolute; left:0px; right:0px; 
+width:-moz-fit-content;width:-webkit-fit-content;width:fit-content; height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;
+margin:auto; border-width:3px solid #000; padding:1em; background:white;}
 
 /*type*/
 .page-header{ padding-bottom:9px; border-bottom:1px solid #eee;}
