@@ -1,7 +1,7 @@
 
 .input-group{ display:table; width:100%; position:relative; *font-size:0;}
 .input-group .form-control,.input-group-addon,.input-group-btn{ display:table-cell; *display:inline-block; vertical-align:middle;}
-.input-group-addon{ padding:6px 12px; font-size:14px; font-weight:400; line-height:18px; color: #555;}
+.input-group-addon{ padding:6px 12px; font-size:<%=fontSizeBase%>; font-weight:400; line-height:18px; color: #555;}
 .input-group-addon,.input-group-btn{ text-align:center; background-color:#eee; border:1px solid #ccc;}
 .input-group-addon:first-child,.input-group-btn:first-child{ border-right:0;}
 .input-group-addon:last-child,.input-group-btn:last-child{ border-left:0;}

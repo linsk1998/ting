@@ -15,7 +15,7 @@ svg:not(:root){ overflow:hidden;}
 figure{ margin:1em 40px;}
 
 html{ min-font-size:0 !important; -webkit-min-font-size:0 !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
-body{ font-size:14px; line-height:1.42857143; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif;}
+body{ font-size:<%=fontSizeBase%>; line-height:1.42857143; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif;}
 
 body,dd,dl{margin:0; padding:0;}
 html,body,img{border:0;}
@@ -72,7 +72,7 @@ margin:auto; border-width:3px solid #000; padding:1em; background:white;}
 .list-inline li{ display:inline-block; *zoom:1; *display:inline; padding-right:5px; padding-left:5px;}
 @media all and (min-width:0px){
 	.list-inline{ font-size:0;}
-	.list-inline li{ font-size:1rem;}
+	.list-inline li{ font-size:<%=fontSizeBase%>;}
 }
 .dl-horizontal dt{ float:left; width:160px; clear:left; text-align:right; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .dl-horizontal dd{ margin-left:180px;}

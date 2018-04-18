@@ -10,36 +10,18 @@
 }
 .dialog-body{ padding:16px;}
 .dialog-footer{ border-top:1px solid #eee; padding:12px 16px;}
-.dialog-primary .dialog-header .close{ color:#FFF;}
 .dialog-primary .dialog-header{ color:#fff; background-color:<%=theme['primary']%>; border-color:<%=theme['primary']%>;}
-.dialog-primary .dialog-footer .btn-default:hover,
-.dialog-primary .dialog-footer input.btn-default:focus
-.dialog-primary .dialog-footer button.btn-default:focus{ border-color:<%=theme['primary']%>;}
-.dialog-danger{ border-color:#ebccd1;}
-.dialog-danger .dialog-header{ color:#a94442; background-color:#f2dede; border-color:#ebccd1;}
-.dialog-danger .dialog-footer .btn-default:hover,
-.dialog-danger .dialog-footer input.btn-default:focus
-.dialog-danger .dialog-footer button.btn-default:focus{ border-color:#d9534f;}
-.dialog-warning{ border-color:#faebcc;}
-.dialog-warning .dialog-header{ color:#8a6d3b; background-color:#fcf8e3; border-color:#faebcc;}
-.dialog-warning .dialog-footer .btn-default:hover,
-.dialog-warning .dialog-footer input.btn-default:focus
-.dialog-warning .dialog-footer button.btn-default:focus{ border-color:#f0ad4e;}
-.dialog-success{ border-color:#d6e9c6;}
-.dialog-success .dialog-header{ color:#3c763d; background-color:#dff0d8; border-color:#d6e9c6;}
-.dialog-success .dialog-footer .btn-default:hover,
-.dialog-success .dialog-footer input.btn-default:focus
-.dialog-success .dialog-footer button.btn-default:focus{ border-color:#5cb85c;}
-.dialog-info{ border-color:#bce8f1;}
-.dialog-info .dialog-header{ color:#31708f; background-color:#d9edf7; border-color:#bce8f1;}
-.dialog-info .dialog-footer .btn-default:hover,
-.dialog-info .dialog-footer input.btn-default:focus
-.dialog-info .dialog-footer button.btn-default:focus{ border-color:#5bc0de;}
-.dialog-inverse .dialog-header .close{ color:#FFF;}
+.dialog-danger .dialog-header{ color:#fff; background-color:<%=$danger%>; border-color:<%=$danger%>;}
+.dialog-warning .dialog-header{ color:#fff; background-color:<%=$warning%>; border-color:<%=$warning%>;}
+.dialog-success .dialog-header{ color:#fff; background-color:<%=$success%>; border-color:<%=$success%>;}
+.dialog-info .dialog-header{ color:#fff; background-color:<%=$info%>; border-color:<%=$info%>;}
 .dialog-inverse .dialog-header{ color:#fff; background-color:#444; border-color:#ebccd1;}
-.dialog-inverse .dialog-footer .btn-default:hover,
-.dialog-inverse .dialog-footer input.btn-default:focus
-.dialog-inverse .dialog-footer button.btn-default:focus{ border-color:#444;}
+.dialog-primary .close,
+.dialog-danger .close,
+.dialog-warning .close,
+.dialog-success .close,
+.dialog-info .close,
+.dialog-inverse .close{ color:#FFF;}
 .dialog-rim{ box-shadow:none; background:none; background:rgba(0,0,0,0.5); padding:5px; -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
 .dialog-rim .dialog-body,.dialog-rim .dialog-footer{ background:#fff;}
 .dialog-close{ font-size:24px; display:inline-block; width:24px; line-height:24px; color:#777;

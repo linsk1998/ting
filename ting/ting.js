@@ -31,13 +31,6 @@
 
 $(function(){
 	$(document).on("click",function(e){
-		$.getElementsByClassName(document,"dropdown-menu").forEach(function(ele){
-			var parent=ele.parentNode;
-			while(parent && parent!=document){
-				$.removeClass(parent,"open");
-				parent=parent.parentNode;
-			};
-		});
 		var cur=e.target;
 		var parent=cur.parentNode;
 		while(parent && parent!=document){
@@ -53,6 +46,15 @@ $(function(){
 			cur=parent;
 			parent=cur.parentNode;
 		}
+	});
+	$(document).on("mousedown",function(e){
+		$.getElementsByClassName(document,"dropdown-menu").forEach(function(ele){
+			var parent=ele.parentNode;
+			while(parent && parent!=document){
+				$.removeClass(parent,"open");
+				parent=parent.parentNode;
+			};
+		});
 	});
 });
 Sky.attachEvent(window,"load",function(e){
