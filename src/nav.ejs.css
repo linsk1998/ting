@@ -4,7 +4,7 @@ table.nav{ border-collapse:collapse; width:100%; table-layout:fixed;}
 table.nav td,table.nav th{ text-align:center; padding:0;}
 ul.nav{ list-style:none; font-size:0;}
 ul.nav li{ display:inline-block; *zoom:1; *display:inline; margin-right:2px;}
-.nav td,.nav th,.nav li{ line-height:14px; font-size:14px; position:relative;}
+.nav td,.nav th,.nav li{ line-height:1; font-size:<%=fontSizeBase%>; position:relative;}
 ul.nav a{ display:block; padding:10px 15px;}
 table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .nav * a:hover{ text-decoration:none;}
