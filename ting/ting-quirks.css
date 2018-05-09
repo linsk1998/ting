@@ -2404,7 +2404,136 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcol
 	.carousel-caption{ position:static; padding:10px 0; background:#000;}
 	.carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin:10px;}
 }
-
+/* ���Ž��� */
+@-webkit-keyframes zoomin{
+	from{ opacity:0; -webkit-transform:scale(0.3,0.3);}
+}
+@-moz-keyframes zoomin{
+	from{ opacity:0; -moz-transform:scale(0.3,0.3);}
+}
+@-ms-keyframes zoomin{
+	from{ opacity:0; -ms-transform:scale(0.3,0.3);}
+}
+@keyframes zoomin{
+	from{ opacity:0; transform:scale(0.3,0.3);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoominT{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@-moz-keyframes zoominT{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@-ms-keyframes zoominT{
+	from{ opacity:0; -ms-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@keyframes zoominT{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(0,-100%);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoominB{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@-moz-keyframes zoominB{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@-ms-keyframes zoominB{
+	from{ opacity:0; -ms-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@keyframes zoominB{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(0,100%);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoominL{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@-moz-keyframes zoominL{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@-ms-keyframes zoominL{
+	from{ opacity:0; -ms-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@keyframes zoominL{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(-100%,0);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoominR{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@-moz-keyframes zoominR{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@-ms-keyframes zoominR{
+	from{ opacity:0; -ms-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@keyframes zoominR{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(100%,0);}
+}
+/* �����˳� */
+@-webkit-keyframes zoomout{
+	to{ opacity:0; -webkit-transform:scale(0.3,0.3);}
+}
+@-moz-keyframes zoomout{
+	to{ opacity:0; -moz-transform:scale(0.3,0.3);}
+}
+@-ms-keyframes zoomout{
+	to{ opacity:0; -ms-transform:scale(0.3,0.3);}
+}
+@keyframes zoomout{
+	to{ opacity:0; transform:scale(0.3,0.3);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoomoutT{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@-moz-keyframes zoomoutT{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@-ms-keyframes zoomoutT{
+	to{ opacity:0; -ms-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@keyframes zoomoutT{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(0,-100%);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoomoutB{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@-moz-keyframes zoomoutB{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@-ms-keyframes zoomoutB{
+	to{ opacity:0; -ms-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@keyframes zoomoutB{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(0,100%);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoomoutL{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@-moz-keyframes zoomoutL{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@-ms-keyframes zoomoutL{
+	to{ opacity:0; -ms-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@keyframes zoomoutL{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(-100%,0);}
+}
+/* ���Ž���-���� */
+@-webkit-keyframes zoomoutR{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@-moz-keyframes zoomoutR{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@-ms-keyframes zoomoutR{
+	to{ opacity:0; -ms-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@keyframes zoomoutR{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(100%,0);}
+}
 /* ���� */
 @-webkit-keyframes fadein{
 	0%{opacity:0;}
