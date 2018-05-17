@@ -23,7 +23,7 @@ table.container-fluid{ table-layout:fixed; width:100%;<% if(quirk){%> *display:i
 .row-separate{ margin-left:-<%=1/47*100%>%;}
 
 .col-avg-5,.col-avg-7,.col-avg-8,.col-avg-9,
-.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12,
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,
 .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,
 .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,
 .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,
@@ -32,32 +32,30 @@ table.container-fluid{ table-layout:fixed; width:100%;<% if(quirk){%> *display:i
 <% if(!quirk){%>*padding-left:0 !important; *padding-right:0 !important; *border-left-width:0 !important; *border-right-width:0 !important;<% }%>}
 
 .row-separate .col-avg-5,.row-separate .col-avg-7,.row-separate .col-avg-8,.row-separate .col-avg-9,
-.row-separate .span1,.row-separate .span2,.row-separate .span3,.row-separate .span4,.row-separate .span5,.row-separate .span6,
-.row-separate .span7,.row-separate .span8,.row-separate .span9,.row-separate .span10,.row-separate .span11,.row-separate .span12,
+.row-separate .col-1,.row-separate .col-2,.row-separate .col-3,.row-separate .col-4,.row-separate .col-5,.row-separate .col-6,
+.row-separate .col-7,.row-separate .col-8,.row-separate .col-9,.row-separate .col-10,.row-separate .col-11,.row-separate .col-12,
 .row-separate .col-md-1,.row-separate .col-md-2,.row-separate .col-md-3,.row-separate .col-md-4,.row-separate .col-md-5,.row-separate .col-md-6,
 .row-separate .col-md-7,.row-separate .col-md-8,.row-separate .col-md-9,.row-separate .col-md-10,.row-separate .col-md-11,.row-separate .col-md-12
 { _margin-left:<%=1/48*100%>%;}
-.row .span1,.row .span2,.row .span3,.row .span4,.row .span5,.row .span6,
-.row .span7,.row .span8,.row .span9,.row .span10,.row .span11,.row .span12,
+.row .col-1,.row .col-2,.row .col-3,.row .col-4,.row .col-5,.row .col-6,
+.row .col-7,.row .col-8,.row .col-9,.row .col-10,.row .col-11,.row .col-12,
 .row .col-md-1,.row .col-md-2,.row .col-md-3,.row .col-md-4,.row .col-md-5,.row .col-md-6,
 .row .col-md-7,.row .col-md-8,.row .col-md-9,.row .col-md-10,.row .col-md-11,.row .col-md-12
 { _margin-left:0;}
 .row-separate>[class*="col-"]{ margin-left:<%=1/48*100%>%;}
-.row-separate>[class*="span"]{ margin-left:<%=1/48*100%>%;}
 .row>[class*="col-"]{ margin-left:0;}
-.row>[class*="span"]{ margin-left:0;}
 <%
 for(var i=1;i<=12;i++){%>
-.row-separate .span<%=i%>{ width:<%=((3*i+i-1)/48*100*100/101)%>%;}<%
+.row-separate .col-<%=i%>{ width:<%=((3*i+i-1)/48*100*100/101)%>%;}<%
 }
 for(var i=1;i<=12;i++){%>
-.row-separate .offset<%=i%>{ margin-left:<%=quirk?((4*i+1)/48*100*100/101):((4*i+1)/47*100)%>%;}<%
+.row-separate .col-offset-<%=i%>{ margin-left:<%=quirk?((4*i+1)/48*100*100/101):((4*i+1)/47*100)%>%;}<%
 }
 for(var i=1;i<=12;i++){%>
-.row .span<%=i%>{ width:<%=(i/12*100*100/101)%>%;}<%
+.row .col-<%=i%>{ width:<%=(i/12*100*100/101)%>%;}<%
 }
 for(var i=1;i<=12;i++){%>
-.row .offset<%=i%>{ margin-left:<%=(i/12*100*100/101)%>%;}<%
+.row .col-offset-<%=i%>{ margin-left:<%=(i/12*100*100/101)%>%;}<%
 }
 
 for(var i=1;i<=12;i++){%>
@@ -83,16 +81,16 @@ for(var i=1;i<=12;i++){%>
 .row .col-avg-9{ width:<%=(1/9*100*100/101)%>%;}
 <%
 for(var i=1;i<=12;i++){%>
-.row-separate>.span<%=i%>{ width:<%=((3*i+i-1)/48*100)%>%; *width:<%=((3*i+i-1)/48*100*100/101)%>%;}<%
+.row-separate>.col-<%=i%>{ width:<%=((3*i+i-1)/48*100)%>%; *width:<%=((3*i+i-1)/48*100*100/101)%>%;}<%
 }
 for(var i=1;i<=12;i++){%>
-.row-separate>.offset<%=i%>{ margin-left:<%=((4*i+1)/48*100)%>%; *margin-left:<%=((4*i+1)/48*100*100/101)%>%;}<%
+.row-separate>.col-offset-<%=i%>{ margin-left:<%=((4*i+1)/48*100)%>%; *margin-left:<%=((4*i+1)/48*100*100/101)%>%;}<%
 }
 for(var i=1;i<=12;i++){%>
-.row>.span<%=i%>{ width:<%=(i/12*100)%>%; *width:<%=(i/12*100*100/101)%>%;}<%
+.row>.col-<%=i%>{ width:<%=(i/12*100)%>%; *width:<%=(i/12*100*100/101)%>%;}<%
 }
 for(var i=1;i<=12;i++){%>
-.row>.offset<%=i%>{ margin-left:<%=(i/12*100)%>%; *margin-left:<%=(i/12*100*100/101)%>%;}<%
+.row>.col-offset-<%=i%>{ margin-left:<%=(i/12*100)%>%; *margin-left:<%=(i/12*100*100/101)%>%;}<%
 }
 
 for(var i=1;i<=12;i++){%>
@@ -228,3 +226,13 @@ for(var i=1;i<=12;i++){%>
 }
 %>
 }
+
+.col{display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+-moz-box-orient:vertical;-webkit-box-orient:vertical;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;}
+.row-0{ -webkit-flex-shrink:0;flex-shrink:0;}
+<%
+for(var i=1;i<=12;i++){%>
+.col>.row-<%=i%>{ overflow:auto;
+-moz-box-flex:<%=i%>;-webkit-box-flex:<%=i%>;-ms-flex:<%=i%>;-webkit-flex-grow:<%=i%>;flex-grow:<%=i%>;}<%
+}
+%>
