@@ -1,15 +1,10 @@
 
-.media{ margin-top:15px; *position:relative;}
-.media:first-child{ margin-top:0;}
-.media,.media-body{ overflow:hidden; zoom:1;}
-.media-body{ width:100%; *width:auto; /**margin-left:74px; *margin-right:74px;*/
-*margin-right:expression(Sky.getNextElement(this)==null?'':'74px');}
-.media-object{ display:block;}
+.media{ margin-top:15px; *zoom:1;}
+.media:after{ clear:both; display:table; content:"";}
+.media-body{ overflow:hidden;}
+.media-object{ display:block; object-fit:contain; -o-object-fit:contain;}
 .media-object.img-thumbnail{ max-width:none;}
-.media-right,.media .pull-right{ padding-left:10px; *float:right; *position:absolute; *top:0; *right:0;}
-.media-left,.media  .pull-left{ padding-right:10px; *float:left;}
-.media-left,.media-right,.media-body{ display:table-cell; vertical-align:top;}
-.media-middle{ vertical-align:middle;}
-.media-bottom{ vertical-align:bottom;}
+.media-right,.media .pull-right{ padding-left:10px; float:right;}
+.media-left,.media  .pull-left{ padding-right:10px; float:left;}
 .media-heading{ margin-top:0; margin-bottom:5px;}
 .media-list{ padding-left:0; list-style:none;}
