@@ -17,7 +17,7 @@
 	<link href="../ting/ting-quirks.css" rel="stylesheet"/><!-- TemplateEndIf --><!-- TemplateBeginIf cond="quirks==false" -->
 	<link href="../ting/ting.css" rel="stylesheet"/><!-- TemplateEndIf -->
 	<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
-	<script src="../ting/sky.all.js"></script>
+	<script src="/linsk1998/sky-query/master/sky-query.js"></script>
 	<script src="../ting/ting.js"></script>
 	</head>
 	<body>

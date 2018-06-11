@@ -46,3 +46,5 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 
 
 .tab-content{ overflow:auto;}
+.tab-pane{ display:none;}
+.tab-content .active{ display:block; -webkit-animation:fadein .5s forwards;-moz-animation:fadein .5s forwards;animation:fadein .5s forwards;}

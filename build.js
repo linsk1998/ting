@@ -79,32 +79,8 @@ mods.forEach(function(path){
 });
 fs.writeFileSync(__dirname+'/ting/ting-quirks.css', out.join("\n"), 'utf-8');
 
-var https=require('https');
-https.get("https://raw.githubusercontent.com/linsk1998/sky-query/master/sky-query.js",function(req,res){
-	var out='';
-	req.on('data',function(data){
-		out+=data;
-	});
-	req.on('end',function(){
-		https.get("https://raw.githubusercontent.com/linsk1998/module/master/module.js",function(req,res){
-			req.on('data',function(data){
-				out+=data;
-			});
-			req.on('end',function(){
-				https.get("https://raw.githubusercontent.com/linsk1998/module/master/config/default.js",function(req,res){
-					req.on('data',function(data){
-						out+=data;
-					});
-					req.on('end',function(){
-						fs.writeFileSync(__dirname+'/ting/sky.all.js', out, 'utf-8');
-						out='';
-						out+=fs.readFileSync(__dirname+'/src/html5.js','utf-8');
-						out+=fs.readFileSync(__dirname+'/src/role.js','utf-8');
-						//out+=fs.readFileSync(__dirname+'/src/dialog.js','utf-8');
-						fs.writeFileSync(__dirname+'/ting/ting.js', out, 'utf-8');
-					});
-				});
-			});
-		});
-	});
-});
+out=[];
+out.push(fs.readFileSync(__dirname+'/src/html5.js','utf-8'));
+out.push(fs.readFileSync(__dirname+'/src/role.js','utf-8'));
+//out+=fs.readFileSync(__dirname+'/src/dialog.js','utf-8');
+fs.writeFileSync(__dirname+'/ting/ting.js', out.join("\n"), 'utf-8');
