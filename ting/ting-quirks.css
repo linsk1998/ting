@@ -2027,6 +2027,8 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 
 
 .tab-content{ overflow:auto;}
+.tab-pane{ display:none;}
+.tab-content .active{ display:block; -webkit-animation:fadein .5s forwards;-moz-animation:fadein .5s forwards;animation:fadein .5s forwards;}
 
 .alert{ padding:8px 16px; margin-bottom:8px; border:1px solid transparent;}
 .alert h4{ margin-top:0; color:inherit;}

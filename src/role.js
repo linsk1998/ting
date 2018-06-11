@@ -17,8 +17,16 @@ $(function(){
 			parent=cur.parentNode;
 		}
 	});
+	$(document).on('click',"[role=tabbable]>.nav>li",function(e){
+		var siblings=Array.from(this.parentNode.children);
+		var index=siblings.indexOf(this);
+		var $tabbable=$(this.parentNode.parentNode);
+		$tabbable.find(".active").removeClass("active");
+		$(this).addClass("active");
+		$tabbable.find(".tab-pane").eq(index).addClass("active");
+	});
 	$(document).on("mousedown",function(e){
-		$.getElementsByClassName(document,"dropdown-menu").forEach(function(ele){
+		$.getElementsByClassName("dropdown-menu").forEach(function(ele){
 			var parent=ele.parentNode;
 			while(parent && parent!=document){
 				$.removeClass(parent,"open");

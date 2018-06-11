@@ -12,7 +12,7 @@
 	<!-- InstanceParam name="javascript" type="boolean" value="true" -->
 	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title></title>
+	<title>可切换式标签页</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
@@ -67,15 +67,37 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">提示信息</h1>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="toast">测试中</div>
-				</div>
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="msg"><i class="fa fa-2x brand-success">&#xf058;</i>测试中</div>
+		<div class="container">
+			<h2 class="page-header">变换方向的标签页</h2>
+			<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+				<div class="tabbable tabs-left" role="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Profile</a></li>
+						<li><a href="javascript:void 0">Messages</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active">aaa</div>
+						<div class="tab-pane">bbb</div>
+						<div class="tab-pane">ccc</div>
+					</div>
 				</div>
 			</div>
+			<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+				<div class="tabbable tabs-right" role="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Profile</a></li>
+						<li><a href="javascript:void 0">Messages</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active">aaa</div>
+						<div class="tab-pane">bbb</div>
+						<div class="tab-pane">ccc</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		</div>
 		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">
