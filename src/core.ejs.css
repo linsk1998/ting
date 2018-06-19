@@ -85,6 +85,7 @@ margin:auto; border-width:3px solid #000; padding:1em; background:white;}
 .thumbnail{ display:block; padding:4px; margin-bottom:20px; line-height:0; background-color:#fff; border:1px solid #ddd;}
 .thumbnail img,.thumbnail img{ margin-right:auto; margin-left:auto;}
 .thumbnail .caption{ padding:9px; color:#333; line-height:20px;}
+a.thumbnail:hover{ border-color:#337ab7;}
 
 .footer{ background:#f5f5f5; padding:30px 0; margin-top:16px;}
 .footer p{ color:#666;}
@@ -121,6 +122,4 @@ font-weight:normal; font-style:normal;}
 .fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
 .fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}
 .fa-inverse{color:#fff}
-
-
 

@@ -60,6 +60,7 @@ var mods=[
 	"modal.ejs.css",
 	"dialog.ejs.css",
 	"carousel.ejs.css",
+	"datatable.ejs.css",
 	"animation.css",
 	"utilities.ejs.css"
 ];
@@ -79,8 +80,8 @@ mods.forEach(function(path){
 });
 fs.writeFileSync(__dirname+'/ting/ting-quirks.css', out.join("\n"), 'utf-8');
 
-out=[];
-out.push(fs.readFileSync(__dirname+'/src/html5.js','utf-8'));
-out.push(fs.readFileSync(__dirname+'/src/role.js','utf-8'));
+//out=[];
+//out.push(fs.readFileSync(__dirname+'/src/html5.js','utf-8'));
+//out.push(fs.readFileSync(__dirname+'/src/role.js','utf-8'));
 //out+=fs.readFileSync(__dirname+'/src/dialog.js','utf-8');
-fs.writeFileSync(__dirname+'/ting/ting.js', out.join("\n"), 'utf-8');
+//fs.writeFileSync(__dirname+'/ting/ting.js', out.join("\n"), 'utf-8');

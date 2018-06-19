@@ -1,6 +1,6 @@
 
 .table{ width:100%; max-width:100%; margin-bottom:20px; border-collapse:collapse; border-spacing:0;}
-.table  td,.table  th{ padding:8px; line-height:1.42857143; vertical-align:top; border-top:1px solid #D8DCF0;}
+.table  td,.table  th{ padding:8px; line-height:1.42857143; vertical-align:top; border-top:1px solid #D8DCF0; overflow:hidden;}
 .table th { vertical-align:bottom; border-bottom:2px solid #D8DCF0;}
 .table tr:first-child td,.table tr:first-child th { border-top:0;}
 .table > tbody + tbody { border-top:2px solid #D8DCF0;}

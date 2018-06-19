@@ -1,0 +1,23 @@
+
+
+.datatable table{ table-layout:fixed; margin:0;}
+.datatable{ border:1px solid #D8DCF0; display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex; width:100%;
+-moz-box-orient:vertical;-webkit-box-orient:vertical;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;}
+.datatable-header{ -webkit-flex-shrink:0; flex-shrink:0;}
+.datatable-body{ overflow:auto; border-top:0 none;
+-webkit-box-flex:1;-ms-flex:1;-webkit-flex-grow:1;flex-grow:1;}
+.datatable table{ border:0 none;}
+.datatable  tr td:first-child,.datatable  tr th:first-child{ border-left:0 none;}
+.datatable  tr td:last-child,.datatable  tr th:last-child{ border-right:0 none;}
+.datatable .table tr:first-child td,.datatable .table tr:first-child th{ border-top:0 none;}
+
+
+.scroller{ overflow-y:hidden; position:relative;}
+.scrollBar{ position:absolute; top:0; right:0; width:3px; height:5px; border:1px solid #fff; background:#000; opacity:.5; z-index:2;}
+
+.btn-toolbar form .form-control{ width:auto;}
+.btn-toolbar form .input-group{ *width:180px;}
+@media screen and (max-width:970px){
+	.btn-toolbar  form{ margin-bottom:10px; float:none;}
+	.btn-toolbar  form .form-control{ width:100%;}
+}
