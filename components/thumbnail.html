@@ -8,11 +8,11 @@
 	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
 	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
 	<!-- InstanceParam name="css" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="javascript" type="boolean" value="true" -->
+	<!-- InstanceParam name="components" type="boolean" value="true" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
 	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>javascript</title>
+	<title>缩略图</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
@@ -32,8 +32,8 @@
 							<li><a href="../getting-started/index.html">起步</a></li>
 							<li><a href="../scaffolding/index.html">脚手架</a></li>
 							<li><a href="../css/index.html">全局样式</a></li>
-							<li><a href="../components/index.html">组件</a></li>
-							<li class="active"><a href="index.html">JavaScript插件</a></li>
+							<li class="active"><a href="index.html">组件</a></li>
+							<li><a href="../javascript/index.html">JavaScript插件</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
@@ -67,35 +67,31 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">下拉菜单</h2>
-			<div class="dropdown" role="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					Dropdown
-					<span class="caret"></span>
-				</button><br/>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-				</ul>
+			<h1 class="page-header">缩略图</h1>
+			<p>通过缩略图组件扩展和栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。</p>
+			<div class="row-separate">
+				<div class="col-md-4">
+					<a href="#" class="thumbnail"><img src="http://placeholder.qiniudn.com/300x200" width="100%" height="200"/></a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="thumbnail"><img src="http://placeholder.qiniudn.com/300x200" width="100%" height="200"/></a>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="thumbnail"><img src="http://placeholder.qiniudn.com/300x200" width="100%" height="200"/></a>
+				</div>
 			</div>
-			<h2 class="page-header">导航条</h2>
-			<p><a href="navbar.html">例子</a></p>
-			<h2 class="page-header">可切换标签页</h2>
-			<p><a href="tabs.html">例子</a></p>
-			<h2 class="page-header">模态对话框</h2>
-			<p><a href="modal.html">模态遮罩</a> <a href="modal-loading.html">模态遮罩加载中...</a></p>
-			<p><a href="toast.html">提示</a></p>
-			<p><a href="dialog.html">对话框</a> <a href="dialog-quirks.html">对话框quirks</a></p>
-			<h2 class="page-header">轮播</h2>
-			<p><a href="carousel.html">例子</a></p>
-			<h2 class="page-header">滚动条</h2>
-			<p><a href="scroller.html">例子</a></p>
-			<h2 class="page-header">数据表格</h2>
-			<p><a href="datatable.html" target="_blank">例子</a></p>
-			
+			<div class="row-separate">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="http://placeholder.qiniudn.com/300x200" width="100%"/>
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">

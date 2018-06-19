@@ -227,12 +227,12 @@ for(var i=1;i<=12;i++){%>
 %>
 }
 
-.col{display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+.col{display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex; width:100%;
 -moz-box-orient:vertical;-webkit-box-orient:vertical;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;}
-.row-0{ -webkit-flex-shrink:0;flex-shrink:0;}
+.row-0{ -webkit-flex-shrink:0; flex-shrink:0;}
 <%
 for(var i=1;i<=12;i++){%>
-.col>.row-<%=i%>{ overflow:auto;
+.col>.row-<%=i%>{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:<%=i%>;-webkit-box-flex:<%=i%>;-ms-flex:<%=i%>;-webkit-flex-grow:<%=i%>;flex-grow:<%=i%>;}<%
 }
 %>

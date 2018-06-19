@@ -32,7 +32,7 @@
 
 $(function(){
 	$(document).on("click","[role=dropdown]>.dropdown-toggle",function(e){
-		$(this.parentNode).addClass("open");
+		$(this.parentNode).toggleClass("open");
 	});
 	function closeDropdown(e){
 		$(".open[role=dropdown]>.dropdown-toggle",document).each(function(){
@@ -41,11 +41,6 @@ $(function(){
 			}
 		});
 	}
-	/*if('ontouchstart' in document){
-		$(document).on("touchstart",closeDropdown);
-	}else{
-		$(document).on("mousedown",closeDropdown);
-	}*/
 	$(document).on("click",closeDropdown);
 	$(document).on('click',"[data-dismiss]",function(e){
 		var dismiss=this.getAttribute("data-dismiss");
@@ -176,26 +171,37 @@ $(function(){
 $(function(){
 	function setScrollBarPoi(e){
 		var ch=this.clientHeight,sh=this.scrollHeight,st=this.scrollTop;
-		if(sh>ch){
-			var scrollBar,$scrollBar=$(this).children(".scrollBar");
-			if($scrollBar.length){
-				scrollBar=$scrollBar[0];
-			}else{
+		if(ch>0 && sh>ch){
+			var $this=$(this);
+			var scrollBar=$this.data("scrollBar");
+			if(!scrollBar){
 				scrollBar=document.createElement('div');
 				scrollBar.className="scrollBar";
-				this.appendChild(scrollBar);
-				$scrollBar.add(scrollBar);
+				document.body.appendChild(scrollBar);
+				$this.data("scrollBar",scrollBar);
 			}
 			var ra=ch/sh;
-			var targetHeight=Math.round(ch*ra);
-			var targetTop=Math.round(st*ra);
-			var oldHeight=parseInt($scrollBar.css('height'));
-			scrollBar.style.height=(oldHeight-scrollBar.offsetHeight+targetHeight)+'px';
-			scrollBar.style.top=(st+targetTop)+'px';
+			var th=Math.round(ch*ra);
+			var mh=5;
+			if(th<mh){
+				th=mh;
+				ra=(ch-mh)/(sh-ch);
+			}
+			var tt=Math.round(st*ra);
+			var oh=parseInt($(scrollBar).css('height'));
+			scrollBar.style.height=(oh-scrollBar.offsetHeight+th)+'px';
+			var offset=$this.offset();
+			scrollBar.style.left=(offset.left+this.clientLeft+this.clientWidth-scrollBar.offsetWidth)+'px';
+			scrollBar.style.top=(offset.top+this.clientTop+tt)+'px';
 		}
 	}
 	function endScroll(e){
-		$(this).children(".scrollBar").remove();
+		var $this=$(this);
+		var scrollBar=$this.data("scrollBar");
+		if(scrollBar){
+			scrollBar.parentNode.removeChild(scrollBar);
+			$this.data("scrollBar",null);
+		}
 	}
 	if('ontouchstart' in document){
 		for (var i=0;i<document.styleSheets.length;i++) {
@@ -206,13 +212,10 @@ $(function(){
 			for(var j=0;j<rules.length;j++){
 				var rule=rules[j];
 				if(rule.selectorText==".scroller"){
-					rule.style.overflow="auto";
+					rule.style.overflowY="auto";
 				}
 			}
 		}
-		//$(document).on('touchstart',"[role=scroller]",setScrollBarPoi);
-		//$(document).on('touchmove',"[role=scroller]",setScrollBarPoi);
-		//$(document).on('touchend',"[role=scroller]",endScroll);
 		document.addEventListener('scroll',function(e){
 			if(e.target==document){
 				return ;
@@ -224,24 +227,31 @@ $(function(){
 		},true);
 	}else{
 		$(document).on('mouseenter',"[role=scroller]",setScrollBarPoi);
-		$(document).on('mousewheel',function(e){
+		$(document).on('wheel',function(e){
 			var target=e.target;
 			do{
 				var wheelDelta = e.wheelDelta;
 				if(target.getAttribute('role')=="scroller"){
-					if(wheelDelta>0) {
-						if(target.scrollTop>0){
-							target.scrollTop-=e.wheelDelta;
-							setScrollBarPoi.call(target);
-							e.preventDefault();
-							return false;
-						}
-					}else{
-						if(target.scrollHeight>target.clientHeight+target.scrollTop){
-							target.scrollTop-=e.wheelDelta;
-							setScrollBarPoi.call(target);
-							e.preventDefault();
-							return false;
+					var ch=target.clientHeight,sh=target.scrollHeight,st=target.scrollTop;
+					if(ch>0 && sh>ch){
+						if(wheelDelta>0) {
+							if(st>0){
+								target.scrollTop=st-=e.wheelDelta;
+								setScrollBarPoi.call(target);
+								e.preventDefault();
+								e.stopPropagation();
+								return false;
+							}
+						}else{
+							var maxScrollTop=sh-ch;
+							if(maxScrollTop>st){
+								st=st-e.wheelDelta;
+								target.scrollTop=st=Math.min(st,maxScrollTop);
+								setScrollBarPoi.call(target);
+								e.preventDefault();
+								e.stopPropagation();
+								return false;
+							}
 						}
 					}
 				}

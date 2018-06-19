@@ -123,9 +123,6 @@ font-weight:normal; font-style:normal;}
 .fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}
 .fa-inverse{color:#fff}
 
-.scroller{ overflow-y:hidden; position:relative;}
-.scroller .scrollBar{ position:absolute; top:0; right:0; width:3px; height:5px; border:1px solid #fff; background:#000; opacity:.5; z-index:2;}
-
 
 .icon-glass,.icon-music,.icon-search,.icon-envelope,.icon-heart,.icon-star,.icon-star-empty,.icon-user,.icon-film,.icon-ok,.icon-remove,.icon-close,.icon-zoom-in,.icon-zoom-out,.icon-power-off,.icon-off,.icon-signal,.icon-cog,.icon-gear,.icon-trash,.icon-home,.icon-clock,.icon-time,.icon-road,.icon-save,.icon-inbox,.icon-refresh,.icon-lock,.icon-flag,.icon-headphones,.icon-volume-off,.icon-volume-down,.icon-volume-up,.icon-qrcode,.icon-barcode,.icon-tag,.icon-tags,.icon-book,.icon-bookmark,.icon-print,.icon-camera,.icon-video-camera,.icon-picture,.icon-photo,.icon-image,.icon-pencil,.icon-map-marker,.icon-adjust,.icon-tint,.icon-edit,.icon-share,.icon-check,.icon-move,.icon-plus-sign,.icon-minus-sign,.icon-error-sign,.icon-remove-sign,.icon-ok-sign,.icon-question-sign,.icon-info-sign,.icon-crosshairs,.icon-remove-circle,.icon-ok-circle,.icon-ban,.icon-turn-right,.icon-plus,.icon-minus,.icon-asterisk,.icon-exclamation-sign,.icon-gift,.icon-leaf,.icon-fire,.icon-eye,.icon-eye-slash,.icon-warning,.icon-plane,.icon-calendar,.icon-random,.icon-comment,.icon-magnet,.icon-retweet,.icon-shopping-cart,.icon-folder,.icon-folder-close,.icon-folder-open,.icon-bar-chart,.icon-camera-retro,.icon-key,.icon-cogs,.icon-comments,.icon-thumbs-up,.icon-thumbs-down,.icon-star-half,.icon-heart-empty,.icon-sign-out,.icon-thumb-tack,.icon-external-link,.icon-sign-in,.icon-trophy,.icon-open,.icon-lemon,.icon-phone,.icon-bookmark-empty,.icon-phone-sign,.icon-unlock,.icon-credit-card,.icon-rss,.icon-hdd,.icon-bullhorn,.icon-bell-empty,.icon-certificate,.icon-globe,.icon-wrench,.icon-tasks,.icon-filter,.icon-briefcase,.icon-group,.icon-cloud,.icon-flask,.icon-navicon,.icon-reorder,.icon-magic,.icon-truck,.icon-money,.icon-sort,.icon-sort-down,.icon-sort-up,.icon-envelope-alt,.icon-gavel,.icon-dashboard,.icon-comment-alt,.icon-comments-alt,.icon-bolt,.icon-sitemap,.icon-umbrella,.icon-lightbulb,.icon-exchange,.icon-cloud-download,.icon-cloud-upload,.icon-suitcase,.icon-bell,.icon-coffee,.icon-cutlery,.icon-building,.icon-fighter-jet,.icon-beer,.icon-desktop,.icon-laptop,.icon-tablet,.icon-mobile,.icon-quote-left,.icon-quote-right,.icon-spinner,.icon-reply,.icon-turn-left,.icon-smile,.icon-frown,.icon-meh,.icon-gamepad,.icon-keyboard,.icon-flag-white,.icon-flag-checkered,.icon-terminal,.icon-code,.icon-reply-all,.icon-star-half-empty,.icon-location-arrow,.icon-crop,.icon-code-fork,.icon-question,.icon-info,.icon-exclamation,.icon-eraser,.icon-puzzle-piece,.icon-microphone,.icon-microphone-slash,.icon-shield,.icon-calendar-empty,.icon-fire-extinguisher,.icon-rocket,.icon-anchor,.icon-unlock-alt,.icon-bullseye,.icon-ellipsis,.icon-ellipsis-v,.icon-rss-sign,.icon-ticket,.icon-level-up,.icon-level-down,.icon-pencil-sign,.icon-ex-link-sign,.icon-share-sign,.icon-compass,.icon-sort-alpha-asc,.icon-sort-alpha-desc,.icon-sort-amount-asc,.icon-sort-amount-desc,.icon-sort-numeric-asc,.icon-sort-numeric-desc,.icon-female,.icon-male,.icon-sun,.icon-moon,.icon-archive,.icon-bug,.icon-wheelchair,.icon-space-shuttle,.icon-envelope-sign,.icon-university,.icon-bank,.icon-institution,.icon-graduation-cap,.icon-mortar-board,.icon-language,.icon-fax,.icon-child,.icon-paw,.icon-spoon,.icon-cube,.icon-cubes,.icon-recycle,.icon-tree,.icon-database,.icon-circle-notch,.icon-paper-plane,.icon-send,.icon-paper-plane-alt,.icon-history,.icon-circle-thin,.icon-sliders,.icon-share-alt,.icon-share-alt-sign,.icon-bomb,.icon-soccer,.icon-tty,.icon-binoculars,.icon-plug,.icon-newspaper,.icon-wifi,.icon-calculator,.icon-bell-slash,.icon-bell-slash-o,.icon-trash-alt,.icon-copyright,.icon-at,.icon-eyedropper,.icon-paint-brush,.icon-birthday-cake,.icon-area-chart,.icon-pie-chart,.icon-line-chart,.icon-toggle-off,.icon-toggle-on,.icon-bicycle,.icon-bus,.icon-cc,.icon-cart-plus,.icon-cart-down,.icon-diamond,.icon-ship,.icon-user-secret,.icon-motorcycle,.icon-street-view,.icon-heartbeat,.icon-server,.icon-user-add,.icon-user-remove,.icon-bed,.icon-hotel,.icon-battery,.icon-battery-4,.icon-battery-3,.icon-battery-2,.icon-battery-1,.icon-battery-0,.icon-battery-empty,.icon-mouse-pointer,.icon-i-cursor,.icon-object-group,.icon-object-ungroup,.icon-sticky-note,.icon-sticky-note-empty,.icon-clone,.icon-balance-scale,.icon-hourglass-0,.icon-hourglass-1,.icon-hourglass-2,.icon-hourglass-3,.icon-hourglass,.icon-trademark,.icon-registered,.icon-creative-commons,.icon-television,.icon-tv,.icon-calendar-plus,.icon-calendar-minus,.icon-calendar-times,.icon-calendar-check,.icon-industry,.icon-map-pin,.icon-map-signs,.icon-map-alt,.icon-map,.icon-commenting,.icon-commenting-alt,.icon-credit-card-alt,.icon-shopping-bag,.icon-shopping-basket,.icon-hashtag,.icon-bluetooth,.icon-bluetooth-b,.icon-percent,.icon-universal-access,.icon-wheelchair-alt,.icon-question-circle,.icon-blind,.icon-fullscreen,.icon-resize-vertical,.icon-resize-horizontal,.icon-download,.icon-upload,.icon-for,.icon-back,.icon-chevron-left,.icon-chevron-right,.icon-chevron-up,.icon-chevron-down,.icon-arrow-left,.icon-arrow-right,.icon-arrow-up,.icon-arrow-down,.icon-hand-right,.icon-hand-left,.icon-hand-up,.icon-hand-down,.icon-sign-left,.icon-sign-right,.icon-sign-up,.icon-sign-down,.icon-caret-down,.icon-caret-up,.icon-caret-left,.icon-caret-right,.icon-angle-double-left,.icon-angle-double-right,.icon-angle-double-up,.icon-angle-double-down,.icon-angle-left,.icon-angle-right,.icon-angle-up,.icon-angle-down,.icon-toggle-down,.icon-toggle-up,.icon-toggle-right,.icon-toggle-left,.icon-long-down,.icon-long-up,.icon-long-left,.icon-long-right,.icon-file,.icon-file-text,.icon-file-alt,.icon-file-text-alt,.icon-file-pdf,.icon-file-word,.icon-file-excel,.icon-file-powerpoint,.icon-file-photo,.icon-file-image,.icon-file-picture,.icon-file-archive,.icon-file-zip,.icon-file-sound,.icon-file-audio,.icon-file-movie,.icon-file-video,.icon-file-code,.icon-thumbs-up-alt,.icon-thumbs-down-alt,.icon-hand-grab,.icon-hand-rock,.icon-hand-stop,.icon-hand-paper,.icon-hand-scissors,.icon-hand-lizard,.icon-hand-spock,.icon-hand-pointer,.icon-hand-peace,.icon-play-circle,.icon-step-backward,.icon-fast-backward,.icon-backward,.icon-play,.icon-pause,.icon-stop,.icon-forward,.icon-fast-forward,.icon-step-forward,.icon-eject,.icon-expand,.icon-compress,.icon-play-sign,.icon-youtube-play,.icon-pause-sign,.icon-pause-circle,.icon-stop-sign,.icon-stop-circle,.icon-unchecked,.icon-disc,.icon-circle,.icon-dot-circle,.icon-square,.icon-minus-square,.icon-plus-square,.icon-check-square,.icon-ambulance,.icon-car,.icon-cab,.icon-taxi,.icon-train,.icon-subway,.icon-th-large,.icon-th,.icon-th-list,.icon-rotate-right,.icon-repeat,.icon-list-alt,.icon-font,.icon-bold,.icon-italic,.icon-text-height,.icon-text-width,.icon-align-left,.icon-align-center,.icon-align-right,.icon-align-justify,.icon-list,.icon-outdent,.icon-dedent,.icon-indent,.icon-chain,.icon-link,.icon-cut,.icon-scissors,.icon-files,.icon-copy,.icon-paperclip,.icon-disk,.icon-floppy,.icon-list-ul,.icon-list-ol,.icon-strikethrough,.icon-underline,.icon-table,.icon-columns,.icon-undo,.icon-rotate-left,.icon-clipboard,.icon-paste,.icon-chain-broken,.icon-unlink,.icon-superscript,.icon-subscript,.icon-header,.icon-paragraph,.icon-twitter-sign,.icon-facebook-sign,.icon-linkedin-sign,.icon-github-sign,.icon-twitter,.icon-facebook,.icon-github,.icon-pinterest,.icon-pinterest-sign,.icon-google-plus-sign,.icon-google-plus,.icon-linkedin,.icon-github-alt,.icon-maxcdn,.icon-html5,.icon-css3,.icon-btc,.icon-bitcoin,.icon-youtube-sign,.icon-youtube,.icon-dropbox,.icon-stack-overflow,.icon-instagram,.icon-apple,.icon-windows,.icon-android,.icon-linux,.icon-dribbble,.icon-skype,.icon-foursquare,.icon-trello,.icon-vk,.icon-weibo,.icon-renren,.icon-pagelines,.icon-stack-exchange,.icon-vimeo-sign,.icon-slack,.icon-wordpress,.icon-openid,.icon-yahoo,.icon-google,.icon-delicious,.icon-digg,.icon-drupal,.icon-joomla,.icon-steam,.icon-steam-sign,.icon-spotify,.icon-deviantart,.icon-soundcloud,.icon-vine,.icon-codepen,.icon-jsfiddle,.icon-git-sign,.icon-git,.icon-tencent-weibo,.icon-qq,.icon-weixin,.icon-twitch,.icon-yelp,.icon-paypal,.icon-google-wallet,.icon-cc-visa,.icon-cc-mastercard,.icon-cc-amex,.icon-cc-paypal,.icon-lastfm,.icon-lastfm-sign,.icon-simplybuilt,.icon-skyatlas,.icon-pinterest-p,.icon-whatsapp,.icon-medium,.icon-opencart,.icon-expeditedssl,.icon-cc-jcb,.icon-cc-diners-club,.icon-gg,.icon-gg-circle,.icon-tripadvisor,.icon-odnoklassniki,.icon-get-pocket,.icon-wikipedia-w,.icon-safari,.icon-chrome,.icon-firefox,.icon-opera,.icon-ie,.icon-500px,.icon-amazon,.icon-houzz,.icon-vimeo,.icon-black-tie,.icon-fonticons,.icon-reddit-alien,.icon-edge,.icon-codiepie,.icon-modx,.icon-fort-awesome,.icon-usb,.icon-product-hunt,.icon-mixcloud,.icon-scribd,.icon-gitlab,.icon-wpbeginner,.icon-wpforms,.icon-envira,.icon-fa,.icon-font-awesome
 { display:inline-block; font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
@@ -1821,33 +1818,33 @@ table.container-fluid{ table-layout:fixed; width:100%;}
 	.row>.col-xs-offset-12{ margin-left:100%;}
 }
 
-.col{display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+.col{display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex; width:100%;
 -moz-box-orient:vertical;-webkit-box-orient:vertical;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;}
-.row-0{ -webkit-flex-shrink:0;flex-shrink:0;}
+.row-0{ -webkit-flex-shrink:0; flex-shrink:0;}
 
-.col>.row-1{ overflow:auto;
+.col>.row-1{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:1;-webkit-box-flex:1;-ms-flex:1;-webkit-flex-grow:1;flex-grow:1;}
-.col>.row-2{ overflow:auto;
+.col>.row-2{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:2;-webkit-box-flex:2;-ms-flex:2;-webkit-flex-grow:2;flex-grow:2;}
-.col>.row-3{ overflow:auto;
+.col>.row-3{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:3;-webkit-box-flex:3;-ms-flex:3;-webkit-flex-grow:3;flex-grow:3;}
-.col>.row-4{ overflow:auto;
+.col>.row-4{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:4;-webkit-box-flex:4;-ms-flex:4;-webkit-flex-grow:4;flex-grow:4;}
-.col>.row-5{ overflow:auto;
+.col>.row-5{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:5;-webkit-box-flex:5;-ms-flex:5;-webkit-flex-grow:5;flex-grow:5;}
-.col>.row-6{ overflow:auto;
+.col>.row-6{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:6;-webkit-box-flex:6;-ms-flex:6;-webkit-flex-grow:6;flex-grow:6;}
-.col>.row-7{ overflow:auto;
+.col>.row-7{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:7;-webkit-box-flex:7;-ms-flex:7;-webkit-flex-grow:7;flex-grow:7;}
-.col>.row-8{ overflow:auto;
+.col>.row-8{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:8;-webkit-box-flex:8;-ms-flex:8;-webkit-flex-grow:8;flex-grow:8;}
-.col>.row-9{ overflow:auto;
+.col>.row-9{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:9;-webkit-box-flex:9;-ms-flex:9;-webkit-flex-grow:9;flex-grow:9;}
-.col>.row-10{ overflow:auto;
+.col>.row-10{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:10;-webkit-box-flex:10;-ms-flex:10;-webkit-flex-grow:10;flex-grow:10;}
-.col>.row-11{ overflow:auto;
+.col>.row-11{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:11;-webkit-box-flex:11;-ms-flex:11;-webkit-flex-grow:11;flex-grow:11;}
-.col>.row-12{ overflow:auto;
+.col>.row-12{ overflow:auto; display:-moz-box; -moz-box-orient:vertical;
 -moz-box-flex:12;-webkit-box-flex:12;-ms-flex:12;-webkit-flex-grow:12;flex-grow:12;}
 
 .btn{ vertical-align:middle; *vertical-align:top; margin-bottom:0; font-size:14px; font-weight:normal; text-align:center; white-space:nowrap; cursor:pointer; border:1px solid;  padding-left:12px; padding-right:12px;
@@ -1925,7 +1922,7 @@ html>body .caret{ display:inline-block; width:0; height:0; margin-left:2px; vert
 button.close{ -webkit-appearance:none; padding:0; cursor:pointer; background:transparent; border:0;}
 
 .table{ width:100%; max-width:100%; margin-bottom:20px; border-collapse:collapse; border-spacing:0;}
-.table  td,.table  th{ padding:8px; line-height:1.42857143; vertical-align:top; border-top:1px solid #D8DCF0;}
+.table  td,.table  th{ padding:8px; line-height:1.42857143; vertical-align:top; border-top:1px solid #D8DCF0; overflow:hidden;}
 .table th { vertical-align:bottom; border-bottom:2px solid #D8DCF0;}
 .table tr:first-child td,.table tr:first-child th { border-top:0;}
 .table > tbody + tbody { border-top:2px solid #D8DCF0;}
@@ -1972,7 +1969,7 @@ select.form-control{ padding:6px;}
 .radio input,.checkbox input{ vertical-align:middle; margin:3px 3px 4px;}
 .form-group .radio,.form-group .checkbox{ margin:0;}
 
-.breadcrumb{ padding:8px 15px; margin:0; margin-bottom:20px; list-style:none; background-color:#f5f5f5; color:#777;
+.breadcrumb{ padding:8px 15px; margin:0; margin-bottom:20px; text-align:left; list-style:none; background-color:#f5f5f5; color:#777;
 -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;}
 .breadcrumb li{ display:inline-block; *display:inline; *zoom:1;}
 .breadcrumb > li + li:before{ padding:0 5px; color:#ccc; content:"/\00a0";}
@@ -2426,6 +2423,29 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcol
 @media (max-width:480px){
 	.carousel-caption{ font-size:12px; word-wrap:normal;white-space:nowrap; text-overflow:ellipsis;overflow:hidden;}
 	.carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin:10px;}
+}
+
+
+.datatable table{ table-layout:fixed; margin:0;}
+.datatable{ border:1px solid #D8DCF0; display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex; width:100%;
+-moz-box-orient:vertical;-webkit-box-orient:vertical;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column;}
+.datatable-header{ -webkit-flex-shrink:0; flex-shrink:0;}
+.datatable-body{ overflow:auto; border-top:0 none;
+-webkit-box-flex:1;-ms-flex:1;-webkit-flex-grow:1;flex-grow:1;}
+.datatable table{ border:0 none;}
+.datatable  tr td:first-child,.datatable  tr th:first-child{ border-left:0 none;}
+.datatable  tr td:last-child,.datatable  tr th:last-child{ border-right:0 none;}
+.datatable .table tr:first-child td,.datatable .table tr:first-child th{ border-top:0 none;}
+
+
+.scroller{ overflow-y:hidden; position:relative;}
+.scrollBar{ position:absolute; top:0; right:0; width:3px; height:5px; border:1px solid #fff; background:#000; opacity:.5; z-index:2;}
+
+.btn-toolbar form .form-control{ width:auto;}
+.btn-toolbar form .input-group{ *width:180px;}
+@media screen and (max-width:970px){
+	.btn-toolbar  form{ margin-bottom:10px; float:none;}
+	.btn-toolbar  form .form-control{ width:100%;}
 }
 /* ���Ž��� */
 @-webkit-keyframes zoomin{
