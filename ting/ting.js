@@ -52,12 +52,12 @@ $(function(){
 		$(this.parentNode).siblings(".navbar-collapse").toggleClass("collapse");
 	}); 
 	$(document).on('click',"[role=tabbable]>.nav>li",function(e){
-		var siblings=Array.from(this.parentNode.children);
-		var index=siblings.indexOf(this);
-		var $tabbable=$(this.parentNode.parentNode);
-		$tabbable.find(".active").removeClass("active");
+		var $siblings=$(this.parentNode).children().removeClass("active");
+		var index=$(this).index();
+		var $content=$(this.parentNode.parentNode).children(".tab-content");
+		$content.children(".active").removeClass("active");
 		$(this).addClass("active");
-		$tabbable.find(".tab-pane").eq(index).addClass("active");
+		$content.children(".tab-pane").eq(index).addClass("active");
 	});
 });
 $(function(){
