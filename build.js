@@ -39,7 +39,6 @@ config.spin=function(color,amount){
 };
 var mods=[
 	"core.ejs.css",
-	"icons.css",
 	"grid.ejs.css",
 	"button.ejs.css",
 	"table.ejs.css",
