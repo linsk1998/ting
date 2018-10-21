@@ -33,6 +33,6 @@ exports.$purple=Color(0x6f5499);
 exports.$red=Color(0xC5020D);
 exports.$brown=Color(0x795548);
 
-exports.fontAwesome="http://cdn.bootcss.com/font-awesome/4.6.3/fonts";//图标CDN
+exports.fontAwesome="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts";//图标CDN
 exports.fontSizeBase='14px';//基础文字大小
 exports.modalAlpha=0.4;//模不透明度
