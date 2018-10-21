@@ -1,3 +1,4 @@
+<!--quirks-->
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
 	<head>
@@ -10,11 +11,11 @@
 	<!-- InstanceParam name="css" type="boolean" value="false" -->
 	<!-- InstanceParam name="components" type="boolean" value="false" -->
 	<!-- InstanceParam name="javascript" type="boolean" value="true" -->
-	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="true" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>导航条</title>
 	<!-- InstanceEndEditable -->
-	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/ting-quirks.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	<script src="/linsk1998/sky-query/master/sky-query.js"></script>
 	<script src="../ting/ting.js"></script>
@@ -25,7 +26,7 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -95,10 +96,12 @@
 					</ul>
 					<form class="navbar-form navbar-left">
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="关键词">
-							<span class="input-group-btn">
+							<div class="input-group-right input-group-btn">
 								<button class="btn btn-default" type="button">搜索</button>
-							</span>
+							</div>
+							<div class="input-group-control">
+								<input type="text" class="form-control" placeholder="关键词"/>
+							</div>
 						</div>
 					</form>
 					<ul class="navbar-nav navbar-right">

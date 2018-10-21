@@ -25,7 +25,7 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -132,26 +132,46 @@
 				</tr>
 			</tbody></table>
 			<p><a href="grid.html">普通例子</a> <a href="grid-quirks.html">quirks例子</a></p>
-			<h2 class="page-header">高度适应</h2>
+			<h2 class="page-header">宽度高度适应</h2>
 			<table class="table table-bordered table-striped table-condensed">
 				<tbody><tr>
 					<th>类</th>
 					<th>描述</th>
 				</tr>
 				<tr>
-					<td>.col</td>
-					<td>网格中的列，用于包裹行。</td>
+					<td>.flex</td>
+					<td>最外层弹性布局容器。</td>
 				</tr>
 				<tr>
-					<td>.row-0</td>
-					<td>自动缩小行</td>
+					<td>.row-flex</td>
+					<td>一行弹性布局容器。</td>
 				</tr>
 				<tr>
-					<td>.row-1</td>
-					<td>自动扩大的行</td>
+					<td>.col-left</td>
+					<td>一行内的左列（固定宽度）。</td>
+				</tr>
+				<tr>
+					<td>.col-right</td>
+					<td>一行内的右列（固定宽度）。</td>
+				</tr>
+				<tr>
+					<td>.col-center</td>
+					<td>一行内的中间列（宽度自适应剩余宽度）。</td>
+				</tr>
+				<tr>
+					<td>.col-flex</td>
+					<td>一列弹性布局容器。</td>
+				</tr>
+				<tr>
+					<td>.row-fixed</td>
+					<td>一列中的高度为内容高度行（或高度固定）。</td>
+				</tr>
+				<tr>
+					<td>.row-fill</td>
+					<td>一列中的高度适应剩余高度行。</td>
 				</tr>
 			</tbody></table>
-			<p><a href="vbox.html">例子</a></p>
+			<p><a href="layout-vbox.html">高度适应例子</a> <a href="layout-border.html">综合例子</a></p>
 			<h2 class="page-header">对齐</h2>
 			<table class="table table-bordered table-striped table-condensed">
 				<tbody><tr>

@@ -4,9 +4,9 @@
 <title>Box</title>
 <link rel="stylesheet" type="text/css" href="../ting/ting.css">
 <style>
-html,body,#all{height:100%;}
-#all{
-	background:#000;
+html,body{height:100%;}
+#nav{
+	background:#cfc;
 }
 #header{
 	background:#fcc;
@@ -14,15 +14,18 @@ html,body,#all{height:100%;}
 #main{
 	background:#ccf;
 }
+#aside{
+	background:#fcf;
+}
 </style>
 </head>
 <body>
-	<div id="all" class="col">
-		<div id="header" class="row-0">
+	<div id="all" class="flex col-flex">
+		<div id="header" class="row-fixed">
 			<p>123</p>
-			<p>123</p>
+			<img src="../images/devices.jpg" height="60"/>
 		</div>
-		<div id="main" class="row-1">
+		<div id="main" class="row-fill">
 			<p>123</p>
 			<p>123</p>
 			<p>123</p>
@@ -33,7 +36,7 @@ html,body,#all{height:100%;}
 			<p>123</p>
 			<p>123</p>
 			<p>123</p>
-			<p>123</p>
+			<img src="../images/devices.jpg" height="60"/>
 		</div>
 	</div>
 </body>

@@ -40,6 +40,7 @@ config.spin=function(color,amount){
 var mods=[
 	"core.ejs.css",
 	"grid.ejs.css",
+	"flex.css",
 	"button.ejs.css",
 	"table.ejs.css",
 	"form.ejs.css",
