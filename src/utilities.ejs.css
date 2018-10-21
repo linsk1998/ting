@@ -35,6 +35,7 @@
 .block{ display:block;}
 .inline-block{ display:inline-block; *zoom:1; *display:inline-block;}
 .inline{ display:inline;}
+
 .text-hide{ font:0/0 a; color:transparent; text-shadow:none; background-color:transparent; border:0;}
 
 .text-left{ text-align:left;}
@@ -86,6 +87,7 @@ a.text-<%=color%>:hover,p.text-<%=color%> a:hover{ color:<%=themeColor[color].da
 .font-cursive{ font-family:"Comic Sans MS","Comic Sans",Times,Kai,"Kaiti SC",KaiTi,BiauKai,Arial,"FontAwesome",sans-serif;}
 .font-monospace{ font-family:Monaco,Menlo,Consolas,"Courier New","FontAwesome",monospace;}
 
+.box-full{ width:100%; height:100%;}
 .box-b{ border:1px solid !important;}
 .box-bt,.box-bv{ border-top:1px solid !important;}
 .box-bb,.box-bv{ border-bottom:1px solid !important;}

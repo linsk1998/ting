@@ -15,9 +15,7 @@
 .scroller{ overflow-y:hidden; position:relative;}
 .scrollBar{ position:absolute; top:0; right:0; width:3px; height:5px; border:1px solid #fff; background:#000; opacity:.5; z-index:2;}
 
-.btn-toolbar form .form-control{ width:auto;}
-.btn-toolbar form .input-group{ *width:180px;}
+.btn-toolbar form .input-group{ width:180px;}
 @media screen and (max-width:970px){
 	.btn-toolbar  form{ margin-bottom:10px; float:none;}
-	.btn-toolbar  form .form-control{ width:100%;}
 }

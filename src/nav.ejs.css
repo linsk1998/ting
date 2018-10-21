@@ -31,7 +31,7 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .tabs-left .nav a{ min-width:74px;}
 .tabs-left:after{ clear:both;}
 .tabs-left:after{ display:table; line-height:0; content:"";}
-.tabs-left .nav-tabs{ border:0 none; border-right:1px solid #ddd; margin:0 20px 20px 0;}
+.tabs-left .nav-tabs{ border:0 none; border-right:1px solid #ddd; margin:0 20px 20px 0; _margin:0 17px 20px 0;}
 .tabs-left .nav-tabs a{ -moz-border-radius:4px 0 0 4px; -webkit-border-radius:4px 0 0 4px; border-radius:4px 0 0 4px;}
 .tabs-left .nav-tabs .active a,.tabs-left .nav-tabs .active a:hover{ bottom:auto; right:-1px; border-bottom:1px solid #ddd; border-right:1px #fff;}
 
@@ -40,7 +40,7 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .tabs-right .nav a{ min-width:74px;}
 .tabs-right:after{ clear:both;}
 .tabs-right:after{ display:table; line-height:0; content:"";}
-.tabs-right .nav-tabs{ border:0 none; border-left:1px solid #ddd; margin:0 0 20px 20px;}
+.tabs-right .nav-tabs{ border:0 none; border-left:1px solid #ddd; margin:0 0 20px 20px; _margin:0 0 20px 17px;}
 .tabs-right .nav-tabs a{ -moz-border-radius:0 4px 4px 0; -webkit-border-radius:0 4px 4px 0; border-radius:0 4px 4px 0;}
 .tabs-right .nav-tabs .active a,.tabs-right .nav-tabs .active a:hover{ bottom:auto; left:-1px; border-bottom:1px solid #ddd; border-left:1px #fff;}
 

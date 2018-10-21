@@ -1,4 +1,4 @@
-/* Ëõ·Å½øÈë */
+/* ç¼©æ”¾è¿›å…¥ */
 @-webkit-keyframes zoomin{
 	from{ opacity:0; -webkit-transform:scale(0.3,0.3);}
 }
@@ -11,7 +11,7 @@
 @keyframes zoomin{
 	from{ opacity:0; transform:scale(0.3,0.3);}
 }
-/* Ëõ·Å½øÈë-´ÓÉÏ */
+/* ç¼©æ”¾è¿›å…¥-ä»ä¸Š */
 @-webkit-keyframes zoominT{
 	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,-100%);}
 }
@@ -24,7 +24,7 @@
 @keyframes zoominT{
 	from{ opacity:0; transform:scale(0.5,0.5) translate(0,-100%);}
 }
-/* Ëõ·Å½øÈë-´ÓÏÂ */
+/* ç¼©æ”¾è¿›å…¥-ä»ä¸‹ */
 @-webkit-keyframes zoominB{
 	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,100%);}
 }
@@ -37,7 +37,7 @@
 @keyframes zoominB{
 	from{ opacity:0; transform:scale(0.5,0.5) translate(0,100%);}
 }
-/* Ëõ·Å½øÈë-´Ó×ó */
+/* ç¼©æ”¾è¿›å…¥-ä»å·¦ */
 @-webkit-keyframes zoominL{
 	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(-100%,0);}
 }
@@ -50,7 +50,7 @@
 @keyframes zoominL{
 	from{ opacity:0; transform:scale(0.5,0.5) translate(-100%,0);}
 }
-/* Ëõ·Å½øÈë-´ÓÓÒ */
+/* ç¼©æ”¾è¿›å…¥-ä»å³ */
 @-webkit-keyframes zoominR{
 	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(100%,0);}
 }
@@ -63,7 +63,7 @@
 @keyframes zoominR{
 	from{ opacity:0; transform:scale(0.5,0.5) translate(100%,0);}
 }
-/* Ëõ·ÅÍË³ö */
+/* ç¼©æ”¾é€€å‡º */
 @-webkit-keyframes zoomout{
 	to{ opacity:0; -webkit-transform:scale(0.3,0.3);}
 }
@@ -76,7 +76,7 @@
 @keyframes zoomout{
 	to{ opacity:0; transform:scale(0.3,0.3);}
 }
-/* Ëõ·Å½øÈë-´ÓÉÏ */
+/* ç¼©æ”¾è¿›å…¥-ä»ä¸Š */
 @-webkit-keyframes zoomoutT{
 	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,-100%);}
 }
@@ -89,7 +89,7 @@
 @keyframes zoomoutT{
 	to{ opacity:0; transform:scale(0.5,0.5) translate(0,-100%);}
 }
-/* Ëõ·Å½øÈë-´ÓÏÂ */
+/* ç¼©æ”¾è¿›å…¥-ä»ä¸‹ */
 @-webkit-keyframes zoomoutB{
 	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,100%);}
 }
@@ -102,7 +102,7 @@
 @keyframes zoomoutB{
 	to{ opacity:0; transform:scale(0.5,0.5) translate(0,100%);}
 }
-/* Ëõ·Å½øÈë-´Ó×ó */
+/* ç¼©æ”¾è¿›å…¥-ä»å·¦ */
 @-webkit-keyframes zoomoutL{
 	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(-100%,0);}
 }
@@ -115,7 +115,7 @@
 @keyframes zoomoutL{
 	to{ opacity:0; transform:scale(0.5,0.5) translate(-100%,0);}
 }
-/* Ëõ·Å½øÈë-´ÓÓÒ */
+/* ç¼©æ”¾è¿›å…¥-ä»å³ */
 @-webkit-keyframes zoomoutR{
 	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(100%,0);}
 }
@@ -128,7 +128,7 @@
 @keyframes zoomoutR{
 	to{ opacity:0; transform:scale(0.5,0.5) translate(100%,0);}
 }
-/* µ­Èë */
+/* æ·¡å…¥ */
 @-webkit-keyframes fadein{
 	0%{opacity:0;}
 	100%{opacity:1;}
@@ -145,75 +145,75 @@
 	0%{opacity:0;}
 	100%{opacity:1;}
 }
-/* µ­Èë-´ÓÉÏ */
+/* æ·¡å…¥-ä»ä¸Š */
 @-webkit-keyframes fadeinT{
-	0%{opacity:0;-webkit-transform:translateY(-100px);}
+	0%{opacity:0;-webkit-transform:translateY(-50%);}
 	100%{opacity:1;-webkit-transform:translateY(0);}
 }
 @-moz-keyframes fadeinT{
-	0%{opacity:0;-moz-transform:translateY(-100px);}
+	0%{opacity:0;-moz-transform:translateY(-50%);}
 	100%{opacity:1;-moz-transform:translateY(0);}
 }
 @-ms-keyframes fadeinT{
-	0%{opacity:0;-ms-transform:translateY(-100px);}
+	0%{opacity:0;-ms-transform:translateY(-50%);}
 	100%{opacity:1;-ms-transform:translateY(0);}
 }
 @keyframes fadeinT{
-	0%{opacity:0;transform:translateY(-100px);}
+	0%{opacity:0;transform:translateY(-50%);}
 	100%{opacity:1;transform:translateY(0);}
 }
-/* µ­Èë-´ÓÓÒ */
+/* æ·¡å…¥-ä»å³ */
 @-webkit-keyframes fadeinR{
-	0%{opacity:0;-webkit-transform:translateX(100px);}
+	0%{opacity:0;-webkit-transform:translateX(50%);}
 	100%{opacity:1;-webkit-transform:translateX(0);}
 }
 @-moz-keyframes fadeinR{
-	0%{opacity:0;-moz-transform:translateX(100px);}
+	0%{opacity:0;-moz-transform:translateX(50%);}
 	100%{opacity:1;-moz-transform:translateX(0);}
 }
 @-ms-keyframes fadeinR{
-	0%{opacity:0;-ms-transform:translateX(100px);}
+	0%{opacity:0;-ms-transform:translateX(50%);}
 	100%{opacity:1;-ms-transform:translateX(0);}
 }
 @keyframes fadeinR{
-	0%{opacity:0;transform:translateX(100px);}
+	0%{opacity:0;transform:translateX(50%);}
 	100%{opacity:1;transform:translateX(0);}
 }
-/* µ­Èë-´ÓÏÂ */
+/* æ·¡å…¥-ä»ä¸‹ */
 @-webkit-keyframes fadeinB{
-	0%{opacity:0;-webkit-transform:translateY(100px);}
+	0%{opacity:0;-webkit-transform:translateY(50%);}
 	100%{opacity:1;-webkit-transform:translateY(0);}
 }
 @-moz-keyframes fadeinB{
-	0%{opacity:0;-moz-transform:translateY(100px);}
+	0%{opacity:0;-moz-transform:translateY(50%);}
 	100%{opacity:1;-moz-transform:translateY(0);}
 }
 @-ms-keyframes fadeinB{
-	0%{opacity:0;-ms-transform:translateY(100px);}
+	0%{opacity:0;-ms-transform:translateY(50%);}
 	100%{opacity:1;-ms-transform:translateY(0);}
 }
 @keyframes fadeinB{
-	0%{opacity:0;transform:translateY(100px);}
+	0%{opacity:0;transform:translateY(50%);}
 	100%{opacity:1;transform:translateY(0);}
 }
-/* µ­Èë-´Ó×ó */
+/* æ·¡å…¥-ä»å·¦ */
 @-webkit-keyframes fadeinL{
-	0%{opacity:0;-webkit-transform:translateX(-100px);}
+	0%{opacity:0;-webkit-transform:translateX(-50%);}
 	100%{opacity:1;-webkit-transform:translateX(0);}
 }
 @-moz-keyframes fadeinL{
-	0%{opacity:0;-moz-transform:translateX(-100px);}
+	0%{opacity:0;-moz-transform:translateX(-50%);}
 	100%{opacity:1;-moz-transform:translateX(0);}
 }
 @-ms-keyframes fadeinL{
-	0%{opacity:0;-ms-transform:translateX(-100px);}
+	0%{opacity:0;-ms-transform:translateX(-50%);}
 	100%{opacity:1;-ms-transform:translateX(0);}
 }
 @keyframes fadeinL{
-	0%{opacity:0;transform:translateX(-100px);}
+	0%{opacity:0;transform:translateX(-50%);}
 	100%{opacity:1;transform:translateX(0);}
 }
-/* µ­³ö */
+/* æ·¡å‡º */
 @-webkit-keyframes fadeout{
 	0%{opacity:1;}
 	100%{opacity:0;}
@@ -230,75 +230,75 @@
 	0%{opacity:1;}
 	100%{opacity:0;}
 }
-/* µ­³ö-ÏòÉÏ */
+/* æ·¡å‡º-å‘ä¸Š */
 @-webkit-keyframes fadeoutT{
 	0%{opacity:1;-webkit-transform:translateY(0);}
-	100%{opacity:0;-webkit-transform:translateY(-100px);}
+	100%{opacity:0;-webkit-transform:translateY(-50%);}
 }
 @-moz-keyframes fadeoutT{
 	0%{opacity:1;-moz-transform:translateY(0);}
-	100%{opacity:0;-moz-transform:translateY(-100px);}
+	100%{opacity:0;-moz-transform:translateY(-50%);}
 }
 @-ms-keyframes fadeoutT{
 	0%{opacity:1;-ms-transform:translateY(0);}
-	100%{opacity:0;-ms-transform:translateY(-100px);}
+	100%{opacity:0;-ms-transform:translateY(-50%);}
 }
 @keyframes fadeoutT{
 	0%{opacity:1;transform:translateY(0);}
-	100%{opacity:0;transform:translateY(-100px);}
+	100%{opacity:0;transform:translateY(-50%);}
 }
-/* µ­³ö-ÏòÓÒ */
+/* æ·¡å‡º-å‘å³ */
 @-webkit-keyframes fadeoutR{
 	0%{opacity:1;-webkit-transform:translateX(0);}
-	100%{opacity:0;-webkit-transform:translateX(100px);}
+	100%{opacity:0;-webkit-transform:translateX(50%);}
 }
 @-moz-keyframes fadeoutR{
 	0%{opacity:1;-moz-transform:translateX(0);}
-	100%{opacity:0;-moz-transform:translateX(100px);}
+	100%{opacity:0;-moz-transform:translateX(50%);}
 }
 @-ms-keyframes fadeoutR{
 	0%{opacity:1;-ms-transform:translateX(0);}
-	100%{opacity:0;-ms-transform:translateX(100px);}
+	100%{opacity:0;-ms-transform:translateX(50%);}
 }
 @keyframes fadeoutR{
 	0%{opacity:1;transform:translateX(0);}
-	100%{opacity:0;transform:translateX(100px);}
+	100%{opacity:0;transform:translateX(50%);}
 }
-/* µ­³ö-ÏòÏÂ */
+/* æ·¡å‡º-å‘ä¸‹ */
 @-webkit-keyframes fadeoutB{
 	0%{opacity:1;-webkit-transform:translateY(0);}
-	100%{opacity:0;-webkit-transform:translateY(100px);}
+	100%{opacity:0;-webkit-transform:translateY(50%);}
 }
 @-moz-keyframes fadeoutB{
 	0%{opacity:1;-moz-transform:translateY(0);}
-	100%{opacity:0;-moz-transform:translateY(100px);}
+	100%{opacity:0;-moz-transform:translateY(50%);}
 }
 @-ms-keyframes fadeoutB{
 	0%{opacity:1;-ms-transform:translateY(0);}
-	100%{opacity:0;-ms-transform:translateY(100px);}
+	100%{opacity:0;-ms-transform:translateY(50%);}
 }
 @keyframes fadeoutB{
 	0%{opacity:1;transform:translateY(0);}
-	100%{opacity:0;transform:translateY(100px);}
+	100%{opacity:0;transform:translateY(50%);}
 }
-/* µ­³ö-Ïò×ó */
+/* æ·¡å‡º-å‘å·¦ */
 @-webkit-keyframes fadeoutL{
 	0%{opacity:1;-webkit-transform:translateX(0);}
-	100%{opacity:0;-webkit-transform:translateX(-100px);}
+	100%{opacity:0;-webkit-transform:translateX(-50%);}
 }
 @-moz-keyframes fadeoutL{
 	0%{opacity:1;-moz-transform:translateX(0);}
-	100%{opacity:0;-moz-transform:translateX(-100px);}
+	100%{opacity:0;-moz-transform:translateX(-50%);}
 }
 @-ms-keyframes fadeoutL{
 	0%{opacity:1;-ms-transform:translateX(0);}
-	100%{opacity:0;-ms-transform:translateX(-100px);}
+	100%{opacity:0;-ms-transform:translateX(-50%);}
 }
 @keyframes fadeoutL{
 	0%{opacity:1;transform:translateX(0);}
-	100%{opacity:0;transform:translateX(-100px);}
+	100%{opacity:0;transform:translateX(-50%);}
 }
-/* µ¯Ìø */
+/* å¼¹è·³ */
 @-webkit-keyframes bounce{
 	0%,20%,50%,80%,100%{-webkit-transform:translateY(0);}
 	40%{-webkit-transform:translateY(-30px);}
@@ -319,7 +319,7 @@
 	40%{transform:translateY(-30px);}
 	60%{transform:translateY(-15px);}
 }
-/* µ¯Èë */
+/* å¼¹å…¥ */
 @-webkit-keyframes bouncein{
 	0%{opacity:0;-webkit-transform:scale(0.3);}
 	50%{opacity:1;-webkit-transform:scale(1.05);}
@@ -344,7 +344,7 @@
 	70%{transform:scale(0.9);}
 	100%{transform:scale(1);}
 }
-/* µ¯Èë-´ÓÉÏ */
+/* å¼¹å…¥-ä»ä¸Š */
 @-webkit-keyframes bounceinT{
 	0%{opacity:0;-webkit-transform:translateY(-100px);}
 	60%{opacity:1;-webkit-transform:translateY(30px);}
@@ -369,7 +369,7 @@
 	80%{transform:translateY(-10px);}
 	100%{transform:translateY(0);}
 }
-/* µ¯Èë-´ÓÓÒ */
+/* å¼¹å…¥-ä»å³ */
 @-webkit-keyframes bounceinR{
 	0%{opacity:0;-webkit-transform:translateX(100px);}
 	60%{opacity:1;-webkit-transform:translateX(-30px);}
@@ -394,7 +394,7 @@
 	80%{transform:translateX(10px);}
 	100%{transform:translateX(0);}
 }
-/* µ¯Èë-´ÓÏÂ */
+/* å¼¹å…¥-ä»ä¸‹ */
 @-webkit-keyframes bounceinB{
 	0%{opacity:0;-webkit-transform:translateY(100px);}
 	60%{opacity:1;-webkit-transform:translateY(-30px);}
@@ -419,7 +419,7 @@
 	80%{transform:translateY(10px);}
 	100%{transform:translateY(0);}
 }
-/* µ¯Èë-´Ó×ó */
+/* å¼¹å…¥-ä»å·¦ */
 @-webkit-keyframes bounceinL{
 	0%{opacity:0;-webkit-transform:translateX(-100px);}
 	60%{opacity:1;-webkit-transform:translateX(30px);}
@@ -444,7 +444,7 @@
 	80%{transform:translateX(-10px);}
 	100%{transform:translateX(0);}
 }
-/* µ¯³ö */
+/* å¼¹å‡º */
 @-webkit-keyframes bounceout{
 	0%{-webkit-transform:scale(1);}
 	25%{-webkit-transform:scale(0.95);}
@@ -469,7 +469,7 @@
 	50%{opacity:1;transform:scale(1.1);}
 	100%{opacity:0;transform:scale(0.3);}
 }
-/* µ¯³ö-ÏòÉÏ*/
+/* å¼¹å‡º-å‘ä¸Š*/
 @-webkit-keyframes bounceoutT{
 	0%{-webkit-transform:translateY(0);}
 	20%{opacity:1;-webkit-transform:translateY(20px);}
@@ -490,7 +490,7 @@
 	20%{opacity:1;transform:translateY(20px);}
 	100%{opacity:0;transform:translateY(-100px);}
 }
-/* µ¯³ö-ÏòÓÒ*/
+/* å¼¹å‡º-å‘å³*/
 @-webkit-keyframes bounceoutR{
 	0%{-webkit-transform:translateX(0);}
 	20%{opacity:1;-webkit-transform:translateX(-20px);}
@@ -511,7 +511,7 @@
 	20%{opacity:1;transform:translateX(-20px);}
 	100%{opacity:0;transform:translateX(100px);}
 }
-/* µ¯³ö-ÏòÏÂ */
+/* å¼¹å‡º-å‘ä¸‹ */
 @-webkit-keyframes bounceoutB{
 	0%{-webkit-transform:translateY(0);}
 	20%{opacity:1;-webkit-transform:translateY(-20px);}
@@ -532,7 +532,7 @@
 	20%{opacity:1;transform:translateY(-20px);}
 	100%{opacity:0;transform:translateY(100px);}
 }
-/* µ¯³ö-Ïò×ó */
+/* å¼¹å‡º-å‘å·¦ */
 @-webkit-keyframes bounceoutL{
 	0%{-webkit-transform:translateX(0);}
 	20%{opacity:1;-webkit-transform:translateX(20px);}
@@ -553,7 +553,7 @@
 	20%{opacity:1;transform:translateX(20px);}
 	100%{opacity:0;transform:translateX(-200px);}
 }
-/* ×ªÈë */
+/* è½¬å…¥ */
 @-webkit-keyframes rotatein{
 	0%{opacity:0;-webkit-transform:rotate(-200deg);}
 	100%{opacity:1;-webkit-transform:rotate(0);}
@@ -570,7 +570,7 @@
 	0%{opacity:0;transform:rotate(-200deg);}
 	100%{opacity:1;transform:rotate(0);}
 }
-/* ×ªÈë-´Ó×óÉÏ */
+/* è½¬å…¥-ä»å·¦ä¸Š */
 @-webkit-keyframes rotateinLT{
 	0%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(-90deg);opacity:0;}
 	100%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(0);opacity:1;}
@@ -587,7 +587,7 @@
 	0%{transform-origin:left bottom;transform:rotate(-90deg);opacity:0;}
 	100%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
 }
-/* ×ªÈë-´Ó×óÏÂ */
+/* è½¬å…¥-ä»å·¦ä¸‹ */
 @-webkit-keyframes rotateinLB{
 	0%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(90deg);opacity:0;}
 	100%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(0);opacity:1;}
@@ -604,7 +604,7 @@
 	0%{transform-origin:left bottom;transform:rotate(90deg);opacity:0;}
 	100%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
 }
-/* ×ªÈë-´ÓÓÒÉÏ */
+/* è½¬å…¥-ä»å³ä¸Š */
 @-webkit-keyframes rotateinRT{
 	0%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(90deg);opacity:0;}
 	100%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(0);opacity:1;}
@@ -621,7 +621,7 @@
 	0%{transform-origin:right bottom;transform:rotate(90deg);opacity:0;}
 	100%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
 }
-/* ×ªÈë-´ÓÓÒÏÂ*/
+/* è½¬å…¥-ä»å³ä¸‹*/
 @-webkit-keyframes rotateinRB{
 	0%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(-90deg);opacity:0;}
 	100%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(0);opacity:1;}
@@ -638,7 +638,7 @@
 	0%{transform-origin:right bottom;transform:rotate(-90deg);opacity:0;}
 	100%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
 }
-/* ×ª³ö */
+/* è½¬å‡º */
 @-webkit-keyframes rotateout{
 	0%{-webkit-transform-origin:center center;-webkit-transform:rotate(0);opacity:1;}
 	100%{-webkit-transform-origin:center center;-webkit-transform:rotate(200deg);opacity:0;}
@@ -655,7 +655,7 @@
 	0%{transform-origin:center center;transform:rotate(0);opacity:1;}
 	100%{transform-origin:center center;transform:rotate(200deg);opacity:0;}
 }
-/* ×ª³ö-Ïò×óÉÏ */
+/* è½¬å‡º-å‘å·¦ä¸Š */
 @-webkit-keyframes rotateoutLT{
 	0%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(0);opacity:1;}
 	100%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(-90deg);opacity:0;}
@@ -672,7 +672,7 @@
 	0%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
 	100%{transform-origin:left bottom;transform:rotate(-90deg);opacity:0;}
 }
-/* ×ª³ö-Ïò×óÏÂ */
+/* è½¬å‡º-å‘å·¦ä¸‹ */
 @-webkit-keyframes rotateoutLB{
 	0%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(0);opacity:1;}
 	100%{-webkit-transform-origin:left bottom;-webkit-transform:rotate(90deg);opacity:0;}
@@ -689,7 +689,7 @@
 	0%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
 	100%{transform-origin:left bottom;transform:rotate(90deg);opacity:0;}
 }
-/* ×ª³ö-ÏòÓÒÉÏ */
+/* è½¬å‡º-å‘å³ä¸Š */
 @-webkit-keyframes rotateoutRT{
 	0%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(0);opacity:1;}
 	100%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(90deg);opacity:0;}
@@ -706,7 +706,7 @@
 	0%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
 	100%{transform-origin:right bottom;transform:rotate(90deg);opacity:0;}
 }
-/* ×ª³ö-ÏòÓÒÏÂ */
+/* è½¬å‡º-å‘å³ä¸‹ */
 @-webkit-keyframes rotateoutRB{
 	0%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(0);opacity:1;}
 	100%{-webkit-transform-origin:right bottom;-webkit-transform:rotate(-90deg);opacity:0;}
@@ -723,7 +723,7 @@
 	0%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
 	100%{transform-origin:right bottom;transform:rotate(-90deg);opacity:0;}
 }
-/* ·­×ª */
+/* ç¿»è½¬ */
 @-webkit-keyframes flip{
 	0%{-webkit-transform:perspective(400px) rotateY(0);-webkit-animation-timing-function:ease-out;}
 	40%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(170deg);-webkit-animation-timing-function:ease-out;}
@@ -752,7 +752,7 @@
 	80%{transform:perspective(400px) rotateY(360deg) scale(0.95);animation-timing-function:ease-in;}
 	100%{transform:perspective(400px) scale(1);animation-timing-function:ease-in;}
 }
-/* ·­Èë-XÖá */
+/* ç¿»å…¥-Xè½´ */
 @-webkit-keyframes flipinX{
 	0%{-webkit-transform:perspective(400px) rotateX(90deg);opacity:0;}
 	40%{-webkit-transform:perspective(400px) rotateX(-10deg);}
@@ -777,7 +777,7 @@
 	70%{transform:perspective(400px) rotateX(10deg);}
 	100%{transform:perspective(400px) rotateX(0);opacity:1;}
 }
-/* ·­Èë-YÖá */
+/* ç¿»å…¥-Yè½´ */
 @-webkit-keyframes flipinY{
 	0%{-webkit-transform:perspective(400px) rotateY(90deg);opacity:0;}
 	40%{-webkit-transform:perspective(400px) rotateY(-10deg);}
@@ -802,7 +802,7 @@
 	70%{transform:perspective(400px) rotateY(10deg);}
 	100%{transform:perspective(400px) rotateY(0);opacity:1;}
 }
-/* ·­³ö-XÖá */
+/* ç¿»å‡º-Xè½´ */
 @-webkit-keyframes flipoutX{
 	0%{-webkit-transform:perspective(400px) rotateX(0);opacity:1;}
 	100%{-webkit-transform:perspective(400px) rotateX(90deg);opacity:0;}
@@ -819,7 +819,7 @@
 	0%{transform:perspective(400px) rotateX(0);opacity:1;}
 	100%{transform:perspective(400px) rotateX(90deg);opacity:0;}
 }
-/* ·­³ö-YÖá */
+/* ç¿»å‡º-Yè½´ */
 @-webkit-keyframes flipoutY{
 	0%{-webkit-transform:perspective(400px) rotateY(0);opacity:1;}
 	100%{-webkit-transform:perspective(400px) rotateY(90deg);opacity:0;}
@@ -836,7 +836,7 @@
 	0%{transform:perspective(400px) rotateY(0);opacity:1;}
 	100%{transform:perspective(400px) rotateY(90deg);opacity:0;}
 }
-/* ÉÁË¸ */
+/* é—ªçƒ */
 @-webkit-keyframes flash{
 	0%,50%,100%{opacity:1;}
 	25%,75%{opacity:0;}
@@ -853,7 +853,7 @@
 	0%,50%,100%{opacity:1;}
 	25%,75%{opacity:0;}
 }
-/* Õğ²ü */
+/* éœ‡é¢¤ */
 @-webkit-keyframes shake{
 	0%,100%{-webkit-transform:translateX(0);}
 	10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);}
@@ -874,7 +874,7 @@
 	10%,30%,50%,70%,90%{transform:translateX(-10px);}
 	20%,40%,60%,80%{transform:translateX(10px);}
 }
-/* Ò¡°Ú */
+/* æ‘‡æ‘† */
 @-webkit-keyframes swing{
 	20%{-webkit-transform:rotate(15deg);}
 	40%{-webkit-transform:rotate(-10deg);}
@@ -903,7 +903,7 @@
 	80%{transform:rotate(-5deg);}
 	100%{transform:rotate(0);}
 }
-/* Ò¡»Î */
+/* æ‘‡æ™ƒ */
 @-webkit-keyframes wobble{
 	0%{-webkit-transform:translateX(0);}
 	15%{-webkit-transform:translateX(-100px) rotate(-5deg);}
@@ -940,7 +940,7 @@
 	75%{transform:translateX(-20px) rotate(-1deg);}
 	100%{transform:translateX(0);}
 }
-/* ÕğÁå */
+/* éœ‡é“ƒ */
 @-webkit-keyframes ring{
 	0%{-webkit-transform:scale(1);}
 	10%,20%{-webkit-transform:scale(0.9) rotate(-3deg);}

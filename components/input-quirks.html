@@ -1,3 +1,4 @@
+<!--quirks-->
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
 	<head>
@@ -10,11 +11,11 @@
 	<!-- InstanceParam name="css" type="boolean" value="false" -->
 	<!-- InstanceParam name="components" type="boolean" value="true" -->
 	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
-	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="true" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>输入框组</title>
 	<!-- InstanceEndEditable -->
-	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/ting-quirks.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	<script src="/linsk1998/sky-query/master/sky-query.js"></script>
 	<script src="../ting/ting.js"></script>
@@ -25,7 +26,7 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa fa-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
@@ -70,33 +71,44 @@
 			<h2 class="page-header">基本图标</h2>
 			<form>
 				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon1">@</span>
-					<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+					<div class="input-group-left" id="basic-addon1">@</div>
+					<div class="input-group-control">
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+					</div>
 				</div>
 				<br/>
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-					<span class="input-group-addon" id="basic-addon2">@example.com</span>
+					<div class="input-group-right" id="basic-addon2">@example.com</div>
+					<div class="input-group-control">
+						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"/>
+					</div>
 				</div>
 				<br/>
 				<div class="input-group">
-					<span class="input-group-addon">$</span>
-					<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-					<span class="input-group-addon">.00</span>
+					<div class="input-group-left">$</div>
+					<div class="input-group-right">.00</div>
+					<!--控件需要放在最后-->
+					<div class="input-group-control">
+						<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
+					</div>
 				</div>
 				<br/>
 				<label for="basic-url">Your vanity URL</label>
 				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-					<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+					<div class="input-group-left" id="basic-addon3">https://example.com/users/</div>
+					<div class="input-group-control">
+						<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
+					</div>
 				</div>
 				<br/>
-				<label for="basic-url">作为额外元素的按钮</label>
+				<label>作为额外元素的按钮</label>
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="关键词">
-					<span class="input-group-btn">
+					<div class="input-group-right input-group-btn">
 						<button class="btn btn-default" type="button">搜索</button>
-					</span>
+					</div>
+					<div class="input-group-control">
+						<input type="text" class="form-control" placeholder="关键词"/>
+					</div>
 				</div>
 			</form>
 		</div><!-- InstanceEndEditable -->
