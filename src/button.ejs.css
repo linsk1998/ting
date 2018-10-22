@@ -62,8 +62,9 @@ border-top-right-radius:0; border-bottom-right-radius:0;}
 border-top-left-radius:0; border-bottom-left-radius:0;}
 
 
-html>body .caret{ display:inline-block; width:0; height:0; margin-left:2px; vertical-align:middle; border-top:4px dashed; border-top:4px solid \9; border-right:4px solid transparent; border-left:4px solid transparent;}
-.caret{ _zoom:expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;'); _font-family:FontAwesome; _font-style:normal; _font-weight:normal;}
+.caret{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+*zoom:expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;');}
+.caret:before{ content:"\f0d7";}
 
 .close{ font-weight:bold; color:#000; text-shadow:0 1px 0 #fff; opacity:.5; font-size:20px;}
 .close:hover{ color:#000; text-decoration:none; cursor:pointer; opacity:.8;}
