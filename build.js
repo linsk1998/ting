@@ -56,6 +56,7 @@ var mods=[
 	"jumbotron.ejs.css",
 	"navbar.ejs.css",
 	"input-group.ejs.css",
+	"sidebar.css",
 	"dropdown.ejs.css",
 	"modal.ejs.css",
 	"dialog.ejs.css",
