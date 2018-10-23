@@ -1,0 +1,25 @@
+
+.nav-list{ margin:3px 0;}
+.nav-list li{ list-style:none;}
+.nav-list-item{ display:block; padding:8px 16px; color:#666; _zoom:1;}
+.nav-list-item:hover{ color:#444; text-decoration:none;}
+.nav-list-item small{ color:#999;}
+
+.sidebar{ background:#fcfcfc;}
+.sidebar-nav-header{ border-left:5px solid #337ab7; background:#f0f0f0; padding:8px 14px; cursor:default;}
+
+
+.sidebar-inverse{ background:#222d32; color:#8aa4af;}
+.sidebar-inverse .sidebar-nav-header{ border-left:0 none; background:#1e282c; color:#f2f8f8;}
+.sidebar-inverse .nav-list-item{ color:#999faa;}
+.sidebar-inverse .nav-list-item:hover{ color:#fff;}
+.sidebar-inverse .nav-list-item small{ color:#666f77;}
+
+.sidebar-nav-header .pull-right{ transition:transform 0.2s; cursor:pointer;}
+@media (min-width:0){
+	.sidebar-nav .expanded .pull-right{ -webkit-transform:scale(1,-1);-moz-transform:scale(1,-1);-ms-transform:scale(1,-1);-o-transform:scale(1,-1);transform:scale(1,-1);}
+}
+@media \0screen\,screen\9 {
+	.sidebar-nav .expanded .pull-right{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2,mirror=1);}
+}
+.sidebar-nav .collapsed{ display:none;}
