@@ -1,20 +1,3 @@
-
-.row-avg>.col-avg{ -moz-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}
-@media (min-width:0\0) and (min-resolution:.001dpcm) {
-	.row-avg{ text-align:justify;  font-size:.05em; }
-	.row-avg:after{ display:inline-block; content:" "; width:100%; height:0; overflow:hidden;}
-	.row-avg>.col-avg{ display:inline-block; font-size:20em;}
-}
-@media \0screen\ {
-	.row-avg{ text-align:justify; font-size:.05em;}
-	.row-avg:after{ display:inline-block; content:" "; width:100%; height:0; overflow:hidden;}
-	.row-avg>.col-avg{ display:inline-block; font-size:20em;}
-}
-@media screen\9{
-	.row-avg{ white-space:nowrap;}
-	.row-avg .col-avg{ display:inline; zoom:1; width:expression(1/this.parentNode.children.length*100)+'%')}
-}
-
 .flex{ width:100%; height:100%; display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
 
 .col-left,.col-right{ overflow:auto; -webkit-flex-shrink:0; flex-shrink:0;}
@@ -55,6 +38,23 @@
 	.col-right{ float:right; _margin-left:-3px;}
 	.col-center{ _zoom:1;}
 }
+/*
+.row-flex>.col-avg-n{ -moz-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}
+@media (min-width:0\0) and (min-resolution:.001dpcm) {
+	.row-flex{ text-align:justify;  font-size:.05em; }
+	.row-flex:after{ display:inline-block; content:" "; width:100%; height:0; overflow:hidden;}
+	.row-flex>.col-avg-n{ display:inline-block; font-size:20em;}
+}
+@media \0screen\ {
+	.row-flex{ text-align:justify; font-size:.05em;}
+	.row-flex:after{ display:inline-block; content:" "; width:100%; height:0; overflow:hidden;}
+	.row-flex>.col-avg-n{ display:inline-block; font-size:20em;}
+}
+@media screen\9{
+	.row-flex{ white-space:nowrap;}
+	.row-flex .col-avg-n{ display:inline; zoom:1; width:expression(1/this.parentNode.children.length*100)+'%')}
+}
+*/
 
 .flex-row{ -moz-box-orient:horizontal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
 .flex-column{ -moz-box-orient:vertical;-moz-box-direction:normal;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}

@@ -1,0 +1,22 @@
+/* CSS Document */
+
+
+.tree{ padding:3px;}
+.tree ul{ margin-left:18px;}
+.tree li{ list-style:none; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.tree label,.tree a{ padding-left:5px; line-height:26px; display:block; _zoom:1;}
+.tree label:hover,.tree a:hover{ background:#CFDDEF;}
+.tree a,.tree a:hover{ color:#333; text-decoration:none;}
+.tree-icon{ margin-right:5px; line-height:26px; font-size:16px; display:inline-block; vertical-align:middle;}
+.tree-caret{ position:absolute; margin-left:-18px; width:22px; text-align:center; line-height:26px; cursor:pointer; transition:transform 0.2s;
+ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+*zoom:expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;');}
+.tree-caret:before{ content:"\f0d7";}
+.tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:26px;}
+.tree .collapse ul{ display:none;}
+@media (min-width:0){
+	.tree .collapse .tree-caret{ -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg);}
+}
+@media \0screen\,screen\9 {
+	.tree .collapse .tree-caret{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+}

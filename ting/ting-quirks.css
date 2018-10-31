@@ -710,7 +710,7 @@ table.container-fluid{ table-layout:fixed; width:100%; *display:inline-block;}
 	.col-right{ float:right; _margin-left:-3px;}
 	.col-center{ _zoom:1;}
 }
-
+/*
 .row-flex>.col-avg-n{ -moz-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}
 @media (min-width:0\0) and (min-resolution:.001dpcm) {
 	.row-flex{ text-align:justify;  font-size:.05em; }
@@ -726,7 +726,7 @@ table.container-fluid{ table-layout:fixed; width:100%; *display:inline-block;}
 	.row-flex{ white-space:nowrap;}
 	.row-flex .col-avg-n{ display:inline; zoom:1; width:expression(1/this.parentNode.children.length*100)+'%')}
 }
-
+*/
 
 .flex-row{ -moz-box-orient:horizontal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
 .flex-column{ -moz-box-orient:vertical;-moz-box-direction:normal;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
@@ -1144,6 +1144,18 @@ button.list-group-item-danger.active:focus
 .well-lg{ padding:20px;}
 .well-sm{ padding:3px;}
 
+.progress{ overflow:hidden; height:20px; margin-bottom:20px; background-color:#f5f5f5;
+-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1);}
+
+.progress-bar{ float:left; width:0%; height:100%; line-height:20px; color:#fff; text-align:center; background-color:#337ab7;
+ -moz-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);
+ transition: width .6s ease;}
+
+.progress-bar-success{ background-color:#5cb85c;}
+.progress-bar-info{ background-color:#5bc0de;}
+.progress-bar-warning{ background-color:#f0ad4e;}
+.progress-bar-danger{ background-color:#d9534f;}
+
 .jumbotron{ padding-top:48px; padding-bottom:48px; background:#2d3e50; color:#fff;}
 .jumbotron h1,.jumbotron .h1{ font-size:63px;}
 .jumbotron p{ margin-bottom:15px; font-weight:200; font-size:21px;}
@@ -1161,7 +1173,7 @@ button.list-group-item-danger.active:focus
 
 .navbar{ height:50px; border-bottom:1px solid #ddd;}
 .navbar-brand{ float:left; height:100%; line-height:49px; font-size:18px; display:inline-block; margin-right:16px; white-space:nowrap;}
-.navbar-brand a,a.navbar-brand{ text-decoration:none; color:#212121}
+.navbar-brand a,a.navbar-brand,.navbar-brand a:hover,a.navbar-brand:hover{ text-decoration:none; color:#212121}
 .navbar-brand img,img.navbar-brand{ max-height:50px; vertical-align:middle; margin-right:10px;}
 .navbar-toggle{ display:none; float:right; padding-left:10px; padding-right:10px; height:34px; margin-top:8px; margin-left:15px; border:1px solid #ddd; background:#fff;}
 .navbar-toggle:hover{ background:#eee;}
@@ -1245,6 +1257,28 @@ button.list-group-item-danger.active:focus
 	.sidebar-nav .expanded .pull-right{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2,mirror=1);}
 }
 .sidebar-nav .collapsed{ display:none;}
+/* CSS Document */
+
+
+.tree{ padding:3px;}
+.tree ul{ margin-left:18px;}
+.tree li{ list-style:none; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.tree label,.tree a{ padding-left:5px; line-height:26px; display:block; _zoom:1;}
+.tree label:hover,.tree a:hover{ background:#CFDDEF;}
+.tree a,.tree a:hover{ color:#333; text-decoration:none;}
+.tree-icon{ margin-right:5px; line-height:26px; font-size:16px; display:inline-block; vertical-align:middle;}
+.tree-caret{ position:absolute; margin-left:-18px; width:22px; text-align:center; line-height:26px; cursor:pointer; transition:transform 0.2s;
+ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+*zoom:expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;');}
+.tree-caret:before{ content:"\f0d7";}
+.tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:26px;}
+.tree .collapse ul{ display:none;}
+@media (min-width:0){
+	.tree .collapse .tree-caret{ -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg);}
+}
+@media \0screen\,screen\9 {
+	.tree .collapse .tree-caret{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+}
 
 .dropdown{ position:relative;}
 .dropdown-menu{ position:absolute; min-width:160px; padding:5px 0; margin:1px 0 0; font-size:14px; text-align:left; list-style:none; background-color:#fff; border:1px solid #ccc; display:none;}

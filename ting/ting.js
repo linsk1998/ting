@@ -71,6 +71,9 @@ $(function(){
 			$next.removeClass('collapsed');
 		}
 	});
+	$(document).on('click',"[role=tree] .tree-caret",function(e){
+		$(this).parent().toggleClass("collapse");
+	});
 	
 });
 $(function(){
