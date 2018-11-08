@@ -74,7 +74,30 @@ $(function(){
 	$(document).on('click',"[role=tree] .tree-caret",function(e){
 		$(this).parent().toggleClass("collapse");
 	});
-	
+	if(document.addEventListener){
+		$(document).on('click',"[role=radio]>label",function(e){
+			if(this!=e.target) return ;
+			var $this=$(this);
+			if(!$this.hasClass('disabled')){
+				var name=$this.children("input[type=radio]").prop('name');
+				$this.parents("form").find("input").filter(function(){
+					return this.name==name;
+				}).prop('checked',false).parent().removeClass("checked");
+				$this.addClass("checked").children("input").prop('checked',true);
+			}
+		});
+		$(document).on('click',"[role=checkbox]>label",function(e){
+			if(this!=e.target) return ;
+			var $this=$(this);
+			if(!$this.hasClass('disabled')){
+				if($this.hasClass('checked')){
+					$this.removeClass('checked').children("input").prop('checked',false);
+				}else{
+					$this.addClass('checked').children("input").prop('checked',true);
+				}
+			}
+		});
+	}
 });
 $(function(){
 	var timer=setTimeout(autoNext,5000);

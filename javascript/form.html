@@ -1,3 +1,4 @@
+<!--quirks-->
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
 	<head>
@@ -7,14 +8,14 @@
 	<meta name="renderer" content="webkit"/>
 	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
 	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
-	<!-- InstanceParam name="css" type="boolean" value="true" -->
+	<!-- InstanceParam name="css" type="boolean" value="false" -->
 	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
-	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="true" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="true" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>表单</title>
+	<title></title>
 	<!-- InstanceEndEditable -->
-	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/ting-quirks.css" rel="stylesheet"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	<script src="/linsk1998/sky-query/master/sky-query.js"></script>
 	<script src="../ting/ting.js"></script>
@@ -31,9 +32,9 @@
 						<ul class="navbar-nav">
 							<li><a href="../getting-started/index.html">起步</a></li>
 							<li><a href="../scaffolding/index.html">脚手架</a></li>
-							<li class="active"><a href="index.html">全局样式</a></li>
+							<li><a href="../css/index.html">全局样式</a></li>
 							<li><a href="../components/index.html">组件</a></li>
-							<li><a href="../javascript/index.html">JavaScript插件</a></li>
+							<li class="active"><a href="index.html">JavaScript插件</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf039;</i>宽屏</a></li>
@@ -89,18 +90,18 @@
 				</div>
 				<div class="form-group">
 					<label>多选</label>
-					<div class="checkbox">
-						<label><input type="checkbox">Check me out</label>
+					<div class="checkbox" role="checkbox">
+						<label class="checked"><input type="checkbox">Check me out</label>
 						<label><input type="checkbox">同时可以选我</label>
-						<label><input type="checkbox">还可以选我</label>
+						<label class="disabled"><input type="checkbox" disabled>还可以选我</label>
 					</div>
 				</div>
 				<div class="form-group">
 					<label>单选</label>
-					<div class="radio">
-						<label><input type="radio" name="radio" value="1">Check me out</label>
-						<label><input type="radio" name="radio" value="2">同时可以选我</label>
-						<label><input type="radio" name="radio" value="3">还可以选我</label>
+					<div class="radio" role="radio">
+						<label class="checked"><input type="radio" name="radio" value="1" checked>Check me out</label>
+						<label><input type="radio" value="2" name="radio">同时可以选我</label>
+						<label class="disabled"><input type="radio" name="radio" value="3" disabled>还可以选我</label>
 					</div>
 				</div>
 				<div class="form-group">

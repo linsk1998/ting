@@ -1,5 +1,6 @@
 
 .form label{ display:inline-block; max-width:100%; margin-bottom:5px; font-weight:bold;}
+.form label.disabled{ color:#a0a0a0;}
 .form-group{ margin-bottom:15px;}
 .form-control{ display:block; width:100%; font-size:<%=fontSizeBase%>; color:#555; height:32px; padding:0 12px; <% if(!quirk){%> *padding:0; *margin-right:-2px;<%}%>
  -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box;
@@ -19,6 +20,18 @@ select.form-control{ padding:6px;}
 .form input[type=file]{ display:block;}
 .help-block{ display:block; margin-top:5px; margin-bottom:10px; color:<%=theme['secondary_text']%>; }
 .radio,.checkbox{ position:relative; margin-top:10px; margin-bottom:10px;}
-.radio label,.checkbox label{ font-weight:normal;}
-.radio input,.checkbox input{ vertical-align:middle; margin:3px 3px 4px;}
+.radio label,.checkbox label{ font-weight:normal; margin-right:10px; padding-right:10px;}
+.radio input,.checkbox input{ vertical-align:middle; margin:3px 3px 4px; margin:3px 3px 4px; *margin:0;}
 .form-group .radio,.form-group .checkbox{ margin:0;}
+
+:root [role=radio]>label>input{ display:none;}
+:root [role=radio]>label::before{ content:"\f10c"; font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+color:<%=theme['primary']%>; font-size:18px; line-height:18px; vertical-align:middle; display:inline-block; margin-right:4px; padding-bottom:2px;}
+:root [role=radio]>label.checked::before{ content:"\f192";}
+
+:root [role=checkbox]>label>input{ display:none;}
+:root [role=checkbox]>label::before{ content:"\f0c8"; font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+color:<%=theme['primary']%>; font-size:18px; line-height:18px; vertical-align:middle; display:inline-block; margin-right:4px; padding-bottom:2px;}
+:root [role=checkbox]>label.checked::before{ content:"\f14a";}
+.form label.disabled::before{ color:#a0a0a0;}
+
