@@ -2,7 +2,7 @@
 .btn{ vertical-align:middle; *vertical-align:top; margin-bottom:0; font-size:14px; font-weight:normal; text-align:center; white-space:nowrap; cursor:pointer; border:1px solid;  padding-left:12px; padding-right:12px;
 -ms-touch-action:manipulation; touch-action:manipulation;
 -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
-transition:border-color,background .4s;}
+transition:border-color,background,box-shadow .4s;}
 .btn:hover{ text-decoration:none;}
 input.btn,button.btn{ outline:none; height:34px; margin-left:0; margin-right:0; *padding-left:1px; *padding-right:1px;}
 a.btn{ display:inline-block; *display:inline; *zoom:1; line-height:<%=(34-2)%>px; height:<%=size(34,2)%>px;}
@@ -26,8 +26,8 @@ a.btn{ display:inline-block; *display:inline; *zoom:1; line-height:<%=(34-2)%>px
 
 
 html>body .btn[disabled],html>body fieldset[disabled] .btn{ cursor:not-allowed; color:#a0a0a0; text-shadow:1px 1px #fff;}
-input.btn:focus,button.btn:focus{ border-color:#000;}
-.btn-disabled,.btn-disabled:hover,input.btn-disabled:focus,button.btn-disabled:focus{ background-color:#ddd; border-color:<%=darken('#dddddd', 0.05)%>; color:#fff;}
+html input.btn:focus,html button.btn:focus{ border-color:#000;}
+html .btn-disabled,html .btn-disabled:hover,html input.btn-disabled:focus,html button.btn-disabled:focus{ background-color:#ddd; border-color:<%=darken('#dddddd', 0.05)%>; color:#fff;}
 
 .btn-lg{ font-size:16px; padding-left:16px; padding-right:16px;}
 div.btn-lg,a.btn-lg{ line-height:<%=(45-2)%>px; height:<%=size(45,2)%>px;}
