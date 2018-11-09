@@ -1,12 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-.text-primary{ color:#F44336;}
-.bg-primary{ color:#fff; background-color:#F44336;}
-a.bg-primary:hover{ background-color:#D32F2F;}
+.text-primary{ color:#b31c11;}
+a.text-primary:hover,p.text-primary a:hover{ color:#84140d;}
+.brand-primary{ color:#F44336;}
+.bg-primary{ background-color:#F44336;}
+a.bg-primary:hover,.bg-primary a:hover{ background-color:#ea1c0d;}
+.border-primary{ border-color:#f32c1e;}
 
 .btn-outline{ color:#F44336; border-color:#F44336;}
-.btn-outline:hover,input.btn-outline:focus,button.btn-outline:focus{ color:#fff; background-color:#F44336; border-color:#F44336;}
+.btn-outline:hover{ background-color:#F44336; border-color:#F44336;}
 .btn-primary{ background-color:#F44336; border-color:#f32c1e;}
-.btn-primary:hover,input.btn-primary:focus,button.btn-primary:focus{ background-color:#ea1c0d; border-color:#c8180b;}
-html>body .disabled.btn-primary{ background-color:#faa19b; border-color:#f9968f;}
-
+.btn-primary:hover{ background-color:#ea1c0d; border-color:#c8180b;}

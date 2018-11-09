@@ -1,12 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-.text-primary{ color:#009688;}
-.bg-primary{ color:#fff; background-color:#009688;}
-a.bg-primary:hover{ background-color:#00796B;}
+.text-primary{ color:#022e2b;}
+a.text-primary:hover,p.text-primary a:hover{ color:#000000;}
+.brand-primary{ color:#009688;}
+.bg-primary{ background-color:#009688;}
+a.bg-primary:hover,.bg-primary a:hover{ background-color:#00635a;}
+.border-primary{ border-color:#007d71;}
 
 .btn-outline{ color:#009688; border-color:#009688;}
-.btn-outline:hover,input.btn-outline:focus,button.btn-outline:focus{ color:#fff; background-color:#009688; border-color:#009688;}
+.btn-outline:hover{ background-color:#009688; border-color:#009688;}
 .btn-primary{ background-color:#009688; border-color:#007d71;}
-.btn-primary:hover,input.btn-primary:focus,button.btn-primary:focus{ background-color:#00635a; border-color:#003f39;}
-html>body .disabled.btn-primary{ background-color:#80cbc4; border-color:#80beb8;}
-
+.btn-primary:hover{ background-color:#00635a; border-color:#003f39;}
