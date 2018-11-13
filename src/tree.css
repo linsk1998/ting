@@ -20,3 +20,6 @@
 @media \0screen\,screen\9 {
 	.tree .collapse .tree-caret{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
 }
+.inverse .tree a,.inverse .tree a:hover{ color:#ccc;}
+.inverse .tree label:hover,.inverse .tree a:hover{ background:#34414c;}
+.inverse .tree-caret{ color:#fff;}
