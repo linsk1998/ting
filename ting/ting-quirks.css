@@ -1,11 +1,13 @@
 /* init */
-@media (min-width:1366px){
-	@-webkit-viewport{ width:1366px;}
-	@-moz-viewport{ width:1366px;}
-	@-ms-viewport{ width:1366px;}
-	@-o-viewport{ width:1366px;}
-	@viewport{ width:1366px;}
+@media (min-width:1630px){
+	@-webkit-viewport{ width:1600px;}
+	@-moz-viewport{ width:1600px;}
+	@-ms-viewport{ width:1600px;}
+	@-o-viewport{ width:1600px;}
+	@viewport{ width:1600px;}
 }
+
+
 *,*:before,*:after{ -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
 header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,details,summary{display:block;}
 audio,canvas,video{ display:inline-block;}
@@ -93,6 +95,7 @@ a.thumbnail:hover{ border-color:#337ab7;}
 @font-face{ font-family:FontAwesome; -webkit-text-size-adjust:none; font-weight:normal; font-style:normal;
 src:url('fonts/fontawesome-webfont.eot'); src:url('fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/fontawesome-webfont.woff2') format('woff2'),url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
 }
+.icon{ display:inline-block; vertical-align:middle;}
 .fa{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
 .fa-lg{font-size:1.33333333em;}
 .fa-2x{font-size:2em}
