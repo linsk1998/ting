@@ -1,4 +1,7 @@
 
+.layout-table{ border-collapse:collapse;}
+.layout-cell{ padding:0; position:relative;}
+
 .container{ width:<%=size(970,30)%>px; position:relative; *zoom:1; margin-right:auto; margin-left:auto;}
 <% if(quirk){%>
 body{ text-align:center;}
@@ -6,13 +9,8 @@ body{ text-align:center;}
 .container input,.container-fluid input{ *position:relative;}
 <% }%>
 div.container{ padding-right:15px; padding-left:15px;}
-div.container:before,div.container:after{ display: table; content: "";}
-div.container:after{ clear:both;}
 
-div.container-fluid { width:auto; padding-right:20px; padding-left:20px; *zoom:1; position:relative;}
-div.container-fluid:before,
-div.container-fluid:after { display:table; line-height:0; content:"";}
-div.container-fluid:after { clear: both;}
+div.container-fluid,td.container-fluid{ width:auto; padding-right:20px; padding-left:20px; *zoom:1; position:relative;}
 
 
 table.container{ table-layout:fixed;<% if(quirk){%> *display:inline-block;<% }%>}
