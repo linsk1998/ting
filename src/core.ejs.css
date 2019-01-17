@@ -36,7 +36,7 @@ code{ direction:ltr; text-align:left; white-space:pre; line-height:1.5;}
 kbd{ padding:2px 4px; font-size:90%; color:#fff; background-color:#333; border-radius:3px; margin-left:4px; margin-right:4px;
 -webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,.25); box-shadow:inset 0 -1px 0 rgba(0,0,0,.25);}
 
-a{ color:<%=theme['primary']%>; text-decoration:none; cursor:pointer;}
+a{ color:<%=theme['primary']%>; text-decoration:none; cursor:pointer; outline:none;}
 a:hover{ color:<%=darken(theme['primary'],0.15)%>; text-decoration:underline;}
 pre{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px;}
 p code{ background:#f9f2f4; padding:2px 4px; font-size:90%; border-radius:4px; color:#d14; border:1px solid #e1e1e8; _display:inline-block;}
