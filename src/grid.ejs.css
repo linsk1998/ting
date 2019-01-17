@@ -1,7 +1,4 @@
 
-.layout-table{ border-collapse:collapse;}
-.layout-cell{ padding:0; position:relative;}
-
 .container{ width:<%=size(970,30)%>px; position:relative; *zoom:1; margin-right:auto; margin-left:auto;}
 <% if(quirk){%>
 body{ text-align:center;}
