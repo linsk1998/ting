@@ -1,26 +1,26 @@
 
 .input-group{ display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
-    -moz-box-orient:horizontal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+-moz-box-orient:horizontal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
 .input-group-left,.input-group-right{ border:1px solid #ccc; background-color:#eee; padding:6px 12px; line-height:18px; color:#555;}
 .input-group-left{ border-right:0 none; -moz-box-ordinal-group:-1;-webkit-box-ordinal-group:-1;-ms-flex-order:-1;-webkit-order:-1;order:-1;}
 .input-group-control{ -moz-box-flex:1;-webkit-box-flex:1;-ms-flex:1;-webkit-flex-grow:1;flex-grow:1;
-    -moz-box-ordinal-group:0;-webkit-box-ordinal-group:0;-ms-flex-order:0;-webkit-order:0;order:0;}
+-moz-box-ordinal-group:0;-webkit-box-ordinal-group:0;-ms-flex-order:0;-webkit-order:0;order:0;}
 .input-group-right{ border-left:0 none; -moz-box-ordinal-group:1;-webkit-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;order:1;}
 .input-group-right:last-child{ -moz-box-ordinal-group:-1;-webkit-box-ordinal-group:-1;-ms-flex-order:-1;-webkit-order:-1;order:-1;}
 .input-group-btn{ padding:0;}
 .input-group .input-group-btn .btn{ border:0 none; height:100%; margin:0;}
 @media (min-width:0\0) and (min-resolution:.001dpcm) {
-    .input-group:after{ display:table; content:""; clear:both;}
-    .input-group-left{ float:left;}
-    .input-group-right{ float:right;}
-    .input-group-control{ overflow:hidden;}
-    .input-group .input-group-btn .btn{ height:30px;}
+	.input-group:after{ display:table; content:""; clear:both;}
+	.input-group-left{ float:left;}
+	.input-group-right{ float:right;}
+	.input-group-control{ overflow:hidden;}
+	.input-group .input-group-btn .btn{ height:30px;}
 }
 @media \0screen\,screen\9 {
-    .input-group{ *zoom:1;}
-    .input-group:after{ display:table; content:""; clear:both;}
-    .input-group-left{ float:left; _margin-right:-3px;}
-    .input-group-right{ float:right; _margin-left:-3px;}
-    .input-group-control{ overflow:hidden; _zoom:1;}
-    .input-group .input-group-btn .btn{ height:30px;}
+	.input-group{ *zoom:1;}
+	.input-group:after{ display:table; content:""; clear:both;}
+	.input-group-left{ float:left; _margin-right:-3px;}
+	.input-group-right{ float:right; _margin-left:-3px;}
+	.input-group-control{ overflow:hidden; _zoom:1;}
+	.input-group .input-group-btn .btn{ height:30px;}
 }

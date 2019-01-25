@@ -5,9 +5,9 @@
 }
 @function size($s, $p){
 	@if $quirk {
-		@return s;
+		@return $s;
 	}
 	@else{
-		@return s - p;
+		@return $s - $p;
 	}
 }
