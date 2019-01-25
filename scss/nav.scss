@@ -4,7 +4,7 @@ table.nav{ border-collapse:collapse; width:100%; table-layout:fixed;}
 table.nav td,table.nav th{ text-align:center; padding:0;}
 ul.nav{ list-style:none; font-size:0;}
 ul.nav li{ display:inline-block; *zoom:1; *display:inline; margin-right:2px;}
-.nav td,.nav th,.nav li{ line-height:1; font-size:<%=fontSizeBase%>; position:relative;}
+.nav td,.nav th,.nav li{ line-height:1; font-size:$font-size-base; position:relative;}
 ul.nav a{ display:block; padding:10px 15px;}
 table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .nav * a:hover{ text-decoration:none;}
@@ -17,11 +17,11 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .nav-tabs .active a,.nav-tabs .active a:hover{ bottom:-1px; border:1px solid #ddd; border-bottom:1px #fff; background:#fff; color:#555;}
 .nav-pills a{ border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;} 
 .nav-pills a:hover{ background-color:#eee;}
-.nav-pills .active a,.nav-pills .active a:hover{ background-color:<%=theme['primary']%>; color:#fff;}
+.nav-pills .active a,.nav-pills .active a:hover{ background-color:$theme-primary; color:#fff;}
 .nav-underline{ border-bottom:2px solid #ddd;}
 .nav-underline a{ position:relative; color:#777;}
-.nav-underline a:hover{ padding-bottom:9px; border-bottom:2px solid <%=theme['primary']%>; margin-bottom:-1px; color:#777;}
-.nav-underline .active a,.nav-underline .active a:hover{ padding-bottom:7px; color:<%=darken(theme['primary'], 0.15)%>; border-bottom:4px solid <%=darken(theme['primary'], 0.15)%>; margin-bottom:-1px; font-weight:bold;}
+.nav-underline a:hover{ padding-bottom:9px; border-bottom:2px solid $theme-primary; margin-bottom:-1px; color:#777;}
+.nav-underline .active a,.nav-underline .active a:hover{ padding-bottom:7px; color:darken($theme-primary, 0.15); border-bottom:4px solid darken($theme-primary, 0.15); margin-bottom:-1px; font-weight:bold;}
 
 .nav.nav-justified{ width:100%; display:table;}
 .nav.nav-justified>li{ display:table-cell; width:1%; *width:auto; text-align:center;}

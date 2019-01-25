@@ -1,7 +1,7 @@
 
-.navbar{ height:<%=size(50,1)%>px; border-bottom:1px solid #ddd;}
-.navbar-brand{ float:left; height:100%; line-height:49px; font-size:18px; display:inline-block; margin-right:16px; white-space:nowrap;}
-.navbar-brand a,a.navbar-brand,.navbar-brand a:hover,a.navbar-brand:hover{ text-decoration:none; color:<%=theme['primary_text']%>}
+.navbar{ height:size(50,1)*1px; border-bottom:1px solid #ddd;}
+.navbar-brand{ float:left; height:100%; line-height:49px; font-size:18px; margin-right:16px; white-space:nowrap;}
+.navbar-brand a,a.navbar-brand,.navbar-brand a:hover,a.navbar-brand:hover{ text-decoration:none; color:$theme-primary-text;}
 .navbar-brand img,img.navbar-brand{ max-height:50px; vertical-align:middle; margin-right:10px;}
 .navbar-toggle{ display:none; float:right; padding-left:10px; padding-right:10px; height:34px; margin-top:8px; margin-left:15px; border:1px solid #ddd; background:#fff;}
 .navbar-toggle:hover{ background:#eee;}
