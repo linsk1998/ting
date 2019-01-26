@@ -97,8 +97,8 @@ a.thumbnail:hover{ border-color:#337ab7;}
 @font-face{ font-family:FontAwesome; -webkit-text-size-adjust:none; font-weight:normal; font-style:normal;
 src:url($font-awesome+'/fontawesome-webfont.eot'); src:url($font-awesome+'/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url($font-awesome+'/fontawesome-webfont.woff2') format('woff2'),url($font-awesome+'/fontawesome-webfont.woff') format('woff'), url($font-awesome+'/fontawesome-webfont.ttf') format('truetype'), url($font-awesome+'/fontawesome-webfont.svg#fontawesomeregular') format('svg');
 }
-.icon{ display:inline-block; vertical-align:middle;}
 .fa{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+.icon{ display:inline-block; vertical-align:middle; line-height:1em;}
 .icon-lg{font-size:1.33333333em;}
 .icon-2x{font-size:2em}
 .icon-3x{font-size:3em}
@@ -106,11 +106,8 @@ src:url($font-awesome+'/fontawesome-webfont.eot'); src:url($font-awesome+'/fonta
 .icon-5x{font-size:5em}
 .icon-fw{ display:inline-block; width:1.28571429em;text-align:center;}
 .icon-pull-left{ float:left; margin-right:.3em; line-height:1;}
-.icon-spin{ display:inline-block; -webkit-animation:fa-spin 2s infinite linear;-moz-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear;}
-.icon-pulse{ display:inline-block; -webkit-animation:fa-spin 1s infinite steps(8);-moz-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8);}
-@-webkit-keyframes fa-spin{ 0%{-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg);-webkit-transform:rotate(359deg)}}
-@-moz-keyframes fa-spin{ 0%{-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg);-webkit-transform:rotate(359deg)}}
-@keyframes fa-spin{ 0%{transform:rotate(0deg);} 100%{transform:rotate(359deg);}}
+.icon-spin{ display:inline-block; -webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;animation:spin 2s infinite linear;}
+.icon-pulse{ display:inline-block; -webkit-animation:spin 1s infinite steps(8);-moz-animation:spin 1s infinite steps(8);animation:spin 1s infinite steps(8);}
 .icon-rotate-90{ -webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);}
 .icon-rotate-180{ -webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);}
 .icon-rotate-270{ -webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg);}
@@ -128,3 +125,7 @@ src:url($font-awesome+'/fontawesome-webfont.eot'); src:url($font-awesome+'/fonta
 .icon-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}
 .icon-inverse{color:#fff}
 
+
+@-webkit-keyframes spin{ 0%{-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg);-webkit-transform:rotate(359deg)}}
+@-moz-keyframes spin{ 0%{-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg);-webkit-transform:rotate(359deg)}}
+@keyframes spin{ 0%{transform:rotate(0deg);} 100%{transform:rotate(359deg);}}

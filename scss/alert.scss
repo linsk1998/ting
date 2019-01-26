@@ -12,13 +12,13 @@
 .alert-success .alert-link:hover{ color:darken($success-text,20%);}
 .alert-info{ color:$info-text; background-color:$info-bg; border-color:$info-border;}
 .alert-info hr{ border-top-color:darken($info-border,5%);}
-.alert-info .alert-link{ color:darken($info-text,10);}
-.alert-info .alert-link:hover{ color:darken($info-text,20);}
+.alert-info .alert-link{ color:darken($info-text,10%);}
+.alert-info .alert-link:hover{ color:darken($info-text,20%);}
 .alert-warning{ color:$warning-text; background-color:$warning-bg; border-color:$warning-border;}
 .alert-warning hr{ border-top-color:darken($warning-border,5%);}
 .alert-warning .alert-link{ color:darken($warning-text,10%);}
-.alert-warning .alert-link:hover{ color:darken($warning-text,0.2);}
+.alert-warning .alert-link:hover{ color:darken($warning-text,20%);}
 .alert-danger{ color:$danger-text; background-color:$danger-bg; border-color:$danger-border;}
-.alert-danger hr{ border-top-color:darken($danger-border,0.05);}
-.alert-danger .alert-link{ color:darken($danger-text,0.1);}
-.alert-danger .alert-link:hover{ color:darken($danger-text,0.2);}
+.alert-danger hr{ border-top-color:darken($danger-border,5%);}
+.alert-danger .alert-link{ color:darken($danger-text,10%);}
+.alert-danger .alert-link:hover{ color:darken($danger-text,20%);}
