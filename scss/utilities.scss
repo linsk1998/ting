@@ -52,32 +52,32 @@
 .text-break{ word-wrap:break-word; -webkit-hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; hyphens:auto;}
 
 @for $i from 2 through 10{
-	.line-clamp-#{$i}{ text-overflow:ellipsis; -webkit-line-clamp:$i; overflow:hidden; max-height:$line-height-base*$i; display:-webkit-box; -webkit-box-orient:vertical;}
+	.line-clamp-#{$i}{ text-overflow:ellipsis; -webkit-line-clamp:$i; overflow:hidden; max-height:$line-height-base/$font-size-base*$i*1em; display:-webkit-box; -webkit-box-orient:vertical;}
 }
 .line-middle{ height:100%; vertical-align:middle; display:inline-block; *zoom:1; *display:inline;}
 
 
-.text-primary{ color:darken($theme-primary,0.2);}
-a.text-primary:hover,p.text-primary a:hover{ color:darken($theme-primary,0.3);}
+.text-primary{ color:darken($theme-primary,20%);}
+a.text-primary:hover,p.text-primary a:hover{ color:darken($theme-primary,30%);}
 .brand-primary{ color:$theme-primary;}
 .bg-primary{ color:#fff; background-color:$theme-primary;}
-a.bg-primary:hover,.bg-primary a:hover{ color:#fff; background-color:darken($theme-primary,0.1);}
-.border-primary{ border-color:darken($theme-primary,0.05);}
+a.bg-primary:hover,.bg-primary a:hover{ color:#fff; background-color:darken($theme-primary,10%);}
+.border-primary{ border-color:darken($theme-primary,5%);}
 
 @each $key in success, info, warning, danger {
 	.text-#{$key}{ color:map-get($context-text,$key);}
-	a.text-#{$key}:hover,p.text-#{$key} a:hover{ color:darken(map-get($context-text,$key),0.1);}
+	a.text-#{$key}:hover,p.text-#{$key} a:hover{ color:darken(map-get($context-text,$key),10%);}
 	.brand-#{$key}{ color:map-get($context,$key);}
 	.bg-#{$key}{ background-color:map-get($context-bg,$key);}
 	.border-#{$key}{ border-color:map-get($context-border,$key);}
 }
 
 @each $key, $color in $context {
-	.text-#{$key}{ color:darken($color,0.2);}
-	a.text-#{$key}:hover,p.text-#{$key} a:hover{ color:darken($color,0.3);}
+	.text-#{$key}{ color:darken($color,20%);}
+	a.text-#{$key}:hover,p.text-#{$key} a:hover{ color:darken($color,30%);}
 	.brand-#{$key}{ color:$color;}
-	.bg-#{$key}{ background-color:lighten(adjust-hue($color,-17.5),0.35);}
-	.border-#{$key}{ border-color:lighten(adjust-hue($color,-17.5),0.35);}
+	.bg-#{$key}{ background-color:lighten(adjust-hue($color,-17.5),35%);}
+	.border-#{$key}{ border-color:lighten(adjust-hue($color,-17.5),35%);}
 }
 
 .font-sans{ font-family:"Segoe UI","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Source Han Sans TC","Noto Sans CJK TC","Microsoft YaHei UI","Microsoft JhengHei","Microsoft YaHei","WenQuanYi Micro Hei",FreeSans,Arimo,"Droid Sans",STHeiti,SimHei,"FontAwesome",sans-serif;}
@@ -93,66 +93,66 @@ a.bg-primary:hover,.bg-primary a:hover{ color:#fff; background-color:darken($the
 .box-br,.box-bh{ border-right:1px solid !important;}
 
 .box-m0{ margin:0 !important;}
-.box-mxs{ margin:4xp !important;}
+.box-mxs{ margin:4px !important;}
 .box-msm{ margin:8px !important;}
 .box-mmd{ margin:16px !important;}
 .box-mlg{ margin:24px !important;}
 .box-mxl{ margin:32px !important;}
 
 .box-mt0,.box-mv0{ margin-top:0 !important;}
-.box-mtxs,.box-mvxs{ margin-top:4xp !important;}
+.box-mtxs,.box-mvxs{ margin-top:4px !important;}
 .box-mtsm,.box-mvsm{ margin-top:8px !important;}
 .box-mtmd,.box-mvmd{ margin-top:16px !important;}
 .box-mtlg,.box-mvlg{ margin-top:24px !important;}
 .box-mtxl,.box-mvxl{ margin-top:32px !important;}
 .box-mb0,.box-mv0{ margin-bottom:0 !important;}
-.box-mbxs,.box-mvxs{ margin-bottom:4xp !important;}
+.box-mbxs,.box-mvxs{ margin-bottom:4px !important;}
 .box-mbsm,.box-mvsm{ margin-bottom:8px !important;}
 .box-mbmd,.box-mvmd{ margin-bottom:16px !important;}
 .box-mblg,.box-mvlg{ margin-bottom:24px !important;}
 .box-mbxl,.box-mvxl{ margin-bottom:32px !important;}
 
 .box-ml0,.box-mh0{ margin-left:0 !important;}
-.box-mlxs,.box-mhxs{ margin-left:4xp !important;}
+.box-mlxs,.box-mhxs{ margin-left:4px !important;}
 .box-mlsm,.box-mhsm{ margin-left:8px !important;}
 .box-mlmd,.box-mhmd{ margin-left:16px !important;}
 .box-mllg,.box-mhlg{ margin-left:24px !important;}
 .box-mlxl,.box-mhxl{ margin-left:32px !important;}
 .box-mr0,.box-mh0{ margin-right:0 !important;}
-.box-mrxs,.box-mhxs{ margin-right:4xp !important;}
+.box-mrxs,.box-mhxs{ margin-right:4px !important;}
 .box-mrsm,.box-mhsm{ margin-right:8px !important;}
 .box-mrmd,.box-mhmd{ margin-right:16px !important;}
 .box-mrlg,.box-mhlg{ margin-right:24px !important;}
 .box-mrxl,.box-mhxl{ margin-right:32px !important;}
  
 .box-p0{ padding:0 !important;}
-.box-pxs{ padding:4xp !important;}
+.box-pxs{ padding:4px !important;}
 .box-psm{ padding:8px !important;}
 .box-pmd{ padding:16px !important;}
 .box-plg{ padding:24px !important;}
 .box-pxl{ padding:32px !important;}
 
 .box-pt0,.box-pv0{ padding-top:0 !important;}
-.box-ptxs,.box-pvxs{ padding-top:4xp !important;}
+.box-ptxs,.box-pvxs{ padding-top:4px !important;}
 .box-ptsm,.box-pvsm{ padding-top:8px !important;}
 .box-ptmd,.box-pvmd{ padding-top:16px !important;}
 .box-ptlg,.box-pvlg{ padding-top:24px !important;}
 .box-ptxl,.box-pvxl{ padding-top:32px !important;}
 .box-pb0,.box-pv0{ padding-bottom:0 !important;}
-.box-pbxs,.box-pvxs{ padding-bottom:4xp !important;}
+.box-pbxs,.box-pvxs{ padding-bottom:4px !important;}
 .box-pbsm,.box-pvsm{ padding-bottom:8px !important;}
 .box-pbmd,.box-pvmd{ padding-bottom:16px !important;}
 .box-pblg,.box-pvlg{ padding-bottom:24px !important;}
 .box-pbxl,.box-pvxl{ padding-bottom:32px !important;}
 
 .box-pl0,.box-ph0{ padding-left:0 !important;}
-.box-plxs,.box-phxs{ padding-left:4xp !important;}
+.box-plxs,.box-phxs{ padding-left:4px !important;}
 .box-plsm,.box-phsm{ padding-left:8px !important;}
 .box-plmd,.box-phmd{ padding-left:16px !important;}
 .box-pllg,.box-phlg{ padding-left:24px !important;}
 .box-plxl,.box-phxl{ padding-left:32px !important;}
 .box-pr0,.box-ph0{ padding-right:0 !important;}
-.box-prxs,.box-phxs{ padding-right:4xp !important;}
+.box-prxs,.box-phxs{ padding-right:4px !important;}
 .box-prsm,.box-phsm{ padding-right:8px !important;}
 .box-prmd,.box-phmd{ padding-right:16px !important;}
 .box-prlg,.box-phlg{ padding-right:24px !important;}

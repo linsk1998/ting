@@ -21,7 +21,7 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .nav-underline{ border-bottom:2px solid #ddd;}
 .nav-underline a{ position:relative; color:#777;}
 .nav-underline a:hover{ padding-bottom:9px; border-bottom:2px solid $theme-primary; margin-bottom:-1px; color:#777;}
-.nav-underline .active a,.nav-underline .active a:hover{ padding-bottom:7px; color:darken($theme-primary, 0.15); border-bottom:4px solid darken($theme-primary, 0.15); margin-bottom:-1px; font-weight:bold;}
+.nav-underline .active a,.nav-underline .active a:hover{ padding-bottom:7px; color:darken($theme-primary, 15%); border-bottom:4px solid darken($theme-primary, 15%); margin-bottom:-1px; font-weight:bold;}
 
 .nav.nav-justified{ width:100%; display:table;}
 .nav.nav-justified>li{ display:table-cell; width:1%; *width:auto; text-align:center;}

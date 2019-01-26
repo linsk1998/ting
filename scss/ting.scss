@@ -31,19 +31,19 @@ $danger:#d9534f;
 
 $success-text:#3c763d;
 $success-bg:#dff0d8;
-$success-border:darken(adjust-hue($success-bg,-10),0.05);
+$success-border:darken(adjust-hue($success-bg,-10),5%);
 
 $info-text:#31708f;
 $info-bg:#d9edf7;
-$info-border:darken(adjust-hue($info-bg,-10),0.05);
+$info-border:darken(adjust-hue($info-bg,-10),5%);
 
 $warning-text:#8a6d3b;
 $warning-bg:#030300;
-$warning-border:darken(adjust-hue($warning-bg,-10),0.05);
+$warning-border:darken(adjust-hue($warning-bg,-10),5%);
 
 $danger-text:#a94442;
 $danger-bg:#f2dede;
-$danger-border:darken(adjust-hue($danger-bg,-10),0.05);
+$danger-border:darken(adjust-hue($danger-bg,-10),5%);
 
 $context:(
 	success:$success,
