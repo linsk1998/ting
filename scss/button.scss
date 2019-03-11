@@ -12,13 +12,18 @@ $btn-padding-large:16px;
 $btn-padding-small:10px;
 $btn-padding-xsmall:5px;
 $btn-border-width:1px;
-.btn{ vertical-align:top; line-height:$btn-height-base - 2*$btn-border-width; padding:0 $btn-padding-base; margin-bottom:0; font-size:$btn-fontsize-base; font-weight:normal; text-align:center; white-space:nowrap; cursor:pointer; border:$btn-border-width solid;
+
+.btn{ vertical-align:top; padding:($btn-height-base - 2*$btn-border-width - $line-height-base)/2 $btn-padding-base; margin-bottom:0; font-size:$btn-fontsize-base; font-weight:normal; text-align:center; white-space:nowrap; cursor:pointer; border:$btn-border-width solid;
 -ms-touch-action:manipulation; touch-action:manipulation;
 -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
 transition:border-color,background,box-shadow .4s;}
 .btn:hover{ text-decoration:none;}
 input.btn,button.btn{ outline:none; height:$btn-height-base; margin-left:0; margin-right:0; *padding-left:1px; *padding-right:1px;}
-a.btn{ display:inline-block; height:size($btn-height-base,2*$btn-border-width);}
+a.btn{ display:inline-block;}
+
+.btn-with-icon{ font-size:0;}
+.btn-label{ display:inline-block; vertical-align:middle; font-size:$btn-fontsize-base;}
+.btn .icon{ margin-right:4px;}
 
 .btn-outline{ color:$theme-primary; background:none; border-color:$theme-primary;}
 .btn-outline:hover{ color:#fff; background-color:$theme-primary; border-color:$theme-primary;}
@@ -42,14 +47,11 @@ html>body .btn[disabled],html>body fieldset[disabled] .btn{ cursor:not-allowed; 
 html input.btn:focus,html button.btn:focus{ border-color:#000;}
 html .btn-disabled,html .btn-disabled:hover,html input.btn-disabled:focus,html button.btn-disabled:focus{ background-color:#ddd; border-color:darken(#dddddd, 5%); color:#fff;}
 
-.btn-lg{ font-size:$btn-fontsize-large; padding-left:$btn-padding-large; padding-right:$btn-padding-large;}
-a.btn-lg{ line-height:$btn-height-large - 2*$btn-border-width; height:size($btn-height-large,2*$btn-border-width);}
+.btn-lg{ font-size:$btn-fontsize-large; padding:($btn-height-large - 2*$btn-border-width - $line-height-base)/2 $btn-padding-large;}
 input.btn-lg,button.btn-lg{ height:$btn-height-large; *padding-left:5px; *padding-right:5px;}
-.btn-sm{ font-size:$btn-fontsize-small; padding-left:$btn-padding-small; padding-right:$btn-padding-small;}
-a.btn-sm{ line-height:$btn-height-small - 2*$btn-border-width; height:size($btn-height-small,2*$btn-border-width);}
+.btn-sm{ font-size:$btn-fontsize-small; padding:($btn-height-small - 2*$btn-border-width - $line-height-base)/2 $btn-padding-small;}
 input.btn-sm,button.btn-sm{ height:$btn-height-small; *padding-left:2px; *padding-right:2px;}
-.btn-xs{ font-size:$btn-fontsize-xsmall; padding-left:$btn-padding-xsmall; padding-right:$btn-padding-xsmall;}
-a.btn-xs{ line-height:$btn-height-xsmall - 2*$btn-border-width; height:size($btn-height-xsmall,2*$btn-border-width);}
+.btn-xs{ font-size:$btn-fontsize-xsmall; padding:($btn-height-xsmall - 2*$btn-border-width - $line-height-base)/2 $btn-padding-xsmall;}
 input.btn-xs,button.btn-xs{ height:$btn-height-xsmall; *padding-left:0; *padding-right:0;}
 a.btn-block{ display:block;}
 input.btn-block,button.btn-block{ width:100%;}
@@ -73,9 +75,6 @@ border-top-right-radius:0; border-bottom-right-radius:0;}
 -webkit-border-top-left-radius:0; -webkit-border-bottom-left-radius:0;
 border-top-left-radius:0; border-bottom-left-radius:0;}
 
-.btn-multiple{ font-size:0;}
-.btn-label{ display:inline-block; vertical-align:middle; line-height:$btn-height-base - 2*$btn-border-width; font-size:$btn-fontsize-base;}
-.btn .icon{ margin-right:4px;}
 
 .caret{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 *zoom:expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;');}
