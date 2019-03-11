@@ -1,17 +1,72 @@
 
-$gray-base:				#000;
-$gray-darker:			lighten($gray-base, 13.5%); // #222
-$gray-dark:				lighten($gray-base, 20%);   // #333
-$gray:					lighten($gray-base, 33.5%); // #555
-$gray-light:			lighten($gray-base, 46.7%); // #777
-$gray-lighter:			lighten($gray-base, 93.5%); // #eee
 
-$brand-primary:			#337ab7;
-$brand-success:			#5cb85c;
-$brand-info:			#5bc0de;
-$brand-warning:			#f0ad4e;
-$brand-danger:			#d9534f;
 
-$text-color:			$gray-dark;
-$link-color:			$brand-primary;
-$link-hover-color:		darken($link-color, 15%);
+$font-awesome:"fonts";//图标CDN
+$font-size-base:14px;//基础文字大小
+$line-height-base:20px;//基础文字行高
+$quirk:false;
+
+$theme-primary:#337ab7;
+$theme-primary-dark:#26659f;
+$theme-primary-light:#C5CAE9;
+$theme-text:#fff;
+$theme-accent:#FF4081;
+$theme-primary-text:#212121;
+$theme-secondary-text:#757575;
+$theme-divider:#BDBDBD;
+
+$theme:(
+	teal:#009688,
+	blue:#2196F3,
+	indigo:#337ab7,
+	purple:#6f5499,
+	red:#C5020D,
+	brown:#795548
+);
+
+
+$success:#5cb85c;
+$info:#5bc0de;
+$warning:#f0ad4e;
+$danger:#d9534f;
+
+$success-text:#3c763d;
+$success-bg:#dff0d8;
+$success-border:darken($success-bg,15%);
+
+$info-text:#31708f;
+$info-bg:#d9edf7;
+$info-border:darken($info-bg,15%);
+
+$warning-text:#8a6d3b;
+$warning-bg:darken(#fcf8e3,5%);
+$warning-border:darken($warning-bg,15%);
+
+$danger-text:#a94442;
+$danger-bg:#f2dede;
+$danger-border:darken($danger-bg,15%);
+
+$context:(
+	success:$success,
+	info:$info,
+	warning:$warning,
+	danger:$danger
+);
+$context-text:(
+	success:$success-text,
+	info:$info-text,
+	warning:$warning-text,
+	danger:$danger-text
+);
+$context-bg:(
+	success:$success-bg,
+	info:$info-bg,
+	warning:$warning-bg,
+	danger:$danger-bg
+);
+$context-border:(
+	success:$success-border,
+	info:$info-border,
+	warning:$warning-border,
+	danger:$danger-border
+);
