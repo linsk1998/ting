@@ -72,12 +72,12 @@ a.bg-primary:hover,.bg-primary a:hover{ color:#fff; background-color:darken($the
 	.border-#{$key}{ border-color:map-get($context-border,$key);}
 }
 
-@each $key, $color in $context {
+@each $key, $color in $theme {
 	.text-#{$key}{ color:darken($color,20%);}
 	a.text-#{$key}:hover,p.text-#{$key} a:hover{ color:darken($color,30%);}
 	.brand-#{$key}{ color:$color;}
-	.bg-#{$key}{ background-color:lighten(adjust-hue($color,-17.5),35%);}
-	.border-#{$key}{ border-color:lighten(adjust-hue($color,-17.5),35%);}
+	.bg-#{$key}{ background-color:lighten(saturate(adjust-hue($color,-17.5),5%),35%);}
+	.border-#{$key}{ border-color:lighten(saturate(adjust-hue($color,-17.5),5%),30%);}
 }
 
 .font-sans{ font-family:"Segoe UI","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Source Han Sans TC","Noto Sans CJK TC","Microsoft YaHei UI","Microsoft JhengHei","Microsoft YaHei","WenQuanYi Micro Hei",FreeSans,Arimo,"Droid Sans",STHeiti,SimHei,"FontAwesome",sans-serif;}
