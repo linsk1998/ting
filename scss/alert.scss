@@ -1,5 +1,5 @@
 
-.alert{ padding:8px 16px; margin-bottom:8px; border:1px solid transparent;}
+.alert{ padding:8px 16px; margin-bottom:$margin-bottom-base; border:1px solid transparent;}
 .alert h4{ margin-top:0; color:inherit;}
 .alert .alert-link{ font-weight:bold;}
 .alert  p,.alert  ul{ margin-bottom:0;}

@@ -1,5 +1,5 @@
 
-.breadcrumb{ padding:8px 15px; margin:0; margin-bottom:20px; text-align:left; list-style:none; background-color:#f5f5f5; color:#777;}
+.breadcrumb{ padding:8px 15px; margin:0; margin-bottom:$margin-bottom-base; text-align:left; list-style:none; background-color:#f5f5f5; color:#777;}
 .breadcrumb li{ display:inline-block; *display:inline; *zoom:1;}
 .breadcrumb > li + li:before{ padding:0 5px; color:#ccc; content:"/\00a0";}
 .breadcrumb a{ *padding-right:15px; *margin-right:10px; *background:url(../images/breadcrumb.png) no-repeat right center;}

@@ -1,5 +1,5 @@
 
-.nav{ margin:0;}
+.nav{ margin:0 0 $margin-bottom-base;}
 table.nav{ border-collapse:collapse; width:100%; table-layout:fixed;}
 table.nav td,table.nav th{ text-align:center; padding:0;}
 ul.nav{ list-style:none; font-size:0;}
@@ -27,13 +27,14 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .nav.nav-justified>li{ display:table-cell; width:1%; *width:auto; text-align:center;}
 
 .tabs-left .nav{ float:left; _width:33%;}
-.tabs-left .nav li{ display:block; margin:2px 0;}
-.tabs-left .nav a{ min-width:74px;}
+.tabs-left .nav li,ul.tabs-stacked li{ display:block; margin:2px 0;}
+.tabs-left .nav a,ul.tabs-stacked a{ min-width:74px;}
 .tabs-left:after{ clear:both;}
 .tabs-left:after{ display:table; line-height:0; content:"";}
-.tabs-left .nav-tabs{ border:0 none; border-right:1px solid #ddd; margin:0 20px 20px 0; _margin:0 17px 20px 0;}
-.tabs-left .nav-tabs a{ -moz-border-radius:4px 0 0 4px; -webkit-border-radius:4px 0 0 4px; border-radius:4px 0 0 4px;}
-.tabs-left .nav-tabs .active a,.tabs-left .nav-tabs .active a:hover{ bottom:auto; right:-1px; border-bottom:1px solid #ddd; border-right:1px #fff;}
+.tabs-left .nav-tabs,.tabs-stacked{ border:0 none; border-right:1px solid #ddd; margin:0 20px 20px 0; _margin:0 17px 20px 0;}
+.tabs-left .nav-tabs a,.tabs-stacked a{ -moz-border-radius:4px 0 0 4px; -webkit-border-radius:4px 0 0 4px; border-radius:4px 0 0 4px;}
+.tabs-left .nav-tabs .active a,.tabs-left .nav-tabs .active a:hover,
+.tabs-stacked .active a,.tabs-stacked .active a:hover{ bottom:auto; right:-1px; border-bottom:1px solid #ddd; border-right:1px #fff;}
 
 .tabs-right .nav{ float:right; _width:33%;}
 .tabs-right .nav li{ display:block; margin:2px 0;}
