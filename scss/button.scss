@@ -18,7 +18,7 @@ $btn-border-width:1px;
 -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
 transition:border-color,background,box-shadow .4s;}
 .btn:hover{ text-decoration:none;}
-input.btn,button.btn{ outline:none; height:$btn-height-base; margin-left:0; margin-right:0; -webkit-appearance:none;
+input.btn,button.btn{ outline:none; height:$btn-height-base; margin-left:0; margin-right:0; -webkit-appearance:none; -webkit-border-radius:0;border-radius:0;
 *width:auto; *overflow-x:visible; *padding:0 $btn-padding-base;}
 a.btn{ display:inline-block;}
 
