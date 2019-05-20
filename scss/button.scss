@@ -6,11 +6,11 @@ $btn-fontsize-xsmall:12px;
 $btn-height-base:34px;
 $btn-height-large:45px;
 $btn-height-small:30px;
-$btn-height-xsmall:22px;
+$btn-height-xsmall:24px;
 $btn-padding-base:12px;
 $btn-padding-large:16px;
 $btn-padding-small:10px;
-$btn-padding-xsmall:5px;
+$btn-padding-xsmall:6px;
 $btn-border-width:1px;
 
 .btn{ vertical-align:top; padding:($btn-height-base - 2*$btn-border-width - $line-height-base)/2 $btn-padding-base; margin-bottom:0; font-size:$btn-fontsize-base; font-weight:normal; text-align:center; white-space:nowrap; cursor:pointer; border:$btn-border-width solid;
@@ -18,12 +18,12 @@ $btn-border-width:1px;
 -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
 transition:border-color,background,box-shadow .4s;}
 .btn:hover{ text-decoration:none;}
-input.btn,button.btn{ outline:none; height:$btn-height-base; margin-left:0; margin-right:0; *padding-left:1px; *padding-right:1px;}
+input.btn,button.btn{ outline:none; height:$btn-height-base; margin-left:0; margin-right:0; -webkit-appearance:none;
+*width:auto; *overflow-x:visible; *padding:0 $btn-padding-base;}
 a.btn{ display:inline-block;}
 
-.btn-with-icon{ font-size:0;}
-.btn-label{ display:inline-block; vertical-align:middle; font-size:$btn-fontsize-base;}
-.btn .icon{ margin-right:4px;}
+.btn-label{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; line-height:1; *line-height:20px;}
+.btn .icon{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; margin-right:4px;}
 
 .btn-outline{ color:$theme-primary; background:none; border-color:$theme-primary;}
 .btn-outline:hover{ color:#fff; background-color:$theme-primary; border-color:$theme-primary;}
@@ -48,11 +48,11 @@ html input.btn:focus,html button.btn:focus{ border-color:#000;}
 html .btn-disabled,html .btn-disabled:hover,html input.btn-disabled:focus,html button.btn-disabled:focus{ background-color:#ddd; border-color:darken(#dddddd, 5%); color:#fff;}
 
 .btn-lg{ font-size:$btn-fontsize-large; padding:($btn-height-large - 2*$btn-border-width - $line-height-base)/2 $btn-padding-large;}
-input.btn-lg,button.btn-lg{ height:$btn-height-large; *padding-left:5px; *padding-right:5px;}
+input.btn-lg,button.btn-lg{ height:$btn-height-large; padding:0 $btn-padding-large;}
 .btn-sm{ font-size:$btn-fontsize-small; padding:($btn-height-small - 2*$btn-border-width - $line-height-base)/2 $btn-padding-small;}
-input.btn-sm,button.btn-sm{ height:$btn-height-small; *padding-left:2px; *padding-right:2px;}
+input.btn-sm,button.btn-sm{ height:$btn-height-small; padding:0 $btn-padding-small;}
 .btn-xs{ font-size:$btn-fontsize-xsmall; padding:($btn-height-xsmall - 2*$btn-border-width - $line-height-base)/2 $btn-padding-xsmall;}
-input.btn-xs,button.btn-xs{ height:$btn-height-xsmall; *padding-left:0; *padding-right:0;}
+input.btn-xs,button.btn-xs{ height:$btn-height-xsmall; padding:0 $btn-padding-xsmall;}
 a.btn-block{ display:block;}
 input.btn-block,button.btn-block{ width:100%;}
 @-moz-document url-prefix(){
@@ -66,8 +66,7 @@ input.btn-block,button.btn-block{ width:100%;}
 .btn-group{ display:inline-block; vertical-align:middle; *display:inline; *zoom:1; font-size:0;}
 .btn-group > .btn:not(:first-child):not(:last-child){ -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
 .btn-group .btn{ float:left; margin-left:0; margin-right:-1px; position:relative;}
-.btn-group .btn:focus{ z-index:2;}
-.btn-group .btn:hover{ z-index:3;}
+.btn-group .btn:focus{ z-index:$level-item-actived;}
 .btn-group > .btn:first-child:not(:last-child){ -moz-border-radius-topright:0; -moz-border-radius-bottomright:0;
 -webkit-border-top-right-radius:0; -webkit-border-bottom-right-radius:0;
 border-top-right-radius:0; border-bottom-right-radius:0;}
@@ -76,9 +75,7 @@ border-top-right-radius:0; border-bottom-right-radius:0;}
 border-top-left-radius:0; border-bottom-left-radius:0;}
 
 
-.caret{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-*zoom:expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;');}
-.caret:before{ content:"\f0d7";}
+.caret{ display:inline-block; width:0; height:0; overflow:hidden; margin-left:2px; vertical-align:middle; border:4px solid transparent; border-bottom:0; border-top-color:black; border-top-style:dashed; border-top-style:solid \9; _border-right-style:dotted; _border-left-style:dotted; }
 
 .close{ font-weight:bold; color:#000; text-shadow:0 1px 0 #fff; opacity:.5; font-size:20px;}
 .close:hover{ color:#000; text-decoration:none; cursor:pointer; opacity:.8;}
