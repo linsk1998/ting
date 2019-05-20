@@ -8,13 +8,12 @@
 .input-group-right{ border-left:0 none; -moz-box-ordinal-group:1;-webkit-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;order:1;}
 .input-group-right:last-child{ -moz-box-ordinal-group:-1;-webkit-box-ordinal-group:-1;-ms-flex-order:-1;-webkit-order:-1;order:-1;}
 .input-group-btn{ padding:0;}
-.input-group .input-group-btn .btn{ border:0 none; height:100%; margin:0;}
+.input-group .input-group-btn .btn{ border:0 none; height:30px; line-height:30px; margin:0; padding-top:0; padding-bottom:0;}
 @media (min-width:0\0) and (min-resolution:.001dpcm) {
 	.input-group:after{ display:table; content:""; clear:both;}
 	.input-group-left{ float:left;}
 	.input-group-right{ float:right;}
 	.input-group-control{ overflow:hidden;}
-	.input-group .input-group-btn .btn{ height:30px;}
 }
 @media \0screen\,screen\9 {
 	.input-group{ *zoom:1;}
@@ -22,5 +21,4 @@
 	.input-group-left{ float:left; _margin-right:-3px;}
 	.input-group-right{ float:right; _margin-left:-3px;}
 	.input-group-control{ overflow:hidden; _zoom:1;}
-	.input-group .input-group-btn .btn{ height:30px;}
 }
