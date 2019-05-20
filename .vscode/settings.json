@@ -1,4 +1,10 @@
 {
+	"easysass.formats": [
+		{
+			"format": "compact",
+			"extension": ".css"
+		}
+	],
 	"easysass.targetDir": "./ting/",
 	"easysass.excludeRegex": "^((?!(ting\\.scss|ting-quirks\\.scss)).)*$"
 }

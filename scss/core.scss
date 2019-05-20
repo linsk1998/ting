@@ -42,7 +42,7 @@ a:hover{ color:darken($theme-primary,15%); text-decoration:underline;}
 pre{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px;}
 p code{ background:#f9f2f4; padding:2px 4px; font-size:90%; border-radius:4px; color:#d14; border:1px solid #e1e1e8; _display:inline-block;}
 h1,h2,h3,h4,h5,h6{ font-weight:500; line-height:1.1;}
-h1,.h1,h2,.h2,h3,.h3{ margin-top:8px; margin-bottom:10px;}
+h1,.h1,h2,.h2,h3,.h3{ margin-top:16px; margin-bottom:10px;}
 h4,.h4,h5,.h5,h6,.h6{ margin-top:8px; margin-bottom:10px;}
 h1,.h1{ font-size:36px;}
 h2,.h2{ font-size:30px;}
@@ -50,6 +50,9 @@ h3,.h3{ font-size:24px;}
 h4,.h4{ font-size:18px;}
 h5,.h5{ font-size:14px;}
 h6,.h6{ font-size:12px;}
+.inverse{ color:#eee;}
+.inverse a{ color:#ddd;}
+.inverse a:hover{ color:#fff;}
 @media (max-width:640px){
 	h1,.h1{ font-size:30px;}
 	h2,.h2{ font-size:24px;}
@@ -84,6 +87,21 @@ margin:auto; border-width:3px solid #000; padding:1em; background:white;}
 	.dl-horizontal dt{ float:none; width:auto; text-align:inherit;}
 	.dl-horizontal dd{ margin-left:0;}
 }
+.text-hide{ font:0/0 a; color:transparent; text-shadow:none; background-color:transparent; border:0;}
+
+.text-left{ text-align:left;}
+.text-right{ text-align:right;}
+.text-center{ text-align:center;}
+.text-middle{ vertical-align:middle;}
+.text-top{ vertical-align:top;}
+.text-bottom{ vertical-align:bottom;}
+.text-justify{ text-align:justify;}
+.text-nowrap{ white-space:nowrap;}
+.text-capitalize{ text-transform:capitalize;}
+.text-muted{ color:#777;}
+.text-truncate{ _width:100%; word-wrap:normal; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.text-break{ word-wrap:break-word; -webkit-hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; hyphens:auto;}
+
 .img-responsive{ display:block; max-width:100%; height:auto;}
 
 .thumbnail{ display:block; padding:4px; margin-bottom:20px; line-height:0; background-color:#fff; border:1px solid #ddd;}
@@ -99,15 +117,15 @@ src:url($font-awesome+'/fontawesome-webfont.eot'); src:url($font-awesome+'/fonta
 }
 .fa{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
 .icon{ display:inline-block; vertical-align:middle; line-height:1em;}
-.icon-lg{font-size:1.33333333em;}
-.icon-2x{font-size:2em}
-.icon-3x{font-size:3em}
-.icon-4x{font-size:4em}
-.icon-5x{font-size:5em}
-.icon-fw{ display:inline-block; width:1.28571429em;text-align:center;}
+.icon-lg{font-size:1.33333333em; line-height:1em;}
+.icon-2x{font-size:2em; line-height:1em;}
+.icon-3x{font-size:3em; line-height:1em;}
+.icon-4x{font-size:4em; line-height:1em;}
+.icon-5x{font-size:5em; line-height:1em;}
+.icon-fw{ display:inline-block; line-height:1em; width:1.28571429em;text-align:center;}
 .icon-pull-left{ float:left; margin-right:.3em; line-height:1;}
-.icon-spin{ display:inline-block; -webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;animation:spin 2s infinite linear;}
-.icon-pulse{ display:inline-block; -webkit-animation:spin 1s infinite steps(8);-moz-animation:spin 1s infinite steps(8);animation:spin 1s infinite steps(8);}
+.icon-spin{ display:inline-block; line-height:1em; -webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;animation:spin 2s infinite linear;}
+.icon-pulse{ display:inline-block; line-height:1em; -webkit-animation:spin 1s infinite steps(8);-moz-animation:spin 1s infinite steps(8);animation:spin 1s infinite steps(8);}
 .icon-rotate-90{ -webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);}
 .icon-rotate-180{ -webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);}
 .icon-rotate-270{ -webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg);}
@@ -121,8 +139,8 @@ src:url($font-awesome+'/fontawesome-webfont.eot'); src:url($font-awesome+'/fonta
 	.icon-flip-vertical{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2,mirror=1);}
 }
 .icon-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}
-.icon-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
-.icon-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}
+.icon-stack-1x,.icon-stack-2x{position:absolute;left:0;width:100%;text-align:center}
+.icon-stack-1x{line-height:inherit}.icon-stack-2x{font-size:2em}
 .icon-inverse{color:#fff}
 
 
