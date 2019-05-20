@@ -13,10 +13,10 @@ div.container-fluid,td.container-fluid{ width:auto; padding-right:20px; padding-
 table.container{ table-layout:fixed; @if($quirk){ *display:inline-block;}}
 table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inline-block;}}
 
-.row,.row-separate{ *zoom:1; *margin-right:-1%;}
-.row:before,.row:after,.row-separate:before,.row-separate:after{ display:table; content:"";}
-.row:after,.row-separate:after{ clear:both;}
-.row-separate{ margin-left:-1/47*100%;}
+.row,.row-gutter{ *zoom:1; *margin-right:-1%;}
+.row:before,.row:after,.row-gutter:before,.row-gutter:after{ display:table; content:"";}
+.row:after,.row-gutter:after{ clear:both;}
+.row-gutter{ margin-left:-1/47*100%;}
 .row-nowrap{ white-space:nowrap; overflow:hidden;}
 .col-inline{ display:inline-block; *display:inline; *zoom:1; vertical-align:top; border:0 dotted transparent; _border-color:#ffffff;}
 
@@ -29,24 +29,24 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 { _display:inline; float:left; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box;
 @if(not $quirk){*padding-left:0 !important; *padding-right:0 !important; *border-left-width:0 !important; *border-right-width:0 !important;}}
 
-.row-separate .col-avg-5,.row-separate .col-avg-7,.row-separate .col-avg-8,.row-separate .col-avg-9,
-.row-separate .col-1,.row-separate .col-2,.row-separate .col-3,.row-separate .col-4,.row-separate .col-5,.row-separate .col-6,
-.row-separate .col-7,.row-separate .col-8,.row-separate .col-9,.row-separate .col-10,.row-separate .col-11,.row-separate .col-12,
-.row-separate .col-md-1,.row-separate .col-md-2,.row-separate .col-md-3,.row-separate .col-md-4,.row-separate .col-md-5,.row-separate .col-md-6,
-.row-separate .col-md-7,.row-separate .col-md-8,.row-separate .col-md-9,.row-separate .col-md-10,.row-separate .col-md-11,.row-separate .col-md-12
+.row-gutter .col-avg-5,.row-gutter .col-avg-7,.row-gutter .col-avg-8,.row-gutter .col-avg-9,
+.row-gutter .col-1,.row-gutter .col-2,.row-gutter .col-3,.row-gutter .col-4,.row-gutter .col-5,.row-gutter .col-6,
+.row-gutter .col-7,.row-gutter .col-8,.row-gutter .col-9,.row-gutter .col-10,.row-gutter .col-11,.row-gutter .col-12,
+.row-gutter .col-md-1,.row-gutter .col-md-2,.row-gutter .col-md-3,.row-gutter .col-md-4,.row-gutter .col-md-5,.row-gutter .col-md-6,
+.row-gutter .col-md-7,.row-gutter .col-md-8,.row-gutter .col-md-9,.row-gutter .col-md-10,.row-gutter .col-md-11,.row-gutter .col-md-12
 { _margin-left:1/48*100%;}
 .row .col-1,.row .col-2,.row .col-3,.row .col-4,.row .col-5,.row .col-6,
 .row .col-7,.row .col-8,.row .col-9,.row .col-10,.row .col-11,.row .col-12,
 .row .col-md-1,.row .col-md-2,.row .col-md-3,.row .col-md-4,.row .col-md-5,.row .col-md-6,
 .row .col-md-7,.row .col-md-8,.row .col-md-9,.row .col-md-10,.row .col-md-11,.row .col-md-12
 { _margin-left:0;}
-.row-separate>[class*="col-"]{ margin-left:1/48*100%;}
+.row-gutter>[class*="col-"]{ margin-left:1/48*100%;}
 .row>[class*="col-"]{ margin-left:0;}
 @for $i from 1 through 12{
-	.row-separate .col-#{$i}{ width:(3*$i+$i -1)/48*100%*100/101;}
+	.row-gutter .col-#{$i}{ width:(3*$i+$i -1)/48*100%*100/101;}
 }
 @for $i from 1 through 12{
-	.row-separate .col-offset-#{$i}{ margin-left:if($quirk,(4*$i+1)/48*100%*100/101,(4*$i+1)/47*100%);}
+	.row-gutter .col-offset-#{$i}{ margin-left:if($quirk,(4*$i+1)/48*100%*100/101,(4*$i+1)/47*100%);}
 }
 @for $i from 1 through 12{
 	.row .col-#{$i}{ width:$i/12*100%*100/101;}
@@ -55,10 +55,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 	.row .col-offset-#{$i}{ margin-left:$i/12*100%*100/101}
 }
 @for $i from 1 through 12{
-	.row-separate .col-md-#{$i}{ width:(3*$i+$i -1)/48*100%*100/101;}
+	.row-gutter .col-md-#{$i}{ width:(3*$i+$i -1)/48*100%*100/101;}
 }
 @for $i from 1 through 12{
-	.row-separate .col-md-offset-#{$i}{ margin-left:if($quirk,(4*$i+1)/48*100%*100/101,(4*$i+1)/47*100%);}
+	.row-gutter .col-md-offset-#{$i}{ margin-left:if($quirk,(4*$i+1)/48*100%*100/101,(4*$i+1)/47*100%);}
 }
 @for $i from 1 through 12{
 	.row .col-md-#{$i}{ width:$i/12*100%*100/101;}
@@ -67,10 +67,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 	.row .col-md-offset-#{$i}{ margin-left:$i/12*100%*100/101;}
 }
 
-.row-separate .col-avg-5{ width:(1-5/48)/5*100%*100/101;}
-.row-separate .col-avg-7{ width:(1-5/48)/7*100%*100/101;}
-.row-separate .col-avg-8{ width:(1-5/48)/8*100%*100/101;}
-.row-separate .col-avg-9{ width:(1-5/48)/9*100%*100/101;}
+.row-gutter .col-avg-5{ width:(1-5/48)/5*100%*100/101;}
+.row-gutter .col-avg-7{ width:(1-5/48)/7*100%*100/101;}
+.row-gutter .col-avg-8{ width:(1-5/48)/8*100%*100/101;}
+.row-gutter .col-avg-9{ width:(1-5/48)/9*100%*100/101;}
 .row .col-avg-5{ width:1/5*100%*100/101;}
 .row .col-avg-7{ width:1/7*100%*100/101;}
 .row .col-avg-8{ width:1/8*100%*100/101;}
@@ -79,10 +79,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 	.row .col-md-offset-#{$i}{ margin-left:$i/12*100%*100/101;}
 }
 @for $i from 1 through 12{
-	.row-separate>.col-#{$i}{ width:(3*$i+$i -1)/48*100%; *width:(3*$i+$i -1)/48*100%*100/101;}
+	.row-gutter>.col-#{$i}{ width:(3*$i+$i -1)/48*100%; *width:(3*$i+$i -1)/48*100%*100/101;}
 }
 @for $i from 1 through 12{
-	.row-separate>.col-offset-#{$i}{ margin-left:(4*$i+1)/48*100%; *margin-left:(4*$i+1)/48*100%*100/101;}
+	.row-gutter>.col-offset-#{$i}{ margin-left:(4*$i+1)/48*100%; *margin-left:(4*$i+1)/48*100%*100/101;}
 }
 @for $i from 1 through 12{
 	.row>.col-#{$i}{ width:$i/12*100%; *width:$i/12*100%*100/101;}
@@ -92,10 +92,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 }
 
 @for $i from 1 through 12{
-	.row-separate>.col-md-#{$i}{ width:(3*$i+$i -1)/48*100%; *width:(3*$i+$i -1)/48*100%*100/101;}
+	.row-gutter>.col-md-#{$i}{ width:(3*$i+$i -1)/48*100%; *width:(3*$i+$i -1)/48*100%*100/101;}
 }
 @for $i from 1 through 12{
-	.row-separate>.col-md-offset-#{$i}{ margin-left:(4*$i+1)/48*100%; *margin-left:(4*$i+1)/48*100%*100/101;}
+	.row-gutter>.col-md-offset-#{$i}{ margin-left:(4*$i+1)/48*100%; *margin-left:(4*$i+1)/48*100%*100/101;}
 }
 @for $i from 1 through 12{
 	.row>.col-md-#{$i}{ width:$i/12*100%; *width:$i/12*100%*100/101;}
@@ -103,10 +103,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 @for $i from 1 through 12{
 	.row>.col-md-offset-#{$i}{ margin-left:$i/12*100%; *margin-left:$i/12*100%*100/101;}
 }
-.row-separate>.col-avg-5{ width:(1-5/48)/5*100%; *width:(1-5/48)/5*100%*100/101;}
-.row-separate>.col-avg-7{ width:(1-7/48)/7*100%; *width:(1-7/48)/7*100%*100/101;}
-.row-separate>.col-avg-8{ width:(1-8/48)/8*100%; *width:(1-8/48)/8*100%*100/101;}
-.row-separate>.col-avg-9{ width:(1-9/48)/9*100%; *width:(1-9/48)/9*100%*100/101;}
+.row-gutter>.col-avg-5{ width:(1-5/48)/5*100%; *width:(1-5/48)/5*100%*100/101;}
+.row-gutter>.col-avg-7{ width:(1-7/48)/7*100%; *width:(1-7/48)/7*100%*100/101;}
+.row-gutter>.col-avg-8{ width:(1-8/48)/8*100%; *width:(1-8/48)/8*100%*100/101;}
+.row-gutter>.col-avg-9{ width:(1-9/48)/9*100%; *width:(1-9/48)/9*100%*100/101;}
 .row>.col-avg-5{ width:1/5*100%; *width:1/5*100%*100/101;}
 .row>.col-avg-7{ width:1/7*100%; *width:1/5*100%*100/101;}
 .row>.col-avg-8{ width:1/8*100%; *width:1/5*100%*100/101;}
@@ -115,10 +115,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 @media (min-width:1230px){
 	.container{ width:size(1200,30)*1px;}
 	@for $i from 1 through 12{
-		.row-separate>.col-lg-#{$i}{ width:(3*$i+$i -1)/48*100%;}
+		.row-gutter>.col-lg-#{$i}{ width:(3*$i+$i -1)/48*100%;}
 	}
 	@for $i from 1 through 12{
-		.row-separate>.col-lg-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
+		.row-gutter>.col-lg-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
 	}
 	@for $i from 1 through 12{
 		.row>.col-lg-#{$i}{ width:$i/12*100%;}
@@ -137,10 +137,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 @media (min-width:641px) and (max-width:970px){
 	.container{ width:size(640,30)*1px;}
 	@for $i from 1 through 12{
-		.row-separate>.col-xs-#{$i}{ width:(3*$i+$i -1)/48*100%;}
+		.row-gutter>.col-xs-#{$i}{ width:(3*$i+$i -1)/48*100%;}
 	}
 	@for $i from 1 through 12{
-		.row-separate>.col-xs-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
+		.row-gutter>.col-xs-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
 	}
 	@for $i from 1 through 12{
 		.row>.col-xs-#{$i}{ width:$i/12*100%;}
@@ -149,10 +149,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 		.row>.col-xs-offset-#{$i}{ margin-left:$i/12*100%;}
 	}
 	@for $i from 1 through 12{
-		.row-separate>.col-sm-#{$i}{ width:(3*$i+$i -1)/48*100%;}
+		.row-gutter>.col-sm-#{$i}{ width:(3*$i+$i -1)/48*100%;}
 	}
 	@for $i from 1 through 12{
-		.row-separate>.col-sm-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
+		.row-gutter>.col-sm-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
 	}
 	@for $i from 1 through 12{
 		.row>.col-sm-#{$i}{ width:$i/12*100%;}
@@ -186,17 +186,17 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 	.row>.col-md-1,.row>.col-md-2,.row>.col-md-3,.row>.col-md-4,.row>.col-md-5,.row>.col-md-6,
 	.row>.col-md-7,.row>.col-md-8,.row>.col-md-9,.row>.col-md-10,.row>.col-md-11,.row>.col-md-12
 	{ width:100%; margin-left:0;}
-	.row-separate>.col-lg-1,.row-separate>.col-lg-2,.row-separate>.col-lg-3,.row-separate>.col-lg-4,.row-separate>.col-lg-5,.row-separate>.col-lg-6,
-	.row-separate>.col-lg-7,.row-separate>.col-lg-8,.row-separate>.col-lg-9,.row-separate>.col-lg-10,.row-separate>.col-lg-11,.row-separate>.col-lg-12,
-	.row-separate>.col-md-1,.row-separate>.col-md-2,.row-separate>.col-md-3,.row-separate>.col-md-4,.row-separate>.col-md-5,.row-separate>.col-md-6,
-	.row-separate>.col-md-7,.row-separate>.col-md-8,.row-separate>.col-md-9,.row-separate>.col-md-10,.row-separate>.col-md-11,.row-separate>.col-md-12
+	.row-gutter>.col-lg-1,.row-gutter>.col-lg-2,.row-gutter>.col-lg-3,.row-gutter>.col-lg-4,.row-gutter>.col-lg-5,.row-gutter>.col-lg-6,
+	.row-gutter>.col-lg-7,.row-gutter>.col-lg-8,.row-gutter>.col-lg-9,.row-gutter>.col-lg-10,.row-gutter>.col-lg-11,.row-gutter>.col-lg-12,
+	.row-gutter>.col-md-1,.row-gutter>.col-md-2,.row-gutter>.col-md-3,.row-gutter>.col-md-4,.row-gutter>.col-md-5,.row-gutter>.col-md-6,
+	.row-gutter>.col-md-7,.row-gutter>.col-md-8,.row-gutter>.col-md-9,.row-gutter>.col-md-10,.row-gutter>.col-md-11,.row-gutter>.col-md-12
 	{ width:100%; margin-left:1/48*100%;}
 
 	@for $i from 1 through 12{
-		.row-separate>.col-sm-#{$i}{ width:(3*$i+$i -1)/48*100%;}
+		.row-gutter>.col-sm-#{$i}{ width:(3*$i+$i -1)/48*100%;}
 	}
 	@for $i from 1 through 12{
-		.row-separate>.col-sm-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
+		.row-gutter>.col-sm-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
 	}
 	@for $i from 1 through 12{
 		.row>.col-sm-#{$i}{ width:$i/12*100%;}
@@ -205,10 +205,10 @@ table.container-fluid{ table-layout:fixed; width:100%;@if($quirk){ *display:inli
 		.row>.col-sm-offset-#{$i}{ margin-left:$i/12*100%;}
 	}
 	@for $i from 1 through 12{
-		.row-separate>.col-xs-#{$i}{ width:(3*$i+$i -1)/48*100%;}
+		.row-gutter>.col-xs-#{$i}{ width:(3*$i+$i -1)/48*100%;}
 	}
 	@for $i from 1 through 12{
-		.row-separate>.col-xs-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
+		.row-gutter>.col-xs-offset-#{$i}{ margin-left:(4*$i+1)/48*100%;}
 	}
 	@for $i from 1 through 12{
 		.row>.col-xs-#{$i}{ width:$i/12*100%;}
