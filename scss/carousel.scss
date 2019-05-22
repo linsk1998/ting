@@ -7,7 +7,7 @@
 .carousel-inner .item{ position:relative; width:100%; display:inline-block; *display:inline; *zoom:1; vertical-align:top;}
 .carousel-inner .item>img{-o-object-fit:cover;object-fit:cover;}
 .carousel-control .left,.carousel-control .right{ margin-top:-23px; position:absolute; top:50%;
-display:block; width:size(46,6)px; line-height:40px; font-size:40px; text-align:center;
+display:block; width:size(46px,6px); line-height:40px; font-size:40px; text-align:center;
 background:#222; border:3px solid #fff; color:#fff; opacity:0.5;
 -webkit-border-radius:50%;-moz-border-radius:50%;-moz-border-radius:50%;border-radius:50%;}
 .carousel-control .left:hover,.carousel-control .right:hover{ text-decoration:none;}

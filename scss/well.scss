@@ -4,3 +4,9 @@
 .well blockquote{ border-color:#ddd; border-color:rgba(0,0,0,.15);}
 .well-lg{ padding:20px;}
 .well-sm{ padding:3px;}
+
+
+.card{ min-height:20px; padding:9px; background:#fff; margin-bottom:20px; *zoom:1;
+-moz-box-shadow:0 0 6px rgba(0,0,0,.6);-webkit-box-shadow:0 0 6px rgba(0,0,0,.6);box-shadow:0 0 6px rgba(0,0,0,.6); filter:progid:DXImageTransform.Microsoft.Glow(color='#666666', Strength='3');}
+.card-lg{ padding:20px;}
+.card-sm{ padding:3px;}

@@ -14,12 +14,14 @@ $btn-padding-xsmall:6px;
 $btn-border-width:1px;
 
 .btn{ vertical-align:top; padding:($btn-height-base - 2*$btn-border-width - $line-height-base)/2 $btn-padding-base; margin-bottom:0; font-size:$btn-fontsize-base; font-weight:normal; text-align:center; white-space:nowrap; cursor:pointer; border:$btn-border-width solid;
+-webkit-border-radius:0;border-radius:0;
 -ms-touch-action:manipulation; touch-action:manipulation;
 -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
 transition:border-color,background,box-shadow .4s;}
 .btn:hover{ text-decoration:none;}
-input.btn,button.btn{ outline:none; height:$btn-height-base; margin-left:0; margin-right:0; -webkit-appearance:none; -webkit-border-radius:0;border-radius:0;
-*width:auto; *overflow-x:visible; *padding:0 $btn-padding-base;}
+input.btn,button.btn{ outline:none; height:$btn-height-base; margin-left:0; margin-right:0; -webkit-appearance:none;
+*width:auto; *overflow-x:visible; *padding:0 $btn-padding-base;
+display:-webkit-inline-box;display:-webkit-inline-flex; -webkit-box-align:center;-webkit-align-items:center;-webkit-box-pack:center;}
 a.btn{ display:inline-block;}
 
 .btn-label{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; line-height:1; *line-height:20px;}

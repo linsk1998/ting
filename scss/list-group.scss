@@ -1,5 +1,5 @@
 
-.list-group{ padding-left:0; margin-bottom:20px; margin:0; border:1px solid #ddd;}
+.list-group{ padding-left:0; margin:0; margin-bottom:$margin-bottom-base; border:1px solid #ddd;}
 .list-group-item{ display:block; padding:10px 15px; background-color:#fff; list-style-type:none;
  _border-top:1px solid #ddd; *border-top-width:expression((Sky.hasClass(Sky.getPrevElement(this),'list-group-item'))?'1px':'0');}
 .list-group .list-group-item:first-child{ border-top:0 none;}
