@@ -26,24 +26,20 @@ table.nav a{ display:block; padding-top:10px; padding-bottom:10px;}
 .nav.nav-justified{ width:100%; display:table;}
 .nav.nav-justified>li{ display:table-cell; width:1%; *width:auto; text-align:center;}
 
-.tabs-left .nav{ float:left; _width:33%;}
-.tabs-left .nav li,ul.tabs-stacked li{ display:block; margin:2px 0;}
-.tabs-left .nav a,ul.tabs-stacked a{ min-width:74px;}
-.tabs-left:after{ clear:both;}
-.tabs-left:after{ display:table; line-height:0; content:"";}
-.tabs-left .nav-tabs,.tabs-stacked{ border:0 none; border-right:1px solid #ddd; margin:0 20px 20px 0; _margin:0 17px 20px 0;}
-.tabs-left .nav-tabs a,.tabs-stacked a{ -moz-border-radius:4px 0 0 4px; -webkit-border-radius:4px 0 0 4px; border-radius:4px 0 0 4px;}
-.tabs-left .nav-tabs .active a,.tabs-left .nav-tabs .active a:hover,
-.tabs-stacked .active a,.tabs-stacked .active a:hover{ bottom:auto; right:-1px; border-bottom:1px solid #ddd; border-right:1px #fff;}
+ul.nav-tabs-left{ overflow:visible; _width:33%;}
+ul.nav-tabs-left li,ul.tabs-stacked li{ display:block; margin:2px 0;}
+ul.nav-tabs-left a,ul.tabs-stacked a{ position:relative; min-width:74px;}
+ul.nav-tabs-left,.tabs-stacked{ border:0 none; border-right:1px solid #ddd; margin:0 20px 20px 0; _margin:0 17px 20px 0;}
+ul.nav-tabs-left a,.tabs-stacked a{ -moz-border-radius:4px 0 0 4px; -webkit-border-radius:4px 0 0 4px; border-radius:4px 0 0 4px;}
+ul.nav-tabs-left .active a,.nav-tabs-left .active a:hover,
+.tabs-stacked .active a,.tabs-stacked .active a:hover{ bottom:auto; right:-1px; border:1px solid #ddd; border-right:1px solid #fff;}
 
-.tabs-right .nav{ float:right; _width:33%;}
-.tabs-right .nav li{ display:block; margin:2px 0;}
-.tabs-right .nav a{ min-width:74px;}
-.tabs-right:after{ clear:both;}
-.tabs-right:after{ display:table; line-height:0; content:"";}
-.tabs-right .nav-tabs{ border:0 none; border-left:1px solid #ddd; margin:0 0 20px 20px; _margin:0 0 20px 17px;}
-.tabs-right .nav-tabs a{ -moz-border-radius:0 4px 4px 0; -webkit-border-radius:0 4px 4px 0; border-radius:0 4px 4px 0;}
-.tabs-right .nav-tabs .active a,.tabs-right .nav-tabs .active a:hover{ bottom:auto; left:-1px; border-bottom:1px solid #ddd; border-left:1px #fff;}
+ul.nav-tabs-right{ overflow:visible; _width:33%;}
+ul.nav-tabs-right li{ display:block; margin:2px 0;}
+ul.nav-tabs-right a{ position:relative; min-width:74px;}
+ul.nav-tabs-right{ border:0 none; border-left:1px solid #ddd; margin:0 0 20px 20px; _margin:0 0 20px 17px;}
+ul.nav-tabs-right a{ -moz-border-radius:0 4px 4px 0; -webkit-border-radius:0 4px 4px 0; border-radius:0 4px 4px 0;}
+ul.nav-tabs-right .active a,ul.nav-tabs-right .active a:hover{ bottom:auto; left:-1px; border:1px solid #ddd; border-left:1px solid #fff;}
 
 
 .tab-content{ overflow:auto;}
