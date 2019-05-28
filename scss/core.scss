@@ -19,18 +19,19 @@ svg:not(:root){ overflow:hidden;}
 figure{ margin:1em 40px;}
 
 html{ min-font-size:0 !important; -webkit-min-font-size:0 !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; height:100%;}
-body,table,button,input,textarea{ font-size:$font-size-base; line-height:$line-height-base; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif;}
+body,table,button,input,textarea,article pre{ font-size:$font-size-base; line-height:$line-height-base; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif;}
 
 body,dd,dl{margin:0; padding:0;}
 html,body,img{border:0;}
-p{ margin:0 0 10px;}
+p,article pre{ margin:0 0 10px;}
+article pre{ padding-bottom:10px;}
 cite,em,address{font-style:normal;}
 ul,ol{ padding:0; margin:0 0 10px 25px;}
 ol ol, ol ul, ul ol, ul ul {margin-bottom: 0;}
 hr{ height:0; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;}
 mark{color:#000; background:#ff0;}
 img{ -ms-interpolation-mode:bicubic; vertical-align:middle;}
-code,kbd,pre,samp{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
+code,kbd,samp{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
 -moz-tab-size:4; -o-tab-size:4; tab-size:4; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none;}
 pre{ white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;overflow:auto;}
 code{ direction:ltr; text-align:left; white-space:pre; line-height:1.5;}
@@ -39,8 +40,9 @@ kbd{ padding:2px 4px; font-size:90%; color:#fff; background-color:#333; border-r
 
 a{ color:$theme-primary; text-decoration:none; cursor:pointer; outline:none;}
 a:hover{ color:darken($theme-primary,15%); text-decoration:underline;}
-pre{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px;}
+pre code{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px;}
 p code{ background:#f9f2f4; padding:2px 4px; font-size:90%; border-radius:4px; color:#d14; border:1px solid #e1e1e8; _display:inline-block;}
+
 h1,h2,h3,h4,h5,h6{ font-weight:500; line-height:1.1;}
 h1,.h1,h2,.h2,h3,.h3{ margin-top:16px; margin-bottom:10px;}
 h4,.h4,h5,.h5,h6,.h6{ margin-top:8px; margin-bottom:10px;}

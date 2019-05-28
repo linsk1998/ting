@@ -1,0 +1,184 @@
+<!--quirks-->
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="css" type="boolean" value="false" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="true" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>消息框</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting-quirks.css" rel="stylesheet"/>
+	<link id="cssTheme" rel="stylesheet" type="text/css" href="../theme/default/indigo.css"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<script src="/linsk1998/sky-query/master/sky-query.js"></script>
+	<script src="../ting/ting.js"></script>
+	<script src="../ting/docs.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top pull-front" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../scaffolding/index.html">脚手架</a></li>
+							<li><a href="../css/index.html">全局样式</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li class="active"><a href="index.html">JavaScript插件</a></li>
+							<li><a href="/linsk1998/ting-react/master/index.html">React组件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li><a href="javascript:$('.container',document).removeClass('container').addClass('container-fluid');void 0"><i class="fa">&#xf108;</i>宽屏</a></li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0" class="dropdown-toggle"><i class="fa">&#xf53f;</i>色调</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeSkin('blue');void 0"><span class="brand-blue">█</span> blue</a></li>
+									<li><a href="javascript:changeSkin('teal');void 0"><span class="brand-teal">█</span> teal</a></li>
+									<li><a href="javascript:changeSkin('indigo');void 0"><span class="brand-indigo">█</span> indigo</a></li>
+									<li><a href="javascript:changeSkin('purple');void 0"><span class="brand-purple">█</span> purple</a></li>
+									<li><a href="javascript:changeSkin('brown');void 0"><span class="brand-brown">█</span> brown</a></li>
+									<li><a href="javascript:changeSkin('red');void 0"><span class="brand-red">█</span> red</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" role="dropdown"><a href="javascript:void 0" class="dropdown-toggle"><i class="fa">&#xf553;</i>主题</a>
+								<ul class="dropdown-menu">
+									<li><a href="javascript:changeTheme('default');void 0">Default</a></li>
+									<li><a href="javascript:changeTheme('bootstrap');void 0">Bootstrap</a></li>
+									<li><a href="javascript:changeTheme('material');void 0">Material Design</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1 class="page-header">消息框</h1>
+			<div class="modal-center">
+				<div class="msgbox msgbox-info"><i class="fa brand-info">&#xf05a;</i> 自适应消息框</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox msgbox-lg msgbox-success"><i class="fa brand-success">&#xf058;</i> 大消息框</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox msgbox-md msgbox-warning"><i class="fa brand-warning">&#xf06a;</i> 中消息框</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox msgbox-sm msgbox-danger"><i class="fa brand-danger">&#xf057;</i> 小消息框</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox">
+					<div class="msgbox-header">
+						<a href="javascript:void 0" class="close" data-dismiss="modal">&times;</a>
+						<h3 class="msgbox-title">嗨</h3>
+					</div>
+					<article class="msgbox-body">
+						<p>小朋友们 大家好</p>
+					</article>
+					<div class="msgbox-footer">
+						<a href="javascript:voud 0" class="btn btn-primary btn-sm">确定</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox msgbox-md msgbox-info">
+					<div class="msgbox-header">
+						<i class="icon fa brand-info">&#xf059;</i>
+						<a href="javascript:void 0" class="close" data-dismiss="modal">&times;</a>
+						<h3 class="msgbox-title">还记得我是谁吗</h3>
+					</div>
+					<article class="msgbox-body">
+							<pre>对了我就是为蓝猫配音的演员葛平
+今天呐我特别的要向秦皇岛市的小朋友们石家庄市的小朋友们还有河南安阳的小朋友们问声好
+为什么呢
+因为我们在二零零二年十月份来到了秦皇岛石家庄为小朋友们做现场的表演在这次活动中呢发生了一个非常有趣的事</pre>
+					</article>
+					<div class="msgbox-footer">
+						<a href="javascript:voud 0" class="btn btn-info btn-sm">记得</a>
+						<a href="javascript:voud 0" class="btn btn-default btn-sm">忘了</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox msgbox-md msgbox-info">
+					<div class="msgbox-header">
+						<i class="icon fa brand-info">&#xf05a;</i>
+						<a href="javascript:void 0" class="close" data-dismiss="modal">&times;</a>
+						<h3 class="msgbox-title">下面我就跟大家讲一讲</h3>
+					</div>
+					<article class="msgbox-body">
+						<pre>当时我们在石家庄表演的时候我说小朋友们谁愿意跟我蓝猫学一句配音呐
+只听见下面有一个我来
+这时候我一看小朋友们人群当中钻出了一个光头</pre>
+					</article>
+					<div class="msgbox-footer">
+						<a href="javascript:voud 0" class="btn btn-default btn-sm">确定</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox msgbox-md msgbox-info">
+					<div class="msgbox-header">
+						<i class="icon fa brand-info">&#xf059;</i>
+						<a href="javascript:void 0" class="close" data-dismiss="modal">&times;</a>
+						<h3 class="msgbox-title">哇</h3>
+					</div>
+					<article class="msgbox-body">
+						<pre>他全身穿的都是我们蓝猫品牌的衣服特别显眼我一把就把他抱了
+起来我说你叫什么名字他说我叫吴克你今年多大啦他说他五岁这个小朋友非常喜欢我抱着我啊
+非要学我配音我说好好好好好别着急啊
+我当时就说了一句</pre>
+					</article>
+					<div class="msgbox-footer">
+						<div class="input-group">
+							<div class="input-group-right input-group-btn">
+								<button class="btn btn-default" type="button">确定</button>
+							</div>
+							<div class="input-group-control">
+								<input type="text" class="form-control" placeholder="说了一句什么" value="我是超威蓝猫"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-center">
+				<div class="msgbox msgbox-md msgbox-success">
+					<div class="msgbox-header">
+						<i class="icon fa brand-success">&#xf058;</i>
+						<a href="javascript:void 0" class="close" data-dismiss="modal">&times;</a>
+						<h3 class="msgbox-title">他也跟着我学了一句</h3>
+					</div>
+					<article class="msgbox-body">
+						<p>学的非常像</p>
+					</article>
+					<div class="msgbox-footer">
+						<a href="javascript:voud 0" class="btn btn-success btn-sm">确定</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>
