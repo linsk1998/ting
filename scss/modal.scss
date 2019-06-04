@@ -10,8 +10,8 @@ display:box; box-pack:center;box-align:center;
 display:-webkit-flex; -webkit-justify-content:center;-webkit-align-items:center;
 display:flex; justify-content:center;align-items:center;}
 
-.modal{ background:rgba(0,0,0,$modal-alpha); position:fixed; _position:absolute; z-index:1;
-	left:0; width:100%; top:0; height:100%;
+.modal{ background:rgba(0,0,0,$modal-alpha); position:fixed; _position:absolute; z-index:$level-dialog; text-align:left;
+	left:0; width:100%; top:0; height:100%; overflow:auto;
 	@if($quirk){
 		_height:expression(document.body.scrollHeight); _padding-top:expression(eval(document.body.scrollTop));
 	}
