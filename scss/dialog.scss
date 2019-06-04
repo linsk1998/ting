@@ -47,11 +47,11 @@ filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));}
 -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
 .msg .fa{ line-height:1; vertical-align:middle; margin-right:4px;}
 
-.msgbox{ position:relative; max-height:90%; background:#fff; display:inline-block; *display:inline; *zoom:1; border-top:4px solid $theme-primary; padding:8px 12px; text-align:center; margin-bottom:20px;
+.msgbox{ position:relative; max-width:90%; background:#fff; display:inline-block; *display:inline; *zoom:1; border-top:4px solid $theme-primary; padding:8px 12px; text-align:center; margin-bottom:20px;
 -moz-box-shadow:0 0 10px rgba(0,0,0,.5);-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);}
 .msgbox-lg{ width:90%;}
-.msgbox-md{ width:600px; max-width:90%;}
-.msgbox-sm{ width:400px; max-width:90%;}
+.msgbox-md{ width:600px;}
+.msgbox-sm{ width:400px;}
 
 .msgbox-header{ position:relative; text-align:left;}
 .msgbox-header .icon{ position:absolute; top:24px; left:12px; font-size:42px;}
@@ -69,3 +69,21 @@ filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));}
 	.msgbox{ filter:progid:DXImageTransform.Microsoft.Glow(color='#666666', Strength='1');}
 }
 .modal-center .dialog{ margin-top:10px; margin-bottom:20px;}
+
+.win{ border:2px solid $theme-primary; background:#fff; text-align:left; position:absolute;}
+.win-header{ position:absolute; width:100%; height:34px; padding:0 10px; color:#fff; background:$theme-primary; cursor:move;}
+.win-title{ display:inline-block; *display:inline; *zoom:1; line-height:34px; vertical-align:middle; cursor:text;}
+.win-header .icon{ font-size:16px; margin-right:8px;}
+.win-header img.icon{ height:16px;}
+.win-close{ position:absolute; right:6px; top:0; color:#fff; background:$danger; width:30px; text-align:center; height:20px;}
+.win-close:hover{ color:#fff; text-decoration:none; background:darken($danger,10%);}
+.win-body{ width:100%; height:100%; border-top:36px solid $theme-primary;}
+.win-resize{ position:absolute; right:2px; bottom:2px; height:size(8px,8px);width:size(8px,8px); overflow:hidden; cursor:se-resize; border:4px solid #777;}
+.win-resize:hover{ border-bottom-color:#333; border-right-color:#333;}
+.win-resize{ border-top-color:transparent; border-left-color:transparent; _border-top-style:dotted; _border-left-style:dotted;}
+.win-hit{ display:none;}
+.win-disabled{ cursor:not-allowed; cursor:not-allowed;}
+.win-disabled .win-hit{ display:block; position:absolute;top:0; left:0; width:100%; height:100%; background:#fff; opacity:0.5; z-index:$level-dialog;}
+@media \0screen\,screen\9 {
+	.win-disabled .win-hit{ filter:Alpha(opacity=50);}
+}

@@ -1,3 +1,4 @@
+<!--quirks-->
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
 	<head>
@@ -12,9 +13,9 @@
 	<!-- InstanceParam name="javascript" type="boolean" value="true" -->
 	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>javascript</title>
+	<title>消息框</title>
 	<!-- InstanceEndEditable -->
-	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link href="../ting/ting-quirks.css" rel="stylesheet"/>
 	<link id="cssTheme" rel="stylesheet" type="text/css" href="../theme/default/indigo.css"/>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	<script src="/linsk1998/sky-query/master/sky-query.js"></script>
@@ -70,38 +71,24 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">下拉菜单</h2>
-			<div class="dropdown" role="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					Dropdown
-					<span class="caret"></span>
-				</button><br/>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-				</ul>
+		</div>
+		<div class="modal" role="modal">
+			<!--[if lte IE 6]><iframe class="modal-hit" frameborder="0"></iframe><![endif]-->
+			<!--[if (lte IE 8)&(gte IE 7)]><div class="modal-hit"></div><![endif]-->
+			<div class="win win-disabled" style="width:600px; height:400px;">
+				<div class="win-header">
+					<i class="icon fa">&#xf03e;</i><span class="win-title">对话框</span>
+					<a href="javascript:void 0" class="win-close" data-dismiss="modal">✕</a>
+				</div>
+				<div class="win-body">
+					<p>在对话框关闭按钮中，加入属性data-dismiss，来关闭指定role的对话框</p>
+					<p>One fine body&hellip;</p>
+					<p>One fine body&hellip;</p>
+				</div>
+				<a class="win-resize" href="javascript:void 0"></a>
+				<!--[if lte IE 6]><iframe class="win-hit" frameborder="0"></iframe><![endif]-->
+				<!--[if gt IE 6]>--><div class="win-hit"></div><!--<![endif]-->
 			</div>
-			<h2 class="page-header">导航条</h2>
-			<p><a href="navbar.html">例子</a></p>
-			<h2 class="page-header">可切换标签页</h2>
-			<p><a href="tabs.html">例子</a></p>
-			<h2 class="page-header">模态对话框</h2>
-			<p><a href="modal.html">模态遮罩</a> <a href="modal-loading.html">模态遮罩加载中...</a></p>
-			<p><a href="toast.html">提示</a></p>
-			<p><a href="dialog.html">对话框</a> <a href="dialog-quirks.html">对话框quirks</a> <a href="msgbox.html">消息框</a> <a href="window.html">窗口</a></p>
-			<h2 class="page-header">轮播</h2>
-			<p><a href="carousel.html">例子</a></p>
-			<h2 class="page-header">滚动条</h2>
-			<p><a href="scroller.html">例子</a></p>
-			<h2 class="page-header">数据表格</h2>
-			<p><a href="datatable.html" target="_blank">例子</a></p>
-			<h2 class="page-header">侧栏导航</h2>
-			<p><a href="sidebar.html">例子</a></p>
-			<h2 class="page-header">树</h2>
-			<p><a href="tree.html">例子</a></p>
 		</div>
 		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">
