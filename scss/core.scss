@@ -40,7 +40,7 @@ kbd{ padding:2px 4px; font-size:90%; color:#fff; background-color:#333; border-r
 
 a{ color:$theme-primary; text-decoration:none; cursor:pointer; outline:none;}
 a:hover{ color:darken($theme-primary,15%); text-decoration:underline;}
-pre code{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px;}
+pre{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px; display:block;}
 p code{ background:#f9f2f4; padding:2px 4px; font-size:90%; border-radius:4px; color:#d14; border:1px solid #e1e1e8; _display:inline-block;}
 
 h1,h2,h3,h4,h5,h6{ font-weight:500; line-height:1.1;}

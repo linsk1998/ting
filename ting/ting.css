@@ -58,7 +58,7 @@ a { color: #337ab7; text-decoration: none; cursor: pointer; outline: none; }
 
 a:hover { color: #22527b; text-decoration: underline; }
 
-pre code { background: #f4f0f9; padding: 10px; padding-left: 30px; border-left: 5px solid #55bb8a; font-size: 13px; }
+pre { background: #f4f0f9; padding: 10px; padding-left: 30px; border-left: 5px solid #55bb8a; font-size: 13px; display: block; }
 
 p code { background: #f9f2f4; padding: 2px 4px; font-size: 90%; border-radius: 4px; color: #d14; border: 1px solid #e1e1e8; _display: inline-block; }
 
