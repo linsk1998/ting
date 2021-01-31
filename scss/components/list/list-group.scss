@@ -1,0 +1,110 @@
+.list-group {
+	padding: 0; margin: 0;
+	list-style-type: none;
+	padding-bottom: 1px;
+}
+
+.list-group-item {
+	padding: 10px 15px;
+	background-color: #fff;
+	margin-bottom:-1px;
+	border: 1px solid $theme-divider;
+	position: relative;
+	*zoom:1;
+}
+a.list-group-item,button.list-group-item{
+	display: block;
+}
+a.list-group-item,.list-group-item a{
+	color:$theme-primary-text;
+}
+a.list-group-item:hover,.list-group-item a:hover{
+	color:$theme-primary;
+}
+button.list-group-item{
+	cursor:pointer;
+	outline:none;
+	width:100%;
+	text-align:left;
+	-webkit-appearance:none;
+	@include rounded(0);
+}
+button.list-group-item::-moz-focus-inner{
+	padding:0;
+	border:0 none;
+}
+
+.list-group-item-heading{ margin-top:0; margin-bottom:5px;}
+.list-group-item-text{ margin:0;}
+
+.list-group .list-group-item-success{ background-color:$success-bg;}
+.list-group .list-group-item-success,.list-group-item-success a{ color:$success-text;}
+.list-group .list-group-item-success:hover,.list-group-item-success a:hover,
+.list-group .list-group-item-success:focus,.list-group-item-success a:focus
+{ color:$success-text;}
+.list-group>.list-group-item-success:hover,
+.list-group>.list-group-item-success:focus
+{ background-color:darken($success-bg,5%);}
+.list-group>.list-group-item-success.active
+{ background-color:$success-text; border-color:$success-text;}
+.list-group>.list-group-item-success.active,.list-group>.list-group-item-success a.active
+{ color:#fff;}
+.list-group .list-group-item-info{ background-color:$info-bg;}
+.list-group .list-group-item-info,.list-group-item-info a{ color:$info-text;}
+.list-group .list-group-item-info:hover,.list-group-item-info a:hover,
+.list-group .list-group-item-info:focus,.list-group-item-info a:focus
+{ color:$info-text;}
+.list-group>.list-group-item-info:hover,
+.list-group>.list-group-item-info:focus
+{ background-color:darken($info-bg,5%);}
+.list-group>.list-group-item-info.active
+{ background-color:$info-text; border-color:$info-text;}
+.list-group>.list-group-item-info.active,.list-group>.list-group-item-info a.active
+{ color:#fff;}
+.list-group .list-group-item-warning{ background-color:$warning-bg;}
+.list-group .list-group-item-warning,.list-group-item-warning a{ color:$warning-text;}
+.list-group .list-group-item-warning:hover,.list-group-item-warning a:hover,
+.list-group .list-group-item-warning:focus,.list-group-item-warning a:focus
+{ color:$warning-text;}
+.list-group>.list-group-item-warning:hover,
+.list-group>.list-group-item-warning:focus
+{ background-color:darken($warning-bg,5%);}
+.list-group>.list-group-item-warning.active
+{ background-color:$warning-text; border-color:$warning-text;}
+.list-group>.list-group-item-warning.active,.list-group>.list-group-item-warning a.active
+{ color:#fff;}
+.list-group .list-group-item-danger{ background-color:$danger-bg;}
+.list-group .list-group-item-danger,.list-group-item-danger a{ color:$danger-text;}
+.list-group .list-group-item-danger:hover,.list-group-item-danger a:hover,
+.list-group .list-group-item-danger:focus,.list-group-item-danger a:focus
+{ color:$danger-text;}
+.list-group>.list-group-item-danger:hover,
+.list-group>.list-group-item-danger:focus
+{ background-color:darken($danger-bg,5%);}
+.list-group>.list-group-item-danger.active
+{ background-color:$danger-text; border-color:$danger-text;}
+.list-group>.list-group-item-danger.active,.list-group>.list-group-item-danger a.active
+{ color:#fff;}
+
+
+.list-group .active{
+	background-color:$theme-primary;
+	border-color:$theme-primary;
+	z-index:$level-item-actived;
+}
+.list-group .active,.list-group .active a,
+.list-group .active a:hover,.list-group a.active:hover{ color:#fff;}
+.list-group .active .list-group-item-text{color:lighten($theme-primary, 50%);}
+
+
+.nav-list{ margin:3px 0;}
+.nav-list li{ list-style:none;}
+.nav-list-item{ display:block; padding:8px 16px; color:#666; _zoom:1;}
+.nav-list-item:hover{ color:#444; text-decoration:none;}
+.nav-list-item small{ color:#999;}
+.inverse .nav-list-item{ color:#999faa;}
+.inverse .nav-list-item:hover{ color:#fff;}
+.inverse .nav-list-item small{ color:#666f77;}
+
+.list-group-unbordered{ border-left:0; border-right:0;}
+.list-group-unbordered .list-group-item{ border-left:0; border-right:0; padding-left:0; padding-right:0;}

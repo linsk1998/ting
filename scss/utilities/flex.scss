@@ -1,0 +1,20 @@
+
+
+.flex{ width:100%; display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+.flex-row{ -moz-box-orient:horizontal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;}
+.flex-column{ -moz-box-orient:vertical;-moz-box-direction:normal;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
+
+.flex-nowrap{ -ms-flex-wrap:none;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;}
+.flex-wrap{ -ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;}/*-webkit-box-lines:multiple;亲测不管用*/
+
+.flex-left{ text-align:left; -moz-box-pack:start; -webkit-box-pack:start; -ms-flex-pack:start; -webkit-justify-content:flex-start; justify-content:flex-start;}
+.flex-center{ text-align:center; -moz-box-pack:center; -webkit-box-pack:center; -ms-flex-pack:center; -webkit-justify-content:center; justify-content:center;}
+.flex-right{ text-align:right; -moz-box-pack:end; -webkit-box-pack:end; -ms-flex-pack:end; -webkit-justify-content:flex-end; justify-content:flex-end;}
+.flex-top{ vertical-align:start; -moz-box-align:start; -webkit-box-align:start; -ms-flex-align:start; -webkit-align-items:flex-start; align-items:flex-start;}
+.flex-middle{ vertical-align:middle; -moz-box-align:center; -webkit-box-align:center; -ms-flex-align:center; -webkit-align-items:center; align-items:center;}
+.flex-bottom{ vertical-align:bottom; -moz-box-align:end; -webkit-box-align:end; -ms-flex-align:end; -webkit-align-items:flex-end; align-items:flex-end;}
+.flex-between{ -moz-box-pack:justify; -webkit-box-pack:justify; -ms-flex-pack:justify; -webkit-justify-content:space-between; justify-content:space-between;}
+.flex-around{ -moz-box-pack:justify; -webkit-box-pack:justify; -ms-flex-pack:distribute; -webkit-justify-content:space-around; justify-content:space-around;}
+.flex-stretch{ -moz-box-align:stretch; -webkit-box-align:stretch; -ms-flex-align:stretch; -webkit-align-items:stretch; align-items:stretch;}
+
+.flex-fill{ -moz-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto; -webkit-flex:1 1 auto; flex:1 1 auto;}

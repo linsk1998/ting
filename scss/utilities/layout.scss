@@ -1,0 +1,35 @@
+
+.layout-full{ width:100%; height:100%; overflow:auto;}
+.layout-table{ border-collapse:collapse; border:0 none;}
+.layout-cell{ padding:0; position:relative; border:0 none;}
+
+
+.row-flex{ @include clearfix;}
+.col-left{ float:left; _margin-right:-3px;}
+.col-right{ float:right; _margin-left:-3px;}
+.col-center{ _zoom:1;}
+
+.col-flex.row-grow{ min-height:0;}
+.row-flex.col-center{ min-width:0;}
+.row-grow,.col-center,.col-left,.col-right,.col-sider{ overflow:auto;}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none),(-webkit-min-device-pixel-ratio:0) {
+	.col-left{float:none; -webkit-box-ordinal-group:-1;-ms-flex-order:-1;order:-1;}
+	.col-right{float:none; -webkit-box-ordinal-group:1;-ms-flex-order:1;order:1;}
+	.col-left,.col-right,.col-sider,.row-shrink{ flex-shrink:0;}
+	.row-grow,.col-center{-webkit-box-flex:1;-ms-flex:1;flex:1;}
+	.col-flex{ overflow:hidden; display:-webkit-box;display:-ms-flexbox;display:flex;
+	-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column;}
+	.row-flex{ overflow:hidden; display:-webkit-box;display:-ms-flexbox;display:flex;
+	-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+}
+
+@supports (display:flex){
+	.col-left{float:none; order:-1;}
+	.col-right{float:none; order:1;}
+	.col-left,.col-right,.col-sider,.row-shrink{flex-shrink:0;}
+	.row-grow,.col-center{flex:1;}
+	.col-flex{ display:flex; flex-direction:column;}
+	.row-flex{ display:flex; flex-direction:row;}
+	.row-flex:after{ display:none; content:none;}
+}

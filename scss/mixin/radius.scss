@@ -1,0 +1,15 @@
+
+
+@mixin radius($r1, $r2, $r3, $r4){
+	-webkit-border-radius: $r1 $r2 $r3 $r4;
+	-moz-border-radius: $r1 $r2 $r3 $r4;
+	border-radius:$r1 $r2 $r3 $r4;
+}
+@mixin rounded($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin circle(){
+	@include rounded(50%);
+}

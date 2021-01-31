@@ -1,0 +1,24 @@
+{
+	"name": "@ting-ui/css",
+	"version": "0.0.0",
+	"description": "common style lib",
+	"main": "dist/index.js",
+	"scripts": {
+		"build:all": "sass scss/all.scss all.css --no-source-map",
+		"build:base": "sass scss/base.scss base.css --no-source-map",
+		"build:components": "sass scss/components.scss components.css --no-source-map",
+		"build:utilities": "sass scss/utilities.scss utilities.css --no-source-map",
+		"build:docs": "sass scss/all.scss docs/ting/ting.css --no-source-map"
+	},
+	"author": "linsk",
+	"license": "MIT",
+	"files": [
+		"scss/",
+		"images/",
+		"all.css",
+		"base.css",
+		"components.css",
+		"utilities.css",
+		"README.md"
+	]
+}

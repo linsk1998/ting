@@ -1,0 +1,431 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="css" type="boolean" value="false" -->
+	<!-- InstanceParam name="components" type="boolean" value="true" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>组件</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
+							<li class="nav-item"><a class="nav-link" href="../common/index.html">全局样式</a></li>
+							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.html">组件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1 class="page-header">输入框组</h1>
+			<p>通过在文本输入框 <code>&lt;input&gt;</code> 前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。</p>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.input-group</td>
+					<td>输入框组</td>
+				</tr>
+				<tr>
+					<td>.input-group-left</td>
+					<td>左侧额外的元素</td>
+				</tr>
+				<tr>
+					<td>.input-group-right</td>
+					<td>右侧额外的元素</td>
+				</tr>
+				<tr>
+					<td>.input-group-control</td>
+					<td>输入框容器</td>
+				</tr>
+				<tr>
+					<td>.input-group-btn</td>
+					<td>按钮额外的元素容器</td>
+				</tr>
+			</tbody></table>
+			<p><a href="input-group.html">示例</a></p>
+			<h1 class="page-header">路径导航</h1>
+			<p><code>breadcrumb</code>在一个带有层次的导航结构中标明当前页面的位置。</p>
+			<ul class="breadcrumb">
+				<li><a href="javascript:void 0">Home</a></li>
+				<li><a href="javascript:void 0">Library</a></li>
+				<li class="active">Data</li>
+			</ul>
+			<h1 class="page-header">导航</h1>
+			<p>导航组件都依赖同一个 <code>.nav</code> 类，状态类也是共用的。改变修饰类可以改变样式。提供了选项卡标签页、胶囊标签页、下划线标签页三种。</p>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.tabbable</td>
+					<td>tab切换框总框</td>
+				</tr>
+				<tr>
+					<td>.nav</td>
+					<td>tab导航</td>
+				</tr>
+				<tr>
+					<td>.nav-tabs<br/>.nav-pills<br/>.nav-underline</td>
+					<td>tab导航类型，有三种类型</td>
+				</tr>
+				<tr>
+					<td>.tab-content</td>
+					<td>tab内容</td>
+				</tr>
+				<tr>
+					<td>.tab-pane</td>
+					<td>tab内容项目</td>
+				</tr>
+			</tbody></table>
+			<p><a href="navs.html">示例</a></p>
+			<h1 class="page-header">分页</h1>
+			<p>为您的网站或应用提供带有展示页码的分页组件，或者可以使用简单的翻页组件。</p>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.pagination</td>
+					<td>分页列表</td>
+				</tr>
+				<tr>
+					<td>.pagination-lg<br/>.pagination-sm<br/>.pagination-xs</td>
+					<td>分页大小</td>
+				</tr>
+				<tr>
+					<td>.pager</td>
+					<td>前后分页</td>
+				</tr>
+				<tr>
+					<td>.previous</td>
+					<td>前页</td>
+				</tr>
+				<tr>
+					<td>.next</td>
+					<td>后页</td>
+				</tr>
+			</tbody></table>
+			<p><a href="pagination.html">示例</a></p>
+			<h1 class="page-header">标签</h1>
+			<p>
+				<span class="label label-default">Default</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</p>
+			<pre class="code">&lt;h3&gt;Example heading &lt;span class="label label-default"&gt;New&lt;/span&gt;&lt;/h3&gt;</pre>
+			<p><a href="label.html">示例</a></p>
+			<h1 class="page-header">徽章</h1>
+			<p>给链接、导航等元素嵌套 <code>&lt;span class="badge"&gt;</code> 元素，可以很醒目的展示新的或未读的信息条目。</p>
+			<p>Inbox <span class="badge">2</span></p>
+			<div class="btn-toolbar">
+				<button class="btn btn-primary" type="button">
+					<span class="btn-label">按钮</span>
+					<span class="btn-addon-right badge">2</span>
+				</button>
+				<button class="btn btn-success" type="button">
+					<span class="btn-label">按钮</span>
+					<span class="btn-addon-right badge">2</span>
+				</button>
+				<button class="btn btn-info" type="button">
+					<span class="btn-label">按钮</span>
+					<span class="btn-addon-right badge">2</span>
+				</button>
+				<button class="btn btn-warning" type="button">
+					<span class="btn-label">按钮</span>
+					<span class="btn-addon-right badge">2</span>
+				</button>
+				<button class="btn btn-danger" type="button">
+					<span class="btn-label">按钮</span>
+					<span class="btn-addon-right badge">2</span>
+				</button>
+			</div>
+			<h1 class="page-header">页头</h1>
+			<p>页头组件能够为 <code>h1</code> 标签增加适当的空间，并且与页面的其他部分形成一定的分隔。它支持 <code>h1</code> 标签内内嵌 <code>small</code> 元素的默认效果，还支持大部分其他组件（需要增加一些额外的样式）。</p>
+			<h3 class="page-header">
+				<span class="page-header-title">我是一个页头</span>
+			</h3>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.page-header</td>
+					<td>带下划线标题</td>
+				</tr>
+				<tr>
+					<td>.page-header-title</td>
+					<td>带小方格标题</td>
+				</tr>
+			</tbody></table>
+			<h1 class="page-header">缩略图</h1>
+			<p>通过缩略图组件扩展和栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。</p>
+			<pre class="code">&lt;a href="#" class="thumbnail"&gt;
+	&lt;img src="..." alt="..."&gt;
+&lt;/a&gt;</pre>
+			<p><a href="thumbnail.html">示例</a></p>
+			<h1 class="page-header">警告框</h1>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.alert</td>
+					<td>警告框</td>
+				</tr>
+				<tr>
+					<td>.alert-dismissible</td>
+					<td>可关闭警告框</td>
+				</tr>
+				<tr>
+					<td>.alert-success<br/>.alert-info<br/>.alert-warning<br/>.alert-danger</td>
+					<td>不同的风格</td>
+				</tr>
+				<tr>
+					<td>.alert-link</td>
+					<td>警告链接</td>
+				</tr>
+			</tbody></table>
+			<p><a href="alert.html">示例</a></p>
+			<h1 class="page-header">媒体对象</h1>
+			<pre class="code">&lt;div class=&quot;media&quot;&gt;
+	&lt;div class=&quot;media-left&quot;&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;media-object&quot; src=&quot;http://placeholder.qiniudn.com/64x64&quot; width=&quot;64&quot; height=&quot;64&quot;/&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-right&quot;&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;media-object&quot; src=&quot;http://placeholder.qiniudn.com/64x64&quot; width=&quot;64&quot; height=&quot;64&quot;/&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-body&quot;&gt;
+		&lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
+		Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+			<p><a href="media.html">media</a></p>
+			<h1 class="page-header">列表</h1>
+			<table class="table table-bordered table-striped table-condensed">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.list</td>
+					<td>只带有横线的列表</td>
+				</tr>
+				<tr>
+					<td>.list-dashed</td>
+					<td>虚线列表</td>
+				</tr>
+				<tr>
+					<td>.list-bordered</td>
+					<td>虚线列表</td>
+				</tr>
+				<tr>
+					<td>.list-striped</td>
+					<td>隔行变色</td>
+				</tr>
+				<tr>
+					<td>.list-hover</td>
+					<td>鼠标经过样式</td>
+				</tr>
+				<tr>
+					<td>
+						.list-item-success<br/>
+						.list-item-info<br/>
+						.list-item-warning<br/>
+						.list-item-danger
+					</td>
+					<td>列表项的语境色</td>
+				</tr>
+				<tr>
+					<td>.active</td>
+					<td>列表项的活动样式</td>
+				</tr>
+			</tbody></table>
+			<p><a href="list.html">效果演示</a></p>
+			<h1 class="page-header">面版</h1>
+			<div class="row row-gutter">
+				<div class="col-md-4 col-gutter">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<span class="pull-right badge">14</span>
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="pull-right badge">14</span>
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<span class="pull-right badge">14</span>
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<span class="pull-right badge">14</span>
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<span class="pull-right badge">14</span>
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<span class="pull-right badge">14</span>
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1 class="page-header">标志</h1>
+			<div class="row row-gutter">
+				<div class="col-md-4 col-gutter">
+					<div class="callout">
+						<h4>I am a primary callout!</h4>
+						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="callout callout-primary">
+						<h4>I am a primary callout!</h4>
+						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="callout callout-success">
+						<h4>I am a danger callout!</h4>
+						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="callout callout-info">
+						<h4>I am a info callout!</h4>
+						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="callout callout-warning">
+						<h4>I am a warning callout!</h4>
+						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-gutter">
+					<div class="callout callout-danger">
+						<h4>I am a danger callout!</h4>
+						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					</div>
+				</div>
+			</div>
+			<h1 class="page-header">凹陷</h1>
+			<div class="well">Look, I'm in a well!</div>
+			<div class="well well-lg">Look, I'm in a large well!</div>
+			<div class="well well-sm">Look, I'm in a small well!</div>
+			<h1 class="page-header">突起</h1>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					Look, I'm in a well!
+				</div>
+			</div>
+			<h1 class="page-header">进度条</h1>
+			<div class="progress">
+				<div class="progress-bar" style="width:26%">26%</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" style="width:26%">26%</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" style="width:16%">18%</div><div class="progress-bar progress-bar-danger" style="width:5%">5%</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" style="width:26%">26%</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" style="width:26%">26%</div>
+			</div>
+			<div class="progress progress-sm">
+				<div class="progress-bar progress-bar-danger" style="width:26%"></div>
+			</div>
+			<div class="progress progress-xs">
+				<div class="progress-bar progress-bar-danger" style="width:26%"></div>
+			</div>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

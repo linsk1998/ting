@@ -1,0 +1,97 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+<title>Box</title>
+<link rel="stylesheet" type="text/css" href="../ting/ting.css">
+<style>
+html,body{height:100%;}
+#nav{
+	background:#cfc;
+}
+#header{
+	background:#fcc;
+}
+#main{
+	background:#ccf;
+}
+#aside{
+	background:#fcf;
+}
+#footer{
+	background:#ffc;
+}
+</style>
+</head>
+<body class="layout-full">
+	<div id="all" class="layout-full col-flex">
+		<div id="header" class="row-shrink">
+			<img src="../images/logo.png" height="60"/>
+		</div>
+		<div class="row-grow row-flex">
+			<div id="nav" class="col-left" style="width:230px;">
+				<p>123</p>
+			</div>
+			<div id="aside" class="col-right" style="width:100px;">
+				<p>123</p>
+			</div>
+			<!--中间列需要放在最后-->
+			<div class="col-center col-flex">
+				<div class="row-shrink">
+					<ol class="breadcrumb">
+						<li><a href="javascript:void 0">Home</a></li>
+						<li><a href="javascript:void 0">Library</a></li>
+						<li class="active">Data</li>
+					</ol>
+					<div class="container-fluid toolbar">
+						<form class="toolbar-right form-inline">
+							<div class="form-group">
+								<label class="control-label">标题：</label>
+								<input type="text" class="form-control"/>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary">搜索</button>
+							</div>
+						</form>
+						<div class="btn-toolbar toolbar-center">
+							<button type="button" class="btn btn-primary"><i class="icon-plus"></i> 新增</button>
+							<button type="button" class="btn btn-default">导出</button>
+							<button type="button" class="btn btn-default">重置密码</button>
+						</div>
+					</div>
+				</div>
+				<div class="row-grow container-fluid">
+					<article>
+						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus.</p>
+						<p>123</p>
+						<p>123</p>
+						<p>123</p>
+						<p>123</p>
+						<p>123</p>
+						<p>123</p>
+						<p>123</p>
+						<p>123</p>
+						<p>123</p>
+						<img src="../images/devices.jpg" height="60"/>
+					</article>
+				</div>
+				<div class="row-shrink container-fluid">
+					<ul class="pagination pagination-sm">
+						<li><a href="#">&laquo;</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="row-shrink">
+			123
+		</div>
+	</div>
+</body>
+</html>

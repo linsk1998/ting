@@ -1,0 +1,19 @@
+@mixin img-circle {
+	@include circle();
+	object-fit: cover;
+}
+@mixin img-rounded($r:6px){
+	@include rounded($r);
+}
+@mixin img-thumbnail($padding:4px){
+	max-width: 100%;
+	height: auto;
+	padding: $padding;
+	background-color: #fff;
+	border: 1px solid $theme-divider;
+}
+@mixin img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

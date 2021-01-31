@@ -1,0 +1,81 @@
+.btn{
+	vertical-align:middle;
+	@include btn;
+	@include rounded(0);
+	transition:border-color,background-color,color,box-shadow .4s;
+}
+input.btn,button.btn{
+	@include btn-button;
+}
+a.btn,label.btn{
+	@include btn-anchor;
+}
+@media (-webkit-min-device-pixel-ratio:0){
+	input.btn,button.btn,a.btn{
+		display:-webkit-inline-box; display:inline-flex;
+		-webkit-box-align:center; align-items:center;
+		-webkit-box-pack:center; justify-content:center;
+	}
+}
+.btn{ @include btn-md;}
+.btn-lg{ @include btn-lg;}
+.btn-sm{ @include btn-sm;}
+.btn-xs{ @include btn-xs;}
+
+.btn-default{ @include btn-default;}
+.btn-primary{ @include btn-primary;}
+.btn-success{ @include btn-success;}
+.btn-info{ @include btn-info;}
+.btn-warning{ @include btn-warning;}
+.btn-danger{ @include btn-danger;}
+.btn-dark{ @include btn-dark;}
+.btn-outline{ @include btn-outline;}
+input.btn:focus,
+button.btn:focus{ border-color:#000;}
+input.btn-outline:focus,
+button.btn-outline:focus{ border-color:$theme-primary;}
+
+
+input.btn-block,button.btn-block,a.btn-block,label.btn-block{ @include btn-block; margin:$margin-base 0}
+
+.btn-label{ @include btn-label;}
+.btn-addon,.btn-addon-left,.btn-addon-right{ @include btn-addon;}
+.btn-addon-left{ margin-right:4px;}
+.btn-addon-right{ margin-left:4px;}
+i.btn-addon,i.btn-addon-left,i.btn-addon-right{
+	width:1em; line-height:1em; text-align:center;
+}
+
+html .btn-disabled,
+html .btn-disabled:hover,
+html .btn-disabled:focus{
+	background-color: #ddd;
+	border-color: darken(#dddddd, 5%);
+	color: #a0a0a0;
+	cursor:not-allowed;
+	text-shadow:1px 1px #fff;
+}
+
+.btn-group {
+	display: inline-block;
+	vertical-align: middle;
+	*display: inline;
+	*zoom: 1;
+	font-size: 0;
+}
+.btn-toolbar{ font-size:0; *font-size:$font-size-base; margin:$margin-base 0; line-height:40px;}
+.btn-toolbar .btn,.btn-toolbar .btn-group{ margin-left:0; margin-right:5px;}
+.btn-toolbar>:last-child{ margin-right:0;}
+
+.btn-group .btn {
+	float: left;
+	margin-left: 0;
+	margin-right: -1px;
+	position: relative;
+}
+.btn-group .btn:hover {
+	z-index: $level-item-hover;
+}
+.btn-group .btn:focus {
+	z-index: $level-item-actived;
+}

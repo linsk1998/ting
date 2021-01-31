@@ -1,0 +1,50 @@
+
+.pagination{
+	display:inline-block; *zoom:1; *display:inline;
+	padding:0;
+	margin:10px 0;
+	font-size:0;
+	margin-right:1px;
+}
+.pagination li{
+	display:inline-block; *zoom:1; *display:inline;
+	font-size:$font-size-base;
+	line-height:$line-height-base;
+	padding:($pagination-size - 2px - $line-height-base)/2 ($pagination-size - 2px - $font-size-base/2)/2;
+	border:1px solid #ccc;
+	position:relative;
+	margin-right:-1px;
+}
+.pagination li a,.pagination li span{
+	display: block;
+	color:$theme-primary-text;
+	text-decoration:none;
+}
+.pagination li:hover{
+	background-color:#eee;
+}
+.pagination li:hover,.pagination li:hover a{
+	color:darken($theme-primary,15%);
+}
+.pagination li.active{
+	z-index:$level-item-actived;
+	background-color:$theme-primary;
+	border-color:$theme-primary;
+}
+.pagination li.active,.pagination li.active a{
+	color:#fff;
+}
+.pagination li.disabled{
+	border:0 none;
+}
+.pagination li.disabled a{
+	cursor:text;
+}
+.pagination-gutter li{ margin-right:5px;}
+.pagination-gutter{ margin-right:-5px;}
+.pagination-lg li{
+	padding:($pagination-size-lg - 2px - $line-height-base)/2 ($pagination-size-lg - 2px - $font-size-base/2)/2;
+}
+.pagination-sm li{
+	padding:($pagination-size-sm - 2px - $line-height-base)/2 ($pagination-size-sm - 2px - $font-size-base/2)/2;
+}

@@ -1,0 +1,5 @@
+
+@mixin iconfont($symbol){
+	&:before{ content:"\#{$symbol}";}
+	*zoom:expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#x#{$symbol};')
+}

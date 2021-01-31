@@ -1,0 +1,68 @@
+
+.dialog{ text-align:left; display:inline-block;*zoom:1;*display:inline; background:#FFF; box-shadow:1px 1px 50px rgba(0,0,0,.3); position:relative;}
+.dialog-header{ background:#F8F8F8; border-bottom:1px solid #eee; padding:8px 16px; *zoom:1;}
+.dialog-header .close{ float:right;}
+.dialog-title{ margin:0;}
+
+.dialog-body{ padding:16px;}
+.dialog-footer{ border-top:1px solid #eee; padding:12px 16px; margin:0;}
+.dialog-primary .dialog-header{ color:#fff; background-color:$theme-primary; border-color:$theme-primary;}
+.dialog-danger .dialog-header{ color:#fff; background-color:$danger; border-color:$danger;}
+.dialog-warning .dialog-header{ color:#fff; background-color:$warning; border-color:$warning;}
+.dialog-success .dialog-header{ color:#fff; background-color:$success; border-color:$success;}
+.dialog-info .dialog-header{ color:#fff; background-color:$info; border-color:$info;}
+.dialog-dark .dialog-header{ color:#fff; background-color:$dark; border-color:#ebccd1;}
+.dialog-primary .dialog-header .close,
+.dialog-danger .dialog-header .close,
+.dialog-warning .dialog-header .close,
+.dialog-success .dialog-header .close,
+.dialog-info .dialog-header .close,
+.dialog-dark .dialog-header .close{ color:#EEE; &:hover{ color:#FFF;}}
+.dialog-rim{ box-shadow:none; background:none; background:rgba(0,0,0,0.5); padding:6px; -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.dialog-rim .dialog-body,.dialog-rim .dialog-footer{ background:#fff;}
+.dialog-close{ font-size:24px; display:inline-block; width:24px; line-height:24px; color:#777;
+position:absolute; top:0; right:0; margin-top:-12px; margin-right:-13px;
+-webkit-text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
+-moz-text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
+text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
+-webkit-filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));}
+.dialog-close:hover{ text-decoration:none; color:#333;}
+.dialog-close{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+*zoom:expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#xf057;');}
+.dialog-close:before{content:"\f057";}
+
+@media \0screen\,screen\9 {
+	.dialog{ border:1px solid #ccc;}
+	.dialog-rim{ border:0 none;}
+	.dialog-rim,.toast{ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
+}
+.toast{ background:rgba(0,0,0,0.5); color:#fff; display:inline-block; *display:inline; *zoom:1; padding:10px 20px; border:0 none;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.msg{ display:inline-block; *display:inline; *zoom:1; border:1px solid #D3D4D3; padding:12px 20px; background:#FFF;
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.msg .fa{ line-height:1; vertical-align:middle; margin-right:4px;}
+
+.msgbox{ position:relative; max-width:90%; background:#fff; display:inline-block; *display:inline; *zoom:1; border-top:4px solid $theme-primary; padding:8px 12px; text-align:center; margin-bottom:20px;
+-moz-box-shadow:0 0 10px rgba(0,0,0,.5);-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);}
+.msgbox-lg{ width:90%;}
+.msgbox-md{ width:600px;}
+.msgbox-sm{ width:400px;}
+
+.msgbox-header{ position:relative; text-align:left;}
+.msgbox-header .icon{ position:absolute; top:24px; left:12px; font-size:42px;}
+.msgbox-header .close{ position:absolute; top:8px; right:12px;}
+.msgbox-title{ font-weight:bold; font-size:20px; padding:28px 56px 0; margin:0;}
+.msgbox-body{ margin:12px 56px; overflow:auto;}
+.msgbox-footer{ text-align:center; margin:0 56px 12px;}
+.msgbox-footer .btn{ min-width:60px;}
+.msgbox-info{ border-top-color:$info;}
+.msgbox-success{ border-top-color:$success;}
+.msgbox-warning{ border-top-color:$warning;}
+.msgbox-danger{ border-top-color:$danger;}
+
+@media \0screen\,screen\9 {
+	.msgbox-body{ text-align:left;}
+	.msgbox{ filter:progid:DXImageTransform.Microsoft.Glow(color='#666666', Strength='1');}
+}
+.modal-center .dialog{ margin-top:10px; margin-bottom:20px;}

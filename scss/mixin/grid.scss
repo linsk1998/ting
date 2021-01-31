@@ -1,0 +1,43 @@
+
+@mixin row($columns,$gutter:0px){
+	@if($gutter!=0){
+		margin-left:- $gutter;
+	}
+	&.row:before,&:after{ display:table; content:"";}
+	&:after{ clear:both;}
+	*zoom:1; *margin-right:- 1%;
+}
+@mixin col($columns:12,$gutter:0px,$span:1){
+	float:left;
+	width:percentage($span/$columns);
+	*width:percentage($span/$columns*100/101);
+	@if($gutter!=0){
+		padding-left:$gutter;
+	}
+	@else{
+		width:percentage($span/$columns);
+		*width:percentage($span/$columns*100/101);
+	}
+}
+
+@mixin row-fluid($columns,$gutter:0){
+	@if($gutter!=0){
+		margin-left:percentage(- $gutter);
+	}
+	&.row:before,&:after{ display:table; content:"";}
+	&:after{ clear:both;}
+	*zoom:1; *margin-right:- 1%;
+}
+@mixin col-fluid($columns:12,$gutter:0,$span:1){
+	float:left;
+	@if($gutter!=0){
+		_display:inline;
+		margin-left:percentage($gutter);
+		width:percentage($span/$columns - $gutter);
+		*width:percentage($span/$columns - $gutter)*100/101;
+	}
+	@else{
+		width:percentage($span/$columns);
+		*width:percentage($span/$columns*100/101);
+	}
+}

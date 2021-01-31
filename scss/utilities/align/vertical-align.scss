@@ -1,0 +1,20 @@
+.vertical-align:after {
+	width: 0;
+	overflow: hidden;
+	content: "|";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+@media (-webkit-min-device-pixel-ratio:0){
+	.vertical-align.inline-block{
+		display:-webkit-inline-box; display:inline-flex;
+		-webkit-box-align:center; align-items:center;
+		-webkit-box-pack:center; justify-content:center;
+	}
+}
+@media screen\9{
+	.vertical-align{ *overflow:hidden;}
+	.vertical-align .align-middle{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(Math.round(this.parentNode.clientHeight/2-this.offsetHeight/2),0)+'px');}
+	.vertical-align .align-bottom{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(this.parentNode.clientHeight-this.offsetHeight,0)+'px');}
+}

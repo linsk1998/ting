@@ -1,0 +1,68 @@
+
+.badge {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #b00;
+	@include rounded(9px);
+	min-width: 18px;
+	_width: 18px;
+}
+.badge:empty{
+	display: none;
+}
+
+.bg-primary .badge,
+.btn-primary .badge,
+.list .active .badge,
+.panel-primary .panel-heading .badge{
+	color:$theme-primary;
+	background-color:#fff;
+}
+.btn-primary:hover .badge{
+	color:darken($theme-primary,10%);
+}
+.bg-success .badge,
+.btn-success .badge
+{
+	color:$success;
+	background-color:#fff;
+}
+.btn-success:hover .badge{
+	color:darken($success,10%);
+}
+.bg-info .badge,
+.btn-info .badge{
+	color:$info;
+	background-color:#fff;
+}
+.btn-info:hover .badge{
+	color:darken($info,10%);
+}
+.bg-warning .badge,
+.btn-warning .badge{
+	color:$warning;
+	background-color:#fff;
+}
+.btn-warning:hover .badge{
+	color:darken($warning,10%);
+}
+.bg-danger .badge,
+.btn-danger .badge{
+	color:$danger;
+	background-color:#fff;
+}
+.btn-danger:hover .badge{
+	color:darken($danger,10%);
+}
+
+.list>.list-item-success.active .badge{ color:$success;}
+.list>.list-item-info.active .badge{ color:$info;}
+.list>.list-item-warning.active .badge{ color:$warning;}
+.list>.list-item-danger.active .badge{ color:$danger;}

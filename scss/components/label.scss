@@ -1,0 +1,24 @@
+.label {
+	display: inline-block;
+	padding: 0.25em 0.6em 0.25em;
+	font-size: 75%;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	@include rounded(0.25em);
+}
+
+.label-default{ background-color:#777;}
+.label-default[href]:hover,.label-default[href]:focus{ background-color:#5e5e5e;}
+.label-primary{ background-color:$theme-primary;}
+.label-primary[href]:hover,.label-primary[href]:focus{ background-color:darken($theme-primary,10%);}
+.label-success{ background-color:$success;}
+.label-success[href]:hover,.label-success[href]:focus{ background-color:darken($success,10%);}
+.label-info{ background-color:$info;}
+.label-info[href]:hover,.label-info[href]:focus{ background-color:darken($info,10%);}
+.label-warning{ background-color:$warning;}
+.label-warning[href]:hover,.label-warning[href]:focus{ background-color:darken($warning,10%);}
+.label-danger{ background-color:$danger;}
+.label-danger[href]:hover,.label-danger[href]:focus{ background-color:darken($danger,10%);}
