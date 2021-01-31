@@ -1,0 +1,89 @@
+.nav{ list-style:none; margin:$margin-base 0; padding:0;}
+.nav .nav-item{ display: inline-block; *display: inline; *zoom:1;}
+
+.nav-pills{ margin-left:0;}
+.nav-pills .nav-item{ display: inline-block; *display: inline; *zoom:1; vertical-align: top;}
+.nav-pills .nav-link{ color:$theme-primary-text; padding:7px 15px; display: inline-block; transition:background-color 0.3s,color 0.3s;}
+.nav-pills .nav-link:hover{ text-decoration: none; color:$theme-primary; background-color:#eee;}
+.nav-pills .active .nav-link,.nav-pills .active .nav-link:hover,
+.nav-pills a.active,.nav-pills a.active:hover{ background-color:$theme-primary; color:#fff;}
+
+
+.nav-pivot{ margin-left:0; border-bottom:2px solid #ddd;}
+.nav-pivot .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: top;}
+.nav-pivot .nav-link{ color:#777; padding:7px 15px; display: inline-block; transition:border-color 0.3s;}
+.nav-pivot .nav-link:hover{ padding-bottom:5px; text-decoration:none; color:$theme-primary; border-bottom:2px solid $theme-primary; margin-bottom:-1px;}
+.nav-pivot .active .nav-link,.nav-pivot .active .nav-link:hover,
+.nav-pivot a.active,.nav-pivot a.active:hover{ padding-bottom:4px; color:darken($theme-primary, 10%); border-bottom:4px solid darken($theme-primary, 10%); margin-bottom:-1px; font-weight:bold;}
+
+
+.nav-tabs{ border-bottom:1px solid $theme-divider; margin-left:0;}
+.nav-tabs .nav-item{ display: inline-block; *display: inline; *zoom:1; vertical-align: top;}
+.nav-tabs .nav-link{ color:$theme-primary-text; padding:8px 16px; display: inline-block; position: relative; 
+	-ms-transform:translateY(1px);-webkit-transform:translateY(1px);-o-transform:translateY(1px);-moz-transform:translateY(1px);transform:translateY(1px);}
+.nav-tabs .nav-link:hover{ text-decoration: none; color:$theme-primary;}
+.nav-tabs .active .nav-link,.nav-tabs a.active{ padding:7px 15px; border:1px solid $theme-divider; background-color:#fff; border-bottom-color:#fff;}
+.nav-tabs .active .nav-link:hover,.nav-tabs a.active:hover{ color:$theme-primary-text;}
+@media \0screen\,screen\9 {
+	.nav-tabs .nav-link{ top:1px;}
+}
+
+.nav-justified{
+	width:100%;
+	display:table;
+	display:-moz-box;display:-webkit-box;
+	display:-ms-flexbox;display:flex;
+	-moz-box-orient:horizontal;-moz-box-direction:normal;
+	-webkit-box-orient:horizontal;-webkit-box-direction:normal;
+	-ms-flex-direction:row;flex-direction:row;
+}
+.nav-justified>.nav-item{
+	text-align:center;
+	-moz-box-basis:0;-webkit-box-basis:0;
+	-ms-flex-preferred-size:0;flex-basis:0;
+	-moz-box-flex:1;-webkit-box-flex:1;
+	-ms-flex-positive:1;flex-grow: 1;
+}
+@media (min-width:0\0) and (min-resolution:.001dpcm) {
+	.nav-justified>.nav-item{display:table-cell; width:1%;}
+}
+@media \0screen\,screen\9 {
+	.nav-justified>.nav-item{display:table-cell\0; width:1%\0;}
+	.nav-justified{ *display: block; *text-align: justify; *text-align-last: justify;}
+	.nav-justified .nav-item{ *display:inline; *zoom:1;}
+}
+
+.nav-tabs-left,
+.nav-tabs-right{ overflow:visible; *width:200px;}
+.nav-tabs-left{ border-right:1px solid $theme-divider; margin:0 20px 0 0;}
+.nav-tabs-right{ border-left:1px solid $theme-divider; margin:0 0 0 20px;}
+.nav-tabs-left .nav-item,
+.nav-tabs-right .nav-item
+{ display:block;}
+.nav-tabs-left .nav-link,
+.nav-tabs-right .nav-link
+{ color:$theme-primary-text; padding:8px 16px; display:block; *zoom:1; position:relative;}
+.nav-tabs-left .nav-link:hover,
+.nav-tabs-right .nav-link:hover
+{ text-decoration:none; color:$theme-primary;}
+.nav-tabs-left .active .nav-link,.nav-tabs-left a.active,
+.nav-tabs-right .active .nav-link,.nav-tabs-right a.active
+{ padding:7px 14px; border:1px solid $theme-divider; background-color:#fff;}
+.nav-tabs-left .active .nav-link{ border-right-color:#fff; left:1px;}
+.nav-tabs-right .active .nav-link{ border-left-color:#fff; right:1px;}
+
+.nav-tabs-1em{ *width:29px;}
+.nav-tabs-1em .nav-link{
+	text-align: center;
+	word-wrap: break-word;
+	width:28px; *width:auto;
+	padding:12px 6px;
+	line-height:16px;
+}
+.nav-tabs-1em .active .nav-link{
+	padding:12px 5px;
+}
+
+.tab-content{ overflow:auto;}
+.tab-pane{ display:none;}
+.tab-content div.active{ display:block; -webkit-animation:fadein .5s forwards;-moz-animation:fadein .5s forwards;animation:fadein .5s forwards;}

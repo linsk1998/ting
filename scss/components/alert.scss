@@ -1,0 +1,22 @@
+.alert{ padding:$padding-base; margin:$margin-base 0; border:1px solid transparent; position: relative;}
+.alert-link{ font-weight:bold;}
+.alert-heading{ margin-top:8px;}
+
+.alert-success{ color:$success-text; background-color:$success-bg; border-color:$success-border;}
+.alert-success hr{ border-top-color:darken($success-border,5%);}
+.alert-success .alert-link{ color:darken($success-text,10%);}
+.alert-success .alert-link:hover{ color:darken($success-text,15%);}
+.alert-info{ color:$info-text; background-color:$info-bg; border-color:$info-border;}
+.alert-info hr{ border-top-color:darken($info-border,5%);}
+.alert-info .alert-link{ color:darken($info-text,10%);}
+.alert-info .alert-link:hover{ color:darken($info-text,15%);}
+.alert-warning{ color:$warning-text; background-color:$warning-bg; border-color:$warning-border;}
+.alert-warning hr{ border-top-color:darken($warning-border,5%);}
+.alert-warning .alert-link{ color:darken($warning-text,10%);}
+.alert-warning .alert-link:hover{ color:darken($warning-text,15%);}
+.alert-danger{ color:$danger-text; background-color:$danger-bg; border-color:$danger-border;}
+.alert-danger hr{ border-top-color:darken($danger-border,5%);}
+.alert-danger .alert-link{ color:darken($danger-text,10%);}
+.alert-danger .alert-link:hover{ color:darken($danger-text,15%);}
+.alert-dismissible,.alert-dismissible{ padding-left:35px; position:relative;}
+.alert-dismissible .close,.alert-dismissible .close{ position:absolute; top:50%; _top:expression(this.parentNode.offsetHeight/2-2); left:10px; _left:-25px; line-height:20px; margin-top:-10px;}

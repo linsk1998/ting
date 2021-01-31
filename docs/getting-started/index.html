@@ -1,0 +1,108 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="true" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="css" type="boolean" value="false" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>起步</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li class="nav-item active"><a class="nav-link" href="index.html">起步</a></li>
+							<li class="nav-item"><a class="nav-link" href="../common/index.html">全局样式</a></li>
+							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
+							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h1 class="page-header">起步</h1>
+			<p>ting.css，有多种使用方式，最简单的方式就是直接引入全量。</p>
+			<p>首先下载ting.css，然后在你的页面上用link标签引入。</p>
+			<h2 class="page-header">基本的HTML模版</h2>
+			<p>新版本只支持border-box盒模型，如果您想要兼容IE67需要在doctype之前打一行注释。</p>
+			<pre class="code">&lt;!--BORDERBOX--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Ting&lt;/title&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
+		&lt;link href="css/ting.css" rel="stylesheet"/&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Hello, world!&lt;/h1&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</pre>
+			<p><a href="../scaffolding/container-quirks.html">示例</a></p>
+			<h2 class="page-header">高级使用方式</h2>
+			<h3>结合purgecss，通过使用情况自动化按需打包</h3>
+			<p>webpack插件例子</p>
+			<pre class="code">const PurgecssPlugin = require('purgecss-webpack-plugin');
+new PurgecssPlugin({
+	paths:["public/index.html"],
+	safelist:[略],
+	keyframes:true,
+	fontFace:true
+})</pre>
+			<p>postcss插件例子</p>
+			<pre class="code">const purgecss = require('postcss-purgecss');
+purgecss({
+	content: ["index.html"],
+	whitelist: [略],
+	keyframes: true,
+	fontFace:true
+});</pre>
+			<h3>作为mixin库使用</h3>
+			<p>vue-cli例子</p>
+			<pre class="code">{
+	css: {
+		loaderOptions: {
+			sass: {
+				implementation: require('sass'),
+				prependData: `
+@import '~@ting-ui/css/scss/variables.scss';
+@import '~@ting-ui/css/scss/mixin.scss';`
+			}
+		}
+	}
+}</pre>
+			<!--作为bootstrap主题或兼容库（未完成）-->
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

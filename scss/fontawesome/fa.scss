@@ -1,0 +1,18 @@
+@font-face {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	src: url($font-awesome + "fontawesome-webfont.eot");
+	src: url($font-awesome + "fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+		url($font-awesome + "fontawesome-webfont.woff2") format("woff2"),
+		url($font-awesome + "fontawesome-webfont.woff") format("woff"),
+		url($font-awesome + "fontawesome-webfont.ttf") format("truetype"),
+		url($font-awesome + "fontawesome-webfont.svg#fontawesomeregular") format("svg");
+}
+.fa {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

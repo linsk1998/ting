@@ -1,0 +1,19 @@
+
+@mixin box-shadow($value){
+	-webkit-box-shadow:$value;
+	-moz-box-shadow:$value;
+	-o-box-shadow:$value;
+	box-shadow:$value;
+}
+@mixin shadow($x, $y, $blur, $color){
+	-webkit-box-shadow: $x $y $blur $color;
+	-moz-box-shadow: $x $y $blur $color;
+	-o-box-shadow: $x $y $blur $color;
+	box-shadow: $x $y $blur $color;
+}
+@mixin inset-shadow($x, $y, $blur, $color){
+	-webkit-box-shadow:inset $x $y $blur $color;
+	-moz-box-shadow:inset $x $y $blur $color;
+	-o-box-shadow:inset $x $y $blur $color;
+	box-shadow:inset $x $y $blur $color;
+}

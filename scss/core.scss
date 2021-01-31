@@ -23,15 +23,15 @@ body,table,button,input,textarea,article pre{ font-size:$font-size-base; line-he
 body.app{ height:100%;}
 body,dd,dl{margin:0; padding:0;}
 html,body,img{border:0;}
-p,article pre{ margin:0 0 10px;}
-article pre{ padding-bottom:10px;}
+p,article pre{ margin:0 0 $margin-bottom-base;}
+article pre{ padding-bottom:$margin-bottom-base;}
 cite,em,address{font-style:normal;}
-ul,ol{ padding:0; margin:0 0 10px 25px;}
+ul,ol{ padding:0; margin:0 0 $margin-bottom-base 25px;}
 ol ol, ol ul, ul ol, ul ul {margin-bottom: 0;}
 hr{ height:0; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;}
 mark{color:#000; background:#ff0;}
 img{ -ms-interpolation-mode:bicubic; vertical-align:middle;}
-code,kbd,samp{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
+code,kbd,samp,.code{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
 -moz-tab-size:4; -o-tab-size:4; tab-size:4; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none;}
 pre{ white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;overflow:auto;}
 code{ direction:ltr; text-align:left; white-space:pre; line-height:1.5;}
@@ -40,7 +40,7 @@ kbd{ padding:2px 4px; font-size:90%; color:#fff; background-color:#333; border-r
 
 a{ color:$theme-primary; text-decoration:none; cursor:pointer; outline:none;}
 a:hover{ color:darken($theme-primary,15%); text-decoration:underline;}
-pre{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px; display:block;}
+.code{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px; display:block;}
 p code{ background:#f9f2f4; padding:2px 4px; font-size:90%; border-radius:4px; color:#d14; border:1px solid #e1e1e8; _display:inline-block;}
 
 h1,h2,h3,h4,h5,h6{ font-weight:500; line-height:1.1;}
@@ -100,7 +100,7 @@ margin:auto; border-width:3px solid #000; padding:1em; background:white;}
 .text-justify{ text-align:justify;}
 .text-nowrap{ white-space:nowrap;}
 .text-capitalize{ text-transform:capitalize;}
-.text-muted{ color:#777;}
+.text-muted{ color:$theme-secondary-text;}
 .text-truncate{ _width:100%; word-wrap:normal; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
 .text-break{ word-wrap:break-word; -webkit-hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; hyphens:auto;}
 

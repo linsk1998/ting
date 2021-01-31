@@ -1,0 +1,16 @@
+@media \0screen\,screen\9 {
+	.hidden-desktop,.hidden-md{ display:none !important;}
+}
+@media (min-width:$screen-lg) {
+	.hidden-desktop,.hidden-lg{ display:none !important;}
+}
+@media (min-width:$screen-md) and (max-width:$screen-lg){
+	.hidden-desktop,.hidden-md{ display:none !important;}
+}
+@media (min-width:$screen-sm) and (max-width:$screen-md){
+	.hidden-mobile,.hidden-tablet,.hidden-sm{ display:none !important;}
+}
+@media (max-width:$screen-sm){
+	.hidden-mobile,.hidden-xs,.hidden-phone{ display:none !important;}
+}
+.hidden,.hide{ display:none !important;}

@@ -1,0 +1,30 @@
+
+.primary{ background-color:$primary-bg;}
+.success{ background-color:$success-bg;}
+.info{ background-color:$info-bg;}
+.warning{ background-color:$warning-bg;}
+.danger{ background-color:$danger-bg;}
+
+.text-primary{ color:$theme-primary;}
+a.text-primary,.text-primary a{ color:darken($theme-primary,10%);}
+a.text-primary:hover,.text-primary a:hover{ color:darken($theme-primary,15%);}
+.bg-primary{ color:#fff; background-color:$theme-primary;}
+a.bg-primary:hover{ color:#fff; background-color:darken($theme-primary,10%);}
+
+@each $key, $color in $context {
+	.text-#{$key}{ color:$color !important;}
+	a.text-#{$key},.text-#{$key} a{ color:darken($color,10%) !important;}
+	a.text-#{$key}:hover,.text-#{$key} a:hover{ color:darken($color,15%) !important;}
+	.bg-#{$key}{ background-color:$color !important;}
+	.bg-#{$key},.bg-#{$key} a,.bg-#{$key} a:hover{ color:#fff !important;}
+	.border-#{$key}{ border-color:$color !important;}
+}
+@each $key, $color in $theme {
+	.text-#{$key}{ color:$color !important;}
+	a.text-#{$key},.text-#{$key} a{ color:darken($color,10%) !important;}
+	a.text-#{$key}:hover,.text-#{$key} a:hover{ color:darken($color,15%) !important;}
+	.bg-#{$key}{ background-color:$color !important;}
+	.bg-#{$key},.bg-#{$key} a,.bg-#{$key} a:hover{ color:#fff !important;}
+	.border-#{$key}{ border-color:$color !important;}
+}
+

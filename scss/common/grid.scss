@@ -1,0 +1,211 @@
+
+.row{ *zoom:1; *margin-right:-1%;}
+.row:before,.row:after{ display:table; content:" ";}
+.row:after{ clear:both;}
+
+.row-gutter{ margin-left:- $grid-gutter-width;}
+.col-gutter{ padding-left:$grid-gutter-width;}
+
+
+@for $i from 1 through 12{
+	.col-#{$i},.col-md-#{$i}{
+		width:$i/12*100%; *width:$i/12*100%*100/101; float:left;
+	}
+}
+@for $i from 1 to 12{
+	.col-push-#{$i},.col-md-push-#{$i}{
+		position:relative;
+		left:$i/12*100%; *left:$i/12*100%*100/101;
+	}
+	.col-pull-#{$i},.col-md-pull-#{$i}{
+		position:relative;
+		right:$i/12*100%; *right:$i/12*100%*100/101;
+	}
+	.col-offset-#{$i},.col-md-offset-#{$i}{
+		margin-left:$i/12*100%; *margin-left:$i/12*100%*100/101; _display:inline;
+	}
+}
+@media (max-width:$screen-sm){
+	.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,
+	.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12
+	{ width:100%; float:left;}
+	.col-md-push-1,.col-md-push-2,.col-md-push-3,.col-md-push-4,.col-md-push-5,.col-md-push-6,
+	.col-md-push-7,.col-md-push-8,.col-md-push-9,.col-md-push-10,.col-md-push-11
+	{ left:auto;}
+	.col-md-pull-1,.col-md-pull-2,.col-md-pull-3,.col-md-pull-4,.col-md-pull-5,.col-md-pull-6,
+	.col-md-pull-7,.col-md-pull-8,.col-md-pull-9,.col-md-pull-10,.col-md-pull-11
+	{ right:auto;}
+	.col-md-offset-1,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,
+	.col-md-offset-7,.col-md-offset-8,.col-md-offset-9,.col-md-offset-10,.col-md-offset-11
+	{ margin-left:0;}
+}
+@media (min-width:$screen-lg){
+	@for $i from 1 through 12{
+		.col-lg-#{$i}{ width:$i/12*100%; float:left;}
+	}
+	@for $i from 1 to 12{
+		.col-lg-push-#{$i}{ position:relative; left:$i/12*100%;}
+		.col-lg-pull-#{$i}{ position:relative; right:$i/12*100%;}
+		.col-lg-offset-#{$i}{ margin-left:$i/12*100%;}
+	}
+}
+@media (min-width:$screen-sm) and (max-width:$screen-md){
+	@for $i from 1 through 12{
+		.col-xs-#{$i}{ width:$i/12*100%; float:left;}
+	}
+	@for $i from 1 through 12{
+		.col-sm-#{$i}{ width:$i/12*100%; float:left;}
+	}
+	@for $i from 1 to 12{
+		.col-xs-push-#{$i}{
+			position:relative;
+			left:$i/12*100%;
+		}
+		.col-xs-pull-#{$i}{
+			position:relative;
+			right:$i/12*100%;
+		}
+		.col-xs-offset-#{$i}{ margin-left:$i/12*100%;}
+		.col-sm-push-#{$i}{
+			position:relative;
+			left: $i/12*100%;;
+		}
+		.col-sm-pull-#{$i}{
+			position:relative;
+			right: $i/12*100%;;
+		}
+		.col-sm-offset-#{$i}{ margin-left:$i/12*100%;}
+	}
+}
+@media (max-width:$screen-sm){
+	@for $i from 1 through 12{
+		.col-xs-#{$i}{ width:$i/12*100%; float:left;}
+	}
+	@for $i from 1 to 12{
+		.col-xs-push-#{$i}{
+			position:relative;
+			left:$i/12*100%;
+		}
+		.col-xs-pull-#{$i}{
+			position:relative;
+			right:$i/12*100%;
+		}
+		.col-xs-offset-#{$i}{ margin-left:$i/12*100%;}
+	}
+}
+@each $columns in $grid-columns-list{
+	@for $i from 1 through $columns{
+		.col-#{$i}\/#{$columns}
+		{ width:$i/$columns*100%; *width:$i/$columns*100%*100/101; float:left;}
+	}
+	@for $i from 1 to $columns{
+		.col-offset-#{$i}\/#{$columns}
+		{ margin-left:$i/$columns*100%; *margin-left:$i/$columns*100%*100/101; _display:inline;}
+	}
+	@for $i from 1 to $columns{
+		.col-push-#{$i}\/#{$columns},.col-md-push-#{$i}\/#{$columns}{
+			position:relative;
+			left:$i/$columns*100%; *left:$i/$columns*100%*100/101;
+		}
+	}
+	@for $i from 1 to $columns{
+		.col-pull-#{$i}\/#{$columns},.col-md-pull-#{$i}\/#{$columns}{
+			position:relative;
+			right:$i/$columns*100%; *right:$i/$columns*100%*100/101;
+		}
+	}
+	@media (max-width:$screen-sm){
+		.col-md-n\/#{$columns}
+		{ width:100%; float:left;}
+		@for $i from 1 through $columns{
+			.col-md-#{$i}\/#{$columns}{ @extend .col-md-n\/#{$columns};}
+		}
+		.col-md-push-n\/#{$columns}
+		{ left:auto;}
+		@for $i from 1 to $columns{
+			.col-md-push-#{$i}\/#{$columns}{ @extend .col-md-push-n\/#{$columns};}
+		}
+		.col-md-pull-n\/#{$columns}
+		{ right:auto;}
+		@for $i from 1 to $columns{
+			.col-md-pull-#{$i}\/#{$columns}{ @extend .col-md-pull-n\/#{$columns};}
+		}
+		.col-md-offset-n\/#{$columns}
+		{ margin-left:0;}
+		@for $i from 1 to $columns{
+			.col-md-offset-#{$i}\/#{$columns}{ @extend .col-md-offset-n\/#{$columns};}
+		}
+	}
+	@media (min-width:$screen-lg){
+		@for $i from 1 through $columns{
+			.col-lg-#{$i}\/#{$columns}{ width:$i/$columns*100%; float:left;}
+		}
+		@for $i from 1 to $columns{
+			.col-lg-push-#{$i}\/#{$columns}{ position:relative; left:$i/$columns*100%;}
+			.col-lg-pull-#{$i}\/#{$columns}{ position:relative; right:$i/$columns*100%;}
+			.col-lg-offset-#{$i}\/#{$columns}{ margin-left:$i/$columns*100%;}
+		}
+	}
+	@media (min-width:$screen-sm) and (max-width:$screen-md){
+		@for $i from 1 through $columns{
+			.col-xs-#{$i}\/#{$columns}{ width:$i/$columns*100%; float:left;}
+		}
+		@for $i from 1 through $columns{
+			.col-sm-#{$i}\/#{$columns}{ width:$i/$columns*100%; float:left;}
+		}
+		@for $i from 1 to $columns{
+			.col-xs-push-#{$i}\/#{$columns}{
+				position:relative;
+				left:$i/$columns*100%;
+			}
+			.col-xs-pull-#{$i}\/#{$columns}{
+				position:relative;
+				right:$i/$columns*100%;
+			}
+			.col-xs-offset-#{$i}\/#{$columns}
+			{ margin-left:$i/$columns*100%;}
+			.col-sm-push-#{$i}\/#{$columns}{
+				position:relative;
+				left: $i/$columns*100%;;
+			}
+			.col-sm-pull-#{$i}\/#{$columns}{
+				position:relative;
+				right: $i/$columns*100%;;
+			}
+			.col-sm-offset-#{$i}\/#{$columns}
+			{ margin-left:$i/$columns*100%;}
+		}
+	}
+	@media (max-width:$screen-sm){
+		@for $i from 1 through $columns{
+			.col-xs-#{$i}\/#{$columns}
+			{ width:$i/$columns*100%; float:left;}
+		}
+		@for $i from 1 to $columns{
+			.col-xs-push-#{$i}\/#{$columns}{
+				position:relative;
+				left:$i/$columns*100%;
+			}
+			.col-xs-pull-#{$i}\/#{$columns}{
+				position:relative;
+				right:$i/$columns*100%;
+			}
+			.col-xs-offset-#{$i}\/#{$columns}
+			{ margin-left:$i/$columns*100%;}
+		}
+	}
+}
+
+.row-fluid{ *zoom:1; *margin-right:-1%;}
+.row-fluid:before,.row-fluid:after{ display:table; content:"";}
+.row-fluid:after{ clear:both;}
+.row-fluid{ margin-left:-1/47*100%;}
+.col-fluid-1,.col-fluid-2,.col-fluid-3,.col-fluid-4,.col-fluid-5,.col-fluid-6,
+.col-fluid-7,.col-fluid-8,.col-fluid-9,.col-fluid-10,.col-fluid-11,.col-fluid-12
+{ margin-left:1/48*100%; _display:inline;}
+@for $i from 1 through 12{
+	.col-fluid-#{$i}{ width:(4*$i - 1)/48*100%; *width:(4*$i - 1)/48*100%*100/101; float:left;}
+}
+@for $i from 1 to 12{
+	.col-fluid-offset-#{$i}{ margin-left:(4*$i+1)/48*100%; *margin-left:(4*$i+1)/48*100%*100/101;}
+}

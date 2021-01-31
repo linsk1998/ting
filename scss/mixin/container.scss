@@ -1,0 +1,14 @@
+
+@mixin container($width:auto,$padding:15px){
+	width:$width;
+	@if(type-of($width) == "number"){
+		margin-right:auto;
+		margin-left:auto;
+	}
+	@if($padding){
+		padding-right:$padding;
+		padding-left:$padding;
+	}
+	position:relative; *zoom:1;
+	*text-align:left;
+}

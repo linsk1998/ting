@@ -1,0 +1,21 @@
+
+.link-primary{ color:$theme-primary;}
+.link-primary:hover{ color:darken($theme-primary,15%);}
+
+.link-secondary{ color:$theme-primary-text;}
+.link-secondary:hover{ color:$theme-primary;}
+
+.link-disabled{ cursor: not-allowed; color:#a0a0a0; text-shadow:1px 1px #fff;}
+.link-disabled:hover{ color:#a0a0a0; text-decoration:none;}
+
+.link-stretched::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	pointer-events: auto;
+	content: "";
+	background-color: rgba(0,0,0,0);
+}

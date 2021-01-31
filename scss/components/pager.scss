@@ -1,0 +1,10 @@
+.pager{ margin:10px 0; padding:0; text-align:center; list-style:none;}
+.pager li{ display:inline-block; *zoom:1; *display:inline; line-height:30px; height:30px; background-color:#fff; border:1px solid #ccc;
+ border-radius:15px; -webkit-border-radius:15px; -moz-border-radius:15px;}
+.pager li a,.pager li span{ padding:0 14px;}
+.pager li:hover{ background-color:#eee;}
+.pager li a:hover{ text-decoration:none;}
+.pager:after{ display:block; content:""; clear:both; height:0; overflow: hidden;} 
+.pager{*zoom:1;}
+.pager .next{ float:right;}
+.pager .previous{ float:left;}

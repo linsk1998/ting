@@ -1,0 +1,12 @@
+.img-circle{
+	@include img-circle;
+}
+.img-rounded{
+	@include img-rounded;
+}
+.img-thumbnail{
+	@include img-thumbnail;
+}
+.img-responsive{ 
+	@include img-responsive;
+}

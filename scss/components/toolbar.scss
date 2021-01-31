@@ -1,0 +1,16 @@
+.toolbar{
+	margin-top:$margin-base;
+	margin-bottom:$margin-base
+}
+.toolbar-left{
+	float: left;
+}
+.toolbar-right{
+	float: right;
+}
+.toolbar-center{
+	overflow: auto;
+}
+.toolbar-left,.toolbar-right,.toolbar-center{
+	margin-top:0; margin-bottom:0;
+}

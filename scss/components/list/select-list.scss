@@ -1,0 +1,12 @@
+
+.select-list{ list-style:none; margin:0; padding:0;}
+.select-list li{ padding:10px; background:#f4f4f4; margin-bottom:2px; border-left:2px solid #e6e7e8;}
+.select-list li input,.select-list-drag{ vertical-align: middle;}
+.select-list-drag{ cursor:move; margin-right:5px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
+.select-list-tools{ float:right;}
+.select-list-tools *{ *zoom:1;}
+.select-list-tools,.select-list-tools a,.select-list-tools a:hover{ color:#dd4b39;}
+.select-list-tools a,.select-list-tools a:hover{ text-decoration:none;}
+li>.select-list-tools{ visibility:hidden;}
+li:hover>.select-list-tools{ visibility:visible;}

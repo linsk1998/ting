@@ -1,0 +1,17 @@
+
+@each $index, $size in $spacers {
+	.m-#{$index} { margin:$size !important; }
+	.mt-#{$index} { margin-top:$size !important; }
+	.mb-#{$index} { margin-bottom:$size !important; }
+	.ml-#{$index} { margin-left:$size !important; }
+	.mr-#{$index} { margin-right:$size !important; }
+	.mx-#{$index} { margin-left:$size !important; margin-right:$size !important; }
+	.my-#{$index} { margin-top:$size !important; margin-bottom:$size !important; }
+	.p-#{$index} { padding:$size !important; }
+	.pt-#{$index} { padding-top:$size !important; }
+	.pb-#{$index} { padding-bottom:$size !important; }
+	.pl-#{$index} { padding-left:$size !important; }
+	.pr-#{$index} { padding-right:$size !important; }
+	.px-#{$index} { padding-left:$size !important; padding-right:$size !important; }
+	.py-#{$index} { padding-top:$size !important; padding-bottom:$size !important; }
+}

@@ -1,0 +1,18 @@
+
+
+@media \0screen\,screen\9 {
+	.hidden-desktop{ display:none;}
+}
+@media (min-width:971px) {
+	.hidden-desktop{ display:none;}
+}
+@media (min-width:641px) and (max-width:970px){
+	.hidden-mobile,.hidden-tablet{ display:none;}
+}
+@media (max-width:640px){
+	.hidden-mobile,.hidden-phone{ display:none;}
+}
+.hidden{ display:none;}
+.block{ display:block;}
+.inline-block{ display:inline-block; *zoom:1; *display:inline-block;}
+.inline{ display:inline;}

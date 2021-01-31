@@ -1,0 +1,17 @@
+
+.input-group{ @include clearfix;}
+.input-group-left,.input-group-right{ background-color:#eee; padding:6px 12px; line-height:18px; color:#555;}.input-group-left{
+	float:left; _margin-right:-3px;
+	border:1px solid #ccc; border-right:0 none;
+	order:-1;
+}
+.input-group-right{
+	float:right; _margin-left:-3px;
+	border:1px solid #ccc; border-left:0 none;
+	order:1;
+}
+.input-group-control{ overflow:auto;}
+.input-group-control .form-control{ width:100%; display:block;}
+.input-group-left .btn{ margin-right:-1px;}
+.input-group-right .btn{ margin-left:-1px;}
+.input-group-btn{ padding:0; border:0 none;}
