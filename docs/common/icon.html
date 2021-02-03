@@ -7,17 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
 	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="scaffolding" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="true" -->
 	<!-- InstanceParam name="css" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="true" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
 	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
 	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>图标</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
+	<script src="../ting/html5.js"></script>
 	<!-- InstanceBeginEditable name="head" -->
-	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<!-- InstanceEndEditable -->
 	</head>
 	<body>
@@ -31,9 +32,9 @@
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
 							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-							<li class="nav-item"><a class="nav-link" href="../common/index.html">全局样式</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.html">工具类</a></li>
-							<li class="nav-item active"><a class="nav-link" href="../components/index.html">组件</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.html">全局样式</a></li>
+							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
+							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -52,18 +53,15 @@
 			<h2 class="page-header">基本图标</h2>
 			<div class="row row-gutter">
 				<div class="col-md-3 col-sm-12 col-gutter">
-					<p><i class="fa">&#xf004;</i></p>
-					<p><i class="fa fa-heart"></i></p>
+					<p><i class="icon fa">&#xf004;</i></p>
+					<p><i class="icon fa fa-heart"></i></p>
 				</div>
 				<div class="col-md-9 col-sm-12 col-gutter">
 					<p>
-						使用样式类<code>fa</code>可让图标字体的代码展示为图标。
-						Font Awesome是为使用内联元素而设计的。我们通常更喜欢使用 <code>&lt;i&gt;</code> ，因为它更简洁。
-						但实际上使用 <code>&lt;span&gt;</code> 才能更加语义化。
+						使用样式类<code>icon</code> 生成一个方形inline-block。
 					</p>
-					<pre class="code">&lt;i class="fa"&gt;&amp;#xf004;&lt;/i&gt;</pre>
-					<p>也可以使用 <code>fa-*</code> 类来使用图标，不需要使用代码。</p>
-					<pre class="code">&lt;i class="fa fa-heart"&gt;&lt;/i&gt;</pre>
+					<pre class="code">&lt;i class="icon fa"&gt;&amp;#xf004;&lt;/i&gt;</pre>
+					<pre class="code">&lt;i class="icon fa fa-heart"&gt;&lt;/i&gt;</pre>
 				</div>
 			</div>
 			<h2 id="larger" class="page-header">大图标</h2>

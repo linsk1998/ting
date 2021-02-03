@@ -15,6 +15,7 @@
 	<title></title>
 	<!-- TemplateEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
+	<script src="../ting/html5.js"></script>
 	<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
 	</head>
 	<body>
