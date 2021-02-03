@@ -2,7 +2,7 @@
 
 
 .tree{ padding:3px;}
-.tree ul{ margin-left:18px;}
+.tree ul{ margin-left:18px; padding-left:0;}
 .tree li{ list-style:none; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
 .tree label,.tree a{ padding-left:5px; line-height:26px; display:block; _zoom:1;}
 .tree label:hover,.tree a:hover{ background:#CFDDEF;}
