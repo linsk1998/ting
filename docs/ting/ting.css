@@ -75,6 +75,10 @@ cite, em, address {
   font-style: normal;
 }
 
+abbr, b, cite, em, font, i, label, q, s, span, strike, strong, u {
+  vertical-align: top;
+}
+
 ul, ol {
   padding: 0;
   padding-left: 30px;
@@ -6539,42 +6543,6 @@ button.list-group-item::-moz-focus-inner {
   color: #eff5fa;
 }
 
-.nav-list {
-  margin: 3px 0;
-}
-
-.nav-list li {
-  list-style: none;
-}
-
-.nav-list-item {
-  display: block;
-  padding: 8px 16px;
-  color: #666;
-  _zoom: 1;
-}
-
-.nav-list-item:hover {
-  color: #444;
-  text-decoration: none;
-}
-
-.nav-list-item small {
-  color: #999;
-}
-
-.inverse .nav-list-item {
-  color: #999faa;
-}
-
-.inverse .nav-list-item:hover {
-  color: #fff;
-}
-
-.inverse .nav-list-item small {
-  color: #666f77;
-}
-
 .list-group-unbordered {
   border-left: 0;
   border-right: 0;
@@ -7975,6 +7943,43 @@ a.navbar-brand:hover {
   display: none;
 }
 
+.nav-list {
+  margin: 3px 0;
+  padding-left: 0;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list-item {
+  display: block;
+  padding: 8px 16px;
+  color: #666;
+  _zoom: 1;
+}
+
+.nav-list-item:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+.nav-list-item small {
+  color: #999;
+}
+
+.inverse .nav-list-item {
+  color: #999faa;
+}
+
+.inverse .nav-list-item:hover {
+  color: #fff;
+}
+
+.inverse .nav-list-item small {
+  color: #666f77;
+}
+
 /* CSS Document */
 .tree {
   padding: 3px;
@@ -8742,6 +8747,30 @@ a.text-orange:hover, .text-orange a:hover {
 
 .border-orange {
   border-color: #ff851b !important;
+}
+
+.text-yellow {
+  color: #ffc107 !important;
+}
+
+a.text-yellow, .text-yellow a {
+  color: #d39e00 !important;
+}
+
+a.text-yellow:hover, .text-yellow a:hover {
+  color: #ba8b00 !important;
+}
+
+.bg-yellow {
+  background-color: #ffc107 !important;
+}
+
+.bg-yellow, .bg-yellow a, .bg-yellow a:hover {
+  color: #fff !important;
+}
+
+.border-yellow {
+  border-color: #ffc107 !important;
 }
 
 .text-green {
