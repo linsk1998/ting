@@ -16,6 +16,7 @@ html,body,img{border:0;}
 article{ text-align:left;}
 p,pre{ margin:$margin-base 0;}
 cite,em,address{font-style:normal;}
+abbr,b,cite,em,font,i,label,q,s,span,strike,strong,u{ vertical-align: top;}
 ul,ol{ padding:0; padding-left:30px; margin:$margin-base 0;}
 ol ol, ol ul, ul ol, ul ul {margin: 0;}
 hr{ display:block; border:0 none; border-top:1px solid #999; height:1px; overflow:hidden; margin:$margin-base 0;}

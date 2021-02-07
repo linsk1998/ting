@@ -97,14 +97,5 @@ button.list-group-item::-moz-focus-inner{
 .list-group .active .list-group-item-text{color:lighten($theme-primary, 50%);}
 
 
-.nav-list{ margin:3px 0;}
-.nav-list li{ list-style:none;}
-.nav-list-item{ display:block; padding:8px 16px; color:#666; _zoom:1;}
-.nav-list-item:hover{ color:#444; text-decoration:none;}
-.nav-list-item small{ color:#999;}
-.inverse .nav-list-item{ color:#999faa;}
-.inverse .nav-list-item:hover{ color:#fff;}
-.inverse .nav-list-item small{ color:#666f77;}
-
 .list-group-unbordered{ border-left:0; border-right:0;}
 .list-group-unbordered .list-group-item{ border-left:0; border-right:0; padding-left:0; padding-right:0;}

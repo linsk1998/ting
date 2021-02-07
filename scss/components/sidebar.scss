@@ -15,3 +15,13 @@
 	.sidebar-nav .expanded .pull-right{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2,mirror=1);}
 }
 .sidebar-nav .collapsed{ display:none;}
+
+
+.nav-list{ margin:3px 0; padding-left:0;}
+.nav-list li{ list-style:none;}
+.nav-list-item{ display:block; padding:8px 16px; color:#666; _zoom:1;}
+.nav-list-item:hover{ color:#444; text-decoration:none;}
+.nav-list-item small{ color:#999;}
+.inverse .nav-list-item{ color:#999faa;}
+.inverse .nav-list-item:hover{ color:#fff;}
+.inverse .nav-list-item small{ color:#666f77;}
