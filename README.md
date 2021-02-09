@@ -2,4 +2,5 @@
 公共样式库Common Style Lib
 演示地址
 Demo
-http://raw.githack.com/linsk1998/ting/master/index.html
+https://linsk1998.github.io/ting/
+http://ting-ui.gitee.io/css

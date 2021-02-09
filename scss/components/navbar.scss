@@ -1,5 +1,6 @@
 .navbar{
 	border-bottom:1px solid #ddd;
+	position:relative; z-index:$level-navbar;
 	@include clearfix;
 }
 .navbar-header{ float: left;}
