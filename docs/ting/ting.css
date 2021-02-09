@@ -7042,6 +7042,8 @@ li:hover > .select-list-tools {
 
 .navbar {
   border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 500;
   *zoom: 1;
 }
 .navbar:after {
