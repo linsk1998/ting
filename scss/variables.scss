@@ -72,6 +72,9 @@ $spacers:(
 	5: ($spacer * 3)
 );
 
+$screen-width-list:3840px 1920px 1600px 1440px 1366px 1280px 1024px 800px 640px 480px 375px 320px;
+$screen-height-list:2732px 2160px 1920px 1334px 1280px 1136px 980px 900px 768px 720px 640px 480px;
+
 $screen-xs:480px;
 $screen-sm:640px;
 $screen-md:970px;

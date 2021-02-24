@@ -95,11 +95,11 @@
 }
 @each $columns in $grid-columns-list{
 	@for $i from 1 through $columns{
-		.col-#{$i}\/#{$columns}
+		.col-#{$i}\/#{$columns},.col-md-#{$i}\/#{$columns}
 		{ width:$i/$columns*100%; *width:$i/$columns*100%*100/101; float:left;}
 	}
 	@for $i from 1 to $columns{
-		.col-offset-#{$i}\/#{$columns}
+		.col-offset-#{$i}\/#{$columns},.col-md-offset-#{$i}\/#{$columns}
 		{ margin-left:$i/$columns*100%; *margin-left:$i/$columns*100%*100/101; _display:inline;}
 	}
 	@for $i from 1 to $columns{

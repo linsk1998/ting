@@ -2,45 +2,40 @@
 
 @import './variables.scss';
 @import './mixin.scss';
-
+@import './common/html5.scss';
+@import './common/animation.scss';
 @import './utilities/type.scss';
 @import './utilities/text.scss';
 @import './utilities/link.scss';
-
+@import './utilities/layout.scss';
+@import './utilities/icon.scss';
+@import './utilities/disabled.scss';
 @import "./common/document.scss";
 @import './common/grid.scss';
 @import './common/button.scss';
 @import './common/table.scss';
 @import './common/image.scss';
 @import './common/form.scss';
+@import "./common/display.scss";
 @import "./common/hidden.scss";
-
-@import './utilities/layout.scss';
-@import './utilities/icon.scss';
-@import './utilities/disabled.scss';
-
-
+@import "./common/sr-only.scss";
 @import "./utilities/box/clearfix.scss";
 @import "./utilities/box/pull-right.scss";
 @import "./utilities/box/pull-left.scss";
-@import "./utilities/box/pull-front.scss";
 @import "./utilities/box/scrollable-horizontal.scss";
 @import "./utilities/box/scrollable-vertical.scss";
-
 @import "./utilities/align/center-block.scss";
 @import "./utilities/align/align-top.scss";
 @import "./utilities/align/align-middle.scss";
 @import "./utilities/align/align-bottom.scss";
 @import "./utilities/align/vertical-align.scss";
 @import "./utilities/align/line-middle.scss";
-
 @import './utilities/line.scss';
-
 @import "./utilities/font/font-sans.scss";
 @import "./utilities/font/font-serif.scss";
 @import "./utilities/font/font-cursive.scss";
 @import "./utilities/font/font-monospace.scss";
-
 @import './utilities/flex.scss';
 @import './utilities/color.scss';
+@import './utilities/border.scss';
 @import './utilities/size.scss';

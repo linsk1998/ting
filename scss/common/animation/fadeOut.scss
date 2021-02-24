@@ -1,0 +1,91 @@
+
+/* 淡出 */
+@-moz-keyframes fadeOut{
+	0%{ opacity:1;}
+	100%{ opacity:0;}
+}
+@-webkit-keyframes fadeOut{
+	0%{ opacity:1;}
+	100%{ opacity:0;}
+}
+@keyframes fadeOut{
+	0%{ opacity:1;}
+	100%{ opacity:0;}
+}
+.fadeOut{
+	-moz-animation-name:fadeOut;
+	-webkit-animation-name:fadeOut;
+	animation-name:fadeOut;
+}
+/* 淡出-往上 */
+@-moz-keyframes fadeOutUp{
+	0%{ opacity:1; -moz-transform:translateY(0);}
+	100%{ opacity:0; -moz-transform:translateY(-30px);}
+}
+@-webkit-keyframes fadeOutUp{
+	0%{ opacity:1; -webkit-transform:translateY(0);}
+	100%{ opacity:0; -webkit-transform:translateY(-30px);}
+}
+@keyframes fadeOutUp{
+	0%{ opacity:1; transform:translateY(0);}
+	100%{ opacity:0; transform:translateY(-30px);}
+}
+.fadeOutUp{
+	-moz-animation-name:fadeOutUp;
+	-webkit-animation-name:fadeOutUp;
+	animation-name:fadeOutUp;
+}
+/* 淡出-往上 */
+@-moz-keyframes fadeOutRight{
+	0%{ opacity:1; -moz-transform:translateX(0);}
+	100%{ opacity:0; -moz-transform:translateX(30px);}
+}
+@-webkit-keyframes fadeOutRight{
+	0%{ opacity:1; -webkit-transform:translateX(0);}
+	100%{ opacity:0; -webkit-transform:translateX(30px);}
+}
+@keyframes fadeOutRight{
+	0%{ opacity:1; transform:translateX(0);}
+	100%{ opacity:0; transform:translateX(30px);}
+}
+.fadeOutRight{
+	-moz-animation-name:fadeOutRight;
+	-webkit-animation-name:fadeOutRight;
+	animation-name:fadeOutRight;
+}
+/* 淡出-往上 */
+@-moz-keyframes fadeOutDown{
+	0%{ opacity:1; -moz-transform:translateY(0);}
+	100%{ opacity:0; -moz-transform:translateY(30px);}
+}
+@-webkit-keyframes fadeOutDown{
+	0%{ opacity:1; -webkit-transform:translateY(0);}
+	100%{ opacity:0; -webkit-transform:translateY(30px);}
+}
+@keyframes fadeOutDown{
+	0%{ opacity:1; transform:translateY(0);}
+	100%{ opacity:0; transform:translateY(30px);}
+}
+.fadeOutDown{
+	-moz-animation-name:fadeOutDown;
+	-webkit-animation-name:fadeOutDown;
+	animation-name:fadeOutDown;
+}
+/* 淡出-往上 */
+@-moz-keyframes fadeOutLeft{
+	0%{ opacity:1; -moz-transform:translateX(0);}
+	100%{ opacity:0; -moz-transform:translateX(-30px);}
+}
+@-webkit-keyframes fadeOutLeft{
+	0%{ opacity:1; -webkit-transform:translateX(0);}
+	100%{ opacity:0; -webkit-transform:translateX(-30px);}
+}
+@keyframes fadeOutLeft{
+	0%{ opacity:1; transform:translateX(0);}
+	100%{ opacity:0; transform:translateX(-30px);}
+}
+.fadeOutLeft{
+	-moz-animation-name:fadeOutLeft;
+	-webkit-animation-name:fadeOutLeft;
+	animation-name:fadeOutLeft;
+}

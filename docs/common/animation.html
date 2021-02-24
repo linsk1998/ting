@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
+	<!-- InstanceParam name="scaffolding" type="boolean" value="true" -->
+	<!-- InstanceParam name="css" type="boolean" value="false" -->
+	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="javascript" type="boolean" value="false" -->
+	<!-- InstanceParam name="quirks" type="boolean" value="false" -->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>动画</title>
+	<!-- InstanceEndEditable -->
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/ting.js"></script>
+	<!-- InstanceBeginEditable name="head" -->
+	<style>
+	#fadeIn:focus{ animation:fadeIn .6s ease-out forwards;}
+	#fadeInUp:focus{ animation:fadeInUp .6s ease-out forwards;}
+	#fadeInRight:focus{ animation:fadeInRight .6s ease-out forwards;}
+	#fadeInDown:focus{ animation:fadeInDown .6s ease-out forwards;}
+	#fadeInLeft:focus{ animation:fadeInLeft .6s ease-out forwards;}
+	#fadeOut:focus{ animation:fadeOut .6s ease-in forwards;}
+	#fadeOutUp:focus{ animation:fadeOutUp .6s ease-in forwards;}
+	#fadeOutRight:focus{ animation:fadeOutRight .6s ease-in forwards;}
+	#fadeOutDown:focus{ animation:fadeOutDown .6s ease-in forwards;}
+	#fadeOutLeft:focus{ animation:fadeOutLeft .6s ease-in forwards;}
+	#bounce:focus{ animation:bounce .6s ease-out forwards;}
+	#bounceIn:focus{ animation:bounceIn .6s ease-out forwards;}
+	#bounceInUp:focus{ animation:bounceInUp .6s ease-out forwards;}
+	#bounceInDown:focus{ animation:bounceInDown .6s ease-out forwards;}
+	#bounceInLeft:focus{ animation:bounceInLeft .6s ease-out forwards;}
+	#bounceInRight:focus{ animation:bounceInRight .6s ease-out forwards;}
+	#bounceOut:focus{ animation:bounceOut .6s ease-in forwards;}
+	#bounceOutUp:focus{ animation:bounceOutUp .6s ease-in forwards;}
+	#bounceOutDown:focus{ animation:bounceOutDown .6s ease-in forwards;}
+	#bounceOutLeft:focus{ animation:bounceOutLeft .6s ease-in forwards;}
+	#bounceOutRight:focus{ animation:bounceOutRight .6s ease-in forwards;}
+	#slideInLeft:focus{ animation:slideInLeft .6s ease-out forwards;}
+	#slideInRight:focus{ animation:slideInRight .6s ease-out forwards;}
+	#slideInUp:focus{ animation:slideInUp .6s ease-out forwards;}
+	#slideInDown:focus{ animation:slideInDown .6s ease-out forwards;}
+	#slideOutLeft:focus{ animation:slideOutLeft .6s ease-in forwards;}
+	#slideOutRight:focus{ animation:slideOutRight .6s ease-in forwards;}
+	#slideOutUp:focus{ animation:slideOutUp .6s ease-in forwards;}
+	#slideOutDown:focus{ animation:slideOutDown .6s ease-in forwards;}
+	#flyInLeft:focus{ animation:flyInLeft .6s ease-out forwards;}
+	#flyInRight:focus{ animation:flyInRight .6s ease-out forwards;}
+	#flyInUp:focus{ animation:flyInUp .6s ease-out forwards;}
+	#flyInDown:focus{ animation:flyInDown .6s ease-out forwards;}
+	#flyOutLeft:focus{ animation:flyOutLeft .6s ease-in forwards;}
+	#flyOutRight:focus{ animation:flyOutRight .6s ease-in forwards;}
+	#flyOutUp:focus{ animation:flyOutUp .6s ease-in forwards;}
+	#flyOutDown:focus{ animation:flyOutDown .6s ease-in forwards;}
+	#zoomIn:focus{ animation:zoomIn .6s ease-out forwards;}
+	#zoomInLeft:focus{ animation:zoomInLeft .6s ease-out forwards;}
+	#zoomInRight:focus{ animation:zoomInRight .6s ease-out forwards;}
+	#zoomInUp:focus{ animation:zoomInUp .6s ease-out forwards;}
+	#zoomInDown:focus{ animation:zoomInDown .6s ease-out forwards;}
+	#zoomOut:focus{ animation:zoomOut .6s ease-in forwards;}
+	#zoomOutLeft:focus{ animation:zoomOutLeft .6s ease-in forwards;}
+	#zoomOutRight:focus{ animation:zoomOutRight .6s ease-in forwards;}
+	#zoomOutUp:focus{ animation:zoomOutUp .6s ease-in forwards;}
+	#zoomOutDown:focus{ animation:zoomOutDown .6s ease-in forwards;}
+	#rotateIn:focus{ animation:rotateIn .6s linear forwards;}
+	#rotateInUpRight:focus{ animation:rotateInUpRight .6s linear forwards;}
+	#rotateInUpLeft:focus{ animation:rotateInUpLeft .6s linear forwards;}
+	#rotateInDownLeft:focus{ animation:rotateInDownLeft .6s linear forwards;}
+	#rotateInDownRight:focus{ animation:rotateInDownRight .6s linear forwards;}
+	#rotateOut:focus{ animation:rotateOut .6s linear forwards;}
+	#rotateOutUpRight:focus{ animation:rotateOutUpRight .6s linear forwards;}
+	#rotateOutUpLeft:focus{ animation:rotateOutUpLeft .6s linear forwards;}
+	#rotateOutDownLeft:focus{ animation:rotateOutDownLeft .6s linear forwards;}
+	#rotateOutDownRight:focus{ animation:rotateOutDownRight .6s linear forwards;}
+	#flip:focus{ animation:flip 1s forwards;}
+	#flipInX:focus{ animation:flipInX 1s ease-out forwards;}
+	#flipInY:focus{ animation:flipInY 1s ease-out forwards;}
+	#flipOutX:focus{ animation:flipOutX .4s ease-in forwards;}
+	#flipOutY:focus{ animation:flipOutY .4s ease-in forwards;}
+	#scaleIn:focus{ animation:scaleIn .6s ease-out forwards;}
+	#scaleOut:focus{ animation:scaleOut .6s ease-in forwards;}
+	
+	#bounce:focus{ animation:bounce 1s linear forwards;}
+	#flash:focus{ animation:flash 1s linear forwards;}
+	#shake:focus{ animation:shake 1s linear forwards;}
+	#swing:focus{ animation:swing 1s linear forwards;}
+	#wobble:focus{ animation:wobble 1s linear forwards;}
+	#tada:focus{ animation:tada 1s linear forwards;}
+	#pulse:focus{ animation:pulse 1s linear forwards;}
+	#flip:focus{ animation:flip 1s linear forwards;}
+	#spin:focus{ animation:spin 1s linear infinite;}
+	</style>
+	<!-- InstanceEndEditable -->
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-top" role="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
+							<li class="nav-item active"><a class="nav-link" href="../common/index.html">全局样式</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html">工具类</a></li>
+							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right hidden-mobile">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<!-- InstanceBeginEditable name="main" -->
+		<div class="container">
+			<h2 class="page-header">进入</h2>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeIn" class="btn bg-primary btn-block">fadeIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeInUp" class="btn bg-primary btn-block">fadeInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeInDown" class="btn bg-primary btn-block">fadeInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeInLeft" class="btn bg-primary btn-block">fadeInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeInRight" class="btn bg-primary btn-block">fadeInRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceIn" class="btn bg-primary btn-block">bounceIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceInUp" class="btn bg-primary btn-block">bounceInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceInDown" class="btn bg-primary btn-block">bounceInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceInLeft" class="btn bg-primary btn-block">bounceInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceInRight" class="btn bg-primary btn-block">bounceInRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomIn" class="btn bg-primary btn-block">zoomIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomInUp" class="btn bg-primary btn-block">zoomInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomInDown" class="btn bg-primary btn-block">zoomInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomInLeft" class="btn bg-primary btn-block">zoomInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomInRight" class="btn bg-primary btn-block">zoomInRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateIn" class="btn bg-primary btn-block">rotateIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateInUpLeft" class="btn bg-primary btn-block">rotateInUpLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateInDownLeft" class="btn bg-primary btn-block">rotateInDownLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateInUpRight" class="btn bg-primary btn-block">rotateInUpRight</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateInDownRight" class="btn bg-primary btn-block">rotateInDownRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideInUp" class="btn bg-primary btn-block">slideInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideInDown" class="btn bg-primary btn-block">slideInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideInLeft" class="btn bg-primary btn-block">slideInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideInRight" class="btn bg-primary btn-block">slideInRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="scaleIn" class="btn bg-primary btn-block">scaleIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="flipInX" class="btn bg-primary btn-block">flipInX</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="flipInY" class="btn bg-primary btn-block">flipInY</button>
+				</div>
+			</div>
+			<h2 class="page-header">退出</h2>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeOut" class="btn bg-primary btn-block">fadeOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeOutUp" class="btn bg-primary btn-block">fadeOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeOutRight" class="btn bg-primary btn-block">fadeOutRight</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeOutDown" class="btn bg-primary btn-block">fadeOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="fadeOutLeft" class="btn bg-primary btn-block">fadeOutLeft</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceOut" class="btn bg-primary btn-block">bounceOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceOutUp" class="btn bg-primary btn-block">bounceOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceOutDown" class="btn bg-primary btn-block">bounceOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceOutLeft" class="btn bg-primary btn-block">bounceOutLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="bounceOutRight" class="btn bg-primary btn-block">bounceOutRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateOut" class="btn bg-primary btn-block">rotateOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateOutUpLeft" class="btn bg-primary btn-block">rotateOutUpLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateOutDownLeft" class="btn bg-primary btn-block">rotateOutDownLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateOutUpRight" class="btn bg-primary btn-block">rotateOutUpRight</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="rotateOutDownRight" class="btn bg-primary btn-block">rotateOutDownRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomOut" class="btn bg-primary btn-block">zoomOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomOutUp" class="btn bg-primary btn-block">zoomOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomOutDown" class="btn bg-primary btn-block">zoomOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomOutLeft" class="btn bg-primary btn-block">zoomOutLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="zoomOutRight" class="btn bg-primary btn-block">zoomOutRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideOutUp" class="btn bg-primary btn-block">slideOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideOutDown" class="btn bg-primary btn-block">slideOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideOutLeft" class="btn bg-primary btn-block">slideOutLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="slideOutRight" class="btn bg-primary btn-block">slideOutRight</button>
+				</div>
+			</div>
+			<div class="row row-gutter">
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="scaleOut" class="btn bg-primary btn-block">scaleOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="flipOutX" class="btn bg-primary btn-block">flipOutX</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gutter">
+					<button type="button" id="flipOutY" class="btn bg-primary btn-block">flipOutY</button>
+				</div>
+			</div>
+			<h2 class="page-header">强调</h2>
+			<div class="row row-gutter">
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="bounce" class="btn bg-primary btn-block">bounce</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="flash" class="btn bg-primary btn-block">flash</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="shake" class="btn bg-primary btn-block">shake</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="swing" class="btn bg-primary btn-block">swing</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="wobble" class="btn bg-primary btn-block">wobble</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="tada" class="btn bg-primary btn-block">tada</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="pulse" class="btn bg-primary btn-block">pulse</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="flip" class="btn bg-primary btn-block">flip</button>
+				</div>
+				<div class="col-md-2 col-gutter">
+					<button type="button" id="spin" class="btn bg-primary btn-block">spin</button>
+				</div>
+			</div>
+		</div>
+		<!-- InstanceEndEditable -->
+		<footer class="footer text-center">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

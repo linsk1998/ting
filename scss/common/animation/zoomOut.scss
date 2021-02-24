@@ -1,0 +1,76 @@
+
+/* 缩放退出 */
+@-moz-keyframes zoomOut{
+	to{ opacity:0; -moz-transform:scale(0.3,0.3);}
+}
+@-webkit-keyframes zoomOut{
+	to{ opacity:0; -webkit-transform:scale(0.3,0.3);}
+}
+@keyframes zoomOut{
+	to{ opacity:0; transform:scale(0.3,0.3);}
+}
+.zoomOut{
+	-moz-animation-name:zoomOut;
+	-webkit-animation-name:zoomOut;
+	animation-name:zoomOut;
+}
+/* 缩放进入-从上 */
+@-moz-keyframes zoomOutUp{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@-webkit-keyframes zoomOutUp{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@keyframes zoomOutUp{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(0,-100%);}
+}
+.zoomOutUp{
+	-moz-animation-name:zoomOutUp;
+	-webkit-animation-name:zoomOutUp;
+	animation-name:zoomOutUp;
+}
+/* 缩放进入-从下 */
+@-moz-keyframes zoomOutDown{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@-webkit-keyframes zoomOutDown{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@keyframes zoomOutDown{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(0,100%);}
+}
+.zoomOutDown{
+	-moz-animation-name:zoomOutDown;
+	-webkit-animation-name:zoomOutDown;
+	animation-name:zoomOutDown;
+}
+/* 缩放进入-从左 */
+@-moz-keyframes zoomOutLeft{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@-webkit-keyframes zoomOutLeft{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@keyframes zoomOutLeft{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(-100%,0);}
+}
+.zoomOutLeft{
+	-moz-animation-name:zoomOutLeft;
+	-webkit-animation-name:zoomOutLeft;
+	animation-name:zoomOutLeft;
+}
+/* 缩放进入-从右 */
+@-moz-keyframes zoomOutRight{
+	to{ opacity:0; -moz-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@-webkit-keyframes zoomOutRight{
+	to{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@keyframes zoomOutRight{
+	to{ opacity:0; transform:scale(0.5,0.5) translate(100%,0);}
+}
+.zoomOutRight{
+	-moz-animation-name:zoomOutRight;
+	-webkit-animation-name:zoomOutRight;
+	animation-name:zoomOutRight;
+}
