@@ -1,0 +1,80 @@
+@each $height in $screen-height-list{
+	@media (max-width:$height) {
+		/* 从下滑入 */
+		@-moz-keyframes flyOutUp {
+			0%{ -moz-transform:translateY(0);}
+			100%{ -moz-transform:translateY(- $height);-moz-transform:translateY(-100vh);}
+		}
+		@-webkit-keyframes flyOutUp {
+			0%{ -webkit-transform:translateY(0);}
+			100%{ -webkit-transform:translateY(- $height);-webkit-transform:translateY(-100vh);}
+		}
+		@keyframes flyOutUp {
+			0%{ transform:translateY(0);}
+			100%{ transform:translateY(- $height);transform:translateY(-100vh);}
+		}
+		.flyOutUp {
+			-moz-animation-name:flyOutUp;
+			-webkit-animation-name:flyOutUp;
+			animation-name:flyOutUp;
+		}
+		/* 从上滑入 */
+		@-moz-keyframes flyOutDown {
+			0%{ -moz-transform:translateY(0);}
+			100%{ -moz-transform:translateY($height);-moz-transform:translateY(100vh);}
+		}
+		@-webkit-keyframes flyOutDown {
+			0%{ -webkit-transform:translateY(0);}
+			100%{ -webkit-transform:translateY($height);-webkit-transform:translateY(100vh);}
+		}
+		@keyframes flyOutDown {
+			0%{ transform:translateY(0);}
+			100%{ transform:translateY($height);transform:translateY(100vh);}
+		}
+		.flyOutDown {
+			-moz-animation-name:flyOutDown;
+			-webkit-animation-name:flyOutDown;
+			animation-name:flyOutDown;
+		}
+	}
+}
+@each $width in $screen-width-list{
+	@media (max-width:$width) {
+		/* 从右滑入 */
+		@-moz-keyframes flyOutLeft {
+			0%{ -moz-transform:translateX(0);}
+			100%{ -moz-transform:translateX(- $width);-moz-transform:translateX(-100vw);}
+		}
+		@-webkit-keyframes flyOutLeft {
+			0%{ -webkit-transform:translateX(0);}
+			100%{ -webkit-transform:translateX(- $width);-webkit-transform:translateX(-100vw);}
+		}
+		@keyframes flyOutLeft {
+			0%{ transform:translateX(0);}
+			100%{ transform:translateX(- $width);transform:translateX(-100vw);}
+		}
+		.flyOutLeft {
+			-moz-animation-name:flyOutLeft;
+			-webkit-animation-name:flyOutLeft;
+			animation-name:flyOutLeft;
+		}
+		/* 从左滑入 */
+		@-moz-keyframes flyOutRight {
+			0%{ -moz-transform:translateX(0);}
+			100%{ -moz-transform:translateX($width);-moz-transform:translateX(100vw);}
+		}
+		@-webkit-keyframes flyOutRight {
+			100%{ -webkit-transform:translateX(0);}
+			0%{ -webkit-transform:translateX($width);-webkit-transform:translateX(100vw);}
+		}
+		@keyframes flyOutRight {
+			0%{ transform:translateX(0);}
+			100%{ transform:translateX($width);transform:translateX(100vw);}
+		}
+		.flyOutRight {
+			-moz-animation-name:flyOutRight;
+			-webkit-animation-name:flyOutRight;
+			animation-name:flyOutRight;
+		}
+	}
+}

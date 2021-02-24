@@ -1,0 +1,75 @@
+/* 缩放进入 */
+@-moz-keyframes zoomIn{
+	from{ opacity:0; -moz-transform:scale(0.3,0.3);}
+}
+@-webkit-keyframes zoomIn{
+	from{ opacity:0; -webkit-transform:scale(0.3,0.3);}
+}
+@keyframes zoomIn{
+	from{ opacity:0; transform:scale(0.3,0.3);}
+}
+.zoomIn{
+	-moz-animation-name:zoomIn;
+	-webkit-animation-name:zoomIn;
+	animation-name:zoomIn;
+}
+/* 缩放进入-从上 */
+@-moz-keyframes zoomInUp{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@-webkit-keyframes zoomInUp{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,-100%);}
+}
+@keyframes zoomInUp{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(0,-100%);}
+}
+.zoomInUp{
+	-moz-animation-name:zoomInUp;
+	-webkit-animation-name:zoomInUp;
+	animation-name:zoomInUp;
+}
+/* 缩放进入-从下 */
+@-moz-keyframes zoomInDown{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@-webkit-keyframes zoomInDown{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(0,100%);}
+}
+@keyframes zoomInDown{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(0,100%);}
+}
+.zoomInDown{
+	-moz-animation-name:zoomInDown;
+	-webkit-animation-name:zoomInDown;
+	animation-name:zoomInDown;
+}
+/* 缩放进入-从左 */
+@-moz-keyframes zoomInLeft{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@-webkit-keyframes zoomInLeft{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(-100%,0);}
+}
+@keyframes zoomInLeft{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(-100%,0);}
+}
+.zoomInLeft{
+	-moz-animation-name:zoomInLeft;
+	-webkit-animation-name:zoomInLeft;
+	animation-name:zoomInLeft;
+}
+/* 缩放进入-从右 */
+@-moz-keyframes zoomInRight{
+	from{ opacity:0; -moz-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@-webkit-keyframes zoomInRight{
+	from{ opacity:0; -webkit-transform:scale(0.5,0.5) translate(100%,0);}
+}
+@keyframes zoomInRight{
+	from{ opacity:0; transform:scale(0.5,0.5) translate(100%,0);}
+}
+.zoomInRight{
+	-moz-animation-name:zoomInRight;
+	-webkit-animation-name:zoomInRight;
+	animation-name:zoomInRight;
+}

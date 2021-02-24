@@ -1,0 +1,91 @@
+
+/* 转出 */
+@-moz-keyframes rotateOut{
+	0%{-moz-transform-origin:center center; -moz-transform:rotate(0); opacity:1;}
+	100%{-moz-transform-origin:center center; -moz-transform:rotate(200deg); opacity:0;}
+}
+@-webkit-keyframes rotateOut{
+	0%{-webkit-transform-origin:center center; -webkit-transform:rotate(0); opacity:1;}
+	100%{-webkit-transform-origin:center center; -webkit-transform:rotate(200deg); opacity:0;}
+}
+@keyframes rotateOut{
+	0%{transform-origin:center center; transform:rotate(0); opacity:1;}
+	100%{transform-origin:center center; transform:rotate(200deg); opacity:0;}
+}
+.rotateOut{
+	-moz-animation-name:rotateOut;
+	-webkit-animation-name:rotateOut;
+	animation-name:rotateOut;
+}
+/* 转出-向左上 */
+@-moz-keyframes rotateOutUpLeft{
+	0%{-moz-transform-origin:left bottom; -moz-transform:rotate(0); opacity:1;}
+	100%{-moz-transform-origin:left bottom; -moz-transform:rotate(-90deg); opacity:0;}
+}
+@-webkit-keyframes rotateOutUpLeft{
+	0%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(0); opacity:1;}
+	100%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(-90deg); opacity:0;}
+}
+@keyframes rotateOutUpLeft{
+	0%{transform-origin:left bottom; transform:rotate(0); opacity:1;}
+	100%{transform-origin:left bottom; transform:rotate(-90deg); opacity:0;}
+}
+.rotateOutUpLeft{
+	-moz-animation-name:rotateOutUpLeft;
+	-webkit-animation-name:rotateOutUpLeft;
+	animation-name:rotateOutUpLeft;
+}
+/* 转出-向左下 */
+@-moz-keyframes rotateOutDownLeft{
+	0%{-moz-transform-origin:left bottom; -moz-transform:rotate(0); opacity:1;}
+	100%{-moz-transform-origin:left bottom; -moz-transform:rotate(90deg); opacity:0;}
+}
+@-webkit-keyframes rotateOutDownLeft{
+	0%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(0); opacity:1;}
+	100%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(90deg); opacity:0;}
+}
+@keyframes rotateOutDownLeft{
+	0%{transform-origin:left bottom; transform:rotate(0); opacity:1;}
+	100%{transform-origin:left bottom; transform:rotate(90deg); opacity:0;}
+}
+.rotateOutDownLeft{
+	-moz-animation-name:rotateOutDownLeft;
+	-webkit-animation-name:rotateOutDownLeft;
+	animation-name:rotateOutDownLeft;
+}
+/* 转出-向右上 */
+@-moz-keyframes rotateOutUpRight{
+	0%{-moz-transform-origin:right bottom; -moz-transform:rotate(0); opacity:1;}
+	100%{-moz-transform-origin:right bottom; -moz-transform:rotate(90deg); opacity:0;}
+}
+@-webkit-keyframes rotateOutUpRight{
+	0%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(0); opacity:1;}
+	100%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(90deg); opacity:0;}
+}
+@keyframes rotateOutUpRight{
+	0%{transform-origin:right bottom; transform:rotate(0); opacity:1;}
+	100%{transform-origin:right bottom; transform:rotate(90deg); opacity:0;}
+}
+.rotateOutUpRight{
+	-moz-animation-name:rotateOutUpRight;
+	-webkit-animation-name:rotateOutUpRight;
+	animation-name:rotateOutUpRight;
+}
+/* 转出-向右下 */
+@-moz-keyframes rotateOutDownRight{
+	0%{-moz-transform-origin:right bottom; -moz-transform:rotate(0); opacity:1;}
+	100%{-moz-transform-origin:right bottom; -moz-transform:rotate(-90deg); opacity:0;}
+}
+@-webkit-keyframes rotateOutDownRight{
+	0%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(0); opacity:1;}
+	100%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(-90deg); opacity:0;}
+}
+@keyframes rotateOutDownRight{
+	0%{transform-origin:right bottom; transform:rotate(0); opacity:1;}
+	100%{transform-origin:right bottom; transform:rotate(-90deg); opacity:0;}
+}
+.rotateOutDownRight{
+	-moz-animation-name:rotateOutDownRight;
+	-webkit-animation-name:rotateOutDownRight;
+	animation-name:rotateOutDownRight;
+}

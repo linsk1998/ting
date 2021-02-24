@@ -1,0 +1,32 @@
+
+/* 弹入 */
+@keyframes bounceOut{
+	0%{transform:scale(1);}
+	25%{transform:scale(0.95);}
+	50%{opacity:1;transform:scale(1.1);}
+	100%{opacity:0;transform:scale(0.3);}
+}
+/* 弹入-从上 */
+@keyframes bounceOutUp{
+	0%{transform:translateY(0);}
+	40%{transform:translateY(20px);}
+	100%{opacity:0;transform:translateY(-200px);}
+}
+/* 弹入-从右 */
+@keyframes bounceOutRight{
+	0%{transform:translateX(0);}
+	40%{opacity:1;transform:translateX(-20px);}
+	100%{opacity:0;transform:translateX(200px);}
+}
+/* 弹入-从下 */
+@keyframes bounceOutDown{
+	0%{transform:translateY(0);}
+	40%{opacity:1;transform:translateY(-20px);}
+	100%{opacity:0;transform:translateY(200px);}
+}
+/* 弹入-从左 */
+@keyframes bounceOutLeft{
+	0%{transform:translateX(0);}
+	40%{opacity:1;transform:translateX(20px);}
+	100%{opacity:0;transform:translateX(-200px);}
+}

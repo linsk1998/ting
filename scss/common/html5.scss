@@ -8,8 +8,8 @@ svg:not(:root){ overflow:hidden;}
 figure{ margin:1em 40px;}
 
 html{ -webkit-min-font-size:0 !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; height:100%;}
-body,table,button,input,textarea,pre{ font-size:$font-size-base; line-height:$line-height-base/$font-size-base; font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",sans-serif;}
-h1,h2,h3{ *font-family: "Microsoft YaHei UI","Microsoft YaHei","Microsoft JhengHei","WenQuanYi Micro Hei",SimHei,sans-serif;}
+body,table,button,input,textarea,pre{ font-size:$font-size-base; line-height:$line-height-base/$font-size-base; font-family:Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+h1,h2,h3{ *font-family: "Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",SimHei,sans-serif;}
 body,dd,dl{margin:0; padding:0;}
 body.app{ height:100%;}
 html,body,img{border:0;}
@@ -25,6 +25,7 @@ img{ -ms-interpolation-mode:bicubic; vertical-align:middle;}
 code,kbd,samp,.code{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
 -moz-tab-size:4; -o-tab-size:4; tab-size:4; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none;}
 pre{ white-space:-moz-pre-wrap;white-space:-o-pre-wrap;white-space:pre-wrap; word-wrap:break-word;overflow:auto;}
+nobr{ white-space:nowrap;}
 code{ direction:ltr; text-align:left; white-space:pre;}
 kbd{ padding:2px 4px; font-size:90%; color:$theme-inverse-text-hover; background-color:$theme-inverse; @include rounded(3px); margin-left:4px; margin-right:4px;}
 [hidden]{ display:none;}

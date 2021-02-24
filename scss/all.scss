@@ -3,11 +3,13 @@
 @import './variables.scss';
 @import './mixin.scss';
 @import './common/html5.scss';
-@import './common/animation/spin.scss';
 @import './common/animation.scss';
 @import './utilities/type.scss';
 @import './utilities/text.scss';
 @import './utilities/link.scss';
+@import './utilities/layout.scss';
+@import './utilities/icon.scss';
+@import './utilities/disabled.scss';
 @import "./common/document.scss";
 @import './common/grid.scss';
 @import './common/button.scss';
@@ -17,9 +19,6 @@
 @import "./common/display.scss";
 @import "./common/hidden.scss";
 @import "./common/sr-only.scss";
-@import './utilities/layout.scss';
-@import './utilities/icon.scss';
-@import './utilities/disabled.scss';
 @import './components/jumbotron.scss';
 @import './components/toolbar.scss';
 @import './components/input-group.scss';
@@ -52,7 +51,6 @@
 @import "./utilities/box/clearfix.scss";
 @import "./utilities/box/pull-right.scss";
 @import "./utilities/box/pull-left.scss";
-@import "./utilities/box/pull-front.scss";
 @import "./utilities/box/scrollable-horizontal.scss";
 @import "./utilities/box/scrollable-vertical.scss";
 @import "./utilities/align/center-block.scss";

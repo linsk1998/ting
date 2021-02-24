@@ -1,0 +1,31 @@
+
+/* 缩放进入 */
+@-moz-keyframes scaleIn{
+	from{ -moz-transform:scale(0,0);}
+}
+@-webkit-keyframes scaleIn{
+	from{ -webkit-transform:scale(0,0);}
+}
+@keyframes scaleIn{
+	from{ transform:scale(0,0);}
+}
+.scaleIn {
+	-moz-animation-name:scaleIn;
+	-webkit-animation-name:scaleIn;
+	animation-name:scaleIn;
+}
+/* 缩放退出 */
+@-moz-keyframes scaleOut{
+	to{ -moz-transform:scale(0,0);}
+}
+@-webkit-keyframes scaleOut{
+	to{ -webkit-transform:scale(0,0);}
+}
+@keyframes scaleOut{
+	to{ transform:scale(0,0);}
+}
+.scaleOut {
+	-moz-animation-name:scaleOut;
+	-webkit-animation-name:scaleOut;
+	animation-name:scaleOut;
+}

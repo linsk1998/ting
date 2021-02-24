@@ -1,0 +1,91 @@
+
+/* 转入 */
+@-moz-keyframes rotateIn{
+	0%{opacity:0; -moz-transform:rotate(-200deg);}
+	100%{opacity:1; -moz-transform:rotate(0);}
+}
+@-webkit-keyframes rotateIn{
+	0%{opacity:0; -webkit-transform:rotate(-200deg);}
+	100%{opacity:1; -webkit-transform:rotate(0);}
+}
+@keyframes rotateIn{
+	0%{opacity:0; transform:rotate(-200deg);}
+	100%{opacity:1; transform:rotate(0);}
+}
+.rotateIn{
+	-moz-animation-name:rotateIn;
+	-webkit-animation-name:rotateIn;
+	animation-name:rotateIn;
+}
+/* 转入-从左上 */
+@-moz-keyframes rotateInUpLeft{
+	0%{-moz-transform-origin:left bottom; -moz-transform:rotate(-90deg); opacity:0;}
+	100%{-moz-transform-origin:left bottom; -moz-transform:rotate(0); opacity:1;}
+}
+@-webkit-keyframes rotateInUpLeft{
+	0%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(-90deg); opacity:0;}
+	100%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(0); opacity:1;}
+}
+@keyframes rotateInUpLeft{
+	0%{transform-origin:left bottom; transform:rotate(-90deg); opacity:0;}
+	100%{transform-origin:left bottom; transform:rotate(0); opacity:1;}
+}
+.rotateInUpLeft{
+	-moz-animation-name:rotateInUpLeft;
+	-webkit-animation-name:rotateInUpLeft;
+	animation-name:rotateInUpLeft;
+}
+/* 转入-从左下 */
+@-moz-keyframes rotateInDownLeft{
+	0%{-moz-transform-origin:left bottom; -moz-transform:rotate(90deg); opacity:0;}
+	100%{-moz-transform-origin:left bottom; -moz-transform:rotate(0); opacity:1;}
+}
+@-webkit-keyframes rotateInDownLeft{
+	0%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(90deg); opacity:0;}
+	100%{-webkit-transform-origin:left bottom; -webkit-transform:rotate(0); opacity:1;}
+}
+@keyframes rotateInDownLeft{
+	0%{transform-origin:left bottom; transform:rotate(90deg); opacity:0;}
+	100%{transform-origin:left bottom; transform:rotate(0); opacity:1;}
+}
+.rotateInDownLeft{
+	-moz-animation-name:rotateInDownLeft;
+	-webkit-animation-name:rotateInDownLeft;
+	animation-name:rotateInDownLeft;
+}
+/* 转入-从右上 */
+@-moz-keyframes rotateInUpRight{
+	0%{-moz-transform-origin:right bottom; -moz-transform:rotate(90deg); opacity:0;}
+	100%{-moz-transform-origin:right bottom; -moz-transform:rotate(0); opacity:1;}
+}
+@-webkit-keyframes rotateInUpRight{
+	0%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(90deg); opacity:0;}
+	100%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(0); opacity:1;}
+}
+@keyframes rotateInUpRight{
+	0%{transform-origin:right bottom; transform:rotate(90deg); opacity:0;}
+	100%{transform-origin:right bottom; transform:rotate(0); opacity:1;}
+}
+.rotateInUpRight{
+	-moz-animation-name:rotateInUpRight;
+	-webkit-animation-name:rotateInUpRight;
+	animation-name:rotateInUpRight;
+}
+/* 转入-从右下*/
+@-moz-keyframes rotateInDownRight{
+	0%{-moz-transform-origin:right bottom; -moz-transform:rotate(-90deg); opacity:0;}
+	100%{-moz-transform-origin:right bottom; -moz-transform:rotate(0); opacity:1;}
+}
+@-webkit-keyframes rotateInDownRight{
+	0%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(-90deg); opacity:0;}
+	100%{-webkit-transform-origin:right bottom; -webkit-transform:rotate(0); opacity:1;}
+}
+@keyframes rotateInDownRight{
+	0%{transform-origin:right bottom; transform:rotate(-90deg); opacity:0;}
+	100%{transform-origin:right bottom; transform:rotate(0); opacity:1;}
+}
+.rotateInDownRight{
+	-moz-animation-name:rotateInDownRight;
+	-webkit-animation-name:rotateInDownRight;
+	animation-name:rotateInDownRight;
+}

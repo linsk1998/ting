@@ -1,0 +1,139 @@
+
+/* 弹入 */
+@-moz-keyframes bounceIn{
+	0%{ opacity:0; -moz-transform:scale(0.3);}
+	20%{ opacity:1; -moz-transform:scale(1.1);}
+	40%{ opacity:1; -moz-transform:scale(0.9);}
+	60%{ -moz-transform:scale(1.03);}
+	80%{ -moz-transform:scale(0.98);}
+	100%{ -moz-transform:scale(1);}
+}
+@-webkit-keyframes bounceIn{
+	0%{ opacity:0; -webkit-transform:scale(0.3);}
+	20%{ opacity:1; -webkit-transform:scale(1.1);}
+	40%{ opacity:1; -webkit-transform:scale(0.9);}
+	60%{ -webkit-transform:scale(1.03);}
+	80%{ -webkit-transform:scale(0.98);}
+	100%{ -webkit-transform:scale(1);}
+}
+@keyframes bounceIn{
+	0%{ opacity:0; transform:scale(0.3);}
+	20%{ opacity:1; transform:scale(1.1);}
+	40%{ opacity:1; transform:scale(0.9);}
+	60%{ transform:scale(1.03);}
+	80%{ transform:scale(0.98);}
+	100%{ transform:scale(1);}
+}
+.bounceIn{
+	-moz-animation-name:bounceIn;
+	-webkit-animation-name:bounceIn;
+	animation-name:bounceIn;
+}
+/* 弹入-从上 */
+@-moz-keyframes bounceInUp{
+	0%{opacity:0; -moz-transform:translateY(-300px);}
+	40%{opacity:1; -moz-transform:translateY(20px);}
+	60%{ -moz-transform:translateY(-8px);}
+	80%{ -moz-transform:translateY(3px);}
+	100%{ -moz-transform:translateY(0);}
+}
+@-webkit-keyframes bounceInUp{
+	0%{ opacity:0; -webkit-transform:translateY(-300px);}
+	40%{ opacity:1; -webkit-transform:translateY(20px);}
+	60%{ -webkit-transform:translateY(-8px);}
+	80%{ -webkit-transform:translateY(3px);}
+	100%{ -webkit-transform:translateY(0);}
+}
+@keyframes bounceInUp{
+	0%{ opacity:0; transform:translateY(-300px);}
+	40%{ opacity:1; transform:translateY(20px);}
+	60%{ transform:translateY(-8px);}
+	80%{ transform:translateY(3px);}
+	100%{ transform:translateY(0);}
+}
+.bounceInUp{
+	-moz-animation-name:bounceInUp;
+	-webkit-animation-name:bounceInUp;
+	animation-name:bounceInUp;
+}
+/* 弹入-从下 */
+@-moz-keyframes bounceInDown{
+	0%{ opacity:0; -moz-transform:translateY(300px);}
+	40%{ opacity:1; -moz-transform:translateY(-20px);}
+	60%{ -moz-transform:translateY(8px);}
+	80%{ -moz-transform:translateY(-3px);}
+	100%{ -moz-transform:translateY(0);}
+}
+@-webkit-keyframes bounceInDown{
+	0%{ opacity:0; -webkit-transform:translateY(300px);}
+	40%{ opacity:1; -webkit-transform:translateY(-20px);}
+	60%{ -webkit-transform:translateY(8px);}
+	80%{ -webkit-transform:translateY(-3px);}
+	100%{ -webkit-transform:translateY(0);}
+}
+@keyframes bounceInDown{
+	0%{ opacity:0; transform:translateY(300px);}
+	40%{ opacity:1; transform:translateY(-20px);}
+	60%{ transform:translateY(8px);}
+	80%{ transform:translateY(-3px);}
+	100%{ transform:translateY(0);}
+}
+.bounceInDown{
+	-moz-animation-name:bounceInDown;
+	-webkit-animation-name:bounceInDown;
+	animation-name:bounceInDown;
+}
+/* 弹入-从右 */
+@-moz-keyframes bounceInRight{
+	0%{ opacity:0; -moz-transform:translateX(200px);}
+	40%{ opacity:1; -moz-transform:translateX(-20px);}
+	60%{ -moz-transform:translateX(10px);}
+	80%{ -moz-transform:translateX(-5px);}
+	100%{ -moz-transform:translateX(0);}
+}
+@-webkit-keyframes bounceInRight{
+	0%{ opacity:0; -webkit-transform:translateX(200px);}
+	40%{ opacity:1; -webkit-transform:translateX(-20px);}
+	60%{ -webkit-transform:translateX(10px);}
+	80%{ -webkit-transform:translateX(-5px);}
+	100%{ -webkit-transform:translateX(0);}
+}
+@keyframes bounceInRight{
+	0%{ opacity:0; transform:translateX(200px);}
+	40%{ opacity:1; transform:translateX(-20px);}
+	60%{ transform:translateX(10px);}
+	80%{ transform:translateX(-5px);}
+	100%{ transform:translateX(0);}
+}
+.bounceInRight{
+	-moz-animation-name:bounceInRight;
+	-webkit-animation-name:bounceInRight;
+	animation-name:bounceInRight;
+}
+/* 弹入-从左 */
+@-moz-keyframes bounceInLeft{
+	0%{ opacity:0; -moz-transform:translateX(-200px);}
+	40%{ opacity:1; -moz-transform:translateX(20px);}
+	60%{ -moz-transform:translateX(-10px);}
+	80%{ -moz-transform:translateX(5px);}
+	100%{ -moz-transform:translateX(0);}
+}
+@-webkit-keyframes bounceInLeft{
+	0%{ opacity:0; -webkit-transform:translateX(-200px);}
+	40%{ opacity:1; -webkit-transform:translateX(20px);}
+	60%{ -webkit-transform:translateX(-10px);}
+	80%{ -webkit-transform:translateX(5px);}
+	100%{ -webkit-transform:translateX(0);}
+}
+@keyframes bounceInLeft{
+	0%{ opacity:0; transform:translateX(-200px);}
+	40%{ opacity:1; transform:translateX(20px);}
+	60%{ transform:translateX(-10px);}
+	80%{ transform:translateX(5px);}
+	100%{ transform:translateX(0);}
+}
+.bounceInLeft{
+	-moz-animation-name:bounceInLeft;
+	-webkit-animation-name:bounceInLeft;
+	animation-name:bounceInLeft;
+}

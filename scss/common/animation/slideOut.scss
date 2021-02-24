@@ -1,0 +1,72 @@
+/* 从下滑入 */
+@-moz-keyframes slideOutUp {
+	0%{ -moz-transform:translateY(0);}
+	100%{ -moz-transform:translateY(-100%);}
+}
+@-webkit-keyframes slideOutUp {
+	0%{ -webkit-transform:translateY(0);}
+	100%{ -webkit-transform:translateY(-100%);}
+}
+@keyframes slideOutUp {
+	0%{ transform:translateY(0);}
+	100%{ transform:translateY(-100%);}
+}
+.slideOutUp {
+	-moz-animation-name:slideOutUp;
+	-webkit-animation-name:slideOutUp;
+	animation-name:slideOutUp;
+}
+/* 从上滑入 */
+@-moz-keyframes slideOutDown {
+	0%{ -moz-transform:translateY(0);}
+	100%{ -moz-transform:translateY(100%);}
+}
+@-webkit-keyframes slideOutDown {
+	0%{ -webkit-transform:translateY(0);}
+	100%{ -webkit-transform:translateY(100%);}
+}
+@keyframes slideOutDown {
+	0%{ transform:translateY(0);}
+	100%{ transform:translateY(100%);}
+}
+.slideOutDown {
+	-moz-animation-name:slideOutDown;
+	-webkit-animation-name:slideOutDown;
+	animation-name:slideOutDown;
+}
+/* 从右滑入 */
+@-moz-keyframes slideOutLeft {
+	0%{ -moz-transform:translateX(0);}
+	100%{ -moz-transform:translateX(-100%);}
+}
+@-webkit-keyframes slideOutLeft {
+	0%{ -webkit-transform:translateX(0);}
+	100%{ -webkit-transform:translateX(-100%);}
+}
+@keyframes slideOutLeft {
+	0%{ transform:translateX(0);}
+	100%{ transform:translateX(-100%);}
+}
+.slideOutLeft {
+	-moz-animation-name:slideOutLeft;
+	-webkit-animation-name:slideOutLeft;
+	animation-name:slideOutLeft;
+}
+/* 从左滑入 */
+@-moz-keyframes slideOutRight {
+	0%{ -moz-transform:translateX(0);}
+	100%{ -moz-transform:translateX(100%);}
+}
+@-webkit-keyframes slideOutRight {
+	0%{ -webkit-transform:translateX(0);}
+	100%{ -webkit-transform:translateX(100%);}
+}
+@keyframes slideOutRight {
+	0%{ transform:translateX(0);}
+	100%{ transform:translateX(100%);}
+}
+.slideOutRight {
+	-moz-animation-name:slideOutRight;
+	-webkit-animation-name:slideOutRight;
+	animation-name:slideOutRight;
+}
