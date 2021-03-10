@@ -6570,15 +6570,70 @@ a.btn:hover, label.btn:hover {
   border-color: #191919;
 }
 
-.btn-outline {
+.btn-outline, .btn-outline-primary {
   color: #337ab7;
   background: none;
   border-color: #337ab7;
 }
-.btn-outline:hover {
+.btn-outline:hover, .btn-outline-primary:hover {
   color: #fff;
   background-color: #337ab7;
   border-color: #337ab7;
+}
+
+.btn-outline-success {
+  color: #2B9735;
+  background: none;
+  border-color: #2B9735;
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #2B9735;
+  border-color: #2B9735;
+}
+
+.btn-outline-info {
+  color: #1890ff;
+  background: none;
+  border-color: #1890ff;
+}
+.btn-outline-info:hover {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.btn-outline-warning {
+  color: #F37B1D;
+  background: none;
+  border-color: #F37B1D;
+}
+.btn-outline-warning:hover {
+  color: #fff;
+  background-color: #F37B1D;
+  border-color: #F37B1D;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  background: none;
+  border-color: #dc3545;
+}
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-dark {
+  color: #444;
+  background: none;
+  border-color: #444;
+}
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #444;
+  border-color: #444;
 }
 
 input.btn:focus,
@@ -6586,9 +6641,34 @@ button.btn:focus {
   border-color: #000;
 }
 
-input.btn-outline:focus,
-button.btn-outline:focus {
+input.btn-outline:focus, input.btn-outline-primary:focus,
+button.btn-outline:focus, button.btn-outline-primary:focus {
   border-color: #337ab7;
+}
+
+input.btn-outline-success:focus,
+button.btn-outline-success:focus {
+  border-color: #2B9735;
+}
+
+input.btn-outline-info:focus,
+button.btn-outline-info:focus {
+  border-color: #1890ff;
+}
+
+input.btn-outline-warning:focus,
+button.btn-outline-warning:focus {
+  border-color: #F37B1D;
+}
+
+input.btn-outline-danger:focus,
+button.btn-outline-danger:focus {
+  border-color: #dc3545;
+}
+
+input.btn-outline-dark:focus,
+button.btn-outline-dark:focus {
+  border-color: #444;
 }
 
 input.btn-block, button.btn-block, a.btn-block, label.btn-block {

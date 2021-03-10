@@ -29,11 +29,26 @@ a.btn,label.btn{
 .btn-warning{ @include btn-warning;}
 .btn-danger{ @include btn-danger;}
 .btn-dark{ @include btn-dark;}
-.btn-outline{ @include btn-outline;}
+.btn-outline,.btn-outline-primary{ @include btn-outline;}
+.btn-outline-success{ @include btn-outline($success);}
+.btn-outline-info{ @include btn-outline($info);}
+.btn-outline-warning{ @include btn-outline($warning);}
+.btn-outline-danger{ @include btn-outline($danger);}
+.btn-outline-dark{ @include btn-outline($dark);}
 input.btn:focus,
 button.btn:focus{ border-color:#000;}
-input.btn-outline:focus,
-button.btn-outline:focus{ border-color:$theme-primary;}
+input.btn-outline:focus,input.btn-outline-primary:focus,
+button.btn-outline:focus,button.btn-outline-primary:focus{ border-color:$theme-primary;}
+input.btn-outline-success:focus,
+button.btn-outline-success:focus{ border-color:$success;}
+input.btn-outline-info:focus,
+button.btn-outline-info:focus{ border-color:$info;}
+input.btn-outline-warning:focus,
+button.btn-outline-warning:focus{ border-color:$warning;}
+input.btn-outline-danger:focus,
+button.btn-outline-danger:focus{ border-color:$danger;}
+input.btn-outline-dark:focus,
+button.btn-outline-dark:focus{ border-color:$dark;}
 
 
 input.btn-block,button.btn-block,a.btn-block,label.btn-block{ @include btn-block; margin:$margin-base 0}

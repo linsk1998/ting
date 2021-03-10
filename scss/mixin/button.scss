@@ -71,14 +71,14 @@
 		border-color:darken($theme-primary,17%);
 	}
 }
-@mixin btn-outline{
-	color:$theme-primary;
+@mixin btn-outline($color:$theme-primary){
+	color:$color;
 	background:none;
-	border-color:$theme-primary;
+	border-color:$color;
 	&:hover{
 		color:#fff;
-		background-color:$theme-primary;
-		border-color:$theme-primary;
+		background-color:$color;
+		border-color:$color;
 	}
 }
 @mixin btn-success{
