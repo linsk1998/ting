@@ -27,15 +27,17 @@
 	&:hover{ text-decoration:none;}
 }
 @mixin btn-size($height,$padding,$border:$ctrl-border-width){
-	padding:($height - 2*$border - $ctrl-line-height)/2 $padding;
-	height:$height;
-	// a&,label& {
-	// 	padding:($height - 2*$border - $ctrl-line-height)/2 $padding;
-	// }
-	// input&,button&{
-	// 	height: $height;
-	// 	padding: 0 $padding;
-	// }
+	// padding:($height - 2*$border - $ctrl-line-height)/2 $padding;
+	// height:$height;
+	@at-root{
+		a#{&},label#{&} {
+			padding:($height - 2*$border - $ctrl-line-height)/2 $padding;
+		}
+		input#{&} ,button#{&} {
+			height: $height;
+			padding: 0 $padding;
+		}
+	}
 }
 @mixin btn-md{
 	@include btn-size($ctrl-height-base,$btn-padding-base);
@@ -60,6 +62,13 @@
 		color:#333;
 		border-color:#aaa;
 	}
+	@at-root{
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color:#333;
+			background-color:#fff;
+			border-color:#ccc;
+		}
+	}
 }
 @mixin btn-primary{
 	color:#fff;
@@ -70,6 +79,14 @@
 		background-color:darken($theme-primary,10%);
 		border-color:darken($theme-primary,17%);
 	}
+	@at-root{
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color:#fff;
+			background-color:$theme-primary;
+			border-color:darken($theme-primary, 5%);
+		}
+	}
+	
 }
 @mixin btn-outline($color:$theme-primary){
 	color:$color;
@@ -79,6 +96,16 @@
 		color:#fff;
 		background-color:$color;
 		border-color:$color;
+	}
+	@at-root{
+		html body &:focus{
+			border-color:darken($color,15%);
+		}
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color:$color;
+			background:none;
+			border-color:$color;
+		}
 	}
 }
 @mixin btn-success{
@@ -90,6 +117,13 @@
 		background-color:darken($success,10%);
 		border-color:darken($success,17%);
 	}
+	@at-root{
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color:#fff;
+			background-color:$success;
+			border-color:darken($success,5%);
+		}
+	}
 }
 @mixin btn-info{
 	color: #fff;
@@ -99,6 +133,13 @@
 		color: #fff;
 		background-color: darken($info, 10%);
 		border-color: darken($info, 17%);
+	}
+	@at-root{
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color: #fff;
+			background-color: $info;
+			border-color: darken($info, 5%);
+		}
 	}
 }
 @mixin btn-warning{
@@ -110,6 +151,13 @@
 		background-color: darken($warning, 10%);
 		border-color: darken($warning, 17%);
 	}
+	@at-root{
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color: #fff;
+			background-color: $warning;
+			border-color: darken($warning, 5%);
+		}
+	}
 }
 @mixin btn-danger{
 	color: #fff;
@@ -120,6 +168,13 @@
 		background-color: darken($danger, 10%);
 		border-color: darken($danger, 17%);
 	}
+	@at-root{
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color: #fff;
+			background-color: $danger;
+			border-color: darken($danger, 5%);
+		}
+	}
 }
 @mixin btn-dark{
 	color: #fff;
@@ -129,6 +184,13 @@
 		color: #fff;
 		background-color: darken($dark, 10%);
 		border-color: darken($dark, 17%);
+	}
+	@at-root{
+		&,html>body &.btn-loading:hover,html>body &.btn-loading:focus{
+			color: #fff;
+			background-color:$dark;
+			border-color: darken($dark, 5%);
+		}
 	}
 }
 @mixin btn-block{

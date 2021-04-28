@@ -1,6 +1,6 @@
 .disabled{
 	opacity:0.65;
-	cursor: not-allowed;
+	cursor: not-allowed !important;
 	@include box-shadow(none);
 }
 @media \0screen\,screen\9 {

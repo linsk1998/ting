@@ -62,7 +62,7 @@ $danger-bg:#f2dede;
 $danger-border:darken(adjust-hue($danger-bg, -10), 7%);
 
 
-$spacer:$font-size-base;
+$spacer:16px;
 $spacers:(
 	0: 0,
 	1: ($spacer * .25),

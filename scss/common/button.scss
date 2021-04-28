@@ -7,11 +7,11 @@
 input.btn,button.btn{
 	@include btn-button;
 }
-a.btn,label.btn{
+a.btn,label.btn,div.btn,span.btn{
 	@include btn-anchor;
 }
 @media (-webkit-min-device-pixel-ratio:0){
-	input.btn,button.btn,a.btn{
+	input.btn,button.btn,a.btn,label.btn,div.btn,span.btn{
 		display:-webkit-inline-box; display:inline-flex;
 		-webkit-box-align:center; align-items:center;
 		-webkit-box-pack:center; justify-content:center;
@@ -37,18 +37,6 @@ a.btn,label.btn{
 .btn-outline-dark{ @include btn-outline($dark);}
 input.btn:focus,
 button.btn:focus{ border-color:#000;}
-input.btn-outline:focus,input.btn-outline-primary:focus,
-button.btn-outline:focus,button.btn-outline-primary:focus{ border-color:$theme-primary;}
-input.btn-outline-success:focus,
-button.btn-outline-success:focus{ border-color:$success;}
-input.btn-outline-info:focus,
-button.btn-outline-info:focus{ border-color:$info;}
-input.btn-outline-warning:focus,
-button.btn-outline-warning:focus{ border-color:$warning;}
-input.btn-outline-danger:focus,
-button.btn-outline-danger:focus{ border-color:$danger;}
-input.btn-outline-dark:focus,
-button.btn-outline-dark:focus{ border-color:$dark;}
 
 
 input.btn-block,button.btn-block,a.btn-block,label.btn-block{ @include btn-block; margin:$margin-base 0}
@@ -58,17 +46,141 @@ input.btn-block,button.btn-block,a.btn-block,label.btn-block{ @include btn-block
 .btn-addon-left{ margin-right:4px;}
 .btn-addon-right{ margin-left:4px;}
 i.btn-addon,i.btn-addon-left,i.btn-addon-right{
-	width:1em; line-height:1em; text-align:center;
+	width:1em; height:1em; line-height:1em; text-align:center;
+}
+@media (min-width:0){
+	.btn-loading-icon{
+		border: .125em solid #fff;
+		-o-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		-moz-animation:spin 1s linear infinite;
+		-webkit-animation:spin 1s linear infinite;
+		animation:spin 1s linear infinite;
+	}
+	.btn-default{
+		.btn-loading-icon{
+			border-color: $theme-primary-text;
+		}
+	}
+	.btn-outline,.btn-outline-primary{
+		.btn-loading-icon{
+			border-color: $theme-primary;
+		}
+	}
+	.btn-outline-success{
+		.btn-loading-icon{
+			border-color: $success;
+		}
+	}
+	.btn-outline-info{
+		.btn-loading-icon{
+			border-color: $info;
+		}
+	}
+	.btn-outline-warning{
+		.btn-loading-icon{
+			border-color: $warning;
+		}
+	}
+	.btn-outline-danger{
+		.btn-loading-icon{
+			border-color: $danger;
+		}
+	}
+	.btn{
+		.btn-loading-icon{
+			border-right-color: transparent;
+		}
+	}
 }
 
-html .btn-disabled,
-html .btn-disabled:hover,
-html .btn-disabled:focus{
+.btn-loading{
+	cursor:not-allowed !important;
+	pointer-events: none;
+}
+@media (min-width:0){
+	.btn-loading{
+		opacity:0.65;
+	}
+}
+.btn-loading-icon{
+	font-family: Wingdings; font-style: normal;
+}
+@media \0screen\,screen\9 {
+	.btn-loading-icon{
+		*zoom:expression(this.runtimeStyle.zoom='1',this.innerHTML='6');
+	}
+	.btn-loading-icon:before{ content:"6";}
+
+	html body .btn.btn-loading,
+	html body .btn.btn-loading:hover,
+	html body .btn.btn-loading:focus{
+		background-color: #eee;
+		border-color: darken(#eee, 5%);
+		color: #a0a0a0;
+	}
+	html body .btn-loading{
+		.btn-addon,.btn-addon-left,.btn-addon-right{
+			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60); 
+		}
+		.caret{
+			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40); 
+		}
+		.btn-loading-icon{
+			filter:none;
+		}
+	}
+}
+@media (min-width:0\0) and (min-resolution:.001dpcm) {
+	/*ie9*/
+	.btn-loading-icon{ border:0 none;}
+	.btn-loading-icon:before{ content:"6";}
+
+	html body .btn.btn-loading,
+	html body .btn.btn-loading:hover,
+	html body .btn.btn-loading:focus{
+		background-color: #eee;
+		border-color: darken(#eee, 5%);
+		color: #a0a0a0;
+		opacity: 1;
+	}
+	html body .btn-loading{
+		.btn-addon,.btn-addon-left,.btn-addon-right{
+			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+			opacity: .6;
+		}
+		.caret{
+			opacity: .4;
+		}
+		.btn-loading-icon{
+			filter:none;
+			opacity:1;
+		}
+	}
+}
+
+html body .btn-disabled,
+html body .btn-disabled:hover,
+html body .btn-disabled:focus{
 	background-color: #ddd;
 	border-color: darken(#dddddd, 5%);
 	color: #a0a0a0;
 	cursor:not-allowed;
 	text-shadow:1px 1px #fff;
+}
+html body .btn-disabled{
+	.btn-addon,.btn-addon-left,.btn-addon-right{
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60); 
+		opacity: .6;
+	}
+	.caret{
+		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40); 
+		opacity: .4;
+	}
 }
 
 .btn-group {
