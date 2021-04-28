@@ -19,8 +19,9 @@
 
 .nav-list{ margin:3px 0; padding-left:0;}
 .nav-list li{ list-style:none;}
-.nav-list-item{ display:block; padding:8px 16px; color:#666; _zoom:1;}
-.nav-list-item:hover{ color:#444; text-decoration:none;}
+.nav-list-item{ display:block; padding:8px 16px; _zoom:1;}
+a.nav-list-item,.nav-list-item a{ color:#666;}
+a.nav-list-item:hover,.nav-list-item a:hover{ color:#444; text-decoration:none;}
 .nav-list-item small{ color:#999;}
 .inverse .nav-list-item{ color:#999faa;}
 .inverse .nav-list-item:hover{ color:#fff;}
