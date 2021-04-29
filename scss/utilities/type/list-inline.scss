@@ -1,6 +1,0 @@
-.list-inline{ padding-left:0; margin-left:-5px; list-style:none;}
-.list-inline li{ display:inline-block; *zoom:1; *display:inline; padding-right:5px; padding-left:5px;}
-@media all and (min-width:0px){
-	.list-inline{ font-size:0;}
-	.list-inline li{ font-size:$font-size-base;}
-}

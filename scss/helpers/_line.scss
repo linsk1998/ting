@@ -1,0 +1,23 @@
+.line-1,.line-clamp-1{
+	@extend .text-truncate;
+}
+@for $i from 2 through 5 {
+	.line-#{$i} {
+		text-overflow: ellipsis;
+		-webkit-line-clamp: $i;
+		overflow: hidden;
+		height: $line-height-base * $i;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
+}
+@for $i from 2 through 5 {
+	.line-clamp-#{$i} {
+		text-overflow: ellipsis;
+		-webkit-line-clamp: $i;
+		overflow: hidden;
+		max-height: $line-height-base * $i;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
+}
