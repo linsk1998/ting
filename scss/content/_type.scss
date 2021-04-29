@@ -1,0 +1,28 @@
+
+.list-unstyled{ padding-left:0; list-style:none;}
+
+.list-inline{ padding-left:0; margin-left:-5px; list-style:none;}
+.list-inline li{ display:inline-block; *zoom:1; *display:inline; padding-right:5px; padding-left:5px;}
+@media all and (min-width:0px){
+	.list-inline{ font-size:0;}
+	.list-inline li{ font-size:$font-size-base;}
+}
+
+.dl-horizontal dt{ float:left; width:160px; clear:left; text-align:right; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.dl-horizontal dd{ margin-left:180px;}
+@media (max-width:640px){
+	.dl-horizontal dt{ float:none; width:auto; text-align:inherit;}
+	.dl-horizontal dd{ margin-left:0;}
+}
+
+.initialism{
+	font-size: 90%;
+	text-transform: uppercase;
+}
+
+.pre-scrollable {
+	max-height: 350px;
+	overflow-y: scroll;
+}
+
+.code{ background:#f4f0f9; padding:10px; padding-left:30px; border-left:5px solid #55bb8a; font-size:13px; display:block;}

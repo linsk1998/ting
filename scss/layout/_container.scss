@@ -1,0 +1,25 @@
+.container{
+	@include container(1000px,15px);
+}
+@media (min-width:$screen-lg){
+	.container{ width:$screen-lg - 30px;}
+}
+@media (max-width:$screen-md){
+	.container{ width:$screen-sm;}
+}
+@media (min-width: 720px) and (max-width: $screen-md) {
+	@-ms-viewport { width: 720px; }
+	@-o-viewport { width: 720px; }
+	@viewport { width: 720px; }
+}
+@media (min-width: $screen-xs) and (max-width: $screen-sm) {
+	@-ms-viewport { width: $screen-xs; }
+	@-o-viewport { width:$screen-xs; }
+	@viewport { width:$screen-xs; }
+}
+@media (max-width:$screen-sm){
+	.container{ width:auto;}
+}
+.container-fluid {
+	@include container(auto,20px);
+}
