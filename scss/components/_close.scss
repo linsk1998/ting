@@ -1,5 +1,4 @@
 .close{
-	font-weight:bold;
 	width:1em; text-align:center; display:inline-block;
 	*zoom:expression(this.runtimeStyle['zoom']='1',this.innerHTML='✕');
 }
