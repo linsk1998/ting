@@ -6,11 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
 	<!-- TemplateParam name="getting-started" type="boolean" value="false" -->
-	<!-- TemplateParam name="scaffolding" type="boolean" value="false" -->
-	<!-- TemplateParam name="css" type="boolean" value="true" -->
+	<!-- TemplateParam name="layout" type="boolean" value="false" -->
+	<!-- TemplateParam name="content" type="boolean" value="false" -->
+	<!-- TemplateParam name="form" type="boolean" value="false" -->
+	<!-- TemplateParam name="helpers" type="boolean" value="false" -->
 	<!-- TemplateParam name="components" type="boolean" value="false" -->
-	<!-- TemplateParam name="javascript" type="boolean" value="false" -->
-	<!-- TemplateParam name="quirks" type="boolean" value="false" -->
+	<!-- TemplateParam name="utilities" type="boolean" value="false" -->
 	<!-- TemplateBeginEditable name="doctitle" -->
 	<title></title>
 	<!-- TemplateEndEditable -->
@@ -29,15 +30,49 @@
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
 						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
 					<div class="navbar-collapse collapse">
-						<ul class="navbar-nav"><!-- TemplateBeginIf cond="_document['getting-started']" -->
-							<li class="nav-item active"><a class="nav-link" href="../getting-started/index.html">起步</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['getting-started']==false" -->
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['scaffolding']" -->
-							<li class="nav-item active"><a class="nav-link" href="../common/index.html">全局样式</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['scaffolding']==false" -->
-							<li class="nav-item"><a class="nav-link" href="../common/index.html">全局样式</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['css']" -->
-							<li class="nav-item active"><a class="nav-link" href="../utilities/index.html">工具类</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['css']==false" -->
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['components']" -->
-							<li class="nav-item active"><a class="nav-link" href="../components/index.html">组件</a></li><!-- TemplateEndIf --><!-- TemplateBeginIf cond="_document['components']==false" -->
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><!-- TemplateEndIf -->
+						<ul class="navbar-nav">
+						<!-- TemplateBeginIf cond="_document['getting-started']" -->
+							<li class="nav-item active"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['getting-started']==false" -->
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['layout']" -->
+							<li class="nav-item active"><a class="nav-link" href="../layout/index.html">布局</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['layout']==false" -->
+							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['content']" -->
+							<li class="nav-item active"><a class="nav-link" href="../content/index.html">页面内容</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['content']==false" -->
+							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['form']" -->
+							<li class="nav-item active"><a class="nav-link" href="../form/index.html">表单</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['form']==false" -->
+							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['helpers']" -->
+							<li class="nav-item active"><a class="nav-link" href="../helpers/index.html">助手</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['helpers']==false" -->
+							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['components']" -->
+							<li class="nav-item active"><a class="nav-link" href="../components/index.html">组件</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['components']==false" -->
+							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['utilities']" -->
+							<li class="nav-item active"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
+						<!-- TemplateEndIf -->
+						<!-- TemplateBeginIf cond="_document['utilities']==false" -->
+							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
+						<!-- TemplateEndIf -->
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
