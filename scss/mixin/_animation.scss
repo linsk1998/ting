@@ -1,10 +1,8 @@
 
-@mixin animation($name, $duration, $function: ease, $delay: 0s, $count: infinite) {
-	-webkit-animation: $name $duration $function $delay $count;
-	-moz-animation: $name $duration $function $delay $count;
-	-ms-animation: $name $duration $function $delay $count;
-	-o-animation: $name $duration $function $delay $count;
-	animation: $name $duration $function $delay $count;
+@mixin animation($value) {
+	-webkit-animation: $value;
+	-moz-animation: $value;
+	animation: $value;
 }
 
 @mixin keyframes($name) {

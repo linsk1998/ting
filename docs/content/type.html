@@ -85,12 +85,10 @@
 			<h4>我是4级标题 <small>我是标题后的小字</small></h4>
 			<h5>我是5级标题 <small>我是标题后的小字</small></h5>
 			<h6>我是6级标题 <small>我是标题后的小字</small></h6>
-			<h2>对齐</h2>
-			<p class="text-left">文字居左</p>
-			<p class="text-center">文字居中</p>
-			<p class="text-right">文字居右</p>
-			<p class="text-justify">两 端 对 齐</p>
-			<p class="text-nowrap">强制不换行</p>
+			<h2>段落</h2>
+			<p>这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不见了；妻在屋里拍着闰儿，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。</p>
+			<h2>分隔线</h2>
+			<hr/>
 			<h2>缩略语</h2>
 			<p><abbr title="HyperText Markup Language">HTML</abbr> is the best thing since sliced bread.</p>
 			<h2>键盘文本</h2>
@@ -100,6 +98,8 @@
 				<p>好好学习，天天向上。</p>
 				<footer>——毛泽东</footer>
 			</blockquote>
+			<h3>代码块</h3>
+			<pre><code>alert(1)</code></pre>
 			<h2>列表</h2>
 			<h3>无序列表</h3>
 			<ul>
@@ -145,10 +145,10 @@
 			<p>通过设置 <code>display: inline-block;</code> 并添加少量的内补（padding），将所有元素放置于同一行。</p>
 			<p>
 				<ul class="list-inline">
-					<li>论坛</li>
-					<li>案例</li>
-					<li>捐赠</li>
-					<li>联系</li>
+					<li class="list-inline-item">论坛</li>
+					<li class="list-inline-item">案例</li>
+					<li class="list-inline-item">捐赠</li>
+					<li class="list-inline-item">联系</li>
 				</ul>
 			</p>
 			<h3>描述</h3>
@@ -164,35 +164,6 @@
 					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 				</dl>
 			</p>
-			<h3>水平排列的描述</h3>
-			<p><code>.dl-horizontal</code> 可以让 <code>&lt;dl&gt;</code> 内的短语及其描述排在一行。开始是像 <code>&lt;dl&gt;</code> 的默认样式堆叠在一起，随着导航条逐渐展开而排列在一行。</p>
-			<p>
-				<dl class="dl-horizontal">
-					<dt>Description lists</dt>
-					<dd>A description list is perfect for defining terms.</dd>
-					<dt>Euismod</dt>
-					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
-					<dt>Malesuada porta</dt>
-					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-					<dt>Felis euismod semper eget lacinia</dt>
-					<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-				</dl>
-			</p>
-			<div class="row row-gutter">
-				<div class="col-md-4 col-gutter">
-					<h4>单行超出出现省略号</h4>
-					<p class="text-truncate">Singapore may be small,but packs in quite a punch.Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer.Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
-				</div>
-				<div class="col-md-4 col-gutter">
-					<h4>强制断词换行</h4>
-					<p class="text-break">hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
-				</div>
-				<div class="col-md-4 col-gutter">
-					<h4>多行超出出现省略号</h4>
-					<p class="line-3">Singapore may be small,but packs in quite a punch.Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer.Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
-				</div>
-			</div>
 		</div>
 		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">

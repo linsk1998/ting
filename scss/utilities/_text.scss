@@ -1,18 +1,17 @@
 .text-left{ text-align:left;}
 .text-center{ text-align:center;}
 .text-right{ text-align:right;}
-.text-middle{ vertical-align:middle;}
-.text-top{ vertical-align:top;}
-.text-middle{ vertical-align:middle;}
-.text-bottom{ vertical-align:bottom;}
 .text-justify{ text-align:justify; -moz-text-align-last:justify; text-align-last:justify;}
 .text-nowrap{ white-space:nowrap;}
 .text-break{ @include text-break;}
-.text-truncate{ @include text-truncate;}
+
+.text-middle{ vertical-align:middle;}
+.text-top{ vertical-align:top;}
+.text-bottom{ vertical-align:bottom;}
 
 .text-hide{ font:0/0 a; color:transparent; text-shadow:none; background-color:transparent; border:0;}
-
 .text-muted{ color:$theme-secondary-text;}
+
 .text-capitalize { text-transform: capitalize;}
 .text-lowercase { text-transform: lowercase;}
 .text-uppercase { text-transform: uppercase;}

@@ -78,43 +78,85 @@
 			<h2 class="page-header">基本图标</h2>
 			<form>
 				<div class="input-group">
-					<div class="input-group-left" id="basic-addon1">@</div>
-					<div class="input-group-control">
+					<div class="input-group-left input-group-text" id="basic-addon1">@</div>
+					<div class="input-group-center">
 						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 					</div>
 				</div>
 				<br/>
 				<div class="input-group">
-					<div class="input-group-right" id="basic-addon2">@example.com</div>
-					<div class="input-group-control">
+					<div class="input-group-right input-group-text" id="basic-addon2">@example.com</div>
+					<div class="input-group-center">
 						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"/>
 					</div>
 				</div>
 				<br/>
 				<div class="input-group">
-					<div class="input-group-left">$</div>
-					<div class="input-group-right">.00</div>
+					<div class="input-group-left input-group-text">$</div>
+					<div class="input-group-right input-group-append">.00</div>
 					<!--控件需要放在最后-->
-					<div class="input-group-control">
+					<div class="input-group-center">
 						<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
 					</div>
 				</div>
 				<br/>
 				<label for="basic-url">Your vanity URL</label>
 				<div class="input-group">
-					<div class="input-group-left" id="basic-addon3">https://example.com/users/</div>
-					<div class="input-group-control">
+					<div class="input-group-left input-group-text" id="basic-addon3">https://example.com/users/</div>
+					<div class="input-group-center">
 						<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
 					</div>
 				</div>
 				<br/>
 				<label>作为额外元素的按钮</label>
-				<div class="input-group">
-					<div class="input-group-right input-group-btn">
-						<button class="btn btn-default" type="button">搜索</button>
+				<div class="row row-gx-4">
+					<div class="col-md-4 col-gx-4">
+						<div class="input-group">
+							<button class="input-group-left btn btn-default" type="button">搜索</button>
+							<button class="input-group-right btn btn-primary" type="button">搜索</button>
+							<div class="input-group-center">
+								<input type="text" class="form-control" placeholder="关键词"/>
+							</div>
+						</div>
 					</div>
-					<div class="input-group-control">
-						<input type="text" class="form-control" placeholder="关键词"/>
+					<div class="col-md-8 col-gx-4">
+						<div class="input-group">
+							<div class="input-group-left btn-group">
+								<button type="button" class="btn btn-default">按钮 1</button>
+								<button type="button" class="btn btn-default">按钮 2</button>
+							</div>
+							<div class="input-group-right btn-group ">
+								<button type="button" class="btn btn-default">按钮 1</button>
+								<button type="button" class="btn btn-primary">按钮 2</button>
+							</div>
+							<div class="input-group-center">
+								<input type="text" class="form-control" placeholder="关键词"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<label>前缀后缀</label>
+				<div class="input-group">
+					<div class="input-group-left">
+						<div class="input-group-text">
+							￥
+						</div>
+						<div class="input-group-prefix">
+							111
+						</div>
+					</div>
+					<div class="input-group-right">
+						<div class="input-group-suffix">
+							0/111
+						</div>
+						<div class="input-group-text">
+							元
+						</div>
+					</div>
+					<!--控件需要放在最后-->
+					<div class="input-group-center">
+						<input type="text" class="form-control"/>
 					</div>
 				</div>
 			</form>

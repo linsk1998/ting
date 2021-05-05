@@ -1,0 +1,26 @@
+
+.card{
+	display:block;
+	margin:$margin-base 0;
+	background-color:#fff;
+	border:1px solid $theme-divider;
+}
+
+.card-header {
+	*zoom:1;
+	padding: 10px 15px;
+	background-color:#f5f5f5;
+	border-bottom:1px solid $theme-divider;
+}
+.card-title{ margin-top:0; margin-bottom:0; font-size:16px; color:inherit;}
+.card-title a,.panel-title small{ color:inherit;}
+.card-body{ padding:15px;}
+.card-footer {
+	*zoom:1;
+	padding:15px;
+	border-top:1px solid $theme-divider;
+}
+
+.card .caption{
+	padding:9px; color:$theme-primary-text;
+}

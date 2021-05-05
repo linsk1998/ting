@@ -1,0 +1,56 @@
+
+.divider {
+	margin:1em 0;
+	border-bottom:1px solid $theme-divider;
+}
+.divider-text{
+	padding:0 1em;
+	white-space: nowrap;
+	line-height:1em;
+}
+@media (min-width:0){
+	.divider-left,.divider-center,.divider-right{
+		display:table;
+		width:100%;
+		border-bottom:0 none;
+		&:before,&:after{
+			content: "-";
+			font-size: 0;
+			display: table-cell;
+			border-bottom:1px solid $theme-divider;
+		}
+	}
+	.divider-left:before{
+		width:16px;
+	}
+	.divider-right:after{
+		width:16px;
+	}
+	.divider-center:before,.divider-center:after{
+		width:49%;
+	}
+	.divider-text{
+		display: table-cell;
+		position: relative;
+		bottom:-.5em;
+		width:2%;
+	}
+}
+@media \0screen\,screen\9 {
+	.divider{
+		padding:0 16px;
+	}
+	.divider-center{
+		text-align: center;
+	}
+	.divider-right{
+		text-align: right;
+	}
+	.divider-text{
+		background-color: #fff;
+		display: inline-block;
+		*display:inline;*zoom:1;
+		margin-top:0.5em;
+		margin-bottom:-0.5em;;
+	}
+}

@@ -14,7 +14,7 @@
 	<!-- InstanceParam name="components" type="boolean" value="false" -->
 	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>全局样式</title>
+	<title>表单</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
@@ -75,285 +75,9 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">全局样式</h1>
-			<h2>布局容器</h2>
-			<p><code>.container</code> 类用于固定宽度并支持响应式布局的容器。</p>
-			<pre class="code">&lt;div class="container"&gt;
-  ...
-&lt;/div&gt;</pre>
-			<p><code>.container-fluid</code> 类用于 100% 宽度，占据全部视口（viewport）的容器。</p>
-			<pre class="code">&lt;div class="container-fluid"&gt;
-  ...
-&lt;/div&gt;</pre>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.container</td>
-					<td>用于固定宽度居中并支持响应式。</td>
-				</tr>
-				<tr>
-					<td>.container-fluid</td>
-					<td>用于 100% 宽度，占据全部视口（viewport）的容器。</td>
-				</tr>
-			</tbody></table>
-			<p><a href="container.html">例子</a></p>
-			<h2>栅格系统</h2>
-			<p>不带间隔支持响应式的布局样式类。由于使用的是border-box，因此可以加入padding，实现固定宽度间隙。</p>
-			<pre class="code">&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;row&quot;&gt;
-		&lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;col-md-10&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</pre>
-			<p>加入宽度为20px的间隙。</p>
-			<pre class="code">&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;row row-gutter&quot;&gt;
-		&lt;div class=&quot;col-md-2 col-gutter&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;col-md-10 col-gutter&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</pre>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.row</td>
-					<td>网格中的行，用于包裹列，清除列的浮动。里面的列没有间隔。</td>
-				</tr>
-				<tr>
-					<td>.col-{width}</td>
-					<td>列的宽度。如<code>.col-4</code>默认为12等分。<code>.col-4/5</code>五分之四宽度。</td>
-				</tr>
-				<tr>
-					<td>.col-offset-{width}</td>
-					<td>列偏移</td>
-				</tr>
-				<tr>
-					<td>.col-push-{width}</td>
-					<td>右移动偏移</td>
-				</tr>
-				<tr>
-					<td>.col-pull-{width}</td>
-					<td>左移动偏移</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-{width}</td>
-					<td>不同设备尺寸的列宽度，如<code>.col-md-4</code><code>.col-md-4/5</code>。size可以为md、lg、sm、xs。</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-offset-{width}</td>
-					<td>列偏移</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-push-{width}</td>
-					<td>右移动偏移</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-pull-{width}</td>
-					<td>左移动偏移</td>
-				</tr>
-				<tr>
-					<td>.row-gutter</td>
-					<td>带padding间隔的行。</td>
-				</tr>
-				<tr>
-					<td>.col-gutter</td>
-					<td>带padding间隔的列。</td>
-				</tr>
-			</tbody></table>
-			<p><a href="grid.html">例子</a></p>
-			<h2>超级链接</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.link-primary</td>
-					<td>主要链接</td>
-				</tr>
-				<tr>
-					<td>.link-secondary</td>
-					<td>次级链接</td>
-				</tr>
-				<tr>
-					<td>.link-disabled</td>
-					<td>禁用链接</td>
-				</tr>
-				<tr>
-					<td>.link-stretched</td>
-					<td>链接作用到容器</td>
-				</tr>
-			</table>
-			<p><a class="link-primary" href="grid.html">link-primary例子</a> <a class="link-secondary" href="grid.html">link-secondary例子</a> <a class="link-disabled" href="grid.html" disabled>link-disabled例子</a></p>
-			<div class="alert alert-danger">
-				<a class="link-stretched alert-link" href="grid.html">link-stretched</a>例子
-			</div>
-			<h2>表格</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.table</td>
-					<td>为任意 &lt;table&gt; 添加基本样式 (只有横向分隔线) </td>
-				</tr>
-				<tr>
-					<td>.table-striped</td>
-					<td>在 &lt;tbody&gt; 内添加斑马线形式的条纹 ( IE8 不支持)</td>
-				</tr>
-				<tr>
-					<td>.table-bordered</td>
-					<td>为所有表格的单元格添加边框</td>
-				</tr>
-				<tr>
-					<td>.table-hover</td>
-					<td>在 &lt;tbody&gt; 内的任一行启用鼠标悬停状态</td>
-				</tr>
-				<tr>
-					<td>.table-condensed</td>
-					<td>让表格更加紧凑</td>
-				</tr>
-				<tr>
-					<td>.table-responsive</td>
-					<td>响应式表格</td>
-				</tr>
-				<tr>
-					<td>.table-fixed</td>
-					<td>强制固定表格宽度</td>
-				</tr>
-			</tbody></table>
-			<p><a href="./table.html">例子</a></p>
-			<h2>图片</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody>
-					<tr class="table-primary">
-						<th>类</th>
-						<th>描述</th>
-					</tr>
-					<tr>
-						<td>.img-rounded</td>
-						<td>圆角 </td>
-					</tr>
-					<tr>
-						<td>.img-circle</td>
-						<td>圆形</td>
-					</tr>
-					<tr>
-						<td>.img-thumbnail</td>
-						<td>带边框</td>
-					</tr>
-					<tr>
-						<td>.img-responsive</td>
-						<td>响应式图片</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="row row-gutter">
-				<div class="col-md-4 col-gutter">
-					<img src="../images/bootstrap.jpg" class="img-rounded" width="100%"/>
-				</div>
-				<div class="col-md-4 col-gutter text-center">
-					<img src="https://cdn.bootcss.com/twemoji/11.2.0/2/72x72/1f232.png" class="img-circle"/>
-				</div>
-				<div class="col-md-4 col-gutter">
-					<img src="../images/devices.jpg" class="img-thumbnail" width="100%"/>
-				</div>
-			</div>
-			<h2>按钮</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.btn</td>
-					<td>为按钮添加基本样式</td>
-				</tr>
-				<tr>
-					<td>.btn-default</td>
-					<td>默认/标准按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-primary</td>
-					<td>原始按钮样式（未被操作） </td>
-				</tr>
-				<tr>
-					<td>.btn-outline</td>
-					<td>外面一圈的按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-success</td>
-					<td>表示成功的动作</td>
-				</tr>
-				<tr>
-					<td>.btn-info</td>
-					<td>该样式可用于要弹出信息的按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-warning</td>
-					<td>表示需要谨慎操作的按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-danger</td>
-					<td>表示一个危险动作的按钮操作</td>
-				</tr>
-				<tr>
-					<td>.btn-label</td>
-					<td>按钮内部文字</td>
-				</tr>
-				<tr>
-					<td>.btn-addon-left</td>
-					<td>按钮内部左侧图标</td>
-				</tr>
-				<tr>
-					<td>.btn-addon-right</td>
-					<td>按钮内部右侧图标</td>
-				</tr>
-				<tr>
-					<td>.btn-lg</td>
-					<td>制作一个大按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-sm</td>
-					<td>制作一个小按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-xs</td>
-					<td>制作一个超小按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-block</td>
-					<td>块级按钮(拉伸至父元素100%的宽度)</td>
-				</tr>
-				<tr>
-					<td>.btn-group</td>
-					<td>按钮组</td>
-				</tr>
-				<tr>
-					<td>.btn-toolbar</td>
-					<td>按钮工具栏</td>
-				</tr>
-				<tr>
-					<td>.caret</td>
-					<td>按钮旁的小三角形</td>
-				</tr>
-				<tr>
-					<td>.close</td>
-					<td>关闭按钮</td>
-				</tr>
-			</tbody></table>
-			<div class="btn-toolbar">
-				<a href="button.html" class="btn btn-primary">例子</a>
-			</div>
-			<h2>表单</h2>
+			<h1 class="page-header">表单</h1>
 			<p>这里提供了有限的标签和扩展的类来创建出表单。</p>
-			<table class="table table-bordered table-striped table-condensed">
+			<table class="table table-bordered table-striped table-sm">
 				<tbody><tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
@@ -452,54 +176,51 @@
 				</tr>
 			</tbody></table>
 			<p><a href="form.html">例子</a></p>
-			<h2>图标</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="primary">
+			<h2>输入框组</h2>
+			<p>通过在文本输入框 <code>&lt;input&gt;</code> 前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。</p>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
 				</tr>
 				<tr>
-					<td>.icon</td>
-					<td>表示一个图标，生成一个方形inline-block。</td>
+					<td>.input-group</td>
+					<td>输入框组</td>
 				</tr>
 				<tr>
-					<td>.icon-fw</td>
-					<td>可以将图标设置为一个固定宽度。</td>
+					<td>.input-group-left</td>
+					<td>左侧额外的元素</td>
 				</tr>
 				<tr>
-					<td>.icon-lg .icon-2x .icon-3x .icon-4x</td>
-					<td>大字体图标。</td>
+					<td>.input-group-right</td>
+					<td>右侧额外的元素</td>
 				</tr>
 				<tr>
-					<td>.icon-rotate-* .icon-flip-*</td>
-					<td>对图标进行旋转和翻转</td>
+					<td>.input-group-center</td>
+					<td>输入框容器</td>
 				</tr>
-			</table>
-			<p><a href="icon.html">使用方法</a></p>
-			<h2>动画</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="primary">
+				<tr>
+					<td>.input-group-text</td>
+					<td>左侧右侧文本</td>
+				</tr>
+			</tbody></table>
+			<p><a href="input-group.html">示例</a></p>
+			<h2>开关按钮</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
 				</tr>
 				<tr>
-					<td>.animated</td>
-					<td>动画基础类。</td>
+					<td>.btn-toggle</td>
+					<td>开关按钮</td>
 				</tr>
 				<tr>
-					<td>.infinite</td>
-					<td>循环动画。</td>
+					<td>.btn-toggle-checked</td>
+					<td>开关按钮选中状态</td>
 				</tr>
-				<tr>
-					<td>.fast</td>
-					<td>快速。</td>
-				</tr>
-				<tr>
-					<td>.slow</td>
-					<td>慢速。</td>
-				</tr>
-			</table>
-			<p><a href="animation.html">使用方法</a></p>
+			</tbody></table>
+			<p><a href="toggle-button.html">示例</a></p>
 		</div>
 		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">

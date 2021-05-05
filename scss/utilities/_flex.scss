@@ -17,4 +17,4 @@
 .flex-around{ -moz-box-pack:justify; -webkit-box-pack:justify; -ms-flex-pack:distribute; -webkit-justify-content:space-around; justify-content:space-around;}
 .flex-stretch{ -moz-box-align:stretch; -webkit-box-align:stretch; -ms-flex-align:stretch; -webkit-align-items:stretch; align-items:stretch;}
 
-.flex-fill{ -moz-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto; -webkit-flex:1 1 auto; flex:1 1 auto;}
+.flex-grow{ -moz-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto; -webkit-flex:1 1 auto; flex:1 1 auto;}

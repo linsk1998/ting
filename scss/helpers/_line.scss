@@ -1,4 +1,6 @@
-.line-1,.line-clamp-1{
+
+.text-truncate{ @include text-truncate;}
+.line-1,.line-max-1{
 	@extend .text-truncate;
 }
 @for $i from 2 through 5 {
@@ -12,7 +14,7 @@
 	}
 }
 @for $i from 2 through 5 {
-	.line-clamp-#{$i} {
+	.line-max-#{$i} {
 		text-overflow: ellipsis;
 		-webkit-line-clamp: $i;
 		overflow: hidden;

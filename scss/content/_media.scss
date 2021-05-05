@@ -21,15 +21,16 @@
 	}
 	.media-middle{
 		display: flex;
-		align-items: center;
+		flex-direction:column;
+		justify-content:center;
 	}
 	.media-bottom{
 		display: flex;
-		align-items: flex-end;
+		justify-content:end
 	}
 }
 .media-body{ overflow:auto;}
 .media-object{ display:block; object-fit:contain; -o-object-fit:contain;}
 .media-object.img-thumbnail{ max-width:none;}
-.media-heading{ margin-top:0; margin-bottom:5px;}
+.media-heading{ margin-top:0; margin-bottom:0;}
 .media-list{ padding-left:0; list-style:none;}

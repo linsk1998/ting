@@ -14,7 +14,7 @@
 	<!-- InstanceParam name="components" type="boolean" value="false" -->
 	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>全局样式</title>
+	<title>布局</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
@@ -75,7 +75,7 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">全局样式</h1>
+			<h1 class="page-header">布局</h1>
 			<h2>布局容器</h2>
 			<p><code>.container</code> 类用于固定宽度并支持响应式布局的容器。</p>
 			<pre class="code">&lt;div class="container"&gt;
@@ -85,7 +85,7 @@
 			<pre class="code">&lt;div class="container-fluid"&gt;
   ...
 &lt;/div&gt;</pre>
-			<table class="table table-bordered table-striped table-condensed">
+			<table class="table table-bordered table-striped table-sm">
 				<tbody><tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
@@ -108,14 +108,14 @@
 		&lt;div class=&quot;col-md-10&quot;&gt;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</pre>
-			<p>加入宽度为20px的间隙。</p>
+			<p>加入宽度为24px的间隙。</p>
 			<pre class="code">&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;row row-gutter&quot;&gt;
-		&lt;div class=&quot;col-md-2 col-gutter&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;col-md-10 col-gutter&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;row row-gx-4&quot;&gt;
+		&lt;div class=&quot;col-md-2 col-gx-4&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;col-md-10 col-gx-4&quot;&gt;&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</pre>
-			<table class="table table-bordered table-striped table-condensed">
+			<table class="table table-bordered table-striped table-sm">
 				<tbody><tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
@@ -157,349 +157,83 @@
 					<td>左移动偏移</td>
 				</tr>
 				<tr>
-					<td>.row-gutter</td>
+					<td>.row-gx-{space}</td>
 					<td>带padding间隔的行。</td>
 				</tr>
 				<tr>
-					<td>.col-gutter</td>
+					<td>.col-gx-{space}</td>
 					<td>带padding间隔的列。</td>
 				</tr>
 			</tbody></table>
 			<p><a href="grid.html">例子</a></p>
-			<h2>超级链接</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="primary">
+			<h2>宽度高度适应</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
 				</tr>
 				<tr>
-					<td>.link-primary</td>
-					<td>主要链接</td>
+					<td>.flex</td>
+					<td>最外层宽度100%的弹性布局容器。</td>
 				</tr>
 				<tr>
-					<td>.link-secondary</td>
-					<td>次级链接</td>
+					<td>.row-flex</td>
+					<td>一行弹性布局容器。</td>
 				</tr>
 				<tr>
-					<td>.link-disabled</td>
-					<td>禁用链接</td>
+					<td>.col-left</td>
+					<td>一行内的左列（固定宽度）。</td>
 				</tr>
 				<tr>
-					<td>.link-stretched</td>
-					<td>链接作用到容器</td>
+					<td>.col-right</td>
+					<td>一行内的右列（固定宽度）。</td>
+				</tr>
+				<tr>
+					<td>.col-center</td>
+					<td>一行内的中间列（宽度自适应剩余宽度）。</td>
+				</tr>
+				<tr>
+					<td>.col-flex</td>
+					<td>一列弹性布局容器。</td>
+				</tr>
+				<tr>
+					<td>.row-shrink</td>
+					<td>一列中的高度为内容高度行（或高度固定）。</td>
+				</tr>
+				<tr>
+					<td>.row-grow</td>
+					<td>一列中的高度适应剩余高度行。</td>
 				</tr>
 			</table>
-			<p><a class="link-primary" href="grid.html">link-primary例子</a> <a class="link-secondary" href="grid.html">link-secondary例子</a> <a class="link-disabled" href="grid.html" disabled>link-disabled例子</a></p>
-			<div class="alert alert-danger">
-				<a class="link-stretched alert-link" href="grid.html">link-stretched</a>例子
-			</div>
-			<h2>表格</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
+			<p><a href="./layout-vbox.html" target="_blank">高度适应例子</a> <a href="./layout-border.html" target="_blank">综合例子</a></p>
+			<h2>对齐</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
 				</tr>
 				<tr>
-					<td>.table</td>
-					<td>为任意 &lt;table&gt; 添加基本样式 (只有横向分隔线) </td>
+					<td>.center-block</td>
+					<td>设置元素为 display:block 并居中显示</td>
 				</tr>
 				<tr>
-					<td>.table-striped</td>
-					<td>在 &lt;tbody&gt; 内添加斑马线形式的条纹 ( IE8 不支持)</td>
+					<td>.vertical-align</td>
+					<td>垂直对齐容器。</td>
 				</tr>
 				<tr>
-					<td>.table-bordered</td>
-					<td>为所有表格的单元格添加边框</td>
+					<td>.vertical-align-middle</td>
+					<td>垂直居中内容。</td>
 				</tr>
 				<tr>
-					<td>.table-hover</td>
-					<td>在 &lt;tbody&gt; 内的任一行启用鼠标悬停状态</td>
+					<td>.vertical-align-bottom</td>
+					<td>底部对齐内容。</td>
 				</tr>
-				<tr>
-					<td>.table-condensed</td>
-					<td>让表格更加紧凑</td>
-				</tr>
-				<tr>
-					<td>.table-responsive</td>
-					<td>响应式表格</td>
-				</tr>
-				<tr>
-					<td>.table-fixed</td>
-					<td>强制固定表格宽度</td>
-				</tr>
-			</tbody></table>
-			<p><a href="./table.html">例子</a></p>
-			<h2>图片</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody>
-					<tr class="table-primary">
-						<th>类</th>
-						<th>描述</th>
-					</tr>
-					<tr>
-						<td>.img-rounded</td>
-						<td>圆角 </td>
-					</tr>
-					<tr>
-						<td>.img-circle</td>
-						<td>圆形</td>
-					</tr>
-					<tr>
-						<td>.img-thumbnail</td>
-						<td>带边框</td>
-					</tr>
-					<tr>
-						<td>.img-responsive</td>
-						<td>响应式图片</td>
-					</tr>
-				</tbody>
+				<!-- <tr>
+					<td>.line-middle</td>
+					<td>单行文本垂直居中。</td>
+				</tr> -->
 			</table>
-			<div class="row row-gutter">
-				<div class="col-md-4 col-gutter">
-					<img src="../images/bootstrap.jpg" class="img-rounded" width="100%"/>
-				</div>
-				<div class="col-md-4 col-gutter text-center">
-					<img src="https://cdn.bootcss.com/twemoji/11.2.0/2/72x72/1f232.png" class="img-circle"/>
-				</div>
-				<div class="col-md-4 col-gutter">
-					<img src="../images/devices.jpg" class="img-thumbnail" width="100%"/>
-				</div>
-			</div>
-			<h2>按钮</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.btn</td>
-					<td>为按钮添加基本样式</td>
-				</tr>
-				<tr>
-					<td>.btn-default</td>
-					<td>默认/标准按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-primary</td>
-					<td>原始按钮样式（未被操作） </td>
-				</tr>
-				<tr>
-					<td>.btn-outline</td>
-					<td>外面一圈的按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-success</td>
-					<td>表示成功的动作</td>
-				</tr>
-				<tr>
-					<td>.btn-info</td>
-					<td>该样式可用于要弹出信息的按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-warning</td>
-					<td>表示需要谨慎操作的按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-danger</td>
-					<td>表示一个危险动作的按钮操作</td>
-				</tr>
-				<tr>
-					<td>.btn-label</td>
-					<td>按钮内部文字</td>
-				</tr>
-				<tr>
-					<td>.btn-addon-left</td>
-					<td>按钮内部左侧图标</td>
-				</tr>
-				<tr>
-					<td>.btn-addon-right</td>
-					<td>按钮内部右侧图标</td>
-				</tr>
-				<tr>
-					<td>.btn-lg</td>
-					<td>制作一个大按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-sm</td>
-					<td>制作一个小按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-xs</td>
-					<td>制作一个超小按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-block</td>
-					<td>块级按钮(拉伸至父元素100%的宽度)</td>
-				</tr>
-				<tr>
-					<td>.btn-group</td>
-					<td>按钮组</td>
-				</tr>
-				<tr>
-					<td>.btn-toolbar</td>
-					<td>按钮工具栏</td>
-				</tr>
-				<tr>
-					<td>.caret</td>
-					<td>按钮旁的小三角形</td>
-				</tr>
-				<tr>
-					<td>.close</td>
-					<td>关闭按钮</td>
-				</tr>
-			</tbody></table>
-			<div class="btn-toolbar">
-				<a href="button.html" class="btn btn-primary">例子</a>
-			</div>
-			<h2>表单</h2>
-			<p>这里提供了有限的标签和扩展的类来创建出表单。</p>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.form</td>
-					<td>换行布局的表单 </td>
-				</tr>
-				<tr>
-					<td>.form-inline</td>
-					<td>内联表单</td>
-				</tr>
-				<tr>
-					<td>.form-horizontal</td>
-					<td>水平排列的表单</td>
-				</tr>
-				<tr>
-					<td>.form-group</td>
-					<td>label和一个输入框的组合</td>
-				</tr>
-				<tr>
-					<td>.control-label</td>
-					<td>控件用的标签</td>
-				</tr>
-				<tr>
-					<td>.form-control</td>
-					<td>输入控件</td>
-				</tr>
-				<tr>
-					<td>.form-control-static</td>
-					<td>静态控件</td>
-				</tr>
-				<tr>
-					<td>.checkbox</td>
-					<td>多选</td>
-				</tr>
-				<tr>
-					<td>.checkbox-inline</td>
-					<td>横向排列多选</td>
-				</tr>
-				<tr>
-					<td>.checkbox-stack</td>
-					<td>纵向排列多选</td>
-				</tr>
-				<tr>
-					<td>.radio</td>
-					<td>单选</td>
-				</tr>
-				<tr>
-					<td>.radio-inline</td>
-					<td>横向排列单选</td>
-				</tr>
-				<tr>
-					<td>.radio-stack</td>
-					<td>纵向排列单选</td>
-				</tr>
-				<tr>
-					<td>.help-block</td>
-					<td>帮助文本</td>
-				</tr>
-				<tr>
-					<td>.has-success</td>
-					<td>定义成功效果的form-group</td>
-				</tr>
-				<tr>
-					<td>.has-warning</td>
-					<td>定义警告效果的form-group</td>
-				</tr>
-				<tr>
-					<td>.has-error</td>
-					<td>定义错误效果的form-group</td>
-				</tr>
-				<tr>
-					<td>.has-feedback</td>
-					<td>定义form-group有反馈图标</td>
-				</tr>
-				<tr>
-					<td>.form-control-feedback</td>
-					<td>控件反馈图标</td>
-				</tr>
-				<tr>
-					<td>.input-lg</td>
-					<td>大尺寸控件</td>
-				</tr>
-				<tr>
-					<td>.input-sm</td>
-					<td>小尺寸控件</td>
-				</tr>
-				<tr>
-					<td>.form-group-lg</td>
-					<td>大尺寸form-group</td>
-				</tr>
-				<tr>
-					<td>.form-group-sm</td>
-					<td>小尺寸form-group</td>
-				</tr>
-			</tbody></table>
-			<p><a href="form.html">例子</a></p>
-			<h2>图标</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.icon</td>
-					<td>表示一个图标，生成一个方形inline-block。</td>
-				</tr>
-				<tr>
-					<td>.icon-fw</td>
-					<td>可以将图标设置为一个固定宽度。</td>
-				</tr>
-				<tr>
-					<td>.icon-lg .icon-2x .icon-3x .icon-4x</td>
-					<td>大字体图标。</td>
-				</tr>
-				<tr>
-					<td>.icon-rotate-* .icon-flip-*</td>
-					<td>对图标进行旋转和翻转</td>
-				</tr>
-			</table>
-			<p><a href="icon.html">使用方法</a></p>
-			<h2>动画</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.animated</td>
-					<td>动画基础类。</td>
-				</tr>
-				<tr>
-					<td>.infinite</td>
-					<td>循环动画。</td>
-				</tr>
-				<tr>
-					<td>.fast</td>
-					<td>快速。</td>
-				</tr>
-				<tr>
-					<td>.slow</td>
-					<td>慢速。</td>
-				</tr>
-			</table>
-			<p><a href="animation.html">使用方法</a></p>
+			<p><a href="./align.html">例子</a></p>
 		</div>
 		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">

@@ -14,7 +14,7 @@
 	<!-- InstanceParam name="components" type="boolean" value="false" -->
 	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>对齐</title>
+	<title>开关按钮</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
@@ -75,28 +75,42 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">对齐</h1>
-			<h2>块级居中</h2>
-			<div style=" height:80px; background:#eee; margin-bottom:20px; padding:0 200px;">
-				<div class="center-block" style="width:150px;background-color:#ccc;">center-block<br/>该 div 显示在中间</div>
+			<h1 class="page-header">开关按钮</h1>
+			<div class="btn-toolbar">
+				<label class="btn btn-toggle">
+					<input class="radio-input" name="radio1" type="radio">
+					未选中
+				</label>
+				<label class="btn btn-toggle btn-toggle-checked">
+					<input class="radio-input" name="radio1" type="radio">
+					选中
+				</label>
+				<label class="btn btn-toggle">
+					<input class="visually-hidden" name="radio1" type="radio">
+					未选中
+				</label>
+				<label class="btn btn-toggle btn-toggle-checked">
+					<input class="visually-hidden" name="radio1" type="radio">
+					选中
+				</label>
 			</div>
-			<!-- <h2>单行文本使用</h2>
-			<div style="background:#eee;" class="text-truncate">
-				<img src="../images/logo.png" width="36" height="36"/>
-				<span class="line-middle my-4">有图时要加这个类</span>
-				<span class="badge">2</span>
-			</div> -->
-			<h2>垂直对齐</h2>
-			<div class="vertical-align" style=" height:80px; background:#eee; margin-bottom:20px;">
-				<div class="vertical-align-middle">vertical-align-middle</div>
-			</div>
-			<div class="vertical-align" style=" height:80px; background:#eee; margin-bottom:20px;">
-				<div class="vertical-align-bottom">vertical-align-bottom</div>
-			</div>
-			<h2>混合使用</h2>
-			<div class="vertical-align" style=" height:100px; background:#eee;">
-				<img class="vertical-align-middle" src="../images/logo.png" width="48" height="48"/>
-				<span class="vertical-align-middle">多行文字<br/>垂直<br/>居中</span>
+			<div class="btn-toolbar">
+				<label class="btn btn-toggle">
+					<input class="checkbox-input" name="check1" type="checkbox">
+					未选中
+				</label>
+				<label class="btn btn-toggle btn-toggle-checked">
+					<input class="checkbox-input" name="check1" type="checkbox">
+					选中
+				</label>
+				<label class="btn btn-toggle">
+					<input class="visually-hidden" name="check1" type="checkbox">
+					未选中
+				</label>
+				<label class="btn btn-toggle btn-toggle-checked">
+					<input class="visually-hidden" name="check1" type="checkbox">
+					选中
+				</label>
 			</div>
 		</div>
 		<!-- InstanceEndEditable -->

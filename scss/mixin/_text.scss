@@ -2,5 +2,5 @@
 	_width:100%; word-wrap:normal; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
 }
 @mixin text-break{
-	word-wrap:break-word; -webkit-hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; hyphens:auto;
+	word-wrap:break-word; overflow-wrap:break-word; -webkit-hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; hyphens:auto;
 }

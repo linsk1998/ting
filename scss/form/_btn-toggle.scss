@@ -1,0 +1,20 @@
+.btn-toggle{
+	color:#333;
+	background-color:#fff;
+	border-color:#ccc;
+	&:hover{
+		color:#333;
+		border-color:#aaa;
+	}
+}
+.btn-toggle-checked{
+	border-color:darken($theme-primary, 5%);
+	z-index: $level-item-actived;
+	&:hover{
+		border-color:darken($theme-primary,17%);
+		z-index: $level-item-actived;
+	}
+}
+html body .btn-toggle-checked:focus-within{
+	border-color:darken($theme-primary,17%);
+}
