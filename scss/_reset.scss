@@ -7,7 +7,7 @@ abbr[title]{ cursor:help; text-decoration:underline; text-decoration:underline d
 svg:not(:root){ overflow:hidden;}
 figure{ margin:1em 40px;}
 
-html{ -webkit-min-font-size:0 !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; height:100%;}
+html{ -webkit-min-font-size:0 !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; height:100%; font-size:16px;}
 body,table,button,input,textarea,pre{ font-size:$font-size-base; line-height:$line-height-base/$font-size-base; font-family:Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
 h1,h2,h3{ *font-family: "Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",SimHei,sans-serif;}
 body,dd,dl{margin:0; padding:0;}
@@ -19,13 +19,17 @@ cite,em,address{font-style:normal;}
 abbr,b,cite,em,font,i,label,q,s,span,strike,strong,u{ vertical-align: top;}
 ul,ol{ padding:0; padding-left:30px; margin:$margin-base 0;}
 ol ol, ol ul, ul ol, ul ul {margin: 0;}
-hr{ display:block; border:0 none; border-top:1px solid #999; height:1px; overflow:hidden; margin:$margin-base 0;}
-mark{ background:#ff0;}
+hr{ display:block; border:0 none; border-top:1px solid $theme-divider; height:1px; overflow:hidden; margin:$margin-base 0;}
+mark,.mark{ background:#ff0;}
 img{ -ms-interpolation-mode:bicubic; vertical-align:middle;}
 code,kbd,samp,.code{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
 -moz-tab-size:4; -o-tab-size:4; tab-size:4; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none;}
-pre{ white-space:-moz-pre-wrap;white-space:-o-pre-wrap;white-space:pre-wrap; word-wrap:break-word;overflow:auto;}
-nobr{ white-space:nowrap;}
+pre,.pre{ white-space:-moz-pre-wrap;white-space:-o-pre-wrap;white-space:pre-wrap; word-wrap:break-word;overflow:auto;}
+nobr,.nobr{ white-space:nowrap;}
+ins,.ins,.u{ text-decoration:underline;}
+del,.del,.s{ text-decoration:line-through;}
+em,.em,.i{ font-style:italic;}
+strong,.strong,.b{ font-weight:bold;}
 code{ direction:ltr; text-align:left; white-space:pre;}
 kbd{ padding:2px 4px; font-size:90%; color:$theme-inverse-text-hover; background-color:$theme-inverse; @include rounded(3px); margin-left:4px; margin-right:4px;}
 [hidden]{ display:none;}
@@ -34,18 +38,16 @@ body{ *text-align:center; color:$theme-primary-text;}
 
 a{ color:$theme-primary; text-decoration:none; cursor:pointer; outline:none;}
 a:hover{ color:darken($theme-primary,15%); text-decoration:underline;}
-em{ color:$theme-primary; font-style:normal;}
-a.em:hover{ color:darken($theme-primary,15%);}
 small,.small{ font-size: 85%;}
 
 code{ background:#f9f2f4; padding:2px 4px; font-size:90%; border-radius:4px; color:#d14; border:1px solid #e1e1e8; _display:inline-block;}
-h1,h2,h3,h4,h5,h6{ font-weight:500; line-height:1.1;}
+h1,h2,h3,h4,h5,h6{ font-weight:500; line-height:$line-height-base/$font-size-base;}
 h1,.h1,h2,.h2,h3,.h3{ margin-top:$margin-base + 6px; margin-bottom:$margin-base - 2px;}
 h4,.h4,h5,.h5,h6,.h6{ margin-top:$margin-base - 2px; margin-bottom:$margin-base - 2px;}
-h1,.h1{ font-size:36px;}
-h2,.h2{ font-size:30px;}
-h3,.h3{ font-size:24px;}
-h4,.h4{ font-size:18px;}
+h1,.h1{ font-size:30px;}
+h2,.h2{ font-size:24px;}
+h3,.h3{ font-size:20px;}
+h4,.h4{ font-size:16px;}
 h5,.h5{ font-size:14px;}
 h6,.h6{ font-size:12px;}
 

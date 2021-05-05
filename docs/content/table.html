@@ -107,7 +107,7 @@
 			<h1>边框</h1>
 			<table class="table table-striped table-bordered">
 				<thead>
-					<tr class="primary"><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+					<tr class="table-primary"><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
 				</thead>
 				<tbody>
 					<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
@@ -118,11 +118,11 @@
 				</tbody>
 			</table>
 			<h1>鼠标悬停</h1>
-			<table class="table table-striped table-bordered table-hover">
+			<table class="table table-striped table-bordered">
 				<thead>
-					<tr class="primary"><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+					<tr class="table-primary"><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
 				</thead>
-				<tbody>
+				<tbody class="table-hover">
 					<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 					<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 					<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
@@ -131,11 +131,11 @@
 				</tbody>
 			</table>
 			<h1>紧凑</h1>
-			<table class="table table-striped table-bordered table-hover table-condensed">
+			<table class="table table-striped table-bordered table-sm">
 				<thead>
-					<tr class="primary"><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+					<tr class="table-primary"><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
 				</thead>
-				<tbody>
+				<tbody class="table-hover">
 					<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 					<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 					<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
@@ -144,9 +144,9 @@
 				</tbody>
 			</table>
 			<h1>背景</h1>
-			<table class="table table-striped table-bordered table-hover table-condensed">
+			<table class="table table-striped table-bordered table-hover table-sm">
 				<tbody>
-					<tr class="active"><th>active</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+					<tr class="table-active"><th>active</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 					<tr class="table-primary"><th>primary</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 					<tr class="table-success"><th>success</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 					<tr class="table-info"><th>info</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
@@ -154,9 +154,68 @@
 					<tr class="table-danger"><th>danger</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
 				</tbody>
 			</table>
+			<h3>带隔行变色和鼠标悬停</h3>
+			<table class="table table-striped table-bordered table-hover table-sm">
+				<tbody>
+					<tr>
+						<th>语境色</th>
+						<th class="table-active">active</th>
+						<th class="table-primary">primary</th>
+						<th class="table-success">success</th>
+						<th class="table-info">info</th>
+						<th class="table-warning">warning</th>
+						<th class="table-danger">danger</th>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="table-active">active</td>
+						<td class="table-primary">primary</td>
+						<td class="table-success">success</td>
+						<td class="table-info">info</td>
+						<td class="table-warning">warning</td>
+						<td class="table-danger">danger</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="table-active">active</td>
+						<td class="table-primary">primary</td>
+						<td class="table-success">success</td>
+						<td class="table-info">info</td>
+						<td class="table-warning">warning</td>
+						<td class="table-danger">danger</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="table-active">active</td>
+						<td class="table-primary">primary</td>
+						<td class="table-success">success</td>
+						<td class="table-info">info</td>
+						<td class="table-warning">warning</td>
+						<td class="table-danger">danger</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="table-active">active</td>
+						<td class="table-primary">primary</td>
+						<td class="table-success">success</td>
+						<td class="table-info">info</td>
+						<td class="table-warning">warning</td>
+						<td class="table-danger">danger</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="table-active">active</td>
+						<td class="table-primary">primary</td>
+						<td class="table-success">success</td>
+						<td class="table-info">info</td>
+						<td class="table-warning">warning</td>
+						<td class="table-danger">danger</td>
+					</tr>
+				</tbody>
+			</table>
 			<h1>响应式</h1>
 			<div class="table-responsive">
-				<table class="table table-striped table-bordered table-hover table-condensed">
+				<table class="table table-striped table-bordered table-hover table-sm">
 					<tr><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td></tr>
 					<tr><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td></tr>
 					<tr><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td><td>长长长长长长</td></tr>

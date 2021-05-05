@@ -35,67 +35,20 @@ a.btn,label.btn,div.btn,span.btn{
 .btn-outline-warning{ @include btn-outline($warning);}
 .btn-outline-danger{ @include btn-outline($danger);}
 .btn-outline-dark{ @include btn-outline($dark);}
-input.btn:focus,
-button.btn:focus{ border-color:#000;}
+input.btn:focus,button.btn:focus{ border-color:#000;}
+label.btn:focus-within{ border-color:#000; z-index: $level-item-focus;}
+a.btn:focus{ border-color:#000;}
 
 
 input.btn-block,button.btn-block,a.btn-block,label.btn-block{ @include btn-block; margin:$margin-base 0}
 
 .btn-label{ @include btn-label;}
-.btn-addon,.btn-addon-left,.btn-addon-right{ @include btn-addon;}
-.btn-addon-left{ margin-right:4px;}
-.btn-addon-right{ margin-left:4px;}
-i.btn-addon,i.btn-addon-left,i.btn-addon-right{
+.btn-icon,.btn-icon-left,.btn-icon-right{ @include btn-icon;}
+.btn-icon-left{ margin-right:4px;}
+.btn-icon-right{ margin-left:4px;}
+i.btn-icon,i.btn-icon-left,i.btn-icon-right{
 	width:1em; height:1em; line-height:1em; text-align:center;
 }
-@media (min-width:0){
-	.btn-loading-icon{
-		border: .125em solid #fff;
-		-o-border-radius: 50%;
-		-moz-border-radius: 50%;
-		-webkit-border-radius: 50%;
-		border-radius: 50%;
-		-moz-animation:spin 1s linear infinite;
-		-webkit-animation:spin 1s linear infinite;
-		animation:spin 1s linear infinite;
-	}
-	.btn-default{
-		.btn-loading-icon{
-			border-color: $theme-primary-text;
-		}
-	}
-	.btn-outline,.btn-outline-primary{
-		.btn-loading-icon{
-			border-color: $theme-primary;
-		}
-	}
-	.btn-outline-success{
-		.btn-loading-icon{
-			border-color: $success;
-		}
-	}
-	.btn-outline-info{
-		.btn-loading-icon{
-			border-color: $info;
-		}
-	}
-	.btn-outline-warning{
-		.btn-loading-icon{
-			border-color: $warning;
-		}
-	}
-	.btn-outline-danger{
-		.btn-loading-icon{
-			border-color: $danger;
-		}
-	}
-	.btn{
-		.btn-loading-icon{
-			border-right-color: transparent;
-		}
-	}
-}
-
 .btn-loading{
 	cursor:not-allowed !important;
 	pointer-events: none;
@@ -105,15 +58,7 @@ i.btn-addon,i.btn-addon-left,i.btn-addon-right{
 		opacity:0.65;
 	}
 }
-.btn-loading-icon{
-	font-family: Wingdings; font-style: normal;
-}
 @media \0screen\,screen\9 {
-	.btn-loading-icon{
-		*zoom:expression(this.runtimeStyle.zoom='1',this.innerHTML='6');
-	}
-	.btn-loading-icon:before{ content:"6";}
-
 	html body .btn.btn-loading,
 	html body .btn.btn-loading:hover,
 	html body .btn.btn-loading:focus{
@@ -122,41 +67,29 @@ i.btn-addon,i.btn-addon-left,i.btn-addon-right{
 		color: #a0a0a0;
 	}
 	html body .btn-loading{
-		.btn-addon,.btn-addon-left,.btn-addon-right{
+		img.btn-icon,img.btn-icon-left,img.btn-icon-right{
 			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60); 
 		}
 		.caret{
 			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40); 
 		}
-		.btn-loading-icon{
-			filter:none;
-		}
 	}
 }
 @media (min-width:0\0) and (min-resolution:.001dpcm) {
 	/*ie9*/
-	.btn-loading-icon{ border:0 none;}
-	.btn-loading-icon:before{ content:"6";}
-
-	html body .btn.btn-loading,
-	html body .btn.btn-loading:hover,
-	html body .btn.btn-loading:focus{
+	html body .btn.btn-loading{
 		background-color: #eee;
 		border-color: darken(#eee, 5%);
 		color: #a0a0a0;
 		opacity: 1;
 	}
 	html body .btn-loading{
-		.btn-addon,.btn-addon-left,.btn-addon-right{
+		img.btn-icon,img.btn-icon-left,img.btn-icon-right{
 			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
 			opacity: .6;
 		}
 		.caret{
 			opacity: .4;
-		}
-		.btn-loading-icon{
-			filter:none;
-			opacity:1;
 		}
 	}
 }
@@ -171,7 +104,7 @@ html body .btn-disabled:focus{
 	text-shadow:1px 1px #fff;
 }
 html body .btn-disabled{
-	.btn-addon,.btn-addon-left,.btn-addon-right{
+	.btn-icon,.btn-icon-left,.btn-icon-right{
 		-webkit-filter: grayscale(1);
 		filter: grayscale(1);
 		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60); 
@@ -181,28 +114,4 @@ html body .btn-disabled{
 		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40); 
 		opacity: .4;
 	}
-}
-
-.btn-group {
-	display: inline-block;
-	vertical-align: middle;
-	*display: inline;
-	*zoom: 1;
-	font-size: 0;
-}
-.btn-toolbar{ font-size:0; *font-size:$font-size-base; margin:$margin-base 0; line-height:40px;}
-.btn-toolbar .btn,.btn-toolbar .btn-group{ margin-left:0; margin-right:5px;}
-.btn-toolbar>:last-child{ margin-right:0;}
-
-.btn-group .btn {
-	float: left;
-	margin-left: 0;
-	margin-right: -1px;
-	position: relative;
-}
-.btn-group .btn:hover {
-	z-index: $level-item-hover;
-}
-.btn-group .btn:focus {
-	z-index: $level-item-actived;
 }

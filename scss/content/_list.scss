@@ -2,8 +2,9 @@
 	padding: 0; margin: 0;
 	list-style-type: none;
 	padding-bottom: 1px;
+	*zoom:1;
 }
-.list li{
+.list-item{
 	padding: 10px 0;
 	background-color: #fff;
 	margin-bottom:-1px;
@@ -13,17 +14,27 @@
 	position: relative;
 	*zoom:1;
 }
-.list-dashed li{
+.list-dashed .list-item{
 	border-style: dashed;
 }
-.list-bordered li{
+.list-flush{
+	padding-bottom: 0;
+	overflow: hidden;
+}
+.list-flush .list-item{
+	margin-top: -1px;
+	padding: 10px 15px;
+	border-left:0 none;
+	border-right:0 none;
+}
+.list-bordered .list-item{
 	padding: 10px 15px;
 	border: 1px solid $theme-divider;
 }
 .list-striped>*:nth-of-type(odd){
 	background-color: #fcfcfc;
 }
-.list-hover li:hover{
+.list-hover .list-item:hover{
 	background-color:#f5f5f5;
 }
 .list-hover>.list-item-success:hover{ background-color:darken($success-bg,5%);}
@@ -34,26 +45,18 @@
 .list .list-item-success{ background-color:$success-bg;}
 .list .list-item-success,.list-item-success a{ color:$success-text;}
 .list-item-success a:hover{ color:darken($success-text,10%);}
-.list>.list-item-success.active{ background-color:$success; border-color:$success;}
-.list>.list-item-success.active,.list>.list-item-success a.active{ color:#fff;}
 .list .list-item-info{ background-color:$info-bg;}
 .list .list-item-info,.list-item-info a{ color:$info-text;}
 .list-item-info a:hover{ color:darken($info-text,10%);}
-.list>.list-item-info.active{ background-color:$info; border-color:$info;}
-.list>.list-item-info.active,.list>.list-item-info a.active{ color:#fff;}
 .list .list-item-warning{ background-color:$warning-bg;}
 .list .list-item-warning,.list-item-warning a{ color:$warning-text;}
 .list-item-warning a:hover{ color:darken($warning-text,10%);}
-.list>.list-item-warning.active{ background-color:$warning; border-color:$warning;}
-.list>.list-item-warning.active,.list>.list-item-warning a.active{ color:#fff;}
 .list .list-item-danger{ background-color:$danger-bg;}
 .list .list-item-danger,.list-item-danger a{ color:$danger-text;}
 .list-item-danger a:hover{ color:darken($danger-text,10%);}
-.list>.list-item-danger.active{ background-color:$danger; border-color:$danger;}
-.list>.list-item-danger.active,.list>.list-item-danger a.active{ color:#fff;}
 
 
-.list li.active{
+.list .list-item.active{
 	background-color:$theme-primary;
 	border-color:$theme-primary;
 	z-index:$level-item-actived;
@@ -61,8 +64,14 @@
 .list .active,.list .active a,
 .list .active a:hover,.list a.active:hover{ color:#fff;}
 
+.list>.list-item-success.active{ background-color:$success; border-color:$success;}
+.list>.list-item-info.active{ background-color:$info; border-color:$info;}
+.list>.list-item-warning.active{ background-color:$warning; border-color:$warning;}
+.list>.list-item-danger.active{ background-color:$danger; border-color:$danger;}
+
+
 
 .list a{ color:$theme-primary-text;}
 .list a:hover{ color:$theme-primary;}
-.list-item-heading{ margin-top:0; margin-bottom:0.4em;}
-.list-item-text{ margin-bottom:0; margin-top:0.4em;}
+.list-item-heading{ margin-top:0; margin-bottom:0;}
+.list-item-text{ margin-bottom:0; margin-top:0;}

@@ -1,17 +1,43 @@
 
 .input-group{ @include clearfix;}
-.input-group-left,.input-group-right{ background-color:#eee; padding:6px 12px; line-height:18px; color:#555;}.input-group-left{
-	float:left; _margin-right:-3px;
-	border:1px solid #ccc; border-right:0 none;
-	order:-1;
+.input-group-left{
+	position: relative;
+	margin-right: -1px;
+	float:left; _margin-right:-4px;
+	font-size:0; line-height:0;
+	white-space: nowrap;
 }
 .input-group-right{
-	float:right; _margin-left:-3px;
-	border:1px solid #ccc; border-left:0 none;
-	order:1;
+	position: relative;
+	margin-left: -1px;
+	float:right; _margin-left:-4px;
+	font-size:0; line-height:0;
+	white-space: nowrap;
+	*z-index: 1;
 }
-.input-group-control{ overflow:auto;}
-.input-group-control .form-control{ width:100%; display:block;}
-.input-group-left .btn{ margin-right:-1px;}
-.input-group-right .btn{ margin-left:-1px;}
-.input-group-btn{ padding:0; border:0 none;}
+.input-group-center{
+	position: relative;
+	overflow:auto;
+}
+.input-group-center:focus-within{
+	z-index: $level-item-focus;
+}
+.input-group-center .form-control{ width:100%;}
+
+.input-group .input-group-left{
+	margin-right: -1px; _margin-right:-4px;
+}
+.input-group .input-group-right{
+	margin-left: -1px; _margin-left:-4px;
+}
+
+.input-group-text{
+	display: inline-block;
+	*display: inline; *zoom:1;
+	font-size: $font-size-base;
+	line-height:$line-height-base;
+	padding:($ctrl-height-base - $line-height-base)/2 -$ctrl-border-width 12px;
+	color:#555;
+	background-color:#eee;
+	border:1px solid #ccc;
+}

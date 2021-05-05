@@ -76,240 +76,19 @@
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
 			<h1 class="page-header">工具类</h1>
-			<h2>排版</h2>
-			<p>
-				排版定义了各种标题、段落、列表及其他内联元素的样式，您可以创建标题、段落、列表及其他内联元素。
-			</p>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.h1~.h6</td>
-					<td>设置为标题样式</td>
-				</tr>
-				<tr>
-					<td>.line-*</td>
-					<td>强行将高度设为N行的高度</td>
-				</tr>
-				<tr>
-					<td>.text-break</td>
-					<td>超出文字容器宽度时强制换行</td>
-				</tr>
-				<tr>
-					<td>.text-left</td>
-					<td>文字居左</td>
-				</tr>
-				<tr>
-					<td>.text-center</td>
-					<td>文字居中</td>
-				</tr>
-				<tr>
-					<td>.text-right</td>
-					<td>文字居右</td>
-				</tr>
-				<tr>
-					<td>.text-justify</td>
-					<td>设定文本对齐,段落中超出屏幕部分文字自动换行</td>
-				</tr>
-				<tr>
-					<td>.text-nowrap</td>
-					<td>段落中超出屏幕部分不换行</td>
-				</tr>
-				<tr>
-					<td>.text-muted</td>
-					<td>文本减弱</td>
-				</tr>
-				<tr>
-					<td>.list-unstyled</td>
-					<td>移除默认的列表样式</td>
-				</tr>
-				<tr>
-					<td>.list-inline</td>
-					<td>将所有列表项放置同一行</td>
-				</tr>
-				<tr>
-					<td>.dl-horizontal</td>
-					<td>水平排列的描述</td>
-				</tr>
-				<tr>
-					<td>.code</td>
-					<td>显示代码</td>
-				</tr>
-			</tbody></table>
-			<p><a href="type.html">例子</a></p>
-			<h2>对齐</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.vertical-align</td>
-					<td>垂直对齐容器。</td>
-				</tr>
-				<tr>
-					<td>.align-middle</td>
-					<td>垂直居中内容。</td>
-				</tr>
-				<tr>
-					<td>.align-bottom</td>
-					<td>底部对齐内容。</td>
-				</tr>
-				<tr>
-					<td>.line-middle</td>
-					<td>单行文本垂直居中。</td>
-				</tr>
-				<tr>
-					<td>.text-left</td>
-					<td>文字居左</td>
-				</tr>
-				<tr>
-					<td>.text-center</td>
-					<td>文字居中</td>
-				</tr>
-				<tr>
-					<td>.text-right</td>
-					<td>文字居右</td>
-				</tr>
-				<tr>
-					<td>.text-middle<br/>.text-top<br/>.text-bottom
-					</td>
-					<td>文本垂直居中</td>
-				</tr>
-				<tr>
-					<td>.center-block</td>
-					<td>设置元素为 display:block 并居中显示</td>
-				</tr>
-			</table>
-			<p><a href="../utilities/align.html">例子</a></p>
-			<h2>浮动</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.pull-left</td>
-					<td>元素浮动到左边</td>
-				</tr>
-				<tr>
-					<td>.pull-right</td>
-					<td>元素浮动到右边</td>
-				</tr>
-				<tr>
-					<td>.clearfix</td>
-					<td>清除容器内的浮动浮动</td>
-				</tr>
-			</table>
-			<p><a href="../utilities/float.html">例子</a></p>
-			<h2>宽度高度适应</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.flex</td>
-					<td>最外层宽度100%的弹性布局容器。</td>
-				</tr>
-				<tr>
-					<td>.row-flex</td>
-					<td>一行弹性布局容器。</td>
-				</tr>
-				<tr>
-					<td>.col-left</td>
-					<td>一行内的左列（固定宽度）。</td>
-				</tr>
-				<tr>
-					<td>.col-right</td>
-					<td>一行内的右列（固定宽度）。</td>
-				</tr>
-				<tr>
-					<td>.col-center</td>
-					<td>一行内的中间列（宽度自适应剩余宽度）。</td>
-				</tr>
-				<tr>
-					<td>.col-flex</td>
-					<td>一列弹性布局容器。</td>
-				</tr>
-				<tr>
-					<td>.row-shrink</td>
-					<td>一列中的高度为内容高度行（或高度固定）。</td>
-				</tr>
-				<tr>
-					<td>.row-grow</td>
-					<td>一列中的高度适应剩余高度行。</td>
-				</tr>
-			</table>
-			<p><a href="../utilities/layout-vbox.html">高度适应例子</a> <a href="../utilities/layout-border.html">综合例子</a></p>
-			<h2>显示</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.hidden-desktop</td>
-					<td>在电脑上隐藏隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-mobile</td>
-					<td>在手机或平板上隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-phone</td>
-					<td>在手机隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-tablet</td>
-					<td>在平板隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-lg</td>
-					<td>在大屏幕隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-md</td>
-					<td>在中隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-sm</td>
-					<td>在略小隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-xs</td>
-					<td>在小隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden</td>
-					<td>强制元素隐藏</td>
-				</tr>
-				<tr>
-					<td>.block</td>
-					<td>将元素显示为block</td>
-				</tr>
-				<tr>
-					<td>.inline-block</td>
-					<td>将元素显示为inline-block</td>
-				</tr>
-				<tr>
-					<td>.inline</td>
-					<td>将元素显示为inline</td>
-				</tr>
-				<tr>
-					<td>.sr-only</td>
-					<td>肉眼上无法看见，但是功能存在</td>
-				</tr>
-			</table>
 			<h2>语境颜色</h2>
-			<table class="table table-bordered table-striped table-condensed">
+			<table class="table table-bordered table-striped table-sm">
 				<tr class="table-primary">
-					<th>表格背景颜色</th>
+					<th>浅色背景颜色</th>
 					<th>文本颜色</th>
 					<th>背景颜色</th>
 					<th>边框颜色</th>
+				</tr>
+				<tr>
+					<td>.primary</td>
+					<td>.text-primary</td>
+					<td>.bg-primary</td>
+					<td>.border-primary</td>
 				</tr>
 				<tr>
 					<td>.success</td>
@@ -338,7 +117,7 @@
 			</table>
 			<p><a href="./color.html">例子</a></p>
 			<h2>主题颜色</h2>
-			<table class="table table-bordered table-striped table-condensed">
+			<table class="table table-bordered table-striped table-sm">
 				<tr class="table-primary">
 					<th>文本颜色</th>
 					<th>背景颜色</th>
@@ -395,8 +174,69 @@
 					<td>.border-green</td>
 				</tr>
 			</table>
+			<h2>文本</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tr class="primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.text-left</td>
+					<td class="text-left">文字居左</td>
+				</tr>
+				<tr>
+					<td>.text-center</td>
+					<td class="text-center">文字居中</td>
+				</tr>
+				<tr>
+					<td>.text-right</td>
+					<td class="text-right">文字居右</td>
+				</tr>
+				<tr>
+					<td>.text-justify</td>
+					<td class="text-justify">两 端 对 齐</td>
+				</tr>
+				<tr>
+					<td>.text-break</td>
+					<td>强制断行</td>
+				</tr>
+				<tr>
+					<td>.text-nowrap</td>
+					<td>强制不换行</td>
+				</tr>
+				<tr>
+					<td>.text-hide</td>
+					<td>文本隐藏</td>
+				</tr>
+				<tr>
+					<td>.text-lowercase</td>
+					<td>转化为小写</td>
+				</tr>
+				<tr>
+					<td>.text-uppercase</td>
+					<td>转化为大写</td>
+				</tr>
+				<tr>
+					<td>.text-capitalize</td>
+					<td>首字母转化为大写</td>
+				</tr>
+			</table>
+			<div class="row row-gx-4">
+				<div class="col-md-4 col-gx-4">
+					<h4>单行超出出现省略号</h4>
+					<p class="text-truncate">Singapore may be small,but packs in quite a punch.Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer.Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
+				</div>
+				<div class="col-md-4 col-gx-4">
+					<h4>强制断词换行</h4>
+					<p class="text-break">Singapore may be small,but packs in quite a punch. Only about 655 square kilometers in area. hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+				</div>
+				<div class="col-md-4 col-gx-4">
+					<h4>多行超出出现省略号</h4>
+					<p class="line-3">Singapore may be small,but packs in quite a punch. Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer. Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
+				</div>
+			</div>
 			<h2>字体</h2>
-			<table class="table table-bordered table-striped table-condensed">
+			<table class="table table-bordered table-striped table-sm">
 				<tr class="primary">
 					<th>类</th>
 					<th>描述</th>
@@ -420,7 +260,7 @@
 			</table>
 			<p><a href="./font.html">例子</a></p>
 			<h2>尺寸</h2>
-			<table class="table table-bordered table-striped table-condensed">
+			<table class="table table-bordered table-striped table-sm">
 				<tr class="table-primary">
 					<th>外边距</th>
 					<th>内边距</th>
