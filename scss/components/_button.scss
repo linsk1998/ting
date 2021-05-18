@@ -21,6 +21,9 @@ a.btn,label.btn,div.btn,span.btn{
 .btn-lg{ @include btn-lg;}
 .btn-sm{ @include btn-sm;}
 .btn-xs{ @include btn-xs;}
+.btn-round{
+	border-radius: 999px;
+}
 
 .btn-default{ @include btn-default;}
 .btn-primary{ @include btn-primary;}
@@ -97,7 +100,7 @@ i.btn-icon,i.btn-icon-left,i.btn-icon-right{
 html body .btn-disabled,
 html body .btn-disabled:hover,
 html body .btn-disabled:focus{
-	background-color: #ddd;
+	background: #ddd;
 	border-color: darken(#dddddd, 5%);
 	color: #a0a0a0;
 	cursor:not-allowed;

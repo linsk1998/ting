@@ -1,0 +1,23 @@
+
+.msgbox{ position:relative; max-width:90%; background:#fff; display:inline-block; *display:inline; *zoom:1; border-top:4px solid $theme-primary; padding:8px 12px; text-align:center; margin-bottom:20px;
+-moz-box-shadow:0 0 10px rgba(0,0,0,.5);-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);}
+.msgbox-lg{ width:90%;}
+.msgbox-md{ width:600px;}
+.msgbox-sm{ width:400px;}
+
+.msgbox-header{ position:relative; text-align:left;}
+.msgbox-header .icon{ position:absolute; top:24px; left:12px; font-size:42px;}
+.msgbox-header .close{ position:absolute; top:8px; right:12px;}
+.msgbox-title{ font-weight:bold; font-size:20px; padding:28px 56px 0; margin:0;}
+.msgbox-body{ margin:12px 56px; overflow:auto;}
+.msgbox-footer{ text-align:center; margin:0 56px 12px;}
+.msgbox-footer .btn{ min-width:60px;}
+.msgbox-info{ border-top-color:$info;}
+.msgbox-success{ border-top-color:$success;}
+.msgbox-warning{ border-top-color:$warning;}
+.msgbox-danger{ border-top-color:$danger;}
+
+@media \0screen\,screen\9 {
+	.msgbox-body{ text-align:left;}
+	.msgbox{ filter:progid:DXImageTransform.Microsoft.Glow(color='#666666', Strength='1');}
+}

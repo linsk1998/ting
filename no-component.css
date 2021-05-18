@@ -6396,6 +6396,143 @@ body.layout-full {
   *left: expression(Math.round(-this.offsetWidth/2)+"px");
 }
 
+.abs-top {
+  position: absolute;
+  top: 0;
+}
+
+.abs-middle {
+  position: absolute;
+  top: 50%;
+}
+
+.abs-bottom {
+  position: absolute;
+  top: 100%;
+}
+
+.abs-left {
+  position: absolute;
+  left: 0;
+}
+
+.abs-center {
+  position: absolute;
+  left: 50%;
+}
+
+.abs-right {
+  position: absolute;
+  left: 100%;
+}
+
+.rel-middle {
+  position: relative;
+  top: -50%;
+}
+
+.rel-bottom {
+  position: relative;
+  top: -100%;
+}
+
+.rel-center {
+  position: relative;
+  left: -50%;
+}
+
+.rel-right {
+  position: relative;
+  left: -100%;
+}
+
+@media (min-width: 0) {
+  .org-left {
+    transform: translateX(0%);
+  }
+
+  .org-center {
+    transform: translateX(-50%);
+  }
+
+  .org-right {
+    transform: translateX(-100%);
+  }
+
+  .org-top {
+    transform: translateY(0%);
+  }
+
+  .org-middle {
+    transform: translateY(-50%);
+  }
+
+  .org-bottom {
+    transform: translateY(-100%);
+  }
+
+  .org-left.org-top {
+    transform: translate(0%, 0%);
+  }
+
+  .org-left.org-middle {
+    transform: translate(0%, -50%);
+  }
+
+  .org-left.org-bottom {
+    transform: translate(0%, -100%);
+  }
+
+  .org-center.org-top {
+    transform: translate(-50%, 0%);
+  }
+
+  .org-center.org-middle {
+    transform: translate(-50%, -50%);
+  }
+
+  .org-center.org-bottom {
+    transform: translate(-50%, -100%);
+  }
+
+  .org-right.org-top {
+    transform: translate(-100%, 0%);
+  }
+
+  .org-right.org-middle {
+    transform: translate(-100%, -50%);
+  }
+
+  .org-right.org-bottom {
+    transform: translate(-100%, -100%);
+  }
+}
+/* IE7- */
+@media screen\9  {
+  .org-left {
+    *margin-left: 0;
+  }
+
+  .org-center {
+    *margin-left: expression(-this.offsetWidth/2+"px");
+  }
+
+  .org-right {
+    *margin-left: expression(-this.offsetWidth+"px");
+  }
+
+  .org-top {
+    *margin-top: 0;
+  }
+
+  .org-middle {
+    *margin-top: expression(-this.offsetHeight/2+"px");
+  }
+
+  .org-bottom {
+    *margin-top: expression(-this.offsetHeight+"px");
+  }
+}
 .pull-front {
   z-index: 1;
   position: relative;
@@ -6858,7 +6995,6 @@ pre code,
 
 .list-item {
   padding: 10px 0;
-  background-color: #fff;
   margin-bottom: -1px;
   border: 1px solid #e0e0e0;
   border-left: 0 none;
@@ -7392,11 +7528,11 @@ input.form-control, select.form-control {
 
 .input-lg {
   font-size: 16px;
-  padding: 11.5px 16px;
+  padding: 11px 16px;
 }
 
 input.input-lg, select.input-lg {
-  height: 45px;
+  height: 44px;
 }
 
 .input-sm {
@@ -7413,10 +7549,10 @@ input.input-sm, select.input-sm {
 }
 .form-group-lg .form-control {
   font-size: 16px;
-  padding: 11.5px 16px;
+  padding: 11px 16px;
 }
 .form-group-lg input.form-control, .form-group-lg select.form-control {
-  height: 45px;
+  height: 44px;
 }
 
 .form-group-sm .control-label {
@@ -7659,6 +7795,14 @@ html body .btn-toggle-checked:focus-within {
   text-align: center;
 }
 
+.icon-left {
+  margin-right: 0.3em;
+}
+
+.icon-right {
+  margin-left: 0.3em;
+}
+
 .icon-pull-left {
   float: left;
   margin-right: 0.3em;
@@ -7667,7 +7811,7 @@ html body .btn-toggle-checked:focus-within {
 
 .icon-pull-right {
   float: right;
-  margin-right: 0.3em;
+  margin-left: 0.3em;
   line-height: 1;
 }
 
@@ -7774,6 +7918,18 @@ html body .btn-toggle-checked:focus-within {
 
 .icon-inverse {
   color: #fff;
+}
+
+.icon-center {
+  position: absolute;
+  left: 50%;
+  margin-left: -0.5em;
+}
+
+.icon-middle {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
 }
 
 .text-truncate, .line-1, .line-max-1 {
@@ -8115,6 +8271,19 @@ html body .btn-toggle-checked:focus-within {
   -ms-flex: 1 1 auto;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
+}
+
+.position-static {
+  position: static !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-fixed {
+  position: fixed !important;
+  _position: absolute !important;
 }
 
 .border {

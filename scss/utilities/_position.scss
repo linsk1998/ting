@@ -1,0 +1,10 @@
+.position-static{
+	position: static !important;
+}
+.position-absolute{
+	position: absolute !important;
+}
+.position-fixed{
+	position: fixed !important;
+	_position: absolute !important;
+}

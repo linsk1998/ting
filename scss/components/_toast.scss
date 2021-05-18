@@ -1,0 +1,19 @@
+@media \0screen\,screen\9 {
+	.toast{ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
+}
+
+.toast{
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+	display:inline-block;
+	*display:inline; *zoom:1;
+	padding:10px 20px; border:0 none;
+	@include rounded(4px);
+}
+.msg{
+	display:inline-block; *display:inline; *zoom:1;
+	border:1px solid #D3D4D3;
+	padding:12px 20px;
+	background:#FFF;
+	@include rounded(3px);
+}
