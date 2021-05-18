@@ -85,4 +85,4 @@
 
 .tab-content{ overflow:auto;}
 .tab-pane{ display:none;}
-.tab-content div.active{ display:block; -webkit-animation:fadein .5s forwards;-moz-animation:fadein .5s forwards;animation:fadein .5s forwards;}
+.tab-pane-active{ display:block; -webkit-animation:fadein .5s forwards;-moz-animation:fadein .5s forwards;animation:fadein .5s forwards;}

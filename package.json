@@ -1,6 +1,6 @@
 {
 	"name": "@ting-ui/css",
-	"version": "0.0.4",
+	"version": "0.0.7",
 	"description": "common style lib",
 	"main": "dist/index.js",
 	"scripts": {
