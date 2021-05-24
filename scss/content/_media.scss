@@ -30,7 +30,6 @@
 	}
 }
 .media-body{ overflow:auto;}
-.media-object{ display:block; object-fit:contain; -o-object-fit:contain;}
-.media-object.img-thumbnail{ max-width:none;}
-.media-heading{ margin-top:0; margin-bottom:0;}
-.media-list{ padding-left:0; list-style:none;}
+.media-object{ @include media-object;}
+.media-heading{ @include media-heading;}
+.media-list{ @include media-list;}
