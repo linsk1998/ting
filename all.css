@@ -6972,10 +6972,6 @@ pre code,
   -o-object-fit: contain;
 }
 
-.media-object.img-thumbnail {
-  max-width: none;
-}
-
 .media-heading {
   margin-top: 0;
   margin-bottom: 0;

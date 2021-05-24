@@ -1,0 +1,76 @@
+@mixin media{
+	@include clearfix;
+	@supports (display:flex) {
+		&{
+			display:flex; flex-direction:row;
+		}
+	}
+}
+@mixin media-left{
+	margin-right:10px;
+	_margin-right:7px;
+	float:left;
+	order:-1;
+	@supports (display:flex) {
+		&{
+			flex-shrink:0; float: none;
+		}
+	}
+}
+@mixin media-right{
+	margin-left:10px;
+	_margin-left:7px;
+	float:right;
+	order:1;
+	@supports (display:flex) {
+		&{
+			flex-shrink:0; float: none;
+		}
+	}
+}
+@mixin media-body{
+	@supports (display:flex) {
+		&{
+			order:0; flex-grow:1;
+		}
+	}
+	overflow:auto;
+}
+@mixin media-middle{
+	@supports (display:flex) {
+		&{
+			display: flex;
+			flex-direction:column;
+			justify-content:center;
+		}
+	}
+}
+@mixin media-bottom{
+	@supports (display:flex) {
+		&{
+			display: flex;
+			justify-content:flex-end;
+		}
+	}
+}
+@mixin media-bottom{
+	@supports (display:flex) {
+		&{
+			display: flex;
+			justify-content:flex-end;
+		}
+	}
+}
+@mixin media-object{
+	display:block;
+	object-fit:contain;
+	-o-object-fit:contain;
+}
+@mixin media-heading{
+	margin-top:0;
+	margin-bottom:0;
+}
+@mixin media-list{
+	padding-left:0;
+	list-style:none;
+}
