@@ -32,7 +32,7 @@ a.navbar-brand:hover {
 	text-align: center;
 	width:$navbar-toggle-size;
 	height: $navbar-toggle-size;
-	margin-top: ($navbar-height - $navbar-toggle-size)/2;
+	margin-top: ($navbar-height - $navbar-toggle-size)*.5;
 	margin-left: 15px;
 	border: 1px solid #ddd;
 	background: #fff;
@@ -99,7 +99,7 @@ a.navbar-brand:hover {
 	vertical-align: middle;
 }
 .navbar-form {
-	padding: ($navbar-height - $ctrl-height-base)/2 15px;
+	padding: ($navbar-height - $ctrl-height-base)*.5 15px;
 }
 
 

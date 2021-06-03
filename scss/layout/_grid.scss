@@ -1,24 +1,24 @@
-
+@use 'sass:math';
 .row{ *zoom:1; *margin-right:-1%;}
 .row:before,.row:after{ display:table; content:" ";}
 .row:after{ clear:both;}
 
 @for $i from 1 through 12{
 	.col-#{$i},.col-md-#{$i}{
-		width:$i/12*100%; *width:$i/12*100%*100/101; float:left; vertical-align:top;
+		width:math.div($i,12)*100%; *width:math.div($i*100,12*101)*100%; float:left; vertical-align:top;
 	}
 }
 @for $i from 1 to 12{
 	.col-push-#{$i},.col-md-push-#{$i}{
 		position:relative;
-		left:$i/12*100%; *left:$i/12*100%*100/101;
+		left:math.div($i,12)*100%; *left:math.div($i*100,12*101)*100%;
 	}
 	.col-pull-#{$i},.col-md-pull-#{$i}{
 		position:relative;
-		right:$i/12*100%; *right:$i/12*100%*100/101;
+		right:math.div($i,12)*100%; *right:math.div($i*100,12*101)*100%;
 	}
 	.col-offset-#{$i},.col-md-offset-#{$i}{
-		margin-left:$i/12*100%; *margin-left:$i/12*100%*100/101; _display:inline;
+		margin-left:math.div($i,12)*100%; *margin-left:math.div($i*100,12*101)*100%; _display:inline;
 	}
 }
 @media (max-width:$screen-sm){
@@ -37,77 +37,77 @@
 }
 @media (min-width:$screen-lg){
 	@for $i from 1 through 12{
-		.col-lg-#{$i}{ width:$i/12*100%; float:left; vertical-align:top;}
+		.col-lg-#{$i}{ width:math.div($i,12)*100%; float:left; vertical-align:top;}
 	}
 	@for $i from 1 to 12{
-		.col-lg-push-#{$i}{ position:relative; left:$i/12*100%;}
-		.col-lg-pull-#{$i}{ position:relative; right:$i/12*100%;}
-		.col-lg-offset-#{$i}{ margin-left:$i/12*100%;}
+		.col-lg-push-#{$i}{ position:relative; left:math.div($i,12)*100%;}
+		.col-lg-pull-#{$i}{ position:relative; right:math.div($i,12)*100%;}
+		.col-lg-offset-#{$i}{ margin-left:math.div($i,12)*100%;}
 	}
 }
 @media (min-width:$screen-sm) and (max-width:$screen-md){
 	@for $i from 1 through 12{
-		.col-xs-#{$i}{ width:$i/12*100%; float:left; vertical-align:top;}
+		.col-xs-#{$i}{ width:math.div($i,12)*100%; float:left; vertical-align:top;}
 	}
 	@for $i from 1 through 12{
-		.col-sm-#{$i}{ width:$i/12*100%; float:left; vertical-align:top;}
+		.col-sm-#{$i}{ width:math.div($i,12)*100%; float:left; vertical-align:top;}
 	}
 	@for $i from 1 to 12{
 		.col-xs-push-#{$i}{
 			position:relative;
-			left:$i/12*100%;
+			left:math.div($i,12)*100%;
 		}
 		.col-xs-pull-#{$i}{
 			position:relative;
-			right:$i/12*100%;
+			right:math.div($i,12)*100%;
 		}
-		.col-xs-offset-#{$i}{ margin-left:$i/12*100%;}
+		.col-xs-offset-#{$i}{ margin-left:math.div($i,12)*100%;}
 		.col-sm-push-#{$i}{
 			position:relative;
-			left: $i/12*100%;;
+			left: math.div($i,12)*100%;;
 		}
 		.col-sm-pull-#{$i}{
 			position:relative;
-			right: $i/12*100%;;
+			right: math.div($i,12)*100%;;
 		}
-		.col-sm-offset-#{$i}{ margin-left:$i/12*100%;}
+		.col-sm-offset-#{$i}{ margin-left:math.div($i,12)*100%;}
 	}
 }
 @media (max-width:$screen-sm){
 	@for $i from 1 through 12{
-		.col-xs-#{$i}{ width:$i/12*100%; float:left; vertical-align:top;}
+		.col-xs-#{$i}{ width:math.div($i,12)*100%; float:left; vertical-align:top;}
 	}
 	@for $i from 1 to 12{
 		.col-xs-push-#{$i}{
 			position:relative;
-			left:$i/12*100%;
+			left:math.div($i,12)*100%;
 		}
 		.col-xs-pull-#{$i}{
 			position:relative;
-			right:$i/12*100%;
+			right:math.div($i,12)*100%;
 		}
-		.col-xs-offset-#{$i}{ margin-left:$i/12*100%;}
+		.col-xs-offset-#{$i}{ margin-left:math.div($i,12)*100%;}
 	}
 }
 @each $columns in $grid-columns-list{
 	@for $i from 1 through $columns{
 		.col-#{$i}\/#{$columns},.col-md-#{$i}\/#{$columns}
-		{ width:$i/$columns*100%; *width:$i/$columns*100%*100/101; float:left; vertical-align:top;}
+		{ width:math.div($i,$columns)*100%; *width:math.div($i*100,$columns*101)*100%; float:left; vertical-align:top;}
 	}
 	@for $i from 1 to $columns{
 		.col-offset-#{$i}\/#{$columns},.col-md-offset-#{$i}\/#{$columns}
-		{ margin-left:$i/$columns*100%; *margin-left:$i/$columns*100%*100/101; _display:inline;}
+		{ margin-left:math.div($i,$columns)*100%; *margin-left:math.div($i*100,$columns*101)*100%; _display:inline;}
 	}
 	@for $i from 1 to $columns{
 		.col-push-#{$i}\/#{$columns},.col-md-push-#{$i}\/#{$columns}{
 			position:relative;
-			left:$i/$columns*100%; *left:$i/$columns*100%*100/101;
+			left:math.div($i,$columns)*100%; *left:math.div($i*100,$columns*101)*100%;
 		}
 	}
 	@for $i from 1 to $columns{
 		.col-pull-#{$i}\/#{$columns},.col-md-pull-#{$i}\/#{$columns}{
 			position:relative;
-			right:$i/$columns*100%; *right:$i/$columns*100%*100/101;
+			right:math.div($i,$columns)*100%; *right:math.div($i*100,$columns*101)*100%;
 		}
 	}
 	@media (max-width:$screen-sm){
@@ -134,60 +134,60 @@
 	}
 	@media (min-width:$screen-lg){
 		@for $i from 1 through $columns{
-			.col-lg-#{$i}\/#{$columns}{ width:$i/$columns*100%; float:left; vertical-align:top;}
+			.col-lg-#{$i}\/#{$columns}{ width:math.div($i,$columns)*100%; float:left; vertical-align:top;}
 		}
 		@for $i from 1 to $columns{
-			.col-lg-push-#{$i}\/#{$columns}{ position:relative; left:$i/$columns*100%;}
-			.col-lg-pull-#{$i}\/#{$columns}{ position:relative; right:$i/$columns*100%;}
-			.col-lg-offset-#{$i}\/#{$columns}{ margin-left:$i/$columns*100%;}
+			.col-lg-push-#{$i}\/#{$columns}{ position:relative; left:math.div($i,$columns)*100%;}
+			.col-lg-pull-#{$i}\/#{$columns}{ position:relative; right:math.div($i,$columns)*100%;}
+			.col-lg-offset-#{$i}\/#{$columns}{ margin-left:math.div($i,$columns)*100%;}
 		}
 	}
 	@media (min-width:$screen-sm) and (max-width:$screen-md){
 		@for $i from 1 through $columns{
-			.col-xs-#{$i}\/#{$columns}{ width:$i/$columns*100%; float:left; vertical-align:top;}
+			.col-xs-#{$i}\/#{$columns}{ width:math.div($i,$columns)*100%; float:left; vertical-align:top;}
 		}
 		@for $i from 1 through $columns{
-			.col-sm-#{$i}\/#{$columns}{ width:$i/$columns*100%; float:left; vertical-align:top;}
+			.col-sm-#{$i}\/#{$columns}{ width:math.div($i,$columns)*100%; float:left; vertical-align:top;}
 		}
 		@for $i from 1 to $columns{
 			.col-xs-push-#{$i}\/#{$columns}{
 				position:relative;
-				left:$i/$columns*100%;
+				left:math.div($i,$columns)*100%;
 			}
 			.col-xs-pull-#{$i}\/#{$columns}{
 				position:relative;
-				right:$i/$columns*100%;
+				right:math.div($i,$columns)*100%;
 			}
 			.col-xs-offset-#{$i}\/#{$columns}
-			{ margin-left:$i/$columns*100%;}
+			{ margin-left:math.div($i,$columns)*100%;}
 			.col-sm-push-#{$i}\/#{$columns}{
 				position:relative;
-				left: $i/$columns*100%;;
+				left: math.div($i,$columns)*100%;;
 			}
 			.col-sm-pull-#{$i}\/#{$columns}{
 				position:relative;
-				right: $i/$columns*100%;;
+				right: math.div($i,$columns)*100%;;
 			}
 			.col-sm-offset-#{$i}\/#{$columns}
-			{ margin-left:$i/$columns*100%;}
+			{ margin-left:math.div($i,$columns)*100%;}
 		}
 	}
 	@media (max-width:$screen-sm){
 		@for $i from 1 through $columns{
 			.col-xs-#{$i}\/#{$columns}
-			{ width:$i/$columns*100%; float:left; vertical-align:top;}
+			{ width:math.div($i,$columns)*100%; float:left; vertical-align:top;}
 		}
 		@for $i from 1 to $columns{
 			.col-xs-push-#{$i}\/#{$columns}{
 				position:relative;
-				left:$i/$columns*100%;
+				left:math.div($i,$columns)*100%;
 			}
 			.col-xs-pull-#{$i}\/#{$columns}{
 				position:relative;
-				right:$i/$columns*100%;
+				right:math.div($i,$columns)*100%;
 			}
 			.col-xs-offset-#{$i}\/#{$columns}
-			{ margin-left:$i/$columns*100%;}
+			{ margin-left:math.div($i,$columns)*100%;}
 		}
 	}
 }
@@ -195,15 +195,15 @@
 .row-fluid{ *zoom:1; *margin-right:-1%;}
 .row-fluid:before,.row-fluid:after{ display:table; content:"";}
 .row-fluid:after{ clear:both;}
-.row-fluid{ margin-left:-1/47*100%;}
+.row-fluid{ margin-left:- math.div(1,47)*100%;}
 .span1,.span2,.span3,.span4,.span5,.span6,
 .span7,.span8,.span9,.span10,.span11,.span12
-{ margin-left:1/48*100%; _display:inline;}
+{ margin-left:math.div(1,48)*100%; _display:inline;}
 @for $i from 1 through 12{
-	.span#{$i}{ width:(4*$i - 1)/48*100%; *width:(4*$i - 1)/48*100%*100/101; float:left; vertical-align:top;}
+	.span#{$i}{ width:math.div(4*$i - 1,48)*100%; *width:math.div((4*$i - 1)*100,48*101)*100%; float:left; vertical-align:top;}
 }
 @for $i from 1 to 12{
-	.offset#{$i}{ margin-left:(4*$i+1)/48*100%; *margin-left:(4*$i+1)/48*100%*100/101;}
+	.offset#{$i}{ margin-left:math.div(4*$i+1,48)*100%; *margin-left:math.div((4*$i+1)*100,48*101)*100%;}
 }
 @each $index, $size in $spacers {
 	.row-gx-#{$index},.row-g-#{$index}{ margin-left:- $size;}

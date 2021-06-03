@@ -3,6 +3,10 @@
 	@supports (display:flex) {
 		&{
 			display:flex; flex-direction:row;
+			align-items: flex-start;
+		}
+		&::after{
+			display:none;
 		}
 	}
 }
@@ -39,25 +43,14 @@
 @mixin media-middle{
 	@supports (display:flex) {
 		&{
-			display: flex;
-			flex-direction:column;
-			justify-content:center;
+			align-self:center;
 		}
 	}
 }
 @mixin media-bottom{
 	@supports (display:flex) {
 		&{
-			display: flex;
-			justify-content:flex-end;
-		}
-	}
-}
-@mixin media-bottom{
-	@supports (display:flex) {
-		&{
-			display: flex;
-			justify-content:flex-end;
+			align-self:flex-end;
 		}
 	}
 }

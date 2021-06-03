@@ -6,7 +6,7 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 
-	td,th{ padding:8px; line-height:$line-height-base/$font-size-base; border-top:1px solid #D8DCF0;}
+	td,th{ padding:8px; line-height:$line-height-base; border-top:1px solid #D8DCF0;}
 	&>thead>tr:last-child>*{ border-bottom:2px solid #D8DCF0;}
 	&>tfoot>tr:first-child>*{ border-top:2px solid #D8DCF0;}
 	&>*:first-child>tr:first-child>*{ border-top:0;}

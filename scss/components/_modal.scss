@@ -1,4 +1,4 @@
-
+@use 'sass:math';
 $modal-background:rgba(0,0,0,$modal-alpha);
 
 .modal-center{ text-align:center; position:relative;
@@ -13,7 +13,7 @@ display:flex; justify-content:center;align-items:center;}
 	_height:expression(document.body.scrollHeight); _padding-top:expression(eval(document.body.scrollTop));
 }
 
-.modal-loading{ background-color:rgba(0,0,0,$modal-alpha/0.8); opacity:0.8;  background-position:center; background-repeat:no-repeat;}
+.modal-loading{ background-color:rgba(0,0,0,math.div($modal-alpha,0.8)); opacity:0.8;  background-position:center; background-repeat:no-repeat;}
 @media \0screen\,screen\9 {
 	.modal{ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#{ie-hex-str($modal-background)},endcolorstr=#{ie-hex-str($modal-background)});}
 	.modal-loading{ background-color:#000; filter:alpha(opacity=50);}
