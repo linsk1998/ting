@@ -36,7 +36,7 @@
 	*display: inline; *zoom:1;
 	font-size: $font-size-base;
 	line-height:$line-height-base;
-	padding:($ctrl-height-base - $line-height-base)/2 -$ctrl-border-width 12px;
+	padding:($ctrl-height-base - $line-height-base)*.5 -$ctrl-border-width 12px;
 	color:#555;
 	background-color:#eee;
 	border:1px solid #ccc;

@@ -11,7 +11,7 @@
 	vertical-align:top;
 	font-size:$font-size-base;
 	line-height:$line-height-base;
-	padding:($pagination-size - 2px - $line-height-base)/2 ($pagination-size - 2px - $font-size-base/2)/2;
+	padding:($pagination-size - 2px - $line-height-base)*.5 ($pagination-size - 2px - $font-size-base*.5)*.5;
 	border:1px solid #ccc;
 	position:relative;
 	margin-right:-1px;
@@ -44,8 +44,8 @@
 .pagination-gutter li{ margin-right:5px;}
 .pagination-gutter{ margin-right:-5px;}
 .pagination-lg li{
-	padding:($pagination-size-lg - 2px - $line-height-base)/2 ($pagination-size-lg - 2px - $font-size-base/2)/2;
+	padding:($pagination-size-lg - 2px - $line-height-base)*.5 ($pagination-size-lg - 2px - $font-size-base*.5)*.5;
 }
 .pagination-sm li{
-	padding:($pagination-size-sm - 2px - $line-height-base)/2 ($pagination-size-sm - 2px - $font-size-base/2)/2;
+	padding:($pagination-size-sm - 2px - $line-height-base)*.5 ($pagination-size-sm - 2px - $font-size-base*.5)*.5;
 }

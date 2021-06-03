@@ -6,6 +6,10 @@
 @supports (display:flex) {
 	.media{
 		display:flex; flex-direction:row;
+		align-items: flex-start;
+	}
+	.media::after{
+		display:none;
 	}
 	.media-left,.media-right{
 		flex-shrink:0; float: none;
@@ -20,13 +24,10 @@
 		order:1;
 	}
 	.media-middle{
-		display: flex;
-		flex-direction:column;
-		justify-content:center;
+		align-self:center;
 	}
 	.media-bottom{
-		display: flex;
-		justify-content:flex-end;
+		align-self:flex-end;
 	}
 }
 .media-body{ overflow:auto;}

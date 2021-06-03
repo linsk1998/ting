@@ -1,4 +1,4 @@
-
+@use 'sass:math';
 $margin-base:10px;
 $padding-base:8px 15px;
 
@@ -93,7 +93,7 @@ $level-tooltip:20000000;
 
 $grid-columns-list:5 7 8;//支持哪些N等分网格
 $grid-gutter-width:20px;
-$grid-fluid-gutter-width:1/48;
+$grid-fluid-gutter-width:math.div(1,48);
 
 $ctrl-height-large:44px;
 $ctrl-height-base:32px;

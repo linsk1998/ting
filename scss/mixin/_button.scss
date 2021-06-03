@@ -34,11 +34,11 @@
 	&:hover{ text-decoration:none;}
 }
 @mixin btn-size($height,$padding,$border:$ctrl-border-width){
-	// padding:($height - 2*$border - $ctrl-line-height)/2 $padding;
+	// padding:($height - 2*$border - $ctrl-line-height)*.5 $padding;
 	// height:$height;
 	@at-root{
 		a#{&},label#{&} {
-			padding:($height - 2*$border - $ctrl-line-height)/2 $padding;
+			padding:($height - 2*$border - $ctrl-line-height)*.5 $padding;
 		}
 		input#{&} ,button#{&} {
 			height: $height;
