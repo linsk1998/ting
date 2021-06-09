@@ -209,5 +209,5 @@
 	.row-gx-#{$index},.row-g-#{$index}{ margin-left:- $size;}
 	.col-gx-#{$index},.col-g-#{$index}{ padding-left:$size;}
 	.row-gy-#{$index},.row-g-#{$index}{ margin-top:- $size;}
-	.col-gy-#{$index},.col-g-#{$index}{ margin-top:$size;}
+	.col-gy-#{$index},.col-g-#{$index}{ padding-top:$size;}
 }
