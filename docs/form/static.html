@@ -14,7 +14,7 @@
 	<!-- InstanceParam name="components" type="boolean" value="false" -->
 	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>输入框组</title>
+	<title>表单</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
@@ -75,117 +75,70 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">输入框组图标</h2>
-			<form>
-				<div class="input-group">
-					<div class="input-group-left input-group-text" id="basic-addon1">@</div>
-					<div class="input-group-center">
-						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-					</div>
+			<h1 class="page-header">静态控件</h1>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label">Text</label>
+					<p class="form-control-static">email@example.com</p>
 				</div>
-				<br/>
-				<div class="input-group">
-					<div class="input-group-right input-group-text" id="basic-addon2">@example.com</div>
-					<div class="input-group-center">
-						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"/>
-					</div>
+				<div class="form-group">
+					<label class="control-label">Disabled</label>
+					<input type="text" class="form-control input-disabled" value="12356789" disabled>
 				</div>
-				<br/>
-				<div class="input-group">
-					<div class="input-group-left input-group-text">$</div>
-					<div class="input-group-right input-group-append">.00</div>
-					<!--控件需要放在最后-->
-					<div class="input-group-center">
-						<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
-					</div>
+				<div class="form-group">
+					<label class="control-label">ReadOnly</label>
+					<input type="text" class="form-control" value="12356789" readonly>
 				</div>
-				<br/>
-				<label for="basic-url">Your vanity URL</label>
-				<div class="input-group">
-					<div class="input-group-left input-group-text" id="basic-addon3">https://example.com/users/</div>
-					<div class="input-group-center">
-						<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
-					</div>
-				</div>
-				<br/>
-				<label>作为额外元素的按钮</label>
-				<div class="row row-gx-4">
-					<div class="col-md-4 col-gx-4">
-						<div class="input-group">
-							<button class="input-group-left btn btn-default" type="button">搜索</button>
-							<button class="input-group-right btn btn-primary" type="button">搜索</button>
-							<div class="input-group-center">
-								<input type="text" class="form-control" placeholder="关键词"/>
+				<div class="form-group">
+					<label class="control-label">Disabled</label>
+					<div class="input-group">
+						<div class="input-group-left">
+							<div class="input-group-text">
+								￥
 							</div>
 						</div>
-					</div>
-					<div class="col-md-8 col-gx-4">
-						<div class="input-group">
-							<div class="input-group-left btn-group">
-								<button type="button" class="btn btn-default">按钮 1</button>
-								<button type="button" class="btn btn-default">按钮 2</button>
-							</div>
-							<div class="input-group-right btn-group ">
-								<button type="button" class="btn btn-default">按钮 1</button>
-								<button type="button" class="btn btn-primary">按钮 2</button>
-							</div>
-							<div class="input-group-center">
-								<input type="text" class="form-control" placeholder="关键词"/>
-							</div>
+						<div class="input-group-right btn-group ">
+							<button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
+							<button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
+						</div>
+						<!--控件需要放在最后-->
+						<div class="input-group-center">
+							<input type="text" class="form-control input-disabled" disabled/>
 						</div>
 					</div>
 				</div>
-				<br/>
-				<label>前缀后缀</label>
-				<div class="input-group">
-					<div class="input-group-left">
-						<div class="input-group-text">
-							￥
+				<div class="form-group">
+					<label class="control-label">ReadOnly</label>
+					<div class="input-group">
+						<div class="input-group-left">
+							<div class="input-group-text">
+								￥
+							</div>
 						</div>
-					</div>
-					<div class="input-group-right">
-						<div class="input-group-text">
-							元
+						<div class="input-group-right">
+							<div class="input-group-text">
+								元
+							</div>
 						</div>
-					</div>
-					<!--控件需要放在最后-->
-					<div class="input-group-center">
-						<input type="text" class="form-control"/>
+						<!--控件需要放在最后-->
+						<div class="input-group-center">
+							<input type="text" class="form-control" readonly/>
+						</div>
 					</div>
 				</div>
-				<br/>
-				<label>前缀后缀</label>
-				<div class="input">
-					<div class="input-prefix">
-						<span class="vertical-align-middle">￥</span>
-						<img src="../images/logo.png" width="16" height="16">
-						<span class="line-middle"></span>
-					</div>
-					<div class="input-suffix">
-						<span class="line-middle"></span>
-						<i class="icon fa">&#xf133;</i>
-						<span class="input-count">0/111</span>
-					</div>
-					<!--控件需要放在最后-->
-					<div class="input-control">
-						<input type="text"/>
-					</div>
-				</div>
-				<br/>
-				<label>前缀后缀</label>
-				<div class="input-group">
-					<div class="input-group-left">
-						<div class="input-group-text">
-							￥
+				<div class="form-group">
+					<label class="control-label">Disabled</label>
+					<div class="input-group">
+						<div class="input-group-left">
+							<div class="input-group-text">
+								￥
+							</div>
 						</div>
-					</div>
-					<div class="input-group-right">
-						<div class="input-group-text">
-							元
+						<div class="input-group-right">
+							<button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
+							<button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
 						</div>
-					</div>
-					<div class="input-group-center">
-						<div class="input">
+						<div class="input-group-center input input-disabled">
 							<div class="input-prefix">
 								<span class="vertical-align-middle">￥</span>
 								<img src="../images/logo.png" width="16" height="16">
@@ -198,13 +151,41 @@
 							</div>
 							<!--控件需要放在最后-->
 							<div class="input-control">
-								<input type="text"/>
+								<input type="text" disabled/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label">ReadOnly</label>
+					<div class="input-group">
+						<div class="input-group-left">
+							<div class="input-group-text">￥</div>
+						</div>
+						<div class="input-group-right">
+							<div class="input-group-text">元</div>
+						</div>
+						<div class="input-group-center input">
+							<div class="input-prefix">
+								<span class="vertical-align-middle">￥</span>
+								<img src="../images/logo.png" width="16" height="16">
+								<span class="line-middle"></span>
+							</div>
+							<div class="input-suffix">
+								<span class="line-middle"></span>
+								<i class="icon fa">&#xf133;</i>
+								<span class="input-count">0/111</span>
+							</div>
+							<!--控件需要放在最后-->
+							<div class="input-control">
+								<input type="text" readonly/>
 							</div>
 						</div>
 					</div>
 				</div>
 			</form>
-		</div><!-- InstanceEndEditable -->
+		</div>
+		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">
 			<p>本项目是一个全局公用CSS库.</p>
 			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>

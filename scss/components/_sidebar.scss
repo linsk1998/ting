@@ -23,6 +23,8 @@
 a.nav-list-item,.nav-list-item a{ color:#666;}
 a.nav-list-item:hover,.nav-list-item a:hover{ color:#444; text-decoration:none;}
 .nav-list-item small{ color:#999;}
-.inverse .nav-list-item{ color:#999faa;}
-.inverse .nav-list-item:hover{ color:#fff;}
-.inverse .nav-list-item small{ color:#666f77;}
+.inverse .nav-list-item, .inverse .nav-list-item a{
+	color:#999faa;
+	&:hover{ color:#fff;}
+	small{ color:#666f77;}
+}

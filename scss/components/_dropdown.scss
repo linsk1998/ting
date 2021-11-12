@@ -18,7 +18,7 @@
 	top:auto; bottom:100%;
 	margin:0 0 2px;
 }
-.dropdown-menu a{
+.dropdown-menu a, .dropdown-item{
 	display:block;
 	*zoom:1; *width:100%;
 	padding:4px 20px; 
@@ -33,3 +33,17 @@
 	background-color:#f5f5f5;
 }
 .open .dropdown-menu{display:block}
+
+
+.dropdown-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	z-index: $level-popup;
+	border: 1px solid #ccc;
+	margin-top: 2px;
+	text-align: left;
+	font-size: 14px;
+	background-color: #fff;
+}

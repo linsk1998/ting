@@ -1,0 +1,75 @@
+
+.help-block{ display:block; margin-top:5px; margin-bottom:10px; color:$theme-primary-text; }
+
+
+.has-feedback{
+	position: relative; *zoom:1;
+	.form-control {
+		padding-right: $ctrl-height-base - $ctrl-border-width + 12px;
+	}
+	.radio-stack{
+		padding-right: $ctrl-height-base;
+	}
+}
+.form-control-feedback{
+	display:block;
+	position: absolute;
+	top:0; right:0;
+	width:$ctrl-height-base;
+	line-height: $ctrl-height-base;
+	text-align: center;
+	font-size:16px;
+}
+.form .form-label~.form-control-feedback,
+.form .control-label~.form-control-feedback{
+	top:$line-height-base + 5px;
+}
+.form .form-control-feedback{
+	*top:auto; *margin-top:- $ctrl-height-base;
+}
+.has-success{
+	.form-label,.control-label,.form-control-feedback,.help-block{
+		color:$success;
+	}
+	.form-control-feedback{
+		color:$success;
+	}
+	.form-control{
+		border-color:$success;
+	}
+}
+.has-warning{
+	.form-label,.control-label,.form-control-feedback,.help-block{
+		color:darken($warning,10%);
+	}
+	.form-control-feedback{
+		color:$warning;
+	}
+	.form-control{
+		border-color:$warning;
+	}
+}
+.has-error{
+	.form-label,.control-label,.form-control-feedback,.help-block{
+		color:$danger;
+	}
+	.form-control-feedback{
+		color:$danger;
+	}
+	.form-control{
+		border-color:$danger;
+	}
+}
+
+.form .is-invalid{
+	border-color:$danger;
+}
+.form .is-valid{
+	border-color:$success;
+}
+.form .invalid-feedback{
+	color:$danger;
+}
+.form .valid-feedback{
+	color:$success;
+}

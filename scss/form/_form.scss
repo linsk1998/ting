@@ -1,126 +1,15 @@
 
 .form-group{line-height:$line-height-base;}
-.control-label{ font-weight:bold;}
-.form .row .control-label{ padding-top:($ctrl-height-base - $ctrl-line-height)*.5;}
-
-.form-control {
-	font-size: $ctrl-fontsize-base;
-	line-height: $ctrl-line-height;
-	color: #555;
-	background-color: #fff;
-	background-image: none;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	@include rounded(0);
-	*margin-top:-1px; *margin-bottom:-1px;
-
-	padding:($ctrl-height-base - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-base;
-	border: $ctrl-border-width solid #ccc;
-}
-input.form-control,select.form-control{
-	height: $ctrl-height-base;
-}
-.form-control:focus{
-	border-color: #66afe9;
-	outline: 0;
-	z-index: $level-item-focus;
-	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
-}
-.form-control{
-	&::-moz-placeholder{ color:#999; opacity:1;}
-	&::-webkit-input-placeholder{ color:#999;}
-	&:-ms-input-placeholder{ color:#999;}
-	&::-ms-expand{ border:0; background-color:transparent;}
-}
-
-//禁止textarea横向拖拽调整大小
-.form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important;}
-.radio label,.checkbox label{ font-weight:normal; margin-right:10px;}
-.radio input,.checkbox input{ vertical-align:middle; margin:2px 3px 4px; *margin:0;}
-.checkbox-inline,.radio-inline {
-	display:inline-block;
-	font-weight:normal;
-	vertical-align:middle;
-	margin-right:10px;
-}
-.checkbox-stack,.radio-stack {
-	display: block;
-	margin-top: 5px;
-	margin-bottom:5px;
-	font-weight: normal;
-}
-.checkbox-inline input,.radio-inline input,
-.checkbox-stack input,.radio-stack input{
-	vertical-align: middle;
-	margin:2px 3px 4px; *margin:0;
-}
-.help-block{ display:block; margin-top:5px; margin-bottom:10px; color:$theme-primary-text; }
-.form-control-static{
-	font-size: $font-size-base;
-	line-height: $line-height-base;
-	padding:($ctrl-height-base - 2*$ctrl-border-width - $ctrl-line-height)*.5 0;
-}
-.has-feedback{
-	position: relative; *zoom:1;
-	.form-control {
-		padding-right: $ctrl-height-base - $ctrl-border-width + 12px;
-	}
-	.radio-stack{
-		padding-right: $ctrl-height-base;
+.form-label,.control-label{ font-weight:bold;}
+.form .row{
+	.form-label,.control-label{
+		padding-top:($ctrl-height-base - $ctrl-line-height)*.5;
 	}
 }
-.form-control-feedback{
-	display:block;
-	position: absolute;
-	top:0; right:0;
-	width:$ctrl-height-base;
-	line-height: $ctrl-height-base;
-	text-align: center;
-	font-size:16px;
-}
-.form .control-label~.form-control-feedback{
-	top:$line-height-base + 5px;
-}
-.form .form-control-feedback{
-	*top:auto; *margin-top:- $ctrl-height-base;
-}
-.has-success{
-	.control-label,.form-control-feedback,.help-block{
-		color:$success;
-	}
-	.form-control-feedback{
-		color:$success;
-	}
-	.form-control{
-		border-color:$success;
-	}
-}
-.has-warning{
-	.control-label,.form-control-feedback,.help-block{
-		color:darken($warning,10%);;
-	}
-	.form-control-feedback{
-		color:$warning;
-	}
-	.form-control{
-		border-color:$warning;
-	}
-}
-.has-error{
-	.control-label,.form-control-feedback,.help-block{
-		color:$danger;
-	}
-	.form-control-feedback{
-		color:$danger;
-	}
-	.form-control{
-		border-color:$danger;
-	}
-}
-
 
 .form{
 	.form-group{ margin-bottom:15px;}
-	.control-label{ margin-bottom:5px; display: block;}
+	.form-label,.control-label{ margin-bottom:5px; display: block;}
 	.form-control{ width: 100%;}
 	input[type=file]{ width: 100%;}
 }
@@ -128,18 +17,33 @@ input.form-control,select.form-control{
 	.form-group{ padding-left:150px; margin-bottom:15px; *zoom:1;}
 	.form-group:after{ display:block; content:""; height:0; overflow: hidden; clear: both;}
 	.form-control{ width: 100%;}
-	.control-label{ margin-left:-150px; float:left; padding-top:($ctrl-height-base - $ctrl-line-height)*.5; padding-right:20px; display:block; _display:inline; _zoom:1; width:150px; text-align: right; font-weight:bold;}
+	.form-label,.control-label{ margin-left:-150px; float:left; padding-top:($ctrl-height-base - $ctrl-line-height)*.5; padding-right:20px; display:block; _display:inline; _zoom:1; width:150px; text-align: right; font-weight:bold;}
 	@media (max-width:$screen-sm){
 		.form-group{ padding-left:0;}
-		.control-label{ margin-left:0; padding-top:0; margin-bottom:5px; float:none; width:auto; text-align: left;}.control-label~.form-control-feedback{
+		.form-label,.control-label{ margin-left:0; padding-top:0; margin-bottom:5px; float:none; width:auto; text-align: left;}
+		.form-label~.form-control-feedback,
+		.control-label~.form-control-feedback{
 			top:$line-height-base + 5px;
 		}
 	}
 }
 .form-inline{
+	position: relative;
 	line-height:40px;
-	.form-control, .control-label {
+	.form-control, .form-label,.control-label {
 		vertical-align: middle;
+	}
+	.input-group {
+		display: inline-block;
+		vertical-align:middle;
+		*display: inline;
+		*zoom: 1;
+	}
+	.input {
+		display: inline-block;
+		vertical-align:middle;
+		*display: inline;
+		*zoom: 1;
 	}
 	.form-group {
 		display: inline-block;
@@ -150,42 +54,5 @@ input.form-control,select.form-control{
 	}
 }
 
-
-.input-lg{
-	font-size: $ctrl-fontsize-large;
-	padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
-}
-input.input-lg,select.input-lg{
-	height: $ctrl-height-large;
-}
-.input-sm{
-	font-size: $ctrl-fontsize-small;
-	padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-small;
-}
-input.input-sm,select.input-sm{
-	height: $ctrl-height-small;
-}
-.form-group-lg{
-	.control-label{
-		font-size: $ctrl-fontsize-large;
-	}
-	.form-control{
-		font-size: $ctrl-fontsize-large;
-		padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
-	}
-	input.form-control,select.form-control{
-		height: $ctrl-height-large;
-	}
-}
-.form-group-sm{
-	.control-label{
-		font-size: $ctrl-fontsize-small;
-	}
-	.form-control{
-		font-size: $ctrl-fontsize-small;
-		padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-small;
-	}
-	input.form-control,select.form-control{
-		height: $ctrl-height-small;
-	}
-}
+//禁止textarea横向拖拽调整大小
+.form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important;}

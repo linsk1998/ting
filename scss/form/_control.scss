@@ -1,0 +1,53 @@
+
+.form-control {
+	font-size: $ctrl-fontsize-base;
+	line-height: $ctrl-line-height;
+	color: #555;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	@include rounded(0);
+	*margin-top:-1px; *margin-bottom:-1px;
+
+	padding:($ctrl-height-base - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-base;
+	border: $ctrl-border-width solid #ccc;
+}
+.form-control[disabled] {
+	cursor: not-allowed;
+	background-color: #eee;
+}
+input.form-control,select.form-control{
+	height: $ctrl-height-base;
+}
+.form-control:focus{
+	border-color: #66afe9;
+	outline: 0;
+	z-index: $level-item-focus;
+	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+}
+.form-control{
+	&::-moz-placeholder{ color:#999; opacity:1;}
+	&::-webkit-input-placeholder{ color:#999;}
+	&:-ms-input-placeholder{ color:#999;}
+	&::-ms-expand{ border:0; background-color:transparent;}
+}
+
+//禁止textarea横向拖拽调整大小
+.form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important;}
+.radio label,.checkbox label{ font-weight:normal; margin-right:10px;}
+.radio input,.checkbox input{ vertical-align:middle; margin:2px 3px 4px; *margin:0;}
+.checkbox-inline,.radio-inline {
+	display:inline-block;
+	font-weight:normal;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.checkbox-stack,.radio-stack {
+	display: block;
+	margin-top: 5px;
+	margin-bottom:5px;
+	font-weight: normal;
+}
+.checkbox-inline input,.radio-inline input,
+.checkbox-stack input,.radio-stack input{
+	vertical-align: middle;
+	margin:2px 3px 4px; *margin:0;
+}

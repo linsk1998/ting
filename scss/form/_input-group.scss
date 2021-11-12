@@ -41,3 +41,66 @@
 	background-color:#eee;
 	border:1px solid #ccc;
 }
+
+
+.input{
+	padding: 0 12px;
+	font-size: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	*zoom: 1;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.input:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+.input:focus-within{
+	border-color: #66afe9;
+	z-index: $level-item-focus;
+	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+}
+
+.input-prefix{
+	float: left;
+	margin-right:4px;
+	_margin-right:1px;
+}
+.input-suffix{
+	float: right;
+	margin-left:4px;
+	_margin-left:1px;
+}
+.input-prefix,.input-suffix{
+	position: relative;
+	white-space: nowrap;
+	font-size: $font-size-base;
+	height: $ctrl-height-base - $ctrl-border-width*2;
+}
+
+.input-control{
+	overflow: auto;
+	position: relative
+}
+.input-control input,.input-control select{
+	width: 100%;
+	height: $ctrl-height-base - $ctrl-border-width*2;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	padding: 4px 0;
+	border: 0 none;
+	color: #555;
+	background: none;
+	-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+	outline: 0;
+	*margin-top: -1px;
+	*margin-bottom: -1px;
+}
+.input-count{
+	vertical-align: middle;
+	color: $theme-secondary-text;
+	font-size: 12px;
+}

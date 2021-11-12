@@ -11,13 +11,13 @@
 	vertical-align:top;
 	font-size:$font-size-base;
 	line-height:$line-height-base;
-	padding:($pagination-size - 2px - $line-height-base)*.5 ($pagination-size - 2px - $font-size-base*.5)*.5;
 	border:1px solid #ccc;
 	position:relative;
 	margin-right:-1px;
 }
 .pagination li a,.pagination li span{
 	display: block;
+	padding:($pagination-size - 2px - $line-height-base)*.5 ($pagination-size - 2px - $font-size-base*.5)*.5;
 	color:$theme-primary-text;
 	text-decoration:none;
 }
