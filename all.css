@@ -7668,13 +7668,13 @@ input.form-control, select.form-control {
 .input-prefix {
   float: left;
   margin-right: 4px;
-  _margin-right: 1px;
+  *margin-right: 1px;
 }
 
 .input-suffix {
   float: right;
   margin-left: 4px;
-  _margin-left: 1px;
+  *margin-left: 1px;
 }
 
 .input-prefix, .input-suffix {
@@ -7702,8 +7702,13 @@ input.form-control, select.form-control {
   -moz-border-radius: 0;
   border-radius: 0;
   outline: 0;
+  vertical-align: top;
   *margin-top: -1px;
   *margin-bottom: -1px;
+}
+
+.input-control input::-ms-clear {
+  display: none;
 }
 
 .input-count {
@@ -8606,20 +8611,26 @@ html body .btn-disabled .caret {
   text-align: left;
   list-style: none;
   background-color: #f5f5f5;
-  color: #777;
+  color: #ccc;
 }
 
 .breadcrumb li {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  *padding-right: 15px;
 }
 
 .breadcrumb > li + li:before {
-  padding: 0 5px;
+  position: relative;
   color: #ccc;
   content: "/ ";
+}
+
+.breadcrumb span, .breadcrumb li {
+  color: #777;
+}
+
+.breadcrumb span, .breadcrumb a {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .nav {
@@ -9748,7 +9759,8 @@ li:hover > .select-list-tools {
 }
 
 .dropdown-menu li a:hover,
-.dropdown-menu li:hover {
+.dropdown-menu li:hover,
+.dropdown-item:hover {
   color: #212121;
   text-decoration: none;
   background-color: #f5f5f5;
@@ -9769,6 +9781,29 @@ li:hover > .select-list-tools {
   text-align: left;
   font-size: 14px;
   background-color: #fff;
+}
+
+.dropdown-list {
+  width: 100%;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  outline: none;
+  margin-top: 2px;
+  background-color: #fff;
+}
+
+.dropdown-list option {
+  padding: 6px 20px;
+  line-height: 16px;
+  height: 28px;
+  font-weight: normal;
+  color: #212121;
+  white-space: nowrap;
+}
+
+.dropdown-list option:hover {
+  background-color: #f5f5f5;
 }
 
 .navbar {

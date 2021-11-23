@@ -67,12 +67,12 @@
 .input-prefix{
 	float: left;
 	margin-right:4px;
-	_margin-right:1px;
+	*margin-right:1px;
 }
 .input-suffix{
 	float: right;
 	margin-left:4px;
-	_margin-left:1px;
+	*margin-left:1px;
 }
 .input-prefix,.input-suffix{
 	position: relative;
@@ -96,9 +96,11 @@
 	background: none;
 	-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
 	outline: 0;
+	vertical-align: top;
 	*margin-top: -1px;
 	*margin-bottom: -1px;
 }
+.input-control input::-ms-clear{display: none;}
 .input-count{
 	vertical-align: middle;
 	color: $theme-secondary-text;
