@@ -1,0 +1,250 @@
+/** reset */
+a {
+  color: #337ab7;
+}
+
+a:hover {
+  color: #22527b;
+}
+
+/** button */
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #2d6da3;
+}
+.btn-primary:hover {
+  background-color: #285f8f;
+  border-color: #204d73;
+}
+
+.btn-outline, .btn-outline-primary {
+  color: #337ab7;
+  border-color: #337ab7;
+}
+.btn-outline:hover, .btn-outline-primary:hover {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+html body .btn-outline:focus, html body .btn-outline-primary:focus {
+  border-color: #22527b;
+}
+
+/** badge */
+.panel-primary .panel-heading .badge {
+  color: #337ab7;
+}
+
+.btn-primary:hover .badge {
+  color: #285f8f;
+}
+
+/** callout */
+.callout-primary {
+  border-left-color: #337ab7;
+}
+
+/** dialog */
+.dialog-primary .dialog-header {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+/** label */
+.label-primary {
+  background-color: #337ab7;
+}
+
+/** list-group */
+a.list-group-item:hover, .list-group-item a:hover {
+  color: #337ab7;
+}
+
+.list-group .active {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.list-group .active .list-group-item-text {
+  color: #eff5fa;
+}
+
+/** msgbox */
+.msgbox {
+  border-top-color: #337ab7;
+}
+
+/** nav */
+.nav-pills .nav-link:hover {
+  color: #337ab7;
+}
+
+.nav-pills .active .nav-link, .nav-pills .active .nav-link:hover,
+.nav-pills a.active, .nav-pills a.active:hover {
+  background-color: #337ab7;
+}
+
+.nav-pivot .nav-link:hover {
+  color: #337ab7;
+  border-bottom-color: #337ab7;
+}
+
+.nav-pivot .active .nav-link, .nav-pivot .active .nav-link:hover,
+.nav-pivot a.active, .nav-pivot a.active:hover {
+  color: #285f8f;
+  border-bottom-color: #285f8f;
+}
+
+.nav-tabs-left .nav-link:hover,
+.nav-tabs-right .nav-link:hover,
+.nav-tabs .nav-link:hover {
+  color: #337ab7;
+}
+
+/** msgbox */
+.msgbox {
+  border-top-color: #337ab7;
+}
+
+/** pagination */
+.pagination li:hover, .pagination li:hover a {
+  color: #22527b;
+}
+
+.pagination li.active {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+/** panel */
+.panel-primary {
+  border-color: #337ab7;
+}
+
+.panel-primary .panel-heading {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+/** progress-bar */
+.progress-bar {
+  background-color: #337ab7;
+}
+
+/** win */
+.win {
+  border: #6692b7;
+}
+
+.win-header {
+  background: #6692b7;
+  border-bottom-color: #6692b7;
+}
+
+.win-btn-group .icon:hover {
+  background: #2d6da3;
+}
+
+.win-active {
+  border-color: #337ab7;
+}
+.win-active .win-header {
+  background: #337ab7;
+  border-color: #337ab7;
+}
+
+.win-disabled {
+  border-color: #99bddb;
+}
+
+/** link */
+.link-primary {
+  color: #337ab7;
+}
+
+.link-primary:hover {
+  color: #22527b;
+}
+
+.link-secondary:hover {
+  color: #337ab7;
+}
+
+/** list */
+.list .list-item.active {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.list a:hover {
+  color: #337ab7;
+}
+
+/** page-header */
+.page-header-dot {
+  border-left-color: #337ab7;
+}
+
+/** table */
+.table caption {
+  background-color: #337ab7;
+}
+
+.table-primary {
+  background-color: #f0f1f9;
+}
+
+.table-hover tr:hover.table-primary, .table-hover tr:hover .table-primary {
+  background-color: #e1e3f3;
+}
+
+.table-hover .table-primary:hover {
+  background-color: #e1e3f3;
+}
+
+.table-odd-primary {
+  background-color: #eceef8;
+}
+
+.table-odd-primary-hover {
+  background-color: #dee0f2;
+}
+
+/** btn-toggle */
+.btn-toggle-checked {
+  border-color: #2d6da3;
+}
+.btn-toggle-checked:hover {
+  border-color: #204d73;
+}
+
+html body .btn-toggle-checked:focus-within {
+  border-color: #204d73;
+}
+
+/**color*/
+.text-primary {
+  color: #337ab7 !important;
+}
+
+a.text-primary, .text-primary a {
+  color: #285f8f !important;
+}
+
+a.text-primary:hover, .text-primary a:hover {
+  color: #22527b !important;
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: #337ab7 !important;
+}
+
+a.bg-primary:hover {
+  color: #fff;
+  background-color: #285f8f !important;
+}
+
+.border-primary {
+  border-color: #337ab7 !important;
+}

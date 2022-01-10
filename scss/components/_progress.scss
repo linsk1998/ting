@@ -19,10 +19,10 @@
 }
 
 
-.progress-bar-success{ background-color:$success;}
-.progress-bar-info{ background-color:$info;}
-.progress-bar-warning{ background-color:$warning;}
-.progress-bar-danger{ background-color:$danger;}
+.progress-bar-success{ background-color:$success !important;}
+.progress-bar-info{ background-color:$info !important;}
+.progress-bar-warning{ background-color:$warning !important;}
+.progress-bar-danger{ background-color:$danger !important;}
 
 .progress-sm .progress-bar{ line-height:12px;height:12px; font-size:12px;}
 .progress-xs .progress-bar{ line-height:6px;height:6px; font-size:6px;}

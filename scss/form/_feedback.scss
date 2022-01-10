@@ -4,8 +4,8 @@
 
 .has-feedback{
 	position: relative; *zoom:1;
-	.form-control {
-		padding-right: $ctrl-height-base - $ctrl-border-width + 12px;
+	.form-control,.input {
+		padding-right: $ctrl-height-base * 0.5 + 8px + $ctrl-padding-base;
 	}
 	.radio-stack{
 		padding-right: $ctrl-height-base;
@@ -19,6 +19,9 @@
 	line-height: $ctrl-height-base;
 	text-align: center;
 	font-size:16px;
+}
+.input-control .form-control-feedback{
+	line-height: $ctrl-height-base - 2*$ctrl-border-width;
 }
 .form .form-label~.form-control-feedback,
 .form .control-label~.form-control-feedback{
@@ -34,7 +37,7 @@
 	.form-control-feedback{
 		color:$success;
 	}
-	.form-control{
+	.form-control,.input{
 		border-color:$success;
 	}
 }
@@ -45,7 +48,7 @@
 	.form-control-feedback{
 		color:$warning;
 	}
-	.form-control{
+	.form-control,.input{
 		border-color:$warning;
 	}
 }
@@ -56,7 +59,7 @@
 	.form-control-feedback{
 		color:$danger;
 	}
-	.form-control{
+	.form-control,.input{
 		border-color:$danger;
 	}
 }

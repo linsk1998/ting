@@ -63,6 +63,7 @@
 }
 .win-body {
 	height: 100%;
+	position: relative;
 	overflow: auto;
 }
 .win-maximized .win-body {
@@ -118,7 +119,7 @@
 	opacity: 0.5;
 	z-index: $level-dialog;
 }
-@media \0screen\, screen\9 {
+@media \0screen\,screen\9 {
 	.win-disabled .win-hit {
 		filter: Alpha(opacity=50);
 	}

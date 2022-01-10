@@ -8,6 +8,10 @@
   animation-iteration-count: infinite;
 }
 
+.animated.forwards {
+  animation-fill-mode: forwards;
+}
+
 .animated.faster {
   animation-duration: 0.2s;
 }
@@ -2506,11 +2510,6 @@ pre {
   white-space: -o-pre-wrap;
   white-space: pre-wrap;
   word-wrap: break-word;
-  overflow: auto;
-}
-
-.pre {
-  white-space: pre;
   overflow: auto;
 }
 
@@ -6930,10 +6929,10 @@ pre.code {
   line-height: 20px;
   border-top: 1px solid #D8DCF0;
 }
-.table > thead > tr:last-child > * {
+.table > thead {
   border-bottom: 2px solid #D8DCF0;
 }
-.table > tfoot > tr:first-child > * {
+.table > tfoot {
   border-top: 2px solid #D8DCF0;
 }
 .table > *:first-child > tr:first-child > * {
@@ -7537,6 +7536,7 @@ input.form-control, select.form-control {
 
 .form textarea.form-control, .form-horizontal textarea.form-control {
   width: 100% !important;
+  display: block;
 }
 
 .radio label, .checkbox label {
@@ -7829,8 +7829,8 @@ input.form-control, select.form-control {
   position: relative;
   *zoom: 1;
 }
-.has-feedback .form-control {
-  padding-right: 43px;
+.has-feedback .form-control, .has-feedback .input {
+  padding-right: 36px;
 }
 .has-feedback .radio-stack {
   padding-right: 32px;
@@ -7845,6 +7845,10 @@ input.form-control, select.form-control {
   line-height: 32px;
   text-align: center;
   font-size: 16px;
+}
+
+.input-control .form-control-feedback {
+  line-height: 30px;
 }
 
 .form .form-label ~ .form-control-feedback,
@@ -7863,7 +7867,7 @@ input.form-control, select.form-control {
 .has-success .form-control-feedback {
   color: #2B9735;
 }
-.has-success .form-control {
+.has-success .form-control, .has-success .input {
   border-color: #2B9735;
 }
 
@@ -7873,7 +7877,7 @@ input.form-control, select.form-control {
 .has-warning .form-control-feedback {
   color: #F37B1D;
 }
-.has-warning .form-control {
+.has-warning .form-control, .has-warning .input {
   border-color: #F37B1D;
 }
 
@@ -7883,7 +7887,7 @@ input.form-control, select.form-control {
 .has-error .form-control-feedback {
   color: #dc3545;
 }
-.has-error .form-control {
+.has-error .form-control, .has-error .input {
   border-color: #dc3545;
 }
 
@@ -7995,6 +7999,10 @@ input.input-sm, select.input-sm {
 
 html body .btn-toggle-checked:focus-within {
   border-color: #204d73;
+}
+
+.inverse, .dark {
+  color: #fff;
 }
 
 .disabled {
@@ -8265,12 +8273,14 @@ html body .btn-toggle-checked:focus-within {
   position: absolute;
   left: 50%;
   margin-left: -0.5em;
+  z-index: 1000;
 }
 
 .icon-middle {
   position: absolute;
   top: 50%;
   margin-top: -0.5em;
+  z-index: 1000;
 }
 
 .text-truncate, .line-1, .line-max-1 {
@@ -8317,11 +8327,48 @@ html body .btn-toggle-checked:focus-within {
   -webkit-box-orient: vertical;
 }
 
+.line-6 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  height: 120px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-7 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  height: 140px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-8 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+  height: 160px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-9 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 9;
+  overflow: hidden;
+  height: 180px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
 .line-max-2 {
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   overflow: hidden;
   max-height: 40px;
+  _height: 40px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
@@ -8331,6 +8378,7 @@ html body .btn-toggle-checked:focus-within {
   -webkit-line-clamp: 3;
   overflow: hidden;
   max-height: 60px;
+  _height: 60px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
@@ -8340,6 +8388,7 @@ html body .btn-toggle-checked:focus-within {
   -webkit-line-clamp: 4;
   overflow: hidden;
   max-height: 80px;
+  _height: 80px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
@@ -8349,8 +8398,94 @@ html body .btn-toggle-checked:focus-within {
   -webkit-line-clamp: 5;
   overflow: hidden;
   max-height: 100px;
+  _height: 100px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+}
+
+.line-max-6 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  max-height: 120px;
+  _height: 120px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-max-7 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  max-height: 140px;
+  _height: 140px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-max-8 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+  max-height: 160px;
+  _height: 160px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-max-9 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 9;
+  overflow: hidden;
+  max-height: 180px;
+  _height: 180px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-min-1 {
+  min-height: 20px;
+  _height: 20px;
+}
+
+.line-min-2 {
+  min-height: 40px;
+  _height: 40px;
+}
+
+.line-min-3 {
+  min-height: 60px;
+  _height: 60px;
+}
+
+.line-min-4 {
+  min-height: 80px;
+  _height: 80px;
+}
+
+.line-min-5 {
+  min-height: 100px;
+  _height: 100px;
+}
+
+.line-min-6 {
+  min-height: 120px;
+  _height: 120px;
+}
+
+.line-min-7 {
+  min-height: 140px;
+  _height: 140px;
+}
+
+.line-min-8 {
+  min-height: 160px;
+  _height: 160px;
+}
+
+.line-min-9 {
+  min-height: 180px;
+  _height: 180px;
 }
 
 .sr-only, .visually-hidden {
@@ -8431,6 +8566,17 @@ html body .btn-toggle-checked:focus-within {
   text-transform: uppercase;
 }
 
+.pre {
+  white-space: pre;
+}
+
+.pre-wrap {
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .align-top {
   vertical-align: top !important;
 }
@@ -8485,6 +8631,14 @@ html body .btn-toggle-checked:focus-within {
 
 .font-monospace {
   font-family: Monaco, Menlo, Consolas, "Courier New", "FontAwesome", monospace;
+}
+
+.font-size-0 {
+  font-size: 0;
+}
+
+.font-size-base {
+  font-size: 14px;
 }
 
 .flex {
@@ -8612,6 +8766,10 @@ html body .btn-toggle-checked:focus-within {
   -ms-flex: 1 1 auto;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
+}
+
+.position-relative {
+  position: relative !important;
 }
 
 .position-static {

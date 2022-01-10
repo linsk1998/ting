@@ -3,7 +3,7 @@
 .line-1,.line-max-1{
 	@extend .text-truncate;
 }
-@for $i from 2 through 5 {
+@for $i from 2 through 9 {
 	.line-#{$i} {
 		text-overflow: ellipsis;
 		-webkit-line-clamp: $i;
@@ -13,13 +13,20 @@
 		-webkit-box-orient: vertical;
 	}
 }
-@for $i from 2 through 5 {
+@for $i from 2 through 9 {
 	.line-max-#{$i} {
 		text-overflow: ellipsis;
 		-webkit-line-clamp: $i;
 		overflow: hidden;
 		max-height: $line-height-base * $i;
+		_height: $line-height-base * $i;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
+	}
+}
+@for $i from 1 through 9 {
+	.line-min-#{$i} {
+		min-height: $line-height-base * $i;
+		_height: $line-height-base * $i;
 	}
 }

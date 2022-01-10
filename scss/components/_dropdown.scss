@@ -38,12 +38,9 @@
 
 .dropdown-panel {
 	position: absolute;
-	top: 0;
-	left: 0;
 	overflow: auto;
 	z-index: $level-popup;
 	border: 1px solid #ccc;
-	margin-top: 2px;
 	text-align: left;
 	font-size: 14px;
 	background-color: #fff;

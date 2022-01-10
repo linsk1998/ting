@@ -1,0 +1,250 @@
+/** reset */
+a {
+  color: #C5020D;
+}
+
+a:hover {
+  color: #790108;
+}
+
+/** button */
+.btn-primary {
+  background-color: #C5020D;
+  border-color: #ac020b;
+}
+.btn-primary:hover {
+  background-color: #93010a;
+  border-color: #6f0107;
+}
+
+.btn-outline, .btn-outline-primary {
+  color: #C5020D;
+  border-color: #C5020D;
+}
+.btn-outline:hover, .btn-outline-primary:hover {
+  background-color: #C5020D;
+  border-color: #C5020D;
+}
+html body .btn-outline:focus, html body .btn-outline-primary:focus {
+  border-color: #790108;
+}
+
+/** badge */
+.panel-primary .panel-heading .badge {
+  color: #C5020D;
+}
+
+.btn-primary:hover .badge {
+  color: #93010a;
+}
+
+/** callout */
+.callout-primary {
+  border-left-color: #C5020D;
+}
+
+/** dialog */
+.dialog-primary .dialog-header {
+  background-color: #C5020D;
+  border-color: #C5020D;
+}
+
+/** label */
+.label-primary {
+  background-color: #C5020D;
+}
+
+/** list-group */
+a.list-group-item:hover, .list-group-item a:hover {
+  color: #C5020D;
+}
+
+.list-group .active {
+  background-color: #C5020D;
+  border-color: #C5020D;
+}
+
+.list-group .active .list-group-item-text {
+  color: #fec8cb;
+}
+
+/** msgbox */
+.msgbox {
+  border-top-color: #C5020D;
+}
+
+/** nav */
+.nav-pills .nav-link:hover {
+  color: #C5020D;
+}
+
+.nav-pills .active .nav-link, .nav-pills .active .nav-link:hover,
+.nav-pills a.active, .nav-pills a.active:hover {
+  background-color: #C5020D;
+}
+
+.nav-pivot .nav-link:hover {
+  color: #C5020D;
+  border-bottom-color: #C5020D;
+}
+
+.nav-pivot .active .nav-link, .nav-pivot .active .nav-link:hover,
+.nav-pivot a.active, .nav-pivot a.active:hover {
+  color: #93010a;
+  border-bottom-color: #93010a;
+}
+
+.nav-tabs-left .nav-link:hover,
+.nav-tabs-right .nav-link:hover,
+.nav-tabs .nav-link:hover {
+  color: #C5020D;
+}
+
+/** msgbox */
+.msgbox {
+  border-top-color: #C5020D;
+}
+
+/** pagination */
+.pagination li:hover, .pagination li:hover a {
+  color: #790108;
+}
+
+.pagination li.active {
+  background-color: #C5020D;
+  border-color: #C5020D;
+}
+
+/** panel */
+.panel-primary {
+  border-color: #C5020D;
+}
+
+.panel-primary .panel-heading {
+  color: #fff;
+  background-color: #C5020D;
+  border-color: #C5020D;
+}
+
+/** progress-bar */
+.progress-bar {
+  background-color: #C5020D;
+}
+
+/** win */
+.win {
+  border: #de1c27;
+}
+
+.win-header {
+  background: #de1c27;
+  border-bottom-color: #de1c27;
+}
+
+.win-btn-group .icon:hover {
+  background: #ac020b;
+}
+
+.win-active {
+  border-color: #C5020D;
+}
+.win-active .win-header {
+  background: #C5020D;
+  border-color: #C5020D;
+}
+
+.win-disabled {
+  border-color: #e28186;
+}
+
+/** link */
+.link-primary {
+  color: #C5020D;
+}
+
+.link-primary:hover {
+  color: #790108;
+}
+
+.link-secondary:hover {
+  color: #C5020D;
+}
+
+/** list */
+.list .list-item.active {
+  background-color: #C5020D;
+  border-color: #C5020D;
+}
+
+.list a:hover {
+  color: #C5020D;
+}
+
+/** page-header */
+.page-header-dot {
+  border-left-color: #C5020D;
+}
+
+/** table */
+.table caption {
+  background-color: #C5020D;
+}
+
+.table-primary {
+  background-color: #f0f1f9;
+}
+
+.table-hover tr:hover.table-primary, .table-hover tr:hover .table-primary {
+  background-color: #e1e3f3;
+}
+
+.table-hover .table-primary:hover {
+  background-color: #e1e3f3;
+}
+
+.table-odd-primary {
+  background-color: #eceef8;
+}
+
+.table-odd-primary-hover {
+  background-color: #dee0f2;
+}
+
+/** btn-toggle */
+.btn-toggle-checked {
+  border-color: #ac020b;
+}
+.btn-toggle-checked:hover {
+  border-color: #6f0107;
+}
+
+html body .btn-toggle-checked:focus-within {
+  border-color: #6f0107;
+}
+
+/**color*/
+.text-primary {
+  color: #C5020D !important;
+}
+
+a.text-primary, .text-primary a {
+  color: #93010a !important;
+}
+
+a.text-primary:hover, .text-primary a:hover {
+  color: #790108 !important;
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: #C5020D !important;
+}
+
+a.bg-primary:hover {
+  color: #fff;
+  background-color: #93010a !important;
+}
+
+.border-primary {
+  border-color: #C5020D !important;
+}

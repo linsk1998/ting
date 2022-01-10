@@ -1,12 +1,16 @@
 {
 	"name": "@ting-ui/css",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"description": "common style lib",
 	"main": "dist/index.js",
 	"scripts": {
 		"build:all": "sass scss/all.scss all.css --no-source-map",
 		"build:no-component": "sass scss/no-component.scss no-component.css --no-source-map",
-		"build:docs": "sass scss/all.scss docs/ting/ting.css --no-source-map"
+		"build:docs": "sass scss/all.scss docs/ting/ting.css --no-source-map",
+		"build:theme:default:blue": "sass theme/default/blue.scss docs/theme/default/blue.css --no-source-map",
+		"build:theme:default:red": "sass theme/default/red.scss docs/theme/default/red.css --no-source-map",
+		"build:theme:default:teal": "sass theme/default/teal.scss docs/theme/default/teal.css --no-source-map",
+		"build:theme:default:indigo": "sass theme/default/indigo.scss docs/theme/default/indigo.css --no-source-map"
 	},
 	"author": "linsk",
 	"license": "MIT",

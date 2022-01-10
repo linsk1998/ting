@@ -7,6 +7,10 @@
 	animation-iteration-count: infinite;
 }
 
+.animated.forwards {
+	animation-fill-mode: forwards;
+}
+
 .animated.faster {
 	animation-duration:0.2s;
 }

@@ -1,0 +1,250 @@
+/** reset */
+a {
+  color: #009688;
+}
+
+a:hover {
+  color: #004a43;
+}
+
+/** button */
+.btn-primary {
+  background-color: #009688;
+  border-color: #007d71;
+}
+.btn-primary:hover {
+  background-color: #00635a;
+  border-color: #003f39;
+}
+
+.btn-outline, .btn-outline-primary {
+  color: #009688;
+  border-color: #009688;
+}
+.btn-outline:hover, .btn-outline-primary:hover {
+  background-color: #009688;
+  border-color: #009688;
+}
+html body .btn-outline:focus, html body .btn-outline-primary:focus {
+  border-color: #004a43;
+}
+
+/** badge */
+.panel-primary .panel-heading .badge {
+  color: #009688;
+}
+
+.btn-primary:hover .badge {
+  color: #00635a;
+}
+
+/** callout */
+.callout-primary {
+  border-left-color: #009688;
+}
+
+/** dialog */
+.dialog-primary .dialog-header {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/** label */
+.label-primary {
+  background-color: #009688;
+}
+
+/** list-group */
+a.list-group-item:hover, .list-group-item a:hover {
+  color: #009688;
+}
+
+.list-group .active {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+.list-group .active .list-group-item-text {
+  color: #96fff5;
+}
+
+/** msgbox */
+.msgbox {
+  border-top-color: #009688;
+}
+
+/** nav */
+.nav-pills .nav-link:hover {
+  color: #009688;
+}
+
+.nav-pills .active .nav-link, .nav-pills .active .nav-link:hover,
+.nav-pills a.active, .nav-pills a.active:hover {
+  background-color: #009688;
+}
+
+.nav-pivot .nav-link:hover {
+  color: #009688;
+  border-bottom-color: #009688;
+}
+
+.nav-pivot .active .nav-link, .nav-pivot .active .nav-link:hover,
+.nav-pivot a.active, .nav-pivot a.active:hover {
+  color: #00635a;
+  border-bottom-color: #00635a;
+}
+
+.nav-tabs-left .nav-link:hover,
+.nav-tabs-right .nav-link:hover,
+.nav-tabs .nav-link:hover {
+  color: #009688;
+}
+
+/** msgbox */
+.msgbox {
+  border-top-color: #009688;
+}
+
+/** pagination */
+.pagination li:hover, .pagination li:hover a {
+  color: #004a43;
+}
+
+.pagination li.active {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/** panel */
+.panel-primary {
+  border-color: #009688;
+}
+
+.panel-primary .panel-heading {
+  color: #fff;
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/** progress-bar */
+.progress-bar {
+  background-color: #009688;
+}
+
+/** win */
+.win {
+  border: #14b5a6;
+}
+
+.win-header {
+  background: #14b5a6;
+  border-bottom-color: #14b5a6;
+}
+
+.win-btn-group .icon:hover {
+  background: #007d71;
+}
+
+.win-active {
+  border-color: #009688;
+}
+.win-active .win-header {
+  background: #009688;
+  border-color: #009688;
+}
+
+.win-disabled {
+  border-color: #80cbc4;
+}
+
+/** link */
+.link-primary {
+  color: #009688;
+}
+
+.link-primary:hover {
+  color: #004a43;
+}
+
+.link-secondary:hover {
+  color: #009688;
+}
+
+/** list */
+.list .list-item.active {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+.list a:hover {
+  color: #009688;
+}
+
+/** page-header */
+.page-header-dot {
+  border-left-color: #009688;
+}
+
+/** table */
+.table caption {
+  background-color: #009688;
+}
+
+.table-primary {
+  background-color: #f0f1f9;
+}
+
+.table-hover tr:hover.table-primary, .table-hover tr:hover .table-primary {
+  background-color: #e1e3f3;
+}
+
+.table-hover .table-primary:hover {
+  background-color: #e1e3f3;
+}
+
+.table-odd-primary {
+  background-color: #eceef8;
+}
+
+.table-odd-primary-hover {
+  background-color: #dee0f2;
+}
+
+/** btn-toggle */
+.btn-toggle-checked {
+  border-color: #007d71;
+}
+.btn-toggle-checked:hover {
+  border-color: #003f39;
+}
+
+html body .btn-toggle-checked:focus-within {
+  border-color: #003f39;
+}
+
+/**color*/
+.text-primary {
+  color: #009688 !important;
+}
+
+a.text-primary, .text-primary a {
+  color: #00635a !important;
+}
+
+a.text-primary:hover, .text-primary a:hover {
+  color: #004a43 !important;
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: #009688 !important;
+}
+
+a.bg-primary:hover {
+  color: #fff;
+  background-color: #00635a !important;
+}
+
+.border-primary {
+  border-color: #009688 !important;
+}

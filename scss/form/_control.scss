@@ -7,7 +7,7 @@
 	@include rounded(0);
 	*margin-top:-1px; *margin-bottom:-1px;
 
-	padding:($ctrl-height-base - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-base;
+	padding:($ctrl-height-base - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-base;
 	border: $ctrl-border-width solid #ccc;
 }
 .form-control[disabled] {
@@ -31,7 +31,7 @@ input.form-control,select.form-control{
 }
 
 //禁止textarea横向拖拽调整大小
-.form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important;}
+.form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important; display: block;}
 .radio label,.checkbox label{ font-weight:normal; margin-right:10px;}
 .radio input,.checkbox input{ vertical-align:middle; margin:2px 3px 4px; *margin:0;}
 .checkbox-inline,.radio-inline {

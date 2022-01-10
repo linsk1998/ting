@@ -1,0 +1,151 @@
+/** reset */
+a{ color:$theme-primary;}
+a:hover{ color:darken($theme-primary,15%);}
+/** button */
+.btn-primary{
+	background-color:$theme-primary;
+	border-color:darken($theme-primary, 5%);
+	&:hover{
+		background-color:darken($theme-primary,10%);
+		border-color:darken($theme-primary,17%);
+	}
+}
+.btn-outline,.btn-outline-primary{
+	color:$theme-primary;
+	border-color:$theme-primary;
+	&:hover{
+		background-color:$theme-primary;
+		border-color:$theme-primary
+	}
+	@at-root{
+		html body &:focus{
+			border-color:darken($theme-primary,15%);
+		}
+	}
+}
+/** badge */
+.panel-primary .panel-heading .badge{
+	color:$theme-primary;
+}
+.btn-primary:hover .badge{
+	color:darken($theme-primary,10%);
+}
+/** callout */
+.callout-primary {
+	border-left-color:$theme-primary;
+}
+/** dialog */
+.dialog-primary .dialog-header{ background-color:$theme-primary; border-color:$theme-primary;}
+/** label */
+.label-primary{ background-color:$theme-primary;}
+/** list-group */
+a.list-group-item:hover,.list-group-item a:hover{
+	color:$theme-primary;
+}
+.list-group .active{
+	background-color:$theme-primary;
+	border-color:$theme-primary;
+}
+.list-group .active .list-group-item-text{color:lighten($theme-primary, 50%);}
+/** msgbox */
+.msgbox{ border-top-color:$theme-primary;}
+/** nav */
+.nav-pills .nav-link:hover{ color:$theme-primary;}
+.nav-pills .active .nav-link,.nav-pills .active .nav-link:hover,
+.nav-pills a.active,.nav-pills a.active:hover{ background-color:$theme-primary;}
+
+.nav-pivot .nav-link:hover{ color:$theme-primary; border-bottom-color:$theme-primary;}
+.nav-pivot .active .nav-link,.nav-pivot .active .nav-link:hover,
+.nav-pivot a.active,.nav-pivot a.active:hover{ color:darken($theme-primary, 10%); border-bottom-color:darken($theme-primary, 10%);}
+
+.nav-tabs-left .nav-link:hover,
+.nav-tabs-right .nav-link:hover,
+.nav-tabs .nav-link:hover{ color:$theme-primary;}
+/** msgbox */
+.msgbox{ border-top-color:$theme-primary;}
+/** pagination */
+.pagination li:hover,.pagination li:hover a{
+	color:darken($theme-primary,15%);
+}
+.pagination li.active{
+	background-color:$theme-primary;
+	border-color:$theme-primary;
+}
+/** panel */
+.panel-primary{ border-color:$theme-primary;}
+.panel-primary .panel-heading{ color:#fff; background-color:$theme-primary; border-color:$theme-primary;}
+/** progress-bar */
+.progress-bar {
+	background-color: $theme-primary;
+}
+/** win */
+.win {
+	border:desaturate(lighten($theme-primary,10%),20%);
+}
+.win-header {
+	background: desaturate(lighten($theme-primary,10%),20%);
+	border-bottom-color:desaturate(lighten($theme-primary,10%),20%);
+}
+.win-btn-group{
+	.icon{
+		&:hover{
+			background: darken($theme-primary, 5%);
+		}
+	}
+}
+.win-active {
+	border-color:$theme-primary;
+	.win-header {
+		background:$theme-primary;
+		border-color:$theme-primary;
+	}
+}
+.win-disabled {
+	border-color:mix($theme-primary,#FFF);
+}
+/** link */
+.link-primary{ color:$theme-primary;}
+.link-primary:hover{ color:darken($theme-primary,15%);}
+
+.link-secondary:hover{ color:$theme-primary;}
+/** list */
+.list .list-item.active{
+	background-color:$theme-primary;
+	border-color:$theme-primary;
+}
+.list a:hover{ color:$theme-primary;}
+/** page-header */
+.page-header-dot{
+	border-left-color:$theme-primary;
+}
+/** table */
+.table caption {
+	background-color: $theme-primary;
+}
+.table-primary{ background-color:$primary-bg;}
+.table-hover tr:hover{
+	&.table-primary,.table-primary{ background-color:darken($primary-bg,4%);}
+}
+.table-hover{
+	.table-primary:hover{ background-color:darken($primary-bg,4%);}
+}
+.table-odd-primary{ background-color:darken($primary-bg,1%);}
+.table-odd-primary-hover{ background-color:darken($primary-bg,5%);}
+/** btn-toggle */
+.btn-toggle-checked{
+	border-color:darken($theme-primary, 5%);
+	&:hover{
+		border-color:darken($theme-primary,17%);
+	}
+}
+html body .btn-toggle-checked:focus-within{
+	border-color:darken($theme-primary,17%);
+}
+
+/**color*/
+.text-primary{ color:$theme-primary !important;}
+a.text-primary,.text-primary a{ color:darken($theme-primary,10%) !important;}
+a.text-primary:hover,.text-primary a:hover{ color:darken($theme-primary,15%) !important;}
+.bg-primary{ color:#fff; background-color:$theme-primary !important;}
+a.bg-primary:hover{ color:#fff; background-color:darken($theme-primary,10%) !important;}
+.border-primary{ border-color:$theme-primary !important;}

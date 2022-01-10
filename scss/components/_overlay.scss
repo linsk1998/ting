@@ -10,7 +10,7 @@
 	overflow: auto;
 }
 
-@media \0screen\, screen\9 {
+@media \0screen\,screen\9 {
 	.overlay {
 		filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#66000000, endcolorstr=#66000000);
 	}
@@ -26,4 +26,42 @@
 	left: 0;
 	top: 0;
 	opacity: .01;
+}
+
+
+@-moz-keyframes overlayIn{
+	0%{ background: rgba(0, 0, 0, 0);}
+	100%{ background: rgba(0, 0, 0, 0.4);}
+}
+@-webkit-keyframes overlayIn{
+	0%{ background: rgba(0, 0, 0, 0);}
+	100%{ background: rgba(0, 0, 0, 0.4);}
+}
+@keyframes overlayIn{
+	0%{ background: rgba(0, 0, 0, 0);}
+	100%{ background: rgba(0, 0, 0, 0.4);}
+}
+.overlayIn{
+	-moz-animation-name:overlayIn;
+	-webkit-animation-name:overlayIn;
+	animation-name:overlayIn;
+}
+
+
+@-moz-keyframes overlayOut{
+	0%{ background: rgba(0, 0, 0, 0.4);}
+	100%{ background: rgba(0, 0, 0, 0);}
+}
+@-webkit-keyframes overlayOut{
+	0%{ background: rgba(0, 0, 0, 0.4);}
+	100%{ background: rgba(0, 0, 0, 0);}
+}
+@keyframes overlayOut{
+	0%{ background: rgba(0, 0, 0, 0.4);}
+	100%{ background: rgba(0, 0, 0, 0);}
+}
+.overlayOut{
+	-moz-animation-name:overlayOut;
+	-webkit-animation-name:overlayOut;
+	animation-name:overlayOut;
 }

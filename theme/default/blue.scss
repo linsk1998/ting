@@ -1,0 +1,10 @@
+
+$theme-primary:#2196F3;
+$theme-primary-dark:darken($theme-primary, 12%);
+$theme-primary-light:ligthen($theme-primary, 40%);
+
+$primary-text:$theme-primary-dark;
+$primary-bg:#f0f1f9;
+$primary-border:darken(adjust-hue($primary-bg, -10), 7%);
+
+@import "../default.scss";

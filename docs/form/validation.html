@@ -76,182 +76,6 @@
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
 			<h1 class="page-header">表单验证</h1>
-			<form class="form">
-				<div class="form-group">
-					<label class="control-label" for="email">普通文本</label>
-					<input type="email" class="form-control" name="email" placeholder="Enter email">
-				</div>
-				<div class="form-group">
-					<label class="control-label" for="password">密码</label>
-					<input type="password" class="form-control" name="password" placeholder="Password">
-				</div>
-				<div class="form-group">
-					<label class="control-label" for="attachment">上传</label>
-					<input type="file" name="attachment">
-					<p class="help-block">Example block-level help text here.</p>
-				</div>
-				<div class="form-group">
-					<label class="control-label">多选</label>
-					<label class="checkbox-inline"><input type="checkbox">Check me out</label>
-					<label class="checkbox-inline"><input type="checkbox">同时可以选我</label>
-					<label class="checkbox-inline"><input type="checkbox">还可以选我</label>
-				</div>
-				<div class="form-group">
-					<label class="control-label">单选</label>
-					<label class="radio-stack"><input type="radio" name="radio">Check me out</label>
-					<label class="radio-stack"><input type="radio" name="radio">同时可以选我</label>
-					<label class="radio-stack"><input type="radio" name="radio">还可以选我</label>
-				</div>
-				<div class="form-group">
-					<label class="control-label">文本域</label>
-					<textarea class="form-control" rows="3"></textarea>
-				</div>
-				<div class="form-group">
-					<label class="control-label">下拉</label>
-					<select class="form-control">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
-			<h2 class="page-header">内联表单</h2>
-			<form class="form-inline"
-				><div class="form-group">
-					<label class="control-label" for="exampleInputName2">Name</label>
-					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-				</div
-				><div class="form-group">
-					<label class="control-label" for="exampleInputEmail2">Email</label>
-					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-				</div
-				><div class="form-group">
-					<label class="checkbox-inline">
-						<input type="checkbox"> Remember me
-					</label>
-				</div
-				><button type="submit" class="btn btn-primary">Send invitation</button
-			></form>
-			<h2 class="page-header">水平排列的表单</h2>
-			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="control-label">Email</label>
-					<input type="email" class="form-control" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<label class="control-label">Password</label>
-					<input type="password" class="form-control" placeholder="Password">
-				</div>
-				<div class="form-group">
-					<label class="checkbox-stack"><input type="checkbox"> Remember me</label>
-				</div>
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary">Sign in</button>
-				</div>
-			</form>
-			<h2 class="page-header">使用格栅系统</h2>
-			<form class="form">
-				<div class="form-group row">
-					<label class="control-label col-md-2">Email</label>
-					<div class="col-md-10">
-						<input type="email" class="form-control" placeholder="Email">
-					</div>
-				</div>
-				<div class="form-group row">
-					<label class="col-md-2 control-label">Password</label>
-					<div class="col-md-10">
-						<input type="password" class="form-control" placeholder="Password">
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-md-offset-2 col-md-10">
-						<label class="checkbox-stack"><input type="checkbox" disabled> Remember me</label>
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-md-offset-2 col-md-10">
-						<button type="submit" class="btn btn-primary">Sign in</button>
-					</div>
-				</div>
-			</form>
-			<h2 class="page-header">使用表格</h2>
-			<form class="form">
-				<table class="table table-bordered table-sm">
-					<colgroup>
-						<col width="10.33%"/><col width="20%"/>
-						<col width="10.33%"/><col width="20%"/>
-						<col width="10.33%"/><col width="20%"/>
-					</colgroup>
-					<tbody>
-						<tr>
-							<th class="primary">流水号</th>
-							<td><input type="email" class="form-control"/></td>
-							<th class="primary">订单号</th>
-							<td><input type="email" class="form-control"/></td>
-							<th class="primary">状态</th>
-							<td><input type="email" class="form-control"/></td>
-						</tr>
-						<tr>
-							<th class="primary">原因</th>
-							<td><input type="email" class="form-control"/></td>
-							<th class="primary">要求</th>
-							<td><input type="email" class="form-control"/></td>
-							<th class="primary">申请时间</th>
-							<td><input type="email" class="form-control"/></td>
-						</tr>
-						<tr>
-							<th class="primary">详细说明</th>
-							<td colspan="5">
-								<textarea class="form-control" rows="3"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<th class="primary">附件</th>
-							<td colspan="5">
-								<input type="file" name="attachment">
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</form>
-			<h2 class="page-header">控件尺寸</h2>
-			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="control-label">input-lg</label>
-					<input class="form-control input-lg" type="text">
-				</div>
-				<div class="form-group">
-					<label class="control-label">input-sm</label>
-					<input class="form-control input-sm" type="text">
-				</div>
-				<div class="form-group form-group-lg">
-					<label class="control-label">form-group-lg</label>
-					<input class="form-control" type="text">
-				</div>
-				<div class="form-group form-group-sm">
-					<label class="control-label">form-group-sm</label>
-					<input class="form-control" type="text">
-				</div>
-			</form>
-			<h2 class="page-header">静态控件</h2>
-			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="control-label">Text</label>
-					<p class="form-control-static">email@example.com</p>
-				</div>
-				<div class="form-group">
-					<label class="control-label">Disabled</label>
-					<input type="text" class="form-control" value="12356789" disabled>
-				</div>
-				<div class="form-group">
-					<label class="control-label">ReadOnly</label>
-					<input type="text" class="form-control" value="12356789" readonly>
-				</div>
-			</form>
-			<h2 class="page-header">校验状态</h2>
 			<form class="form-horizontal">
 				<div class="form-group has-success">
 					<label class="control-label">Success</label>
@@ -276,14 +100,44 @@
 				</div>
 				<div class="form-group has-warning has-feedback">
 					<label class="control-label">Warning</label>
-					<input type="text" class="form-control"/>
-					<i class="fa form-control-feedback">&#xf071;</i>
+					<div class="input-group">
+						<div class="input-group-left">
+							<div class="input-group-text">
+								￥
+							</div>
+						</div>
+						<div class="input-group-right">
+							<div class="input-group-text">
+								元
+							</div>
+						</div>
+						<!--控件需要放在最后-->
+						<div class="input-group-center">
+							<input type="text" class="form-control"/>
+							<i class="fa form-control-feedback">&#xf071;</i>
+						</div>
+					</div>
 					<p class="help-block">Example block-level help text here.</p>
 				</div>
 				<div class="form-group has-error has-feedback">
 					<label class="control-label">Error</label>
-					<input type="text" class="form-control"/>
-					<i class="fa form-control-feedback">&#xf00d;</i>
+					<div class="input">
+						<div class="input-prefix">
+							<span class="vertical-align-middle">￥</span>
+							<img src="../images/logo.png" width="16" height="16">
+							<span class="line-middle"></span>
+						</div>
+						<div class="input-suffix">
+							<span class="line-middle"></span>
+							<i class="icon fa">&#xf133;</i>
+							<span class="input-count">0/111</span>
+						</div>
+						<!--控件需要放在最后-->
+						<div class="input-control">
+							<input type="text"/>
+						</div>
+						<i class="fa form-control-feedback">&#xf00d;</i>
+					</div>
 					<p class="help-block">Example block-level help text here.</p>
 				</div>
 			</form>

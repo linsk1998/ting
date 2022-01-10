@@ -36,5 +36,5 @@
 
 .icon-inverse{color:#fff}
 
-.icon-center{ position:absolute; left:50%; margin-left:-.5em;}
-.icon-middle{ position:absolute; top:50%; margin-top:-.5em;}
+.icon-center{ position:absolute; left:50%; margin-left:-.5em; z-index:$level-dialog;}
+.icon-middle{ position:absolute; top:50%; margin-top:-.5em; z-index:$level-dialog; }
