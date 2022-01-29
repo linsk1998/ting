@@ -23,7 +23,7 @@ input.form-control,select.form-control{
 	z-index: $level-item-focus;
 	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
 }
-.form-control{
+.form-control,.input-control input{
 	&::-moz-placeholder{ color:#999; opacity:1;}
 	&::-webkit-input-placeholder{ color:#999;}
 	&:-ms-input-placeholder{ color:#999;}
@@ -49,5 +49,5 @@ input.form-control,select.form-control{
 .checkbox-inline input,.radio-inline input,
 .checkbox-stack input,.radio-stack input{
 	vertical-align: middle;
-	margin:2px 3px 4px; *margin:0;
+	margin:2px 3px 3px; *margin:0;
 }

@@ -3,6 +3,7 @@
 	@include btn;
 	@include rounded(0);
 	transition:border-color,background-color,color,box-shadow .4s;
+	@include btn-has-icon;
 }
 input.btn,button.btn{
 	@include btn-button;
@@ -10,19 +11,12 @@ input.btn,button.btn{
 a.btn,label.btn,div.btn,span.btn{
 	@include btn-anchor;
 }
-@media (-webkit-min-device-pixel-ratio:0){
-	input.btn,button.btn,a.btn,label.btn,div.btn,span.btn{
-		display:-webkit-inline-box; display:inline-flex;
-		-webkit-box-align:center; align-items:center;
-		-webkit-box-pack:center; justify-content:center;
-	}
-}
 .btn{ @include btn-md;}
 .btn-lg{ @include btn-lg;}
 .btn-sm{ @include btn-sm;}
 .btn-xs{ @include btn-xs;}
 .btn-round{
-	border-radius: 999px;
+	@include btn-round;
 }
 
 .btn-default{ @include btn-default;}

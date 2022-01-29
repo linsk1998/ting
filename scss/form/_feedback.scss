@@ -4,7 +4,7 @@
 
 .has-feedback{
 	position: relative; *zoom:1;
-	.form-control,.input {
+	.form-control,.input-control input {
 		padding-right: $ctrl-height-base * 0.5 + 8px + $ctrl-padding-base;
 	}
 	.radio-stack{

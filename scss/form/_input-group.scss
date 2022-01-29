@@ -41,7 +41,11 @@
 	background-color:#eee;
 	border:1px solid #ccc;
 }
-
+.input-group-text{
+	.checkbox-inline,.radio-inline{
+		vertical-align: top;
+	}
+}
 
 .input{
 	padding: 0 12px;

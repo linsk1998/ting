@@ -18,7 +18,15 @@
 		z-index: $level-item-focus;
 	}
 }
-
+@mixin btn-has-icon {
+	@media (-webkit-min-device-pixel-ratio:0){
+		input#{&},button#{&},a#{&},label#{&},div#{&},span#{&}{
+			display:-webkit-inline-box; display:inline-flex;
+			-webkit-box-align:center; align-items:center;
+			-webkit-box-pack:center; justify-content:center;
+		}
+	}
+}
 @mixin btn-button{
 	margin:0;
 	outline:none;
@@ -60,6 +68,9 @@
 @mixin btn-xs{
 	font-size: $ctrl-fontsize-xsmall;
 	@include btn-size($ctrl-height-xsmall,$btn-padding-xsmall);
+}
+@mixin btn-round {
+	border-radius: 999px;
 }
 @mixin btn-default{
 	color:#333;

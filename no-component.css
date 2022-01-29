@@ -7567,7 +7567,7 @@ input.form-control, select.form-control {
 .checkbox-inline input, .radio-inline input,
 .checkbox-stack input, .radio-stack input {
   vertical-align: middle;
-  margin: 2px 3px 4px;
+  margin: 2px 3px 2px;
   *margin: 0;
 }
 
@@ -7636,6 +7636,10 @@ input.form-control, select.form-control {
   color: #555;
   background-color: #eee;
   border: 1px solid #ccc;
+}
+
+.input-group-text .checkbox-inline, .input-group-text .radio-inline {
+  vertical-align: top;
 }
 
 .input {
