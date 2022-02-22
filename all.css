@@ -6929,6 +6929,7 @@ pre.code {
   padding: 8px;
   line-height: 20px;
   border-top: 1px solid #D8DCF0;
+  background-clip: padding-box;
 }
 .table > thead {
   border-bottom: 2px solid #D8DCF0;
@@ -6957,26 +6958,32 @@ pre.code {
 
 .table-active {
   background-color: #f5f5f5;
+  background-clip: padding-box;
 }
 
 .table-primary {
   background-color: #f0f1f9;
+  background-clip: padding-box;
 }
 
-.table-success {
+html body .table-success {
   background-color: #dff0d8;
+  background-clip: padding-box;
 }
 
-.table-info {
+html body .table-info {
   background-color: #d9edf7;
+  background-clip: padding-box;
 }
 
-.table-warning {
+html body .table-warning {
   background-color: #fbf5d5;
+  background-clip: padding-box;
 }
 
-.table-danger {
+html body .table-danger {
   background-color: #f2dede;
+  background-clip: padding-box;
 }
 
 .table-hover tr:hover {
@@ -7022,71 +7029,89 @@ pre.code {
 
 .table-odd, .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #fcfcfc;
+  background-clip: padding-box;
 }
 
 .table-odd-hover, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover,
 .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover {
   background-color: #f2f2f2;
+  background-clip: padding-box;
 }
 
 .table-odd-active, .table-striped > tbody > tr:nth-of-type(odd) .table-active, .table-striped > tbody > tr:nth-of-type(odd).table-active {
   background-color: #f2f2f2;
+  background-clip: padding-box;
 }
 
 .table-odd-primary, .table-striped > tbody > tr:nth-of-type(odd) .table-primary, .table-striped > tbody > tr:nth-of-type(odd).table-primary {
   background-color: #eceef8;
+  background-clip: padding-box;
 }
 
-.table-odd-success, .table-striped > tbody > tr:nth-of-type(odd) .table-success, .table-striped > tbody > tr:nth-of-type(odd).table-success {
+html body .table-odd-success, html body .table-striped > tbody > tr:nth-of-type(odd) .table-success, .table-striped > tbody > tr:nth-of-type(odd) html body .table-success, html body .table-striped > tbody > tr:nth-of-type(odd).table-success {
   background-color: #dcefd4;
+  background-clip: padding-box;
 }
 
-.table-odd-info, .table-striped > tbody > tr:nth-of-type(odd) .table-info, .table-striped > tbody > tr:nth-of-type(odd).table-info {
+html body .table-odd-info, html body .table-striped > tbody > tr:nth-of-type(odd) .table-info, .table-striped > tbody > tr:nth-of-type(odd) html body .table-info, html body .table-striped > tbody > tr:nth-of-type(odd).table-info {
   background-color: #d5ebf6;
+  background-clip: padding-box;
 }
 
-.table-odd-warning, .table-striped > tbody > tr:nth-of-type(odd) .table-warning, .table-striped > tbody > tr:nth-of-type(odd).table-warning {
+html body .table-odd-warning, html body .table-striped > tbody > tr:nth-of-type(odd) .table-warning, .table-striped > tbody > tr:nth-of-type(odd) html body .table-warning, html body .table-striped > tbody > tr:nth-of-type(odd).table-warning {
   background-color: #faf3d1;
+  background-clip: padding-box;
 }
 
-.table-odd-danger, .table-striped > tbody > tr:nth-of-type(odd) .table-danger, .table-striped > tbody > tr:nth-of-type(odd).table-danger {
+html body .table-odd-danger, html body .table-striped > tbody > tr:nth-of-type(odd) .table-danger, .table-striped > tbody > tr:nth-of-type(odd) html body .table-danger, html body .table-striped > tbody > tr:nth-of-type(odd).table-danger {
   background-color: #f1dada;
+  background-clip: padding-box;
 }
 
 .table-odd-active-hover, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-active, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-active,
 .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-active,
 .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-active {
   background-color: #e8e8e8;
+  background-clip: padding-box;
 }
 
 .table-odd-primary-hover, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-primary, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-primary,
 .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-primary,
 .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-primary {
   background-color: #dee0f2;
+  background-clip: padding-box;
 }
 
-.table-odd-success-hover, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-success, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-success,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-success,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-success {
+html body .table-odd-success-hover, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-success, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover html body .table-success, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-success,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-success,
+.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover html body .table-success,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-success {
   background-color: #d0e9c6;
+  background-clip: padding-box;
 }
 
-.table-odd-info-hover, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-info, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-info,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-info,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-info {
+html body .table-odd-info-hover, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-info, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover html body .table-info, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-info,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-info,
+.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover html body .table-info,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-info {
   background-color: #c4e3f3;
+  background-clip: padding-box;
 }
 
-.table-odd-warning-hover, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-warning, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-warning,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-warning,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-warning {
+html body .table-odd-warning-hover, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-warning, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover html body .table-warning, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-warning,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-warning,
+.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover html body .table-warning,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-warning {
   background-color: #f8efbe;
+  background-clip: padding-box;
 }
 
-.table-odd-danger-hover, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-danger, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-danger,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-danger,
-.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-danger {
+html body .table-odd-danger-hover, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover .table-danger, .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover html body .table-danger, html body .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover.table-danger,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover .table-danger,
+.table-striped > tbody.table-hover > tr:nth-of-type(odd):hover html body .table-danger,
+html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-danger {
   background-color: #ebcccc;
+  background-clip: padding-box;
 }
 
 .table-responsive {
@@ -7533,6 +7558,10 @@ input.form-control, select.form-control {
 .form-control::-ms-expand, .input-control input::-ms-expand {
   border: 0;
   background-color: transparent;
+}
+
+.form-placeholder {
+  color: #999;
 }
 
 .form textarea.form-control, .form-horizontal textarea.form-control {
@@ -8136,65 +8165,65 @@ input.btn-xs, button.btn-xs {
   z-index: 300;
 }
 
-.btn-success {
+html body .btn-success {
   color: #fff;
   background-color: #2B9735;
   border-color: #25832e;
   z-index: 300;
 }
-.btn-success:hover {
+html body .btn-success:hover {
   color: #fff;
   background-color: #206f27;
   border-color: #18541d;
   z-index: 300;
 }
 
-.btn-info {
+html body .btn-info {
   color: #fff;
   background-color: #1890ff;
   border-color: #0084fe;
   z-index: 300;
 }
-.btn-info:hover {
+html body .btn-info:hover {
   color: #fff;
   background-color: #0076e4;
   border-color: #0064c0;
   z-index: 300;
 }
 
-.btn-warning {
+html body .btn-warning {
   color: #fff;
   background-color: #F37B1D;
   border-color: #ea6e0c;
   z-index: 300;
 }
-.btn-warning:hover {
+html body .btn-warning:hover {
   color: #fff;
   background-color: #d2620b;
   border-color: #b05309;
   z-index: 300;
 }
 
-.btn-danger {
+html body .btn-danger {
   color: #fff;
   background-color: #dc3545;
   border-color: #d32535;
   z-index: 300;
 }
-.btn-danger:hover {
+html body .btn-danger:hover {
   color: #fff;
   background-color: #bd2130;
   border-color: #9f1c28;
   z-index: 300;
 }
 
-.btn-dark {
+html body .btn-dark {
   color: #fff;
   background-color: #444;
   border-color: #373737;
   z-index: 300;
 }
-.btn-dark:hover {
+html body .btn-dark:hover {
   color: #fff;
   background-color: #2b2b2b;
   border-color: #191919;
@@ -8216,78 +8245,78 @@ html body .btn-outline:focus, html body .btn-outline-primary:focus {
   border-color: #22527b;
 }
 
-.btn-outline-success {
+html body .btn-outline-success {
   color: #2B9735;
   background: none;
   border-color: #2B9735;
 }
-.btn-outline-success:hover {
+html body .btn-outline-success:hover {
   color: #fff;
   background-color: #2B9735;
   border-color: #2B9735;
   z-index: 300;
 }
-html body .btn-outline-success:focus {
+html body html body .btn-outline-success:focus {
   border-color: #1a5b20;
 }
 
-.btn-outline-info {
+html body .btn-outline-info {
   color: #1890ff;
   background: none;
   border-color: #1890ff;
 }
-.btn-outline-info:hover {
+html body .btn-outline-info:hover {
   color: #fff;
   background-color: #1890ff;
   border-color: #1890ff;
   z-index: 300;
 }
-html body .btn-outline-info:focus {
+html body html body .btn-outline-info:focus {
   border-color: #0069cb;
 }
 
-.btn-outline-warning {
+html body .btn-outline-warning {
   color: #F37B1D;
   background: none;
   border-color: #F37B1D;
 }
-.btn-outline-warning:hover {
+html body .btn-outline-warning:hover {
   color: #fff;
   background-color: #F37B1D;
   border-color: #F37B1D;
   z-index: 300;
 }
-html body .btn-outline-warning:focus {
+html body html body .btn-outline-warning:focus {
   border-color: #ba570a;
 }
 
-.btn-outline-danger {
+html body .btn-outline-danger {
   color: #dc3545;
   background: none;
   border-color: #dc3545;
 }
-.btn-outline-danger:hover {
+html body .btn-outline-danger:hover {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
   z-index: 300;
 }
-html body .btn-outline-danger:focus {
+html body html body .btn-outline-danger:focus {
   border-color: #a71d2a;
 }
 
-.btn-outline-dark {
+html body .btn-outline-dark {
   color: #444;
   background: none;
   border-color: #444;
 }
-.btn-outline-dark:hover {
+html body .btn-outline-dark:hover {
   color: #fff;
   background-color: #444;
   border-color: #444;
   z-index: 300;
 }
-html body .btn-outline-dark:focus {
+html body html body .btn-outline-dark:focus {
   border-color: #1e1e1e;
 }
 
@@ -8947,6 +8976,7 @@ html body .btn-disabled .caret {
 
 .pagination li.disabled {
   border: 0 none;
+  padding: 1px;
 }
 
 .pagination li.disabled a {
@@ -8961,11 +8991,11 @@ html body .btn-disabled .caret {
   margin-right: -5px;
 }
 
-.pagination-lg li {
+.pagination-lg li a, .pagination-lg li span {
   padding: 12px 18.5px;
 }
 
-.pagination-sm li {
+.pagination-sm li a, .pagination-sm li span {
   padding: 3px 9.5px;
 }
 
@@ -9051,35 +9081,35 @@ html body .btn-disabled .caret {
   background-color: #285f8f;
 }
 
-.label-success {
+html body .label-success {
   background-color: #2B9735;
 }
 
-.label-success[href]:hover, .label-success[href]:focus {
+html body .label-success[href]:hover, .label-success[href]:focus {
   background-color: #206f27;
 }
 
-.label-info {
+html body .label-info {
   background-color: #1890ff;
 }
 
-.label-info[href]:hover, .label-info[href]:focus {
+html body .label-info[href]:hover, .label-info[href]:focus {
   background-color: #0076e4;
 }
 
-.label-warning {
+html body .label-warning {
   background-color: #F37B1D;
 }
 
-.label-warning[href]:hover, .label-warning[href]:focus {
+html body .label-warning[href]:hover, .label-warning[href]:focus {
   background-color: #d2620b;
 }
 
-.label-danger {
+html body .label-danger {
   background-color: #dc3545;
 }
 
-.label-danger[href]:hover, .label-danger[href]:focus {
+html body .label-danger[href]:hover, .label-danger[href]:focus {
   background-color: #bd2130;
 }
 
@@ -9566,41 +9596,41 @@ li:hover > .select-list-tools {
   border-color: #337ab7;
 }
 
-.panel-success {
+html body .panel-success {
   border-color: #d0e6be;
 }
 
-.panel-success .panel-heading {
+html body .panel-success .panel-heading {
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #d0e6be;
 }
 
-.panel-info {
+html body .panel-info {
   border-color: #b3e5ef;
 }
 
-.panel-info .panel-heading {
+html body .panel-info .panel-heading {
   color: #31708f;
   background-color: #d9edf7;
   border-color: #b3e5ef;
 }
 
-.panel-warning {
+html body .panel-warning {
   border-color: #f4d699;
 }
 
-.panel-warning .panel-heading {
+html body .panel-warning .panel-heading {
   color: #8a6d3b;
   background-color: #fbf5d5;
   border-color: #f4d699;
 }
 
-.panel-danger {
+html body .panel-danger {
   border-color: #e8c4ca;
 }
 
-.panel-danger .panel-heading {
+html body .panel-danger .panel-heading {
   color: #a94442;
   background-color: #f2dede;
   border-color: #e8c4ca;
@@ -9664,19 +9694,19 @@ li:hover > .select-list-tools {
   transition: width 0.6s ease;
 }
 
-.progress-bar-success {
+html body .progress-bar-success {
   background-color: #2B9735 !important;
 }
 
-.progress-bar-info {
+html body .progress-bar-info {
   background-color: #1890ff !important;
 }
 
-.progress-bar-warning {
+html body .progress-bar-warning {
   background-color: #F37B1D !important;
 }
 
-.progress-bar-danger {
+html body .progress-bar-danger {
   background-color: #dc3545 !important;
 }
 
@@ -9709,19 +9739,19 @@ li:hover > .select-list-tools {
   border-left-color: #337ab7;
 }
 
-.callout-danger {
+html body .callout-danger {
   border-left-color: #2B9735;
 }
 
-.callout-warning {
+html body .callout-warning {
   border-left-color: #1890ff;
 }
 
-.callout-info {
+html body .callout-info {
   border-left-color: #F37B1D;
 }
 
-.callout-success {
+html body .callout-success {
   border-left-color: #dc3545;
 }
 
@@ -10260,31 +10290,31 @@ a.navbar-brand:hover {
   border-color: #337ab7;
 }
 
-.dialog-danger .dialog-header {
+html body .dialog-danger .dialog-header {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
 
-.dialog-warning .dialog-header {
+html body .dialog-warning .dialog-header {
   color: #fff;
   background-color: #F37B1D;
   border-color: #F37B1D;
 }
 
-.dialog-success .dialog-header {
+html body .dialog-success .dialog-header {
   color: #fff;
   background-color: #2B9735;
   border-color: #2B9735;
 }
 
-.dialog-info .dialog-header {
+html body .dialog-info .dialog-header {
   color: #fff;
   background-color: #1890ff;
   border-color: #1890ff;
 }
 
-.dialog-dark .dialog-header {
+html body .dialog-dark .dialog-header {
   color: #fff;
   background-color: #444;
   border-color: #ebccd1;
@@ -10472,19 +10502,19 @@ a.navbar-brand:hover {
   min-width: 60px;
 }
 
-.msgbox-info {
+html body .msgbox-info {
   border-top-color: #1890ff;
 }
 
-.msgbox-success {
+html body .msgbox-success {
   border-top-color: #2B9735;
 }
 
-.msgbox-warning {
+html body .msgbox-warning {
   border-top-color: #F37B1D;
 }
 
-.msgbox-danger {
+html body .msgbox-danger {
   border-top-color: #dc3545;
 }
 
@@ -11848,339 +11878,339 @@ a.bg-primary:hover {
   border-color: #337ab7 !important;
 }
 
-.text-success {
+html body .text-success {
   color: #2B9735 !important;
 }
 
-a.text-success, .text-success a {
+html body a.text-success, .text-success a {
   color: #206f27 !important;
 }
 
-a.text-success:hover, .text-success a:hover {
+html body a.text-success:hover, .text-success a:hover {
   color: #1a5b20 !important;
 }
 
-.bg-success {
+html body .bg-success {
   background-color: #2B9735 !important;
 }
 
-.bg-success, .bg-success a, .bg-success a:hover {
+html body .bg-success, .bg-success a, .bg-success a:hover {
   color: #fff !important;
 }
 
-.border-success {
+html body .border-success {
   border-color: #2B9735 !important;
 }
 
-.text-info {
+html body .text-info {
   color: #1890ff !important;
 }
 
-a.text-info, .text-info a {
+html body a.text-info, .text-info a {
   color: #0076e4 !important;
 }
 
-a.text-info:hover, .text-info a:hover {
+html body a.text-info:hover, .text-info a:hover {
   color: #0069cb !important;
 }
 
-.bg-info {
+html body .bg-info {
   background-color: #1890ff !important;
 }
 
-.bg-info, .bg-info a, .bg-info a:hover {
+html body .bg-info, .bg-info a, .bg-info a:hover {
   color: #fff !important;
 }
 
-.border-info {
+html body .border-info {
   border-color: #1890ff !important;
 }
 
-.text-warning {
+html body .text-warning {
   color: #F37B1D !important;
 }
 
-a.text-warning, .text-warning a {
+html body a.text-warning, .text-warning a {
   color: #d2620b !important;
 }
 
-a.text-warning:hover, .text-warning a:hover {
+html body a.text-warning:hover, .text-warning a:hover {
   color: #ba570a !important;
 }
 
-.bg-warning {
+html body .bg-warning {
   background-color: #F37B1D !important;
 }
 
-.bg-warning, .bg-warning a, .bg-warning a:hover {
+html body .bg-warning, .bg-warning a, .bg-warning a:hover {
   color: #fff !important;
 }
 
-.border-warning {
+html body .border-warning {
   border-color: #F37B1D !important;
 }
 
-.text-danger {
+html body .text-danger {
   color: #dc3545 !important;
 }
 
-a.text-danger, .text-danger a {
+html body a.text-danger, .text-danger a {
   color: #bd2130 !important;
 }
 
-a.text-danger:hover, .text-danger a:hover {
+html body a.text-danger:hover, .text-danger a:hover {
   color: #a71d2a !important;
 }
 
-.bg-danger {
+html body .bg-danger {
   background-color: #dc3545 !important;
 }
 
-.bg-danger, .bg-danger a, .bg-danger a:hover {
+html body .bg-danger, .bg-danger a, .bg-danger a:hover {
   color: #fff !important;
 }
 
-.border-danger {
+html body .border-danger {
   border-color: #dc3545 !important;
 }
 
-.text-teal {
+html body .text-teal {
   color: #009688 !important;
 }
 
-a.text-teal, .text-teal a {
+html body a.text-teal, .text-teal a {
   color: #00635a !important;
 }
 
-a.text-teal:hover, .text-teal a:hover {
+html body a.text-teal:hover, .text-teal a:hover {
   color: #004a43 !important;
 }
 
-.bg-teal {
+html body .bg-teal {
   background-color: #009688 !important;
 }
 
-.bg-teal, .bg-teal a, .bg-teal a:hover {
+html body .bg-teal, .bg-teal a, .bg-teal a:hover {
   color: #fff !important;
 }
 
-.border-teal {
+html body .border-teal {
   border-color: #009688 !important;
 }
 
-.text-blue {
+html body .text-blue {
   color: #2196F3 !important;
 }
 
-a.text-blue, .text-blue a {
+html body a.text-blue, .text-blue a {
   color: #0c7cd5 !important;
 }
 
-a.text-blue:hover, .text-blue a:hover {
+html body a.text-blue:hover, .text-blue a:hover {
   color: #0a6ebd !important;
 }
 
-.bg-blue {
+html body .bg-blue {
   background-color: #2196F3 !important;
 }
 
-.bg-blue, .bg-blue a, .bg-blue a:hover {
+html body .bg-blue, .bg-blue a, .bg-blue a:hover {
   color: #fff !important;
 }
 
-.border-blue {
+html body .border-blue {
   border-color: #2196F3 !important;
 }
 
-.text-indigo {
+html body .text-indigo {
   color: #337ab7 !important;
 }
 
-a.text-indigo, .text-indigo a {
+html body a.text-indigo, .text-indigo a {
   color: #285f8f !important;
 }
 
-a.text-indigo:hover, .text-indigo a:hover {
+html body a.text-indigo:hover, .text-indigo a:hover {
   color: #22527b !important;
 }
 
-.bg-indigo {
+html body .bg-indigo {
   background-color: #337ab7 !important;
 }
 
-.bg-indigo, .bg-indigo a, .bg-indigo a:hover {
+html body .bg-indigo, .bg-indigo a, .bg-indigo a:hover {
   color: #fff !important;
 }
 
-.border-indigo {
+html body .border-indigo {
   border-color: #337ab7 !important;
 }
 
-.text-purple {
+html body .text-purple {
   color: #6f5499 !important;
 }
 
-a.text-purple, .text-purple a {
+html body a.text-purple, .text-purple a {
   color: #574278 !important;
 }
 
-a.text-purple:hover, .text-purple a:hover {
+html body a.text-purple:hover, .text-purple a:hover {
   color: #4b3968 !important;
 }
 
-.bg-purple {
+html body .bg-purple {
   background-color: #6f5499 !important;
 }
 
-.bg-purple, .bg-purple a, .bg-purple a:hover {
+html body .bg-purple, .bg-purple a, .bg-purple a:hover {
   color: #fff !important;
 }
 
-.border-purple {
+html body .border-purple {
   border-color: #6f5499 !important;
 }
 
-.text-red {
+html body .text-red {
   color: #C5020D !important;
 }
 
-a.text-red, .text-red a {
+html body a.text-red, .text-red a {
   color: #93010a !important;
 }
 
-a.text-red:hover, .text-red a:hover {
+html body a.text-red:hover, .text-red a:hover {
   color: #790108 !important;
 }
 
-.bg-red {
+html body .bg-red {
   background-color: #C5020D !important;
 }
 
-.bg-red, .bg-red a, .bg-red a:hover {
+html body .bg-red, .bg-red a, .bg-red a:hover {
   color: #fff !important;
 }
 
-.border-red {
+html body .border-red {
   border-color: #C5020D !important;
 }
 
-.text-brown {
+html body .text-brown {
   color: #795548 !important;
 }
 
-a.text-brown, .text-brown a {
+html body a.text-brown, .text-brown a {
   color: #593f35 !important;
 }
 
-a.text-brown:hover, .text-brown a:hover {
+html body a.text-brown:hover, .text-brown a:hover {
   color: #49332b !important;
 }
 
-.bg-brown {
+html body .bg-brown {
   background-color: #795548 !important;
 }
 
-.bg-brown, .bg-brown a, .bg-brown a:hover {
+html body .bg-brown, .bg-brown a, .bg-brown a:hover {
   color: #fff !important;
 }
 
-.border-brown {
+html body .border-brown {
   border-color: #795548 !important;
 }
 
-.text-maroon {
+html body .text-maroon {
   color: #d81b60 !important;
 }
 
-a.text-maroon, .text-maroon a {
+html body a.text-maroon, .text-maroon a {
   color: #ab154c !important;
 }
 
-a.text-maroon:hover, .text-maroon a:hover {
+html body a.text-maroon:hover, .text-maroon a:hover {
   color: #941342 !important;
 }
 
-.bg-maroon {
+html body .bg-maroon {
   background-color: #d81b60 !important;
 }
 
-.bg-maroon, .bg-maroon a, .bg-maroon a:hover {
+html body .bg-maroon, .bg-maroon a, .bg-maroon a:hover {
   color: #fff !important;
 }
 
-.border-maroon {
+html body .border-maroon {
   border-color: #d81b60 !important;
 }
 
-.text-orange {
+html body .text-orange {
   color: #ff851b !important;
 }
 
-a.text-orange, .text-orange a {
+html body a.text-orange, .text-orange a {
   color: #e76b00 !important;
 }
 
-a.text-orange:hover, .text-orange a:hover {
+html body a.text-orange:hover, .text-orange a:hover {
   color: #ce6000 !important;
 }
 
-.bg-orange {
+html body .bg-orange {
   background-color: #ff851b !important;
 }
 
-.bg-orange, .bg-orange a, .bg-orange a:hover {
+html body .bg-orange, .bg-orange a, .bg-orange a:hover {
   color: #fff !important;
 }
 
-.border-orange {
+html body .border-orange {
   border-color: #ff851b !important;
 }
 
-.text-yellow {
+html body .text-yellow {
   color: #ffc107 !important;
 }
 
-a.text-yellow, .text-yellow a {
+html body a.text-yellow, .text-yellow a {
   color: #d39e00 !important;
 }
 
-a.text-yellow:hover, .text-yellow a:hover {
+html body a.text-yellow:hover, .text-yellow a:hover {
   color: #ba8b00 !important;
 }
 
-.bg-yellow {
+html body .bg-yellow {
   background-color: #ffc107 !important;
 }
 
-.bg-yellow, .bg-yellow a, .bg-yellow a:hover {
+html body .bg-yellow, .bg-yellow a, .bg-yellow a:hover {
   color: #fff !important;
 }
 
-.border-yellow {
+html body .border-yellow {
   border-color: #ffc107 !important;
 }
 
-.text-green {
+html body .text-green {
   color: #00bc00 !important;
 }
 
-a.text-green, .text-green a {
+html body a.text-green, .text-green a {
   color: #008900 !important;
 }
 
-a.text-green:hover, .text-green a:hover {
+html body a.text-green:hover, .text-green a:hover {
   color: #007000 !important;
 }
 
-.bg-green {
+html body .bg-green {
   background-color: #00bc00 !important;
 }
 
-.bg-green, .bg-green a, .bg-green a:hover {
+html body .bg-green, .bg-green a, .bg-green a:hover {
   color: #fff !important;
 }
 
-.border-green {
+html body .border-green {
   border-color: #00bc00 !important;
 }
 

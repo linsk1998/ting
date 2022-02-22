@@ -12,10 +12,10 @@
 .msgbox-body{ margin:12px 56px; overflow:auto;}
 .msgbox-footer{ text-align:center; margin:0 56px 12px;}
 .msgbox-footer .btn{ min-width:60px;}
-.msgbox-info{ border-top-color:$info;}
-.msgbox-success{ border-top-color:$success;}
-.msgbox-warning{ border-top-color:$warning;}
-.msgbox-danger{ border-top-color:$danger;}
+html body .msgbox-info{ border-top-color:$info;}
+html body .msgbox-success{ border-top-color:$success;}
+html body .msgbox-warning{ border-top-color:$warning;}
+html body .msgbox-danger{ border-top-color:$danger;}
 
 @media \0screen\,screen\9 {
 	.msgbox-body{ text-align:left;}

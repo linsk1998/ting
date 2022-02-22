@@ -6,7 +6,7 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 
-	td,th{ position:relative; padding:8px; line-height:$line-height-base; border-top:1px solid #D8DCF0;}
+	td,th{ position:relative; padding:8px; line-height:$line-height-base; border-top:1px solid #D8DCF0; background-clip:padding-box;}
 	&>thead{ border-bottom:2px solid #D8DCF0;}
 	&>tfoot{ border-top:2px solid #D8DCF0;}
 	&>*:first-child>tr:first-child>*{ border-top:0;}
@@ -27,12 +27,12 @@
 	&,& td, & th{ border:1px solid #D8DCF0;}
 }
 
-.table-active{ background-color:$secondary-bg;}
-.table-primary{ background-color:$primary-bg;}
-.table-success{ background-color:$success-bg;}
-.table-info{ background-color:$info-bg;}
-.table-warning{ background-color:$warning-bg;}
-.table-danger{ background-color:$danger-bg;}
+.table-active{ background-color:$secondary-bg; background-clip:padding-box;}
+.table-primary{ background-color:$primary-bg; background-clip:padding-box;}
+html body .table-success{ background-color:$success-bg; background-clip:padding-box;}
+html body .table-info{ background-color:$info-bg; background-clip:padding-box;}
+html body .table-warning{ background-color:$warning-bg; background-clip:padding-box;}
+html body .table-danger{ background-color:$danger-bg; background-clip:padding-box;}
 
 .table-hover tr:hover{
 	background-color:darken(#fff,4%);
@@ -51,20 +51,20 @@
 	.table-warning:hover{ background-color:darken($warning-bg,4%);}
 	.table-danger:hover{ background-color:darken($danger-bg,4%);}
 }
-.table-odd{ background-color:darken(#fff,1%);}
-.table-odd-hover{ background-color:darken(#fff,5%);}
-.table-odd-active{background-color:darken($secondary-bg,1%);}
-.table-odd-primary{ background-color:darken($primary-bg,1%);}
-.table-odd-success{ background-color:darken($success-bg,1%);}
-.table-odd-info{ background-color:darken($info-bg,1%);}
-.table-odd-warning{ background-color:darken($warning-bg,1%);}
-.table-odd-danger{ background-color:darken($danger-bg,1%);}
-.table-odd-active-hover{background-color:darken($secondary-bg,5%);}
-.table-odd-primary-hover{ background-color:darken($primary-bg,5%);}
-.table-odd-success-hover{ background-color:darken($success-bg,5%);}
-.table-odd-info-hover{ background-color:darken($info-bg,5%);}
-.table-odd-warning-hover{ background-color:darken($warning-bg,5%);}
-.table-odd-danger-hover{ background-color:darken($danger-bg,5%);}
+.table-odd{ background-color:darken(#fff,1%); background-clip:padding-box;}
+.table-odd-hover{ background-color:darken(#fff,5%); background-clip:padding-box;}
+.table-odd-active{background-color:darken($secondary-bg,1%); background-clip:padding-box;}
+.table-odd-primary{ background-color:darken($primary-bg,1%); background-clip:padding-box;}
+html body .table-odd-success{ background-color:darken($success-bg,1%); background-clip:padding-box;}
+html body .table-odd-info{ background-color:darken($info-bg,1%); background-clip:padding-box;}
+html body .table-odd-warning{ background-color:darken($warning-bg,1%); background-clip:padding-box;}
+html body .table-odd-danger{ background-color:darken($danger-bg,1%); background-clip:padding-box;}
+.table-odd-active-hover{background-color:darken($secondary-bg,5%); background-clip:padding-box;}
+.table-odd-primary-hover{ background-color:darken($primary-bg,5%); background-clip:padding-box;}
+html body .table-odd-success-hover{ background-color:darken($success-bg,5%); background-clip:padding-box;}
+html body .table-odd-info-hover{ background-color:darken($info-bg,5%); background-clip:padding-box;}
+html body .table-odd-warning-hover{ background-color:darken($warning-bg,5%); background-clip:padding-box;}
+html body .table-odd-danger-hover{ background-color:darken($danger-bg,5%); background-clip:padding-box;}
 
 .table-striped>tbody>tr:nth-of-type(odd){
 	@extend .table-odd;

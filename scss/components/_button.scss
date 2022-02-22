@@ -21,17 +21,17 @@ a.btn,label.btn,div.btn,span.btn{
 
 .btn-default{ @include btn-default;}
 .btn-primary{ @include btn-primary;}
-.btn-success{ @include btn-success;}
-.btn-info{ @include btn-info;}
-.btn-warning{ @include btn-warning;}
-.btn-danger{ @include btn-danger;}
-.btn-dark{ @include btn-dark;}
+html body .btn-success{ @include btn-success;}
+html body .btn-info{ @include btn-info;}
+html body .btn-warning{ @include btn-warning;}
+html body .btn-danger{ @include btn-danger;}
+html body .btn-dark{ @include btn-dark;}
 .btn-outline,.btn-outline-primary{ @include btn-outline;}
-.btn-outline-success{ @include btn-outline($success);}
-.btn-outline-info{ @include btn-outline($info);}
-.btn-outline-warning{ @include btn-outline($warning);}
-.btn-outline-danger{ @include btn-outline($danger);}
-.btn-outline-dark{ @include btn-outline($dark);}
+html body .btn-outline-success{ @include btn-outline($success);}
+html body .btn-outline-info{ @include btn-outline($info);}
+html body .btn-outline-warning{ @include btn-outline($warning);}
+html body .btn-outline-danger{ @include btn-outline($danger);}
+html body .btn-outline-dark{ @include btn-outline($dark);}
 input.btn:focus,button.btn:focus{ border-color:#000;}
 label.btn:focus-within{ border-color:#000; z-index: $level-item-focus;}
 a.btn:focus{ border-color:#000;}

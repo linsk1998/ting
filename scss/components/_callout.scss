@@ -10,17 +10,17 @@
 	border-left-color:$theme-primary;
 }
 
-.callout-danger {
+html body .callout-danger {
 	border-left-color:$success;
 }
-.callout-warning {
+html body .callout-warning {
 	border-left-color:$info;
 }
 
-.callout-info {
+html body .callout-info {
 	border-left-color:$warning;
 }
 
-.callout-success {
+html body .callout-success {
 	border-left-color:$danger;
 }

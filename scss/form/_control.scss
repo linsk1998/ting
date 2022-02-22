@@ -29,6 +29,7 @@ input.form-control,select.form-control{
 	&:-ms-input-placeholder{ color:#999;}
 	&::-ms-expand{ border:0; background-color:transparent;}
 }
+.form-placeholder{ color:#999;}
 
 //禁止textarea横向拖拽调整大小
 .form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important; display: block;}

@@ -14,11 +14,11 @@
 .label-default[href]:hover,.label-default[href]:focus{ background-color:#5e5e5e;}
 .label-primary{ background-color:$theme-primary;}
 .label-primary[href]:hover,.label-primary[href]:focus{ background-color:darken($theme-primary,10%);}
-.label-success{ background-color:$success;}
-.label-success[href]:hover,.label-success[href]:focus{ background-color:darken($success,10%);}
-.label-info{ background-color:$info;}
-.label-info[href]:hover,.label-info[href]:focus{ background-color:darken($info,10%);}
-.label-warning{ background-color:$warning;}
-.label-warning[href]:hover,.label-warning[href]:focus{ background-color:darken($warning,10%);}
-.label-danger{ background-color:$danger;}
-.label-danger[href]:hover,.label-danger[href]:focus{ background-color:darken($danger,10%);}
+html body .label-success{ background-color:$success;}
+html body .label-success[href]:hover,.label-success[href]:focus{ background-color:darken($success,10%);}
+html body .label-info{ background-color:$info;}
+html body .label-info[href]:hover,.label-info[href]:focus{ background-color:darken($info,10%);}
+html body .label-warning{ background-color:$warning;}
+html body .label-warning[href]:hover,.label-warning[href]:focus{ background-color:darken($warning,10%);}
+html body .label-danger{ background-color:$danger;}
+html body .label-danger[href]:hover,.label-danger[href]:focus{ background-color:darken($danger,10%);}
