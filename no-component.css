@@ -8011,6 +8011,15 @@ input.input-sm, select.input-sm {
   height: 28px;
 }
 
+.input-xs {
+  font-size: 12px;
+  padding: 1px 6px;
+}
+
+input.input-xs, select.input-xs {
+  height: 24px;
+}
+
 .btn-toggle {
   color: #333;
   background-color: #fff;

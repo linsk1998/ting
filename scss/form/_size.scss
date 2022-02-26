@@ -38,3 +38,10 @@ input.input-lg,select.input-lg{
 input.input-sm,select.input-sm{
 	height: $ctrl-height-small;
 }
+.input-xs{
+	font-size: $ctrl-fontsize-xsmall;
+	padding:($ctrl-height-xsmall - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-xsmall;
+}
+input.input-xs,select.input-xs{
+	height: $ctrl-height-xsmall;
+}
