@@ -35,11 +35,18 @@
 	-webkit-box-orient:horizontal;-webkit-box-direction:normal;
 	-ms-flex-direction:row;flex-direction:row;
 }
+.btn-group-justified>.btn-group{
+	padding-right:0;
+}
+.btn-group-justified>.btn-group>.btn{
+	 width:100%;
+}
 @media (min-width:0){
 	.btn-group-justified{
 		padding-right:1px;
 	}
-	.btn-group-justified>.btn{
+	.btn-group-justified>.btn,
+	.btn-group-justified>.btn-group{
 		position: relative;
 		margin-left: 0;
 		margin-right: -1px;
@@ -52,7 +59,17 @@
 @media (min-width:0\0) and (min-resolution:.001dpcm) {
 	.btn-group-justified{ display:table; padding-right:0;}
 	.btn-group-justified>.btn{ display:table-cell; width:1%;}
+	.btn-group-justified{ display:table; border-collapse:collapse;}
+	.btn-group-justified>.btn-group{ display:table-cell;}
 }
 @media \0screen\,screen\9 {
-	.btn-group-justified{ display:block; text-align:justify; text-align-last:justify;}
+	.btn-group-justified{
+		display:table;
+		border-collapse:collapse;
+		text-align:justify;
+		text-align-last:justify;
+	}
+	.btn-group-justified>.btn-group{
+		display:table-cell;
+	}
 }
