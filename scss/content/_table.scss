@@ -6,7 +6,12 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 
-	td,th{ position:relative; padding:8px; line-height:$line-height-base; border-top:1px solid #D8DCF0; background-clip:padding-box;}
+	td,th{
+		// relative会导致出现2重border
+		padding:8px;
+		line-height:$line-height-base;
+		border-top:1px solid #D8DCF0;
+	}
 	&>thead{ border-bottom:2px solid #D8DCF0;}
 	&>tfoot{ border-top:2px solid #D8DCF0;}
 	&>*:first-child>tr:first-child>*{ border-top:0;}
