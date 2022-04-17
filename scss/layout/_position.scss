@@ -35,19 +35,19 @@
 		*margin-left:0;
 	}
 	.org-center{
-		*margin-left:expression(-this.offsetWidth/2+'px');
+		*margin-left:#{"expression(-this.offsetWidth/2+'px')"};
 	}
 	.org-right{
-		*margin-left:expression(-this.offsetWidth+'px');
+		*margin-left:#{"expression(-this.offsetWidth+'px')"};
 	}
 	.org-top{
 		*margin-top:0;
 	}
 	.org-middle{
-		*margin-top:expression(-this.offsetHeight/2+'px');
+		*margin-top:#{"expression(-this.offsetHeight/2+'px')"};
 	}
 	.org-bottom{
-		*margin-top:expression(-this.offsetHeight+'px');
+		*margin-top:#{"expression(-this.offsetHeight+'px')"};
 	}
 }
 

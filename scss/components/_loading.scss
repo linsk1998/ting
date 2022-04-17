@@ -43,7 +43,7 @@
 }
 @media \0screen\,screen\9 {
 	.loading-circular,.loading-grow{
-		*zoom:expression(this.runtimeStyle.zoom='1',this.innerHTML='6');
+		*zoom:#{"expression(this.runtimeStyle.zoom='1',this.innerHTML='6')"};
 	}
 	.loading-circular:before,.loading-grow:before{ content:"6";}
 }

@@ -4,5 +4,5 @@
 	margin-left:auto;
 	*margin-left:50%;
 	*position: relative;
-	*left:expression(Math.round(-this.offsetWidth/2)+'px')
+	*left:#{"expression(Math.round(-this.offsetWidth/2)+'px')"}
 }

@@ -19,4 +19,4 @@
 .alert-danger .alert-link{ color:darken($danger-text,10%);}
 .alert-danger .alert-link:hover{ color:darken($danger-text,15%);}
 .alert-dismissible,.alert-dismissible{ padding-left:35px; position:relative;}
-.alert-dismissible .close,.alert-dismissible .close{ position:absolute; top:50%; _top:expression(this.parentNode.offsetHeight/2-2); left:10px; _left:-25px; line-height:20px; margin-top:-10px;}
+.alert-dismissible .close,.alert-dismissible .close{ position:absolute; top:50%; _top:#{'expression(this.parentNode.offsetHeight/2-2)'}; left:10px; _left:-25px; line-height:20px; margin-top:-10px;}

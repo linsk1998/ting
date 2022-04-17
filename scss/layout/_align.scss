@@ -15,8 +15,8 @@
 }
 @media screen\9{
 	.vertical-align{ *overflow:hidden;}
-	.vertical-align .vertical-align-middle{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(Math.round(this.parentNode.clientHeight/2-this.offsetHeight/2),0)+'px');}
-	.vertical-align .vertical-align-bottom{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:expression(Math.max(this.parentNode.clientHeight-this.offsetHeight,0)+'px');}
+	.vertical-align .vertical-align-middle{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:#{"expression(Math.max(Math.round(this.parentNode.clientHeight/2-this.offsetHeight/2),0)+'px')"};}
+	.vertical-align .vertical-align-bottom{ *vertical-align:top; *position:relative; *zoom:1; *display:inline; *top:#{"expression(Math.max(this.parentNode.clientHeight-this.offsetHeight,0)+'px')"};}
 }
 .vertical-align-top {
 	vertical-align: top;

@@ -10,7 +10,7 @@ display:flex; justify-content:center;align-items:center;}
 	background:rgba(0,0,0,$modal-alpha); position:fixed; _position:absolute; z-index:$level-dialog;
 	text-align:left;
 	left:0; width:100%; top:0; height:100%; overflow:auto;
-	_height:expression(document.body.scrollHeight); _padding-top:expression(eval(document.body.scrollTop));
+	_height:#{"expression(document.body.scrollHeight)"}; _padding-top:#{"expression(eval(document.body.scrollTop))"};
 }
 
 .modal-loading{ background-color:rgba(0,0,0,math.div($modal-alpha,0.8)); opacity:0.8;  background-position:center; background-repeat:no-repeat;}

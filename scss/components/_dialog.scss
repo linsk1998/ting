@@ -29,7 +29,7 @@ text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
 filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));}
 .dialog-close:hover{ text-decoration:none; color:#333;}
 .dialog-close{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-*zoom:expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#xf057;');}
+*zoom:#{"expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#xf057;')"};}
 .dialog-close:before{content:"\f057";}
 
 @media \0screen\,screen\9 {
