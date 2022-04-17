@@ -56,8 +56,8 @@
 }
 @mixin media-object{
 	display:block;
-	object-fit:contain;
 	-o-object-fit:contain;
+	object-fit:contain;
 }
 @mixin media-heading{
 	margin-top:0;

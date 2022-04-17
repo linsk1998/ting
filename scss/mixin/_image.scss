@@ -1,5 +1,6 @@
 @mixin img-circle {
 	@include circle();
+	-o-object-fit:cover;
 	object-fit: cover;
 }
 @mixin img-rounded($r:6px){
