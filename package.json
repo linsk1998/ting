@@ -2,7 +2,6 @@
 	"name": "@ting-ui/css",
 	"version": "0.0.15",
 	"description": "common style lib",
-	"main": "dist/index.js",
 	"scripts": {
 		"build:all": "sass scss/all.scss all.css --no-source-map",
 		"build:no-component": "sass scss/no-component.scss no-component.css --no-source-map",
