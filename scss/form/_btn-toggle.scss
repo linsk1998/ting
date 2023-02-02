@@ -9,10 +9,10 @@
 }
 .btn-toggle-checked{
 	border-color:darken($theme-primary, 5%);
-	z-index: $level-item-actived;
+	z-index: $level-item-active;
 	&:hover{
 		border-color:darken($theme-primary,17%);
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 }
 html body .btn-toggle-checked:focus-within{

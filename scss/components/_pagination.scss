@@ -28,7 +28,7 @@
 	color:darken($theme-primary,15%);
 }
 .pagination li.active{
-	z-index:$level-item-actived;
+	z-index:$level-item-active;
 	background-color:$theme-primary;
 	border-color:$theme-primary;
 }

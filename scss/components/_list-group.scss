@@ -90,7 +90,7 @@ button.list-group-item::-moz-focus-inner{
 .list-group .active{
 	background-color:$theme-primary;
 	border-color:$theme-primary;
-	z-index:$level-item-actived;
+	z-index:$level-item-active;
 }
 .list-group .active,.list-group .active a,
 .list-group .active a:hover,.list-group a.active:hover{ color:#fff;}

@@ -58,7 +58,7 @@
 .list .list-item.active{
 	background-color:$theme-primary;
 	border-color:$theme-primary;
-	z-index:$level-item-actived;
+	z-index:$level-item-active;
 }
 .list .active,.list .active a,
 .list .active a:hover,.list a.active:hover{ color:#fff;}

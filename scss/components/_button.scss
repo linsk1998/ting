@@ -99,6 +99,7 @@ html body .btn-disabled:focus{
 	color: #a0a0a0;
 	cursor:not-allowed;
 	text-shadow:1px 1px #fff;
+	z-index: 0;
 }
 html body .btn-disabled{
 	.btn-icon,.btn-icon-left,.btn-icon-right{

@@ -85,12 +85,12 @@
 	color:#fff;
 	background-color:$theme-primary;
 	border-color:darken($theme-primary, 5%);
-	z-index: $level-item-actived;
+	z-index: $level-item-active;
 	&:hover{
 		color:#fff;
 		background-color:darken($theme-primary,10%);
 		border-color:darken($theme-primary,17%);
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 }
 @mixin btn-outline($color:$theme-primary){
@@ -101,7 +101,7 @@
 		color:#fff;
 		background-color:$color;
 		border-color:$color;
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 	@at-root{
 		html body &:focus{
@@ -113,60 +113,60 @@
 	color:#fff;
 	background-color:$success;
 	border-color:darken($success,5%);
-	z-index: $level-item-actived;
+	z-index: $level-item-active;
 	&:hover{
 		color:#fff;
 		background-color:darken($success,10%);
 		border-color:darken($success,17%);
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 }
 @mixin btn-info{
 	color: #fff;
 	background-color: $info;
 	border-color: darken($info, 5%);
-	z-index: $level-item-actived;
+	z-index: $level-item-active;
 	&:hover{
 		color: #fff;
 		background-color: darken($info, 10%);
 		border-color: darken($info, 17%);
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 }
 @mixin btn-warning{
 	color: #fff;
 	background-color: $warning;
 	border-color: darken($warning, 5%);
-	z-index: $level-item-actived;
+	z-index: $level-item-active;
 	&:hover{
 		color: #fff;
 		background-color: darken($warning, 10%);
 		border-color: darken($warning, 17%);
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 }
 @mixin btn-danger{
 	color: #fff;
 	background-color: $danger;
 	border-color: darken($danger, 5%);
-	z-index: $level-item-actived;
+	z-index: $level-item-active;
 	&:hover{
 		color: #fff;
 		background-color: darken($danger, 10%);
 		border-color: darken($danger, 17%);
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 }
 @mixin btn-dark{
 	color: #fff;
 	background-color:$dark;
 	border-color: darken($dark, 5%);
-	z-index: $level-item-actived;
+	z-index: $level-item-active;
 	&:hover{
 		color: #fff;
 		background-color: darken($dark, 10%);
 		border-color: darken($dark, 17%);
-		z-index: $level-item-actived;
+		z-index: $level-item-active;
 	}
 }
 @mixin btn-block{
