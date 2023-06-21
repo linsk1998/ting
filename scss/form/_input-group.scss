@@ -36,7 +36,7 @@
 	*display: inline; *zoom:1;
 	font-size: $font-size-base;
 	line-height:$line-height-base;
-	padding:($ctrl-height-base - $line-height-base)*.5 -$ctrl-border-width 12px;
+	padding:($ctrl-height-base - $line-height-base)*.5 - $ctrl-border-width 12px;
 	color:#555;
 	background-color:#eee;
 	border:1px solid #ccc;
@@ -44,6 +44,39 @@
 .input-group-text{
 	.checkbox-inline,.radio-inline{
 		vertical-align: top;
+	}
+}
+
+.input-group-left,.input-group-right{
+	.btn {
+		z-index: $level-navbar;
+	}
+}
+
+.input-group-lg{
+	.input-group-text{
+		font-size: 18px;
+		padding:($ctrl-height-large - $line-height-base)*.5 - $ctrl-border-width 12px;
+	}
+	.form-control{
+		font-size: $ctrl-fontsize-large;
+		padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
+	}
+	input.form-control,select.form-control{
+		height: $ctrl-height-large;
+	}
+}
+.input-group-sm{
+	.input-group-text{
+		font-size: 12px;
+		padding:($ctrl-height-small - $line-height-base)*.5 - $ctrl-border-width 12px;
+	}
+	.form-control{
+		font-size: $ctrl-fontsize-small;
+		padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
+	}
+	input.form-control,select.form-control{
+		height: $ctrl-height-small;
 	}
 }
 
@@ -109,4 +142,46 @@
 	vertical-align: middle;
 	color: $theme-secondary-text;
 	font-size: 12px;
+}
+
+.input-disabled{
+	cursor: not-allowed;
+	background-color: #eee;
+}
+.input-disabled{
+	.input-prefix,.input-suffix{
+		@media (min-width:0){
+			opacity:0.65;
+		}
+		@media \0screen\,screen\9 {
+			span,div,i{
+				filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40); 
+			}
+			img{
+				filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60); 
+			}
+		}
+	}
+}
+
+.input-group-lg,
+.input-lg{
+	.input-control input,.input-control select{
+		height: $ctrl-height-large - $ctrl-border-width*2;
+		font-size: $ctrl-fontsize-large;
+	}
+	.input-prefix,.input-suffix{
+		height: $ctrl-height-large - $ctrl-border-width*2;
+	}
+}
+
+.input-group-sm,
+.input-sm{
+	.input-control input,.input-control select{
+		height: $ctrl-height-small - $ctrl-border-width*2;
+		font-size: $ctrl-fontsize-small;
+	}
+	.input-prefix,.input-suffix{
+		height: $ctrl-height-small - $ctrl-border-width*2;
+	}
 }

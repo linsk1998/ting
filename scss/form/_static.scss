@@ -5,26 +5,15 @@
 	margin: 0;
 	padding:($ctrl-height-base - $ctrl-line-height)*.5 0;
 }
-.form-control[disabled] {
-	cursor: not-allowed;
-	background-color: #eee;
+.form-group-lg{
+	.form-control-static{
+		font-size: $ctrl-fontsize-large;
+		padding:($ctrl-height-large - $ctrl-line-height)*.5 0;
+	}
 }
-.input-disabled{
-	cursor: not-allowed;
-	background-color: #eee;
-}
-.input-disabled{
-	.input-prefix,.input-suffix{
-		@media (min-width:0){
-			opacity:0.65;
-		}
-		@media \0screen\,screen\9 {
-			span,div,i{
-				filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40); 
-			}
-			img{
-				filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60); 
-			}
-		}
+.form-group-sm{
+	.form-control-static{
+		font-size: $ctrl-fontsize-small;
+		padding:($ctrl-height-small - $ctrl-line-height)*.5 0;
 	}
 }

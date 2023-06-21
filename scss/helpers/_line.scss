@@ -3,25 +3,34 @@
 .line-1,.line-max-1{
 	@extend .text-truncate;
 }
+.line-1{
+	height: $line-height-base;
+}
+.line-n{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.line-max-n{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
 @for $i from 2 through 9 {
 	.line-#{$i} {
-		text-overflow: ellipsis;
+		@extend .line-n;
 		-webkit-line-clamp: $i;
-		overflow: hidden;
 		height: $line-height-base * $i;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
 	}
 }
 @for $i from 2 through 9 {
 	.line-max-#{$i} {
-		text-overflow: ellipsis;
+		@extend .line-max-n;
 		-webkit-line-clamp: $i;
-		overflow: hidden;
 		max-height: $line-height-base * $i;
 		_height: $line-height-base * $i;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
 	}
 }
 @for $i from 1 through 9 {

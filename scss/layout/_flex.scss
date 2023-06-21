@@ -3,7 +3,6 @@ body.layout-full{ text-align:left;}
 .layout-table{ border-collapse:collapse; border:0 none;}
 .layout-cell{ padding:0; position:relative; border:0 none;}
 
-
 .row-flex{ @include clearfix;}
 .col-left{ float:left; _margin-right:-3px;}
 .col-right{ float:right; _margin-left:-3px;}
@@ -11,7 +10,8 @@ body.layout-full{ text-align:left;}
 
 .col-flex.row-grow{ min-height:0;}
 .row-flex.col-center{ min-width:0;}
-.row-grow,.col-center,.col-left,.col-right,.col-sider{ overflow:auto;}
+.row-grow,.col-center,.col-left,.col-right,.col-sider{ position: relative; overflow:auto;}
+.row-shrink{ position: relative;}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none),(-webkit-min-device-pixel-ratio:0) {
 	.col-left{float:none; -webkit-box-ordinal-group:-1;-ms-flex-order:-1;order:-1;}

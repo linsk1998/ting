@@ -75,86 +75,172 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">表单验证</h1>
+			<h1 class="page-header">表单组验证</h1>
 			<form class="form-horizontal">
 				<div class="form-group has-success">
-					<label class="control-label">Success</label>
+					<label class="form-label">Success</label>
 					<input type="text" class="form-control"/>
 				</div>
 				<div class="form-group has-warning">
-					<label class="control-label">Warning</label>
+					<label class="form-label">Warning</label>
 					<input type="text" class="form-control"/>
-				</div>
-				<div class="form-group has-error">
-					<label class="control-label">Error</label>
-					<input type="text" class="form-control"/>
-				</div>
-			</form>
-			<h2>添加额外的图标</h2>
-			<form class="form-horizontal">
-				<div class="form-group has-success has-feedback">
-					<label class="control-label">Success</label>
-					<input type="text" class="form-control"/>
-					<i class="fa form-control-feedback">&#xf00c;</i>
 					<p class="help-block">Example block-level help text here.</p>
 				</div>
+				<div class="form-group has-error">
+					<label class="form-label">Error</label>
+					<input type="text" class="form-control"/>
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+			</form>
+			<h2 class="page-header">添加额外的图标</h2>
+			<form class="form">
+				<div class="form-group has-success has-feedback">
+					<label class="form-label">Success</label>
+					<input type="text" class="form-control"/>
+					<i class="fa form-control-feedback">&#xf00c;</i>
+				</div>
 				<div class="form-group has-warning has-feedback">
-					<label class="control-label">Warning</label>
-					<div class="input-group">
-						<div class="input-group-left">
-							<div class="input-group-text">
-								￥
-							</div>
-						</div>
-						<div class="input-group-right">
-							<div class="input-group-text">
-								元
-							</div>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-center">
-							<input type="text" class="form-control"/>
-							<i class="fa form-control-feedback">&#xf071;</i>
-						</div>
-					</div>
+					<label class="form-label">Warning</label>
+					<input type="text" class="form-control"/>
+					<i class="fa form-control-feedback">&#xf071;</i>
 					<p class="help-block">Example block-level help text here.</p>
 				</div>
 				<div class="form-group has-error has-feedback">
-					<label class="control-label">Error</label>
-					<div class="input">
-						<div class="input-prefix">
-							<span class="vertical-align-middle">￥</span>
-							<img src="../images/logo.png" width="16" height="16">
-							<span class="line-middle"></span>
-						</div>
-						<div class="input-suffix">
-							<i class="icon fa">&#xf133;</i>
-							<span class="line-middle"></span>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-control">
-							<input type="text"/>
-							<i class="fa form-control-feedback">&#xf00d;</i>
-						</div>
-					</div>
+					<label class="form-label">Error</label>
+					<textarea class="form-control"></textarea>
+					<i class="fa form-control-feedback">&#xf00d;</i>
 					<p class="help-block">Example block-level help text here.</p>
 				</div>
 			</form>
-			<form class="form">
+			<h2 class="page-header">水平表单</h2>
+			<form class="form-horizontal">
 				<div class="form-group has-success has-feedback">
-					<label class="control-label">Success</label>
+					<label class="form-label">Success</label>
 					<input type="text" class="form-control"/>
 					<i class="fa form-control-feedback">&#xf00c;</i>
 				</div>
 				<div class="form-group has-warning has-feedback">
-					<label class="control-label">Warning</label>
+					<label class="form-label">Warning</label>
+					<input type="text" class="form-control"/>
+					<i class="fa form-control-feedback">&#xf071;</i>
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<div class="form-group has-error has-feedback">
+					<label class="form-label">Error</label>
+					<input type="text" class="form-control"/>
+					<i class="fa form-control-feedback">&#xf00d;</i>
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+			</form>
+			<h2 class="page-header">内联表单</h2>
+			<form class="form-inline">
+				<div class="form-group has-success has-feedback">
+					<label class="form-label">Success</label>
+					<input type="text" class="form-control"/>
+					<i class="fa form-control-feedback">&#xf00c;</i>
+				</div>
+				<div class="form-group has-warning has-feedback">
+					<label class="form-label">Warning</label>
 					<input type="text" class="form-control"/>
 					<i class="fa form-control-feedback">&#xf071;</i>
 				</div>
 				<div class="form-group has-error has-feedback">
-					<label class="control-label">Error</label>
+					<label class="form-label">Error</label>
 					<input type="text" class="form-control"/>
 					<i class="fa form-control-feedback">&#xf00d;</i>
+				</div>
+			</form>
+			<h2 class="page-header">表单项尺寸</h1>
+			<form class="form">
+				<div class="form-group form-group-lg has-success has-feedback">
+					<label class="form-label">form-group-lg</label>
+					<input class="form-control" type="text">
+					<i class="fa form-control-feedback">&#xf00c;</i>
+				</div>
+				<div class="form-group form-group-sm has-error has-feedback">
+					<label class="form-label">form-group-sm</label>
+					<input class="form-control" type="text">
+					<i class="fa form-control-feedback">&#xf00d;</i>
+				</div>
+			</form>
+			<h3 class="page-header">水平表单</h3>
+			<form class="form-horizontal">
+				<div class="form-group form-group-lg has-success has-feedback">
+					<label class="form-label">form-group-lg</label>
+					<input class="form-control" type="text">
+					<i class="fa form-control-feedback">&#xf00c;</i>
+				</div>
+				<div class="form-group form-group-sm has-error has-feedback">
+					<label class="form-label">form-group-sm</label>
+					<input class="form-control" type="text">
+					<i class="fa form-control-feedback">&#xf00d;</i>
+				</div>
+			</form>
+			<h3 class="page-header">内联表单</h3>
+			<form class="form-inline">
+				<div class="form-group form-group-lg has-success has-feedback">
+					<label class="form-label">form-group-lg</label>
+					<input class="form-control" type="text">
+					<i class="fa form-control-feedback">&#xf00c;</i>
+				</div>
+				<div class="form-group form-group-sm has-error has-feedback">
+					<label class="form-label">form-group-sm</label>
+					<input class="form-control" type="text">
+					<i class="fa form-control-feedback">&#xf00d;</i>
+				</div>
+			</form>
+			<h2 class="page-header">控件尺寸</h1>
+			<form class="form-inline">
+				<div class="form-group has-success has-feedback">
+					<label class="form-label">form-control-lg</label>
+					<input class="form-control form-control-lg" type="text">
+					<i class="fa form-control-feedback">&#xf00c;</i>
+				</div>
+				<div class="form-group form-group-sm has-error has-feedback">
+					<label class="form-label">form-group-sm</label>
+					<input class="form-control form-control-sm" type="text">
+					<i class="fa form-control-feedback">&#xf00d;</i>
+				</div>
+			</form>
+			<h1 class="page-header">控件验证</h1>
+			<form class="form-horizontal was-validated ">
+				<div class="form-group">
+					<label class="form-label">valid</label>
+					<input type="text" class="form-control is-valid"/>
+				</div>
+				<div class="form-group">
+					<label class="form-label">invalid</label>
+					<input type="text" class="form-control is-invalid"/>
+					<p class="help-block invalid-feedback">Example block-level help text here.</p>
+				</div>
+			</form>
+			<h2 class="page-header">添加额外的图标</h2>
+			<form class="form-horizontal was-validated">
+				<div class="form-group has-feedback">
+					<label class="form-label">is-valid</label>
+					<input type="text" class="form-control is-valid"/>
+					<i class="fa form-control-feedback valid-feedback">&#xf00c;</i>
+				</div>
+				<div class="form-group has-feedback">
+					<label class="form-label">is-invalid</label>
+					<input type="text" class="form-control is-invalid"/>
+					<i class="fa form-control-feedback invalid-feedback">&#xf00d;</i>
+					<p class="help-block invalid-feedback">Example block-level help text here.</p>
+				</div>
+			</form>
+			<h1 class="page-header">飘浮提示文字</h1>
+			<form class="form-horizontal was-validated">
+				<div class="form-group">
+					<label class="form-label">is-valid</label>
+					<input type="text" class="form-control is-valid"/>
+					<div class="valid-tooltip">
+						校验通过
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">is-invalid</label>
+					<input type="text" class="form-control is-invalid"/>
+					<div class="invalid-tooltip">请输入活动名称</div>
 				</div>
 			</form>
 		</div>

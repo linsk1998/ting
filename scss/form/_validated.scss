@@ -1,0 +1,56 @@
+
+
+html .has-success{
+	.form-label,.control-label,.form-control-feedback,.help-block{
+		color:$success;
+	}
+	.form-control-feedback{
+		color:$success;
+	}
+	.form-control,.input,.select{
+		border-color:$success;
+	}
+}
+html .has-warning{
+	.form-label,.control-label,.form-control-feedback,.help-block{
+		color:darken($warning,10%);
+	}
+	.form-control-feedback{
+		color:$warning;
+	}
+	.form-control,.input,.select{
+		border-color:$warning;
+	}
+}
+html .has-error{
+	.form-label,.control-label,.form-control-feedback,.help-block{
+		color:$danger;
+	}
+	.form-control-feedback{
+		color:$danger;
+	}
+	.form-control,.input,.select{
+		border-color:$danger;
+	}
+}
+
+html .was-validated .is-invalid{
+	border-color:$danger;
+}
+html .was-validated .is-valid{
+	border-color:$success;
+}
+html .was-validated .invalid-feedback{
+	display: block;
+	color:$danger;
+}
+html .was-validated .valid-feedback{
+	display: block;
+	color:$success;
+}
+html .was-validated .valid-tooltip{
+	color: $success;
+}
+html .was-validated .invalid-tooltip{
+	color: $danger;
+}

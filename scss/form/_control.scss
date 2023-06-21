@@ -2,7 +2,7 @@
 .form-control {
 	font-size: $ctrl-fontsize-base;
 	line-height: $ctrl-line-height;
-	color: #555;
+	color: $ctrl-value-color;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	@include rounded(0);
 	*margin-top:-1px; *margin-bottom:-1px;
@@ -24,12 +24,12 @@ input.form-control,select.form-control{
 	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
 }
 .form-control,.input-control input{
-	&::-moz-placeholder{ color:#999; opacity:1;}
-	&::-webkit-input-placeholder{ color:#999;}
-	&:-ms-input-placeholder{ color:#999;}
+	&::-moz-placeholder{ color:$ctrl-placeholder-color; opacity:1;}
+	&::-webkit-input-placeholder{ color:$ctrl-placeholder-color;}
+	&:-ms-input-placeholder{ color:$ctrl-placeholder-color;}
 	&::-ms-expand{ border:0; background-color:transparent;}
 }
-.form-placeholder{ color:#999;}
+.form-placeholder{ color:$ctrl-placeholder-color;}
 
 //禁止textarea横向拖拽调整大小
 .form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important; display: block;}

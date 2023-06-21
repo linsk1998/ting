@@ -94,8 +94,12 @@
 					<td>和HTML有相同样式的class</td>
 				</tr>
 				<tr>
+					<td>.text-body</td>
+					<td>正文文本</td>
+				</tr>
+				<tr>
 					<td>.text-muted</td>
-					<td>文本减弱</td>
+					<td>减弱文本</td>
 				</tr>
 				<tr>
 					<td>.list-unstyled</td>
@@ -112,6 +116,10 @@
 				<tr>
 					<td>.line-max-{n}</td>
 					<td>高度不得超过n行</td>
+				</tr>
+				<tr>
+					<td>.line-min-{n}</td>
+					<td>高度至少为n行</td>
 				</tr>
 			</tbody></table>
 			<p><a href="type.html">例子</a></p>
@@ -138,7 +146,16 @@
 					<td>链接作用到容器</td>
 				</tr>
 			</table>
-			<p><a class="link-primary" href="#Link">link-primary例子</a> <a class="link-secondary" href="#Link">link-secondary例子</a> <a class="link-disabled" href="#Link" disabled>link-disabled例子</a></p>
+			<p>
+				<a class="link-primary" href="#Link">link-primary例子</a>
+				<a class="link-secondary" href="#Link">link-secondary例子</a>
+				<a class="link-disabled" href="javascript:;">link-disabled禁用</a>
+				<a class="link-success" href="#Link">link-success例子</a>
+				<a class="link-info" href="#Link">link-info例子</a>
+				<a class="link-warning" href="#Link">link-warning例子</a>
+				<a class="link-danger" href="#Link">link-danger例子</a>
+				<a class="link-primary link-no-decoration" href="#Link">link-no-decoration无下划线</a>
+			</p>
 			<div class="alert alert-danger">
 				<a class="link-stretched alert-link" href="#Link">link-stretched</a>例子
 			</div>
@@ -236,56 +253,56 @@
 						<th>描述</th>
 					</tr>
 					<tr>
-						<td>.embed-responsive</td>
+						<td>.ratio</td>
 						<td>固定比例媒体容器 </td>
 					</tr>
 					<tr>
-						<td>.embed-responsive-1/1</td>
+						<td>.ratio-1x1</td>
 						<td>1:1容器</td>
 					</tr>
 					<tr>
-						<td>.embed-responsive-16/9</td>
+						<td>.ratio-16x9</td>
 						<td>16:9容器</td>
 					</tr>
 					<tr>
-						<td>.embed-responsive-4/3</td>
+						<td>.ratio-4x3</td>
 						<td>4:3容器</td>
 					</tr>
 					<tr>
-						<td>.embed-responsive-item</td>
+						<td>.ratio-item</td>
 						<td>媒体内容</td>
 					</tr>
 				</tbody>
 			</table>
 			<div class="row row-gx-4">
 				<div class="col-md-2 col-gx-4">
-					<div class="embed-responsive embed-responsive-1/1">
-						<img class="embed-responsive-item" src="../images/github.jpg"/>
+					<div class="ratio ratio-1x1">
+						<img class="ratio-item" src="../images/github.jpg"/>
 					</div>
 				</div>
 				<div class="col-md-2 col-gx-4">
-					<div class="embed-responsive embed-responsive-1/1">
-						<img class="embed-responsive-item" src="../images/devices.jpg"/>
+					<div class="ratio ratio-1x1">
+						<img class="ratio-item" src="../images/devices.jpg"/>
 					</div>
 				</div>
 				<div class="col-md-2 col-gx-4">
-					<div class="embed-responsive embed-responsive-1/1">
-						<img class="embed-responsive-item" src="../images/functions.jpg"/>
+					<div class="ratio ratio-1x1">
+						<img class="ratio-item" src="../images/functions.jpg"/>
 					</div>
 				</div>
 				<div class="col-md-2 col-gx-4">
-					<div class="embed-responsive embed-responsive-1/1">
-						<img class="embed-responsive-item" src="../images/bootstrap.jpg"/>
+					<div class="ratio ratio-1x1">
+						<img class="ratio-item" src="../images/bootstrap.jpg"/>
 					</div>
 				</div>
 				<div class="col-md-2 col-gx-4">
-					<div class="embed-responsive embed-responsive-1/1">
-						<img class="embed-responsive-item" src="../images/purgecss.png"/>
+					<div class="ratio ratio-1x1">
+						<img class="ratio-item" src="../images/purgecss.png"/>
 					</div>
 				</div>
 				<div class="col-md-2 col-gx-4">
-					<div class="embed-responsive embed-responsive-1/1">
-						<img class="embed-responsive-item" src="../images/hole.jpg"/>
+					<div class="ratio ratio-1x1">
+						<img class="ratio-item" src="../images/hole.jpg"/>
 					</div>
 				</div>
 			</div>
@@ -297,7 +314,7 @@
 	&lt;div class=&quot;media-right&quot;&gt;
 		&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;media-object&quot; src=&quot;http://placeholder.qiniudn.com/64x64&quot; width=&quot;64&quot; height=&quot;64&quot;/&gt;&lt;/a&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;media-body&quot;&gt;
+	&lt;div class=&quot;media-center&quot;&gt;
 		&lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
 		Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
 	&lt;/div&gt;

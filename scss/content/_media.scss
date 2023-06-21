@@ -5,20 +5,24 @@
 .media-right{ margin-left:10px; _margin-left:7px; float:right;}
 @supports (display:flex) {
 	.media{
-		display:flex; flex-direction:row;
-		align-items: flex-start;
+		display:flex;
+		flex-direction:row;
+		align-items:flex-start;
 	}
 	.media::after{
 		display:none;
 	}
 	.media-left,.media-right{
-		flex-shrink:0; float: none;
+		flex-shrink:0; 
+		float:none;
 	}
 	.media-left{
 		order:-1;
 	}
-	.media-body{
-		order:0; flex-grow:1;
+	.media-center,.media-body{
+		min-width:0;
+		order:0; 
+		flex-grow:1;
 	}
 	.media-right{
 		order:1;
@@ -30,7 +34,7 @@
 		align-self:flex-end;
 	}
 }
-.media-body{ overflow:auto;}
+.media-center,.media-body{ overflow:auto;}
 .media-object{ @include media-object;}
 .media-heading{ @include media-heading;}
 .media-list{ @include media-list;}

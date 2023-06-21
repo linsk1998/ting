@@ -1,0 +1,76 @@
+.select{
+	vertical-align:middle;
+	margin:0;
+	line-height:$ctrl-line-height;
+	font-size:$ctrl-fontsize-base;
+	border-width:$ctrl-border-width;
+	border-style:solid;
+	text-align:left;
+	white-space:nowrap;
+	font-weight:normal;
+	cursor:pointer;
+	-ms-touch-action:manipulation; touch-action:manipulation;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+	display:block;
+	width:100%;
+	position:relative;
+	color:$ctrl-value-color;
+	@include rounded(0);
+	
+	&:hover {
+		z-index: $level-item-hover;
+	}
+	&:focus {
+		z-index: $level-item-focus;
+	}
+	@include btn-default;
+	transition:border-color .2s,background-color .2s,color .2s,box-shadow .2s;
+}
+
+.select-placeholder{
+	color: $ctrl-placeholder-color;
+}
+.select-icon{
+	position: absolute;
+	right: $ctrl-height-base * .5;
+	top: 50%;
+	margin-top: -.5em;
+	margin-right: -.5em;
+}
+.select .caret{
+	margin-top: -2px;
+	margin-right: -4px;
+}
+.select{
+	padding: ($ctrl-height-base - 2 * $ctrl-border-width - $ctrl-line-height) * .5 $btn-padding-base;
+	height: $ctrl-height-base;
+	padding-right: $ctrl-height-base;
+}
+.select-lg{ @include btn-lg;}
+.select-sm{ @include btn-sm;}
+.select-xs{ @include btn-xs;}
+
+html body .select-disabled{
+	background: #dddddd;
+	border-color: darken(#dddddd, 5%);
+	color: #a0a0a0;
+	cursor:not-allowed;
+	z-index: 0;
+}
+html body .select-disabled{
+	.select-icon{
+		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
+		opacity:.4;
+	}
+	.select-placeholder{
+		visibility:hidden;
+	}
+}
+
+html body .select-loading{
+	.select-icon{
+		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
+		opacity:.4;
+	}
+	cursor:wait;
+}

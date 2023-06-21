@@ -2,14 +2,16 @@
 	vertical-align:middle;
 	@include btn;
 	@include rounded(0);
-	transition:border-color,background-color,color,box-shadow .4s;
-	@include btn-has-icon;
+	transition:border-color .2s,background-color .2s,color .2s,box-shadow .2s;
 }
 input.btn,button.btn{
 	@include btn-button;
 }
 a.btn,label.btn,div.btn,span.btn{
 	@include btn-anchor;
+}
+.btn{
+	@include btn-has-icon;
 }
 .btn{ @include btn-md;}
 .btn-lg{ @include btn-lg;}

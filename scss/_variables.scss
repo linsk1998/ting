@@ -1,23 +1,23 @@
 @use 'sass:math';
-$margin-base:10px;
-$padding-base:8px 15px;
+$margin-base:10px !default;
+$padding-base:8px 15px !default;
 
-$font-size-base:14px;
-$line-height-base:20px;
+$font-size-base:14px !default;
+$line-height-base:20px !default;
 
-$theme-inverse:#1b1b1b;
-$theme-inverse-text:#eee;
-$theme-inverse-text-hover:#FFF;
+$theme-inverse:#1b1b1b !default;
+$theme-inverse-text:#eee !default;
+$theme-inverse-text-hover:#FFF !default;
 
-$theme-primary:#337ab7;
-$theme-primary-dark:#26659f;
-$theme-primary-light:#C5CAE9;
+$theme-primary:#337ab7 !default;
+$theme-primary-dark:#26659f !default;
+$theme-primary-light:#C5CAE9 !default;
 
-$theme-text:#fff;
-$theme-accent:#FF4081;
-$theme-primary-text:#212121;
-$theme-secondary-text:#757575;
-$theme-divider:#e0e0e0;
+$theme-text:#fff !default;
+$theme-accent:#FF4081 !default;
+$theme-primary-text:#212121 !default;
+$theme-secondary-text:#757575 !default;
+$theme-divider:#e0e0e0 !default;
 
 $theme:(
 	'teal':#009688,
@@ -30,39 +30,39 @@ $theme:(
 	'orange':#ff851b,
 	'yellow':#ffc107,
 	'green':#00bc00
-);
+) !default;
 
-$success:#2B9735;
-$info:#1890ff;
-$warning:#F37B1D;
-$danger:#dc3545;
-$dark:#444;
+$success:#2B9735 !default;
+$info:#1890ff !default;
+$warning:#F37B1D !default;
+$danger:#dc3545 !default;
+$dark:#444 !default;
 
 $context:(
 	'success':$success,
 	'info':$info,
 	'warning':$warning,
 	'danger':$danger
-);
-$primary-text:$theme-primary-dark;
-$primary-bg:#f0f1f9;
-$primary-border:darken(adjust-hue($primary-bg, -10), 7%);
-$secondary-bg:#f5f5f5;
-$success-text:#3c763d;
-$success-bg:#dff0d8;
-$success-border:darken(adjust-hue($success-bg, -10), 7%);
-$info-text:#31708f;
-$info-bg:#d9edf7;
-$info-border:darken(adjust-hue($info-bg, -10), 9%);
-$warning-text:#8a6d3b;
-$warning-bg:darken(#fcf8e3,3%);
-$warning-border:darken(adjust-hue($warning-bg, -10), 13%);
-$danger-text:#a94442;
-$danger-bg:#f2dede;
-$danger-border:darken(adjust-hue($danger-bg, -10), 7%);
+) !default;
+$primary-text:$theme-primary-dark !default;
+$primary-bg:#f0f1f9 !default;
+$primary-border:darken(adjust-hue($primary-bg, -10), 7%) !default;
+$secondary-bg:#f5f5f5 !default;
+$success-text:#3c763d !default;
+$success-bg:#dff0d8 !default;
+$success-border:darken(adjust-hue($success-bg, -10), 7%) !default;
+$info-text:#31708f !default;
+$info-bg:#d9edf7 !default;
+$info-border:darken(adjust-hue($info-bg, -10), 9%) !default;
+$warning-text:#8a6d3b !default;
+$warning-bg:darken(#fcf8e3,3%) !default;
+$warning-border:darken(adjust-hue($warning-bg, -10), 13%) !default;
+$danger-text:#a94442 !default;
+$danger-bg:#f2dede !default;
+$danger-border:darken(adjust-hue($danger-bg, -10), 7%) !default;
 
 
-$spacer:16px;
+$spacer:16px !default;
 $spacers:(
 	0: 0,
 	1: ($spacer * .25),
@@ -70,57 +70,60 @@ $spacers:(
 	3: $spacer,
 	4: ($spacer * 1.5),
 	5: ($spacer * 3)
-);
+) !default;
 
-$screen-width-list:3840px 1920px 1600px 1440px 1366px 1280px 1024px 800px 640px 480px 375px 320px;
-$screen-height-list:2732px 2160px 1920px 1334px 1280px 1136px 980px 900px 768px 720px 640px 480px;
+$screen-width-list:3840px 1920px 1600px 1440px 1366px 1280px 1024px 800px 640px 480px 375px 320px !default;
+$screen-height-list:2732px 2160px 1920px 1334px 1280px 1136px 980px 900px 768px 720px 640px 480px !default;
 
-$screen-xs:480px;
-$screen-sm:640px;
-$screen-md:970px;
-$screen-lg:1230px;
+$screen-xs:480px !default;
+$screen-sm:640px !default;
+$screen-md:970px !default;
+$screen-lg:1230px !default;
 
 //z-index
-$level-item-hover:200;
-$level-item-active:300;
-$level-item-focus:400;
-$level-navbar:500;
-$level-scroll:600;
-$level-dropdown:700;
-$level-dialog:1000;
-$level-popup:10000000;
-$level-tooltip:20000000;
+$level-item-hover:200 !default;
+$level-item-active:300 !default;
+$level-item-focus:400 !default;
+$level-navbar:500 !default;
+$level-scroll:600 !default;
+$level-dropdown:700 !default;
+$level-dialog:1000 !default;
+$level-popup:10000000 !default;
+$level-tooltip:20000000 !default;
 
-$grid-columns-list:5 7 8;//支持哪些N等分网格
-$grid-gutter-width:20px;
-$grid-fluid-gutter-width:math.div(1,48);
+$grid-columns-list:5 7 8 !default;//支持哪些N等分网格
+$grid-gutter-width:20px !default;
+$grid-fluid-gutter-width:math.div(1,48) !default;
 
-$ctrl-height-large:44px;
-$ctrl-height-base:32px;
-$ctrl-height-small:28px;
-$ctrl-height-xsmall:24px;
-$ctrl-border-width:1px;
-$ctrl-line-height:20px;
-$ctrl-fontsize-base:14px;
-$ctrl-fontsize-large:16px;
-$ctrl-fontsize-small:12px;
-$ctrl-fontsize-xsmall:12px;
-$ctrl-padding-base:12px;
-$ctrl-padding-large:16px;
-$ctrl-padding-small:10px;
-$ctrl-padding-xsmall:6px;
+$ctrl-height-large:44px !default;
+$ctrl-height-base:32px !default;
+$ctrl-height-small:28px !default;
+$ctrl-height-xsmall:24px !default;
+$ctrl-border-width:1px !default;
+$ctrl-line-height:20px !default;
+$ctrl-fontsize-base:14px !default;
+$ctrl-fontsize-large:16px !default;
+$ctrl-fontsize-small:12px !default;
+$ctrl-fontsize-xsmall:12px !default;
+$ctrl-padding-base:12px !default;
+$ctrl-padding-large:16px !default;
+$ctrl-padding-small:10px !default;
+$ctrl-padding-xsmall:6px !default;
 
-$btn-padding-base:12px;
-$btn-padding-large:16px;
-$btn-padding-small:10px;
-$btn-padding-xsmall:6px;
+$ctrl-value-color: #555555 !default;
+$ctrl-placeholder-color: #999999 !default;
 
-$navbar-height:50px;
-$navbar-toggle-size:34px;
+$btn-padding-base:12px !default;
+$btn-padding-large:16px !default;
+$btn-padding-small:10px !default;
+$btn-padding-xsmall:6px !default;
 
-$pagination-size:34px;
-$pagination-size-lg:46px;
-$pagination-size-sm:28px;
-$pagination-size-xs:22px;
+$navbar-height:50px !default;
+$navbar-toggle-size:34px !default;
 
-$modal-alpha:0.4;//模不透明度
+$pagination-size:34px !default;
+$pagination-size-lg:46px !default;
+$pagination-size-sm:28px !default;
+$pagination-size-xs:22px !default;
+
+$modal-alpha:0.4 !default;//模不透明度

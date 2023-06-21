@@ -2507,11 +2507,12 @@ code, kbd, samp, .code {
 }
 
 pre {
-  white-space: -moz-pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: pre-wrap;
-  word-wrap: break-word;
   overflow: auto;
+  width: 100%;
+}
+
+wbr:after {
+  content: "​";
 }
 
 nobr, .nobr {
@@ -2685,8 +2686,11 @@ dt {
 
 dialog {
   position: absolute;
+  position: fixed;
   left: 0px;
   right: 0px;
+  top: 0;
+  bottom: 0;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -2770,110 +2774,226 @@ dialog {
   clear: both;
 }
 
-.col-1, .col-md-1 {
+.col-n, .col-12\/8,
+.col-md-12\/8,
+.col-lg-12\/8,
+.col-sm-12\/8,
+.col-xs-12\/8, .col-11\/8,
+.col-md-11\/8,
+.col-lg-11\/8,
+.col-sm-11\/8,
+.col-xs-11\/8, .col-10\/8,
+.col-md-10\/8,
+.col-lg-10\/8,
+.col-sm-10\/8,
+.col-xs-10\/8, .col-9\/8,
+.col-md-9\/8,
+.col-lg-9\/8,
+.col-sm-9\/8,
+.col-xs-9\/8, .col-8\/8,
+.col-md-8\/8,
+.col-lg-8\/8,
+.col-sm-8\/8,
+.col-xs-8\/8, .col-7\/8,
+.col-md-7\/8,
+.col-lg-7\/8,
+.col-sm-7\/8,
+.col-xs-7\/8, .col-6\/8,
+.col-md-6\/8,
+.col-lg-6\/8,
+.col-sm-6\/8,
+.col-xs-6\/8, .col-5\/8,
+.col-md-5\/8,
+.col-lg-5\/8,
+.col-sm-5\/8,
+.col-xs-5\/8, .col-4\/8,
+.col-md-4\/8,
+.col-lg-4\/8,
+.col-sm-4\/8,
+.col-xs-4\/8, .col-3\/8,
+.col-md-3\/8,
+.col-lg-3\/8,
+.col-sm-3\/8,
+.col-xs-3\/8, .col-2\/8,
+.col-md-2\/8,
+.col-lg-2\/8,
+.col-sm-2\/8,
+.col-xs-2\/8, .col-1\/8,
+.col-md-1\/8,
+.col-lg-1\/8,
+.col-sm-1\/8,
+.col-xs-1\/8, .col-12\/7,
+.col-md-12\/7,
+.col-lg-12\/7,
+.col-sm-12\/7,
+.col-xs-12\/7, .col-11\/7,
+.col-md-11\/7,
+.col-lg-11\/7,
+.col-sm-11\/7,
+.col-xs-11\/7, .col-10\/7,
+.col-md-10\/7,
+.col-lg-10\/7,
+.col-sm-10\/7,
+.col-xs-10\/7, .col-9\/7,
+.col-md-9\/7,
+.col-lg-9\/7,
+.col-sm-9\/7,
+.col-xs-9\/7, .col-8\/7,
+.col-md-8\/7,
+.col-lg-8\/7,
+.col-sm-8\/7,
+.col-xs-8\/7, .col-7\/7,
+.col-md-7\/7,
+.col-lg-7\/7,
+.col-sm-7\/7,
+.col-xs-7\/7, .col-6\/7,
+.col-md-6\/7,
+.col-lg-6\/7,
+.col-sm-6\/7,
+.col-xs-6\/7, .col-5\/7,
+.col-md-5\/7,
+.col-lg-5\/7,
+.col-sm-5\/7,
+.col-xs-5\/7, .col-4\/7,
+.col-md-4\/7,
+.col-lg-4\/7,
+.col-sm-4\/7,
+.col-xs-4\/7, .col-3\/7,
+.col-md-3\/7,
+.col-lg-3\/7,
+.col-sm-3\/7,
+.col-xs-3\/7, .col-2\/7,
+.col-md-2\/7,
+.col-lg-2\/7,
+.col-sm-2\/7,
+.col-xs-2\/7, .col-1\/7,
+.col-md-1\/7,
+.col-lg-1\/7,
+.col-sm-1\/7,
+.col-xs-1\/7, .col-12\/5,
+.col-md-12\/5,
+.col-lg-12\/5,
+.col-sm-12\/5,
+.col-xs-12\/5, .col-11\/5,
+.col-md-11\/5,
+.col-lg-11\/5,
+.col-sm-11\/5,
+.col-xs-11\/5, .col-10\/5,
+.col-md-10\/5,
+.col-lg-10\/5,
+.col-sm-10\/5,
+.col-xs-10\/5, .col-9\/5,
+.col-md-9\/5,
+.col-lg-9\/5,
+.col-sm-9\/5,
+.col-xs-9\/5, .col-8\/5,
+.col-md-8\/5,
+.col-lg-8\/5,
+.col-sm-8\/5,
+.col-xs-8\/5, .col-7\/5,
+.col-md-7\/5,
+.col-lg-7\/5,
+.col-sm-7\/5,
+.col-xs-7\/5, .col-6\/5,
+.col-md-6\/5,
+.col-lg-6\/5,
+.col-sm-6\/5,
+.col-xs-6\/5, .col-5\/5,
+.col-md-5\/5,
+.col-lg-5\/5,
+.col-sm-5\/5,
+.col-xs-5\/5, .col-4\/5,
+.col-md-4\/5,
+.col-lg-4\/5,
+.col-sm-4\/5,
+.col-xs-4\/5, .col-3\/5,
+.col-md-3\/5,
+.col-lg-3\/5,
+.col-sm-3\/5,
+.col-xs-3\/5, .col-2\/5,
+.col-md-2\/5,
+.col-lg-2\/5,
+.col-sm-2\/5,
+.col-xs-2\/5, .col-1\/5,
+.col-md-1\/5,
+.col-lg-1\/5,
+.col-sm-1\/5,
+.col-xs-1\/5, .col-12, .col-md-12, .col-lg-12, .col-sm-12, .col-xs-12, .col-11, .col-md-11, .col-lg-11, .col-sm-11, .col-xs-11, .col-10, .col-md-10, .col-lg-10, .col-sm-10, .col-xs-10, .col-9, .col-md-9, .col-lg-9, .col-sm-9, .col-xs-9, .col-8, .col-md-8, .col-lg-8, .col-sm-8, .col-xs-8, .col-7, .col-md-7, .col-lg-7, .col-sm-7, .col-xs-7, .col-6, .col-md-6, .col-lg-6, .col-sm-6, .col-xs-6, .col-5, .col-md-5, .col-lg-5, .col-sm-5, .col-xs-5, .col-4, .col-md-4, .col-lg-4, .col-sm-4, .col-xs-4, .col-3, .col-md-3, .col-lg-3, .col-sm-3, .col-xs-3, .col-2, .col-md-2, .col-lg-2, .col-sm-2, .col-xs-2, .col-1, .col-md-1, .col-lg-1, .col-sm-1, .col-xs-1, .col-md-n, .col-12, .col-md-12, .span12, .col-11, .col-md-11, .span11, .col-10, .col-md-10, .span10, .col-9, .col-md-9, .span9, .col-8, .col-md-8, .span8, .col-7, .col-md-7, .span7, .col-6, .col-md-6, .span6, .col-5, .col-md-5, .span5, .col-4, .col-md-4, .span4, .col-3, .col-md-3, .span3, .col-2, .col-md-2, .span2, .col-1, .col-md-1, .span1, .col-lg-n, .col-sm-n, .col-xs-n {
   position: relative;
+  float: left;
+  vertical-align: top;
+}
+
+.col-md-n, .col-12, .col-md-12, .span12, .col-11, .col-md-11, .span11, .col-10, .col-md-10, .span10, .col-9, .col-md-9, .span9, .col-8, .col-md-8, .span8, .col-7, .col-md-7, .span7, .col-6, .col-md-6, .span6, .col-5, .col-md-5, .span5, .col-4, .col-md-4, .span4, .col-3, .col-md-3, .span3, .col-2, .col-md-2, .span2, .col-1, .col-md-1, .span1 {
+  _display: inline;
+}
+
+.col-1, .col-md-1, .span1 {
   width: 8.3333333333%;
   *width: 8.2508250825%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-2, .col-md-2 {
-  position: relative;
+.col-2, .col-md-2, .span2 {
   width: 16.6666666667%;
   *width: 16.501650165%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-3, .col-md-3 {
-  position: relative;
+.col-3, .col-md-3, .span3 {
   width: 25%;
   *width: 24.7524752475%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-4, .col-md-4 {
-  position: relative;
+.col-4, .col-md-4, .span4 {
   width: 33.3333333333%;
   *width: 33.00330033%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-5, .col-md-5 {
-  position: relative;
+.col-5, .col-md-5, .span5 {
   width: 41.6666666667%;
   *width: 41.2541254125%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-6, .col-md-6 {
-  position: relative;
+.col-6, .col-md-6, .span6 {
   width: 50%;
   *width: 49.504950495%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-7, .col-md-7 {
-  position: relative;
+.col-7, .col-md-7, .span7 {
   width: 58.3333333333%;
   *width: 57.7557755776%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-8, .col-md-8 {
-  position: relative;
+.col-8, .col-md-8, .span8 {
   width: 66.6666666667%;
   *width: 66.0066006601%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-9, .col-md-9 {
-  position: relative;
+.col-9, .col-md-9, .span9 {
   width: 75%;
   *width: 74.2574257426%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-10, .col-md-10 {
-  position: relative;
+.col-10, .col-md-10, .span10 {
   width: 83.3333333333%;
   *width: 82.5082508251%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-11, .col-md-11 {
-  position: relative;
+.col-11, .col-md-11, .span11 {
   width: 91.6666666667%;
   *width: 90.7590759076%;
-  float: left;
-  vertical-align: top;
 }
 
-.col-12, .col-md-12 {
-  position: relative;
+.col-12, .col-md-12, .span12 {
   width: 100%;
   *width: 99.0099009901%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-push-1, .col-md-push-1 {
-  position: relative;
   left: 8.3333333333%;
   *left: 8.2508250825%;
 }
 
 .col-pull-1, .col-md-pull-1 {
-  position: relative;
   right: 8.3333333333%;
   *right: 8.2508250825%;
 }
@@ -2881,17 +3001,14 @@ dialog {
 .col-offset-1, .col-md-offset-1 {
   margin-left: 8.3333333333%;
   *margin-left: 8.2508250825%;
-  _display: inline;
 }
 
 .col-push-2, .col-md-push-2 {
-  position: relative;
   left: 16.6666666667%;
   *left: 16.501650165%;
 }
 
 .col-pull-2, .col-md-pull-2 {
-  position: relative;
   right: 16.6666666667%;
   *right: 16.501650165%;
 }
@@ -2899,17 +3016,14 @@ dialog {
 .col-offset-2, .col-md-offset-2 {
   margin-left: 16.6666666667%;
   *margin-left: 16.501650165%;
-  _display: inline;
 }
 
 .col-push-3, .col-md-push-3 {
-  position: relative;
   left: 25%;
   *left: 24.7524752475%;
 }
 
 .col-pull-3, .col-md-pull-3 {
-  position: relative;
   right: 25%;
   *right: 24.7524752475%;
 }
@@ -2917,17 +3031,14 @@ dialog {
 .col-offset-3, .col-md-offset-3 {
   margin-left: 25%;
   *margin-left: 24.7524752475%;
-  _display: inline;
 }
 
 .col-push-4, .col-md-push-4 {
-  position: relative;
   left: 33.3333333333%;
   *left: 33.00330033%;
 }
 
 .col-pull-4, .col-md-pull-4 {
-  position: relative;
   right: 33.3333333333%;
   *right: 33.00330033%;
 }
@@ -2935,17 +3046,14 @@ dialog {
 .col-offset-4, .col-md-offset-4 {
   margin-left: 33.3333333333%;
   *margin-left: 33.00330033%;
-  _display: inline;
 }
 
 .col-push-5, .col-md-push-5 {
-  position: relative;
   left: 41.6666666667%;
   *left: 41.2541254125%;
 }
 
 .col-pull-5, .col-md-pull-5 {
-  position: relative;
   right: 41.6666666667%;
   *right: 41.2541254125%;
 }
@@ -2953,17 +3061,14 @@ dialog {
 .col-offset-5, .col-md-offset-5 {
   margin-left: 41.6666666667%;
   *margin-left: 41.2541254125%;
-  _display: inline;
 }
 
 .col-push-6, .col-md-push-6 {
-  position: relative;
   left: 50%;
   *left: 49.504950495%;
 }
 
 .col-pull-6, .col-md-pull-6 {
-  position: relative;
   right: 50%;
   *right: 49.504950495%;
 }
@@ -2971,17 +3076,14 @@ dialog {
 .col-offset-6, .col-md-offset-6 {
   margin-left: 50%;
   *margin-left: 49.504950495%;
-  _display: inline;
 }
 
 .col-push-7, .col-md-push-7 {
-  position: relative;
   left: 58.3333333333%;
   *left: 57.7557755776%;
 }
 
 .col-pull-7, .col-md-pull-7 {
-  position: relative;
   right: 58.3333333333%;
   *right: 57.7557755776%;
 }
@@ -2989,17 +3091,14 @@ dialog {
 .col-offset-7, .col-md-offset-7 {
   margin-left: 58.3333333333%;
   *margin-left: 57.7557755776%;
-  _display: inline;
 }
 
 .col-push-8, .col-md-push-8 {
-  position: relative;
   left: 66.6666666667%;
   *left: 66.0066006601%;
 }
 
 .col-pull-8, .col-md-pull-8 {
-  position: relative;
   right: 66.6666666667%;
   *right: 66.0066006601%;
 }
@@ -3007,17 +3106,14 @@ dialog {
 .col-offset-8, .col-md-offset-8 {
   margin-left: 66.6666666667%;
   *margin-left: 66.0066006601%;
-  _display: inline;
 }
 
 .col-push-9, .col-md-push-9 {
-  position: relative;
   left: 75%;
   *left: 74.2574257426%;
 }
 
 .col-pull-9, .col-md-pull-9 {
-  position: relative;
   right: 75%;
   *right: 74.2574257426%;
 }
@@ -3025,17 +3121,14 @@ dialog {
 .col-offset-9, .col-md-offset-9 {
   margin-left: 75%;
   *margin-left: 74.2574257426%;
-  _display: inline;
 }
 
 .col-push-10, .col-md-push-10 {
-  position: relative;
   left: 83.3333333333%;
   *left: 82.5082508251%;
 }
 
 .col-pull-10, .col-md-pull-10 {
-  position: relative;
   right: 83.3333333333%;
   *right: 82.5082508251%;
 }
@@ -3043,17 +3136,14 @@ dialog {
 .col-offset-10, .col-md-offset-10 {
   margin-left: 83.3333333333%;
   *margin-left: 82.5082508251%;
-  _display: inline;
 }
 
 .col-push-11, .col-md-push-11 {
-  position: relative;
   left: 91.6666666667%;
   *left: 90.7590759076%;
 }
 
 .col-pull-11, .col-md-pull-11 {
-  position: relative;
   right: 91.6666666667%;
   *right: 90.7590759076%;
 }
@@ -3061,7 +3151,6 @@ dialog {
 .col-offset-11, .col-md-offset-11 {
   margin-left: 91.6666666667%;
   *margin-left: 90.7590759076%;
-  _display: inline;
 }
 
 @media (max-width: 640px) {
@@ -3090,96 +3179,58 @@ dialog {
 }
 @media (min-width: 1230px) {
   .col-lg-1 {
-    position: relative;
     width: 8.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-2 {
-    position: relative;
     width: 16.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-3 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-4 {
-    position: relative;
     width: 33.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-5 {
-    position: relative;
     width: 41.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-6 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-7 {
-    position: relative;
     width: 58.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-8 {
-    position: relative;
     width: 66.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-9 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-10 {
-    position: relative;
     width: 83.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-11 {
-    position: relative;
     width: 91.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-12 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-push-1 {
-    position: relative;
     left: 8.3333333333%;
   }
 
   .col-lg-pull-1 {
-    position: relative;
     right: 8.3333333333%;
   }
 
@@ -3188,12 +3239,10 @@ dialog {
   }
 
   .col-lg-push-2 {
-    position: relative;
     left: 16.6666666667%;
   }
 
   .col-lg-pull-2 {
-    position: relative;
     right: 16.6666666667%;
   }
 
@@ -3202,12 +3251,10 @@ dialog {
   }
 
   .col-lg-push-3 {
-    position: relative;
     left: 25%;
   }
 
   .col-lg-pull-3 {
-    position: relative;
     right: 25%;
   }
 
@@ -3216,12 +3263,10 @@ dialog {
   }
 
   .col-lg-push-4 {
-    position: relative;
     left: 33.3333333333%;
   }
 
   .col-lg-pull-4 {
-    position: relative;
     right: 33.3333333333%;
   }
 
@@ -3230,12 +3275,10 @@ dialog {
   }
 
   .col-lg-push-5 {
-    position: relative;
     left: 41.6666666667%;
   }
 
   .col-lg-pull-5 {
-    position: relative;
     right: 41.6666666667%;
   }
 
@@ -3244,12 +3287,10 @@ dialog {
   }
 
   .col-lg-push-6 {
-    position: relative;
     left: 50%;
   }
 
   .col-lg-pull-6 {
-    position: relative;
     right: 50%;
   }
 
@@ -3258,12 +3299,10 @@ dialog {
   }
 
   .col-lg-push-7 {
-    position: relative;
     left: 58.3333333333%;
   }
 
   .col-lg-pull-7 {
-    position: relative;
     right: 58.3333333333%;
   }
 
@@ -3272,12 +3311,10 @@ dialog {
   }
 
   .col-lg-push-8 {
-    position: relative;
     left: 66.6666666667%;
   }
 
   .col-lg-pull-8 {
-    position: relative;
     right: 66.6666666667%;
   }
 
@@ -3286,12 +3323,10 @@ dialog {
   }
 
   .col-lg-push-9 {
-    position: relative;
     left: 75%;
   }
 
   .col-lg-pull-9 {
-    position: relative;
     right: 75%;
   }
 
@@ -3300,12 +3335,10 @@ dialog {
   }
 
   .col-lg-push-10 {
-    position: relative;
     left: 83.3333333333%;
   }
 
   .col-lg-pull-10 {
-    position: relative;
     right: 83.3333333333%;
   }
 
@@ -3314,12 +3347,10 @@ dialog {
   }
 
   .col-lg-push-11 {
-    position: relative;
     left: 91.6666666667%;
   }
 
   .col-lg-pull-11 {
-    position: relative;
     right: 91.6666666667%;
   }
 
@@ -3329,180 +3360,106 @@ dialog {
 }
 @media (min-width: 640px) and (max-width: 970px) {
   .col-xs-1 {
-    position: relative;
     width: 8.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2 {
-    position: relative;
     width: 16.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4 {
-    position: relative;
     width: 33.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5 {
-    position: relative;
     width: 41.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-6 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-7 {
-    position: relative;
     width: 58.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-8 {
-    position: relative;
     width: 66.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-9 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-10 {
-    position: relative;
     width: 83.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-11 {
-    position: relative;
     width: 91.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-12 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-1 {
-    position: relative;
     width: 8.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-2 {
-    position: relative;
     width: 16.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-3 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-4 {
-    position: relative;
     width: 33.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-5 {
-    position: relative;
     width: 41.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-6 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-7 {
-    position: relative;
     width: 58.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-8 {
-    position: relative;
     width: 66.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-9 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-10 {
-    position: relative;
     width: 83.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-11 {
-    position: relative;
     width: 91.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-12 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1 {
-    position: relative;
     left: 8.3333333333%;
   }
 
   .col-xs-pull-1 {
-    position: relative;
     right: 8.3333333333%;
   }
 
@@ -3511,12 +3468,10 @@ dialog {
   }
 
   .col-sm-push-1 {
-    position: relative;
     left: 8.3333333333%;
   }
 
   .col-sm-pull-1 {
-    position: relative;
     right: 8.3333333333%;
   }
 
@@ -3525,12 +3480,10 @@ dialog {
   }
 
   .col-xs-push-2 {
-    position: relative;
     left: 16.6666666667%;
   }
 
   .col-xs-pull-2 {
-    position: relative;
     right: 16.6666666667%;
   }
 
@@ -3539,12 +3492,10 @@ dialog {
   }
 
   .col-sm-push-2 {
-    position: relative;
     left: 16.6666666667%;
   }
 
   .col-sm-pull-2 {
-    position: relative;
     right: 16.6666666667%;
   }
 
@@ -3553,12 +3504,10 @@ dialog {
   }
 
   .col-xs-push-3 {
-    position: relative;
     left: 25%;
   }
 
   .col-xs-pull-3 {
-    position: relative;
     right: 25%;
   }
 
@@ -3567,12 +3516,10 @@ dialog {
   }
 
   .col-sm-push-3 {
-    position: relative;
     left: 25%;
   }
 
   .col-sm-pull-3 {
-    position: relative;
     right: 25%;
   }
 
@@ -3581,12 +3528,10 @@ dialog {
   }
 
   .col-xs-push-4 {
-    position: relative;
     left: 33.3333333333%;
   }
 
   .col-xs-pull-4 {
-    position: relative;
     right: 33.3333333333%;
   }
 
@@ -3595,12 +3540,10 @@ dialog {
   }
 
   .col-sm-push-4 {
-    position: relative;
     left: 33.3333333333%;
   }
 
   .col-sm-pull-4 {
-    position: relative;
     right: 33.3333333333%;
   }
 
@@ -3609,12 +3552,10 @@ dialog {
   }
 
   .col-xs-push-5 {
-    position: relative;
     left: 41.6666666667%;
   }
 
   .col-xs-pull-5 {
-    position: relative;
     right: 41.6666666667%;
   }
 
@@ -3623,12 +3564,10 @@ dialog {
   }
 
   .col-sm-push-5 {
-    position: relative;
     left: 41.6666666667%;
   }
 
   .col-sm-pull-5 {
-    position: relative;
     right: 41.6666666667%;
   }
 
@@ -3637,12 +3576,10 @@ dialog {
   }
 
   .col-xs-push-6 {
-    position: relative;
     left: 50%;
   }
 
   .col-xs-pull-6 {
-    position: relative;
     right: 50%;
   }
 
@@ -3651,12 +3588,10 @@ dialog {
   }
 
   .col-sm-push-6 {
-    position: relative;
     left: 50%;
   }
 
   .col-sm-pull-6 {
-    position: relative;
     right: 50%;
   }
 
@@ -3665,12 +3600,10 @@ dialog {
   }
 
   .col-xs-push-7 {
-    position: relative;
     left: 58.3333333333%;
   }
 
   .col-xs-pull-7 {
-    position: relative;
     right: 58.3333333333%;
   }
 
@@ -3679,12 +3612,10 @@ dialog {
   }
 
   .col-sm-push-7 {
-    position: relative;
     left: 58.3333333333%;
   }
 
   .col-sm-pull-7 {
-    position: relative;
     right: 58.3333333333%;
   }
 
@@ -3693,12 +3624,10 @@ dialog {
   }
 
   .col-xs-push-8 {
-    position: relative;
     left: 66.6666666667%;
   }
 
   .col-xs-pull-8 {
-    position: relative;
     right: 66.6666666667%;
   }
 
@@ -3707,12 +3636,10 @@ dialog {
   }
 
   .col-sm-push-8 {
-    position: relative;
     left: 66.6666666667%;
   }
 
   .col-sm-pull-8 {
-    position: relative;
     right: 66.6666666667%;
   }
 
@@ -3721,12 +3648,10 @@ dialog {
   }
 
   .col-xs-push-9 {
-    position: relative;
     left: 75%;
   }
 
   .col-xs-pull-9 {
-    position: relative;
     right: 75%;
   }
 
@@ -3735,12 +3660,10 @@ dialog {
   }
 
   .col-sm-push-9 {
-    position: relative;
     left: 75%;
   }
 
   .col-sm-pull-9 {
-    position: relative;
     right: 75%;
   }
 
@@ -3749,12 +3672,10 @@ dialog {
   }
 
   .col-xs-push-10 {
-    position: relative;
     left: 83.3333333333%;
   }
 
   .col-xs-pull-10 {
-    position: relative;
     right: 83.3333333333%;
   }
 
@@ -3763,12 +3684,10 @@ dialog {
   }
 
   .col-sm-push-10 {
-    position: relative;
     left: 83.3333333333%;
   }
 
   .col-sm-pull-10 {
-    position: relative;
     right: 83.3333333333%;
   }
 
@@ -3777,12 +3696,10 @@ dialog {
   }
 
   .col-xs-push-11 {
-    position: relative;
     left: 91.6666666667%;
   }
 
   .col-xs-pull-11 {
-    position: relative;
     right: 91.6666666667%;
   }
 
@@ -3791,12 +3708,10 @@ dialog {
   }
 
   .col-sm-push-11 {
-    position: relative;
     left: 91.6666666667%;
   }
 
   .col-sm-pull-11 {
-    position: relative;
     right: 91.6666666667%;
   }
 
@@ -3806,96 +3721,58 @@ dialog {
 }
 @media (max-width: 640px) {
   .col-xs-1 {
-    position: relative;
     width: 8.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2 {
-    position: relative;
     width: 16.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4 {
-    position: relative;
     width: 33.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5 {
-    position: relative;
     width: 41.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-6 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-7 {
-    position: relative;
     width: 58.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-8 {
-    position: relative;
     width: 66.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-9 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-10 {
-    position: relative;
     width: 83.3333333333%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-11 {
-    position: relative;
     width: 91.6666666667%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-12 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1 {
-    position: relative;
     left: 8.3333333333%;
   }
 
   .col-xs-pull-1 {
-    position: relative;
     right: 8.3333333333%;
   }
 
@@ -3904,12 +3781,10 @@ dialog {
   }
 
   .col-xs-push-2 {
-    position: relative;
     left: 16.6666666667%;
   }
 
   .col-xs-pull-2 {
-    position: relative;
     right: 16.6666666667%;
   }
 
@@ -3918,12 +3793,10 @@ dialog {
   }
 
   .col-xs-push-3 {
-    position: relative;
     left: 25%;
   }
 
   .col-xs-pull-3 {
-    position: relative;
     right: 25%;
   }
 
@@ -3932,12 +3805,10 @@ dialog {
   }
 
   .col-xs-push-4 {
-    position: relative;
     left: 33.3333333333%;
   }
 
   .col-xs-pull-4 {
-    position: relative;
     right: 33.3333333333%;
   }
 
@@ -3946,12 +3817,10 @@ dialog {
   }
 
   .col-xs-push-5 {
-    position: relative;
     left: 41.6666666667%;
   }
 
   .col-xs-pull-5 {
-    position: relative;
     right: 41.6666666667%;
   }
 
@@ -3960,12 +3829,10 @@ dialog {
   }
 
   .col-xs-push-6 {
-    position: relative;
     left: 50%;
   }
 
   .col-xs-pull-6 {
-    position: relative;
     right: 50%;
   }
 
@@ -3974,12 +3841,10 @@ dialog {
   }
 
   .col-xs-push-7 {
-    position: relative;
     left: 58.3333333333%;
   }
 
   .col-xs-pull-7 {
-    position: relative;
     right: 58.3333333333%;
   }
 
@@ -3988,12 +3853,10 @@ dialog {
   }
 
   .col-xs-push-8 {
-    position: relative;
     left: 66.6666666667%;
   }
 
   .col-xs-pull-8 {
-    position: relative;
     right: 66.6666666667%;
   }
 
@@ -4002,12 +3865,10 @@ dialog {
   }
 
   .col-xs-push-9 {
-    position: relative;
     left: 75%;
   }
 
   .col-xs-pull-9 {
-    position: relative;
     right: 75%;
   }
 
@@ -4016,12 +3877,10 @@ dialog {
   }
 
   .col-xs-push-10 {
-    position: relative;
     left: 83.3333333333%;
   }
 
   .col-xs-pull-10 {
-    position: relative;
     right: 83.3333333333%;
   }
 
@@ -4030,12 +3889,10 @@ dialog {
   }
 
   .col-xs-push-11 {
-    position: relative;
     left: 91.6666666667%;
   }
 
   .col-xs-pull-11 {
-    position: relative;
     right: 91.6666666667%;
   }
 
@@ -4044,125 +3901,91 @@ dialog {
   }
 }
 .col-1\/5, .col-md-1\/5 {
-  position: relative;
   width: 20%;
   *width: 19.801980198%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-2\/5, .col-md-2\/5 {
-  position: relative;
   width: 40%;
   *width: 39.603960396%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-3\/5, .col-md-3\/5 {
-  position: relative;
   width: 60%;
   *width: 59.4059405941%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-4\/5, .col-md-4\/5 {
-  position: relative;
   width: 80%;
   *width: 79.2079207921%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-5\/5, .col-md-5\/5 {
-  position: relative;
   width: 100%;
   *width: 99.0099009901%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-offset-1\/5, .col-md-offset-1\/5 {
   margin-left: 20%;
   *margin-left: 19.801980198%;
-  _display: inline;
 }
 
 .col-offset-2\/5, .col-md-offset-2\/5 {
   margin-left: 40%;
   *margin-left: 39.603960396%;
-  _display: inline;
 }
 
 .col-offset-3\/5, .col-md-offset-3\/5 {
   margin-left: 60%;
   *margin-left: 59.4059405941%;
-  _display: inline;
 }
 
 .col-offset-4\/5, .col-md-offset-4\/5 {
   margin-left: 80%;
   *margin-left: 79.2079207921%;
-  _display: inline;
 }
 
 .col-push-1\/5, .col-md-push-1\/5 {
-  position: relative;
   left: 20%;
   *left: 19.801980198%;
 }
 
 .col-push-2\/5, .col-md-push-2\/5 {
-  position: relative;
   left: 40%;
   *left: 39.603960396%;
 }
 
 .col-push-3\/5, .col-md-push-3\/5 {
-  position: relative;
   left: 60%;
   *left: 59.4059405941%;
 }
 
 .col-push-4\/5, .col-md-push-4\/5 {
-  position: relative;
   left: 80%;
   *left: 79.2079207921%;
 }
 
 .col-pull-1\/5, .col-md-pull-1\/5 {
-  position: relative;
   right: 20%;
   *right: 19.801980198%;
 }
 
 .col-pull-2\/5, .col-md-pull-2\/5 {
-  position: relative;
   right: 40%;
   *right: 39.603960396%;
 }
 
 .col-pull-3\/5, .col-md-pull-3\/5 {
-  position: relative;
   right: 60%;
   *right: 59.4059405941%;
 }
 
 .col-pull-4\/5, .col-md-pull-4\/5 {
-  position: relative;
   right: 80%;
   *right: 79.2079207921%;
 }
 
 @media (max-width: 640px) {
-  .col-md-n\/5, .col-md-5\/5, .col-md-4\/5, .col-md-3\/5, .col-md-2\/5, .col-md-1\/5 {
-    position: relative;
-    width: 100%;
-    float: left;
-    vertical-align: top;
-  }
-
   .col-md-push-n\/5, .col-md-push-4\/5, .col-md-push-3\/5, .col-md-push-2\/5, .col-md-push-1\/5 {
     left: auto;
   }
@@ -4177,47 +4000,30 @@ dialog {
 }
 @media (min-width: 1230px) {
   .col-lg-1\/5 {
-    position: relative;
     width: 20%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-2\/5 {
-    position: relative;
     width: 40%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-3\/5 {
-    position: relative;
     width: 60%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-4\/5 {
-    position: relative;
     width: 80%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-5\/5 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-push-1\/5 {
-    position: relative;
     left: 20%;
   }
 
   .col-lg-pull-1\/5 {
-    position: relative;
     right: 20%;
   }
 
@@ -4226,12 +4032,10 @@ dialog {
   }
 
   .col-lg-push-2\/5 {
-    position: relative;
     left: 40%;
   }
 
   .col-lg-pull-2\/5 {
-    position: relative;
     right: 40%;
   }
 
@@ -4240,12 +4044,10 @@ dialog {
   }
 
   .col-lg-push-3\/5 {
-    position: relative;
     left: 60%;
   }
 
   .col-lg-pull-3\/5 {
-    position: relative;
     right: 60%;
   }
 
@@ -4254,12 +4056,10 @@ dialog {
   }
 
   .col-lg-push-4\/5 {
-    position: relative;
     left: 80%;
   }
 
   .col-lg-pull-4\/5 {
-    position: relative;
     right: 80%;
   }
 
@@ -4269,82 +4069,50 @@ dialog {
 }
 @media (min-width: 640px) and (max-width: 970px) {
   .col-xs-1\/5 {
-    position: relative;
     width: 20%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2\/5 {
-    position: relative;
     width: 40%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3\/5 {
-    position: relative;
     width: 60%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4\/5 {
-    position: relative;
     width: 80%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5\/5 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-1\/5 {
-    position: relative;
     width: 20%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-2\/5 {
-    position: relative;
     width: 40%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-3\/5 {
-    position: relative;
     width: 60%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-4\/5 {
-    position: relative;
     width: 80%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-5\/5 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1\/5 {
-    position: relative;
     left: 20%;
   }
 
   .col-xs-pull-1\/5 {
-    position: relative;
     right: 20%;
   }
 
@@ -4353,12 +4121,10 @@ dialog {
   }
 
   .col-sm-push-1\/5 {
-    position: relative;
     left: 20%;
   }
 
   .col-sm-pull-1\/5 {
-    position: relative;
     right: 20%;
   }
 
@@ -4367,12 +4133,10 @@ dialog {
   }
 
   .col-xs-push-2\/5 {
-    position: relative;
     left: 40%;
   }
 
   .col-xs-pull-2\/5 {
-    position: relative;
     right: 40%;
   }
 
@@ -4381,12 +4145,10 @@ dialog {
   }
 
   .col-sm-push-2\/5 {
-    position: relative;
     left: 40%;
   }
 
   .col-sm-pull-2\/5 {
-    position: relative;
     right: 40%;
   }
 
@@ -4395,12 +4157,10 @@ dialog {
   }
 
   .col-xs-push-3\/5 {
-    position: relative;
     left: 60%;
   }
 
   .col-xs-pull-3\/5 {
-    position: relative;
     right: 60%;
   }
 
@@ -4409,12 +4169,10 @@ dialog {
   }
 
   .col-sm-push-3\/5 {
-    position: relative;
     left: 60%;
   }
 
   .col-sm-pull-3\/5 {
-    position: relative;
     right: 60%;
   }
 
@@ -4423,12 +4181,10 @@ dialog {
   }
 
   .col-xs-push-4\/5 {
-    position: relative;
     left: 80%;
   }
 
   .col-xs-pull-4\/5 {
-    position: relative;
     right: 80%;
   }
 
@@ -4437,12 +4193,10 @@ dialog {
   }
 
   .col-sm-push-4\/5 {
-    position: relative;
     left: 80%;
   }
 
   .col-sm-pull-4\/5 {
-    position: relative;
     right: 80%;
   }
 
@@ -4452,47 +4206,30 @@ dialog {
 }
 @media (max-width: 640px) {
   .col-xs-1\/5 {
-    position: relative;
     width: 20%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2\/5 {
-    position: relative;
     width: 40%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3\/5 {
-    position: relative;
     width: 60%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4\/5 {
-    position: relative;
     width: 80%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5\/5 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1\/5 {
-    position: relative;
     left: 20%;
   }
 
   .col-xs-pull-1\/5 {
-    position: relative;
     right: 20%;
   }
 
@@ -4501,12 +4238,10 @@ dialog {
   }
 
   .col-xs-push-2\/5 {
-    position: relative;
     left: 40%;
   }
 
   .col-xs-pull-2\/5 {
-    position: relative;
     right: 40%;
   }
 
@@ -4515,12 +4250,10 @@ dialog {
   }
 
   .col-xs-push-3\/5 {
-    position: relative;
     left: 60%;
   }
 
   .col-xs-pull-3\/5 {
-    position: relative;
     right: 60%;
   }
 
@@ -4529,12 +4262,10 @@ dialog {
   }
 
   .col-xs-push-4\/5 {
-    position: relative;
     left: 80%;
   }
 
   .col-xs-pull-4\/5 {
-    position: relative;
     right: 80%;
   }
 
@@ -4543,177 +4274,131 @@ dialog {
   }
 }
 .col-1\/7, .col-md-1\/7 {
-  position: relative;
   width: 14.2857142857%;
   *width: 14.14427157%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-2\/7, .col-md-2\/7 {
-  position: relative;
   width: 28.5714285714%;
   *width: 28.28854314%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-3\/7, .col-md-3\/7 {
-  position: relative;
   width: 42.8571428571%;
   *width: 42.43281471%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-4\/7, .col-md-4\/7 {
-  position: relative;
   width: 57.1428571429%;
   *width: 56.5770862801%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-5\/7, .col-md-5\/7 {
-  position: relative;
   width: 71.4285714286%;
   *width: 70.7213578501%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-6\/7, .col-md-6\/7 {
-  position: relative;
   width: 85.7142857143%;
   *width: 84.8656294201%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-7\/7, .col-md-7\/7 {
-  position: relative;
   width: 100%;
   *width: 99.0099009901%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-offset-1\/7, .col-md-offset-1\/7 {
   margin-left: 14.2857142857%;
   *margin-left: 14.14427157%;
-  _display: inline;
 }
 
 .col-offset-2\/7, .col-md-offset-2\/7 {
   margin-left: 28.5714285714%;
   *margin-left: 28.28854314%;
-  _display: inline;
 }
 
 .col-offset-3\/7, .col-md-offset-3\/7 {
   margin-left: 42.8571428571%;
   *margin-left: 42.43281471%;
-  _display: inline;
 }
 
 .col-offset-4\/7, .col-md-offset-4\/7 {
   margin-left: 57.1428571429%;
   *margin-left: 56.5770862801%;
-  _display: inline;
 }
 
 .col-offset-5\/7, .col-md-offset-5\/7 {
   margin-left: 71.4285714286%;
   *margin-left: 70.7213578501%;
-  _display: inline;
 }
 
 .col-offset-6\/7, .col-md-offset-6\/7 {
   margin-left: 85.7142857143%;
   *margin-left: 84.8656294201%;
-  _display: inline;
 }
 
 .col-push-1\/7, .col-md-push-1\/7 {
-  position: relative;
   left: 14.2857142857%;
   *left: 14.14427157%;
 }
 
 .col-push-2\/7, .col-md-push-2\/7 {
-  position: relative;
   left: 28.5714285714%;
   *left: 28.28854314%;
 }
 
 .col-push-3\/7, .col-md-push-3\/7 {
-  position: relative;
   left: 42.8571428571%;
   *left: 42.43281471%;
 }
 
 .col-push-4\/7, .col-md-push-4\/7 {
-  position: relative;
   left: 57.1428571429%;
   *left: 56.5770862801%;
 }
 
 .col-push-5\/7, .col-md-push-5\/7 {
-  position: relative;
   left: 71.4285714286%;
   *left: 70.7213578501%;
 }
 
 .col-push-6\/7, .col-md-push-6\/7 {
-  position: relative;
   left: 85.7142857143%;
   *left: 84.8656294201%;
 }
 
 .col-pull-1\/7, .col-md-pull-1\/7 {
-  position: relative;
   right: 14.2857142857%;
   *right: 14.14427157%;
 }
 
 .col-pull-2\/7, .col-md-pull-2\/7 {
-  position: relative;
   right: 28.5714285714%;
   *right: 28.28854314%;
 }
 
 .col-pull-3\/7, .col-md-pull-3\/7 {
-  position: relative;
   right: 42.8571428571%;
   *right: 42.43281471%;
 }
 
 .col-pull-4\/7, .col-md-pull-4\/7 {
-  position: relative;
   right: 57.1428571429%;
   *right: 56.5770862801%;
 }
 
 .col-pull-5\/7, .col-md-pull-5\/7 {
-  position: relative;
   right: 71.4285714286%;
   *right: 70.7213578501%;
 }
 
 .col-pull-6\/7, .col-md-pull-6\/7 {
-  position: relative;
   right: 85.7142857143%;
   *right: 84.8656294201%;
 }
 
 @media (max-width: 640px) {
-  .col-md-n\/7, .col-md-7\/7, .col-md-6\/7, .col-md-5\/7, .col-md-4\/7, .col-md-3\/7, .col-md-2\/7, .col-md-1\/7 {
-    position: relative;
-    width: 100%;
-    float: left;
-    vertical-align: top;
-  }
-
   .col-md-push-n\/7, .col-md-push-6\/7, .col-md-push-5\/7, .col-md-push-4\/7, .col-md-push-3\/7, .col-md-push-2\/7, .col-md-push-1\/7 {
     left: auto;
   }
@@ -4728,61 +4413,38 @@ dialog {
 }
 @media (min-width: 1230px) {
   .col-lg-1\/7 {
-    position: relative;
     width: 14.2857142857%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-2\/7 {
-    position: relative;
     width: 28.5714285714%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-3\/7 {
-    position: relative;
     width: 42.8571428571%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-4\/7 {
-    position: relative;
     width: 57.1428571429%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-5\/7 {
-    position: relative;
     width: 71.4285714286%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-6\/7 {
-    position: relative;
     width: 85.7142857143%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-7\/7 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-push-1\/7 {
-    position: relative;
     left: 14.2857142857%;
   }
 
   .col-lg-pull-1\/7 {
-    position: relative;
     right: 14.2857142857%;
   }
 
@@ -4791,12 +4453,10 @@ dialog {
   }
 
   .col-lg-push-2\/7 {
-    position: relative;
     left: 28.5714285714%;
   }
 
   .col-lg-pull-2\/7 {
-    position: relative;
     right: 28.5714285714%;
   }
 
@@ -4805,12 +4465,10 @@ dialog {
   }
 
   .col-lg-push-3\/7 {
-    position: relative;
     left: 42.8571428571%;
   }
 
   .col-lg-pull-3\/7 {
-    position: relative;
     right: 42.8571428571%;
   }
 
@@ -4819,12 +4477,10 @@ dialog {
   }
 
   .col-lg-push-4\/7 {
-    position: relative;
     left: 57.1428571429%;
   }
 
   .col-lg-pull-4\/7 {
-    position: relative;
     right: 57.1428571429%;
   }
 
@@ -4833,12 +4489,10 @@ dialog {
   }
 
   .col-lg-push-5\/7 {
-    position: relative;
     left: 71.4285714286%;
   }
 
   .col-lg-pull-5\/7 {
-    position: relative;
     right: 71.4285714286%;
   }
 
@@ -4847,12 +4501,10 @@ dialog {
   }
 
   .col-lg-push-6\/7 {
-    position: relative;
     left: 85.7142857143%;
   }
 
   .col-lg-pull-6\/7 {
-    position: relative;
     right: 85.7142857143%;
   }
 
@@ -4862,110 +4514,66 @@ dialog {
 }
 @media (min-width: 640px) and (max-width: 970px) {
   .col-xs-1\/7 {
-    position: relative;
     width: 14.2857142857%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2\/7 {
-    position: relative;
     width: 28.5714285714%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3\/7 {
-    position: relative;
     width: 42.8571428571%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4\/7 {
-    position: relative;
     width: 57.1428571429%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5\/7 {
-    position: relative;
     width: 71.4285714286%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-6\/7 {
-    position: relative;
     width: 85.7142857143%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-7\/7 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-1\/7 {
-    position: relative;
     width: 14.2857142857%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-2\/7 {
-    position: relative;
     width: 28.5714285714%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-3\/7 {
-    position: relative;
     width: 42.8571428571%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-4\/7 {
-    position: relative;
     width: 57.1428571429%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-5\/7 {
-    position: relative;
     width: 71.4285714286%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-6\/7 {
-    position: relative;
     width: 85.7142857143%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-7\/7 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1\/7 {
-    position: relative;
     left: 14.2857142857%;
   }
 
   .col-xs-pull-1\/7 {
-    position: relative;
     right: 14.2857142857%;
   }
 
@@ -4974,12 +4582,10 @@ dialog {
   }
 
   .col-sm-push-1\/7 {
-    position: relative;
     left: 14.2857142857%;
   }
 
   .col-sm-pull-1\/7 {
-    position: relative;
     right: 14.2857142857%;
   }
 
@@ -4988,12 +4594,10 @@ dialog {
   }
 
   .col-xs-push-2\/7 {
-    position: relative;
     left: 28.5714285714%;
   }
 
   .col-xs-pull-2\/7 {
-    position: relative;
     right: 28.5714285714%;
   }
 
@@ -5002,12 +4606,10 @@ dialog {
   }
 
   .col-sm-push-2\/7 {
-    position: relative;
     left: 28.5714285714%;
   }
 
   .col-sm-pull-2\/7 {
-    position: relative;
     right: 28.5714285714%;
   }
 
@@ -5016,12 +4618,10 @@ dialog {
   }
 
   .col-xs-push-3\/7 {
-    position: relative;
     left: 42.8571428571%;
   }
 
   .col-xs-pull-3\/7 {
-    position: relative;
     right: 42.8571428571%;
   }
 
@@ -5030,12 +4630,10 @@ dialog {
   }
 
   .col-sm-push-3\/7 {
-    position: relative;
     left: 42.8571428571%;
   }
 
   .col-sm-pull-3\/7 {
-    position: relative;
     right: 42.8571428571%;
   }
 
@@ -5044,12 +4642,10 @@ dialog {
   }
 
   .col-xs-push-4\/7 {
-    position: relative;
     left: 57.1428571429%;
   }
 
   .col-xs-pull-4\/7 {
-    position: relative;
     right: 57.1428571429%;
   }
 
@@ -5058,12 +4654,10 @@ dialog {
   }
 
   .col-sm-push-4\/7 {
-    position: relative;
     left: 57.1428571429%;
   }
 
   .col-sm-pull-4\/7 {
-    position: relative;
     right: 57.1428571429%;
   }
 
@@ -5072,12 +4666,10 @@ dialog {
   }
 
   .col-xs-push-5\/7 {
-    position: relative;
     left: 71.4285714286%;
   }
 
   .col-xs-pull-5\/7 {
-    position: relative;
     right: 71.4285714286%;
   }
 
@@ -5086,12 +4678,10 @@ dialog {
   }
 
   .col-sm-push-5\/7 {
-    position: relative;
     left: 71.4285714286%;
   }
 
   .col-sm-pull-5\/7 {
-    position: relative;
     right: 71.4285714286%;
   }
 
@@ -5100,12 +4690,10 @@ dialog {
   }
 
   .col-xs-push-6\/7 {
-    position: relative;
     left: 85.7142857143%;
   }
 
   .col-xs-pull-6\/7 {
-    position: relative;
     right: 85.7142857143%;
   }
 
@@ -5114,12 +4702,10 @@ dialog {
   }
 
   .col-sm-push-6\/7 {
-    position: relative;
     left: 85.7142857143%;
   }
 
   .col-sm-pull-6\/7 {
-    position: relative;
     right: 85.7142857143%;
   }
 
@@ -5129,61 +4715,38 @@ dialog {
 }
 @media (max-width: 640px) {
   .col-xs-1\/7 {
-    position: relative;
     width: 14.2857142857%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2\/7 {
-    position: relative;
     width: 28.5714285714%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3\/7 {
-    position: relative;
     width: 42.8571428571%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4\/7 {
-    position: relative;
     width: 57.1428571429%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5\/7 {
-    position: relative;
     width: 71.4285714286%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-6\/7 {
-    position: relative;
     width: 85.7142857143%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-7\/7 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1\/7 {
-    position: relative;
     left: 14.2857142857%;
   }
 
   .col-xs-pull-1\/7 {
-    position: relative;
     right: 14.2857142857%;
   }
 
@@ -5192,12 +4755,10 @@ dialog {
   }
 
   .col-xs-push-2\/7 {
-    position: relative;
     left: 28.5714285714%;
   }
 
   .col-xs-pull-2\/7 {
-    position: relative;
     right: 28.5714285714%;
   }
 
@@ -5206,12 +4767,10 @@ dialog {
   }
 
   .col-xs-push-3\/7 {
-    position: relative;
     left: 42.8571428571%;
   }
 
   .col-xs-pull-3\/7 {
-    position: relative;
     right: 42.8571428571%;
   }
 
@@ -5220,12 +4779,10 @@ dialog {
   }
 
   .col-xs-push-4\/7 {
-    position: relative;
     left: 57.1428571429%;
   }
 
   .col-xs-pull-4\/7 {
-    position: relative;
     right: 57.1428571429%;
   }
 
@@ -5234,12 +4791,10 @@ dialog {
   }
 
   .col-xs-push-5\/7 {
-    position: relative;
     left: 71.4285714286%;
   }
 
   .col-xs-pull-5\/7 {
-    position: relative;
     right: 71.4285714286%;
   }
 
@@ -5248,12 +4803,10 @@ dialog {
   }
 
   .col-xs-push-6\/7 {
-    position: relative;
     left: 85.7142857143%;
   }
 
   .col-xs-pull-6\/7 {
-    position: relative;
     right: 85.7142857143%;
   }
 
@@ -5262,203 +4815,151 @@ dialog {
   }
 }
 .col-1\/8, .col-md-1\/8 {
-  position: relative;
   width: 12.5%;
   *width: 12.3762376238%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-2\/8, .col-md-2\/8 {
-  position: relative;
   width: 25%;
   *width: 24.7524752475%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-3\/8, .col-md-3\/8 {
-  position: relative;
   width: 37.5%;
   *width: 37.1287128713%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-4\/8, .col-md-4\/8 {
-  position: relative;
   width: 50%;
   *width: 49.504950495%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-5\/8, .col-md-5\/8 {
-  position: relative;
   width: 62.5%;
   *width: 61.8811881188%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-6\/8, .col-md-6\/8 {
-  position: relative;
   width: 75%;
   *width: 74.2574257426%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-7\/8, .col-md-7\/8 {
-  position: relative;
   width: 87.5%;
   *width: 86.6336633663%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-8\/8, .col-md-8\/8 {
-  position: relative;
   width: 100%;
   *width: 99.0099009901%;
-  float: left;
-  vertical-align: top;
 }
 
 .col-offset-1\/8, .col-md-offset-1\/8 {
   margin-left: 12.5%;
   *margin-left: 12.3762376238%;
-  _display: inline;
 }
 
 .col-offset-2\/8, .col-md-offset-2\/8 {
   margin-left: 25%;
   *margin-left: 24.7524752475%;
-  _display: inline;
 }
 
 .col-offset-3\/8, .col-md-offset-3\/8 {
   margin-left: 37.5%;
   *margin-left: 37.1287128713%;
-  _display: inline;
 }
 
 .col-offset-4\/8, .col-md-offset-4\/8 {
   margin-left: 50%;
   *margin-left: 49.504950495%;
-  _display: inline;
 }
 
 .col-offset-5\/8, .col-md-offset-5\/8 {
   margin-left: 62.5%;
   *margin-left: 61.8811881188%;
-  _display: inline;
 }
 
 .col-offset-6\/8, .col-md-offset-6\/8 {
   margin-left: 75%;
   *margin-left: 74.2574257426%;
-  _display: inline;
 }
 
 .col-offset-7\/8, .col-md-offset-7\/8 {
   margin-left: 87.5%;
   *margin-left: 86.6336633663%;
-  _display: inline;
 }
 
 .col-push-1\/8, .col-md-push-1\/8 {
-  position: relative;
   left: 12.5%;
   *left: 12.3762376238%;
 }
 
 .col-push-2\/8, .col-md-push-2\/8 {
-  position: relative;
   left: 25%;
   *left: 24.7524752475%;
 }
 
 .col-push-3\/8, .col-md-push-3\/8 {
-  position: relative;
   left: 37.5%;
   *left: 37.1287128713%;
 }
 
 .col-push-4\/8, .col-md-push-4\/8 {
-  position: relative;
   left: 50%;
   *left: 49.504950495%;
 }
 
 .col-push-5\/8, .col-md-push-5\/8 {
-  position: relative;
   left: 62.5%;
   *left: 61.8811881188%;
 }
 
 .col-push-6\/8, .col-md-push-6\/8 {
-  position: relative;
   left: 75%;
   *left: 74.2574257426%;
 }
 
 .col-push-7\/8, .col-md-push-7\/8 {
-  position: relative;
   left: 87.5%;
   *left: 86.6336633663%;
 }
 
 .col-pull-1\/8, .col-md-pull-1\/8 {
-  position: relative;
   right: 12.5%;
   *right: 12.3762376238%;
 }
 
 .col-pull-2\/8, .col-md-pull-2\/8 {
-  position: relative;
   right: 25%;
   *right: 24.7524752475%;
 }
 
 .col-pull-3\/8, .col-md-pull-3\/8 {
-  position: relative;
   right: 37.5%;
   *right: 37.1287128713%;
 }
 
 .col-pull-4\/8, .col-md-pull-4\/8 {
-  position: relative;
   right: 50%;
   *right: 49.504950495%;
 }
 
 .col-pull-5\/8, .col-md-pull-5\/8 {
-  position: relative;
   right: 62.5%;
   *right: 61.8811881188%;
 }
 
 .col-pull-6\/8, .col-md-pull-6\/8 {
-  position: relative;
   right: 75%;
   *right: 74.2574257426%;
 }
 
 .col-pull-7\/8, .col-md-pull-7\/8 {
-  position: relative;
   right: 87.5%;
   *right: 86.6336633663%;
 }
 
 @media (max-width: 640px) {
-  .col-md-n\/8, .col-md-8\/8, .col-md-7\/8, .col-md-6\/8, .col-md-5\/8, .col-md-4\/8, .col-md-3\/8, .col-md-2\/8, .col-md-1\/8 {
-    position: relative;
-    width: 100%;
-    float: left;
-    vertical-align: top;
-  }
-
   .col-md-push-n\/8, .col-md-push-7\/8, .col-md-push-6\/8, .col-md-push-5\/8, .col-md-push-4\/8, .col-md-push-3\/8, .col-md-push-2\/8, .col-md-push-1\/8 {
     left: auto;
   }
@@ -5473,68 +4974,42 @@ dialog {
 }
 @media (min-width: 1230px) {
   .col-lg-1\/8 {
-    position: relative;
     width: 12.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-2\/8 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-3\/8 {
-    position: relative;
     width: 37.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-4\/8 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-5\/8 {
-    position: relative;
     width: 62.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-6\/8 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-7\/8 {
-    position: relative;
     width: 87.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-8\/8 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-lg-push-1\/8 {
-    position: relative;
     left: 12.5%;
   }
 
   .col-lg-pull-1\/8 {
-    position: relative;
     right: 12.5%;
   }
 
@@ -5543,12 +5018,10 @@ dialog {
   }
 
   .col-lg-push-2\/8 {
-    position: relative;
     left: 25%;
   }
 
   .col-lg-pull-2\/8 {
-    position: relative;
     right: 25%;
   }
 
@@ -5557,12 +5030,10 @@ dialog {
   }
 
   .col-lg-push-3\/8 {
-    position: relative;
     left: 37.5%;
   }
 
   .col-lg-pull-3\/8 {
-    position: relative;
     right: 37.5%;
   }
 
@@ -5571,12 +5042,10 @@ dialog {
   }
 
   .col-lg-push-4\/8 {
-    position: relative;
     left: 50%;
   }
 
   .col-lg-pull-4\/8 {
-    position: relative;
     right: 50%;
   }
 
@@ -5585,12 +5054,10 @@ dialog {
   }
 
   .col-lg-push-5\/8 {
-    position: relative;
     left: 62.5%;
   }
 
   .col-lg-pull-5\/8 {
-    position: relative;
     right: 62.5%;
   }
 
@@ -5599,12 +5066,10 @@ dialog {
   }
 
   .col-lg-push-6\/8 {
-    position: relative;
     left: 75%;
   }
 
   .col-lg-pull-6\/8 {
-    position: relative;
     right: 75%;
   }
 
@@ -5613,12 +5078,10 @@ dialog {
   }
 
   .col-lg-push-7\/8 {
-    position: relative;
     left: 87.5%;
   }
 
   .col-lg-pull-7\/8 {
-    position: relative;
     right: 87.5%;
   }
 
@@ -5628,124 +5091,74 @@ dialog {
 }
 @media (min-width: 640px) and (max-width: 970px) {
   .col-xs-1\/8 {
-    position: relative;
     width: 12.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2\/8 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3\/8 {
-    position: relative;
     width: 37.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4\/8 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5\/8 {
-    position: relative;
     width: 62.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-6\/8 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-7\/8 {
-    position: relative;
     width: 87.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-8\/8 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-1\/8 {
-    position: relative;
     width: 12.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-2\/8 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-3\/8 {
-    position: relative;
     width: 37.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-4\/8 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-5\/8 {
-    position: relative;
     width: 62.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-6\/8 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-7\/8 {
-    position: relative;
     width: 87.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-sm-8\/8 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1\/8 {
-    position: relative;
     left: 12.5%;
   }
 
   .col-xs-pull-1\/8 {
-    position: relative;
     right: 12.5%;
   }
 
@@ -5754,12 +5167,10 @@ dialog {
   }
 
   .col-sm-push-1\/8 {
-    position: relative;
     left: 12.5%;
   }
 
   .col-sm-pull-1\/8 {
-    position: relative;
     right: 12.5%;
   }
 
@@ -5768,12 +5179,10 @@ dialog {
   }
 
   .col-xs-push-2\/8 {
-    position: relative;
     left: 25%;
   }
 
   .col-xs-pull-2\/8 {
-    position: relative;
     right: 25%;
   }
 
@@ -5782,12 +5191,10 @@ dialog {
   }
 
   .col-sm-push-2\/8 {
-    position: relative;
     left: 25%;
   }
 
   .col-sm-pull-2\/8 {
-    position: relative;
     right: 25%;
   }
 
@@ -5796,12 +5203,10 @@ dialog {
   }
 
   .col-xs-push-3\/8 {
-    position: relative;
     left: 37.5%;
   }
 
   .col-xs-pull-3\/8 {
-    position: relative;
     right: 37.5%;
   }
 
@@ -5810,12 +5215,10 @@ dialog {
   }
 
   .col-sm-push-3\/8 {
-    position: relative;
     left: 37.5%;
   }
 
   .col-sm-pull-3\/8 {
-    position: relative;
     right: 37.5%;
   }
 
@@ -5824,12 +5227,10 @@ dialog {
   }
 
   .col-xs-push-4\/8 {
-    position: relative;
     left: 50%;
   }
 
   .col-xs-pull-4\/8 {
-    position: relative;
     right: 50%;
   }
 
@@ -5838,12 +5239,10 @@ dialog {
   }
 
   .col-sm-push-4\/8 {
-    position: relative;
     left: 50%;
   }
 
   .col-sm-pull-4\/8 {
-    position: relative;
     right: 50%;
   }
 
@@ -5852,12 +5251,10 @@ dialog {
   }
 
   .col-xs-push-5\/8 {
-    position: relative;
     left: 62.5%;
   }
 
   .col-xs-pull-5\/8 {
-    position: relative;
     right: 62.5%;
   }
 
@@ -5866,12 +5263,10 @@ dialog {
   }
 
   .col-sm-push-5\/8 {
-    position: relative;
     left: 62.5%;
   }
 
   .col-sm-pull-5\/8 {
-    position: relative;
     right: 62.5%;
   }
 
@@ -5880,12 +5275,10 @@ dialog {
   }
 
   .col-xs-push-6\/8 {
-    position: relative;
     left: 75%;
   }
 
   .col-xs-pull-6\/8 {
-    position: relative;
     right: 75%;
   }
 
@@ -5894,12 +5287,10 @@ dialog {
   }
 
   .col-sm-push-6\/8 {
-    position: relative;
     left: 75%;
   }
 
   .col-sm-pull-6\/8 {
-    position: relative;
     right: 75%;
   }
 
@@ -5908,12 +5299,10 @@ dialog {
   }
 
   .col-xs-push-7\/8 {
-    position: relative;
     left: 87.5%;
   }
 
   .col-xs-pull-7\/8 {
-    position: relative;
     right: 87.5%;
   }
 
@@ -5922,12 +5311,10 @@ dialog {
   }
 
   .col-sm-push-7\/8 {
-    position: relative;
     left: 87.5%;
   }
 
   .col-sm-pull-7\/8 {
-    position: relative;
     right: 87.5%;
   }
 
@@ -5937,68 +5324,42 @@ dialog {
 }
 @media (max-width: 640px) {
   .col-xs-1\/8 {
-    position: relative;
     width: 12.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-2\/8 {
-    position: relative;
     width: 25%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-3\/8 {
-    position: relative;
     width: 37.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-4\/8 {
-    position: relative;
     width: 50%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-5\/8 {
-    position: relative;
     width: 62.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-6\/8 {
-    position: relative;
     width: 75%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-7\/8 {
-    position: relative;
     width: 87.5%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-8\/8 {
-    position: relative;
     width: 100%;
-    float: left;
-    vertical-align: top;
   }
 
   .col-xs-push-1\/8 {
-    position: relative;
     left: 12.5%;
   }
 
   .col-xs-pull-1\/8 {
-    position: relative;
     right: 12.5%;
   }
 
@@ -6007,12 +5368,10 @@ dialog {
   }
 
   .col-xs-push-2\/8 {
-    position: relative;
     left: 25%;
   }
 
   .col-xs-pull-2\/8 {
-    position: relative;
     right: 25%;
   }
 
@@ -6021,12 +5380,10 @@ dialog {
   }
 
   .col-xs-push-3\/8 {
-    position: relative;
     left: 37.5%;
   }
 
   .col-xs-pull-3\/8 {
-    position: relative;
     right: 37.5%;
   }
 
@@ -6035,12 +5392,10 @@ dialog {
   }
 
   .col-xs-push-4\/8 {
-    position: relative;
     left: 50%;
   }
 
   .col-xs-pull-4\/8 {
-    position: relative;
     right: 50%;
   }
 
@@ -6049,12 +5404,10 @@ dialog {
   }
 
   .col-xs-push-5\/8 {
-    position: relative;
     left: 62.5%;
   }
 
   .col-xs-pull-5\/8 {
-    position: relative;
     right: 62.5%;
   }
 
@@ -6063,12 +5416,10 @@ dialog {
   }
 
   .col-xs-push-6\/8 {
-    position: relative;
     left: 75%;
   }
 
   .col-xs-pull-6\/8 {
-    position: relative;
     right: 75%;
   }
 
@@ -6077,12 +5428,10 @@ dialog {
   }
 
   .col-xs-push-7\/8 {
-    position: relative;
     left: 87.5%;
   }
 
   .col-xs-pull-7\/8 {
-    position: relative;
     right: 87.5%;
   }
 
@@ -6111,103 +5460,66 @@ dialog {
 .span1, .span2, .span3, .span4, .span5, .span6,
 .span7, .span8, .span9, .span10, .span11, .span12 {
   margin-left: 2.0833333333%;
-  _display: inline;
 }
 
 .span1 {
-  position: relative;
   width: 6.25%;
   *width: 6.1881188119%;
-  float: left;
-  vertical-align: top;
 }
 
 .span2 {
-  position: relative;
   width: 14.5833333333%;
   *width: 14.4389438944%;
-  float: left;
-  vertical-align: top;
 }
 
 .span3 {
-  position: relative;
   width: 22.9166666667%;
   *width: 22.6897689769%;
-  float: left;
-  vertical-align: top;
 }
 
 .span4 {
-  position: relative;
   width: 31.25%;
   *width: 30.9405940594%;
-  float: left;
-  vertical-align: top;
 }
 
 .span5 {
-  position: relative;
   width: 39.5833333333%;
   *width: 39.1914191419%;
-  float: left;
-  vertical-align: top;
 }
 
 .span6 {
-  position: relative;
   width: 47.9166666667%;
   *width: 47.4422442244%;
-  float: left;
-  vertical-align: top;
 }
 
 .span7 {
-  position: relative;
   width: 56.25%;
   *width: 55.6930693069%;
-  float: left;
-  vertical-align: top;
 }
 
 .span8 {
-  position: relative;
   width: 64.5833333333%;
   *width: 63.9438943894%;
-  float: left;
-  vertical-align: top;
 }
 
 .span9 {
-  position: relative;
   width: 72.9166666667%;
   *width: 72.1947194719%;
-  float: left;
-  vertical-align: top;
 }
 
 .span10 {
-  position: relative;
   width: 81.25%;
   *width: 80.4455445545%;
-  float: left;
-  vertical-align: top;
 }
 
 .span11 {
-  position: relative;
   width: 89.5833333333%;
   *width: 88.696369637%;
-  float: left;
-  vertical-align: top;
 }
 
 .span12 {
-  position: relative;
   width: 97.9166666667%;
   *width: 96.9471947195%;
-  float: left;
-  vertical-align: top;
 }
 
 .offset1 {
@@ -6416,7 +5728,12 @@ body.layout-full {
 }
 
 .row-grow, .col-center, .col-left, .col-right, .col-sider {
+  position: relative;
   overflow: auto;
+}
+
+.row-shrink {
+  position: relative;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none), (-webkit-min-device-pixel-ratio: 0) {
@@ -6871,6 +6188,10 @@ pre.code {
   border-left: 5px solid #55bb8a;
   font-size: 13px;
   display: block;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .link {
@@ -6894,6 +6215,38 @@ pre.code {
   color: #337ab7;
 }
 
+.link-success {
+  color: #2B9735;
+}
+
+.link-success:hover {
+  color: #3c763d;
+}
+
+.link-info {
+  color: #1890ff;
+}
+
+.link-info:hover {
+  color: #31708f;
+}
+
+.link-warning {
+  color: #F37B1D;
+}
+
+.link-warning:hover {
+  color: #8a6d3b;
+}
+
+.link-danger {
+  color: #dc3545;
+}
+
+.link-danger:hover {
+  color: #a94442;
+}
+
 .link-disabled {
   cursor: not-allowed;
   color: #a0a0a0;
@@ -6902,6 +6255,10 @@ pre.code {
 
 .link-disabled:hover {
   color: #a0a0a0;
+  text-decoration: none;
+}
+
+.link-no-decoration, .link-no-decoration:hover {
   text-decoration: none;
 }
 
@@ -7115,13 +6472,36 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
 
 .table-responsive {
   position: relative;
+  width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
   margin: 10px 0;
+  border: 1px solid #D8DCF0;
 }
 
 .table-responsive .table {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: -1px;
+}
+
+.table-responsive > .table-bordered {
+  margin: 0;
+  border: 0 none;
+}
+
+.table-responsive > .table-bordered > * > tr > *:last-child {
+  border-right: 0 none;
+}
+
+.table-responsive > .table-bordered > * > tr > *:first-child {
+  border-left: 0 none;
+}
+
+.table-responsive > .table-bordered > * > tr:first-child > * {
+  border-top: 0 none;
+}
+
+.table-responsive > .table-bordered > * > tr:last-child > * {
+  border-bottom: 0 none;
 }
 
 .table-fixed {
@@ -7171,7 +6551,8 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
     order: -1;
   }
 
-  .media-body {
+  .media-center, .media-body {
+    min-width: 0;
     order: 0;
     flex-grow: 1;
   }
@@ -7188,7 +6569,7 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
     align-self: flex-end;
   }
 }
-.media-body {
+.media-center, .media-body {
   overflow: auto;
 }
 
@@ -7223,7 +6604,16 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
   border-left: 0 none;
   border-right: 0 none;
   position: relative;
+  background: #fff;
   *zoom: 1;
+}
+
+a.list-item,
+button.list-item {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: block;
 }
 
 .list-dashed .list-item {
@@ -7251,8 +6641,16 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
   background-color: #fcfcfc;
 }
 
+button.list-item:hover,
+a.list-item:hover,
 .list-hover .list-item:hover {
   background-color: #f5f5f5;
+  z-index: 200;
+}
+
+button.list-item:focus {
+  border: 1px solid #000;
+  z-index: 400;
 }
 
 .list-hover > .list-item-success:hover {
@@ -7396,6 +6794,7 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
   height: auto;
 }
 
+.ratio,
 .embed-responsive {
   position: relative;
   display: block;
@@ -7404,11 +6803,9 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
   overflow: hidden;
   *zoom: 1;
 }
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
+
+.embed-responsive-item,
+.ratio-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -7419,62 +6816,48 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
   *height: auto;
 }
 
-.embed-responsive-item,
-.embed-responsive img,
-.embed-responsive video {
+img.ratio-item,
+video.ratio-item,
+img.embed-responsive-item,
+video.embed-responsive-item {
   -o-object-fit: cover;
   object-fit: cover;
 }
 
+.ratio-16x9,
+.ratio-16\/9,
 .embed-responsive-16by9,
 .embed-responsive-16\/9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive-16by9 .embed-responsive-item,
-.embed-responsive-16by9 iframe,
-.embed-responsive-16by9 embed,
-.embed-responsive-16by9 object,
-.embed-responsive-16by9 video,
-.embed-responsive-16\/9 .embed-responsive-item,
-.embed-responsive-16\/9 iframe,
-.embed-responsive-16\/9 embed,
-.embed-responsive-16\/9 object,
-.embed-responsive-16\/9 video {
-  *height: expression(this.offsetWidth*.5625+"px");
+
+.ratio-16x9 .ratio-item, .ratio-16\/9 .ratio-item,
+.embed-responsive-16by9 .embed-responsive-item, .embed-responsive-16\/9 .embed-responsive-item {
+  *height: expression(this.offsetWidth*0.5625+"px");
 }
 
+.ratio-4x3,
+.ratio-4\/3,
 .embed-responsive-4by3,
 .embed-responsive-4\/3 {
   padding-bottom: 75%;
 }
-.embed-responsive-4by3 .embed-responsive-item,
-.embed-responsive-4by3 iframe,
-.embed-responsive-4by3 embed,
-.embed-responsive-4by3 object,
-.embed-responsive-4by3 video,
-.embed-responsive-4\/3 .embed-responsive-item,
-.embed-responsive-4\/3 iframe,
-.embed-responsive-4\/3 embed,
-.embed-responsive-4\/3 object,
-.embed-responsive-4\/3 video {
-  *height: expression(this.offsetWidth*.75+"px");
+
+.ratio-4x3 .ratio-item, .ratio-4\/3 .ratio-item,
+.embed-responsive-4by3 .embed-responsive-item, .embed-responsive-4\/3 .embed-responsive-item {
+  *height: expression(this.offsetWidth*0.75+"px");
 }
 
+.ratio-1x1,
+.ratio-1\/1,
 .embed-responsive-1by1,
 .embed-responsive-1\/1 {
   padding-bottom: 100%;
 }
-.embed-responsive-1by1 .embed-responsive-item,
-.embed-responsive-1by1 iframe,
-.embed-responsive-1by1 embed,
-.embed-responsive-1by1 object,
-.embed-responsive-1by1 video,
-.embed-responsive-1\/1 .embed-responsive-item,
-.embed-responsive-1\/1 iframe,
-.embed-responsive-1\/1 embed,
-.embed-responsive-1\/1 object,
-.embed-responsive-1\/1 video {
-  *height: expression(this.offsetWidth+"px");
+
+.ratio-1x1 .ratio-item, .ratio-1\/1 .ratio-item,
+.embed-responsive-1by1 .embed-responsive-item, .embed-responsive-1\/1 .embed-responsive-item {
+  *height: expression(this.offsetWidth*1+"px");
 }
 
 .card {
@@ -7596,7 +6979,7 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
 .form-control {
   font-size: 14px;
   line-height: 20px;
-  color: #555;
+  color: #555555;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -7627,14 +7010,14 @@ input.form-control, select.form-control {
 }
 
 .form-control::-moz-placeholder, .input-control input::-moz-placeholder {
-  color: #999;
+  color: #999999;
   opacity: 1;
 }
 .form-control::-webkit-input-placeholder, .input-control input::-webkit-input-placeholder {
-  color: #999;
+  color: #999999;
 }
 .form-control:-ms-input-placeholder, .input-control input:-ms-input-placeholder {
-  color: #999;
+  color: #999999;
 }
 .form-control::-ms-expand, .input-control input::-ms-expand {
   border: 0;
@@ -7642,7 +7025,7 @@ input.form-control, select.form-control {
 }
 
 .form-placeholder {
-  color: #999;
+  color: #999999;
 }
 
 .form textarea.form-control, .form-horizontal textarea.form-control {
@@ -7680,155 +7063,6 @@ input.form-control, select.form-control {
   vertical-align: middle;
   margin: 2px 3px 3px;
   *margin: 0;
-}
-
-.input-group {
-  *zoom: 1;
-}
-.input-group:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-}
-
-.input-group-left {
-  position: relative;
-  margin-right: -1px;
-  float: left;
-  _margin-right: -4px;
-  font-size: 0;
-  line-height: 0;
-  white-space: nowrap;
-}
-
-.input-group-right {
-  position: relative;
-  margin-left: -1px;
-  float: right;
-  _margin-left: -4px;
-  font-size: 0;
-  line-height: 0;
-  white-space: nowrap;
-  *z-index: 1;
-}
-
-.input-group-center {
-  position: relative;
-  overflow: auto;
-}
-
-.input-group-center:focus-within {
-  z-index: 400;
-}
-
-.input-group-center .form-control {
-  width: 100%;
-}
-
-.input-group .input-group-left {
-  margin-right: -1px;
-  _margin-right: -4px;
-}
-
-.input-group .input-group-right {
-  margin-left: -1px;
-  _margin-left: -4px;
-}
-
-.input-group-text {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 5px 12px;
-  color: #555;
-  background-color: #eee;
-  border: 1px solid #ccc;
-}
-
-.input-group-text .checkbox-inline, .input-group-text .radio-inline {
-  vertical-align: top;
-}
-
-.input {
-  padding: 0 12px;
-  font-size: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  *zoom: 1;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-
-.input:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-}
-
-.input:focus-within {
-  border-color: #66afe9;
-  z-index: 400;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-
-.input-prefix {
-  float: left;
-  margin-right: 4px;
-  *margin-right: 1px;
-}
-
-.input-suffix {
-  float: right;
-  margin-left: 4px;
-  *margin-left: 1px;
-}
-
-.input-prefix, .input-suffix {
-  position: relative;
-  white-space: nowrap;
-  font-size: 14px;
-  height: 30px;
-}
-
-.input-control {
-  overflow: auto;
-  position: relative;
-}
-
-.input-control input, .input-control select {
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 0;
-  border: 0 none;
-  color: #555;
-  background: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  outline: 0;
-  vertical-align: top;
-  *margin-top: -1px;
-  *margin-bottom: -1px;
-}
-
-.input-control input::-ms-clear {
-  display: none;
-}
-
-.input-count {
-  vertical-align: middle;
-  color: #757575;
-  font-size: 12px;
 }
 
 .form-group {
@@ -7933,126 +7167,6 @@ input.form-control, select.form-control {
   width: 100% !important;
 }
 
-.help-block {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: #212121;
-}
-
-.has-feedback {
-  position: relative;
-  *zoom: 1;
-}
-.has-feedback .form-control, .has-feedback .input-control input {
-  padding-right: 36px;
-}
-.has-feedback .radio-stack {
-  padding-right: 32px;
-}
-
-.form-control-feedback {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 32px;
-  line-height: 32px;
-  text-align: center;
-  font-size: 16px;
-}
-
-.input-control .form-control-feedback {
-  line-height: 30px;
-}
-
-.form .form-label ~ .form-control-feedback,
-.form .control-label ~ .form-control-feedback {
-  top: 25px;
-}
-
-.form .form-control-feedback {
-  *top: auto;
-  *margin-top: -32px;
-}
-
-.has-success .form-label, .has-success .control-label, .has-success .form-control-feedback, .has-success .help-block {
-  color: #2B9735;
-}
-.has-success .form-control-feedback {
-  color: #2B9735;
-}
-.has-success .form-control, .has-success .input {
-  border-color: #2B9735;
-}
-
-.has-warning .form-label, .has-warning .control-label, .has-warning .form-control-feedback, .has-warning .help-block {
-  color: #d2620b;
-}
-.has-warning .form-control-feedback {
-  color: #F37B1D;
-}
-.has-warning .form-control, .has-warning .input {
-  border-color: #F37B1D;
-}
-
-.has-error .form-label, .has-error .control-label, .has-error .form-control-feedback, .has-error .help-block {
-  color: #dc3545;
-}
-.has-error .form-control-feedback {
-  color: #dc3545;
-}
-.has-error .form-control, .has-error .input {
-  border-color: #dc3545;
-}
-
-.form .is-invalid {
-  border-color: #dc3545;
-}
-
-.form .is-valid {
-  border-color: #2B9735;
-}
-
-.form .invalid-feedback {
-  color: #dc3545;
-}
-
-.form .valid-feedback {
-  color: #2B9735;
-}
-
-.form-control-static {
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-  padding: 6px 0;
-}
-
-.form-control[disabled] {
-  cursor: not-allowed;
-  background-color: #eee;
-}
-
-.input-disabled {
-  cursor: not-allowed;
-  background-color: #eee;
-}
-
-@media (min-width: 0) {
-  .input-disabled .input-prefix, .input-disabled .input-suffix {
-    opacity: 0.65;
-  }
-}
-@media \0 screen\,screen\9  {
-  .input-disabled .input-prefix span, .input-disabled .input-prefix div, .input-disabled .input-prefix i, .input-disabled .input-suffix span, .input-disabled .input-suffix div, .input-disabled .input-suffix i {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
-  }
-  .input-disabled .input-prefix img, .input-disabled .input-suffix img {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60);
-  }
-}
-
 .form-group-lg .form-label, .form-group-lg .control-label {
   font-size: 16px;
 }
@@ -8075,31 +7189,477 @@ input.form-control, select.form-control {
   height: 28px;
 }
 
+.form-horizontal .form-group-sm .form-label, .form-horizontal .form-group-sm .control-label {
+  padding-top: 4px;
+}
+
+.form-horizontal .form-group-lg .form-label, .form-horizontal .form-group-lg .control-label {
+  padding-top: 12px;
+}
+
+.form-control-lg,
 .input-lg {
   font-size: 16px;
   padding: 11px 16px;
 }
 
+input.form-control-lg, select.form-control-lg,
 input.input-lg, select.input-lg {
   height: 44px;
 }
 
+.form-control-sm,
 .input-sm {
   font-size: 12px;
   padding: 3px 10px;
 }
 
+input.form-control-sm, select.form-control-sm,
 input.input-sm, select.input-sm {
   height: 28px;
 }
 
+.form-control-xs,
 .input-xs {
   font-size: 12px;
   padding: 1px 6px;
 }
 
+input.form-control-xs, select.form-control-xs,
 input.input-xs, select.input-xs {
   height: 24px;
+}
+
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #212121;
+}
+
+.valid-tooltip, .invalid-tooltip {
+  position: absolute;
+  max-width: 100%;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.has-feedback {
+  position: relative;
+  *zoom: 1;
+}
+.has-feedback .form-control, .has-feedback .input-control input {
+  padding-right: 36px;
+}
+.has-feedback textarea.form-control {
+  overflow-y: scroll;
+}
+.has-feedback textarea.form-control ~ .form-control-feedback {
+  right: 17px;
+}
+.has-feedback .radio-stack {
+  padding-right: 32px;
+}
+
+.form-control-feedback {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.form-group-lg .form-control-feedback {
+  line-height: 44px;
+}
+
+.form-group-sm .form-control-feedback {
+  line-height: 28px;
+}
+
+.form-control-lg ~ .form-control-feedback {
+  line-height: 44px;
+}
+
+.form-control-sm ~ .form-control-feedback {
+  line-height: 28px;
+}
+
+.input-control .form-control-feedback {
+  line-height: 30px;
+}
+
+.form .form-label ~ .form-control-feedback,
+.form .control-label ~ .form-control-feedback {
+  top: 25px;
+}
+
+.form .form-control-feedback {
+  *top: auto;
+  *margin-top: -32px;
+}
+
+.form-control-static {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.form-group-lg .form-control-static {
+  font-size: 16px;
+  padding: 12px 0;
+}
+
+.form-group-sm .form-control-static {
+  font-size: 12px;
+  padding: 4px 0;
+}
+
+.input-group {
+  *zoom: 1;
+}
+.input-group:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.input-group-left {
+  position: relative;
+  margin-right: -1px;
+  float: left;
+  _margin-right: -4px;
+  font-size: 0;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+.input-group-right {
+  position: relative;
+  margin-left: -1px;
+  float: right;
+  _margin-left: -4px;
+  font-size: 0;
+  line-height: 0;
+  white-space: nowrap;
+  *z-index: 1;
+}
+
+.input-group-center {
+  position: relative;
+  overflow: auto;
+}
+
+.input-group-center:focus-within {
+  z-index: 400;
+}
+
+.input-group-center .form-control {
+  width: 100%;
+}
+
+.input-group .input-group-left {
+  margin-right: -1px;
+  _margin-right: -4px;
+}
+
+.input-group .input-group-right {
+  margin-left: -1px;
+  _margin-left: -4px;
+}
+
+.input-group-text {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 12px;
+  color: #555;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.input-group-text .checkbox-inline, .input-group-text .radio-inline {
+  vertical-align: top;
+}
+
+.input-group-left .btn, .input-group-right .btn {
+  z-index: 500;
+}
+
+.input-group-lg .input-group-text {
+  font-size: 18px;
+  padding: 11px 12px;
+}
+.input-group-lg .form-control {
+  font-size: 16px;
+  padding: 11px 16px;
+}
+.input-group-lg input.form-control, .input-group-lg select.form-control {
+  height: 44px;
+}
+
+.input-group-sm .input-group-text {
+  font-size: 12px;
+  padding: 3px 12px;
+}
+.input-group-sm .form-control {
+  font-size: 12px;
+  padding: 3px 16px;
+}
+.input-group-sm input.form-control, .input-group-sm select.form-control {
+  height: 28px;
+}
+
+.input {
+  padding: 0 12px;
+  font-size: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  *zoom: 1;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.input:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.input:focus-within {
+  border-color: #66afe9;
+  z-index: 400;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.input-prefix {
+  float: left;
+  margin-right: 4px;
+  *margin-right: 1px;
+}
+
+.input-suffix {
+  float: right;
+  margin-left: 4px;
+  *margin-left: 1px;
+}
+
+.input-prefix, .input-suffix {
+  position: relative;
+  white-space: nowrap;
+  font-size: 14px;
+  height: 30px;
+}
+
+.input-control {
+  overflow: auto;
+  position: relative;
+}
+
+.input-control input, .input-control select {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 0;
+  border: 0 none;
+  color: #555;
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  outline: 0;
+  vertical-align: top;
+  *margin-top: -1px;
+  *margin-bottom: -1px;
+}
+
+.input-control input::-ms-clear {
+  display: none;
+}
+
+.input-count {
+  vertical-align: middle;
+  color: #757575;
+  font-size: 12px;
+}
+
+.input-disabled {
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+@media (min-width: 0) {
+  .input-disabled .input-prefix, .input-disabled .input-suffix {
+    opacity: 0.65;
+  }
+}
+@media \0 screen\,screen\9  {
+  .input-disabled .input-prefix span, .input-disabled .input-prefix div, .input-disabled .input-prefix i, .input-disabled .input-suffix span, .input-disabled .input-suffix div, .input-disabled .input-suffix i {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
+  }
+  .input-disabled .input-prefix img, .input-disabled .input-suffix img {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60);
+  }
+}
+
+.input-group-lg .input-control input, .input-group-lg .input-control select,
+.input-lg .input-control input,
+.input-lg .input-control select {
+  height: 42px;
+  font-size: 16px;
+}
+.input-group-lg .input-prefix, .input-group-lg .input-suffix,
+.input-lg .input-prefix,
+.input-lg .input-suffix {
+  height: 42px;
+}
+
+.input-group-sm .input-control input, .input-group-sm .input-control select,
+.input-sm .input-control input,
+.input-sm .input-control select {
+  height: 26px;
+  font-size: 12px;
+}
+.input-group-sm .input-prefix, .input-group-sm .input-suffix,
+.input-sm .input-prefix,
+.input-sm .input-suffix {
+  height: 26px;
+}
+
+.select {
+  vertical-align: middle;
+  margin: 0;
+  line-height: 20px;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: normal;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  width: 100%;
+  position: relative;
+  color: #555555;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.select:hover {
+  z-index: 200;
+}
+.select:focus {
+  z-index: 400;
+}
+.select:hover {
+  color: #333;
+  border-color: #aaa;
+}
+
+.select-placeholder {
+  color: #999999;
+}
+
+.select-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -0.5em;
+  margin-right: -0.5em;
+}
+
+.select .caret {
+  margin-top: -2px;
+  margin-right: -4px;
+}
+
+.select {
+  padding: 5px 12px;
+  height: 32px;
+  padding-right: 32px;
+}
+
+.select-lg {
+  font-size: 16px;
+}
+a.select-lg, label.select-lg {
+  padding: 11px 16px;
+}
+
+input.select-lg, button.select-lg {
+  height: 44px;
+  padding: 0 16px;
+}
+
+.select-sm {
+  font-size: 12px;
+}
+a.select-sm, label.select-sm {
+  padding: 3px 10px;
+}
+
+input.select-sm, button.select-sm {
+  height: 28px;
+  padding: 0 10px;
+}
+
+.select-xs {
+  font-size: 12px;
+}
+a.select-xs, label.select-xs {
+  padding: 1px 6px;
+}
+
+input.select-xs, button.select-xs {
+  height: 24px;
+  padding: 0 6px;
+}
+
+html body .select-disabled {
+  background: #dddddd;
+  border-color: #d0d0d0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+  z-index: 0;
+}
+
+html body .select-disabled .select-icon {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
+  opacity: 0.4;
+}
+html body .select-disabled .select-placeholder {
+  visibility: hidden;
+}
+
+html body .select-loading {
+  cursor: wait;
+}
+html body .select-loading .select-icon {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
+  opacity: 0.4;
 }
 
 .btn-toggle {
@@ -8125,6 +7685,62 @@ html body .btn-toggle-checked:focus-within {
   border-color: #204d73;
 }
 
+html .has-success .form-label, html .has-success .control-label, html .has-success .form-control-feedback, html .has-success .help-block {
+  color: #2B9735;
+}
+html .has-success .form-control-feedback {
+  color: #2B9735;
+}
+html .has-success .form-control, html .has-success .input, html .has-success .select {
+  border-color: #2B9735;
+}
+
+html .has-warning .form-label, html .has-warning .control-label, html .has-warning .form-control-feedback, html .has-warning .help-block {
+  color: #d2620b;
+}
+html .has-warning .form-control-feedback {
+  color: #F37B1D;
+}
+html .has-warning .form-control, html .has-warning .input, html .has-warning .select {
+  border-color: #F37B1D;
+}
+
+html .has-error .form-label, html .has-error .control-label, html .has-error .form-control-feedback, html .has-error .help-block {
+  color: #dc3545;
+}
+html .has-error .form-control-feedback {
+  color: #dc3545;
+}
+html .has-error .form-control, html .has-error .input, html .has-error .select {
+  border-color: #dc3545;
+}
+
+html .was-validated .is-invalid {
+  border-color: #dc3545;
+}
+
+html .was-validated .is-valid {
+  border-color: #2B9735;
+}
+
+html .was-validated .invalid-feedback {
+  display: block;
+  color: #dc3545;
+}
+
+html .was-validated .valid-feedback {
+  display: block;
+  color: #2B9735;
+}
+
+html .was-validated .valid-tooltip {
+  color: #2B9735;
+}
+
+html .was-validated .invalid-tooltip {
+  color: #dc3545;
+}
+
 .btn {
   vertical-align: middle;
   margin: 0;
@@ -8145,23 +7761,13 @@ html body .btn-toggle-checked:focus-within {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  transition: border-color, background-color, color, box-shadow 0.4s;
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .btn:hover {
   z-index: 200;
 }
 .btn:focus {
   z-index: 400;
-}
-@media (-webkit-min-device-pixel-ratio: 0) {
-  .btn input.btn, .btn button.btn, .btn a.btn, .btn label.btn, .btn div.btn, .btn span.btn {
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-  }
 }
 
 input.btn, button.btn {
@@ -8181,6 +7787,17 @@ a.btn, label.btn, div.btn, span.btn {
 }
 a.btn:hover, label.btn:hover, div.btn:hover, span.btn:hover {
   text-decoration: none;
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  input.btn, button.btn, a.btn, label.btn, div.btn, span.btn {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 
 a.btn, label.btn {
@@ -9036,6 +8653,7 @@ html body .btn-disabled .caret {
 
 .tab-pane-active {
   display: block;
+  height: 100%;
   -webkit-animation: fadeIn 0.5s forwards;
   -moz-animation: fadeIn 0.5s forwards;
   animation: fadeIn 0.5s forwards;
@@ -11011,6 +10629,7 @@ a.nav-list-item:hover, .nav-list-item a:hover {
 
 /* CSS Document */
 .tree {
+  position: relative;
   padding: 3px;
 }
 
@@ -11154,6 +10773,7 @@ button.close::-moz-focus-inner {
   border-bottom: 0;
   border-top-color: #212121;
   border-top-style: solid;
+  font-size: 4px;
   _border-right-style: dotted;
   _border-left-style: dotted;
 }
@@ -11225,12 +10845,12 @@ button.close::-moz-focus-inner {
   overflow: hidden;
 }
 
-.pull-left {
-  float: left;
+.float-start, .float-left, .pull-left {
+  float: left !important;
 }
 
-.pull-right {
-  float: right;
+.float-end, .float-right, .pull-right {
+  float: right !important;
 }
 
 @media \0 screen\,screen\9  {
@@ -11450,156 +11070,110 @@ button.close::-moz-focus-inner {
   overflow: hidden;
 }
 
-.line-2 {
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  height: 40px;
+.line-1 {
+  height: 20px;
+}
+
+.line-n, .line-9, .line-8, .line-7, .line-6, .line-5, .line-4, .line-3, .line-2 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.line-max-n, .line-max-9, .line-max-8, .line-max-7, .line-max-6, .line-max-5, .line-max-4, .line-max-3, .line-max-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.line-2 {
+  -webkit-line-clamp: 2;
+  height: 40px;
 }
 
 .line-3 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 3;
-  overflow: hidden;
   height: 60px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-4 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 4;
-  overflow: hidden;
   height: 80px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-5 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 5;
-  overflow: hidden;
   height: 100px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-6 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 6;
-  overflow: hidden;
   height: 120px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-7 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 7;
-  overflow: hidden;
   height: 140px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-8 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 8;
-  overflow: hidden;
   height: 160px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-9 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 9;
-  overflow: hidden;
   height: 180px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-2 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 2;
-  overflow: hidden;
   max-height: 40px;
   _height: 40px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-3 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 3;
-  overflow: hidden;
   max-height: 60px;
   _height: 60px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-4 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 4;
-  overflow: hidden;
   max-height: 80px;
   _height: 80px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-5 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 5;
-  overflow: hidden;
   max-height: 100px;
   _height: 100px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-6 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 6;
-  overflow: hidden;
   max-height: 120px;
   _height: 120px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-7 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 7;
-  overflow: hidden;
   max-height: 140px;
   _height: 140px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-8 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 8;
-  overflow: hidden;
   max-height: 160px;
   _height: 160px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-max-9 {
-  text-overflow: ellipsis;
   -webkit-line-clamp: 9;
-  overflow: hidden;
   max-height: 180px;
   _height: 180px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .line-min-1 {
@@ -11711,6 +11285,10 @@ button.close::-moz-focus-inner {
 
 .text-muted {
   color: #757575;
+}
+
+.text-body {
+  color: #212121;
 }
 
 .text-capitalize {

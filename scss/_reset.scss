@@ -24,7 +24,8 @@ mark,.mark{ background:#ff0;}
 img{ -ms-interpolation-mode:bicubic; vertical-align:middle;}
 code,kbd,samp,.code{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
 -moz-tab-size:4; -o-tab-size:4; tab-size:4; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none;}
-pre{ white-space:-moz-pre-wrap;white-space:-o-pre-wrap;white-space:pre-wrap; word-wrap:break-word; overflow:auto;}
+pre{ overflow:auto; width: 100%;}
+wbr:after{content:'\00200B'; }
 nobr,.nobr{ white-space:nowrap;}
 ins,.ins,.u{ text-decoration:underline;}
 del,.del,.s{ text-decoration:line-through;}
@@ -65,6 +66,7 @@ blockquote{ background:#f9f9f9; border-left:10px solid #ccc; margin:$margin-base
 blockquote footer,blockquote small,blockquote .small{ display:block; font-size:80%; color:#777;}
 dl{ margin-top:0; margin-bottom:20px;}
 dt{ font-weight:bold;}
-dialog{ position:absolute; left:0px; right:0px; 
-width:-moz-fit-content;width:-webkit-fit-content;width:fit-content; height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;
+dialog{ position:absolute; position:fixed; left:0px; right:0px; top:0; bottom: 0;
+width:-moz-fit-content;width:-webkit-fit-content;width:fit-content; 
+height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;
 margin:auto; border-width:3px solid #000; padding:1em; background:white;}

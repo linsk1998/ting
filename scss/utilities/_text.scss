@@ -11,6 +11,7 @@
 
 .text-hide{ font:0/0 a; color:transparent; text-shadow:none; background-color:transparent; border:0;}
 .text-muted{ color:$theme-secondary-text;}
+.text-body{ color:$theme-primary-text;}
 
 .text-capitalize { text-transform: capitalize;}
 .text-lowercase { text-transform: lowercase;}

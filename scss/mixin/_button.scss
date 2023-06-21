@@ -20,10 +20,12 @@
 }
 @mixin btn-has-icon {
 	@media (-webkit-min-device-pixel-ratio:0){
-		input#{&},button#{&},a#{&},label#{&},div#{&},span#{&}{
-			display:-webkit-inline-box; display:inline-flex;
-			-webkit-box-align:center; align-items:center;
-			-webkit-box-pack:center; justify-content:center;
+		@at-root{
+			input#{&},button#{&},a#{&},label#{&},div#{&},span#{&}{
+				display:-webkit-inline-box; display:inline-flex;
+				-webkit-box-align:center; align-items:center;
+				-webkit-box-pack:center; justify-content:center;
+			}
 		}
 	}
 }
@@ -46,7 +48,7 @@
 	// height:$height;
 	@at-root{
 		a#{&},label#{&} {
-			padding:($height - 2*$border - $ctrl-line-height)*.5 $padding;
+			padding:($height - 2 * $border - $ctrl-line-height) * .5 $padding;
 		}
 		input#{&} ,button#{&} {
 			height: $height;

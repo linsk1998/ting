@@ -1,11 +1,23 @@
 
 .help-block{ display:block; margin-top:5px; margin-bottom:10px; color:$theme-primary-text; }
+.valid-tooltip,.invalid-tooltip{
+	position: absolute;
+	max-width: 100%;
+	font-size: 12px;
+	line-height: 15px;
+}
 
 
 .has-feedback{
 	position: relative; *zoom:1;
 	.form-control,.input-control input {
 		padding-right: $ctrl-height-base * 0.5 + 8px + $ctrl-padding-base;
+	}
+	textarea.form-control{
+		overflow-y: scroll;
+	}
+	textarea.form-control~.form-control-feedback{
+		right:17px;
 	}
 	.radio-stack{
 		padding-right: $ctrl-height-base;
@@ -20,6 +32,18 @@
 	text-align: center;
 	font-size:16px;
 }
+.form-group-lg .form-control-feedback{
+	line-height: $ctrl-height-large;
+}
+.form-group-sm .form-control-feedback{
+	line-height: $ctrl-height-small;
+}
+.form-control-lg~.form-control-feedback{
+	line-height: $ctrl-height-large;
+}
+.form-control-sm~.form-control-feedback{
+	line-height: $ctrl-height-small;
+}
 .input-control .form-control-feedback{
 	line-height: $ctrl-height-base - 2*$ctrl-border-width;
 }
@@ -29,50 +53,4 @@
 }
 .form .form-control-feedback{
 	*top:auto; *margin-top:- $ctrl-height-base;
-}
-.has-success{
-	.form-label,.control-label,.form-control-feedback,.help-block{
-		color:$success;
-	}
-	.form-control-feedback{
-		color:$success;
-	}
-	.form-control,.input{
-		border-color:$success;
-	}
-}
-.has-warning{
-	.form-label,.control-label,.form-control-feedback,.help-block{
-		color:darken($warning,10%);
-	}
-	.form-control-feedback{
-		color:$warning;
-	}
-	.form-control,.input{
-		border-color:$warning;
-	}
-}
-.has-error{
-	.form-label,.control-label,.form-control-feedback,.help-block{
-		color:$danger;
-	}
-	.form-control-feedback{
-		color:$danger;
-	}
-	.form-control,.input{
-		border-color:$danger;
-	}
-}
-
-.form .is-invalid{
-	border-color:$danger;
-}
-.form .is-valid{
-	border-color:$success;
-}
-.form .invalid-feedback{
-	color:$danger;
-}
-.form .valid-feedback{
-	color:$success;
 }

@@ -1,0 +1,51 @@
+@use 'sass:math';
+$aspect-ratios:(
+	(16 9),
+	(4 3),
+	(1 1)
+) !default;
+
+.ratio,
+.embed-responsive {
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.embed-responsive-item,
+.ratio-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	border: 0;
+	*height: auto;
+}
+
+img.ratio-item,
+video.ratio-item,
+img.embed-responsive-item,
+video.embed-responsive-item{
+	-o-object-fit:cover;
+	object-fit: cover;
+}
+
+@each $aspect-ratio in $aspect-ratios {
+	$ratio-x: nth($aspect-ratio, 1);
+	$ratio-y: nth($aspect-ratio, 2);
+	.ratio-#{$ratio-x}x#{$ratio-y},
+	.ratio-#{$ratio-x}\/#{$ratio-y},
+	.embed-responsive-#{$ratio-x}by#{$ratio-y},
+	.embed-responsive-#{$ratio-x}\/#{$ratio-y} {
+		padding-bottom: math.div($ratio-y, $ratio-x) * 100%;
+	}
+	.ratio-#{$ratio-x}x#{$ratio-y} .ratio-item, .ratio-#{$ratio-x}\/#{$ratio-y} .ratio-item,
+	.embed-responsive-#{$ratio-x}by#{$ratio-y} .embed-responsive-item, .embed-responsive-#{$ratio-x}\/#{$ratio-y} .embed-responsive-item {
+		*height: #{'expression(this.offsetWidth*' + math.div($ratio-y, $ratio-x) + '+"px")'};
+	}
+}
