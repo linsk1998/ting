@@ -1,5 +1,5 @@
 .pager{ margin:10px 0; padding:0; text-align:center; list-style:none;}
-.pager li{ display:inline-block; *zoom:1; *display:inline; line-height:30px; height:30px; background-color:#fff; border:1px solid #ccc;
+.pager li{ display:inline-block; *zoom:1; *display:inline; line-height:30px; height:30px; background-color:#fff; border:1px solid $ctrl-border-color;
  border-radius:15px; -webkit-border-radius:15px; -moz-border-radius:15px;}
 .pager li a,.pager li span{ padding:0 14px;}
 .pager li:hover{ background-color:#eee;}

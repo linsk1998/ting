@@ -50,7 +50,7 @@
 .select-sm{ @include btn-sm;}
 .select-xs{ @include btn-xs;}
 
-html body .select-disabled{
+html body .select-disabled,.select-disabled:hover,.select-disabled:focus{
 	background: #dddddd;
 	border-color: darken(#dddddd, 5%);
 	color: #a0a0a0;

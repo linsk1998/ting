@@ -9,7 +9,7 @@
 		font-size:$font-size;
 		line-height:$line-height-base;
 		padding:($size - 2px - $line-height-base)/2 ($size - 2px - $font-size/2)/2;
-		border:1px solid #ccc;
+		border:1px solid $ctrl-border-color;
 		position:relative;
 		margin-right:$gutter;
 		&:last-child{

@@ -7039,7 +7039,7 @@ input.form-control, select.form-control {
 
 .radio input, .checkbox input {
   vertical-align: middle;
-  margin: 2px 3px 4px;
+  margin: 1px 3px 3px;
   *margin: 0;
 }
 
@@ -7050,6 +7050,16 @@ input.form-control, select.form-control {
   margin-right: 10px;
 }
 
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .checkbox-inline, .radio-inline {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}
 .checkbox-stack, .radio-stack {
   display: block;
   margin-top: 5px;
@@ -7060,7 +7070,7 @@ input.form-control, select.form-control {
 .checkbox-inline input, .radio-inline input,
 .checkbox-stack input, .radio-stack input {
   vertical-align: middle;
-  margin: 2px 3px 3px;
+  margin: 1px 3px 3px;
   *margin: 0;
 }
 
@@ -7637,7 +7647,7 @@ input.select-xs, button.select-xs {
   padding: 0 6px;
 }
 
-html body .select-disabled {
+html body .select-disabled, .select-disabled:hover, .select-disabled:focus {
   background: #dddddd;
   border-color: #d0d0d0;
   color: #a0a0a0;

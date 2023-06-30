@@ -1,6 +1,6 @@
 {
 	"name": "@ting-ui/css",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "common style lib",
 	"scripts": {
 		"build:all": "sass scss/all.scss all.css --no-source-map",

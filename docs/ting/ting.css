@@ -7040,7 +7040,7 @@ input.form-control, select.form-control {
 
 .radio input, .checkbox input {
   vertical-align: middle;
-  margin: 2px 3px 4px;
+  margin: 1px 3px 3px;
   *margin: 0;
 }
 
@@ -7051,6 +7051,16 @@ input.form-control, select.form-control {
   margin-right: 10px;
 }
 
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .checkbox-inline, .radio-inline {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}
 .checkbox-stack, .radio-stack {
   display: block;
   margin-top: 5px;
@@ -7061,7 +7071,7 @@ input.form-control, select.form-control {
 .checkbox-inline input, .radio-inline input,
 .checkbox-stack input, .radio-stack input {
   vertical-align: middle;
-  margin: 2px 3px 3px;
+  margin: 1px 3px 3px;
   *margin: 0;
 }
 
@@ -7638,7 +7648,7 @@ input.select-xs, button.select-xs {
   padding: 0 6px;
 }
 
-html body .select-disabled {
+html body .select-disabled, .select-disabled:hover, .select-disabled:focus {
   background: #dddddd;
   border-color: #d0d0d0;
   color: #a0a0a0;
@@ -7691,7 +7701,7 @@ html .has-success .form-label, html .has-success .control-label, html .has-succe
 html .has-success .form-control-feedback {
   color: #2B9735;
 }
-html .has-success .form-control, html .has-success .input, html .has-success .select {
+html .has-success .form-control, html .has-success .form-control:hover, html .has-success .input, html .has-success .input:hover, html .has-success .select, html .has-success .select:hover {
   border-color: #2B9735;
 }
 
@@ -7701,7 +7711,7 @@ html .has-warning .form-label, html .has-warning .control-label, html .has-warni
 html .has-warning .form-control-feedback {
   color: #F37B1D;
 }
-html .has-warning .form-control, html .has-warning .input, html .has-warning .select {
+html .has-warning .form-control, html .has-warning .form-control:hover, html .has-warning .input, html .has-warning .input:hover, html .has-warning .select, html .has-warning .select:hover {
   border-color: #F37B1D;
 }
 
@@ -7711,15 +7721,15 @@ html .has-error .form-label, html .has-error .control-label, html .has-error .fo
 html .has-error .form-control-feedback {
   color: #dc3545;
 }
-html .has-error .form-control, html .has-error .input, html .has-error .select {
+html .has-error .form-control, html .has-error .form-control:hover, html .has-error .input, html .has-error .input:hover, html .has-error .select, html .has-error .select:hover {
   border-color: #dc3545;
 }
 
-html .was-validated .is-invalid {
+html .was-validated .is-invalid, html .was-validated .is-invalid:hover {
   border-color: #dc3545;
 }
 
-html .was-validated .is-valid {
+html .was-validated .is-valid, html .was-validated .is-valid:hover {
   border-color: #2B9735;
 }
 

@@ -8,7 +8,7 @@
 	*margin-top:-1px; *margin-bottom:-1px;
 
 	padding:($ctrl-height-base - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-base;
-	border: $ctrl-border-width solid #ccc;
+	border: $ctrl-border-width solid $ctrl-border-color;
 }
 .form-control[disabled] {
 	cursor: not-allowed;
@@ -34,12 +34,19 @@ input.form-control,select.form-control{
 //禁止textarea横向拖拽调整大小
 .form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important; display: block;}
 .radio label,.checkbox label{ font-weight:normal; margin-right:10px;}
-.radio input,.checkbox input{ vertical-align:middle; margin:2px 3px 4px; *margin:0;}
+.radio input,.checkbox input{ vertical-align:middle; margin:1px 3px 3px; *margin:0;}
 .checkbox-inline,.radio-inline {
 	display:inline-block;
 	font-weight:normal;
 	vertical-align:middle;
 	margin-right:10px;
+}
+@media (-webkit-min-device-pixel-ratio:0){
+	.checkbox-inline,.radio-inline {
+		display:-webkit-inline-box; display:inline-flex;
+		-webkit-box-align:center; align-items:center;
+		-webkit-box-pack:center; justify-content:center;
+	}
 }
 .checkbox-stack,.radio-stack {
 	display: block;
@@ -50,5 +57,5 @@ input.form-control,select.form-control{
 .checkbox-inline input,.radio-inline input,
 .checkbox-stack input,.radio-stack input{
 	vertical-align: middle;
-	margin:2px 3px 3px; *margin:0;
+	margin:1px 3px 3px; *margin:0;
 }
