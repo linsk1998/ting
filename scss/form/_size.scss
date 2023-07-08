@@ -5,9 +5,7 @@
 	}
 	.form-control{
 		font-size: $ctrl-fontsize-large;
-		padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
-	}
-	input.form-control,select.form-control{
+		padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-large;
 		height: $ctrl-height-large;
 	}
 }
@@ -17,9 +15,7 @@
 	}
 	.form-control{
 		font-size: $ctrl-fontsize-small;
-		padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-small;
-	}
-	input.form-control,select.form-control{
+		padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-small;
 		height: $ctrl-height-small;
 	}
 }
@@ -34,31 +30,24 @@
 	}
 }
 
-.form-control-lg,
-.input-lg {
+.form-control-lg{
 	font-size: $ctrl-fontsize-large;
-	padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
+	padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-large;
 }
-input.form-control-lg,select.form-control-lg,
-input.input-lg,select.input-lg{
+.form-control-lg{
 	height: $ctrl-height-large;
 }
-.form-control-sm,
-.input-sm{
+.form-control-sm{
 	font-size: $ctrl-fontsize-small;
-	padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-small;
+	padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-small;
 }
-input.form-control-sm,select.form-control-sm,
-input.input-sm,select.input-sm{
+.form-control-sm{
 	height: $ctrl-height-small;
 }
-.form-control-xs,
-/** @deprecated 内部使用 */
-.input-xs{
+.form-control-xs{
 	font-size: $ctrl-fontsize-xsmall;
-	padding:($ctrl-height-xsmall - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-xsmall;
+	padding:($ctrl-height-xsmall - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-xsmall;
 }
-input.form-control-xs,select.form-control-xs,
-input.input-xs,select.input-xs{
+.form-control-xs{
 	height: $ctrl-height-xsmall;
 }

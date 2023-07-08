@@ -5,17 +5,19 @@
 	color: $ctrl-value-color;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	@include rounded(0);
-	*margin-top:-1px; *margin-bottom:-1px;
-
-	padding:($ctrl-height-base - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-base;
+	height: $ctrl-height-base;
+	padding:($ctrl-height-base - 2 * $ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-base;
 	border: $ctrl-border-width solid $ctrl-border-color;
+}
+div.form-control{
+	overflow: hidden;
 }
 .form-control[disabled] {
 	cursor: not-allowed;
 	background-color: #eee;
 }
 input.form-control,select.form-control{
-	height: $ctrl-height-base;
+	*margin-top:-1px; *margin-bottom:-1px;
 }
 .form-control:focus{
 	border-color: #66afe9;
@@ -58,4 +60,49 @@ input.form-control,select.form-control{
 .checkbox-stack input,.radio-stack input{
 	vertical-align: middle;
 	margin:1px 3px 3px; *margin:0;
+}
+.form-control-tags{
+	padding: 2px;
+	font-size: 0;
+	line-height: 0;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.form-control-tags .tag{
+	flex-shrink: 0;
+}
+
+button.control-clear{
+	padding:0;
+	outline:none;
+	-webkit-appearance:none;
+	appearance:none;
+	&::-moz-focus-inner{
+		padding:0;
+		border:0 none;
+	}
+	cursor:pointer;
+	background:transparent;
+	border:0 none;
+}
+.control-clear{
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	right: 0.5em;
+	top: 50%;
+	margin-top: -.5em;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	font-size: 14px;
+	display: none;
+}
+@media \0screen\,screen\9 {
+	.control-clear {
+		filter: alpha(opacity=50);
+	}
+}
+:hover>.control-clear {
+	display: block;
 }

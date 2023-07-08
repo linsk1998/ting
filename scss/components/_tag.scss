@@ -1,0 +1,65 @@
+.tag{
+	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	*zoom: 1;
+	*display: inline;
+	height: $ctrl-height-xsmall;
+	overflow: hidden;
+	padding: ($ctrl-height-xsmall - $line-height-base) * .5 6px;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: center;
+	white-space: nowrap;
+	border: 1px solid;
+	margin: 1px;
+	vertical-align: top;
+}
+
+.tag-default{
+	color:#555;
+	background-color:#eee;
+	border-color:$theme-divider;
+}
+.tag-primary{
+	color:$primary-text;
+	background-color: $primary-bg;
+	border-color:$primary-border;
+}
+.tag-success{
+	color:$success-text;
+	background-color: $success-bg;
+	border-color:$success-border;
+}
+.tag-info{
+	color:$info-text;
+	background-color: $info-bg;
+	border-color:$info-border;
+}
+.tag-warning{
+	color:$warning-text;
+	background-color: $warning-bg;
+	border-color:$warning-border;
+}
+.tag-danger{
+	color:$danger-text;
+	background-color: $danger-bg;
+	border-color:$danger-border;
+}
+
+.tag *{
+	vertical-align: middle;
+}
+
+.tag-lg{
+	padding: ($ctrl-height-xsmall - $line-height-base) * .5 + 3px 9px;
+	height: 30px;
+	font-size: 14px;
+}
+
+.tag-sm{
+	padding: ($ctrl-height-xsmall - $line-height-base) * .5 - 3px 3px;
+	height: 18px;
+	line-height: 16px;
+	font-size: 12px;
+}

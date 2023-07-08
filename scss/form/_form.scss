@@ -30,6 +30,7 @@
 .form-inline{
 	position: relative;
 	line-height:40px;
+	*zoom: 1;
 	.form-control, .form-label,.control-label {
 		vertical-align: middle;
 	}

@@ -14,7 +14,7 @@
 	<!-- InstanceParam name="components" type="boolean" value="false" -->
 	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>输入框组</title>
+	<title>选择按钮</title>
 	<!-- InstanceEndEditable -->
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
@@ -80,107 +80,176 @@
 				<div class="form-group">
 					<label class="form-label">基本用法</label>
 					<input type="hidden">
-					<button type="button" class="select">
-						<span class="select-label">金坷拉</span>
-						<div class="select-icon caret"></div>
-					</button>
+					<div class="select">
+						<button type="button" class="select-btn">
+							<span class="select-label">金坷拉</span>
+							<div class="select-icon caret"></div>
+						</button>
+						<button type="button" class="control-clear fa">&#xf057;</button>
+					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">空白占位</label>
 					<input type="hidden">
-					<button type="button" class="select">
-						<span class="select-placeholder">请选择XXX</span>
-						<div class="select-icon caret"></div>
-					</button>
+					<div class="select">
+						<button type="button" class="select-btn">
+							<span class="select-placeholder">请选择XXX</span>
+							<div class="select-icon caret"></div>
+						</button>
+					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">置灰</label>
 					<input type="hidden">
-					<button type="button" class="select select-disabled" disabled>
-						<span class="select-label">金坷拉</span>
-						<div class="caret select-icon"></div>
-					</button>
+					<div class="select select-disabled">
+						<button type="button" class="select-btn" disabled>
+							<span class="select-label">金坷拉</span>
+							<div class="caret select-icon"></div>
+						</button>
+					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">置灰空白占位</label>
 					<input type="hidden">
-					<button type="button" class="select select-disabled" disabled>
-						<span class="select-placeholder">请选择XXX</span>
-						<div class="caret select-icon"></div>
-					</button>
+					<div class="select select-disabled">
+						<button type="button" class="select-btn" disabled>
+							<span class="select-placeholder">请选择XXX</span>
+							<div class="caret select-icon"></div>
+						</button>
+					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">加载中</label>
 					<input type="hidden">
-					<button type="button" class="select select-loading" disabled>
-						<span class="select-label">金坷拉</span>
-						<div class="select-icon icon loading-circular"></div>
-					</button>
+					<div class="select select-loading">
+						<button type="button" class="select-btn" disabled>
+							<span class="select-label">金坷拉</span>
+							<div class="select-icon icon loading-circular"></div>
+						</button>
+					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">加载中空白占位</label>
 					<input type="hidden">
-					<button type="button" class="select select-loading" disabled>
-						<span class="select-placeholder">请选择XXX</span>
-						<div class="select-icon icon loading-circular"></div>
-					</button>
+					<div class="select select-loading">
+						<button type="button" class="select-btn" disabled>
+							<span class="select-placeholder">加载中...</span>
+							<div class="select-icon icon loading-circular"></div>
+						</button>
+					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">错误重试</label>
 					<input type="hidden">
-					<button type="button" class="select" disabled>
-						<span class="select-msg text-danger">网络加载错误</span>
-						<div class="select-icon icon fa fa-refresh"></div>
-					</button>
+					<div class="select">
+						<button type="button" class="select-btn">
+							<span class="select-msg text-danger">网络加载错误</span>
+							<div class="select-icon icon fa fa-refresh"></div>
+						</button>
+					</div>
 				</div>
 			</form>
 			<h2 class="page-header">字段校验</h2>
-			<form class="form">
+			<form class="form was-validated">
+				<div class="form-group">
+					<label class="form-label">基本用法</label>
+					<input type="hidden">
+					<div class="select">
+						<button type="button" class="select-btn is-valid">
+							<span class="select-label">金坷拉</span>
+							<div class="select-icon caret"></div>
+						</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">空白占位</label>
+					<input type="hidden">
+					<div class="select">
+						<button type="button" class="select-btn is-valid">
+							<span class="select-placeholder">请选择XXX</span>
+							<div class="select-icon caret"></div>
+						</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">置灰</label>
+					<input type="hidden">
+					<div class="select select-disabled">
+						<button type="button" class="select-btn is-invalid" disabled>
+							<span class="select-label">金坷拉</span>
+							<div class="caret select-icon"></div>
+						</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">置灰空白占位</label>
+					<input type="hidden">
+					<div class="select select-disabled">
+						<button type="button" class="select-btn is-invalid" disabled>
+							<span class="select-placeholder">请选择XXX</span>
+							<div class="caret select-icon"></div>
+						</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">加载中</label>
+					<input type="hidden">
+					<div class="select select-loading">
+						<button type="button" class="select-btn is-valid" disabled>
+							<span class="select-label">金坷拉</span>
+							<div class="select-icon icon loading-circular"></div>
+						</button>
+					</div>
+				</div>
 				<div class="form-group">
 					<label class="form-label">加载中空白占位</label>
 					<input type="hidden">
-					<button type="button" class="select select-loading" disabled>
-						<span class="select-placeholder">请选择XXX</span>
-						<div class="select-icon icon loading-circular"></div>
-					</button>
+					<div class="select select-loading">
+						<button type="button" class="select-btn is-valid" disabled>
+							<span class="select-placeholder">加载中...</span>
+							<div class="select-icon icon loading-circular"></div>
+						</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">错误重试</label>
+					<input type="hidden">
+					<div class="select">
+						<button type="button" class="select-btn is-invalid">
+							<span class="select-msg text-danger">网络加载错误</span>
+							<div class="select-icon icon fa fa-refresh"></div>
+						</button>
+					</div>
 				</div>
 			</form>
 			<h1 class="page-header">表单验证</h1>
 			<form class="form-horizontal">
 				<div class="form-group has-success">
 					<label class="control-label">has-success</label>
-					<button type="button" class="select">
-						<span class="select-label">金坷拉</span>
-						<div class="select-icon caret"></div>
-					</button>
+					<div class="select">
+						<button type="button" class="select-btn">
+							<span class="select-label">金坷拉</span>
+							<div class="select-icon caret"></div>
+						</button>
+					</div>
 				</div>
 				<div class="form-group has-warning">
 					<label class="control-label">has-warning</label>
-					<button type="button" class="select">
-						<span class="select-label">金坷拉</span>
-						<div class="select-icon caret"></div>
-					</button>
+					<div class="select">
+						<button type="button" class="select-btn">
+							<span class="select-label">金坷拉</span>
+							<div class="select-icon caret"></div>
+						</button>
+					</div>
 				</div>
 				<div class="form-group has-error">
 					<label class="control-label">has-error</label>
-					<button type="button" class="select">
-						<span class="select-label">金坷拉</span>
-						<div class="select-icon caret"></div>
-					</button>
-				</div>
-				<div class="form-group has-success">
-					<label class="control-label">is-valid</label>
-					<button type="button" class="select is-valid">
-						<span class="select-label">金坷拉</span>
-						<div class="select-icon caret"></div>
-					</button>
-				</div>
-				<div class="form-group has-error">
-					<label class="control-label">is-invalid</label>
-					<button type="button" class="select is-invalid">
-						<span class="select-label">金坷拉</span>
-						<div class="select-icon caret"></div>
-					</button>
+					<div class="select">
+						<button type="button" class="select-btn">
+							<span class="select-label">金坷拉</span>
+							<div class="select-icon caret"></div>
+						</button>
+					</div>
 				</div>
 			</form>
 		</div><!-- InstanceEndEditable -->

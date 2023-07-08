@@ -1,6 +1,6 @@
 .close{
-	width:1em; text-align:center; display:inline-block;
-	*zoom:#{'expression(this.runtimeStyle["zoom"]="1",this.innerHTML="✕")'};
+	width:1em; height: 1em; line-height: 1em; text-align:center; display:inline-block;
+	*zoom:#{'expression(this.runtimeStyle["zoom"]="1",this.innerHTML="×")'};
 }
 .close:empty:before{ content:"✕";}
 .close,a.close{ color:#444;}

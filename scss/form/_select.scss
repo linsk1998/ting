@@ -1,5 +1,7 @@
 .select{
-	vertical-align:middle;
+	position: relative;
+}
+.select-btn{
 	margin:0;
 	line-height:$ctrl-line-height;
 	font-size:$ctrl-fontsize-base;
@@ -41,23 +43,23 @@
 	margin-top: -2px;
 	margin-right: -4px;
 }
-.select{
+.select-btn{
 	padding: ($ctrl-height-base - 2 * $ctrl-border-width - $ctrl-line-height) * .5 $btn-padding-base;
 	height: $ctrl-height-base;
 	padding-right: $ctrl-height-base;
 }
-.select-lg{ @include btn-lg;}
-.select-sm{ @include btn-sm;}
-.select-xs{ @include btn-xs;}
+.select-lg .select-btn{ @include btn-lg;}
+.select-sm .select-btn{ @include btn-sm;}
+.select-xs .select-btn{ @include btn-xs;}
 
-html body .select-disabled,.select-disabled:hover,.select-disabled:focus{
+.select-disabled .select-btn{
 	background: #dddddd;
 	border-color: darken(#dddddd, 5%);
 	color: #a0a0a0;
 	cursor:not-allowed;
 	z-index: 0;
 }
-html body .select-disabled{
+.select-disabled{
 	.select-icon{
 		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
 		opacity:.4;
@@ -67,10 +69,19 @@ html body .select-disabled{
 	}
 }
 
-html body .select-loading{
+.select-loading{
 	.select-icon{
 		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
 		opacity:.4;
 	}
 	cursor:wait;
+}
+
+.select .control-clear{
+	right: $ctrl-height-base;
+	z-index: $level-navbar;
+}
+
+.select:hover>.control-clear {
+	display: block;
 }

@@ -13,11 +13,11 @@
 	float:right; _margin-left:-4px;
 	font-size:0; line-height:0;
 	white-space: nowrap;
-	*z-index: 1;
 }
 .input-group-center{
 	position: relative;
 	overflow:auto;
+	*zoom:1;
 }
 .input-group-center:focus-within{
 	z-index: $level-item-focus;
@@ -46,11 +46,9 @@
 		vertical-align: top;
 	}
 }
-
-.input-group-left,.input-group-right{
-	.btn {
-		z-index: $level-navbar;
-	}
+.input-group .btn{
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .input-group-lg{
@@ -60,10 +58,15 @@
 	}
 	.form-control{
 		font-size: $ctrl-fontsize-large;
-		padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
-	}
-	input.form-control,select.form-control{
+		padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-large;
 		height: $ctrl-height-large;
+	}
+	.btn{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.form-control-tags{
+		padding: 6px;
 	}
 }
 .input-group-sm{
@@ -73,10 +76,15 @@
 	}
 	.form-control{
 		font-size: $ctrl-fontsize-small;
-		padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $btn-padding-large;
-	}
-	input.form-control,select.form-control{
+		padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-small;
 		height: $ctrl-height-small;
+	}
+	.btn{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.form-control-tags{
+		padding: 3px;
 	}
 }
 
@@ -169,10 +177,14 @@
 	.input-control input,.input-control select{
 		height: $ctrl-height-large - $ctrl-border-width*2;
 		font-size: $ctrl-fontsize-large;
+		line-height: $ctrl-height-large - $ctrl-border-width*2 - 8px;
 	}
 	.input-prefix,.input-suffix{
 		height: $ctrl-height-large - $ctrl-border-width*2;
 	}
+}
+.input-sm{
+	padding: 0 $ctrl-padding-large;
 }
 
 .input-group-sm,
@@ -180,8 +192,12 @@
 	.input-control input,.input-control select{
 		height: $ctrl-height-small - $ctrl-border-width*2;
 		font-size: $ctrl-fontsize-small;
+		line-height: $ctrl-height-small - $ctrl-border-width*2 - 8px;
 	}
 	.input-prefix,.input-suffix{
 		height: $ctrl-height-small - $ctrl-border-width*2;
 	}
+}
+.input-sm{
+	padding: 0 $ctrl-padding-small;
 }
