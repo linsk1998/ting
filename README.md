@@ -5,5 +5,3 @@
 演示地址Demo
 
 https://linsk1998.github.io/ting/
-
-http://ting-ui.gitee.io/css

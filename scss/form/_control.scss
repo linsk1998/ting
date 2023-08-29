@@ -19,6 +19,9 @@ div.form-control{
 input.form-control,select.form-control{
 	*margin-top:-1px; *margin-bottom:-1px;
 }
+textarea.form-control{
+	height: auto;
+}
 .form-control:focus{
 	border-color: #66afe9;
 	outline: 0;
@@ -90,7 +93,7 @@ button.control-clear{
 	width: 1em;
 	height: 1em;
 	line-height: 1em;
-	right: 0.5em;
+	right: 9px;
 	top: 50%;
 	margin-top: -.5em;
 	opacity: 0.5;

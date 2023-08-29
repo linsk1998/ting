@@ -7090,6 +7090,43 @@ input.form-control, select.form-control {
   flex-shrink: 0;
 }
 
+button.control-clear {
+  padding: 0;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: 0 none;
+}
+button.control-clear::-moz-focus-inner {
+  padding: 0;
+  border: 0 none;
+}
+
+.control-clear {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  right: 0.5em;
+  top: 50%;
+  margin-top: -0.5em;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  font-size: 14px;
+  display: none;
+}
+
+@media \0 screen\,screen\9  {
+  .control-clear {
+    filter: alpha(opacity=50);
+  }
+}
+:hover > .control-clear {
+  display: block;
+}
+
 .form-group {
   line-height: 20px;
 }
@@ -7199,8 +7236,6 @@ input.form-control, select.form-control {
 .form-group-lg .form-control {
   font-size: 16px;
   padding: 11px 16px;
-}
-.form-group-lg input.form-control, .form-group-lg select.form-control {
   height: 44px;
 }
 
@@ -7210,8 +7245,6 @@ input.form-control, select.form-control {
 .form-group-sm .form-control {
   font-size: 12px;
   padding: 3px 10px;
-}
-.form-group-sm input.form-control, .form-group-sm select.form-control {
   height: 28px;
 }
 
@@ -7223,35 +7256,30 @@ input.form-control, select.form-control {
   padding-top: 12px;
 }
 
-.form-control-lg,
-.input-lg {
+.form-control-lg {
   font-size: 16px;
   padding: 11px 16px;
 }
 
-.form-control-lg .input-lg {
+.form-control-lg {
   height: 44px;
 }
 
-.form-control-sm,
-.input-sm {
+.form-control-sm {
   font-size: 12px;
   padding: 3px 10px;
 }
 
-.form-control-sm,
-.input-sm {
+.form-control-sm {
   height: 28px;
 }
 
-.form-control-xs,
-.input-xs {
+.form-control-xs {
   font-size: 12px;
   padding: 1px 6px;
 }
 
-input.form-control-xs, select.form-control-xs,
-input.input-xs, select.input-xs {
+.form-control-xs {
   height: 24px;
 }
 
@@ -7415,6 +7443,11 @@ input.input-xs, select.input-xs {
   vertical-align: top;
 }
 
+.input-group .btn {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .input-group-lg .input-group-text {
   font-size: 18px;
   padding: 11px 12px;
@@ -7422,9 +7455,14 @@ input.input-xs, select.input-xs {
 .input-group-lg .form-control {
   font-size: 16px;
   padding: 11px 16px;
-}
-.input-group-lg input.form-control, .input-group-lg select.form-control {
   height: 44px;
+}
+.input-group-lg .btn {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.input-group-lg .form-control-tags {
+  padding: 6px;
 }
 
 .input-group-sm .input-group-text {
@@ -7433,10 +7471,15 @@ input.input-xs, select.input-xs {
 }
 .input-group-sm .form-control {
   font-size: 12px;
-  padding: 3px 16px;
-}
-.input-group-sm input.form-control, .input-group-sm select.form-control {
+  padding: 3px 10px;
   height: 28px;
+}
+.input-group-sm .btn {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.input-group-sm .form-control-tags {
+  padding: 3px;
 }
 
 .input {
@@ -7549,6 +7592,10 @@ input.input-xs, select.input-xs {
   height: 42px;
 }
 
+.input-sm {
+  padding: 0 16px;
+}
+
 .input-group-sm .input-control input, .input-group-sm .input-control select,
 .input-sm .input-control input,
 .input-sm .input-control select {
@@ -7562,49 +7609,8 @@ input.input-xs, select.input-xs {
   height: 26px;
 }
 
-button.control-clear {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-  background: transparent;
-  border: 0 none;
-}
-button.control-clear::-moz-focus-inner {
-  padding: 0;
-  border: 0 none;
-}
-
-.input-group-center .control-clear,
-.input-control .control-clear {
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  line-height: 1em;
-  right: 0.5em;
-  top: 50%;
-  margin-top: -0.5em;
-  opacity: 0.5;
-  -moz-opacity: 0.5;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.input-group-center > .control-clear,
-.input-control > .control-clear {
-  display: none;
-}
-
-@media \0 screen\,screen\9  {
-  .input-group-center .control-clear,
-.input-control .control-clear {
-    filter: alpha(opacity=50);
-  }
-}
-.input-group-center:hover .control-clear,
-.input-control:hover .control-clear {
-  display: block;
+.input-sm {
+  padding: 0 10px;
 }
 
 .select {
@@ -7733,24 +7739,12 @@ input.select-xs .select-btn, button.select-xs .select-btn {
   opacity: 0.4;
 }
 
-.select .close {
-  position: absolute;
+.select .control-clear {
   right: 32px;
-  top: 50%;
-  margin-top: -0.5em;
-  opacity: 0.5;
-  -moz-opacity: 0.5;
-  display: none;
-  font-size: 14px;
   z-index: 500;
 }
 
-@media \0 screen\,screen\9  {
-  .select .close {
-    filter: alpha(opacity=50);
-  }
-}
-.select:hover .close {
+.select:hover > .control-clear {
   display: block;
 }
 

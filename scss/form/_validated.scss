@@ -48,9 +48,17 @@ html .was-validated .valid-feedback{
 	display: block;
 	color:$success;
 }
-html .was-validated .valid-tooltip{
+.valid-explain{
 	color: $success;
 }
-html .was-validated .invalid-tooltip{
+.invalid-explain{
 	color: $danger;
+}
+.valid-tooltip{
+	color: #fff;
+	background: rgba($success, .9);
+}
+.invalid-tooltip{
+	color: #fff;
+	background: rgba($danger, .9);
 }

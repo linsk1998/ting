@@ -78,10 +78,29 @@
 }
 
 .select .control-clear{
-	right: $ctrl-height-base;
+	right: 24px + 9px;
 	z-index: $level-navbar;
 }
 
 .select:hover>.control-clear {
 	display: block;
+}
+
+html .was-validated .is-invalid .select-btn{
+	border-color:$danger;
+}
+html .was-validated .is-valid .select-btn{
+	border-color:$success;
+}
+
+.has-feedback{
+	.select{
+		.form-control-feedback{
+			right: 24px;
+			z-index: $level-navbar;
+		}
+	}
+	.select .control-clear{
+		right: 24px + 24px + 9px
+	}
 }

@@ -7003,6 +7003,10 @@ input.form-control, select.form-control {
   *margin-bottom: -1px;
 }
 
+textarea.form-control {
+  height: auto;
+}
+
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
@@ -7110,7 +7114,7 @@ button.control-clear::-moz-focus-inner {
   width: 1em;
   height: 1em;
   line-height: 1em;
-  right: 0.5em;
+  right: 9px;
   top: 50%;
   margin-top: -0.5em;
   opacity: 0.5;
@@ -7141,7 +7145,7 @@ button.control-clear::-moz-focus-inner {
 }
 
 .form .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .form .form-label, .form .control-label {
   margin-bottom: 5px;
@@ -7156,7 +7160,7 @@ button.control-clear::-moz-focus-inner {
 
 .form-horizontal .form-group {
   padding-left: 150px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   *zoom: 1;
 }
 .form-horizontal .form-group:after {
@@ -7222,9 +7226,14 @@ button.control-clear::-moz-focus-inner {
 .form-inline .form-group {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 4px;
+  margin: 4px 8px 4px 0;
   *display: inline;
   *zoom: 1;
+}
+.form-inline .form-label, .form-inline .control-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 
 .form textarea.form-control, .form-horizontal textarea.form-control {
@@ -7286,16 +7295,25 @@ button.control-clear::-moz-focus-inner {
 
 .help-block {
   display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #212121;
 }
 
-.valid-tooltip, .invalid-tooltip {
+.valid-explain, .invalid-explain {
   position: absolute;
   max-width: 100%;
   font-size: 12px;
   line-height: 15px;
+}
+
+.valid-tooltip, .invalid-tooltip {
+  position: absolute;
+  margin-top: 2px;
+  max-width: 100%;
+  line-height: 15px;
+  padding: 6px;
+  border-radius: 3px;
 }
 
 .has-feedback {
@@ -7313,6 +7331,9 @@ button.control-clear::-moz-focus-inner {
 }
 .has-feedback .radio-stack {
   padding-right: 32px;
+}
+.has-feedback .control-clear {
+  right: 33px;
 }
 
 .form-control-feedback {
@@ -7741,12 +7762,28 @@ input.select-xs .select-btn, button.select-xs .select-btn {
 }
 
 .select .control-clear {
-  right: 32px;
+  right: 33px;
   z-index: 500;
 }
 
 .select:hover > .control-clear {
   display: block;
+}
+
+html .was-validated .is-invalid .select-btn {
+  border-color: #dc3545;
+}
+
+html .was-validated .is-valid .select-btn {
+  border-color: #2B9735;
+}
+
+.has-feedback .select .form-control-feedback {
+  right: 24px;
+  z-index: 500;
+}
+.has-feedback .select .control-clear {
+  right: 57px;
 }
 
 .btn-toggle {
@@ -7820,12 +7857,22 @@ html .was-validated .valid-feedback {
   color: #2B9735;
 }
 
-html .was-validated .valid-tooltip {
+.valid-explain {
   color: #2B9735;
 }
 
-html .was-validated .invalid-tooltip {
+.invalid-explain {
   color: #dc3545;
+}
+
+.valid-tooltip {
+  color: #fff;
+  background: rgba(43, 151, 53, 0.9);
+}
+
+.invalid-tooltip {
+  color: #fff;
+  background: rgba(220, 53, 69, 0.9);
 }
 
 .btn {

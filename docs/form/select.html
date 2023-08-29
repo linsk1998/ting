@@ -154,8 +154,8 @@
 				<div class="form-group">
 					<label class="form-label">基本用法</label>
 					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn is-valid">
+					<div class="select is-valid">
+						<button type="button" class="select-btn">
 							<span class="select-label">金坷拉</span>
 							<div class="select-icon caret"></div>
 						</button>
@@ -164,8 +164,8 @@
 				<div class="form-group">
 					<label class="form-label">空白占位</label>
 					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn is-valid">
+					<div class="select is-valid">
+						<button type="button" class="select-btn">
 							<span class="select-placeholder">请选择XXX</span>
 							<div class="select-icon caret"></div>
 						</button>
@@ -174,8 +174,8 @@
 				<div class="form-group">
 					<label class="form-label">置灰</label>
 					<input type="hidden">
-					<div class="select select-disabled">
-						<button type="button" class="select-btn is-invalid" disabled>
+					<div class="select select-disabled is-invalid">
+						<button type="button" class="select-btn" disabled>
 							<span class="select-label">金坷拉</span>
 							<div class="caret select-icon"></div>
 						</button>
@@ -184,8 +184,8 @@
 				<div class="form-group">
 					<label class="form-label">置灰空白占位</label>
 					<input type="hidden">
-					<div class="select select-disabled">
-						<button type="button" class="select-btn is-invalid" disabled>
+					<div class="select select-disabled is-invalid">
+						<button type="button" class="select-btn" disabled>
 							<span class="select-placeholder">请选择XXX</span>
 							<div class="caret select-icon"></div>
 						</button>
@@ -194,8 +194,8 @@
 				<div class="form-group">
 					<label class="form-label">加载中</label>
 					<input type="hidden">
-					<div class="select select-loading">
-						<button type="button" class="select-btn is-valid" disabled>
+					<div class="select select-loading is-valid">
+						<button type="button" class="select-btn" disabled>
 							<span class="select-label">金坷拉</span>
 							<div class="select-icon icon loading-circular"></div>
 						</button>
@@ -204,8 +204,8 @@
 				<div class="form-group">
 					<label class="form-label">加载中空白占位</label>
 					<input type="hidden">
-					<div class="select select-loading">
-						<button type="button" class="select-btn is-valid" disabled>
+					<div class="select select-loading is-valid">
+						<button type="button" class="select-btn" disabled>
 							<span class="select-placeholder">加载中...</span>
 							<div class="select-icon icon loading-circular"></div>
 						</button>
@@ -214,8 +214,8 @@
 				<div class="form-group">
 					<label class="form-label">错误重试</label>
 					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn is-invalid">
+					<div class="select is-invalid">
+						<button type="button" class="select-btn">
 							<span class="select-msg text-danger">网络加载错误</span>
 							<div class="select-icon icon fa fa-refresh"></div>
 						</button>
@@ -224,13 +224,15 @@
 			</form>
 			<h1 class="page-header">表单验证</h1>
 			<form class="form-horizontal">
-				<div class="form-group has-success">
+				<div class="form-group has-success has-feedback">
 					<label class="control-label">has-success</label>
 					<div class="select">
 						<button type="button" class="select-btn">
 							<span class="select-label">金坷拉</span>
 							<div class="select-icon caret"></div>
 						</button>
+						<button type="button" class="control-clear fa">&#xf057;</button>
+						<i class="form-control-feedback fa">&#xf00c;</i>
 					</div>
 				</div>
 				<div class="form-group has-warning">
@@ -240,15 +242,18 @@
 							<span class="select-label">金坷拉</span>
 							<div class="select-icon caret"></div>
 						</button>
+						<button type="button" class="control-clear fa">&#xf057;</button>
 					</div>
 				</div>
-				<div class="form-group has-error">
+				<div class="form-group has-error has-feedback">
 					<label class="control-label">has-error</label>
 					<div class="select">
 						<button type="button" class="select-btn">
 							<span class="select-label">金坷拉</span>
 							<div class="select-icon caret"></div>
 						</button>
+						<button type="button" class="control-clear fa">&#xf057;</button>
+						<i class="form-control-feedback fa">&#xf00d;</i>
 					</div>
 				</div>
 			</form>
