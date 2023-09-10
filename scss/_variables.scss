@@ -122,9 +122,9 @@ $btn-padding-xsmall:6px !default;
 $navbar-height:50px !default;
 $navbar-toggle-size:34px !default;
 
-$pagination-size:34px !default;
-$pagination-size-lg:46px !default;
-$pagination-size-sm:28px !default;
-$pagination-size-xs:22px !default;
+$pagination-size:$ctrl-height-base !default;
+$pagination-size-lg:$ctrl-height-large !default;
+$pagination-size-sm:$ctrl-height-small !default;
+$pagination-size-xs:$ctrl-height-xsmall !default;
 
 $modal-alpha:0.4 !default;//模不透明度

@@ -32,7 +32,7 @@
 	background-color:$theme-primary;
 	border-color:$theme-primary;
 }
-.pagination li.active,.pagination li.active a{
+.pagination li.active,.pagination li.active *,.pagination li.active a:hover{
 	color:#fff;
 }
 .pagination li.disabled{

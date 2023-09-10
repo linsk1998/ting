@@ -11,10 +11,10 @@
 		// relative会导致出现2重border
 		padding:8px;
 		line-height:$line-height-base;
-		border-top:1px solid #D8DCF0;
+		border-top:1px solid #ddd;
 	}
-	&>thead{ border-bottom:2px solid #D8DCF0;}
-	&>tfoot{ border-top:2px solid #D8DCF0;}
+	&>thead{ border-bottom:2px solid #ddd;}
+	&>tfoot{ border-top:2px solid #ddd;}
 	&>*:first-child>tr:first-child>*{ border-top:0;}
 }
 
@@ -30,7 +30,7 @@
 	td,th{ padding:5px;}
 }
 .table-bordered{
-	&,& td, & th{ border:1px solid #D8DCF0;}
+	&,& td, & th{ border:1px solid #ddd;}
 }
 
 .table-active{ background-color:$secondary-bg; background-clip:padding-box;}
@@ -124,7 +124,7 @@ html body .table-odd-danger-hover{ background-color:darken($danger-bg,5%); backg
 	overflow-x: auto;
 	overflow-y: hidden;
 	margin: $margin-base 0;
-	border:1px solid #D8DCF0;
+	border:1px solid #ddd;
 }
 
 .table-responsive .table {

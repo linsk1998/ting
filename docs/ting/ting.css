@@ -6285,13 +6285,13 @@ pre.code {
 .table td, .table th {
   padding: 8px;
   line-height: 20px;
-  border-top: 1px solid #D8DCF0;
+  border-top: 1px solid #ddd;
 }
 .table > thead {
-  border-bottom: 2px solid #D8DCF0;
+  border-bottom: 2px solid #ddd;
 }
 .table > tfoot {
-  border-top: 2px solid #D8DCF0;
+  border-top: 2px solid #ddd;
 }
 .table > *:first-child > tr:first-child > * {
   border-top: 0;
@@ -6309,7 +6309,7 @@ pre.code {
 }
 
 .table-bordered, .table-bordered td, .table-bordered th {
-  border: 1px solid #D8DCF0;
+  border: 1px solid #ddd;
 }
 
 .table-active {
@@ -6476,7 +6476,7 @@ html body .table-striped > tbody.table-hover > tr:nth-of-type(odd):hover.table-d
   overflow-x: auto;
   overflow-y: hidden;
   margin: 10px 0;
-  border: 1px solid #D8DCF0;
+  border: 1px solid #ddd;
 }
 
 .table-responsive .table {
@@ -8817,7 +8817,7 @@ html body .btn-disabled .caret {
 
 .pagination li a, .pagination li span {
   display: block;
-  padding: 6px 12.5px;
+  padding: 5px 11.5px;
   color: #212121;
   text-decoration: none;
 }
@@ -8836,7 +8836,7 @@ html body .btn-disabled .caret {
   border-color: #337ab7;
 }
 
-.pagination li.active, .pagination li.active a {
+.pagination li.active, .pagination li.active *, .pagination li.active a:hover {
   color: #fff;
 }
 
@@ -8858,7 +8858,7 @@ html body .btn-disabled .caret {
 }
 
 .pagination-lg li a, .pagination-lg li span {
-  padding: 12px 18.5px;
+  padding: 11px 17.5px;
 }
 
 .pagination-sm li a, .pagination-sm li span {
@@ -10517,6 +10517,7 @@ html body .msgbox-danger {
 .win-btn-group .icon {
   font-size: 16px;
   line-height: 24px;
+  height: 24px;
   width: 24px;
   color: #fff;
   margin: 5px 0 0 4px;
