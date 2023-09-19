@@ -20,6 +20,26 @@ a.btn,label.btn,div.btn,span.btn{
 .btn-round{
 	@include btn-round;
 }
+html .btn-square {
+	padding-left: 0;
+	padding-right: 0;
+	width: $ctrl-height-base;
+}
+html .btn-square-lg {
+	padding-left: 0;
+	padding-right: 0;
+	width: $ctrl-height-large;
+}
+html .btn-square-sm {
+	padding-left: 0;
+	padding-right: 0;
+	width: $ctrl-height-small;
+}
+html .btn-square-xs {
+	padding-left: 0;
+	padding-right: 0;
+	width: $ctrl-height-xsmall;
+}
 
 .btn-default{ @include btn-default;}
 .btn-primary{ @include btn-primary;}

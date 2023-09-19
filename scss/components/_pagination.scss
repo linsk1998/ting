@@ -14,6 +14,7 @@
 	border:1px solid $ctrl-border-color;
 	position:relative;
 	margin-right:-1px;
+	z-index: 1;
 }
 .pagination li a,.pagination li span{
 	display: block;
@@ -24,7 +25,7 @@
 .pagination li:hover{
 	background-color:#eee;
 }
-.pagination li:hover,.pagination li:hover a{
+.pagination li a:hover{
 	color:darken($theme-primary,15%);
 }
 .pagination li.active{
@@ -38,6 +39,7 @@
 .pagination li.disabled{
 	border:0 none;
 	padding:1px;
+	z-index: 0;
 }
 .pagination li.disabled a{
 	cursor:text;

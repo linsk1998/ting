@@ -61,4 +61,5 @@ html .was-validated .valid-feedback{
 .invalid-tooltip{
 	color: #fff;
 	background: rgba($danger, .9);
+	z-index: $level-tooltip;
 }

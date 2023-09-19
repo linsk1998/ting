@@ -2,11 +2,12 @@
 
 
 .tree{ position: relative; padding:3px;}
-.tree ul{ margin:0; margin-left:18px; padding:0; padding-left:0;}
-.tree li{ list-style:none; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.tree ul{ margin:0; padding:0;}
+.tree li{ position:relative; padding-left:22px; list-style:none; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
 .tree label,.tree a{ padding-left:5px; line-height:26px; display:block; _zoom:1;}
 .tree label:hover,.tree a:hover{ background:#CFDDEF;}
 .tree a,.tree a:hover{ color:#333; text-decoration:none;}
+.tree a.active { background: $theme-primary; color: #fff;}
 .tree-icon{ margin-right:5px; line-height:26px; font-size:16px; display:inline-block; vertical-align:middle;}
 .tree-caret{ position:absolute; margin-left:-18px; width:22px; text-align:center; line-height:26px; cursor:pointer; transition:transform 0.2s;
  font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;

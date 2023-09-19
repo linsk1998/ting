@@ -3,6 +3,15 @@
 .btn-toolbar .btn,.btn-toolbar .btn-group{ margin-left:0; margin-right:5px;}
 .btn-toolbar>:last-child{ margin-right:0;}
 
+.btn-toolbar .pull-right .btn,
+.btn-toolbar .pull-right .btn-group {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.btn-toolbar .pull-right>:first-child {
+	margin-left: 0;
+}
+
 .btn-group {
 	display: inline-block;
 	vertical-align: middle;

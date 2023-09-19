@@ -20,11 +20,16 @@
 }
 .dropdown-menu a, .dropdown-item{
 	display:block;
-	*zoom:1; *width:100%;
+	*zoom:1;
 	padding:4px 20px; 
 	font-weight:normal;
 	color:$theme-primary-text;
 	white-space:nowrap;
+	width: 100%;
+	border: 0 none;
+	background: none;
+	text-align: left;
+	cursor: pointer;
 }
 .dropdown-menu li a:hover,
 .dropdown-menu li:hover,
@@ -32,6 +37,10 @@
 	color:$theme-primary-text;
 	text-decoration:none;
 	background-color:#f5f5f5;
+}
+.dropdown-item[disabled] {
+	color: #999;
+	cursor: not-allowed;
 }
 .open .dropdown-menu{display:block}
 

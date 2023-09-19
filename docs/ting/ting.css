@@ -6274,6 +6274,10 @@ pre.code {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.link i {
+  margin-right: 1px;
+}
+
 .table {
   margin: 10px 0;
   width: 100%;
@@ -7223,6 +7227,9 @@ button.control-clear::-moz-focus-inner {
   *display: inline;
   *zoom: 1;
 }
+.form-inline .select {
+  display: inline-block;
+}
 .form-inline .form-group {
   display: inline-block;
   vertical-align: middle;
@@ -7873,6 +7880,7 @@ html .was-validated .valid-feedback {
 .invalid-tooltip {
   color: #fff;
   background: rgba(220, 53, 69, 0.9);
+  z-index: 20000000;
 }
 
 .btn {
@@ -7981,6 +7989,30 @@ input.btn-xs, button.btn-xs {
 
 .btn-round {
   border-radius: 999px;
+}
+
+html .btn-square {
+  padding-left: 0;
+  padding-right: 0;
+  width: 32px;
+}
+
+html .btn-square-lg {
+  padding-left: 0;
+  padding-right: 0;
+  width: 44px;
+}
+
+html .btn-square-sm {
+  padding-left: 0;
+  padding-right: 0;
+  width: 28px;
+}
+
+html .btn-square-xs {
+  padding-left: 0;
+  padding-right: 0;
+  width: 24px;
 }
 
 .btn-default {
@@ -8289,6 +8321,16 @@ html body .btn-disabled .caret {
 
 .btn-toolbar > :last-child {
   margin-right: 0;
+}
+
+.btn-toolbar .pull-right .btn,
+.btn-toolbar .pull-right .btn-group {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.btn-toolbar .pull-right > :first-child {
+  margin-left: 0;
 }
 
 .btn-group {
@@ -8813,6 +8855,7 @@ html body .btn-disabled .caret {
   border: 1px solid #ccc;
   position: relative;
   margin-right: -1px;
+  z-index: 1;
 }
 
 .pagination li a, .pagination li span {
@@ -8826,7 +8869,7 @@ html body .btn-disabled .caret {
   background-color: #eee;
 }
 
-.pagination li:hover, .pagination li:hover a {
+.pagination li a:hover {
   color: #22527b;
 }
 
@@ -8843,6 +8886,7 @@ html body .btn-disabled .caret {
 .pagination li.disabled {
   border: 0 none;
   padding: 1px;
+  z-index: 0;
 }
 
 .pagination li.disabled a {
@@ -9726,11 +9770,15 @@ html body .callout-success {
 .dropdown-menu a, .dropdown-item {
   display: block;
   *zoom: 1;
-  *width: 100%;
   padding: 4px 20px;
   font-weight: normal;
   color: #212121;
   white-space: nowrap;
+  width: 100%;
+  border: 0 none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
 }
 
 .dropdown-menu li a:hover,
@@ -9739,6 +9787,11 @@ html body .callout-success {
   color: #212121;
   text-decoration: none;
   background-color: #f5f5f5;
+}
+
+.dropdown-item[disabled] {
+  color: #999;
+  cursor: not-allowed;
 }
 
 .open .dropdown-menu {
@@ -10841,12 +10894,12 @@ a.nav-list-item:hover, .nav-list-item a:hover {
 
 .tree ul {
   margin: 0;
-  margin-left: 18px;
   padding: 0;
-  padding-left: 0;
 }
 
 .tree li {
+  position: relative;
+  padding-left: 22px;
   list-style: none;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -10867,6 +10920,11 @@ a.nav-list-item:hover, .nav-list-item a:hover {
 .tree a, .tree a:hover {
   color: #333;
   text-decoration: none;
+}
+
+.tree a.active {
+  background: #337ab7;
+  color: #fff;
 }
 
 .tree-icon {
