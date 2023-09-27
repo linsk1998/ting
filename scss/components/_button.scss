@@ -17,7 +17,7 @@ a.btn,label.btn,div.btn,span.btn{
 .btn-lg{ @include btn-lg;}
 .btn-sm{ @include btn-sm;}
 .btn-xs{ @include btn-xs;}
-.btn-round{
+html .btn-round{
 	@include btn-round;
 }
 html .btn-square {

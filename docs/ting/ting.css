@@ -7472,11 +7472,6 @@ button.control-clear::-moz-focus-inner {
   vertical-align: top;
 }
 
-.input-group .btn {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .input-group-lg .input-group-text {
   font-size: 18px;
   padding: 11px 12px;
@@ -7987,7 +7982,7 @@ input.btn-xs, button.btn-xs {
   padding: 0 6px;
 }
 
-.btn-round {
+html .btn-round {
   border-radius: 999px;
 }
 
@@ -11242,11 +11237,11 @@ button.close::-moz-focus-inner {
 }
 
 .icon-rotate-270 {
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .icon-flip-horizontal {

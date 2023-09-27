@@ -6273,6 +6273,10 @@ pre.code {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.link i {
+  margin-right: 1px;
+}
+
 .table {
   margin: 10px 0;
   width: 100%;
@@ -7222,6 +7226,9 @@ button.control-clear::-moz-focus-inner {
   *display: inline;
   *zoom: 1;
 }
+.form-inline .select {
+  display: inline-block;
+}
 .form-inline .form-group {
   display: inline-block;
   vertical-align: middle;
@@ -7462,11 +7469,6 @@ button.control-clear::-moz-focus-inner {
 
 .input-group-text .checkbox-inline, .input-group-text .radio-inline {
   vertical-align: top;
-}
-
-.input-group .btn {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .input-group-lg .input-group-text {
@@ -7872,6 +7874,7 @@ html .was-validated .valid-feedback {
 .invalid-tooltip {
   color: #fff;
   background: rgba(220, 53, 69, 0.9);
+  z-index: 20000000;
 }
 
 .inverse, .dark {
@@ -8072,11 +8075,11 @@ html .was-validated .valid-feedback {
 }
 
 .icon-rotate-270 {
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .icon-flip-horizontal {
