@@ -9,7 +9,9 @@
 	.list-inline{ font-size:0;}
 	.list-inline>li{ font-size:$font-size-base;}
 }
-
+.dl-horizontal{
+	@include clearfix;
+}
 .dl-horizontal dt{ float:left; width:160px; clear:left; text-align:right; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .dl-horizontal dd{ margin-left:180px;}
 @media (max-width:640px){
