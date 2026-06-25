@@ -4,17 +4,17 @@ a {
 }
 
 a:hover {
-  color: #790108;
+  color: rgb(121.2688442211, 1.2311557789, 8.0025125628);
 }
 
 /** button */
 .btn-primary {
   background-color: #C5020D;
-  border-color: #ac020b;
+  border-color: rgb(171.756281407, 1.743718593, 11.3341708543);
 }
 .btn-primary:hover {
-  background-color: #93010a;
-  border-color: #6f0107;
+  background-color: rgb(146.5125628141, 1.4874371859, 9.6683417085);
+  border-color: rgb(111.1713567839, 1.1286432161, 7.3361809045);
 }
 
 .btn-outline, .btn-outline-primary {
@@ -26,7 +26,7 @@ a:hover {
   border-color: #C5020D;
 }
 html body .btn-outline:focus, html body .btn-outline-primary:focus {
-  border-color: #790108;
+  border-color: rgb(121.2688442211, 1.2311557789, 8.0025125628);
 }
 
 /** badge */
@@ -35,7 +35,7 @@ html body .btn-outline:focus, html body .btn-outline-primary:focus {
 }
 
 .btn-primary:hover .badge {
-  color: #93010a;
+  color: rgb(146.5125628141, 1.4874371859, 9.6683417085);
 }
 
 /** callout */
@@ -65,7 +65,7 @@ a.list-group-item:hover, .list-group-item a:hover {
 }
 
 .list-group .active .list-group-item-text {
-  color: #fec8cb;
+  color: rgb(254.4371859296, 199.5628140704, 202.6582914573);
 }
 
 /** msgbox */
@@ -90,8 +90,8 @@ a.list-group-item:hover, .list-group-item a:hover {
 
 .nav-pivot .active .nav-link, .nav-pivot .active .nav-link:hover,
 .nav-pivot a.active, .nav-pivot a.active:hover {
-  color: #93010a;
-  border-bottom-color: #93010a;
+  color: rgb(146.5125628141, 1.4874371859, 9.6683417085);
+  border-bottom-color: rgb(146.5125628141, 1.4874371859, 9.6683417085);
 }
 
 .nav-tabs-left .nav-link:hover,
@@ -107,7 +107,7 @@ a.list-group-item:hover, .list-group-item a:hover {
 
 /** pagination */
 .pagination li:hover, .pagination li:hover a {
-  color: #790108;
+  color: rgb(121.2688442211, 1.2311557789, 8.0025125628);
 }
 
 .pagination li.active {
@@ -133,16 +133,16 @@ a.list-group-item:hover, .list-group-item a:hover {
 
 /** win */
 .win {
-  border: #de1c27;
+  border: rgb(222.4874371859, 27.5125628141, 38.5111454709);
 }
 
 .win-header {
-  background: #de1c27;
-  border-bottom-color: #de1c27;
+  background: rgb(222.4874371859, 27.5125628141, 38.5111454709);
+  border-bottom-color: rgb(222.4874371859, 27.5125628141, 38.5111454709);
 }
 
 .win-btn-group .icon:hover {
-  background: #ac020b;
+  background: rgb(171.756281407, 1.743718593, 11.3341708543);
 }
 
 .win-active {
@@ -154,7 +154,7 @@ a.list-group-item:hover, .list-group-item a:hover {
 }
 
 .win-disabled {
-  border-color: #e28186;
+  border-color: rgb(226, 128.5, 134);
 }
 
 /** link */
@@ -163,7 +163,7 @@ a.list-group-item:hover, .list-group-item a:hover {
 }
 
 .link-primary:hover {
-  color: #790108;
+  color: rgb(121.2688442211, 1.2311557789, 8.0025125628);
 }
 
 .link-secondary:hover {
@@ -195,31 +195,31 @@ a.list-group-item:hover, .list-group-item a:hover {
 }
 
 .table-hover tr:hover.table-primary, .table-hover tr:hover .table-primary {
-  background-color: #e1e3f3;
+  background-color: rgb(225.4285714286, 227.4, 243.1714285714);
 }
 
 .table-hover .table-primary:hover {
-  background-color: #e1e3f3;
+  background-color: rgb(225.4285714286, 227.4, 243.1714285714);
 }
 
 .table-odd-primary {
-  background-color: #eceef8;
+  background-color: rgb(236.3571428571, 237.6, 247.5428571429);
 }
 
 .table-odd-primary-hover {
-  background-color: #dee0f2;
+  background-color: rgb(221.7857142857, 224, 241.7142857143);
 }
 
 /** btn-toggle */
 .btn-toggle-checked {
-  border-color: #ac020b;
+  border-color: rgb(171.756281407, 1.743718593, 11.3341708543);
 }
 .btn-toggle-checked:hover {
-  border-color: #6f0107;
+  border-color: rgb(111.1713567839, 1.1286432161, 7.3361809045);
 }
 
 html body .btn-toggle-checked:focus-within {
-  border-color: #6f0107;
+  border-color: rgb(111.1713567839, 1.1286432161, 7.3361809045);
 }
 
 /**color*/
@@ -228,11 +228,11 @@ html body .btn-toggle-checked:focus-within {
 }
 
 a.text-primary, .text-primary a {
-  color: #93010a !important;
+  color: rgb(146.5125628141, 1.4874371859, 9.6683417085) !important;
 }
 
 a.text-primary:hover, .text-primary a:hover {
-  color: #790108 !important;
+  color: rgb(121.2688442211, 1.2311557789, 8.0025125628) !important;
 }
 
 .bg-primary {
@@ -242,7 +242,7 @@ a.text-primary:hover, .text-primary a:hover {
 
 a.bg-primary:hover {
   color: #fff;
-  background-color: #93010a !important;
+  background-color: rgb(146.5125628141, 1.4874371859, 9.6683417085) !important;
 }
 
 .border-primary {

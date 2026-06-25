@@ -1,1 +1,7 @@
-docs/images/_notes/
+/node_modules/
+/all.css
+/no-component.css
+/backstop_data/bitmaps_reference/
+/backstop_data/bitmaps_test/
+/backstop_data/html_report/
+/backstop_data/ci_report/

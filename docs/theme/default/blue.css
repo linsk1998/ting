@@ -4,17 +4,17 @@ a {
 }
 
 a:hover {
-  color: #0a6ebd;
+  color: rgb(10.2307692308, 109.9807692308, 189.2692307692);
 }
 
 /** button */
 .btn-primary {
   background-color: #2196F3;
-  border-color: #0d8aee;
+  border-color: rgb(12.8461538462, 138.0961538462, 237.6538461538);
 }
 .btn-primary:hover {
-  background-color: #0c7cd5;
-  border-color: #0a68b4;
+  background-color: rgb(11.5384615385, 124.0384615385, 213.4615384615);
+  border-color: rgb(9.7076923077, 104.3576923077, 179.5923076923);
 }
 
 .btn-outline, .btn-outline-primary {
@@ -26,7 +26,7 @@ a:hover {
   border-color: #2196F3;
 }
 html body .btn-outline:focus, html body .btn-outline-primary:focus {
-  border-color: #0a6ebd;
+  border-color: rgb(10.2307692308, 109.9807692308, 189.2692307692);
 }
 
 /** badge */
@@ -35,7 +35,7 @@ html body .btn-outline:focus, html body .btn-outline-primary:focus {
 }
 
 .btn-primary:hover .badge {
-  color: #0c7cd5;
+  color: rgb(11.5384615385, 124.0384615385, 213.4615384615);
 }
 
 /** callout */
@@ -90,8 +90,8 @@ a.list-group-item:hover, .list-group-item a:hover {
 
 .nav-pivot .active .nav-link, .nav-pivot .active .nav-link:hover,
 .nav-pivot a.active, .nav-pivot a.active:hover {
-  color: #0c7cd5;
-  border-bottom-color: #0c7cd5;
+  color: rgb(11.5384615385, 124.0384615385, 213.4615384615);
+  border-bottom-color: rgb(11.5384615385, 124.0384615385, 213.4615384615);
 }
 
 .nav-tabs-left .nav-link:hover,
@@ -107,7 +107,7 @@ a.list-group-item:hover, .list-group-item a:hover {
 
 /** pagination */
 .pagination li:hover, .pagination li:hover a {
-  color: #0a6ebd;
+  color: rgb(10.2307692308, 109.9807692308, 189.2692307692);
 }
 
 .pagination li.active {
@@ -133,16 +133,16 @@ a.list-group-item:hover, .list-group-item a:hover {
 
 /** win */
 .win {
-  border: #64abe3;
+  border: rgb(99.6846153846, 170.7931868132, 227.3153846154);
 }
 
 .win-header {
-  background: #64abe3;
-  border-bottom-color: #64abe3;
+  background: rgb(99.6846153846, 170.7931868132, 227.3153846154);
+  border-bottom-color: rgb(99.6846153846, 170.7931868132, 227.3153846154);
 }
 
 .win-btn-group .icon:hover {
-  background: #0d8aee;
+  background: rgb(12.8461538462, 138.0961538462, 237.6538461538);
 }
 
 .win-active {
@@ -154,7 +154,7 @@ a.list-group-item:hover, .list-group-item a:hover {
 }
 
 .win-disabled {
-  border-color: #90cbf9;
+  border-color: rgb(144, 202.5, 249);
 }
 
 /** link */
@@ -163,7 +163,7 @@ a.list-group-item:hover, .list-group-item a:hover {
 }
 
 .link-primary:hover {
-  color: #0a6ebd;
+  color: rgb(10.2307692308, 109.9807692308, 189.2692307692);
 }
 
 .link-secondary:hover {
@@ -195,31 +195,31 @@ a.list-group-item:hover, .list-group-item a:hover {
 }
 
 .table-hover tr:hover.table-primary, .table-hover tr:hover .table-primary {
-  background-color: #e1e3f3;
+  background-color: rgb(225.4285714286, 227.4, 243.1714285714);
 }
 
 .table-hover .table-primary:hover {
-  background-color: #e1e3f3;
+  background-color: rgb(225.4285714286, 227.4, 243.1714285714);
 }
 
 .table-odd-primary {
-  background-color: #eceef8;
+  background-color: rgb(236.3571428571, 237.6, 247.5428571429);
 }
 
 .table-odd-primary-hover {
-  background-color: #dee0f2;
+  background-color: rgb(221.7857142857, 224, 241.7142857143);
 }
 
 /** btn-toggle */
 .btn-toggle-checked {
-  border-color: #0d8aee;
+  border-color: rgb(12.8461538462, 138.0961538462, 237.6538461538);
 }
 .btn-toggle-checked:hover {
-  border-color: #0a68b4;
+  border-color: rgb(9.7076923077, 104.3576923077, 179.5923076923);
 }
 
 html body .btn-toggle-checked:focus-within {
-  border-color: #0a68b4;
+  border-color: rgb(9.7076923077, 104.3576923077, 179.5923076923);
 }
 
 /**color*/
@@ -228,11 +228,11 @@ html body .btn-toggle-checked:focus-within {
 }
 
 a.text-primary, .text-primary a {
-  color: #0c7cd5 !important;
+  color: rgb(11.5384615385, 124.0384615385, 213.4615384615) !important;
 }
 
 a.text-primary:hover, .text-primary a:hover {
-  color: #0a6ebd !important;
+  color: rgb(10.2307692308, 109.9807692308, 189.2692307692) !important;
 }
 
 .bg-primary {
@@ -242,7 +242,7 @@ a.text-primary:hover, .text-primary a:hover {
 
 a.bg-primary:hover {
   color: #fff;
-  background-color: #0c7cd5 !important;
+  background-color: rgb(11.5384615385, 124.0384615385, 213.4615384615) !important;
 }
 
 .border-primary {

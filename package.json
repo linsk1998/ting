@@ -1,23 +1,43 @@
 {
 	"name": "@ting-ui/css",
-	"version": "0.1.6",
+	"version": "1.0.0",
 	"description": "common style lib",
-	"scripts": {
-		"build:all": "sass scss/all.scss all.css --no-source-map",
-		"build:no-component": "sass scss/no-component.scss no-component.css --no-source-map",
-		"build:docs": "sass scss/all.scss docs/ting/ting.css --no-source-map",
-		"build:theme:default:blue": "sass theme/default/blue.scss docs/theme/default/blue.css --no-source-map",
-		"build:theme:default:red": "sass theme/default/red.scss docs/theme/default/red.css --no-source-map",
-		"build:theme:default:teal": "sass theme/default/teal.scss docs/theme/default/teal.css --no-source-map",
-		"build:theme:default:indigo": "sass theme/default/indigo.scss docs/theme/default/indigo.css --no-source-map"
-	},
+	"style": "all.css",
+	"keywords": ["css", "ui", "style", "scss", "bootstrap"],
 	"author": "linsk",
 	"license": "MIT",
 	"files": [
-		"scss/",
-		"images/",
 		"all.css",
 		"no-component.css",
-		"README.md"
+		"scss/"
+	],
+	"exports": {
+		"./package.json": "./package.json",
+		".": "./all.css",
+		"./all.css": "./all.css",
+		"./no-component": "./no-component.css",
+		"./scss/*": "./scss/*"
+	},
+	"scripts": {
+		"build": "node scripts/build.js",
+		"serve": "http-server docs -p 3000",
+		"backstop-reference": "backstop reference",
+		"backstop-test": "backstop test",
+		"backstop-approve": "backstop approve",
+		"backstop:reference": "start-server-and-test serve http://localhost:3000 backstop-reference",
+		"backstop:test": "start-server-and-test serve http://localhost:3000 backstop-test",
+		"test": "npm run backstop:test"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.20",
+		"backstopjs": "^6.3.0",
+		"http-server": "^14.1.0",
+		"postcss": "^8.4.49",
+		"postcss-cli": "^11.0.0",
+		"sass": "^1.80.0",
+		"start-server-and-test": "^2.0.0"
+	},
+	"browserslist": [
+		"<= 100%"
 	]
 }
