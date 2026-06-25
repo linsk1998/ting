@@ -20,9 +20,10 @@
 	"exports": {
 		"./package.json": "./package.json",
 		".": "./all.css",
-		"./all.css": "./all.css",
-		"./no-component": "./no-component.css",
-		"./scss/*": "./scss/*"
+		"./all.css": "./dist/ting.all.css",
+		"./no-component": "./dist/ting.no-component.css",
+		"./scss/*": "./scss/*",
+		"./dist/*": "./dist/*"
 	},
 	"scripts": {
 		"build": "node scripts/build.js",

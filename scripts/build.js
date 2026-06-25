@@ -5,7 +5,7 @@
 
 const sass = require('sass');
 const postcss = require('postcss');
-const { writeFile, mkdir } = require('fs/promises');
+const { writeFile, copyFile, mkdir } = require('fs/promises');
 const { resolve, dirname } = require('path');
 
 const root = resolve(__dirname, '..');
@@ -15,8 +15,8 @@ const postcssConfig = {
 };
 
 const builds = [
-  { src: 'scss/all.scss',           dest: 'all.css' },
-  { src: 'scss/no-component.scss',   dest: 'no-component.css' },
+  { src: 'scss/all.scss',           dest: 'dist/ting.all.css' },
+  { src: 'scss/no-component.scss',   dest: 'dist/ting.no-component.css' },
 ];
 
 async function run({ src, dest }) {
@@ -38,6 +38,13 @@ async function run({ src, dest }) {
   for (const cfg of builds) {
     await run(cfg);
   }
+
+  // 复制 dist/ting.all.css 到 docs/ting/ting.css
+  const srcPath = resolve(root, 'dist/ting.all.css');
+  const destPath = resolve(root, 'docs/ting/ting.css');
+  await mkdir(dirname(destPath), { recursive: true });
+  await copyFile(srcPath, destPath);
+  console.log(`✓  dist/ting.all.css  →  docs/ting/ting.css`);
 })().catch(err => {
   console.error(err);
   process.exit(1);
