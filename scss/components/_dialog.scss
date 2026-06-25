@@ -1,4 +1,6 @@
 
+@use '../variables' as *;
+
 .dialog{ text-align:left; display:inline-block;*zoom:1;*display:inline; background:#FFF; box-shadow:1px 1px 50px rgba(0,0,0,.3); position:relative;}
 .dialog-header{ background:#F8F8F8; border-bottom:1px solid #eee; padding:8px 16px; *zoom:1;}
 .dialog-header .close{ float:right;}

@@ -1,4 +1,6 @@
 
+@use '../variables' as *;
+
 .msgbox{ position:relative; max-width:90%; background:#fff; display:inline-block; *display:inline; *zoom:1; border-top:4px solid $theme-primary; padding:8px 12px; text-align:center; margin-bottom:20px;
 -moz-box-shadow:0 0 10px rgba(0,0,0,.5);-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);}
 .msgbox-lg{ width:90%;}

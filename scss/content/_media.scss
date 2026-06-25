@@ -1,3 +1,5 @@
+@use "../mixins" as *;
+
 .media{
 	@include clearfix;
 }

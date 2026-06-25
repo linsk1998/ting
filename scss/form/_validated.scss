@@ -1,5 +1,9 @@
 
 
+@use '../variables' as *;
+@use '../functions' as *;
+
+
 html .has-success{
 	.form-label,.control-label,.form-control-feedback,.help-block{
 		color:$success;

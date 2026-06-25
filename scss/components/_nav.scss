@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../functions' as *;
+
 .nav{ list-style:none; margin:$margin-base 0; padding:0;}
 .nav .nav-item{ display: inline-block; *display: inline; *zoom:1;}
 

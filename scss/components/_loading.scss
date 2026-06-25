@@ -1,3 +1,5 @@
+@use '../mixins' as *;
+
 .loading-circular,.loading-grow{
 	display: inline-block;
 	*display: inline; *zoom:1;

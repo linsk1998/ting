@@ -1,0 +1,26 @@
+@use 'sass:color';
+@use "sass:meta";
+
+@function type-of($value) {
+	@return meta.type-of($value);
+}
+
+@function darken($color, $darkness) {
+	@return color.adjust($color, $lightness: -$darkness);
+}
+
+@function adjust-hue($color, $hue) {
+	@return color.adjust($color, $hue: $hue);
+}
+
+@function lighten($color, $lightness) {
+	@return color.adjust($color, $lightness: $lightness);
+}
+
+@function desaturate($color, $saturation) {
+	@return color.adjust($color, $saturation: -$saturation);
+}
+
+@function mix($color1, $color2, $weight: 50%) {
+	@return color.mix($color1, $color2, $weight);
+}

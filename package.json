@@ -3,7 +3,13 @@
 	"version": "1.0.0",
 	"description": "common style lib",
 	"style": "all.css",
-	"keywords": ["css", "ui", "style", "scss", "bootstrap"],
+	"keywords": [
+		"css",
+		"ui",
+		"style",
+		"scss",
+		"bootstrap"
+	],
 	"author": "linsk",
 	"license": "MIT",
 	"files": [

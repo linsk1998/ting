@@ -1,4 +1,7 @@
 
+@use '../variables' as *;
+@use '../functions' as *;
+
 .pagination{
 	display:inline-block; *zoom:1; *display:inline;
 	padding:0;

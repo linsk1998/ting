@@ -1,3 +1,5 @@
+@use "../variables" as *;
+@use "../mixins" as *;
 
 .text-muted{ color:$theme-secondary-text;}
 

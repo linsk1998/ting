@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../functions' as *;
+
 .win {
 	border:2px solid desaturate(lighten($theme-primary,10%),20%);
 	background:#fff;

@@ -1,4 +1,6 @@
 
+@use '../variables' as *;
+
 .form-group-lg{
 	.form-label,.control-label{
 		font-size: $ctrl-fontsize-large;

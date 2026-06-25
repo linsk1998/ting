@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .progress{
 	overflow:hidden;
 	margin:$margin-base 0;

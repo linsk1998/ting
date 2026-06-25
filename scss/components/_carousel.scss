@@ -1,4 +1,6 @@
 
+@use '../variables' as *;
+
 .carousel{ position:relative;}
 .carousel-indicators{ margin:0; padding:0; list-style:none; position:absolute; top:75%; left:0; width:100%; text-align:center; font-size:0;}
 .carousel-indicators li{ display:inline; margin:0 0.3em; color:#fff; cursor:pointer; opacity:0.5; font-size:14px;}

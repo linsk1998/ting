@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use 'radius' as *;
+
 @mixin img-circle {
 	@include circle();
 	-o-object-fit:cover;

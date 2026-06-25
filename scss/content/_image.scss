@@ -1,3 +1,5 @@
+@use '../mixins' as *;
+
 .img-circle{
 	@include img-circle;
 }

@@ -11,9 +11,7 @@ const { resolve, dirname } = require('path');
 const root = resolve(__dirname, '..');
 
 const postcssConfig = {
-    plugins: [
-        require('autoprefixer')
-    ]
+    plugins: []
 };
 
 const builds = [

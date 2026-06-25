@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .navbar{
 	border-bottom:1px solid #ddd;
 	position:relative; z-index:$level-navbar;
@@ -106,7 +109,7 @@ a.navbar-brand:hover {
 .navbar-collapse{
 	@include clearfix;
 }
-@media screen and (max-width:$screen-md){
+@media (max-width:$screen-sm){
 	.navbar-header{ float:none;}
 	.navbar-toggle{ display:block;}
 	.navbar-collapse.collapse{ display:none;}

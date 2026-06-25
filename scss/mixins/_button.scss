@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../functions' as *;
+
 @mixin btn($border:$ctrl-border-width){
 	margin:0;
 	line-height:$ctrl-line-height;

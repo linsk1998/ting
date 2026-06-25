@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../functions' as *;
+
 .list {
 	padding: 0; margin: 0;
 	list-style-type: none;

@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .lead{
 	margin: $margin-base 0;
 	font-size: 16px;

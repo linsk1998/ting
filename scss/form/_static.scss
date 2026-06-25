@@ -1,4 +1,6 @@
 
+@use '../variables' as *;
+
 .form-control-static{
 	font-size: $font-size-base;
 	line-height: $line-height-base;

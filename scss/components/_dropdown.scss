@@ -1,4 +1,6 @@
 
+@use '../variables' as *;
+
 .dropdown{ position:relative;}
 .dropdown-menu{
 	z-index:$level-dropdown; position:absolute; min-width:160px;

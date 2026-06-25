@@ -1,5 +1,8 @@
 
 
+@use '../variables' as *;
+
+
 @mixin text-input($border){
 	font-size: $ctrl-fontsize-base;
 	line-height: $ctrl-line-height;

@@ -1,0 +1,7 @@
+@use '../variables' as *;
+
+.pull-front{ z-index:1; position:relative;}
+.z-n1 { z-index:-1; }
+@each $key, $value in $zindex-levels {
+	.z-#{$key}{ z-index:$value; }
+}

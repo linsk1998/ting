@@ -1,3 +1,7 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
 .select{
 	position: relative;
 }

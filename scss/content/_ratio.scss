@@ -1,4 +1,6 @@
+@use '../variables' as *;
 @use 'sass:math';
+@use 'sass:list';
 $aspect-ratios:(
 	(16 9),
 	(4 3),
@@ -36,8 +38,8 @@ video.embed-responsive-item{
 }
 
 @each $aspect-ratio in $aspect-ratios {
-	$ratio-x: nth($aspect-ratio, 1);
-	$ratio-y: nth($aspect-ratio, 2);
+	$ratio-x: list.nth($aspect-ratio, 1);
+	$ratio-y: list.nth($aspect-ratio, 2);
 	.ratio-#{$ratio-x}x#{$ratio-y},
 	.ratio-#{$ratio-x}\/#{$ratio-y},
 	.embed-responsive-#{$ratio-x}by#{$ratio-y},

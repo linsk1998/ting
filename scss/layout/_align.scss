@@ -6,7 +6,7 @@
 	height: 100%;
 	vertical-align: middle;
 }
-@media (-webkit-min-device-pixel-ratio:0){
+@media (-webkit-min-device-pixel-ratio:0) {
 	.vertical-align.inline-block{
 		display:-webkit-inline-box; display:inline-flex;
 		-webkit-box-align:center; align-items:center;
@@ -36,4 +36,4 @@
 	*zoom: 1;
 	*display: inline;
 }
-.line-middle{ height:100%; vertical-align:middle; display:inline-block; *zoom:1; *display:inline;}
+.line-middle { height:100%; vertical-align:middle; display:inline-block; *zoom:1; *display:inline;}

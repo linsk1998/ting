@@ -1,4 +1,6 @@
 
+@use '../variables' as *;
+
 .breadcrumb{ position: relative; padding:8px 15px; margin:0 0 $margin-base; text-align:left; list-style:none; background-color:#f5f5f5; color:#ccc;}
 .breadcrumb li{ display:inline-block;}
 .breadcrumb > li + li:before{ position: relative;  color:#ccc; content:"/\00a0";}

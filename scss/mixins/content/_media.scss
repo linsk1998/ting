@@ -1,3 +1,5 @@
+@use '../clearfix' as *;
+
 @mixin media{
 	@include clearfix;
 	@supports (display:flex) {

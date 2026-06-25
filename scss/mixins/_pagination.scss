@@ -1,4 +1,8 @@
 
+@use '../variables' as *;
+@use '../functions' as *;
+
+
 @mixin pagination($gutter:-1px,$size,$font-size:$font-size-base){
 	display:inline-block; *zoom:1; *display:inline;
 	padding-left:0;

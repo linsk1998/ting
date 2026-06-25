@@ -1,4 +1,7 @@
 
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .form-control {
 	font-size: $ctrl-fontsize-base;
 	line-height: $ctrl-line-height;

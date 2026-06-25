@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .panel {
 	margin: $margin-base 0;
 	background-color: #fff;

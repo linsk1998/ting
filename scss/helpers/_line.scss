@@ -1,4 +1,8 @@
 
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
 .text-truncate{ @include text-truncate;}
 .line-1,.line-max-1{
 	@extend .text-truncate;

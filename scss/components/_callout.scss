@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .callout {
 	padding:$padding-base; margin:$margin-base 0;
 	background-color: #ffffff;
