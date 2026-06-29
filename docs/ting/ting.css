@@ -2732,8 +2732,10 @@ dialog {
     --border-2: 1.7142857142857142px;
   }
 }
-.container {
-  width: 1000px;
+.container, .container-md,
+.container-lg, .container-xl,
+.container-sm, .container-xs {
+  width: 1002px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 16px;
@@ -2748,16 +2750,28 @@ dialog {
     width: 1368px;
   }
 }
-@media (min-width: 1400px) {
+.container-lg {
+  width: 1368px;
+}
+
+@media (min-width: 1680) {
   .container {
-    width: 1368px;
+    width: 1648px;
   }
 }
+.container-xl {
+  width: 1648px;
+}
+
 @media (max-width: 991px) {
   .container {
     width: auto;
   }
 }
+.container-sm, .container-xs {
+  width: auto;
+}
+
 .container-fluid {
   width: auto;
   padding-right: 20px;
@@ -5821,8 +5835,16 @@ pre.code {
   text-decoration: none;
 }
 
-.link-no-decoration, .link-no-decoration:hover {
-  text-decoration: none;
+.link-underline, .link-underline:hover {
+  text-decoration: underline;
+}
+
+.link-offset-1 {
+  text-underline-offset: 0.125em !important;
+}
+
+.link-offset-2 {
+  text-underline-offset: 0.25em !important;
 }
 
 .link-stretched::after {
@@ -5835,10 +5857,6 @@ pre.code {
   pointer-events: auto;
   content: "";
   background-color: rgba(0, 0, 0, 0);
-}
-
-.link i {
-  margin-right: 1px;
 }
 
 .table {
@@ -11099,6 +11117,10 @@ button.close {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
 }
 
 .pre {
