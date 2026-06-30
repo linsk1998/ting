@@ -16,15 +16,15 @@ a.text-primary:hover,.text-primary a:hover{ color:darken($theme-primary,15%) !im
 a.bg-primary:hover{ color:#fff; background-color:darken($theme-primary,10%) !important;}
 .border-primary{ border-color:$theme-primary !important;}
 
-@each $key, $color in $context {
-	html body .text-#{$key}{ color:$color !important;}
-	html body a.text-#{$key},.text-#{$key} a{ color:darken($color,10%) !important;}
-	html body a.text-#{$key}:hover,.text-#{$key} a:hover{ color:darken($color,15%) !important;}
-	html body .bg-#{$key}{ background-color:$color !important;}
-	html body .bg-#{$key},.bg-#{$key} a,.bg-#{$key} a:hover{ color:#fff !important;}
-	html body .border-#{$key}{ border-color:$color !important;}
-}
-@each $key, $color in $theme {
+// @each $key, $color in $context {
+// 	html body .text-#{$key}{ color:$color !important;}
+// 	html body a.text-#{$key},.text-#{$key} a{ color:darken($color,10%) !important;}
+// 	html body a.text-#{$key}:hover,.text-#{$key} a:hover{ color:darken($color,15%) !important;}
+// 	html body .bg-#{$key}{ background-color:$color !important;}
+// 	html body .bg-#{$key},.bg-#{$key} a,.bg-#{$key} a:hover{ color:#fff !important;}
+// 	html body .border-#{$key}{ border-color:$color !important;}
+// }
+@each $key, $color in $colors {
 	html body .text-#{$key}{ color:$color !important;}
 	html body a.text-#{$key},.text-#{$key} a{ color:darken($color,10%) !important;}
 	html body a.text-#{$key}:hover,.text-#{$key} a:hover{ color:darken($color,15%) !important;}

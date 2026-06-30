@@ -142,8 +142,12 @@
 					<td>禁用链接</td>
 				</tr>
 				<tr>
+					<td>.link-offset-*</td>
+					<td>增加下划线偏移量</td>
+				</tr>
+				<tr>
 					<td>.link-stretched</td>
-					<td>链接作用到容器</td>
+					<td>链接作用到容器（需要将链接放入position:relative的容器中）</td>
 				</tr>
 			</table>
 			<p>
@@ -154,7 +158,8 @@
 				<a class="link-info" href="#Link">link-info例子</a>
 				<a class="link-warning" href="#Link">link-warning例子</a>
 				<a class="link-danger" href="#Link">link-danger例子</a>
-				<a class="link-primary link-no-decoration" href="#Link">link-no-decoration无下划线</a>
+				<a class="link-primary u" href="#Link">强制带下划线</a>
+				<a class="link-primary u link-offset-1" href="#Link">下划线偏移</a>
 			</p>
 			<div class="alert alert-danger">
 				<a class="link-stretched alert-link" href="#Link">link-stretched</a>例子
@@ -185,8 +190,22 @@
 					<td>在 &lt;tbody&gt; 内的任一行启用鼠标悬停状态</td>
 				</tr>
 				<tr>
-					<td>.table-sm</td>
+					<td>.table-sm、.table-xs</td>
 					<td>让表格更加紧凑</td>
+				</tr>
+				<tr>
+					<td>.table-subtle、.table-inverse</td>
+					<td>表头</td>
+				</tr>
+				<tr>
+					<td>
+						.table-primary、 .table-success、 .table-info、 .table-warning、 .table-danger
+					</td>
+					<td>语境类，可以用于整个表格，也可以用于整行，也可以用于单个单元格</td>
+				</tr>
+				<tr>
+					<td>.table-active</td>
+					<td>激活状态</td>
 				</tr>
 				<tr>
 					<td>.table-responsive</td>
@@ -195,17 +214,6 @@
 				<tr>
 					<td>.table-fixed</td>
 					<td>强制固定表格宽度</td>
-				</tr>
-				<tr>
-					<td>
-						.table-active<br/>
-						.table-primary<br/>
-						.table-success<br/>
-						.table-info<br/>
-						.table-warning<br/>
-						.table-danger
-					</td>
-					<td>语境类</td>
 				</tr>
 			</tbody></table>
 			<p><a href="./table.html">例子</a></p>

@@ -24,8 +24,13 @@
 .link-disabled{ cursor: not-allowed; color:#a0a0a0; text-shadow:1px 1px #fff;}
 .link-disabled:hover{ color:#a0a0a0; text-decoration:none;}
 
-.link-no-decoration,.link-no-decoration:hover{
-	text-decoration:none;
+.link-underline,.link-underline:hover{
+	text-decoration:underline;
+}
+@for $i from 1 to 3 {
+	.link-offset-#{$i}{
+		text-underline-offset: $i * 0.125em !important;
+	}
 }
 
 .link-stretched::after {
@@ -38,8 +43,4 @@
 	pointer-events: auto;
 	content: "";
 	background-color: rgba(0,0,0,0);
-}
-
-.link i {
-	margin-right: 1px;
 }

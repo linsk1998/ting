@@ -1,3 +1,4 @@
+@use '../variables' as *;
 @use '../functions' as *;
 
 @mixin container($width:auto, $padding: 16px){
@@ -12,4 +13,20 @@
 	}
 	position:relative; *zoom:1;
 	*text-align: left;
+}
+
+@mixin container-xl($width: $screen-xl - 32px, $padding){
+	@include container($width, $padding);
+}
+@mixin container-lg($width: $screen-lg - 32px, $padding) {
+	@include container($width, $padding);
+}
+@mixin container-md($width: 1002px, $padding) {
+	@include container($width, $padding);
+}
+@mixin container-sm($width: auto, $padding) {
+	@include container($width, $padding);
+}
+@mixin container-xs($width: auto, $padding) {
+	@include container($width, $padding);
 }

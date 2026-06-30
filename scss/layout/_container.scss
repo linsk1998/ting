@@ -1,17 +1,28 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-.container{
-	@include container(1000px, 16px);
+.container, .container-md,
+.container-lg, .container-xl,
+.container-sm, .container-xs {
+	@include container(992px, 16px);
 }
 @media (min-width: $screen-lg) {
-	.container{ width: $screen-lg - 32px;}
+	.container { width: 1376px;}
 }
-@media (min-width: $screen-lg) {
-	.container{ width: $screen-lg - 32px; }
+.container-lg {
+	width: 1376px;
+}
+@media (min-width: $screen-xl) {
+	.container { width: 1664px; }
+}
+.container-xl {
+	width: 1664px;
 }
 @media (max-width: $screen-sm) {
-	.container{ width:auto; }
+	.container { width:auto; }
+}
+.container-sm, .container-xs {
+	width:auto;
 }
 .container-fluid {
 	@include container(auto, 20px);

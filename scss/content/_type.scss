@@ -3,7 +3,7 @@
 
 .text-muted{ color:$theme-secondary-text;}
 
-.list-unstyled{ padding-left:0; list-style:none;}
+.list-unstyled, .text-body-secondary{ padding-left:0; list-style:none;}
 
 .list-inline{ padding-left:0; margin-left:-5px; list-style:none;}
 .list-inline-item{ display:inline-block; *zoom:1; *display:inline; padding-right:5px; padding-left:5px;}
@@ -27,7 +27,7 @@
 }
 
 .pre-scrollable {
-	max-height: 350px;
+	max-height: $pre-scrollable-max-height;
 	overflow-y: scroll;
 }
 

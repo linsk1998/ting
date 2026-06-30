@@ -1,21 +1,27 @@
 @use '../variables' as *;
 
+.hidden,.hide,.d-none{ display:none !important;}
+
+.invisible{ visibility: hidden; }
+
 @media (min-width:$screen-sm) {
 	.hidden-desktop { display:none !important;}
 }
 @media \0screen\,screen\9 {
-	.hidden-desktop,.hidden-md{ display:none !important;}
+	.hidden-desktop,.hidden-md { display:none !important;}
 }
-@media (min-width:$screen-lg) and (max-width:$screen-xl) {
-	.hidden-lg{ display:none !important;}
+@media (min-width:$screen-sm) and (max-width:($screen-lg - 1px)) {
+	.hidden-md { display:none !important;}
 }
-@media (min-width:$screen-xl){
-	.hidden-xl{ display:none !important;}
+@media (min-width:$screen-lg) and (max-width:($screen-xl - 1px)) {
+	.hidden-lg { display:none !important;}
 }
-@media (min-width:$screen-xs) and (max-width:$screen-sm){
-	.hidden-tablet,.hidden-sm{ display:none !important;}
+@media (min-width:$screen-xl) {
+	.hidden-xl { display:none !important;}
 }
-@media (max-width:$screen-xs){
-	.hidden-xs,.hidden-phone{ display:none !important;}
+@media (min-width:($screen-xs + 1px)) and (max-width:$screen-sm) {
+	.hidden-tablet,.hidden-sm { display:none !important;}
 }
-.hidden,.hide{ display:none !important;}
+@media (max-width:$screen-xs) {
+	.hidden-xs,.hidden-phone { display:none !important;}
+}
