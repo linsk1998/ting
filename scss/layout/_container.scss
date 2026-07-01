@@ -1,29 +1,34 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-.container, .container-md,
-.container-lg, .container-xl,
-.container-sm, .container-xs {
-	@include container(992px, 16px);
+.container,
+.container-md,
+.container-sm {
+	@include container(1002px);
+}
+.container-fluid,
+.container-lg,
+.container-xl {
+	@include container-fluid(auto);
 }
 @media (min-width: $screen-lg) {
-	.container { width: 1376px;}
-}
-.container-lg {
-	width: 1376px;
+	.container,
+	.container-md,
+	.container-lg { width: 1134px; }
 }
 @media (min-width: $screen-xl) {
-	.container { width: 1664px; }
-}
-.container-xl {
-	width: 1664px;
+	.container,
+	.container-md,
+	.container-lg,
+	.container-xl { width: 1362px; }
 }
 @media (max-width: $screen-sm) {
-	.container { width:auto; }
+	.container,
+	.container-md,
+	.container-lg,
+	.container-xl { width:auto; }
+	.container-sm { width:546px; }
 }
-.container-sm, .container-xs {
-	width:auto;
-}
-.container-fluid {
-	@include container(auto, 20px);
+@media (max-width: $screen-xs) {
+	.container-sm { width:auto; }
 }

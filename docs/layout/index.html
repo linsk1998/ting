@@ -76,6 +76,46 @@
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
 			<h1 class="page-header">布局</h1>
+			<h2>断点</h2>
+			<p>包括五个默认断点，断点代表了常见设备尺寸和视口尺寸的子集。</p>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>断点</th>
+					<th>代号</th>
+					<th>尺寸</th>
+					<th>典型屏幕</th>
+				</tr>
+				<tr>
+					<td>手机</td>
+					<td>xs</td>
+					<td>~ 576px</td>
+					<td>375x667</td>
+				</tr>
+				<tr>
+					<td>平板</td>
+					<td>sm</td>
+					<td>576px ~ 992px</td>
+					<td>800x1280</td>
+				</tr>
+				<tr>
+					<td>小屏</td>
+					<td>md</td>
+					<td>992px ~ 1400px</td>
+					<td>1024x768</td>
+				</tr>
+				<tr>
+					<td>中屏</td>
+					<td>lg</td>
+					<td>1400px ~ 1700px</td>
+					<td>1600x900</td>
+				</tr>
+				<tr>
+					<td>大屏</td>
+					<td>xl</td>
+					<td>1700px ~</td>
+					<td>1920x1080</td>
+				</tr>
+			</tbody></table>
 			<h2>布局容器</h2>
 			<p><code>.container</code> 类用于固定宽度并支持响应式布局的容器。</p>
 			<pre class="code">&lt;div class="container"&gt;
@@ -95,8 +135,62 @@
 					<td>用于固定宽度居中并支持响应式。</td>
 				</tr>
 				<tr>
+					<td>.container-{size}</td>
+					<td>直到指定断点为止是 width: 100%。</td>
+				</tr>
+				<tr>
 					<td>.container-fluid</td>
 					<td>用于 100% 宽度，占据全部视口（viewport）的容器。</td>
+				</tr>
+			</tbody></table>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>~ 576px</th>
+					<th>576px ~ 992px</th>
+					<th>992px ~ 1400px</th>
+					<th>1400px ~ 1700px</th>
+					<th>1700px ~</th>
+				</tr>
+				<tr>
+					<td>.container-sm</td>
+					<td>100%</td>
+					<td>546px</td>
+					<td>1002px</td>
+					<td>1134px</td>
+					<td>1362px</td>
+				</tr>
+				<tr>
+					<td>.container-md, .container</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>1002px</td>
+					<td>1134px</td>
+					<td>1362px</td>
+				</tr>
+				<tr>
+					<td>.container-lg</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>1134px</td>
+					<td>1362px</td>
+				</tr>
+				<tr>
+					<td>.container-xl</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>1362px</td>
+				</tr>
+				<tr>
+					<td>.container-fluid</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
 				</tr>
 			</tbody></table>
 			<p><a href="container.html">例子</a></p>

@@ -1,17 +1,53 @@
 /**
  * CSS 构建脚本
- * 先编译 SCSS，再运行 PostCSS（Autoprefixer）
+ * 先编译 SCSS，再运行 PostCSS（postcss-functions + Autoprefixer）
  */
 
 const sass = require('sass');
 const postcss = require('postcss');
+const postcssFunctions = require('postcss-functions');
 const { writeFile, copyFile, mkdir } = require('fs/promises');
 const { resolve, dirname } = require('path');
 
 const root = resolve(__dirname, '..');
 
+// ============================================================
+// 颜色转换：使用 color-convert 将 rgb/hsl 转为 hex
+// ============================================================
+
+const colorConvert = require('color-convert');
+
+function parseRgbArg(s) {
+    s = s.trim();
+    if (s.endsWith('%')) return Math.round((parseFloat(s) / 100) * 255);
+    return Math.round(parseFloat(s));
+}
+
+// postcss-functions 自定义函数：劫持 rgb() 和 hsl()，输出 hex
+const customFunctions = {
+    rgb(...args) {
+        if (args.length < 3) return;
+        const r = parseRgbArg(args[0]);
+        const g = parseRgbArg(args[1]);
+        const b = parseRgbArg(args[2]);
+        return '#' + colorConvert.rgb.hex(r, g, b);
+    },
+    hsl(...args) {
+        if (args.length < 3) return;
+        const h = parseFloat(args[0]);
+        const s = parseFloat(args[1]);
+        const l = parseFloat(args[2]);
+        const [r, g, b] = colorConvert.hsl.rgb(h, s, l);
+        return '#' + colorConvert.rgb.hex(r, g, b);
+    },
+};
+
+// ============================================================
+
 const postcssConfig = {
-    plugins: []
+    plugins: [
+        postcssFunctions({ functions: customFunctions }),
+    ]
 };
 
 const builds = [

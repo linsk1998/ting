@@ -38,9 +38,11 @@
 	"devDependencies": {
 		"autoprefixer": "^10.4.20",
 		"backstopjs": "^6.3.0",
+		"color-convert": "^2.0.1",
 		"http-server": "^14.1.0",
 		"postcss": "^8.4.49",
 		"postcss-cli": "^11.0.0",
+		"postcss-functions": "^4.0.2",
 		"sass": "^1.80.0",
 		"start-server-and-test": "^2.0.0"
 	},
