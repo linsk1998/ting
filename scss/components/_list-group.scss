@@ -80,7 +80,7 @@ button.list-group-item::-moz-focus-inner{
 
 .list-group-item-heading{ margin-top:0; margin-bottom:5px;}
 .list-group-item-text{ margin:0;}
-.list-group .active .list-group-item-text{color:lighten($theme-primary, 50%);}
+.list-group .active .list-group-item-text{ color: mix($theme-primary, #fff, 20%); }
 
 .list-group-item .badge { float: right; }
 .list-group .active .badge{ color: $theme-primary; background-color: #fff;}

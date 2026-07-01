@@ -2745,7 +2745,7 @@ dialog {
     width: auto;
   }
   .container-sm {
-    width: 540px;
+    width: 546px;
   }
 }
 @media (max-width: 575px) {
@@ -9154,7 +9154,7 @@ button.list-group-item::-moz-focus-inner {
 }
 
 .list-group .active .list-group-item-text {
-  color: #060401;
+  color: #DAE3F3;
 }
 
 .list-group-item .badge {
