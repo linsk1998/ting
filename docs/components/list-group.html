@@ -8,10 +8,10 @@
 	<meta name="renderer" content="webkit"/>
 	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
 	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="true" -->
+	<!-- InstanceParam name="content" type="boolean" value="false" -->
 	<!-- InstanceParam name="form" type="boolean" value="false" -->
 	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
+	<!-- InstanceParam name="components" type="boolean" value="true" -->
 	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>列表</title>
@@ -78,6 +78,7 @@
 			<h1 class="page-header">列表</h1>
 			<div class="row row-gx-4">
 				<div class="col-md-3 col-gx-4">
+					<h2>基本列表</h2>
 					<ul class="list-group">
 						<li class="list-group-item"><a href="#">Cras justo odio</a></li>
 						<li class="list-group-item active"><a href="#">Dapibus ac facilisis in</a></li>
@@ -88,35 +89,62 @@
 					</ul>
 				</div>
 				<div class="col-md-3 col-gx-4">
+					<h2>链接列表</h2>
 					<div class="list-group">
+						<a href="#" class="list-group-item">Cras justo odio</a>
 						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-						<a href="#" class="list-group-item">Cras sit amet nibh libero</a>
+						<a href="#" class="list-group-item active">Cras sit amet nibh libero</a>
 						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
 						<a href="#" class="list-group-item">Vestibulum at eros</a>
+						<a href="#" class="list-group-item disabled">Morbi leo risus</a>
 					</div>
 				</div>
 				<div class="col-md-3 col-gx-4">
+					<h2>按钮列表</h2>
 					<div class="list-group">
 						<button type="button" class="list-group-item">Cras justo odio</button>
 						<button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-						<button type="button" class="list-group-item">Morbi leo risus</button>
+						<button type="button" class="list-group-item active">Morbi leo risus</button>
 						<button type="button" class="list-group-item">Porta ac consectetur ac</button>
 						<button type="button" class="list-group-item">Vestibulum at eros</button>
+						<button type="button" class="list-group-item disabled" disabled>Morbi leo risus</button>
 					</div>
 				</div>
 				<div class="col-md-3 col-gx-4">
+					<h2>徽章</h2>
+					<ul class="list-group">
+						<li class="list-group-item active">
+							<span class="badge">14</span>
+							<a href="#">Cras justo odio</a>
+						</li>
+						<li class="list-group-item">
+							<span class="badge">14</span>
+							<a href="#">Dapibus ac facilisis in</a>
+						</li>
+						<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+						<li class="list-group-item"><a href="#">Porta ac consectetur ac</a></li>
+						<li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
+						<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-3 col-gx-4">
+					<h2>情境类</h2>
 					<div class="list-group">
-						<a href="#" class="list-group-item list-group-item-success active">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item list-group-item-success active">
+							<span class="badge">14</span>
+							Dapibus ac facilisis in
+						</a>
 						<a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
 						<a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
 						<a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
 						<a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
 					</div>
 				</div>
-			</div>
-			<div class="row row-gx-4">
 				<div class="col-md-3 col-gx-4">
-					<ul class="list-group list-group-unbordered">
+					<h2>去除周围边框</h2>
+					<ul class="list-group list-group-flush">
 						<li class="list-group-item">Cras justo odio</li>
 						<li class="list-group-item">Dapibus ac facilisis in</li>
 						<li class="list-group-item">Morbi leo risus</li>
@@ -125,6 +153,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3 col-gx-4">
+					<h2>列表内容</h2>
 					<ul class="list-group">
 						<li class="list-group-item active">
 							<h4 class="list-group-item-heading line-clamp-1"><a href="#">List group item heading</a></h4>
@@ -141,14 +170,15 @@
 					</ul>
 				</div>
 				<div class="col-md-3 col-gx-4">
+					<h2>列表 + media</h2>
 					<ul class="list-group">
 						<li class="list-group-item media">
 							<div class="media-left">
 								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
 							</div>
 							<div class="media-center">
-								<h4 class="media-heading line-clamp-1"><a href="#">Media heading</a></h4>
-								<p class="line-clamp-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus.</p>
+								<h4 class="media-heading line-1"><a href="#">Media heading</a></h4>
+								<p class="list-group-item-text line-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
 							</div>
 						</li>
 						<li class="list-group-item media">
@@ -156,8 +186,8 @@
 								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
 							</div>
 							<div class="media-center">
-								<h4 class="media-heading line-clamp-1"><a href="#">Media heading</a></h4>
-								<p class="line-clamp-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus.</p>
+								<h4 class="media-heading line-1"><a href="#">Media heading</a></h4>
+								<p class="list-group-item-text line-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
 							</div>
 						</li>
 						<li class="list-group-item media">
@@ -165,39 +195,8 @@
 								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
 							</div>
 							<div class="media-center">
-								<h4 class="media-heading line-clamp-1"><a href="#">Media heading</a></h4>
-								<p class="line-clamp-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-3 col-gx-4">
-					<ul class="list-group list-group-unbordered">
-						<li class="list-group-item media">
-							<div class="media-left">
-								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
-							</div>
-							<div class="media-center">
-								<h4 class="media-heading line-clamp-1"><a href="#">Media heading</a></h4>
-								<p class="line-clamp-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus.</p>
-							</div>
-						</li>
-						<li class="list-group-item media">
-							<div class="media-left">
-								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
-							</div>
-							<div class="media-center">
-								<h4 class="media-heading line-clamp-1"><a href="#">Media heading</a></h4>
-								<p class="line-clamp-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus.</p>
-							</div>
-						</li>
-						<li class="list-group-item media">
-							<div class="media-left">
-								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
-							</div>
-							<div class="media-center">
-								<h4 class="media-heading line-clamp-1"><a href="#">Media heading</a></h4>
-								<p class="line-clamp-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus. Donec lacinia congue felis in faucibus.</p>
+								<h4 class="media-heading line-1"><a href="#">Media heading</a></h4>
+								<p class="list-group-item-text line-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
 							</div>
 						</li>
 					</ul>

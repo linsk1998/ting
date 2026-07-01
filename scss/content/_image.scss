@@ -6,9 +6,9 @@
 .img-rounded{
 	@include img-rounded;
 }
-.img-thumbnail{
+.img-thumbnail, .img-polaroid{
 	@include img-thumbnail;
 }
-.img-fluid{ 
+.img-fluid, .img-responsive{ 
 	@include img-fluid;
 }
