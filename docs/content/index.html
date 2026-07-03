@@ -246,7 +246,11 @@
 					</tr>
 					<tr>
 						<td>.img-fluid</td>
-						<td>响应式图片</td>
+						<td>让图片占满容器宽度</td>
+					</tr>
+					<tr>
+						<td>.img-responsive</td>
+						<td>容器不够宽时自动缩放</td>
 					</tr>
 				</tbody>
 			</table>
@@ -255,7 +259,7 @@
 					<img src="../images/bootstrap.jpg" class="img-rounded" width="100%"/>
 				</div>
 				<div class="col-md-4 col-gx-4 text-center">
-					<img src="http://cdn.bootcss.com/twemoji/11.2.0/2/72x72/1f232.png" class="img-circle"/>
+					<img src="../images/github.jpg" class="img-circle" width="200" height="200"/>
 				</div>
 				<div class="col-md-4 col-gx-4">
 					<img src="../images/devices.jpg" class="img-thumbnail" width="100%"/>
@@ -323,6 +327,51 @@
 				</div>
 			</div>
 			<h2>媒体对象</h2>
+			<p>专门解决图文混排、评论列表、消息流、动态信息流等场景的统一排版问题。</p>
+			<table class="table table-bordered table-striped table-sm">
+			<tbody>
+				<tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.media</td>
+					<td>媒体组件外层容器，使用弹性布局，统一管理图文间距，支持媒体嵌套</td>
+				</tr>
+				<tr>
+					<td>.media-left</td>
+					<td>左侧媒体容器，放置头像、缩略图，默认居上对齐</td>
+				</tr>
+				<tr>
+					<td>.media-right</td>
+					<td>右侧媒体容器，图片放置在文本内容右侧</td>
+				</tr>
+				<tr>
+					<td>.media-center</td>
+					<td>媒体主体内容容器，自动自适应剩余宽度，承载标题、正文、嵌套媒体</td>
+				</tr>
+				<tr>
+					<td>.media-object</td>
+					<td>媒体内部图片专用类，清除图片默认边距、适配容器宽高，防止溢出</td>
+				</tr>
+				<tr>
+					<td>.media-heading</td>
+					<td>媒体内容标题，自带底部间距，区分标题与正文文本</td>
+				</tr>
+				<tr>
+					<td>.media-middle</td>
+					<td>配合 .media-left / .media-right 使用，图片垂直居中对齐</td>
+				</tr>
+				<tr>
+					<td>.media-bottom</td>
+					<td>配合 .media-left / .media-right 使用，图片垂直底部对齐</td>
+				</tr>
+				<tr>
+					<td>.media-list</td>
+					<td>媒体列表外层，清除列表默认内外边距，批量渲染多条 media 评论/信息流</td>
+				</tr>
+			</tbody>
+			</table>
 			<pre class="code">&lt;div class=&quot;media&quot;&gt;
 	&lt;div class=&quot;media-left&quot;&gt;
 		&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;media-object&quot; src=&quot;http://placeholder.qiniudn.com/64x64&quot; width=&quot;64&quot; height=&quot;64&quot;/&gt;&lt;/a&gt;
@@ -383,6 +432,72 @@
 			<p><a href="./list.html">效果演示</a></p>
 			<h2>卡片</h2>
 			<p>通过缩略图组件扩展和栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。</p>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.card</td>
+					<td>卡片容器</td>
+				</tr>	
+				<tr>
+					<td>.card-body</td>
+					<td>卡片主体内容区域，提供内边距</td>
+				</tr>
+				<tr>
+					<td>.card-header</td>
+					<td>卡片头部区域</td>
+				</tr>
+				<tr>
+					<td>.card-footer</td>
+					<td>卡片底部区域</td>
+				</tr>
+				<tr>
+					<td>.card-title</td>
+					<td>卡片标题</td>
+				</tr>
+				<tr>
+					<td>.card-subtitle</td>
+					<td>卡片副标题</td>
+				</tr>
+				<tr>
+					<td>.card-text</td>
+					<td>卡片段落文本</td>
+				</tr>
+				<tr>
+					<td>.card-link</td>
+					<td>卡片内的链接</td>
+				</tr>
+				<tr>
+					<td>.card-img-top</td>
+					<td>卡片顶部图片</td>
+				</tr>
+				<tr>
+					<td>.card-img-bottom</td>
+					<td>卡片底部图片</td>
+				</tr>
+				<tr>
+					<td>.card-img</td>
+					<td>卡片图片，同时是顶部图片和底部图片时，可以使用此类</td>
+				</tr>
+				<tr>
+					<td>.card-img-overlay</td>
+					<td>覆盖在图片上方的内容层，用于图文叠加</td>
+				</tr>
+				<tr>
+					<td>.card-header-tabs</td>
+					<td>卡片头部的标签页导航样式</td>
+				</tr>
+				<tr>
+					<td>.card-header-pills</td>
+					<td>卡片头部的药丸导航样式</td>
+				</tr>
+				<tr>
+					<td>.card-header-indicator</td>
+					<td>卡片头部的指示器样式</td>
+				</tr>
+			</tbody></table>
 			<pre class="code">&lt;a href="#" class="card"&gt;
 	&lt;img src="..." alt="..."&gt;
 &lt;/a&gt;</pre>

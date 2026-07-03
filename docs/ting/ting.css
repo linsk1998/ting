@@ -2950,10 +2950,6 @@ dialog {
 .col-xs-1\/5, .col-12, .col-md-12, .col-lg-12, .col-xl-12, .col-sm-12, .col-xs-12, .col-11, .col-md-11, .col-lg-11, .col-xl-11, .col-sm-11, .col-xs-11, .col-10, .col-md-10, .col-lg-10, .col-xl-10, .col-sm-10, .col-xs-10, .col-9, .col-md-9, .col-lg-9, .col-xl-9, .col-sm-9, .col-xs-9, .col-8, .col-md-8, .col-lg-8, .col-xl-8, .col-sm-8, .col-xs-8, .col-7, .col-md-7, .col-lg-7, .col-xl-7, .col-sm-7, .col-xs-7, .col-6, .col-md-6, .col-lg-6, .col-xl-6, .col-sm-6, .col-xs-6, .col-5, .col-md-5, .col-lg-5, .col-xl-5, .col-sm-5, .col-xs-5, .col-4, .col-md-4, .col-lg-4, .col-xl-4, .col-sm-4, .col-xs-4, .col-3, .col-md-3, .col-lg-3, .col-xl-3, .col-sm-3, .col-xs-3, .col-2, .col-md-2, .col-lg-2, .col-xl-2, .col-sm-2, .col-xs-2, .col-1, .col-md-1, .col-lg-1, .col-xl-1, .col-sm-1, .col-xs-1, .col-md-n, .col-12, .col-md-12, .span12, .col-11, .col-md-11, .span11, .col-10, .col-md-10, .span10, .col-9, .col-md-9, .span9, .col-8, .col-md-8, .span8, .col-7, .col-md-7, .span7, .col-6, .col-md-6, .span6, .col-5, .col-md-5, .span5, .col-4, .col-md-4, .span4, .col-3, .col-md-3, .span3, .col-2, .col-md-2, .span2, .col-1, .col-md-1, .span1, .col-lg-n, .col-xl-n, .col-sm-n, .col-xs-n {
   position: relative;
   float: left;
-  vertical-align: top;
-}
-
-.col-md-n, .col-12, .col-md-12, .span12, .col-11, .col-md-11, .span11, .col-10, .col-md-10, .span10, .col-9, .col-md-9, .span9, .col-8, .col-md-8, .span8, .col-7, .col-md-7, .span7, .col-6, .col-md-6, .span6, .col-5, .col-md-5, .span5, .col-4, .col-md-4, .span4, .col-3, .col-md-3, .span3, .col-2, .col-md-2, .span2, .col-1, .col-md-1, .span1 {
   _display: inline;
 }
 
@@ -5159,6 +5155,7 @@ dialog {
 
 .col-gx-0, .col-g-0 {
   padding-left: 0;
+  *zoom: 1;
 }
 
 .row-gy-0, .row-g-0 {
@@ -5167,6 +5164,7 @@ dialog {
 
 .col-gy-0, .col-g-0 {
   padding-top: 0;
+  *zoom: 1;
 }
 
 .row-gx-1, .row-g-1 {
@@ -5175,6 +5173,7 @@ dialog {
 
 .col-gx-1, .col-g-1 {
   padding-left: 4px;
+  *zoom: 1;
 }
 
 .row-gy-1, .row-g-1 {
@@ -5183,6 +5182,7 @@ dialog {
 
 .col-gy-1, .col-g-1 {
   padding-top: 4px;
+  *zoom: 1;
 }
 
 .row-gx-2, .row-g-2 {
@@ -5191,6 +5191,7 @@ dialog {
 
 .col-gx-2, .col-g-2 {
   padding-left: 8px;
+  *zoom: 1;
 }
 
 .row-gy-2, .row-g-2 {
@@ -5199,6 +5200,7 @@ dialog {
 
 .col-gy-2, .col-g-2 {
   padding-top: 8px;
+  *zoom: 1;
 }
 
 .row-gx-3, .row-g-3 {
@@ -5207,6 +5209,7 @@ dialog {
 
 .col-gx-3, .col-g-3 {
   padding-left: 12px;
+  *zoom: 1;
 }
 
 .row-gy-3, .row-g-3 {
@@ -5215,6 +5218,7 @@ dialog {
 
 .col-gy-3, .col-g-3 {
   padding-top: 12px;
+  *zoom: 1;
 }
 
 .row-gx-4, .row-g-4 {
@@ -5223,6 +5227,7 @@ dialog {
 
 .col-gx-4, .col-g-4 {
   padding-left: 16px;
+  *zoom: 1;
 }
 
 .row-gy-4, .row-g-4 {
@@ -5231,6 +5236,7 @@ dialog {
 
 .col-gy-4, .col-g-4 {
   padding-top: 16px;
+  *zoom: 1;
 }
 
 .row-gx-5, .row-g-5 {
@@ -5239,6 +5245,7 @@ dialog {
 
 .col-gx-5, .col-g-5 {
   padding-left: 20px;
+  *zoom: 1;
 }
 
 .row-gy-5, .row-g-5 {
@@ -5247,6 +5254,7 @@ dialog {
 
 .col-gy-5, .col-g-5 {
   padding-top: 20px;
+  *zoom: 1;
 }
 
 .row-gx-6, .row-g-6 {
@@ -5255,6 +5263,7 @@ dialog {
 
 .col-gx-6, .col-g-6 {
   padding-left: 24px;
+  *zoom: 1;
 }
 
 .row-gy-6, .row-g-6 {
@@ -5263,6 +5272,7 @@ dialog {
 
 .col-gy-6, .col-g-6 {
   padding-top: 24px;
+  *zoom: 1;
 }
 
 body.layout-full {
@@ -6481,8 +6491,13 @@ table.table-danger .thead-subtle,
   border: 1px solid #e0e0e0;
 }
 
-.img-fluid, .img-responsive {
+.img-fluid {
   display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-responsive {
   max-width: 100%;
   height: auto;
 }
@@ -6555,6 +6570,7 @@ video.embed-responsive-item {
 
 .card {
   position: relative;
+  *zoom: 1;
   display: block;
   margin: 10px 0;
   background-color: #fff;
@@ -6562,36 +6578,62 @@ video.embed-responsive-item {
 }
 
 .card-header {
-  *zoom: 1;
   padding: 10px 15px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.card-body {
+  padding: 8px 15px;
+}
+
+.card .list-group-flush {
+  overflow: visible;
+}
+
+.card-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
 }
 
 .card-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 4px 0;
   font-size: 16px;
   color: inherit;
 }
 
-.card-title a, .panel-title small {
-  color: inherit;
+.card-img, .card-img-top, .card-img-bottom {
+  width: 100%;
 }
 
-.card-body {
-  padding: 15px;
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
 }
 
-.card-footer {
-  *zoom: 1;
-  padding: 15px;
-  border-top: 1px solid #e0e0e0;
+.card .card-header-tabs, .card .card-header-indicator {
+  margin-top: 0;
+  margin-right: -15px;
+  margin-bottom: -10px;
+  margin-left: -5px;
+  border-bottom: 0;
 }
 
-.card .caption {
-  padding: 9px;
-  color: #212121;
+.card .card-header-indicator {
+  margin-top: -6px;
+}
+
+.card .card-header-pills {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: -7px;
+  margin-left: -7px;
 }
 
 .divider {
@@ -8275,111 +8317,101 @@ html body .btn-disabled .caret {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .nav-pills .nav-link {
-  color: #212121;
+  color: #757575;
   padding: 7px 15px;
   display: inline-block;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-pills .nav-link:hover {
-  text-decoration: none;
   color: #4472c4;
   background-color: #eee;
+  text-decoration: none;
 }
 
-.nav-pills .active .nav-link, .nav-pills .active .nav-link:hover,
-.nav-pills a.active, .nav-pills a.active:hover {
+.nav-pills .active .nav-link, .nav-pills a.active,
+.nav-pills .active .nav-link:hover, .nav-pills a.active:hover {
   background-color: #4472c4;
   color: #fff;
 }
 
-.nav-pivot {
+.nav-indicator {
   margin-left: 0;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.nav-pivot .nav-item {
+.nav-indicator .nav-item {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
-.nav-pivot .nav-link {
-  color: #777;
+.nav-indicator .nav-link {
+  color: #757575;
   padding: 7px 15px;
   display: inline-block;
-  transition: border-color 0.3s;
+  *zoom: 1;
 }
 
-.nav-pivot .nav-link:hover {
-  padding-bottom: 5px;
-  text-decoration: none;
+.nav-indicator .nav-link:hover {
   color: #4472c4;
-  border-bottom: 2px solid #4472c4;
+  text-decoration: none;
+}
+
+.nav-indicator .active {
+  border-bottom: 1px solid #4472c4;
   margin-bottom: -1px;
 }
 
-.nav-pivot .active .nav-link, .nav-pivot .active .nav-link:hover,
-.nav-pivot a.active, .nav-pivot a.active:hover {
-  padding-bottom: 4px;
-  color: #335BA2;
-  border-bottom: 4px solid #335BA2;
-  margin-bottom: -1px;
-  font-weight: bold;
+.nav-indicator .active .nav-link, .nav-indicator a.active,
+.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover {
+  color: #4472c4;
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #e0e0e0;
   margin-left: 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .nav-tabs .nav-item {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .nav-tabs .nav-link {
-  color: #212121;
+  color: #757575;
   padding: 8px 16px;
   display: inline-block;
-  position: relative;
-  -ms-transform: translateY(1px);
-  -webkit-transform: translateY(1px);
-  -o-transform: translateY(1px);
-  -moz-transform: translateY(1px);
-  transform: translateY(1px);
 }
 
 .nav-tabs .nav-link:hover {
-  text-decoration: none;
   color: #4472c4;
+  text-decoration: none;
+}
+
+.nav-tabs .active {
+  border: 1px solid #e0e0e0;
+  border-bottom-color: #fff;
+  background: #fff;
+  margin-bottom: -1px;
 }
 
 .nav-tabs .active .nav-link, .nav-tabs a.active {
-  padding: 7px 15px;
-  border: 1px solid #e0e0e0;
-  background-color: #fff;
-  border-bottom-color: #fff;
+  padding: 7px 15px 8px;
 }
 
+.nav-tabs .active .nav-link, .nav-tabs a.active,
 .nav-tabs .active .nav-link:hover, .nav-tabs a.active:hover {
   color: #212121;
 }
 
-@media \0 screen\,screen\9  {
-  .nav-tabs .nav-link {
-    top: 1px;
-  }
-}
 .nav-justified {
-  width: 100%;
   display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8390,6 +8422,10 @@ html body .btn-disabled .caret {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+body:last-child .nav-justified, x:-moz-any-link {
+  width: 100%;
 }
 
 .nav-justified > .nav-item {

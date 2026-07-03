@@ -18,6 +18,11 @@
 }
 @mixin img-fluid {
 	display: block;
+	width: 100%;
+	height: auto;
+}
+@mixin img-responsive {
+	display: block;
 	max-width: 100%;
 	height: auto;
 }

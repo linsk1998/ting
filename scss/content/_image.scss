@@ -9,6 +9,13 @@
 .img-thumbnail, .img-polaroid{
 	@include img-thumbnail;
 }
-.img-fluid, .img-responsive{ 
-	@include img-fluid;
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
 }

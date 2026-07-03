@@ -77,6 +77,21 @@
 		<div class="container">
 			<h1 class="page-header">组件</h1>
 			<h2>加载中</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.loading-circular</td>
+					<td>环形加载指示器，带旋转动画的圆形边框</td>
+				</tr>
+				<tr>
+					<td>.loading-grow</td>
+					<td>闪烁加载指示器，缩放淡入淡出动画</td>
+				</tr>
+			</tbody></table>
+			<p>支持语境色：text-primary、text-success、text-warning、text-danger</p>
 			<div class="loading-circular" role="status">
 				<span class="visually-hidden">加载中...</span>
 			</div>
@@ -140,52 +155,44 @@
 					<td>原始按钮样式（未被操作） </td>
 				</tr>
 				<tr>
-					<td>.btn-outline</td>
-					<td>外面一圈的按钮</td>
+					<td>.btn-success<br/>.btn-info<br/>.btn-warning<br/>.btn-danger<br/>.btn-dark</td>
+					<td>语境色按钮</td>
 				</tr>
 				<tr>
-					<td>.btn-success</td>
-					<td>表示成功的动作</td>
+					<td>.btn-outline<br/>.btn-outline-primary<br/>.btn-outline-success<br/>.btn-outline-info<br/>.btn-outline-warning<br/>.btn-outline-danger<br/>.btn-outline-dark</td>
+					<td>边框按钮，透明背景带边框</td>
 				</tr>
 				<tr>
-					<td>.btn-info</td>
-					<td>该样式可用于要弹出信息的按钮</td>
+					<td>.btn-lg<br/>.btn-sm<br/>.btn-xs</td>
+					<td>按钮大小：大、小、超小</td>
 				</tr>
 				<tr>
-					<td>.btn-warning</td>
-					<td>表示需要谨慎操作的按钮</td>
+					<td>.btn-block</td>
+					<td>块级按钮(拉伸至父元素100%的宽度)</td>
 				</tr>
 				<tr>
-					<td>.btn-danger</td>
-					<td>表示一个危险动作的按钮操作</td>
+					<td>.btn-round</td>
+					<td>圆角按钮</td>
+				</tr>
+				<tr>
+					<td>.btn-square<br/>.btn-square-lg<br/>.btn-square-sm<br/>.btn-square-xs</td>
+					<td>正方形按钮，不同尺寸</td>
 				</tr>
 				<tr>
 					<td>.btn-label</td>
 					<td>按钮内部文字</td>
 				</tr>
 				<tr>
-					<td>.btn-icon-left</td>
-					<td>按钮内部左侧图标</td>
+					<td>.btn-icon<br/>.btn-icon-left<br/>.btn-icon-right</td>
+					<td>按钮内部图标</td>
 				</tr>
 				<tr>
-					<td>.btn-icon-right</td>
-					<td>按钮内部右侧图标</td>
+					<td>.btn-loading</td>
+					<td>加载状态按钮，禁用点击，半透明显示</td>
 				</tr>
 				<tr>
-					<td>.btn-lg</td>
-					<td>制作一个大按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-sm</td>
-					<td>制作一个小按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-xs</td>
-					<td>制作一个超小按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-block</td>
-					<td>块级按钮(拉伸至父元素100%的宽度)</td>
+					<td>.btn-disabled</td>
+					<td>禁用状态按钮，灰色背景，不可点击</td>
 				</tr>
 				<tr>
 					<td>.caret</td>
@@ -207,19 +214,19 @@
 				</tr>
 				<tr>
 					<td>.btn-toolbar</td>
-					<td>按钮工具栏</td>
+					<td>按钮工具栏容器，管理按钮组的间距</td>
 				</tr>
 				<tr>
 					<td>.btn-group</td>
-					<td>按钮组</td>
+					<td>按钮组容器，将多个按钮合并为一组</td>
 				</tr>
 				<tr>
 					<td>.btn-group-justified</td>
-					<td>宽度均分按钮组</td>
+					<td>宽度均分按钮组，按钮平均分配容器宽度</td>
 				</tr>
 				<tr>
 					<td>.btn-group-vertical</td>
-					<td>垂直排列按钮组</td>
+					<td>垂直排列按钮组，按钮纵向堆叠</td>
 				</tr>
 			</tbody></table>
 			<div class="btn-toolbar">
@@ -227,6 +234,16 @@
 			</div>
 			<h2>路径导航</h2>
 			<p><code>breadcrumb</code>在一个带有层次的导航结构中标明当前页面的位置。</p>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.breadcrumb</td>
+					<td>路径导航容器，浅灰色背景，使用斜杠分隔各级</td>
+				</tr>
+			</tbody></table>
 			<ul class="breadcrumb">
 				<li><a href="javascript:void 0">Home</a></li>
 				<li><a href="javascript:void 0">Library</a></li>
@@ -240,31 +257,55 @@
 				<span>Data</span>
 			</nav>
 			<h2>导航</h2>
-			<p>导航组件都依赖同一个 <code>.nav</code> 类，状态类也是共用的。改变修饰类可以改变样式。提供了选项卡标签页、胶囊标签页、下划线标签页三种。</p>
+			<p>导航组件都依赖同一个 <code>.nav</code> 类，状态类也是共用的。改变修饰类可以改变样式。提供了选项卡标签页、药丸标签页、下划线标签页三种。</p>
 			<table class="table table-bordered table-striped table-sm">
 				<tbody><tr class="table-primary">
 					<th>类</th>
 					<th>描述</th>
 				</tr>
 				<tr>
-					<td>.tabbable</td>
-					<td>tab切换框总框</td>
-				</tr>
-				<tr>
 					<td>.nav</td>
-					<td>tab导航</td>
+					<td>导航基础容器，清除列表默认样式</td>
 				</tr>
 				<tr>
-					<td>.nav-tabs<br/>.nav-pills<br/>.nav-pivot</td>
-					<td>tab导航类型，有三种类型</td>
+					<td>.nav-pills</td>
+					<td>药丸导航，圆角背景，激活项填充主题色</td>
+				</tr>
+				<tr>
+					<td>.nav-tabs</td>
+					<td>选项卡导航，底部边框，激活项带边框和白色背景</td>
+				</tr>
+				<tr>
+					<td>.nav-indicator</td>
+					<td>指示器导航，底部边框，激活项底部显示主题色指示线</td>
+				</tr>
+				<tr>
+					<td>.nav-justified</td>
+					<td>两端对齐导航，导航项平均分配宽度</td>
+				</tr>
+				<tr>
+					<td>.nav-tabs-left<br/>.nav-tabs-right</td>
+					<td>左侧/右侧垂直选项卡导航</td>
+				</tr>
+				<tr>
+					<td>.nav-tabs-1em</td>
+					<td>1em宽度的窄选项卡，适合图标导航</td>
+				</tr>
+				<tr>
+					<td>.tabbable</td>
+					<td>tab切换框总容器</td>
 				</tr>
 				<tr>
 					<td>.tab-content</td>
-					<td>tab内容</td>
+					<td>tab内容容器</td>
 				</tr>
 				<tr>
 					<td>.tab-pane</td>
-					<td>tab内容项目</td>
+					<td>tab内容面板，默认隐藏</td>
+				</tr>
+				<tr>
+					<td>.tab-pane-active</td>
+					<td>激活的tab面板，带淡入动画</td>
 				</tr>
 			</tbody></table>
 			<p><a href="navs.html">示例</a></p>
@@ -277,23 +318,23 @@
 				</tr>
 				<tr>
 					<td>.pagination</td>
-					<td>分页列表</td>
+					<td>分页列表容器，内联块级显示</td>
 				</tr>
 				<tr>
-					<td>.pagination-lg<br/>.pagination-sm<br/>.pagination-xs</td>
-					<td>分页大小</td>
+					<td>.pagination-lg<br/>.pagination-sm</td>
+					<td>分页大小：大、小</td>
 				</tr>
 				<tr>
-					<td>.pager</td>
-					<td>前后分页</td>
+					<td>.pagination-gutter</td>
+					<td>分页项之间有间距的样式</td>
 				</tr>
 				<tr>
-					<td>.previous</td>
-					<td>前页</td>
+					<td>.active</td>
+					<td>当前激活的页码项</td>
 				</tr>
 				<tr>
-					<td>.next</td>
-					<td>后页</td>
+					<td>.disabled</td>
+					<td>禁用的页码项，不可点击</td>
 				</tr>
 			</tbody></table>
 			<p><a href="pagination.html">示例</a></p>
@@ -305,24 +346,31 @@
 				</tr>
 				<tr>
 					<td>.tag</td>
-					<td>标签</td>
+					<td>标签容器，带边框和内边距</td>
 				</tr>
 				<tr>
-					<td>.tag-default<br/>.tag-primary<br/>.tag-success<br/>.tag-info<br/>.tag-waring<br/>.tag-danger</td>
-					<td>语境颜色</td>
+					<td>.tag-default<br/>.tag-primary<br/>.tag-success<br/>.tag-info<br/>.tag-warning<br/>.tag-danger</td>
+					<td>标签语境色，不同的背景、文字和边框颜色</td>
 				</tr>
 				<tr>
-					<td>.tag-lg<br/>.tag-sm<br/>.tag-xs</td>
-					<td>标签大小</td>
-				</tr>
-				<tr>
-					<td>.label</td>
-					<td>实心标签</td>
+					<td>.tag-lg<br/>.tag-sm</td>
+					<td>标签大小：大(30px)、小(18px)</td>
 				</tr>
 			</tbody></table>
 			<p><a href="tags.html">示例</a></p>
 			<h1 class="page-header">徽章</h1>
 			<p>给链接、导航等元素嵌套 <code>&lt;span class="badge"&gt;</code> 元素，可以很醒目的展示新的或未读的信息条目。</p>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.badge</td>
+					<td>徽章，圆角红色背景，白色文字，最小宽度18px</td>
+				</tr>
+			</tbody></table>
+			<p>徽章在语境色按钮或背景中会自动反色显示</p>
 			<p>Inbox <span class="badge">2</span></p>
 			<div class="btn-toolbar">
 				<button class="btn btn-primary" type="button">
@@ -354,19 +402,23 @@
 				</tr>
 				<tr>
 					<td>.alert</td>
-					<td>警告框</td>
-				</tr>
-				<tr>
-					<td>.alert-dismissible</td>
-					<td>可关闭警告框</td>
+					<td>警告框容器，带内边距和边框</td>
 				</tr>
 				<tr>
 					<td>.alert-success<br/>.alert-info<br/>.alert-warning<br/>.alert-danger</td>
-					<td>不同的风格</td>
+					<td>警告框语境色，不同的背景、文字和边框颜色</td>
+				</tr>
+				<tr>
+					<td>.alert-dismissible</td>
+					<td>可关闭警告框，左侧留出关闭按钮位置</td>
 				</tr>
 				<tr>
 					<td>.alert-link</td>
-					<td>警告链接</td>
+					<td>警告框内的链接，加粗显示，悬停变色</td>
+				</tr>
+				<tr>
+					<td>.alert-heading</td>
+					<td>警告框内的标题</td>
 				</tr>
 			</tbody></table>
 			<p><a href="alert.html">示例</a></p>
@@ -377,12 +429,94 @@
 					<th>描述</th>
 				</tr>
 				<tr>
+					<td>.list-group</td>
+					<td>列表组容器，提供基本的列表样式和边框</td>
+				</tr>
+				<tr>
+					<td>.list-group-item</td>
+					<td>列表组中的单个项目，支持悬停效果和语境色</td>
+				</tr>
+				<tr>
+					<td>.list-group-flush</td>
+					<td>去除列表组边框和圆角，使其与父容器无缝融合</td>
+				</tr>
+				<tr>
+					<td>.list-group-item-success<br/>.list-group-item-info<br/>.list-group-item-warning<br/>.list-group-item-danger</td>
+					<td>列表项的语境色样式，用于表示不同状态</td>
+				</tr>
+				<tr>
+					<td>.active</td>
+					<td>激活状态的列表项，高亮显示</td>
+				</tr>
+			</tbody></table>
+			<p><a href="list.html">效果演示</a></p>
+			<h2>可选列表</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
 					<td>.select-list</td>
-					<td>可选列表</td>
+					<td>可选列表容器，浅灰色背景，左侧带2px边框</td>
+				</tr>
+				<tr>
+					<td>.select-list-drag</td>
+					<td>列表项拖动手柄，可移动光标</td>
+				</tr>
+				<tr>
+					<td>.select-list-tools</td>
+					<td>列表项操作工具区，悬停时显示</td>
 				</tr>
 			</tbody></table>
 			<p><a href="list.html">效果演示</a></p>
 			<h2>面版</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.panel</td>
+					<td>面板容器，白色背景，带边框和阴影</td>
+				</tr>
+				<tr>
+					<td>.panel-heading</td>
+					<td>面板头部区域，带底部边框</td>
+				</tr>
+				<tr>
+					<td>.panel-title</td>
+					<td>面板标题，继承父级颜色</td>
+				</tr>
+				<tr>
+					<td>.panel-body</td>
+					<td>面板主体内容区域，带内边距</td>
+				</tr>
+				<tr>
+					<td>.panel-default</td>
+					<td>默认面板，浅灰色头部</td>
+				</tr>
+				<tr>
+					<td>.panel-primary</td>
+					<td>主题色面板，主题色边框和头部</td>
+				</tr>
+				<tr>
+					<td>.panel-success</td>
+					<td>成功状态面板，绿色调</td>
+				</tr>
+				<tr>
+					<td>.panel-info</td>
+					<td>信息状态面板，蓝色调</td>
+				</tr>
+				<tr>
+					<td>.panel-warning</td>
+					<td>警告状态面板，黄色调</td>
+				</tr>
+				<tr>
+					<td>.panel-danger</td>
+					<td>危险状态面板，红色调</td>
+				</tr>
+			</tbody></table>
 			<div class="row row-gx-4">
 				<div class="col-md-4 col-gx-4">
 					<div class="panel panel-default">
@@ -452,6 +586,36 @@
 				</div>
 			</div>
 			<h2>标志</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.callout</td>
+					<td>标志容器，白色背景，带左侧5px边框标识和阴影</td>
+				</tr>
+				<tr>
+					<td>.callout-primary</td>
+					<td>主题色标志，左侧边框为主题色</td>
+				</tr>
+				<tr>
+					<td>.callout-success</td>
+					<td>成功状态标志，左侧边框为成功色</td>
+				</tr>
+				<tr>
+					<td>.callout-info</td>
+					<td>信息状态标志，左侧边框为信息色</td>
+				</tr>
+				<tr>
+					<td>.callout-warning</td>
+					<td>警告状态标志，左侧边框为警告色</td>
+				</tr>
+				<tr>
+					<td>.callout-danger</td>
+					<td>危险状态标志，左侧边框为危险色</td>
+				</tr>
+			</tbody></table>
 			<div class="row row-gx-4">
 				<div class="col-md-4 col-gx-4">
 					<div class="callout">
@@ -491,6 +655,24 @@
 				</div>
 			</div>
 			<h2>凹陷</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.well</td>
+					<td>凹陷容器，浅灰色背景，带边框和内阴影效果</td>
+				</tr>
+				<tr>
+					<td>.well-lg</td>
+					<td>大号凹陷，内边距22px</td>
+				</tr>
+				<tr>
+					<td>.well-sm</td>
+					<td>小号凹陷，内边距9px</td>
+				</tr>
+			</tbody></table>
 			<div class="well">Look, I'm in a well!</div>
 			<div class="well well-lg">Look, I'm in a large well!</div>
 			<div class="well well-sm">Look, I'm in a small well!</div>
@@ -501,6 +683,32 @@
 				</div>
 			</div>
 			<h2>进度条</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.progress</td>
+					<td>进度条容器，浅灰色背景，带内阴影</td>
+				</tr>
+				<tr>
+					<td>.progress-bar</td>
+					<td>进度条主体，默认主题色背景，白色文字，支持动画过渡</td>
+				</tr>
+				<tr>
+					<td>.progress-bar-success<br/>.progress-bar-info<br/>.progress-bar-warning<br/>.progress-bar-danger</td>
+					<td>进度条语境色，表示不同状态</td>
+				</tr>
+				<tr>
+					<td>.progress-sm</td>
+					<td>小号进度条，高度12px</td>
+				</tr>
+				<tr>
+					<td>.progress-xs</td>
+					<td>超小进度条，高度6px</td>
+				</tr>
+			</tbody></table>
 			<div class="progress">
 				<div class="progress-bar" style="width:26%">26%</div>
 			</div>
@@ -522,6 +730,251 @@
 			<div class="progress progress-xs">
 				<div class="progress-bar progress-bar-danger" style="width:26%"></div>
 			</div>
+			<h2>数据表格</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.datatable</td>
+					<td>数据表格容器，使用Flexbox布局，带边框</td>
+				</tr>
+				<tr>
+					<td>.datatable-header</td>
+					<td>数据表格头部区域，不可收缩</td>
+				</tr>
+				<tr>
+					<td>.datatable-body</td>
+					<td>数据表格主体区域，可滚动，自动填充剩余空间</td>
+				</tr>
+				<tr>
+					<td>.scroller</td>
+					<td>滚动容器，隐藏垂直滚动条</td>
+				</tr>
+				<tr>
+					<td>.scrollBar</td>
+					<td>自定义滚动条样式</td>
+				</tr>
+			</tbody></table>
+			<p><a href="datatable.html">例子</a></p>
+			<h2>轮播图</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.carousel</td>
+					<td>轮播图容器，相对定位</td>
+				</tr>
+				<tr>
+					<td>.carousel-indicators</td>
+					<td>轮播指示器，底部圆点导航</td>
+				</tr>
+				<tr>
+					<td>.carousel-inner</td>
+					<td>轮播内容区域，隐藏溢出，横向排列</td>
+				</tr>
+				<tr>
+					<td>.item</td>
+					<td>轮播项，每个幻灯片</td>
+				</tr>
+				<tr>
+					<td>.carousel-control</td>
+					<td>轮播控制按钮容器，左右箭头</td>
+				</tr>
+				<tr>
+					<td>.carousel-control .left<br/>.carousel-control .right</td>
+					<td>左右切换按钮，深色半透明背景</td>
+				</tr>
+				<tr>
+					<td>.carousel-caption</td>
+					<td>轮播图文字说明，底部半透明黑色背景</td>
+				</tr>
+			</tbody></table>
+			<p><a href="carousel.html">例子</a></p>
+			<h2>滚动器</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.scroller</td>
+					<td>滚动容器，隐藏垂直滚动条，相对定位</td>
+				</tr>
+				<tr>
+					<td>.scrollBar</td>
+					<td>自定义滚动条样式，绝对定位，半透明黑色</td>
+				</tr>
+			</tbody></table>
+			<p><a href="scroller.html">例子</a></p>
+			<h2>导航栏</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.navbar</td>
+					<td>导航栏容器，带底部边框</td>
+				</tr>
+				<tr>
+					<td>.navbar-header</td>
+					<td>导航栏头部，包含品牌和切换按钮</td>
+				</tr>
+				<tr>
+					<td>.navbar-brand</td>
+					<td>导航栏品牌标识，可包含Logo和文字</td>
+				</tr>
+				<tr>
+					<td>.navbar-toggle</td>
+					<td>移动端切换按钮，小屏幕显示</td>
+				</tr>
+				<tr>
+					<td>.navbar-nav</td>
+					<td>导航栏菜单列表</td>
+				</tr>
+				<tr>
+					<td>.navbar-right<br/>.navbar-left</td>
+					<td>导航栏内容右对齐/左对齐</td>
+				</tr>
+				<tr>
+					<td>.navbar-form</td>
+					<td>导航栏内表单，自动适配内边距</td>
+				</tr>
+				<tr>
+					<td>.navbar-collapse</td>
+					<td>响应式折叠区域，小屏幕可收起</td>
+				</tr>
+			</tbody></table>
+			<p><a href="navbar.html">例子</a></p>
+			<h2>下拉菜单</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.dropdown</td>
+					<td>下拉菜单容器，相对定位</td>
+				</tr>
+				<tr>
+					<td>.dropdown-menu</td>
+					<td>下拉菜单列表，绝对定位，默认隐藏</td>
+				</tr>
+				<tr>
+					<td>.dropdown-menu-right</td>
+					<td>右对齐的下拉菜单</td>
+				</tr>
+				<tr>
+					<td>.dropdown-item</td>
+					<td>下拉菜单项，支持悬停效果</td>
+				</tr>
+				<tr>
+					<td>.dropdown-panel</td>
+					<td>下拉面板，可滚动的内容区域</td>
+				</tr>
+				<tr>
+					<td>.dropdown-list</td>
+					<td>下拉列表样式，类似原生select</td>
+				</tr>
+				<tr>
+					<td>.dropup</td>
+					<td>向上弹出的下拉菜单</td>
+				</tr>
+				<tr>
+					<td>.open</td>
+					<td>展开状态，显示下拉菜单</td>
+				</tr>
+			</tbody></table>
+			<h2>输入框组</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.input-group</td>
+					<td>输入框组容器，清除浮动</td>
+				</tr>
+				<tr>
+					<td>.input-group-left<br/>.input-group-right</td>
+					<td>输入框组左侧/右侧附加内容</td>
+				</tr>
+				<tr>
+					<td>.input-group-center</td>
+					<td>输入框组中间输入区域</td>
+				</tr>
+				<tr>
+					<td>.input-group-text</td>
+					<td>输入框组文本附加内容，灰色背景</td>
+				</tr>
+				<tr>
+					<td>.input-group-lg<br/>.input-group-sm</td>
+					<td>输入框组大小：大、小</td>
+				</tr>
+				<tr>
+					<td>.input</td>
+					<td>输入框包装器，带边框和内阴影</td>
+				</tr>
+				<tr>
+					<td>.input-prefix<br/>.input-suffix</td>
+					<td>输入框前缀/后缀图标区域</td>
+				</tr>
+				<tr>
+					<td>.input-control</td>
+					<td>输入框控制区域，可滚动</td>
+				</tr>
+				<tr>
+					<td>.input-count</td>
+					<td>输入框计数显示</td>
+				</tr>
+				<tr>
+					<td>.input-disabled</td>
+					<td>禁用状态的输入框</td>
+				</tr>
+			</tbody></table>
+			<p><a href="input-group.html">例子</a></p>
+			<h2>多选框</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.form-control-tags</td>
+					<td>多选框容器，使用Flexbox布局，标签不换行</td>
+				</tr>
+				<tr>
+					<td>.control-clear</td>
+					<td>清除按钮，绝对定位在输入框右侧</td>
+				</tr>
+			</tbody></table>
+			<p><a href="multiple-select.html">例子</a></p>
+			<h2>三角标识</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.caret</td>
+					<td>向下三角标识，常用于下拉菜单按钮旁</td>
+				</tr>
+			</tbody></table>
+			<h2>关闭按钮</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.close</td>
+					<td>关闭按钮，显示“✕”符号，悬停变深</td>
+				</tr>
+			</tbody></table>
 			<h2>树</h2>
 			<table class="table table-bordered table-sm">
 				<tr class="table-primary">
@@ -530,19 +983,23 @@
 				</tr>
 				<tr>
 					<td>.tree</td>
-					<td>树</td>
+					<td>树组件容器，相对定位，带内边距</td>
 				</tr>
 				<tr>
 					<td>.tree-icon</td>
-					<td>树图标</td>
+					<td>树节点图标，垂直居中对齐</td>
 				</tr>
 				<tr>
 					<td>.tree-caret</td>
-					<td>树三角尖</td>
+					<td>树节点展开/收起三角箭头，使用FontAwesome图标</td>
 				</tr>
 				<tr>
 					<td>.collapse</td>
-					<td>收起树</td>
+					<td>收起状态的树节点，隐藏子节点，箭头旋转</td>
+				</tr>
+				<tr>
+					<td>.active</td>
+					<td>选中的树节点，使用主题色背景</td>
 				</tr>
 			</table>
 			<p><a href="tree.html">例子</a></p>
@@ -554,48 +1011,283 @@
 				</tr>
 				<tr>
 					<td>.sidebar</td>
-					<td>亮色侧栏</td>
+					<td>亮色侧栏导航容器，浅灰色背景</td>
 				</tr>
 				<tr>
 					<td>.sidebar-inverse</td>
-					<td>暗色侧栏</td>
+					<td>暗色侧栏导航容器，深色背景</td>
+				</tr>
 				<tr>
 					<td>.sidebar-nav</td>
-					<td>侧栏导航</td>
-				</tr>
+					<td>侧栏导航容器</td>
 				</tr>
 				<tr>
 					<td>.sidebar-nav-header</td>
-					<td>侧栏导航头部</td>
+					<td>侧栏导航头部，带左侧蓝色边框标识</td>
 				</tr>
 				<tr>
 					<td>.sidebar-nav-body</td>
-					<td>侧栏导航身体部分</td>
+					<td>侧栏导航主体内容区域</td>
 				</tr>
 				<tr>
 					<td>.expanded</td>
-					<td>展开的侧栏导航头部</td>
+					<td>展开状态的导航头部，右侧箭头翻转</td>
 				</tr>
 				<tr>
 					<td>.collapsed</td>
-					<td>收起的侧栏导航身体部分</td>
+					<td>收起状态的导航内容，默认隐藏</td>
 				</tr>
 				<tr>
 					<td>.nav-list</td>
-					<td>导航列表</td>
+					<td>导航列表容器，清除默认列表样式</td>
 				</tr>
 				<tr>
 					<td>.nav-list-item</td>
-					<td>导航列表项</td>
+					<td>导航列表项，带内边距和悬停效果</td>
 				</tr>
 			</table>
 			<p><a href="sidebar.html">例子</a></p>
 			<h2>导航条</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.navbar</td>
+					<td>导航栏基础容器，提供基本的定位和布局</td>
+				</tr>
+				<tr>
+					<td>.navbar-brand</td>
+					<td>导航栏品牌标识区域，通常放置Logo或网站名称</td>
+				</tr>
+				<tr>
+					<td>.navbar-nav</td>
+					<td>导航栏内的导航列表容器</td>
+				</tr>
+				<tr>
+					<td>.navbar-text</td>
+					<td>导航栏内的文本内容，自动适配行高和对齐</td>
+				</tr>
+				<tr>
+					<td>.navbar-collapse</td>
+					<td>响应式折叠区域，在小屏幕时可收起/展开</td>
+				</tr>
+				<tr>
+					<td>.navbar-toggle</td>
+					<td>移动端折叠触发按钮</td>
+				</tr>
+				<tr>
+					<td>.navbar-header</td>
+					<td>导航栏头部，包含品牌标识和移动端切换按钮</td>
+				</tr>
+				<tr>
+					<td>.navbar-top</td>
+					<td>固定在页面顶部的导航栏</td>
+				</tr>
+				<tr>
+					<td>.navbar-right</td>
+					<td>导航栏内容右对齐</td>
+				</tr>
+				<tr>
+					<td>.navbar-form</td>
+					<td>导航栏内的表单区域，自动适配间距和对齐</td>
+				</tr>
+				<tr>
+					<td>.navbar-btn</td>
+					<td>导航栏内的按钮，适配垂直居中</td>
+				</tr>
+				<tr>
+					<td>.navbar-link</td>
+					<td>导航栏内的普通链接样式</td>
+				</tr>
+				<tr>
+					<td>.navbar-fixed-top</td>
+					<td>固定在页面顶部（固定定位）</td>
+				</tr>
+				<tr>
+					<td>.navbar-fixed-bottom</td>
+					<td>固定在页面底部（固定定位）</td>
+				</tr>
+				<tr>
+					<td>.navbar-static-top</td>
+					<td>顶部静态导航栏（随页面滚动）</td>
+				</tr>
+				<tr>
+					<td>.navbar-inverse</td>
+					<td>深色背景导航栏主题</td>
+				</tr>
+			</tbody></table>
 			<p><a href="navbar.html">例子</a></p>
 			<h2>模态对话框</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.modal</td>
+					<td>模态遮罩层容器，固定定位覆盖整个视口，半透明黑色背景</td>
+				</tr>
+				<tr>
+					<td>.modal-loading</td>
+					<td>加载中状态的模态遮罩，带旋转加载动画</td>
+				</tr>
+				<tr>
+					<td>.modal-center</td>
+					<td>使模态内容居中对齐的容器，使用Flexbox布局</td>
+				</tr>
+				<tr>
+					<td>.modal-hit</td>
+					<td>模态层的事件捕获层，用于拦截用户点击</td>
+				</tr>
+			</tbody></table>
 			<p><a href="modal.html">模态遮罩</a> <a href="modal-loading.html">模态遮罩加载中...</a></p>
+			<h2>提示信息</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.toast</td>
+					<td>半透明黑色背景的提示信息框，白色文字，圆角显示</td>
+				</tr>
+				<tr>
+					<td>.msg</td>
+					<td>白色背景的消息提示框，带边框和圆角</td>
+				</tr>
+			</tbody></table>
 			<p><a href="toast.html">提示</a></p>
-			<p><a href="dialog.html">对话框</a> <a href="msgbox.html">消息框</a> <a href="window.html">窗口</a></p>
+			<h2>消息框</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.msgbox</td>
+					<td>消息框容器，白色背景，顶部带4px语境色边框</td>
+				</tr>
+				<tr>
+					<td>.msgbox-lg<br/>.msgbox-md<br/>.msgbox-sm</td>
+					<td>消息框尺寸：大(90%)、中(600px)、小(400px)</td>
+				</tr>
+				<tr>
+					<td>.msgbox-header</td>
+					<td>消息框头部区域，包含图标和关闭按钮</td>
+				</tr>
+				<tr>
+					<td>.msgbox-title</td>
+					<td>消息框标题，加粗字体，自动适配图标位置</td>
+				</tr>
+				<tr>
+					<td>.msgbox-body</td>
+					<td>消息框主体内容区域</td>
+				</tr>
+				<tr>
+					<td>.msgbox-footer</td>
+					<td>消息框底部按钮区域，居中显示</td>
+				</tr>
+				<tr>
+					<td>.msgbox-info<br/>.msgbox-success<br/>.msgbox-warning<br/>.msgbox-danger</td>
+					<td>消息框语境色主题，影响顶部边框颜色</td>
+				</tr>
+			</tbody></table>
+			<h2>对话框</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.dialog</td>
+					<td>对话框容器，白色背景，带阴影和圆角</td>
+				</tr>
+				<tr>
+					<td>.dialog-header</td>
+					<td>对话框头部区域，浅灰色背景，带底部边框</td>
+				</tr>
+				<tr>
+					<td>.dialog-title</td>
+					<td>对话框标题</td>
+				</tr>
+				<tr>
+					<td>.dialog-body</td>
+					<td>对话框主体内容区域</td>
+				</tr>
+				<tr>
+					<td>.dialog-footer</td>
+					<td>对话框底部按钮区域，带顶部边框</td>
+				</tr>
+				<tr>
+					<td>.dialog-close</td>
+					<td>对话框右上角的关闭按钮，使用FontAwesome图标</td>
+				</tr>
+				<tr>
+					<td>.dialog-rim</td>
+					<td>带外边框的对话框样式，半透明黑色外框</td>
+				</tr>
+				<tr>
+					<td>.dialog-primary<br/>.dialog-success<br/>.dialog-info<br/>.dialog-warning<br/>.dialog-danger<br/>.dialog-dark</td>
+					<td>对话框语境色主题，影响头部背景色</td>
+				</tr>
+			</tbody></table>
+			<h2>窗口</h2>
+			<table class="table table-bordered table-striped table-sm">
+				<tbody><tr class="table-primary">
+					<th>类</th>
+					<th>描述</th>
+				</tr>
+				<tr>
+					<td>.win</td>
+					<td>窗口容器，绝对定位，可拖动，带边框和标题栏</td>
+				</tr>
+				<tr>
+					<td>.win-header</td>
+					<td>窗口标题栏，可拖动，包含标题和按钮组</td>
+				</tr>
+				<tr>
+					<td>.win-title</td>
+					<td>窗口标题文本</td>
+				</tr>
+				<tr>
+					<td>.win-btn-group</td>
+					<td>窗口标题栏右侧的按钮组（最小化、最大化、关闭）</td>
+				</tr>
+				<tr>
+					<td>.win-close</td>
+					<td>窗口关闭按钮，红色背景</td>
+				</tr>
+				<tr>
+					<td>.win-body</td>
+					<td>窗口主体内容区域，可滚动</td>
+				</tr>
+				<tr>
+					<td>.win-resize</td>
+					<td>窗口右下角的缩放手柄</td>
+				</tr>
+				<tr>
+					<td>.win-maximized</td>
+					<td>最大化状态的窗口，占满整个视口</td>
+				</tr>
+				<tr>
+					<td>.win-active</td>
+					<td>激活状态的窗口，标题栏使用主题色</td>
+				</tr>
+				<tr>
+					<td>.win-disabled</td>
+					<td>禁用状态的窗口，不可操作，显示半透明遮罩</td>
+				</tr>
+				<tr>
+					<td>.win-hit</td>
+					<td>窗口禁用时的遮罩层，拦截用户操作</td>
+				</tr>
+				<tr>
+					<td>.win-transform-helper</td>
+					<td>窗口拖拽/缩放时的辅助边框</td>
+				</tr>
+			</tbody></table>
 		</div>
 		<!-- InstanceEndEditable -->
 		<footer class="footer text-center">
