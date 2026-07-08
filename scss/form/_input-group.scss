@@ -39,7 +39,7 @@
 	*display: inline; *zoom:1;
 	font-size: $font-size-base;
 	line-height:$line-height-base;
-	padding:($ctrl-height-base - $line-height-base)*.5 - $ctrl-border-width 12px;
+	padding:($ctrl-height-md - $line-height-base)*.5 - $ctrl-border-width 12px;
 	color:#555;
 	background-color:#eee;
 	border:1px solid $ctrl-border-color;
@@ -53,12 +53,12 @@
 .input-group-lg{
 	.input-group-text{
 		font-size: 18px;
-		padding:($ctrl-height-large - $line-height-base)*.5 - $ctrl-border-width 12px;
+		padding:($ctrl-height-lg - $line-height-base)*.5 - $ctrl-border-width 12px;
 	}
 	.form-control{
-		font-size: $ctrl-fontsize-large;
-		padding:($ctrl-height-large - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-large;
-		height: $ctrl-height-large;
+		font-size: $ctrl-fontsize-lg;
+		padding:($ctrl-height-lg - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-y-lg;
+		height: $ctrl-height-lg;
 	}
 	.btn{
 		padding-left: 16px;
@@ -71,12 +71,12 @@
 .input-group-sm{
 	.input-group-text{
 		font-size: 12px;
-		padding:($ctrl-height-small - $line-height-base)*.5 - $ctrl-border-width 12px;
+		padding:($ctrl-height-sm - $line-height-base)*.5 - $ctrl-border-width 12px;
 	}
 	.form-control{
-		font-size: $ctrl-fontsize-small;
-		padding:($ctrl-height-small - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-small;
-		height: $ctrl-height-small;
+		font-size: $ctrl-fontsize-sm;
+		padding:($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-y-sm;
+		height: $ctrl-height-sm;
 	}
 	.btn{
 		padding-left: 8px;
@@ -122,7 +122,7 @@
 	position: relative;
 	white-space: nowrap;
 	font-size: $font-size-base;
-	height: $ctrl-height-base - $ctrl-border-width*2;
+	height: $ctrl-height-md - $ctrl-border-width*2;
 }
 
 .input-control{
@@ -131,7 +131,7 @@
 }
 .input-control input,.input-control select{
 	width: 100%;
-	height: $ctrl-height-base - $ctrl-border-width*2;
+	height: $ctrl-height-md - $ctrl-border-width*2;
 	font-size: $font-size-base;
 	line-height: $line-height-base;
 	padding: 4px 0;
@@ -174,29 +174,29 @@
 .input-group-lg,
 .input-lg{
 	.input-control input,.input-control select{
-		height: $ctrl-height-large - $ctrl-border-width*2;
-		font-size: $ctrl-fontsize-large;
-		line-height: $ctrl-height-large - $ctrl-border-width*2 - 8px;
+		height: $ctrl-height-lg - $ctrl-border-width*2;
+		font-size: $ctrl-fontsize-lg;
+		line-height: $ctrl-height-lg - $ctrl-border-width*2 - 8px;
 	}
 	.input-prefix,.input-suffix{
-		height: $ctrl-height-large - $ctrl-border-width*2;
+		height: $ctrl-height-lg - $ctrl-border-width*2;
 	}
 }
 .input-sm{
-	padding: 0 $ctrl-padding-large;
+	padding: 0 $ctrl-padding-y-lg;
 }
 
 .input-group-sm,
 .input-sm{
 	.input-control input,.input-control select{
-		height: $ctrl-height-small - $ctrl-border-width*2;
-		font-size: $ctrl-fontsize-small;
-		line-height: $ctrl-height-small - $ctrl-border-width*2 - 8px;
+		height: $ctrl-height-sm - $ctrl-border-width*2;
+		font-size: $ctrl-fontsize-sm;
+		line-height: $ctrl-height-sm - $ctrl-border-width*2 - 8px;
 	}
 	.input-prefix,.input-suffix{
-		height: $ctrl-height-small - $ctrl-border-width*2;
+		height: $ctrl-height-sm - $ctrl-border-width*2;
 	}
 }
 .input-sm{
-	padding: 0 $ctrl-padding-small;
+	padding: 0 $ctrl-padding-y-sm;
 }

@@ -4,7 +4,7 @@
 
 
 @mixin text-input($border){
-	font-size: $ctrl-fontsize-base;
+	font-size: $ctrl-fontsize-md;
 	line-height: $ctrl-line-height;
 	border: $border solid $ctrl-border-color;
 	background-image: none;

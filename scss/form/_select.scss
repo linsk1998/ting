@@ -8,7 +8,7 @@
 .select-btn{
 	margin:0;
 	line-height:$ctrl-line-height;
-	font-size:$ctrl-fontsize-base;
+	font-size:$ctrl-fontsize-md;
 	border-width:$ctrl-border-width;
 	border-style:solid;
 	text-align:left;
@@ -20,7 +20,7 @@
 	display:block;
 	width:100%;
 	position:relative;
-	color:$ctrl-value-color;
+	color:$input-value-color;
 	@include rounded(0);
 	
 	&:hover {
@@ -34,11 +34,11 @@
 }
 
 .select-placeholder{
-	color: $ctrl-placeholder-color;
+	color: $input-placeholder-color;
 }
 .select-icon{
 	position: absolute;
-	right: $ctrl-height-base * .5;
+	right: $ctrl-height-md * .5;
 	top: 50%;
 	margin-top: -.5em;
 	margin-right: -.5em;
@@ -48,9 +48,9 @@
 	margin-right: -4px;
 }
 .select-btn{
-	padding: ($ctrl-height-base - 2 * $ctrl-border-width - $ctrl-line-height) * .5 $btn-padding-base;
-	height: $ctrl-height-base;
-	padding-right: $ctrl-height-base;
+	padding: ($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height) * .5 $btn-padding-y-md;
+	height: $ctrl-height-md;
+	padding-right: $ctrl-height-md;
 }
 .select-lg .select-btn{ @include btn-lg;}
 .select-sm .select-btn{ @include btn-sm;}

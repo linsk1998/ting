@@ -4,7 +4,7 @@
 @mixin btn($border:$ctrl-border-width){
 	margin:0;
 	line-height:$ctrl-line-height;
-	font-size:$ctrl-fontsize-base;
+	font-size:$ctrl-fontsize-md;
 	border-width:$border;
 	border-style:solid;
 	text-align:center;
@@ -60,19 +60,19 @@
 	}
 }
 @mixin btn-md{
-	@include btn-size($ctrl-height-base,$btn-padding-base);
+	@include btn-size($ctrl-height-md,$btn-padding-y-md);
 }
 @mixin btn-lg{
-	font-size: $ctrl-fontsize-large;
-	@include btn-size($ctrl-height-large,$btn-padding-large);
+	font-size: $ctrl-fontsize-lg;
+	@include btn-size($ctrl-height-lg,$btn-padding-y-lg);
 }
 @mixin btn-sm{
-	font-size: $ctrl-fontsize-small;
-	@include btn-size($ctrl-height-small,$btn-padding-small);
+	font-size: $ctrl-fontsize-sm;
+	@include btn-size($ctrl-height-sm,$btn-padding-y-sm);
 }
 @mixin btn-xs{
-	font-size: $ctrl-fontsize-xsmall;
-	@include btn-size($ctrl-height-xsmall,$btn-padding-xsmall);
+	font-size: $ctrl-fontsize-xs;
+	@include btn-size($ctrl-height-xs,$btn-padding-y-xs);
 }
 @mixin btn-round {
 	border-radius: 999px;

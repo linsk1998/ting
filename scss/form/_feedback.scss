@@ -26,7 +26,7 @@
 .has-feedback{
 	position: relative; *zoom:1;
 	.form-control,.input-control input {
-		padding-right: $ctrl-height-base * 0.5 + 8px + $ctrl-padding-base;
+		padding-right: $ctrl-height-md * 0.5 + 8px + $ctrl-padding-y-md;
 	}
 	textarea.form-control{
 		overflow-y: scroll;
@@ -35,7 +35,7 @@
 		right:17px;
 	}
 	.radio-stack{
-		padding-right: $ctrl-height-base;
+		padding-right: $ctrl-height-md;
 	}
 	.control-clear{
 		right: 24px + 9px;
@@ -45,30 +45,30 @@
 	display:block;
 	position: absolute;
 	top:0; right:0;
-	width:$ctrl-height-base;
-	line-height: $ctrl-height-base;
+	width:$ctrl-height-md;
+	line-height: $ctrl-height-md;
 	text-align: center;
 	font-size:16px;
 }
 .form-group-lg .form-control-feedback{
-	line-height: $ctrl-height-large;
+	line-height: $ctrl-height-lg;
 }
 .form-group-sm .form-control-feedback{
-	line-height: $ctrl-height-small;
+	line-height: $ctrl-height-sm;
 }
 .form-control-lg~.form-control-feedback{
-	line-height: $ctrl-height-large;
+	line-height: $ctrl-height-lg;
 }
 .form-control-sm~.form-control-feedback{
-	line-height: $ctrl-height-small;
+	line-height: $ctrl-height-sm;
 }
 .input-control .form-control-feedback{
-	line-height: $ctrl-height-base - 2*$ctrl-border-width;
+	line-height: $ctrl-height-md - 2*$ctrl-border-width;
 }
 .form .form-label~.form-control-feedback,
 .form .control-label~.form-control-feedback{
 	top:$line-height-base + 5px;
 }
 .form .form-control-feedback{
-	*top:auto; *margin-top:- $ctrl-height-base;
+	*top:auto; *margin-top:- $ctrl-height-md;
 }

@@ -27,22 +27,22 @@ html .btn-round{
 html .btn-square {
 	padding-left: 0;
 	padding-right: 0;
-	width: $ctrl-height-base;
+	width: $ctrl-height-md;
 }
 html .btn-square-lg {
 	padding-left: 0;
 	padding-right: 0;
-	width: $ctrl-height-large;
+	width: $ctrl-height-lg;
 }
 html .btn-square-sm {
 	padding-left: 0;
 	padding-right: 0;
-	width: $ctrl-height-small;
+	width: $ctrl-height-sm;
 }
 html .btn-square-xs {
 	padding-left: 0;
 	padding-right: 0;
-	width: $ctrl-height-xsmall;
+	width: $ctrl-height-xs;
 }
 
 .btn-default{ @include btn-default;}

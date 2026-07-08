@@ -195,36 +195,37 @@ $footer-padding: 30px 0 !default;
 $footer-margin: 16px 0 0 !default;
 
 //=============================== 表单 ======================================
-$ctrl-height-large: 44px !default;
-$ctrl-height-base: 32px !default;
-$ctrl-height-small: 28px !default;
-$ctrl-height-xsmall: 24px !default;
+$ctrl-height-lg: 44px !default;
+$ctrl-height-md: 32px !default;
+$ctrl-height-sm: 28px !default;
+$ctrl-height-xs: 24px !default;
 $ctrl-border-width: 1px !default;
 $ctrl-border-color: #ccc !default;
-$ctrl-line-height: 20px !default;
-$ctrl-fontsize-base: 14px !default;
-$ctrl-fontsize-large: 16px !default;
-$ctrl-fontsize-small: 12px !default;
-$ctrl-fontsize-xsmall: 12px !default;
-$ctrl-padding-base: 12px !default;
-$ctrl-padding-large: 16px !default;
-$ctrl-padding-small: 10px !default;
-$ctrl-padding-xsmall: 6px !default;
+$ctrl-line-height: $line-height-base !default;
+$ctrl-fontsize-md: 14px !default;
+$ctrl-fontsize-lg: 16px !default;
+$ctrl-fontsize-sm: 12px !default;
+$ctrl-fontsize-xs: 12px !default;
 
-$ctrl-value-color: #555555 !default;
-$ctrl-placeholder-color: #999999 !default;
+$ctrl-padding-y-md: 12px !default;
+$ctrl-padding-y-lg: 16px !default;
+$ctrl-padding-y-sm: 10px !default;
+$ctrl-padding-y-xs: 6px !default;
 
-$btn-padding-base: 12px !default;
-$btn-padding-large: 16px !default;
-$btn-padding-small: 10px !default;
-$btn-padding-xsmall: 6px !default;
+$input-value-color: #555555 !default;
+$input-placeholder-color: #999999 !default;
+$input-disabled-bg: #999999 !default;
+$input-padding-y-md: $ctrl-padding-y-md !default;
+$input-padding-y-lg: $ctrl-padding-y-lg !default;
+$input-padding-y-sm: $ctrl-padding-y-sm !default;
+$input-padding-y-xs: $ctrl-padding-y-xs !default;
+
+$btn-padding-y-md: $ctrl-padding-y-md !default;
+$btn-padding-y-lg: $ctrl-padding-y-lg !default;
+$btn-padding-y-sm: $ctrl-padding-y-sm !default;
+$btn-padding-y-xs: $ctrl-padding-y-xs !default;
 
 $navbar-height: 50px !default;
 $navbar-toggle-size: 34px !default;
-
-$pagination-size: $ctrl-height-base !default;
-$pagination-size-lg: $ctrl-height-large !default;
-$pagination-size-sm: $ctrl-height-small !default;
-$pagination-size-xs: $ctrl-height-xsmall !default;
 
 $modal-alpha: 0.4 !default; //模不透明度

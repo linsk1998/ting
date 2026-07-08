@@ -6,9 +6,9 @@
 	align-items: center;
 	*zoom: 1;
 	*display: inline;
-	height: $ctrl-height-xsmall;
+	height: $ctrl-height-xs;
 	overflow: hidden;
-	padding: ($ctrl-height-xsmall - $line-height-base) * .5 6px;
+	padding: ($ctrl-height-xs - $line-height-base) * .5 6px;
 	font-size: 13px;
 	line-height: 20px;
 	text-align: center;
@@ -54,13 +54,13 @@
 }
 
 .tag-lg{
-	padding: ($ctrl-height-xsmall - $line-height-base) * .5 + 3px 9px;
+	padding: ($ctrl-height-xs - $line-height-base) * .5 + 3px 9px;
 	height: 30px;
 	font-size: 14px;
 }
 
 .tag-sm{
-	padding: ($ctrl-height-xsmall - $line-height-base) * .5 - 3px 3px;
+	padding: ($ctrl-height-xs - $line-height-base) * .5 - 3px 3px;
 	height: 18px;
 	line-height: 16px;
 	font-size: 12px;

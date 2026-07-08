@@ -5,17 +5,17 @@
 	font-size: $font-size-base;
 	line-height: $line-height-base;
 	margin: 0;
-	padding:($ctrl-height-base - $ctrl-line-height)*.5 0;
+	padding:($ctrl-height-md - $ctrl-line-height)*.5 0;
 }
 .form-group-lg{
 	.form-control-static{
-		font-size: $ctrl-fontsize-large;
-		padding:($ctrl-height-large - $ctrl-line-height)*.5 0;
+		font-size: $ctrl-fontsize-lg;
+		padding:($ctrl-height-lg - $ctrl-line-height)*.5 0;
 	}
 }
 .form-group-sm{
 	.form-control-static{
-		font-size: $ctrl-fontsize-small;
-		padding:($ctrl-height-small - $ctrl-line-height)*.5 0;
+		font-size: $ctrl-fontsize-sm;
+		padding:($ctrl-height-sm - $ctrl-line-height)*.5 0;
 	}
 }

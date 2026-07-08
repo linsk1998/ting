@@ -15,6 +15,9 @@
 	padding: $padding;
 	background-color: #fff;
 	border: 1px solid $theme-divider;
+	@if($enable-rounded) {
+		@include rounded($img-thumbnail-rounded);
+	}
 }
 @mixin img-fluid {
 	display: block;
