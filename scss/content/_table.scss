@@ -9,42 +9,35 @@
 	max-width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
-	background-color: #fff;
+	background-color: $table-bg;
 
 	td,th{
 		// relative会导致出现2重border
-		padding:8px;
+		padding:$table-cell-padding;
 		line-height:$line-height-base;
-		border-bottom:1px solid #ddd;
+		border-bottom:$table-border-width solid $table-border-color;
 	}
 }
 
-.table caption {
-	padding: 6px 12px;
-	text-align: left;
-	background-color: $theme-primary;
-	color: #fff;
-}
-
-.table-xs{
-	td,th{ padding:2px;}
-}
-td,th {
-	&.table-xs{
-		padding:2px;
-	}
-}
 .table-sm,.table-condensed{
-	td,th{ padding:4px;}
+	td,th{ padding:$table-cell-padding-sm;}
+}
+.table-xs {
+	td,th{ padding:$table-cell-padding-xs;}
 }
 td,th {
 	&.table-sm,&.table-condensed{
-		padding:4px;
+		padding:$table-cell-padding-sm;
+	}
+}
+td,th {
+	&.table-xs{
+		padding:$table-cell-padding-xs;
 	}
 }
 
 .table-bordered{
-	&,& td, & th{ border:1px solid #ddd;}
+	&,& td, & th{ border:$table-border-width solid $table-border-color;}
 }
 @each $key, $color in $context {
 	.table-#{$key}{ background-color:mix($color, #fff, 12%); background-clip:padding-box;}
@@ -123,7 +116,7 @@ td,th {
 	overflow-x: auto;
 	overflow-y: hidden;
 	margin: $margin-base 0;
-	border:1px solid #ddd;
+	border:$table-border-width solid $table-border-color;
 }
 
 .table-responsive .table {

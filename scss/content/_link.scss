@@ -27,7 +27,7 @@
 .link-underline,.link-underline:hover{
 	text-decoration:underline;
 }
-@for $i from 1 to 3 {
+@for $i from 1 to $link-offsets {
 	.link-offset-#{$i}{
 		text-underline-offset: $i * 0.125em !important;
 	}

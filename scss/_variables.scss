@@ -1,11 +1,17 @@
 @use 'sass:math';
 @use 'functions' as *;
 
+//=============================== 全局公用 ======================================
 $margin-base: 10px !default;
 $padding-base: 8px 15px !default;
 
 $font-size-base: 14px !default;
 $line-height-base: 20px !default;
+
+$enable-rounded: false !default; // 保持圆角开启
+$border-radius: 6px !default; // 将基础圆角从 0.25rem 改为 0.5rem
+$border-radius-lg: 12px !default; // 同时调整大号圆角
+$border-radius-sm: 4px !default; // 以及小号圆角
 
 $theme-inverse: #1b1b1b !default;
 $theme-inverse-text: #eee !default;
@@ -64,7 +70,6 @@ $danger-text: #a94442 !default;
 $danger-bg: #f2dede !default;
 $danger-border: darken(adjust-hue($danger-bg, -10), 7%) !default;
 
-
 $spacer: 16px !default;
 $spacers: (
 	0: 0,
@@ -75,13 +80,6 @@ $spacers: (
 	5: ($spacer * 1.25),
 	6: ($spacer * 1.5)) !default;
 
-$screen-width-list: 3840px 1920px 1600px 1440px 1366px 1280px 1024px 800px 640px 480px 375px 320px !default;
-$screen-height-list: 2732px 2160px 1920px 1334px 1280px 1136px 980px 900px 768px 720px 640px 480px !default;
-
-$screen-xs: 575px !default;
-$screen-sm: 991px !default;
-$screen-lg: 1400px !default;
-$screen-xl: 1700px !default;
 
 $zindex-levels: (
   n1: -1,
@@ -103,15 +101,100 @@ $level-dialog: 1000 !default;
 $level-popup: 10000000 !default;
 $level-tooltip: 20000000 !default;
 
-$grid-columns-list: 5 7 8 !default; //支持哪些N等分网格
-$grid-gutter-width: 20px !default;
-$grid-fluid-gutter-width: math.div(1, 48) !default;
+$screen-width-list: 3840px 1920px 1600px 1440px 1366px 1280px 1024px 800px 640px 480px 375px 320px !default;
+$screen-height-list: 2732px 2160px 1920px 1334px 1280px 1136px 980px 900px 768px 720px 640px 480px !default;
 
+//=============================== 布局 ======================================
+$screen-xs: 575px !default;
+$screen-sm: 991px !default;
+$screen-lg: 1400px !default;
+$screen-xl: 1700px !default;
+
+$container-width-xs: auto !default;
+$container-width-sm: 546px !default;
+$container-width-md: 1002px !default;
+$container-width-lg: 1134px !default;
+$container-width-xl: 1362px !default;
+$container-padding: 15px !default;
+$container-padding-xs: $container-padding !default;
+$container-padding-sm: $container-padding !default;
+$container-padding-md: $container-padding !default;
+$container-padding-lg: $container-padding !default;
+$container-padding-xl: $container-padding !default;
+
+$grid-columns: 12 !default;
+$grid-columns-list: 5 7 8 !default; //支持哪些N等分网格
+$grid-gutter-widths: $spacers !default;
+
+$aspect-ratios:(
+	(21 9),
+	(16 9),
+	(4 3),
+	(1 1)
+) !default;
+
+//=============================== 页面内容 ======================================
 $pre-scrollable-max-height: 350px !default;
-$table-thead-inverse-bg: $theme-inverse;
+
+$link-offsets: 3 !default;
+
+$table-bg: #fff !default;
+$table-cell-padding: 8px !default;
+$table-cell-padding-sm: 4px !default;
+$table-cell-padding-xs: 2px !default;
+$table-border-width: 1px !default;
+$table-border-color: $theme-divider !default;
+$table-thead-inverse-bg: $theme-inverse !default;
 $table-thead-subtle-bg: #f2f2f2 !default;
 $table-active: #a5a5a5 !default;
 
+$img-thumbnail-padding: 4px !default;
+$img-thumbnail-rounded: $border-radius !default;
+
+$media-gutters: 10px !default;
+
+$list-padding-x: 15px !default;
+$list-padding-y: 10px !default;
+$list-striped-bg: #fcfcfc !default;
+
+$card-bg: #fff !default;
+$card-spacer-y: 8px !default;
+$card-spacer-x: 15px !default;
+$card-border-width: 1px !default;
+$card-border-color: $theme-divider !default;
+$card-cap-padding-y: 10px !default;
+$card-cap-padding-x: 15px !default;
+$card-cap-bg: #f5f5f5 !default;
+$card-img-overlay-padding-y: 16px !default;
+$card-img-overlay-padding-x: 16px !default;
+
+$well-bg: #f5f5f5 !default;
+$well-border-width: 1px !default;
+$well-border-color: $theme-divider !default;
+$well-padding: 15px !default;
+$well-padding-lg: 22px !default;
+$well-padding-sm: 9px !default;
+
+$jumbotron-bg: #2d3e50 !default;
+$jumbotron-padding: 40px 0 !default;
+$jumbotron-padding-lg: 48px 0 !default;
+$jumbotron-padding-sm: 36px 0 !default;
+$jumbotron-padding-xs: 30px 0 !default;
+$jumbotron-title-fontsize: 48px !default;
+$jumbotron-text-fontsize: 20px !default;
+$jumbotron-title-fontsize-lg: 64px !default;
+$jumbotron-text-fontsize-lg: 22px !default;
+$jumbotron-title-fontsize-sm: 34px !default;
+$jumbotron-text-fontsize-sm: 18px !default;
+$jumbotron-title-fontsize-xs: 20px !default;
+$jumbotron-text-fontsize-xs: 16px !default;
+
+$footer-bg: #f5f5f5 !default;
+$footer-color: #666 !default;
+$footer-padding: 30px 0 !default;
+$footer-margin: 16px 0 0 !default;
+
+//=============================== 表单 ======================================
 $ctrl-height-large: 44px !default;
 $ctrl-height-base: 32px !default;
 $ctrl-height-small: 28px !default;

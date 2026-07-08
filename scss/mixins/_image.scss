@@ -6,10 +6,10 @@
 	-o-object-fit:cover;
 	object-fit: cover;
 }
-@mixin img-rounded($r:6px){
+@mixin img-rounded($r:$img-thumbnail-rounded){
 	@include rounded($r);
 }
-@mixin img-thumbnail($padding:4px){
+@mixin img-thumbnail($padding:$img-thumbnail-padding){
 	max-width: 100%;
 	height: auto;
 	padding: $padding;

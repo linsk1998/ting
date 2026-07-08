@@ -1,22 +1,21 @@
 @use "../variables" as *;
 
-.jumbotron{ padding-top:40px; padding-bottom:40px; background:#2d3e50; color:#fff;}
-.jumbotron h1,.jumbotron .h1{ font-size:48px;}
-.jumbotron p{ margin-bottom:15px; font-weight:200; font-size:20px;}
-.jumbotron hr{ border-top-color:#d5d5d5; color:#d5d5d5; background:#d5d5d5;}
+.jumbotron{ padding:$jumbotron-padding; background:$jumbotron-bg; color:#fff;}
+.jumbotron h1,.jumbotron-title{ font-size:$jumbotron-title-fontsize;}
+.jumbotron p,.jumbotron-text{ margin:$margin-base 0; font-size:$jumbotron-text-fontsize;}
 
 @media (min-width:$screen-lg){
-	.jumbotron{ padding-top:48px; padding-bottom:48px;}
-	.jumbotron h1,.jumbotron .h1{ font-size:64px;}
-	.jumbotron p{ font-size:22px;}
+	.jumbotron{ padding:$jumbotron-padding-lg;}
+	.jumbotron h1,.jumbotron-title{ font-size:$jumbotron-title-fontsize-lg;}
+	.jumbotron p,.jumbotron-text{ font-size:$jumbotron-text-fontsize-lg;}
 }
 @media (max-width:$screen-sm){
-	.jumbotron{ padding-top:36px; padding-bottom:36px;}
-	.jumbotron h1,.jumbotron .h1{ font-size:34px;}
-	.jumbotron p{ font-size:18px;}
+	.jumbotron{ padding:$jumbotron-padding-sm;}
+	.jumbotron h1,.jumbotron-title{ font-size:$jumbotron-title-fontsize-sm;}
+	.jumbotron p,.jumbotron-text{ font-size:$jumbotron-text-fontsize-sm;}
 }
 @media (max-width:$screen-xs){
-	.jumbotron{ padding-top:30px; padding-bottom:30px;}
-	.jumbotron h1,.jumbotron .h1{ font-size:20px;}
-	.jumbotron p{ font-size:16px;}
+	.jumbotron{ padding:$jumbotron-padding-xs;}
+	.jumbotron h1,.jumbotron-title{ font-size:$jumbotron-title-fontsize-xs;}
+	.jumbotron p,.jumbotron-text{ font-size:$jumbotron-text-fontsize-xs;}
 }

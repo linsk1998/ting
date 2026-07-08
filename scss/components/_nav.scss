@@ -22,10 +22,10 @@
 
 .nav-tabs{ margin-left:0; border-bottom:1px solid $theme-divider;}
 .nav-tabs .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
-.nav-tabs .nav-link{ color:$theme-secondary-text; padding:8px 16px; display: inline-block;}
+.nav-tabs .nav-link{ color:$theme-secondary-text; padding:6px 16px; display: inline-block;}
 .nav-tabs .nav-link:hover{ color:$theme-primary; text-decoration: none;}
 .nav-tabs .active{ border:1px solid $theme-divider; border-bottom-color:#fff; background:#fff; margin-bottom:-1px;}
-.nav-tabs .active .nav-link, .nav-tabs a.active{ padding:7px 15px 8px;}
+.nav-tabs .active .nav-link, .nav-tabs a.active{ padding:8px 15px 6px;}
 .nav-tabs .active .nav-link, .nav-tabs a.active,
 .nav-tabs .active .nav-link:hover, .nav-tabs a.active:hover{ color:$theme-primary-text;}
 

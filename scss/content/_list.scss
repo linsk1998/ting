@@ -1,10 +1,6 @@
 @use '../variables' as *;
 @use '../functions' as *;
 
-$list-padding-x: 15px !default;
-$list-padding-y: 10px !default;
-$list-striped-bg: #fcfcfc !default;
-
 .list {
 	padding: 0; margin: 0;
 	list-style-type: none;

@@ -4,7 +4,7 @@
 .container,
 .container-md,
 .container-sm {
-	@include container(1002px);
+	@include container($container-width-md);
 }
 .container-fluid,
 .container-lg,
@@ -14,21 +14,21 @@
 @media (min-width: $screen-lg) {
 	.container,
 	.container-md,
-	.container-lg { width: 1134px; }
+	.container-lg { width: $container-width-lg; }
 }
 @media (min-width: $screen-xl) {
 	.container,
 	.container-md,
 	.container-lg,
-	.container-xl { width: 1362px; }
+	.container-xl { width: $container-width-xl; }
 }
 @media (max-width: $screen-sm) {
 	.container,
 	.container-md,
 	.container-lg,
 	.container-xl { width:auto; }
-	.container-sm { width:546px; }
+	.container-sm { width:$container-width-sm; }
 }
 @media (max-width: $screen-xs) {
-	.container-sm { width:auto; }
+	.container-sm { width:$container-width-xs; }
 }
