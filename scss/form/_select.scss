@@ -97,9 +97,9 @@ html .was-validated .is-valid .select-btn{
 	border-color:$success;
 }
 
-.has-feedback{
+.has-feedback-icon{
 	.select{
-		.form-control-feedback{
+		.feedback-icon{
 			right: 24px;
 			z-index: $level-navbar;
 		}

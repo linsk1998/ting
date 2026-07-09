@@ -4,66 +4,27 @@
 @use '../functions' as *;
 
 
-html .has-success{
-	.form-label,.control-label,.form-control-feedback,.help-block{
-		color:$success;
-	}
-	.form-control-feedback{
+html .has-valid{
+	.feedback-icon,.feedback-text,.help-block{
 		color:$success;
 	}
 	.form-control,.input,.select-btn{
 		border-color:$success;
 	}
-}
-html .has-warning{
-	.form-label,.control-label,.form-control-feedback,.help-block{
-		color:darken($warning,10%);
-	}
-	.form-control-feedback{
-		color:$warning;
-	}
-	.form-control,.input,.select-btn{
-		border-color:$warning;
+	.feedback-tooltip{
+		color: #fff;
+		background: rgba($success, .9);
 	}
 }
-html .has-error{
-	.form-label,.control-label,.form-control-feedback,.help-block{
-		color:$danger;
-	}
-	.form-control-feedback{
+html .has-invalid{
+	.feedback-icon,.feedback-text,.help-block{
 		color:$danger;
 	}
 	.form-control,.input,.select-btn{
 		border-color:$danger;
 	}
-}
-
-html .was-validated .is-invalid{
-	border-color:$danger;
-}
-html .was-validated .is-valid{
-	border-color:$success;
-}
-html .was-validated .invalid-feedback{
-	display: block;
-	color:$danger;
-}
-html .was-validated .valid-feedback{
-	display: block;
-	color:$success;
-}
-.valid-explain{
-	color: $success;
-}
-.invalid-explain{
-	color: $danger;
-}
-.valid-tooltip{
-	color: #fff;
-	background: rgba($success, .9);
-}
-.invalid-tooltip{
-	color: #fff;
-	background: rgba($danger, .9);
-	z-index: $level-tooltip;
+	.feedback-tooltip{
+		color: #fff;
+		background: rgba($danger, .9);
+	}
 }

@@ -6770,8 +6770,29 @@ textarea.form-control {
 .form textarea.form-control,
 .form-horizontal textarea.form-control {
   display: block;
-  width: 100% !important;
   resize: vertical;
+  width: 100% !important;
+  min-height: 32px;
+}
+
+.form textarea.form-control-lg, .form-horizontal textarea.form-control-lg,
+.form .form-group-lg textarea.form-control, .form-horizontal .form-group-lg textarea.form-control {
+  min-height: 36px;
+}
+
+.form textarea.form-control-xl, .form-horizontal textarea.form-control-xl,
+.form .form-group-xl textarea.form-control, .form-horizontal .form-group-xl textarea.form-control {
+  min-height: 40px;
+}
+
+.form textarea.form-control-sm, .form-horizontal textarea.form-control-sm,
+.form .form-group-sm textarea.form-control, .form-horizontal .form-group-sm textarea.form-control {
+  min-height: 28px;
+}
+
+.form textarea.form-control-xs, .form-horizontal textarea.form-control-xs,
+.form .form-group-xs textarea.form-control, .form-horizontal .form-group-xs textarea.form-control {
+  min-height: 24px;
 }
 
 .form-control-tags {
@@ -6951,8 +6972,8 @@ button.control-clear {
     width: auto;
     text-align: left;
   }
-  .form-horizontal .form-label ~ .form-control-feedback,
-  .form-horizontal .control-label ~ .form-control-feedback {
+  .form-horizontal .form-label ~ .feedback-icon,
+  .form-horizontal .control-label ~ .feedback-icon {
     top: 25px;
   }
 }
@@ -6996,8 +7017,8 @@ button.control-clear {
 }
 .form-group-lg .form-control {
   font-size: 16px;
-  padding: 11px 16px;
-  height: 44px;
+  padding: 7px 16px;
+  height: 36px;
 }
 
 .form-group-sm .form-label, .form-group-sm .control-label {
@@ -7019,11 +7040,11 @@ button.control-clear {
 
 .form-control-lg {
   font-size: 16px;
-  padding: 11px 16px;
+  padding: 7px 16px;
 }
 
 .form-control-lg {
-  height: 44px;
+  height: 36px;
 }
 
 .form-control-sm {
@@ -7044,50 +7065,40 @@ button.control-clear {
   height: 24px;
 }
 
-.help-block {
+.help-block, .form-text, .feedback-text {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
   color: #212121;
 }
 
-.valid-explain, .invalid-explain {
-  position: absolute;
-  max-width: 100%;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.valid-tooltip, .invalid-tooltip {
+.feedback-tooltip {
   position: absolute;
   margin-top: 2px;
   max-width: 100%;
   line-height: 15px;
   padding: 6px;
-  border-radius: 3px;
+  z-index: 20000000;
 }
 
-.has-feedback {
+.has-feedback-icon {
   position: relative;
   *zoom: 1;
 }
-.has-feedback .form-control, .has-feedback .input-control input {
+.has-feedback-icon .form-control, .has-feedback-icon .input-control input {
   padding-right: 36px;
 }
-.has-feedback textarea.form-control {
+.has-feedback-icon textarea.form-control {
   overflow-y: scroll;
 }
-.has-feedback textarea.form-control ~ .form-control-feedback {
+.has-feedback-icon textarea.form-control ~ .feedback-icon {
   right: 17px;
 }
-.has-feedback .radio-stack {
-  padding-right: 32px;
-}
-.has-feedback .control-clear {
+.has-feedback-icon .control-clear {
   right: 33px;
 }
 
-.form-control-feedback {
+.feedback-icon {
   display: block;
   position: absolute;
   top: 0;
@@ -7098,49 +7109,49 @@ button.control-clear {
   font-size: 16px;
 }
 
-.form-group-lg .form-control-feedback {
-  line-height: 44px;
+.form-group-lg .feedback-icon {
+  line-height: 36px;
 }
 
-.form-group-sm .form-control-feedback {
+.form-group-sm .feedback-icon {
   line-height: 28px;
 }
 
-.form-control-lg ~ .form-control-feedback {
-  line-height: 44px;
+.form-control-lg ~ .feedback-icon {
+  line-height: 36px;
 }
 
-.form-control-sm ~ .form-control-feedback {
+.form-control-sm ~ .feedback-icon {
   line-height: 28px;
 }
 
-.input-control .form-control-feedback {
+.input-control .feedback-icon {
   line-height: 30px;
 }
 
-.form .form-label ~ .form-control-feedback,
-.form .control-label ~ .form-control-feedback {
+.form .form-label ~ .feedback-icon,
+.form .control-label ~ .feedback-icon {
   top: 25px;
 }
 
-.form .form-control-feedback {
+.form .feedback-icon {
   *top: auto;
   *margin-top: -32px;
 }
 
-.form-control-static {
+.form-control-static, .form-control-plaintext {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
   padding: 6px 0;
 }
 
-.form-group-lg .form-control-static {
+.form-group-lg .form-control-static, .form-group-lg .form-control-plaintext {
   font-size: 16px;
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
-.form-group-sm .form-control-static {
+.form-group-sm .form-control-static, .form-group-sm .form-control-plaintext {
   font-size: 12px;
   padding: 4px 0;
 }
@@ -7218,12 +7229,12 @@ button.control-clear {
 
 .input-group-lg .input-group-text {
   font-size: 18px;
-  padding: 11px 12px;
+  padding: 7px 12px;
 }
 .input-group-lg .form-control {
   font-size: 16px;
-  padding: 11px 16px;
-  height: 44px;
+  padding: 7px 16px;
+  height: 36px;
 }
 .input-group-lg .btn {
   padding-left: 16px;
@@ -7350,14 +7361,14 @@ button.control-clear {
 .input-group-lg .input-control input, .input-group-lg .input-control select,
 .input-lg .input-control input,
 .input-lg .input-control select {
-  height: 42px;
+  height: 34px;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 26px;
 }
 .input-group-lg .input-prefix, .input-group-lg .input-suffix,
 .input-lg .input-prefix,
 .input-lg .input-suffix {
-  height: 42px;
+  height: 34px;
 }
 
 .input-sm {
@@ -7456,11 +7467,11 @@ button.control-clear {
   font-size: 16px;
 }
 a.select-lg .select-btn, label.select-lg .select-btn {
-  padding: 11px 16px;
+  padding: 7px 16px;
 }
 
 input.select-lg .select-btn, button.select-lg .select-btn {
-  height: 44px;
+  height: 36px;
   padding: 0 16px;
 }
 
@@ -7529,11 +7540,11 @@ html .was-validated .is-valid .select-btn {
   border-color: #70ad47;
 }
 
-.has-feedback .select .form-control-feedback {
+.has-feedback-icon .select .feedback-icon {
   right: 24px;
   z-index: 500;
 }
-.has-feedback .select .control-clear {
+.has-feedback-icon .select .control-clear {
   right: 57px;
 }
 
@@ -7560,71 +7571,26 @@ html body .btn-toggle-checked:focus-within {
   border-color: #2B4C87;
 }
 
-html .has-success .form-label, html .has-success .control-label, html .has-success .form-control-feedback, html .has-success .help-block {
+html .has-valid .feedback-icon, html .has-valid .feedback-text, html .has-valid .help-block {
   color: #70ad47;
 }
-html .has-success .form-control-feedback {
-  color: #70ad47;
-}
-html .has-success .form-control, html .has-success .input, html .has-success .select-btn {
+html .has-valid .form-control, html .has-valid .input, html .has-valid .select-btn {
   border-color: #70ad47;
 }
-
-html .has-warning .form-label, html .has-warning .control-label, html .has-warning .form-control-feedback, html .has-warning .help-block {
-  color: #D2620B;
-}
-html .has-warning .form-control-feedback {
-  color: #F37B1D;
-}
-html .has-warning .form-control, html .has-warning .input, html .has-warning .select-btn {
-  border-color: #F37B1D;
-}
-
-html .has-error .form-label, html .has-error .control-label, html .has-error .form-control-feedback, html .has-error .help-block {
-  color: #dc3545;
-}
-html .has-error .form-control-feedback {
-  color: #dc3545;
-}
-html .has-error .form-control, html .has-error .input, html .has-error .select-btn {
-  border-color: #dc3545;
-}
-
-html .was-validated .is-invalid {
-  border-color: #dc3545;
-}
-
-html .was-validated .is-valid {
-  border-color: #70ad47;
-}
-
-html .was-validated .invalid-feedback {
-  display: block;
-  color: #dc3545;
-}
-
-html .was-validated .valid-feedback {
-  display: block;
-  color: #70ad47;
-}
-
-.valid-explain {
-  color: #70ad47;
-}
-
-.invalid-explain {
-  color: #dc3545;
-}
-
-.valid-tooltip {
+html .has-valid .feedback-tooltip {
   color: #fff;
   background: rgba(112, 173, 71, 0.9);
 }
 
-.invalid-tooltip {
+html .has-invalid .feedback-icon, html .has-invalid .feedback-text, html .has-invalid .help-block {
+  color: #dc3545;
+}
+html .has-invalid .form-control, html .has-invalid .input, html .has-invalid .select-btn {
+  border-color: #dc3545;
+}
+html .has-invalid .feedback-tooltip {
   color: #fff;
   background: rgba(220, 53, 69, 0.9);
-  z-index: 20000000;
 }
 
 .btn {
@@ -7702,11 +7668,11 @@ input.btn, button.btn {
   font-size: 16px;
 }
 a.btn-lg, label.btn-lg {
-  padding: 11px 16px;
+  padding: 7px 16px;
 }
 
 input.btn-lg, button.btn-lg {
-  height: 44px;
+  height: 36px;
   padding: 0 16px;
 }
 
@@ -7747,7 +7713,7 @@ html .btn-square {
 html .btn-square-lg {
   padding-left: 0;
   padding-right: 0;
-  width: 44px;
+  width: 36px;
 }
 
 html .btn-square-sm {
@@ -8631,7 +8597,7 @@ body:last-child .nav-justified, x:-moz-any-link {
 }
 
 .pagination-lg li a, .pagination-lg li span {
-  padding: 11px 17.5px;
+  padding: 7px 13.5px;
 }
 
 .pagination-sm li a, .pagination-sm li span {

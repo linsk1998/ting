@@ -28,8 +28,8 @@
 	@media (max-width:$screen-sm){
 		.form-group,.control-group{ padding-left:0;}
 		.form-label,.control-label{ margin-left:0; padding-top:0; margin-bottom:5px; float:none; width:auto; text-align: left;}
-		.form-label~.form-control-feedback,
-		.control-label~.form-control-feedback{
+		.form-label~.feedback-icon,
+		.control-label~.feedback-icon{
 			top:$line-height-base + 5px;
 		}
 	}

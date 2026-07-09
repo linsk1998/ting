@@ -48,8 +48,25 @@ textarea.form-control{
 .form textarea.form-control,
 .form-horizontal textarea.form-control{
 	display: block;
-	width:100% !important;
 	resize: vertical;
+	width:100% !important;
+	min-height: $ctrl-height-md;
+}
+.form textarea.form-control-lg,.form-horizontal textarea.form-control-lg,
+.form .form-group-lg textarea.form-control,.form-horizontal .form-group-lg textarea.form-control {
+	min-height: $ctrl-height-lg;
+}
+.form textarea.form-control-xl,.form-horizontal textarea.form-control-xl,
+.form .form-group-xl textarea.form-control,.form-horizontal .form-group-xl textarea.form-control {
+	min-height: $ctrl-height-xl;
+}
+.form textarea.form-control-sm,.form-horizontal textarea.form-control-sm,
+.form .form-group-sm textarea.form-control,.form-horizontal .form-group-sm textarea.form-control {
+	min-height: $ctrl-height-sm;
+}
+.form textarea.form-control-xs,.form-horizontal textarea.form-control-xs,
+.form .form-group-xs textarea.form-control,.form-horizontal .form-group-xs textarea.form-control {
+	min-height: $ctrl-height-xs;
 }
 
 .form-control-tags{
