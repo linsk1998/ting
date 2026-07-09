@@ -6710,14 +6710,14 @@ video.embed-responsive-item {
   font-size: 14px;
   line-height: 20px;
   color: #555555;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  height: 32px;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  height: 32px;
-  padding: 5px 12px;
-  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 div.form-control {
@@ -6726,7 +6726,7 @@ div.form-control {
 
 .form-control[disabled] {
   cursor: not-allowed;
-  background-color: #eee;
+  background-color: #eeeeee;
 }
 
 input.form-control, select.form-control {
@@ -6739,8 +6739,8 @@ textarea.form-control {
 }
 
 .form-control:focus {
-  border-color: #66afe9;
   outline: 0;
+  border-color: #66afe9;
   z-index: 230;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -6767,14 +6767,11 @@ textarea.form-control {
   color: #999999;
 }
 
-.form textarea.form-control, .form-horizontal textarea.form-control {
-  width: 100% !important;
+.form textarea.form-control,
+.form-horizontal textarea.form-control {
   display: block;
-}
-
-.form-control-custom {
-  min-height: 32px;
-  _height: 32px;
+  width: 100% !important;
+  resize: vertical;
 }
 
 .form-control-tags {
@@ -6828,12 +6825,12 @@ button.control-clear {
   display: block;
 }
 
-.checkbox-group, .radio-group, .checkbox-group-inline, .radio-group-inline {
+.checkbox-group, .radio-group, .checkbox-group-horizontal, .radio-group-horizontal {
   min-height: 32px;
   _height: 32px;
   padding: 6px 0 1px;
 }
-.checkbox-group input, .radio-group input, .checkbox-group-inline input, .radio-group-inline input {
+.checkbox-group input, .radio-group input, .checkbox-group-horizontal input, .radio-group-horizontal input {
   vertical-align: middle;
   margin: 1px 3px 3px;
   *margin: 0;
@@ -6845,14 +6842,15 @@ button.control-clear {
   font-weight: normal;
 }
 
-.checkbox-group-inline label, .radio-group-inline label {
+.checkbox-group-horizontal label, .radio-group-horizontal label {
   margin-right: 10px;
   font-weight: normal;
 }
-.checkbox-group-inline label:last-child, .radio-group-inline label:last-child {
+.checkbox-group-horizontal label:last-child, .radio-group-horizontal label:last-child {
   margin-right: 0;
 }
 
+/* 以下全是用于兼容bootstrap的写法，不推荐使用 */
 .form-check, .checkbox, .radio {
   display: block;
   margin-top: 5px;
@@ -6980,6 +6978,17 @@ button.control-clear {
   vertical-align: middle;
   *display: inline;
   *zoom: 1;
+}
+.form-inline .checkbox-group, .form-inline .radio-group,
+.form-inline .checkbox-group-horizontal, .form-inline .radio-group-horizontal {
+  display: inline-block;
+}
+.form-inline .checkbox-group label, .form-inline .radio-group label,
+.form-inline .checkbox-group-horizontal label, .form-inline .radio-group-horizontal label {
+  display: inline;
+}
+.form-inline .form-check, .form-inline .checkbox, .form-inline .radio {
+  display: inline;
 }
 
 .form-group-lg .form-label, .form-group-lg .control-label {

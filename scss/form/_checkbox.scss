@@ -3,7 +3,7 @@
 $check-padding-top: ($ctrl-height-md - $ctrl-line-height)*.5;
 $check-padding-bottom: $check-padding-top - $check-gap-y;
 
-.checkbox-group, .radio-group, .checkbox-group-inline, .radio-group-inline {
+.checkbox-group, .radio-group, .checkbox-group-horizontal, .radio-group-horizontal {
 	min-height: $ctrl-height-md;
 	_height: $ctrl-height-md;
 	padding: $check-padding-top $check-padding-x $check-padding-bottom;
@@ -19,7 +19,7 @@ $check-padding-bottom: $check-padding-top - $check-gap-y;
 		font-weight: normal;
 	}
 }
-.checkbox-group-inline, .radio-group-inline {
+.checkbox-group-horizontal, .radio-group-horizontal {
 	label {
 		margin-right: $check-gap-x;
 		font-weight: normal;
@@ -29,7 +29,7 @@ $check-padding-bottom: $check-padding-top - $check-gap-y;
 	}
 }
 
-
+/* 以下全是用于兼容bootstrap的写法，不推荐使用 */
 .form-check,.checkbox,.radio {
 	display: block;
 	margin-top: $check-gap-y;

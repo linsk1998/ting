@@ -6,18 +6,23 @@
 	font-size: $ctrl-fontsize-md;
 	line-height: $ctrl-line-height;
 	color: $input-value-color;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	@include rounded(0);
 	height: $ctrl-height-md;
 	padding:($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-md;
 	border: $ctrl-border-width solid $ctrl-border-color;
+	@if($enable-rounded) {
+		@include rounded($border-radius);
+	}
+	@else {
+		@include rounded(0);
+	}
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 div.form-control{
 	overflow: hidden;
 }
 .form-control[disabled] {
 	cursor: not-allowed;
-	background-color: #eee;
+	background-color: $input-disabled-bg;
 }
 input.form-control,select.form-control{
 	*margin-top:-1px; *margin-bottom:-1px;
@@ -26,8 +31,8 @@ textarea.form-control{
 	height: auto;
 }
 .form-control:focus{
-	border-color: #66afe9;
 	outline: 0;
+	border-color: $input-focus-color;
 	z-index: $level-item-focus;
 	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
 }
@@ -40,11 +45,11 @@ textarea.form-control{
 .form-placeholder{ color:$input-placeholder-color;}
 
 //禁止textarea横向拖拽调整大小
-.form textarea.form-control,.form-horizontal textarea.form-control{ width:100% !important; display: block;}
-
-.form-control-custom {
-	min-height: $ctrl-height-md;
-	_height: $ctrl-height-md;
+.form textarea.form-control,
+.form-horizontal textarea.form-control{
+	display: block;
+	width:100% !important;
+	resize: vertical;
 }
 
 .form-control-tags{

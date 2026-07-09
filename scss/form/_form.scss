@@ -55,4 +55,14 @@
 		*display: inline;
 		*zoom: 1;
 	}
+	.checkbox-group,.radio-group,
+	.checkbox-group-horizontal,.radio-group-horizontal{
+		display: inline-block;
+		label {
+			display: inline;
+		}
+	}
+	.form-check,.checkbox,.radio {
+		display: inline;
+	}
 }
