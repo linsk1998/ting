@@ -151,7 +151,7 @@ $table-active: #a5a5a5 !default;
 $img-thumbnail-padding: 4px !default;
 $img-thumbnail-rounded: $border-radius !default;
 
-$media-gutters: 10px !default;
+$grid-gutter: 10px !default;
 
 $list-padding-x: 15px !default;
 $list-padding-y: 10px !default;
@@ -207,23 +207,26 @@ $ctrl-fontsize-lg: 16px !default;
 $ctrl-fontsize-sm: 12px !default;
 $ctrl-fontsize-xs: 12px !default;
 
-$ctrl-padding-y-md: 12px !default;
-$ctrl-padding-y-lg: 16px !default;
-$ctrl-padding-y-sm: 10px !default;
-$ctrl-padding-y-xs: 6px !default;
+$ctrl-padding-x-md: 12px !default;
+$ctrl-padding-x-lg: 16px !default;
+$ctrl-padding-x-sm: 10px !default;
+$ctrl-padding-x-xs: 6px !default;
 
 $input-value-color: #555555 !default;
 $input-placeholder-color: #999999 !default;
 $input-disabled-bg: #999999 !default;
-$input-padding-y-md: $ctrl-padding-y-md !default;
-$input-padding-y-lg: $ctrl-padding-y-lg !default;
-$input-padding-y-sm: $ctrl-padding-y-sm !default;
-$input-padding-y-xs: $ctrl-padding-y-xs !default;
+$input-padding-y-md: $ctrl-padding-x-md !default;
+$input-padding-y-lg: $ctrl-padding-x-lg !default;
+$input-padding-y-sm: $ctrl-padding-x-sm !default;
+$input-padding-y-xs: $ctrl-padding-x-xs !default;
+$check-gap-x: 10px !default;
+$check-gap-y: 5px !default;
+$check-padding-x: 0 !default;
 
-$btn-padding-y-md: $ctrl-padding-y-md !default;
-$btn-padding-y-lg: $ctrl-padding-y-lg !default;
-$btn-padding-y-sm: $ctrl-padding-y-sm !default;
-$btn-padding-y-xs: $ctrl-padding-y-xs !default;
+$btn-padding-x-md: $ctrl-padding-x-md !default;
+$btn-padding-x-lg: $ctrl-padding-x-lg !default;
+$btn-padding-x-sm: $ctrl-padding-x-sm !default;
+$btn-padding-x-xs: $ctrl-padding-x-xs !default;
 
 $navbar-height: 50px !default;
 $navbar-toggle-size: 34px !default;

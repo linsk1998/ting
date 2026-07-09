@@ -26,7 +26,7 @@
 .has-feedback{
 	position: relative; *zoom:1;
 	.form-control,.input-control input {
-		padding-right: $ctrl-height-md * 0.5 + 8px + $ctrl-padding-y-md;
+		padding-right: $ctrl-height-md * 0.5 + 8px + $ctrl-padding-x-md;
 	}
 	textarea.form-control{
 		overflow-y: scroll;

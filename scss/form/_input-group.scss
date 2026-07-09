@@ -57,7 +57,7 @@
 	}
 	.form-control{
 		font-size: $ctrl-fontsize-lg;
-		padding:($ctrl-height-lg - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-y-lg;
+		padding:($ctrl-height-lg - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-lg;
 		height: $ctrl-height-lg;
 	}
 	.btn{
@@ -75,7 +75,7 @@
 	}
 	.form-control{
 		font-size: $ctrl-fontsize-sm;
-		padding:($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-y-sm;
+		padding:($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-sm;
 		height: $ctrl-height-sm;
 	}
 	.btn{
@@ -183,7 +183,7 @@
 	}
 }
 .input-sm{
-	padding: 0 $ctrl-padding-y-lg;
+	padding: 0 $ctrl-padding-x-lg;
 }
 
 .input-group-sm,
@@ -198,5 +198,5 @@
 	}
 }
 .input-sm{
-	padding: 0 $ctrl-padding-y-sm;
+	padding: 0 $ctrl-padding-x-sm;
 }

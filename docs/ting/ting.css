@@ -6772,46 +6772,9 @@ textarea.form-control {
   display: block;
 }
 
-.radio label, .checkbox label {
-  font-weight: normal;
-  margin-right: 10px;
-}
-
-.radio input, .checkbox input {
-  vertical-align: middle;
-  margin: 1px 3px 3px;
-  *margin: 0;
-}
-
-.checkbox-inline, .radio-inline {
-  display: inline-block;
-  font-weight: normal;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-@media (-webkit-min-device-pixel-ratio: 0) {
-  .checkbox-inline, .radio-inline {
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-  }
-}
-.checkbox-stack, .radio-stack {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-weight: normal;
-}
-
-.checkbox-inline input, .radio-inline input,
-.checkbox-stack input, .radio-stack input {
-  vertical-align: middle;
-  margin: 1px 3px 3px;
-  *margin: 0;
+.form-control-custom {
+  min-height: 32px;
+  _height: 32px;
 }
 
 .form-control-tags {
@@ -6865,7 +6828,67 @@ button.control-clear {
   display: block;
 }
 
-.form-group {
+.checkbox-group, .radio-group, .checkbox-group-inline, .radio-group-inline {
+  min-height: 32px;
+  _height: 32px;
+  padding: 6px 0 1px;
+}
+.checkbox-group input, .radio-group input, .checkbox-group-inline input, .radio-group-inline input {
+  vertical-align: middle;
+  margin: 1px 3px 3px;
+  *margin: 0;
+}
+
+.checkbox-group label, .radio-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.checkbox-group-inline label, .radio-group-inline label {
+  margin-right: 10px;
+  font-weight: normal;
+}
+.checkbox-group-inline label:last-child, .radio-group-inline label:last-child {
+  margin-right: 0;
+}
+
+.form-check, .checkbox, .radio {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.form-check-inline, .checkbox-inline, .radio-inline {
+  display: inline-block;
+  font-weight: normal;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.form-check-inline:last-child, .checkbox-inline:last-child, .radio-inline:last-child {
+  margin-right: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .checkbox-inline, .radio-inline {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}
+.form-check-input,
+.checkbox input, .radio input,
+.checkbox-inline input, .radio-inline input {
+  vertical-align: middle;
+  margin: 1px 3px 3px;
+  *margin: 0;
+}
+
+.form-group, .control-group {
   line-height: 20px;
 }
 
@@ -6877,7 +6900,7 @@ button.control-clear {
   padding-top: 6px;
 }
 
-.form .form-group {
+.form .form-group, .form .control-group {
   margin-bottom: 20px;
 }
 .form .form-label, .form .control-label {
@@ -6891,12 +6914,12 @@ button.control-clear {
   width: 100%;
 }
 
-.form-horizontal .form-group {
+.form-horizontal .form-group, .form-horizontal .control-group {
   padding-left: 150px;
   margin-bottom: 20px;
   *zoom: 1;
 }
-.form-horizontal .form-group:after {
+.form-horizontal .form-group:after, .form-horizontal .control-group:after {
   display: block;
   content: "";
   height: 0;
@@ -6919,7 +6942,7 @@ button.control-clear {
   font-weight: bold;
 }
 @media (max-width: 991px) {
-  .form-horizontal .form-group {
+  .form-horizontal .form-group, .form-horizontal .control-group {
     padding-left: 0;
   }
   .form-horizontal .form-label, .form-horizontal .control-label {
@@ -6938,28 +6961,9 @@ button.control-clear {
 
 .form-inline {
   position: relative;
-  line-height: 40px;
   *zoom: 1;
 }
-.form-inline .form-control, .form-inline .form-label, .form-inline .control-label {
-  vertical-align: middle;
-}
-.form-inline .input-group {
-  display: inline-block;
-  vertical-align: middle;
-  *display: inline;
-  *zoom: 1;
-}
-.form-inline .input {
-  display: inline-block;
-  vertical-align: middle;
-  *display: inline;
-  *zoom: 1;
-}
-.form-inline .select {
-  display: inline-block;
-}
-.form-inline .form-group {
+.form-inline .form-group, .form-inline .control-group {
   display: inline-block;
   vertical-align: middle;
   margin: 4px 8px 4px 0;
@@ -6971,9 +6975,11 @@ button.control-clear {
   vertical-align: middle;
   margin-right: 4px;
 }
-
-.form textarea.form-control, .form-horizontal textarea.form-control {
-  width: 100% !important;
+.form-inline .input-group, .form-inline .input, .form-inline .select, .form-inline .form-control {
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1;
 }
 
 .form-group-lg .form-label, .form-group-lg .control-label {

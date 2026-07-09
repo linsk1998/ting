@@ -60,19 +60,19 @@
 	}
 }
 @mixin btn-md{
-	@include btn-size($ctrl-height-md,$btn-padding-y-md);
+	@include btn-size($ctrl-height-md,$btn-padding-x-md);
 }
 @mixin btn-lg{
 	font-size: $ctrl-fontsize-lg;
-	@include btn-size($ctrl-height-lg,$btn-padding-y-lg);
+	@include btn-size($ctrl-height-lg,$btn-padding-x-lg);
 }
 @mixin btn-sm{
 	font-size: $ctrl-fontsize-sm;
-	@include btn-size($ctrl-height-sm,$btn-padding-y-sm);
+	@include btn-size($ctrl-height-sm,$btn-padding-x-sm);
 }
 @mixin btn-xs{
 	font-size: $ctrl-fontsize-xs;
-	@include btn-size($ctrl-height-xs,$btn-padding-y-xs);
+	@include btn-size($ctrl-height-xs,$btn-padding-x-xs);
 }
 @mixin btn-round {
 	border-radius: 999px;

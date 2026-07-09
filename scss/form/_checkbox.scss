@@ -1,0 +1,60 @@
+@use '../variables' as *;
+
+$check-padding-top: ($ctrl-height-md - $ctrl-line-height)*.5;
+$check-padding-bottom: $check-padding-top - $check-gap-y;
+
+.checkbox-group, .radio-group, .checkbox-group-inline, .radio-group-inline {
+	min-height: $ctrl-height-md;
+	_height: $ctrl-height-md;
+	padding: $check-padding-top $check-padding-x $check-padding-bottom;
+	input {
+		vertical-align: middle;
+		margin:1px 3px 3px; *margin:0;
+	}
+}
+.checkbox-group, .radio-group {
+	label {
+		display: block;
+		margin-bottom: $check-gap-y;
+		font-weight: normal;
+	}
+}
+.checkbox-group-inline, .radio-group-inline {
+	label {
+		margin-right: $check-gap-x;
+		font-weight: normal;
+	}
+	label:last-child {
+		margin-right: 0;
+	}
+}
+
+
+.form-check,.checkbox,.radio {
+	display: block;
+	margin-top: $check-gap-y;
+	margin-bottom:$check-gap-y;
+	font-weight: normal;
+}
+.form-check-inline,.checkbox-inline,.radio-inline {
+	display:inline-block;
+	font-weight:normal;
+	vertical-align:middle;
+	margin-right:$check-gap-x;
+	&:last-child{
+		margin-right:0;
+	}
+}
+@media (-webkit-min-device-pixel-ratio:0){
+	.checkbox-inline,.radio-inline {
+		display:-webkit-inline-box; display:inline-flex;
+		-webkit-box-align:center; align-items:center;
+		-webkit-box-pack:center; justify-content:center;
+	}
+}
+.form-check-input,
+.checkbox input,.radio input,
+.checkbox-inline input,.radio-inline input{
+	vertical-align: middle;
+	margin:1px 3px 3px; *margin:0;
+}

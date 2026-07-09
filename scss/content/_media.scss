@@ -4,8 +4,8 @@
 .media{
 	@include clearfix;
 }
-.media-left{ margin-right:$media-gutters; _margin-right:$media-gutters - 3px; float:left;}
-.media-right{ margin-left:$media-gutters; _margin-left:$media-gutters - 3px; float:right;}
+.media-left{ margin-right:$grid-gutter; _margin-right:$grid-gutter - 3px; float:left;}
+.media-right{ margin-left:$grid-gutter; _margin-left:$grid-gutter - 3px; float:right;}
 @supports (display:flex) {
 	.media{
 		display:flex;
