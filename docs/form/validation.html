@@ -80,6 +80,7 @@
 				<div class="form-group has-valid">
 					<label class="form-label">Valid</label>
 					<input type="text" class="form-control"/>
+					<div class="feedback-text">校验通过</div>
 				</div>
 				<div class="form-group has-invalid">
 					<label class="form-label">Invalid</label>
@@ -99,6 +100,21 @@
 					<textarea class="form-control"></textarea>
 					<i class="feedback-icon fa">&#xf00d;</i>
 					<p class="feedback-text">Example block-level help text here.</p>
+				</div>
+			</form>
+			<h2 class="page-header">飘浮气泡文字</h2>
+			<form class="form">
+				<div class="form-group has-valid">
+					<label class="form-label">is-valid</label>
+					<input type="text" class="form-control"/>
+					<div class="feedback-tooltip">
+						校验通过
+					</div>
+				</div>
+				<div class="form-group has-invalid">
+					<label class="form-label">is-invalid</label>
+					<input type="text" class="form-control"/>
+					<div class="feedback-tooltip">请输入活动名称</div>
 				</div>
 			</form>
 			<h2 class="page-header">水平表单</h2>
@@ -178,47 +194,6 @@
 					<label class="form-label">form-group-sm</label>
 					<input class="form-control form-control-sm" type="text">
 					<i class="feedback-icon fa">&#xf00d;</i>
-				</div>
-			</form>
-			<h1 class="page-header">控件验证</h1>
-			<form class="form-horizontal ">
-				<div class="form-group has-valid">
-					<label class="form-label">valid</label>
-					<input type="text" class="form-control"/>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">invalid</label>
-					<input type="text" class="form-control"/>
-					<p class="feedback-text">Example block-level help text here.</p>
-				</div>
-			</form>
-			<h2 class="page-header">添加额外的图标</h2>
-			<form class="form-horizontal">
-				<div class="form-group has-feedback-icon has-valid">
-					<label class="form-label">is-valid</label>
-					<input type="text" class="form-control"/>
-					<i class="feedback-icon feedback-text fa">&#xf00c;</i>
-				</div>
-				<div class="form-group has-feedback-icon has-invalid">
-					<label class="form-label">is-invalid</label>
-					<input type="text" class="form-control"/>
-					<i class="feedback-icon feedback-text fa">&#xf00d;</i>
-					<p class="feedback-text">Example block-level help text here.</p>
-				</div>
-			</form>
-			<h1 class="page-header">飘浮气泡文字</h1>
-			<form class="form">
-				<div class="form-group has-valid">
-					<label class="form-label">is-valid</label>
-					<input type="text" class="form-control"/>
-					<div class="feedback-tooltip">
-						校验通过
-					</div>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">is-invalid</label>
-					<input type="text" class="form-control"/>
-					<div class="feedback-tooltip">请输入活动名称</div>
 				</div>
 			</form>
 		</div>

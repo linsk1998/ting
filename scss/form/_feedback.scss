@@ -10,13 +10,13 @@
 }
 .feedback-tooltip{
 	position: absolute;
-	margin-top: 2px;
+	margin-top: $feedback-tooltip-margin-top;
 	max-width: 100%;
-	line-height: 15px;
-	padding: 6px;
+	line-height: $feedback-tooltip-line-height;
+	padding: $feedback-tooltip-padding;
 	z-index: $level-tooltip;
 	@if($enable-rounded) {
-		@include rounded(3px);
+		@include rounded($feedback-tooltip-rounded);
 	}
 }
 
@@ -24,7 +24,7 @@
 .has-feedback-icon{
 	position: relative; *zoom:1;
 	.form-control,.input-control input {
-		padding-right: $ctrl-height-md * 0.5 + 8px + $ctrl-padding-x-md;
+		padding-right: $feedback-icon-padding-x * 2 + $ctrl-padding-x-md;
 	}
 	textarea.form-control{
 		overflow-y: scroll;
@@ -33,7 +33,7 @@
 		right:17px;
 	}
 	.control-clear{
-		right: 24px + 9px;
+		right: $ctrl-height-md;
 	}
 }
 .feedback-icon{
@@ -43,7 +43,7 @@
 	width:$ctrl-height-md;
 	line-height: $ctrl-height-md;
 	text-align: center;
-	font-size:16px;
+	font-size:$feedback-icon-size;
 }
 .form-group-lg .feedback-icon{
 	line-height: $ctrl-height-lg;

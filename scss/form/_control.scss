@@ -98,12 +98,12 @@ button.control-clear{
 	width: 1em;
 	height: 1em;
 	line-height: 1em;
-	right: 9px;
+	right: ($ctrl-height-md - $ctrl-clear-size) * 0.5;
 	top: 50%;
 	margin-top: -.5em;
-	opacity: 0.5;
 	-moz-opacity: 0.5;
-	font-size: 14px;
+	opacity: 0.5;
+	font-size: $ctrl-clear-size;
 	display: none;
 }
 @media \0screen\,screen\9 {

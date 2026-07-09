@@ -23,12 +23,12 @@
 }
 .form-horizontal .form-group-sm{
 	.form-label,.control-label{
-		padding-top: 4px;
+		padding-top: ($ctrl-height-sm - $line-height-base)*.5;
 	}
 }
 .form-horizontal .form-group-lg{
 	.form-label,.control-label{
-		padding-top: 12px;
+		padding-top: ($ctrl-height-lg - $line-height-base)*.5;
 	}
 }
 

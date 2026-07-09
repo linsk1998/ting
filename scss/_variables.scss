@@ -195,6 +195,24 @@ $footer-padding: 30px 0 !default;
 $footer-margin: 16px 0 0 !default;
 
 //=============================== 表单 ======================================
+$form-group-margin-bottom: 20px !default;
+$form-label-margin-bottom: 5px !default;
+$form-horizontal-left: 150px !default;
+$form-horizontal-gutter: 20px !default;
+$form-horizontal-label-align: right !default;
+$form-inline-gutter: 8px !default;
+$form-inline-group-margin-y: 4px !default;
+$form-inline-group-margin: $form-inline-group-margin-y $form-inline-gutter $form-inline-group-margin-y 0 !default;
+$form-inline-group-gutter: 4px !default;
+
+$feedback-icon-size: 16px !default;
+$feedback-icon-padding-x: 8px !default;
+
+$feedback-tooltip-line-height: 15px !default;
+$feedback-tooltip-padding: 6px !default;
+$feedback-tooltip-margin-top: 2px !default;
+$feedback-tooltip-rounded: 3px !default;
+
 $ctrl-height-xl: 40px !default;
 $ctrl-height-lg: 36px !default;
 $ctrl-height-md: 32px !default;
@@ -207,11 +225,11 @@ $ctrl-fontsize-md: 14px !default;
 $ctrl-fontsize-lg: 16px !default;
 $ctrl-fontsize-sm: 12px !default;
 $ctrl-fontsize-xs: 12px !default;
-
 $ctrl-padding-x-md: 12px !default;
 $ctrl-padding-x-lg: 16px !default;
 $ctrl-padding-x-sm: 10px !default;
 $ctrl-padding-x-xs: 6px !default;
+$ctrl-clear-size: 14px !default;
 
 $input-value-color: #555555 !default;
 $input-placeholder-color: #999999 !default;
@@ -221,6 +239,7 @@ $input-padding-y-md: $ctrl-padding-x-md !default;
 $input-padding-y-lg: $ctrl-padding-x-lg !default;
 $input-padding-y-sm: $ctrl-padding-x-sm !default;
 $input-padding-y-xs: $ctrl-padding-x-xs !default;
+
 $check-gap-x: 10px !default;
 $check-gap-y: 5px !default;
 $check-padding-x: 0 !default;

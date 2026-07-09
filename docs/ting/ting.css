@@ -6831,8 +6831,8 @@ button.control-clear {
   right: 9px;
   top: 50%;
   margin-top: -0.5em;
-  opacity: 0.5;
   -moz-opacity: 0.5;
+  opacity: 0.5;
   font-size: 14px;
   display: none;
 }
@@ -6905,10 +6905,6 @@ button.control-clear {
   vertical-align: middle;
   margin: 1px 3px 3px;
   *margin: 0;
-}
-
-.form-group, .control-group {
-  line-height: 20px;
 }
 
 .form-label, .control-label {
@@ -7035,7 +7031,7 @@ button.control-clear {
 }
 
 .form-horizontal .form-group-lg .form-label, .form-horizontal .form-group-lg .control-label {
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 .form-control-lg {
@@ -7086,7 +7082,7 @@ button.control-clear {
   *zoom: 1;
 }
 .has-feedback-icon .form-control, .has-feedback-icon .input-control input {
-  padding-right: 36px;
+  padding-right: 28px;
 }
 .has-feedback-icon textarea.form-control {
   overflow-y: scroll;
@@ -7095,7 +7091,7 @@ button.control-clear {
   right: 17px;
 }
 .has-feedback-icon .control-clear {
-  right: 33px;
+  right: 32px;
 }
 
 .feedback-icon {
