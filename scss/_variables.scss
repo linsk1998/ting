@@ -249,6 +249,18 @@ $btn-padding-x-lg: $ctrl-padding-x-lg !default;
 $btn-padding-x-sm: $ctrl-padding-x-sm !default;
 $btn-padding-x-xs: $ctrl-padding-x-xs !default;
 
+$dropdown-padding-y: 5px !default;
+$dropdown-border-width: $ctrl-border-width !default;
+$dropdown-border-color: $theme-divider !default;
+$dropdown-margin: 2px 0 0;
+$dropdown-min-width: 160px !default;
+$dropdown-item-padding-y: 4px !default;
+$dropdown-item-padding-x: 20px !default;
+$dropdown-item-hover-bg: #f5f5f5 !default;
+$dropdown-item-disabled-bg: #999999 !default;
+$dropdown-item-active-bg: $theme-primary !default;
+$dropdown-item-active-color: #fff !default;
+
 $navbar-height: 50px !default;
 $navbar-toggle-size: 34px !default;
 

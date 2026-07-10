@@ -79,13 +79,20 @@
 			<form class="form">
 				<div class="form-group">
 					<label class="form-label">基本用法</label>
-					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn">
+					<div class="select dropdown">
+						<input type="hidden">
+						<button type="button" class="select-btn" popovertarget="myPop">
 							<span class="select-label">金坷拉</span>
 							<div class="select-icon caret"></div>
 						</button>
 						<button type="button" class="control-clear fa">&#xf057;</button>
+						<ul id="myPop" class="dropdown-menu" popover>
+							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线咨询</button></li>
+							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">领导信箱</button></li>
+							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线访谈</button></li>
+							<li role="separator" class="dropdown-divider"></li>
+							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">网站投稿</button></li>
+						</ul>
 					</div>
 				</div>
 				<div class="form-group">

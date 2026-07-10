@@ -9,9 +9,9 @@
 	margin:0;
 	line-height:$ctrl-line-height;
 	font-size:$ctrl-fontsize-md;
-	border-width:$ctrl-border-width;
-	border-style:solid;
 	text-align:left;
+	border:$ctrl-border-width solid $ctrl-border-color;
+	background:#fff;
 	white-space:nowrap;
 	font-weight:normal;
 	cursor:pointer;
@@ -29,8 +29,9 @@
 	&:focus {
 		z-index: $level-item-focus;
 	}
-	@include btn-default;
-	transition:border-color .2s,background-color .2s,color .2s,box-shadow .2s;
+}
+.select-btn.btn{
+	justify-content: flex-start;
 }
 
 .select-placeholder{
