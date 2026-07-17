@@ -2,15 +2,10 @@
 
 .tag{
 	display: inline-block;
-	display: inline-flex;
 	align-items: center;
 	*zoom: 1;
 	*display: inline;
-	height: $ctrl-height-xs;
 	overflow: hidden;
-	padding: ($ctrl-height-xs - $line-height-base) * .5 6px;
-	font-size: 13px;
-	line-height: 20px;
 	text-align: center;
 	white-space: nowrap;
 	border: 1px solid;
@@ -48,20 +43,41 @@
 	background-color: $danger-bg;
 	border-color:$danger-border;
 }
-
-.tag *{
-	vertical-align: middle;
+$tag-padding-line-height-md: $ctrl-height-md - $ctrl-border-width * 2 - $tags-input-padding-y * 2 - $tag-gap * 2 - $tag-border-width * 2 - $tag-padding-y-md * 2;
+$tag-padding-line-height-lg: $ctrl-height-lg - $ctrl-border-width * 2 - $tags-input-padding-y * 2 - $tag-gap * 2 - $tag-border-width * 2 - $tag-padding-y-lg * 2;
+$tag-padding-line-height-sm: $ctrl-height-sm - $ctrl-border-width * 2 - $tags-input-padding-y * 2 - $tag-gap * 2 - $tag-border-width * 2 - $tag-padding-y-sm * 2;
+.tag{
+	// height: $ctrl-height-md - $ctrl-border-width * 2 - $tags-input-padding-y * 2 - $tag-gap * 2;
+	line-height: $tag-padding-line-height-md;
+	padding: $tag-padding-y-md $tag-padding-x-md;
+	font-size: 13px;
 }
-
 .tag-lg{
-	padding: ($ctrl-height-xs - $line-height-base) * .5 + 3px 9px;
-	height: 30px;
+	line-height: $tag-padding-line-height-lg;
+	padding: $tag-padding-y-lg $tag-padding-x-lg;
 	font-size: 14px;
 }
 
 .tag-sm{
-	padding: ($ctrl-height-xs - $line-height-base) * .5 - 3px 3px;
-	height: 18px;
-	line-height: 16px;
+	line-height: $tag-padding-line-height-sm;
+	padding: $tag-padding-y-sm $tag-padding-x-sm;
+	line-height: 18px;
+	font-size: 12px;
+}
+.tag *{
+	display: inline-block;
+	vertical-align: top;
+}
+.tag .close{
+	padding: 0;
+	height: $tag-padding-line-height-md;
+	font-size: 13px;
+}
+.tag-lg .close{
+	height: $tag-padding-line-height-lg;
+	font-size: 14px;
+}
+.tag-sm .close{
+	height: $tag-padding-line-height-sm;
 	font-size: 12px;
 }

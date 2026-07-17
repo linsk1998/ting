@@ -1,0 +1,77 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.tags-input {
+	padding: $tags-input-padding-y $tags-input-padding-x;
+	background-color: #fff;
+	border: 1px solid $ctrl-border-color;
+	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+	position: relative;
+}
+.tags-input-placeholder{
+	padding:($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-md;
+	color:$input-placeholder-color;
+	@include user-select(none);
+}
+.tags-input-nowrap {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+}
+.tags-input-wrap {
+	@include clearfix;
+	.tag {
+		float: left;
+	}
+}
+.tags-input input {
+	display: block;
+	width: 100%;
+	height: $ctrl-height-md - $ctrl-border-width * 2 - $tags-input-padding-y * 2;
+	padding: ($ctrl-height-md - $ctrl-border-width * 2 - $tags-input-padding-y * 2 - $ctrl-line-height) * 0.5 0;
+	padding-left: $tags-input-gutter;
+	line-height: $ctrl-line-height;
+	border: 0 none;
+	background: none;
+	*margin-top: -1px;
+	*margin-bottom: -1px;
+	outline: 0;
+	@include placeholder($input-placeholder-color);
+}
+.tags-input {
+	min-height: $ctrl-height-md;
+	_height: $ctrl-height-md;
+}
+.tags-input-sm {
+	min-height: $ctrl-height-sm;
+	_height: $ctrl-height-sm;
+}
+.tags-input-lg {
+	min-height: $ctrl-height-lg;
+	_height: $ctrl-height-lg;
+}
+@supports(display: contents){
+	.tags-input {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.tags-input-wrap {
+		display: contents;
+		&::after {
+			content: '';
+			display: none;
+		}
+	}
+	.tags-input-nowrap {
+		width: auto;
+	}
+	.tags-input input{
+		flex: 1;
+		width: auto;
+		min-width: 4em;
+	}
+}
+.tags-input .feedback-icon{
+	line-height: $ctrl-height-md - 2*$ctrl-border-width;
+}

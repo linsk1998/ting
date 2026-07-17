@@ -67,3 +67,10 @@
 		display: inline;
 	}
 }
+@supports (align-items: stretch) {
+	.form-inline{
+		.input-group,.input {
+			display: inline-flex;
+		}
+	}
+}

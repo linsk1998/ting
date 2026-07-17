@@ -4,11 +4,11 @@
 @use '../functions' as *;
 
 
-html .has-valid{
+.has-valid{
 	.feedback-icon,.feedback-text,.help-block{
 		color:$success;
 	}
-	.form-control,.input,.select-btn{
+	.form-control,.input,.tags-input,.select-btn{
 		border-color:$success;
 	}
 	.feedback-tooltip{
@@ -16,11 +16,11 @@ html .has-valid{
 		background: rgba($success, .9);
 	}
 }
-html .has-invalid{
+.has-invalid{
 	.feedback-icon,.feedback-text,.help-block{
 		color:$danger;
 	}
-	.form-control,.input,.select-btn{
+	.form-control,.input,.tags-input,.select-btn{
 		border-color:$danger;
 	}
 	.feedback-tooltip{

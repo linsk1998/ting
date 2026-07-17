@@ -151,7 +151,7 @@ $table-active: #a5a5a5 !default;
 $img-thumbnail-padding: 4px !default;
 $img-thumbnail-rounded: $border-radius !default;
 
-$grid-gutter: 10px !default;
+$media-gutter: 10px !default;
 
 $list-padding-x: 15px !default;
 $list-padding-y: 10px !default;
@@ -235,6 +235,7 @@ $input-value-color: #555555 !default;
 $input-placeholder-color: #999999 !default;
 $input-disabled-bg: #eeeeee !default;
 $input-focus-color: #66afe9 !default;
+$input-gutter: 4px !default;
 $input-padding-y-md: $ctrl-padding-x-md !default;
 $input-padding-y-lg: $ctrl-padding-x-lg !default;
 $input-padding-y-sm: $ctrl-padding-x-sm !default;
@@ -248,6 +249,19 @@ $btn-padding-x-md: $ctrl-padding-x-md !default;
 $btn-padding-x-lg: $ctrl-padding-x-lg !default;
 $btn-padding-x-sm: $ctrl-padding-x-sm !default;
 $btn-padding-x-xs: $ctrl-padding-x-xs !default;
+
+$tags-input-padding-y: 2px !default;
+$tags-input-padding-x: 2px !default;
+$tags-input-gutter: 4px !default;
+$tag-gap: 1px !default;
+$tag-border-width: 1px !default;
+$tag-padding-y-md: 2px !default;
+$tag-padding-x-md: 6px !default;
+$tag-padding-y-lg: 4px !default;
+$tag-padding-x-lg: 8px !default;
+$tag-padding-y-sm: 0px !default;
+$tag-padding-x-sm: 4px !default;
+
 
 $dropdown-padding-y: 5px !default;
 $dropdown-border-width: $ctrl-border-width !default;
