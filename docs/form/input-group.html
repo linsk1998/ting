@@ -80,14 +80,14 @@
 				<div class="input-group">
 					<div class="input-group-prepend input-group-text" id="basic-addon1">@</div>
 					<div class="input-group-body">
-						<input type="text" class="input" placeholder="Username" aria-describedby="basic-addon1">
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 					</div>
 				</div>
 				<br/>
 				<div class="input-group">
 					<div class="input-group-append input-group-text" id="basic-addon2">@example.com</div>
 					<div class="input-group-body">
-						<input type="text" class="input" placeholder="Recipient's username" aria-describedby="basic-addon2"/>
+						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"/>
 					</div>
 				</div>
 				<br/>
@@ -96,7 +96,7 @@
 					<div class="input-group-append input-group-text">.00</div>
 					<!--控件需要放在最后-->
 					<div class="input-group-body">
-						<input type="text" class="input" aria-label="Amount (to the nearest dollar)"/>
+						<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
 					</div>
 				</div>
 				<br/>
@@ -104,7 +104,7 @@
 				<div class="input-group">
 					<div class="input-group-prepend input-group-text" id="basic-addon3">https://example.com/users/</div>
 					<div class="input-group-body">
-						<input type="text" class="input" id="basic-url" aria-describedby="basic-addon3"/>
+						<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
 					</div>
 				</div>
 				<br/>
@@ -115,7 +115,7 @@
 							<button class="input-group-prepend btn btn-default" type="button">搜索</button>
 							<button class="input-group-append btn btn-primary" type="button">搜索</button>
 							<div class="input-group-body">
-								<input type="text" class="input" placeholder="关键词"/>
+								<input type="text" class="form-control" placeholder="关键词"/>
 							</div>
 						</div>
 					</div>
@@ -130,111 +130,23 @@
 								<button type="button" class="btn btn-primary">按钮 2</button>
 							</div>
 							<div class="input-group-body">
-								<input type="text" class="input" placeholder="关键词"/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<br/>
-				<label>前缀后缀</label>
-				<div class="input-group">
-					<div class="input-group-prepend">
-						<div class="input-group-text">
-							█
-						</div>
-					</div>
-					<div class="input-group-append">
-						<div class="input-group-text">
-							元
-						</div>
-					</div>
-					<!--控件需要放在最后-->
-					<div class="input-group-body">
-						<input type="text" class="input"/>
-					</div>
-				</div>
-				<br/>
-				<label>前缀后缀</label>
-				<div class="input">
-					<div class="input-prefix">
-						<span class="vertical-align-middle">█</span>
-						<img src="../images/logo.png" width="16" height="16">
-						<span class="line-middle"></span>
-					</div>
-					<div class="input-suffix">
-						<span class="line-middle"></span>
-						<i class="icon fa">&#xf133;</i>
-						<span class="input-counter">0/111</span>
-					</div>
-					<!--控件需要放在最后-->
-					<div class="input-body">
-						<input type="text"/>
-					</div>
-				</div>
-				<br/>
-				<label>前缀后缀</label>
-				<div class="input-group">
-					<div class="input-group-prepend">
-						<div class="input-group-text">
-							█
-						</div>
-					</div>
-					<div class="input-group-append">
-						<div class="input-group-text">
-							元
-						</div>
-					</div>
-					<div class="input-group-body">
-						<div class="input">
-							<div class="input-prefix">
-								<span class="vertical-align-middle">█</span>
-								<img src="../images/logo.png" width="16" height="16">
-								<span class="line-middle"></span>
-							</div>
-							<div class="input-suffix">
-								<span class="line-middle"></span>
-								<i class="icon fa">&#xf133;</i>
-								<span class="input-counter">0/111</span>
-							</div>
-							<!--控件需要放在最后-->
-							<div class="input-body">
-								<input type="text"/>
+								<input type="text" class="form-control" placeholder="关键词"/>
 							</div>
 						</div>
 					</div>
 				</div>
 			</form>
 			<h2 class="page-header">清空图标</h2>
-			<label>前缀后缀</label>
 			<div class="input-group">
-				<div class="input-group-prepend input-group-text" id="basic-addon1">@</div>
+				<div class="input-group-prepend input-group-text">@</div>
 				<div class="input-group-body"
-					><input type="text" class="input" placeholder="Username" aria-describedby="basic-addon1"
-					><button type="button" class="control-clear fa">&#xf057;</button
-				></div>
-			</div>
-			<br/>
-			<div class="input">
-				<div class="input-prefix">
-					<span class="vertical-align-middle">█</span>
-					<img src="../images/logo.png" width="16" height="16">
-					<span class="line-middle"></span>
-				</div>
-				<div class="input-suffix">
-					<span class="line-middle"></span>
-					<i class="icon fa">&#xf133;</i>
-					<span class="input-counter">0/111</span>
-				</div>
-				<!--控件需要放在最后-->
-				<div class="input-body"
-					><input type="text"
+					><input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"
 					><button type="button" class="control-clear fa">&#xf057;</button
 				></div>
 			</div>
 			<h2 class="page-header">置灰状态</h2>
-			<form class="form-horizontal">
+			<form class="form">
 				<div class="form-group">
-					<label class="form-label">Disabled</label>
 					<div class="input-group">
 						<div class="input-group-prepend">
 							<div class="input-group-text">
@@ -247,39 +159,7 @@
 						</div>
 						<!--控件需要放在最后-->
 						<div class="input-group-body">
-							<input type="text" class="input input-disabled" disabled/>
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">Disabled</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append">
-							<button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
-							<button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
-						</div>
-						<div class="input-group-body">
-							<div class="input input-disabled">
-								<div class="input-prefix">
-									<span class="vertical-align-middle">█</span>
-									<img src="../images/logo.png" width="16" height="16">
-									<span class="line-middle"></span>
-								</div>
-								<div class="input-suffix">
-									<span class="line-middle"></span>
-									<i class="icon fa">&#xf133;</i>
-									<span class="input-counter">0/111</span>
-								</div>
-								<!--控件需要放在最后-->
-								<div class="input-body">
-									<input type="text" disabled/>
-								</div>
-							</div>
+							<input type="text" class="form-control" disabled/>
 						</div>
 					</div>
 				</div>
@@ -288,7 +168,7 @@
 			<form class="form-inline"
 				><div class="form-group">
 					<label class="form-label" for="exampleInputName2">Name</label>
-					<input style="width:160px;" type="text" class="input" id="exampleInputName2" placeholder="Jane Doe">
+					<input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
 				</div
 				><div class="form-group">
 					<label class="form-label" for="exampleInputEmail2">Email</label>
@@ -299,77 +179,13 @@
 							</div>
 						</div>
 						<div class="input-group-body">
-							<input type="text" class="input"/>
-						</div>
-					</div>
-				</div
-				><div class="form-group">
-					<label class="form-label" for="exampleInputEmail2">Cash</label>
-					<div style="width:200px" class="input">
-						<div class="input-prefix">
-							<span class="vertical-align-middle">█</span>
-							<span class="line-middle"></span>
-						</div>
-						<div class="input-suffix">
-							<span class="line-middle"></span>
-							<span class="vertical-align-middle">元</span>
-							<span class="input-counter">0/20</span>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-body">
-							<input type="text"/>
-						</div>
-					</div>
-				</div
-				><div class="form-group">
-					<label class="form-label" for="exampleInputEmail2">Page</label>
-					<div style="width:300px;" class="input-group">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								http://
-							</div>
-						</div>
-						<div class="input-group-body">
-							<div class="input">
-								<div class="input-prefix">
-									<span class="vertical-align-middle">www.</span>
-									<span class="line-middle"></span>
-								</div>
-								<div class="input-suffix">
-									<span class="line-middle"></span>
-									<span class="vertical-align-middle">.com</span>
-									<span class="input-counter">0/20</span>
-								</div>
-								<!--控件需要放在最后-->
-								<div class="input-body">
-									<input type="text"/>
-								</div>
-							</div>
+							<input type="text" class="form-control"/>
 						</div>
 					</div>
 				</div
 			></form>
 			<h2 class="page-header">组件大小</h2>
 			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="form-label">input-lg</label>
-					<div class="input input-lg">
-						<div class="input-prefix">
-							<span class="vertical-align-middle">█</span>
-							<img src="../images/logo.png" width="16" height="16">
-							<span class="line-middle"></span>
-						</div>
-						<div class="input-suffix">
-							<span class="line-middle"></span>
-							<i class="icon fa">&#xf133;</i>
-							<span class="input-counter">0/111</span>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-body">
-							<input type="text"/>
-						</div>
-					</div>
-				</div>
 				<div class="form-group">
 					<label class="form-label">input-group-lg</label>
 					<div class="input-group input-group-lg">
@@ -385,26 +201,7 @@
 						</div>
 						<!--控件需要放在最后-->
 						<div class="input-group-body">
-							<input type="text" class="input"/>
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">input-sm</label>
-					<div class="input input-sm">
-						<div class="input-prefix">
-							<span class="vertical-align-middle">█</span>
-							<img src="../images/logo.png" width="16" height="16">
-							<span class="line-middle"></span>
-						</div>
-						<div class="input-suffix">
-							<span class="line-middle"></span>
-							<i class="icon fa">&#xf133;</i>
-							<span class="input-counter">0/111</span>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-body">
-							<input type="text"/>
+							<input type="text" class="form-control form-control-lg"/>
 						</div>
 					</div>
 				</div>
@@ -423,7 +220,45 @@
 						</div>
 						<!--控件需要放在最后-->
 						<div class="input-group-body">
-							<input type="text" class="input"/>
+							<input type="text" class="form-control form-control-sm"/>
+						</div>
+					</div>
+				</div>
+				<div class="form-group form-group-lg">
+					<label class="form-label">form-group-lg</label>
+					<div class="input-group input-group-lg">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								█
+							</div>
+						</div>
+						<div class="input-group-append">
+							<div class="input-group-text">
+								元
+							</div>
+						</div>
+						<!--控件需要放在最后-->
+						<div class="input-group-body">
+							<input type="text" class="form-control"/>
+						</div>
+					</div>
+				</div>
+				<div class="form-group form-group-sm">
+					<label class="form-label">form-group-sm</label>
+					<div class="input-group input-group-sm">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								█
+							</div>
+						</div>
+						<div class="input-group-append">
+							<div class="input-group-text">
+								元
+							</div>
+						</div>
+						<!--控件需要放在最后-->
+						<div class="input-group-body">
+							<input type="text" class="form-control"/>
 						</div>
 					</div>
 				</div>
@@ -431,31 +266,48 @@
 			<h2 class="page-header">校验</h2>
 			<form class="form-horizontal">
 				<div class="form-group has-valid has-feedback-icon">
-					<label class="form-label">Success</label>
-					<input type="text" class="input"/>
-					<i class="feedback-icon fa">&#xf00c;</i>
-					<p class="form-text">Example block-level help text here.</p>
-				</div>
-				<div class="form-group has-invalid has-feedback-icon">
-					<label class="form-label">Error</label>
-					<div class="input">
-						<div class="input-prefix">
-							<span class="vertical-align-middle">█</span>
-							<img src="../images/logo.png" width="16" height="16">
-							<span class="line-middle"></span>
+					<label class="form-label">has-valid</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								█
+							</div>
 						</div>
-						<div class="input-suffix">
-							<i class="icon fa">&#xf133;</i>
-							<span class="line-middle"></span>
+						<div class="input-group-append">
+							<div class="input-group-text">
+								元
+							</div>
 						</div>
 						<!--控件需要放在最后-->
-						<div class="input-body">
-							<input type="text"/>
+						<div class="input-group-body">
+							<input type="text" class="form-control"/>
+							<button type="button" class="control-clear fa">&#xf057;</button>
+							<i class="feedback-icon fa">&#xf00c;</i>
+						</div>
+					</div>
+					<p class="feedback-text">Example block-level help text here.</p>
+				</div>
+				<div class="form-group has-invalid has-feedback-icon">
+					<label class="form-label">has-invalid</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								█
+							</div>
+						</div>
+						<div class="input-group-append">
+							<div class="input-group-text">
+								元
+							</div>
+						</div>
+						<!--控件需要放在最后-->
+						<div class="input-group-body">
+							<input type="text" class="form-control"/>
 							<button type="button" class="control-clear fa">&#xf057;</button>
 							<i class="feedback-icon fa">&#xf00d;</i>
 						</div>
 					</div>
-					<p class="form-text">Example block-level help text here.</p>
+					<p class="feedback-text">Example block-level help text here.</p>
 				</div>
 			</form>
 		</div><!-- InstanceEndEditable -->

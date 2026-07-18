@@ -75,11 +75,13 @@
 }
 
 .select-loading{
+	.select-btn {
+		cursor:wait;
+	}
 	.select-icon{
 		filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40);
 		opacity:.4;
 	}
-	cursor:wait;
 }
 
 .select .control-clear{
@@ -89,13 +91,6 @@
 
 .select:hover>.control-clear {
 	display: block;
-}
-
-html .was-validated .is-invalid .select-btn{
-	border-color:$danger;
-}
-html .was-validated .is-valid .select-btn{
-	border-color:$success;
 }
 
 .has-feedback-icon{

@@ -9,8 +9,11 @@
 	position: relative;
 }
 .tags-input-placeholder{
-	padding:($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-md;
+	padding:($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height)*.5 - $tags-input-padding-y $ctrl-padding-x-md - $tags-input-padding-x;
 	color:$input-placeholder-color;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
 	@include user-select(none);
 }
 .tags-input-nowrap {
@@ -38,15 +41,31 @@
 	outline: 0;
 	@include placeholder($input-placeholder-color);
 }
+.tags-input-disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	background-color: $input-disabled-bg;
+	.tags-input-placeholder {
+		color: transparent;
+	}
+	input {
+		@include placeholder(transparent);
+	}
+	&:hover>.control-clear, .control-clear {
+		display: none;
+	}
+}
 .tags-input {
 	min-height: $ctrl-height-md;
 	_height: $ctrl-height-md;
 }
-.tags-input-sm {
+.tags-input-sm,
+.form-group-sm .tags-input {
 	min-height: $ctrl-height-sm;
 	_height: $ctrl-height-sm;
 }
-.tags-input-lg {
+.tags-input-lg,
+.form-group-lg .tags-input {
 	min-height: $ctrl-height-lg;
 	_height: $ctrl-height-lg;
 }
@@ -72,6 +91,15 @@
 		min-width: 4em;
 	}
 }
+.has-feedback-icon .tags-input{
+	padding-right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-padding-x-md;
+}
 .tags-input .feedback-icon{
+	padding-right: $feedback-icon-width * .5 - $feedback-icon-size * .5 - $tags-input-padding-x;
 	line-height: $ctrl-height-md - 2*$ctrl-border-width;
+}
+.tags-input-disabled {
+	.close {
+		display: none;
+	}
 }

@@ -2,13 +2,15 @@
 @use 'functions' as *;
 
 //=============================== 全局公用 ======================================
+$enable-rounded: false !default; // 保持圆角开启
+$enable-feedback-icon: true !default; // 保持反馈图标开启
+
 $margin-base: 10px !default;
 $padding-base: 8px 15px !default;
 
 $font-size-base: 14px !default;
 $line-height-base: 20px !default;
 
-$enable-rounded: false !default; // 保持圆角开启
 $border-radius: 6px !default; // 将基础圆角从 0.25rem 改为 0.5rem
 $border-radius-lg: 12px !default; // 同时调整大号圆角
 $border-radius-sm: 4px !default; // 以及小号圆角
@@ -205,14 +207,6 @@ $form-inline-group-margin-y: 4px !default;
 $form-inline-group-margin: $form-inline-group-margin-y $form-inline-gutter $form-inline-group-margin-y 0 !default;
 $form-inline-group-gutter: 4px !default;
 
-$feedback-icon-size: 16px !default;
-$feedback-icon-padding-x: 8px !default;
-
-$feedback-tooltip-line-height: 15px !default;
-$feedback-tooltip-padding: 6px !default;
-$feedback-tooltip-margin-top: 2px !default;
-$feedback-tooltip-rounded: 3px !default;
-
 $ctrl-height-xl: 40px !default;
 $ctrl-height-lg: 36px !default;
 $ctrl-height-md: 32px !default;
@@ -230,25 +224,36 @@ $ctrl-padding-x-lg: 16px !default;
 $ctrl-padding-x-sm: 10px !default;
 $ctrl-padding-x-xs: 6px !default;
 $ctrl-clear-size: 14px !default;
-
-$input-value-color: #555555 !default;
-$input-placeholder-color: #999999 !default;
-$input-disabled-bg: #eeeeee !default;
-$input-focus-color: #66afe9 !default;
-$input-gutter: 4px !default;
-$input-padding-y-md: $ctrl-padding-x-md !default;
-$input-padding-y-lg: $ctrl-padding-x-lg !default;
-$input-padding-y-sm: $ctrl-padding-x-sm !default;
-$input-padding-y-xs: $ctrl-padding-x-xs !default;
-
-$check-gap-x: 10px !default;
-$check-gap-y: 5px !default;
-$check-padding-x: 0 !default;
+$ctrl-clear-right: ($ctrl-height-md - $ctrl-clear-size) * 0.5 !default;
 
 $btn-padding-x-md: $ctrl-padding-x-md !default;
 $btn-padding-x-lg: $ctrl-padding-x-lg !default;
 $btn-padding-x-sm: $ctrl-padding-x-sm !default;
 $btn-padding-x-xs: $ctrl-padding-x-xs !default;
+
+$feedback-icon-size: 16px !default;
+$feedback-icon-width: $ctrl-height-md !default;
+
+$feedback-tooltip-line-height: 15px !default;
+$feedback-tooltip-padding: 6px !default;
+$feedback-tooltip-margin-top: 2px !default;
+$feedback-tooltip-rounded: 3px !default;
+
+$input-value-color: #555555 !default;
+$input-placeholder-color: #999999 !default;
+$input-disabled-bg: #eeeeee !default;
+$input-focus-color: #66afe9 !default;
+$input-padding-y-md: $ctrl-padding-x-md !default;
+$input-padding-y-lg: $ctrl-padding-x-lg !default;
+$input-padding-y-sm: $ctrl-padding-x-sm !default;
+$input-counter-fontsize: 12px !default;
+$input-addon-size: 14px !default;
+$input-addon-gap: ($ctrl-height-md - $input-addon-size) * 0.5 !default;
+$input-has-feedback-padding-right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-padding-x-md - $ctrl-border-width;
+
+$check-gap-x: 10px !default;
+$check-gap-y: 5px !default;
+$check-padding-x: 0 !default;
 
 $tags-input-padding-y: 2px !default;
 $tags-input-padding-x: 2px !default;

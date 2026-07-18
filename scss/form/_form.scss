@@ -35,6 +35,12 @@
 		}
 	}
 }
+.form, .form-horizontal {
+	textarea.form-control {
+		height: auto;
+		resize: vertical;
+	}
+}
 .form-inline{
 	position: relative;
 	*zoom: 1;

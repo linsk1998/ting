@@ -24,8 +24,11 @@
 input.form-control,select.form-control{
 	*margin-top:-1px; *margin-bottom:-1px;
 }
-textarea.form-control{
-	height: auto;
+select.form-control{
+	&::-ms-expand{ border:0; background-color:transparent;}
+}
+textarea.form-control {
+	min-height: $ctrl-height-md;
 }
 .form-control:focus{
 	outline: 0;
@@ -33,35 +36,7 @@ textarea.form-control{
 	z-index: $level-item-focus;
 }
 .form-control{
-	&::-moz-placeholder{ color:$input-placeholder-color; opacity:1;}
-	&::-webkit-input-placeholder{ color:$input-placeholder-color;}
-	&:-ms-input-placeholder{ color:$input-placeholder-color;}
-	&::-ms-expand{ border:0; background-color:transparent;}
-}
-
-//禁止textarea横向拖拽调整大小
-.form textarea.form-control,
-.form-horizontal textarea.form-control{
-	display: block;
-	resize: vertical;
-	width:100% !important;
-	min-height: $ctrl-height-md;
-}
-.form textarea.form-control-lg,.form-horizontal textarea.form-control-lg,
-.form .form-group-lg textarea.form-control,.form-horizontal .form-group-lg textarea.form-control {
-	min-height: $ctrl-height-lg;
-}
-.form textarea.form-control-xl,.form-horizontal textarea.form-control-xl,
-.form .form-group-xl textarea.form-control,.form-horizontal .form-group-xl textarea.form-control {
-	min-height: $ctrl-height-xl;
-}
-.form textarea.form-control-sm,.form-horizontal textarea.form-control-sm,
-.form .form-group-sm textarea.form-control,.form-horizontal .form-group-sm textarea.form-control {
-	min-height: $ctrl-height-sm;
-}
-.form textarea.form-control-xs,.form-horizontal textarea.form-control-xs,
-.form .form-group-xs textarea.form-control,.form-horizontal .form-group-xs textarea.form-control {
-	min-height: $ctrl-height-xs;
+	@include placeholder($input-placeholder-color);
 }
 
 button.control-clear{
@@ -82,18 +57,12 @@ button.control-clear{
 	width: 1em;
 	height: 1em;
 	line-height: 1em;
-	right: ($ctrl-height-md - $ctrl-clear-size) * 0.5;
+	right: $ctrl-clear-right;
 	top: 50%;
 	margin-top: -.5em;
-	-moz-opacity: 0.5;
-	opacity: 0.5;
+	@include opacity(0.5);
 	font-size: $ctrl-clear-size;
 	display: none;
-}
-@media \0screen\,screen\9 {
-	.control-clear {
-		filter: alpha(opacity=50);
-	}
 }
 :hover>.control-clear {
 	display: block;

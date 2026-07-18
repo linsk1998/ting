@@ -5,20 +5,10 @@
 	.form-label,.control-label{
 		font-size: $ctrl-fontsize-lg;
 	}
-	.form-control{
-		font-size: $ctrl-fontsize-lg;
-		padding:($ctrl-height-lg - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-lg;
-		height: $ctrl-height-lg;
-	}
 }
 .form-group-sm{
 	.form-label,.control-label{
 		font-size: $ctrl-fontsize-sm;
-	}
-	.form-control{
-		font-size: $ctrl-fontsize-sm;
-		padding:($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-sm;
-		height: $ctrl-height-sm;
 	}
 }
 .form-horizontal .form-group-sm{
@@ -31,25 +21,30 @@
 		padding-top: ($ctrl-height-lg - $line-height-base)*.5;
 	}
 }
-
-.form-control-lg{
-	font-size: $ctrl-fontsize-lg;
-	padding:($ctrl-height-lg - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-lg;
+.form-group-sm{
+	.form-control{
+		font-size: $ctrl-fontsize-sm;
+		padding:($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-sm;
+	}
 }
-.form-control-lg{
+
+.form-control-lg,
+.form-group-lg .form-control{
+	font-size: $ctrl-fontsize-lg;
+	padding: ($ctrl-height-lg - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-lg;
 	height: $ctrl-height-lg;
 }
-.form-control-sm{
+.form-control-sm,
+.form-group-sm .form-control{
 	font-size: $ctrl-fontsize-sm;
-	padding:($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-sm;
-}
-.form-control-sm{
+	padding: ($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-sm;
 	height: $ctrl-height-sm;
 }
-.form-control-xs{
-	font-size: $ctrl-fontsize-xs;
-	padding:($ctrl-height-xs - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-xs;
+textarea.form-control-lg,
+.form-group-sm textarea.form-control{
+	min-height: $ctrl-height-lg;
 }
-.form-control-xs{
-	height: $ctrl-height-xs;
+textarea.form-control-sm,
+.form-group-sm textarea.form-control{
+	min-height: $ctrl-height-sm;
 }

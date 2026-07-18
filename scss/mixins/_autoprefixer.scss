@@ -28,3 +28,10 @@
 	&::-webkit-input-placeholder{ color:$color;}
 	&:-ms-input-placeholder{ color:$color;}
 }
+@mixin opacity($value){
+	-moz-opacity:$value;
+	opacity:$value;
+	@media \0screen\,screen\9 {
+		filter: alpha(opacity=#{$value*100});
+	}
+}
