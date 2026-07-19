@@ -75,86 +75,73 @@
 		</header>
 		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">基础控件</h1>
+			<h1 class="page-header">单选和多选</h1>
 			<form class="form">
 				<div class="form-group">
-					<label class="form-label" for="email">普通文本</label>
-					<input type="email" class="form-control" name="email" placeholder="Enter email">
-				</div>
-				<div class="form-group">
-					<label class="form-label" for="password">密码</label>
-					<input type="password" class="form-control" name="password" placeholder="Password">
-					<p class="form-text">Example block-level help text here.</p>
-				</div>
-				<div class="form-group">
-					<label class="form-label">置灰状态</label>
-					<input type="text" class="form-control input-disabled" disabled>
-				</div>
-				<div class="form-group">
-					<label class="form-label" for="attachment">上传</label>
-					<input type="file" name="attachment">
-				</div>
-				<div class="form-group">
 					<label class="form-label">多选</label>
-					<div>
-						<label class="form-check"><input type="checkbox">Check me out</label>
-						<label class="form-check"><input type="checkbox">同时可以选我</label>
-						<label class="form-check"><input type="checkbox">还可以选我</label>
+					<div class="checkbox-group">
+						<label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+						<label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+						<label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">多选水平布局</label>
+					<div class="checkbox-group-horizontal">
+						<label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+						<label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+						<label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">多选置灰</label>
+					<div class="checkbox-group-horizontal">
+						<label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+						<label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+						<label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label">多选校验</label>
+					<div class="checkbox-group-horizontal has-invalid">
+						<label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+						<label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+						<label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+						<label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+						<label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+						<label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">单选</label>
-					<div>
-						<label class="form-check"><input type="radio" name="radio">Check me out</label>
-						<label class="form-check"><input type="radio" name="radio">同时可以选我</label>
-						<label class="form-check"><input type="radio" name="radio">还可以选我</label>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">水平布局多选</label>
-					<div>
-						<label class="form-check form-check-inline"><input type="checkbox">Check me out</label>
-						<label class="form-check form-check-inline"><input type="checkbox">同时可以选我</label>
-						<label class="form-check form-check-inline"><input type="checkbox">还可以选我</label>
+					<div class="radio-group">
+						<label><div class="radio"><input type="radio" name="radio"></div>默认状态</label>
+						<label><div class="radio radio-checked"><input type="radio" name="radio"></div>选中</label>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="form-label">水平布局单选</label>
-					<div>
-						<label class="form-check form-check-inline"><input type="radio" name="radio">Check me out</label>
-						<label class="form-check form-check-inline"><input type="radio" name="radio">同时可以选我</label>
-						<label class="form-check form-check-inline"><input type="radio" name="radio">还可以选我</label>
+					<div class="radio-group-horizontal">
+						<label><div class="radio"><input type="radio" name="radio"></div>默认状态</label>
+						<label><div class="radio radio-checked"><input type="radio" name="radio"></div>选中</label>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="form-label">文本域</label>
-					<textarea class="form-control" rows="3"></textarea>
+					<label class="form-label">单选置灰</label>
+					<div class="radio-group-horizontal">
+						<label><div class="radio radio-disabled"><input type="radio" name="radio" disabled></div>默认状态</label>
+						<label><div class="radio radio-checked radio-disabled"><input type="radio" name="radio" disabled></div>选中</label>
+					</div>
 				</div>
 				<div class="form-group">
-					<label class="form-label">置灰状态</label>
-					<textarea class="form-control input-disabled" rows="3" disabled></textarea>
+					<label class="form-label">单选校验</label>
+					<div class="radio-group-horizontal has-invalid">
+						<label><div class="radio"><input type="radio" name="radio"></div>默认状态</label>
+						<label><div class="radio radio-checked"><input type="radio" name="radio"></div>选中</label>
+						<label><div class="radio radio-disabled"><input type="radio" name="radio" disabled></div>默认状态</label>
+						<label><div class="radio radio-checked radio-disabled"><input type="radio" name="radio" disabled></div>选中</label>
+					</div>
 				</div>
-				<div class="form-group">
-					<label class="form-label">下拉</label>
-					<select class="form-control">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label class="form-label">置灰状态</label>
-					<select class="form-control input-disabled" disabled>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-					</select>
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
 		</div>
 		<!-- InstanceEndEditable -->

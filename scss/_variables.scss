@@ -272,6 +272,13 @@ $select-addon-gap: ($ctrl-height-md - $select-addon-size) * 0.5 !default;
 $check-gap-x: 10px !default;
 $check-gap-y: 5px !default;
 $check-padding-x: 0 !default;
+$checkbox-size: 14px !default;
+$checkbox-gap: 4px !default;
+$checkbox-border-color: $ctrl-border-color !default;
+$checkbox-border-width: $ctrl-border-width !default;
+$checkbox-disabled-bg: $input-disabled-bg !default;
+$checkbox-disabled-color: #bbb !default;
+$checkbox-disabled-border-color: $ctrl-border-color !default;
 
 $tags-input-padding-y: 2px !default;
 $tags-input-padding-x: 2px !default;

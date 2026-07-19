@@ -1,5 +1,6 @@
 @use 'sass:color';
 @use "sass:meta";
+@use "sass:math";
 
 @function type-of($value) {
 	@return meta.type-of($value);
@@ -23,4 +24,7 @@
 
 @function mix($color1, $color2, $weight: 50%) {
 	@return color.mix($color1, $color2, $weight);
+}
+@function ceil($number) {
+	@return math.ceil($number);
 }

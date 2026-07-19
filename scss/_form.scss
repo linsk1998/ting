@@ -1,13 +1,14 @@
 @use "./form/form-control";
+@use "./form/form-check";
 @use "./form/form-layout";
 @use "./form/form-size";
 @use "./form/form-feedback";
 @use "./form/form-validation";
-@use "./form/checkbox";
 @use './components/button';
 @use "./form/static";
 @use "./form/input-group";
 @use "./form/input";
 @use "./form/tags-input";
 @use './form/select';
+@use "./form/checkbox";
 @use "./form/btn-toggle";
