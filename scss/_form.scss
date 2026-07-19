@@ -1,8 +1,9 @@
-@use "./form/control";
+@use "./form/form-control";
+@use "./form/form-layout";
+@use "./form/form-size";
+@use "./form/form-feedback";
+@use "./form/form-validation";
 @use "./form/checkbox";
-@use "./form/form";
-@use "./form/size";
-@use "./form/feedback";
 @use './components/button';
 @use "./form/static";
 @use "./form/input-group";
@@ -10,4 +11,3 @@
 @use "./form/tags-input";
 @use './form/select';
 @use "./form/btn-toggle";
-@use "./form/validated";
