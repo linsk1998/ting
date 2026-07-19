@@ -5,14 +5,14 @@
 .input-group{ @include clearfix;}
 .input-group-prepend{
 	position: relative;
-	margin-right: -1px;
-	float:left; _margin-right:-4px;
+	float:left;
+	margin-right: -1px; _margin-right:-4px;
 	white-space: nowrap;
 }
 .input-group-append{
 	position: relative;
-	margin-left: -1px;
-	float:right; _margin-left:-4px;
+	float:right;
+	margin-left: -1px; _margin-left:-4px;
 	white-space: nowrap;
 }
 .input-group-body{
@@ -82,9 +82,9 @@
 	font-size: $font-size-base;
 	line-height:$line-height-base;
 	padding:($ctrl-height-md - $line-height-base)*.5 - $ctrl-border-width 12px;
-	color:#555;
-	background-color:#eee;
-	border:1px solid $ctrl-border-color;
+	color:$input-group-text-color;
+	background-color:$input-group-text-bg;
+	border:$ctrl-border-width solid $ctrl-border-color;
 }
 .input-group-text{
 	.checkbox-inline,.radio-inline{

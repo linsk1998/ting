@@ -9,7 +9,6 @@
 	height: $ctrl-height-md;
 	@include clearfix;
 	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
-	position: relative;
 }
 .input-group>.input:focus-within{
 	z-index: $level-item-focus;
@@ -41,20 +40,22 @@
 .input-body{
 	overflow: hidden;
 	position: relative;
-	height: $ctrl-height-md - 2 * $ctrl-border-width;
+	height: $ctrl-height-md - $ctrl-border-width * 2;
 }
 .input-body input{
 	width: 100%;
 	height: 100%;
+	display: block;
+	vertical-align: top;
 	font-size: $ctrl-fontsize-md;
 	line-height: $ctrl-line-height;
 	padding: ($ctrl-height-md - $ctrl-line-height)*.5 - $ctrl-border-width $ctrl-padding-x-md;
 	border: 0 none;
-	color: #555;
+	color: $input-value-color;
 	background: none;
-	-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+	@include appearance(none);
+	@include rounded(0);
 	outline: 0;
-	vertical-align: top;
 	*margin-top: -1px;
 	*margin-bottom: -1px;
 }
@@ -88,9 +89,9 @@
 .input-counter{
 	display: inline-block;
 	vertical-align: middle;
-	color: $theme-secondary-text;
+	color: $input-counter-color;
 	position: relative;
-	top: 1px;
+	top: $input-counter-offset-y;
 	font-size: $input-counter-fontsize;
 }
 
@@ -138,7 +139,7 @@
 
 .input-disabled{
 	cursor: not-allowed;
-	background-color: #eee;
+	background-color: $input-disabled-bg;
 }
 .input-disabled{
 	.input-prefix,.input-suffix{
@@ -148,7 +149,7 @@
 				color: mix($input-value-color, #fff, 65%);
 			}
 			.input-counter {
-				color: mix($theme-secondary-text, #fff, 65%);
+				color: mix($input-counter-color, #fff, 65%);
 			}
 			div{
 				filter:alpha(opacity=40); 
@@ -166,6 +167,9 @@
 	right: $ctrl-clear-right - $ctrl-border-width;
 }
 @if($enable-feedback-icon) {
+	.has-feedback-icon .input-body input{
+		padding-right: $input-has-feedback-padding-right;
+	}
 	.input-body .feedback-icon{
 		line-height: $ctrl-height-md - $ctrl-border-width * 2;
 		right: - $ctrl-border-width;

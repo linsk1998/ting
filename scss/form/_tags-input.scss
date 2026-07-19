@@ -91,15 +91,20 @@
 		min-width: 4em;
 	}
 }
-.has-feedback-icon .tags-input{
-	padding-right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-padding-x-md;
-}
-.tags-input .feedback-icon{
-	padding-right: $feedback-icon-width * .5 - $feedback-icon-size * .5 - $tags-input-padding-x;
-	line-height: $ctrl-height-md - 2*$ctrl-border-width;
-}
 .tags-input-disabled {
 	.close {
 		display: none;
+	}
+}
+@if($enable-feedback-icon) {
+	.has-feedback-icon .tags-input{
+		padding-right: $input-has-feedback-padding-right;
+	}
+	.tags-input .feedback-icon{
+		line-height: $ctrl-height-md - $ctrl-border-width * 2;
+		right: - $ctrl-border-width;
+	}
+	.has-feedback-icon .tags-input .control-clear {
+		right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-clear-right - $ctrl-border-width;
 	}
 }

@@ -35,3 +35,7 @@
 		filter: alpha(opacity=#{$value*100});
 	}
 }
+@mixin appearance($value){
+	-webkit-appearance:$value;
+	appearance:$value;
+}

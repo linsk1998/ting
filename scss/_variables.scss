@@ -195,6 +195,7 @@ $footer-bg: #f5f5f5 !default;
 $footer-color: #666 !default;
 $footer-padding: 30px 0 !default;
 $footer-margin: 16px 0 0 !default;
+$footer-text-align: center !default;
 
 //=============================== 表单 ======================================
 $form-group-margin-bottom: 20px !default;
@@ -246,10 +247,14 @@ $input-focus-color: #66afe9 !default;
 $input-padding-y-md: $ctrl-padding-x-md !default;
 $input-padding-y-lg: $ctrl-padding-x-lg !default;
 $input-padding-y-sm: $ctrl-padding-x-sm !default;
+$input-counter-offset-y: 1px !default;
 $input-counter-fontsize: 12px !default;
+$input-counter-color: $theme-secondary-text !default;
 $input-addon-size: 14px !default;
 $input-addon-gap: ($ctrl-height-md - $input-addon-size) * 0.5 !default;
 $input-has-feedback-padding-right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-padding-x-md - $ctrl-border-width;
+$input-group-text-color: #555555 !default;
+$input-group-text-bg: #eeeeee !default;
 
 $check-gap-x: 10px !default;
 $check-gap-y: 5px !default;
