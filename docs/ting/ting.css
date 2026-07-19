@@ -7432,7 +7432,7 @@ i.btn-icon, i.btn-icon-left, i.btn-icon-right {
 html body .btn-disabled,
 html body .btn-disabled:hover,
 html body .btn-disabled:focus {
-  background: #ddd;
+  background: #dddddd;
   border-color: #D0D0D0;
   color: #a0a0a0;
   cursor: not-allowed;
@@ -7968,24 +7968,26 @@ html body .btn-disabled .caret {
 
 .select-btn {
   margin: 0;
-  line-height: 20px;
-  font-size: 14px;
-  text-align: left;
-  border: 1px solid #ccc;
-  background: #fff;
-  white-space: nowrap;
-  font-weight: normal;
-  cursor: pointer;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   display: block;
   width: 100%;
   position: relative;
+  border: 1px solid #ccc;
+  background: #fff;
+  text-align: left;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: normal;
   color: #555555;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  appearance: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -o-border-radius: 0;
@@ -8008,7 +8010,7 @@ html body .btn-disabled .caret {
 
 .select-icon {
   position: absolute;
-  right: 16px;
+  right: 17px;
   top: 50%;
   margin-top: -0.5em;
   margin-right: -0.5em;
@@ -8022,43 +8024,20 @@ html body .btn-disabled .caret {
 .select-btn {
   padding: 5px 12px;
   height: 32px;
-  padding-right: 32px;
 }
 
+.form-group-lg .select-btn,
 .select-lg .select-btn {
+  padding: 7px 16px;
+  height: 36px;
   font-size: 16px;
 }
-a.select-lg .select-btn, label.select-lg .select-btn {
-  padding: 7px 16px;
-}
 
-input.select-lg .select-btn, button.select-lg .select-btn {
-  height: 36px;
-  padding: 0 16px;
-}
-
+.form-group-sm .select-btn,
 .select-sm .select-btn {
-  font-size: 12px;
-}
-a.select-sm .select-btn, label.select-sm .select-btn {
   padding: 3px 10px;
-}
-
-input.select-sm .select-btn, button.select-sm .select-btn {
   height: 28px;
-  padding: 0 10px;
-}
-
-.select-xs .select-btn {
   font-size: 12px;
-}
-a.select-xs .select-btn, label.select-xs .select-btn {
-  padding: 1px 6px;
-}
-
-input.select-xs .select-btn, button.select-xs .select-btn {
-  height: 24px;
-  padding: 0 6px;
 }
 
 .select-disabled .select-btn {
@@ -8085,21 +8064,26 @@ input.select-xs .select-btn, button.select-xs .select-btn {
   opacity: 0.4;
 }
 
+.select .select-btn {
+  padding-right: 35px;
+}
+
 .select .control-clear {
   right: 33px;
   z-index: 500;
 }
 
-.select:hover > .control-clear {
-  display: block;
+.has-feedback-icon .select-btn {
+  padding-right: 58px;
 }
 
-.has-feedback-icon .select .feedback-icon {
-  right: 24px;
+.select .feedback-icon {
+  right: 23px;
   z-index: 500;
 }
+
 .has-feedback-icon .select .control-clear {
-  right: 57px;
+  right: 56px;
 }
 
 .btn-toggle {
@@ -10936,15 +10920,13 @@ button.close {
   width: 8px;
   height: 4px;
   overflow: hidden;
+  font-size: 0;
   margin-left: 2px;
   vertical-align: middle;
   border: 4px solid transparent;
-  border-bottom: 0;
-  border-top-color: #212121;
-  border-top-style: solid;
-  font-size: 4px;
-  _border-right-style: dotted;
-  _border-left-style: dotted;
+  _border-style: dotted;
+  border-bottom: 0 none;
+  border-top: 4px solid #212121;
 }
 
 .inverse, .dark {

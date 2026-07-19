@@ -120,9 +120,9 @@ i.btn-icon,i.btn-icon-left,i.btn-icon-right{
 html body .btn-disabled,
 html body .btn-disabled:hover,
 html body .btn-disabled:focus{
-	background: #ddd;
-	border-color: darken(#dddddd, 5%);
-	color: #a0a0a0;
+	background: $btn-disabled-bg;
+	border-color: $btn-disabled-border-color;
+	color: $btn-disabled-color;
 	cursor:not-allowed;
 	text-shadow:1px 1px #fff;
 	z-index: 0;

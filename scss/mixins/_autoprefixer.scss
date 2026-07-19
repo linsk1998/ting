@@ -39,3 +39,7 @@
 	-webkit-appearance:$value;
 	appearance:$value;
 }
+@mixin touch-action($value){
+	-webkit-touch-action:$value;
+	touch-action:$value;
+}

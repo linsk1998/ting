@@ -7,20 +7,21 @@
 }
 .select-btn{
 	margin:0;
-	line-height:$ctrl-line-height;
-	font-size:$ctrl-fontsize-md;
-	text-align:left;
-	border:$ctrl-border-width solid $ctrl-border-color;
-	background:#fff;
-	white-space:nowrap;
-	font-weight:normal;
-	cursor:pointer;
-	-ms-touch-action:manipulation; touch-action:manipulation;
-	-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
 	display:block;
 	width:100%;
-	position:relative;
+	position: relative;
+	border:$ctrl-border-width solid $ctrl-border-color;
+	background:#fff;
+	text-align:left;
+	line-height:$ctrl-line-height;
+	font-size:$ctrl-fontsize-md;
+	font-weight:normal;
 	color:$input-value-color;
+	white-space:nowrap;
+	cursor:pointer;
+	@include touch-action(manipulation);
+	@include user-select(none);
+	@include appearance(none);
 	@include rounded(0);
 	
 	&:hover {
@@ -39,28 +40,36 @@
 }
 .select-icon{
 	position: absolute;
-	right: $ctrl-height-md * .5;
+	right: $select-addon-gap + $select-addon-size * .5 + $ctrl-border-width;
 	top: 50%;
 	margin-top: -.5em;
 	margin-right: -.5em;
 }
 .select .caret{
-	margin-top: -2px;
-	margin-right: -4px;
+	margin-top: - $caret-height * .5;
+	margin-right: - $caret-width * .5;
 }
 .select-btn{
-	padding: ($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height) * .5 $btn-padding-x-md;
+	padding: ($ctrl-height-md - $ctrl-line-height) * .5 - $ctrl-border-width $btn-padding-x-md;
 	height: $ctrl-height-md;
-	padding-right: $ctrl-height-md;
 }
-.select-lg .select-btn{ @include btn-lg;}
-.select-sm .select-btn{ @include btn-sm;}
-.select-xs .select-btn{ @include btn-xs;}
+.form-group-lg .select-btn,
+.select-lg .select-btn{
+	padding: ($ctrl-height-lg - $ctrl-line-height) * .5 - $ctrl-border-width $btn-padding-x-lg;
+	height: $ctrl-height-lg;
+	font-size: $ctrl-fontsize-lg;
+}
+.form-group-sm .select-btn,
+.select-sm .select-btn{
+	padding: ($ctrl-height-sm - $ctrl-line-height) * .5 - $ctrl-border-width $btn-padding-x-sm;
+	height: $ctrl-height-sm;
+	font-size: $ctrl-fontsize-sm;
+}
 
 .select-disabled .select-btn{
-	background: #dddddd;
-	border-color: darken(#dddddd, 5%);
-	color: #a0a0a0;
+	background: $select-disabled-bg;
+	border-color: $select-disabled-border-color;
+	color: $select-disabled-color;
 	cursor:not-allowed;
 	z-index: 0;
 }
@@ -84,23 +93,22 @@
 	}
 }
 
+.select .select-btn{
+	padding-right: $select-addon-gap + $select-addon-size + $btn-padding-x-md;
+}
 .select .control-clear{
-	right: 24px + 9px;
+	right: $ctrl-border-width + $select-addon-gap + $select-addon-size + $ctrl-clear-right;
 	z-index: $level-navbar;
 }
-
-.select:hover>.control-clear {
-	display: block;
-}
-
-.has-feedback-icon{
-	.select{
-		.feedback-icon{
-			right: 24px;
-			z-index: $level-navbar;
-		}
+@if($enable-feedback-icon) {
+	.has-feedback-icon .select-btn{
+		padding-right: $select-addon-gap + $select-addon-size + $feedback-icon-width * .5 + $feedback-icon-size * .5 + $btn-padding-x-md - $ctrl-border-width;
 	}
-	.select .control-clear{
-		right: 24px + 24px + 9px
+	.select .feedback-icon{
+		right: $select-addon-gap + $select-addon-size;
+		z-index: $level-navbar;
+	}
+	.has-feedback-icon .select .control-clear {
+		right: $select-addon-gap + $select-addon-size + $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-clear-right;
 	}
 }

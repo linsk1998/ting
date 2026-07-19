@@ -227,10 +227,17 @@ $ctrl-padding-x-xs: 6px !default;
 $ctrl-clear-size: 14px !default;
 $ctrl-clear-right: ($ctrl-height-md - $ctrl-clear-size) * 0.5 !default;
 
+$btn-disabled-bg: #dddddd !default;
+$btn-disabled-color: #a0a0a0 !default;
+$btn-disabled-border-color: darken($btn-disabled-bg, 5%) !default;
 $btn-padding-x-md: $ctrl-padding-x-md !default;
 $btn-padding-x-lg: $ctrl-padding-x-lg !default;
 $btn-padding-x-sm: $ctrl-padding-x-sm !default;
 $btn-padding-x-xs: $ctrl-padding-x-xs !default;
+
+$caret-width: 8px !default;
+$caret-height: $caret-width * 0.5 !default;
+$caret-gap: 2px !default;
 
 $feedback-icon-size: 16px !default;
 $feedback-icon-width: $ctrl-height-md !default;
@@ -256,6 +263,12 @@ $input-has-feedback-padding-right: $feedback-icon-width * .5 + $feedback-icon-si
 $input-group-text-color: #555555 !default;
 $input-group-text-bg: #eeeeee !default;
 
+$select-disabled-bg: $btn-disabled-bg !default;
+$select-disabled-color: $btn-disabled-color !default;
+$select-disabled-border-color: $btn-disabled-border-color !default;
+$select-addon-size: 14px !default;
+$select-addon-gap: ($ctrl-height-md - $select-addon-size) * 0.5 !default;
+
 $check-gap-x: 10px !default;
 $check-gap-y: 5px !default;
 $check-padding-x: 0 !default;
@@ -271,7 +284,6 @@ $tag-padding-y-lg: 4px !default;
 $tag-padding-x-lg: 8px !default;
 $tag-padding-y-sm: 0px !default;
 $tag-padding-x-sm: 4px !default;
-
 
 $dropdown-padding-y: 5px !default;
 $dropdown-border-width: $ctrl-border-width !default;
