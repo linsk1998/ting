@@ -6660,6 +6660,9 @@ video.embed-responsive-item {
   -moz-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
@@ -6889,11 +6892,6 @@ button.control-clear {
   padding-top: 8px;
 }
 
-.form-group-sm .form-control {
-  font-size: 12px;
-  padding: 3px 10px;
-}
-
 .form-control-lg,
 .form-group-lg .form-control {
   font-size: 16px;
@@ -6909,13 +6907,17 @@ button.control-clear {
 }
 
 textarea.form-control-lg,
-.form-group-sm textarea.form-control {
+.form-group-lg textarea.form-control {
   min-height: 36px;
 }
 
 textarea.form-control-sm,
 .form-group-sm textarea.form-control {
   min-height: 28px;
+}
+
+.form textarea.form-control, .form-horizontal textarea.form-control {
+  height: auto;
 }
 
 .help-block, .form-text, .feedback-text {
@@ -6987,24 +6989,24 @@ textarea.form-control-sm,
   *top: auto;
 }
 
-.has-valid .feedback-icon, .has-valid .feedback-text, .has-valid .help-block {
+html .has-valid .feedback-icon, html .has-valid .feedback-text, html .has-valid .help-block {
   color: #70ad47;
 }
-.has-valid .form-control, .has-valid .input, .has-valid .tags-input, .has-valid .select-btn {
+html .has-valid .form-control, html .has-valid .input, html .has-valid .tags-input, html .has-valid .select-btn, html .has-valid .textarea textarea {
   border-color: #70ad47;
 }
-.has-valid .feedback-tooltip {
+html .has-valid .feedback-tooltip {
   color: #fff;
   background: rgba(112, 173, 71, 0.9);
 }
 
-.has-invalid .feedback-icon, .has-invalid .feedback-text, .has-invalid .help-block {
+html .has-invalid .feedback-icon, html .has-invalid .feedback-text, html .has-invalid .help-block {
   color: #dc3545;
 }
-.has-invalid .form-control, .has-invalid .input, .has-invalid .tags-input, .has-invalid .select-btn {
+html .has-invalid .form-control, html .has-invalid .input, html .has-invalid .tags-input, html .has-invalid .select-btn, html .has-invalid .textarea textarea {
   border-color: #dc3545;
 }
-.has-invalid .feedback-tooltip {
+html .has-invalid .feedback-tooltip {
   color: #fff;
   background: rgba(220, 53, 69, 0.9);
 }
@@ -8067,6 +8069,122 @@ html body .btn-disabled .caret {
 
 .has-feedback-icon .select .control-clear {
   right: 56px;
+}
+
+.textarea {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+}
+
+.textarea textarea {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.textarea textarea::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.textarea textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.textarea textarea:-ms-input-placeholder {
+  color: #999999;
+}
+.textarea textarea:focus {
+  outline: 0;
+  border-color: #66afe9;
+  z-index: 230;
+}
+.textarea textarea {
+  min-height: 32px;
+}
+
+.textarea-lg textarea,
+.form-group-lg .textarea textarea {
+  font-size: 16px;
+  padding: 7px 16px;
+  min-height: 36px;
+}
+
+.textarea-sm textarea,
+.form-group-sm .textarea textarea {
+  font-size: 12px;
+  padding: 3px 10px;
+  min-height: 28px;
+}
+
+.form .textarea textarea, .form-horizontal .textarea textarea {
+  display: block;
+  width: 100% !important;
+  resize: vertical;
+  vertical-align: top;
+}
+
+.form-inline .textarea {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+.form-inline .textarea textarea {
+  height: 32px;
+}
+
+.form-inline .textarea-lg textarea,
+.form-inline .form-group-lg .textarea textarea {
+  height: 36px;
+}
+
+.form-inline .textarea-sm textarea,
+.form-inline .form-group-sm .textarea textarea {
+  height: 28px;
+}
+
+.textarea-counter {
+  position: absolute;
+  right: 8px;
+  bottom: 2px;
+  color: #757575;
+  font-size: 12px;
+  line-height: 12px;
+  background: #fff;
+}
+
+.textarea-disabled textarea,
+.textarea-disabled .textarea-counter {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+.textarea-disabled .control-clear {
+  display: none;
+}
+
+.has-feedback-icon .textarea textarea {
+  padding-right: 33px;
+}
+.has-feedback-icon .textarea textarea {
+  overflow-y: scroll;
+}
+.has-feedback-icon .textarea .feedback-icon {
+  width: 16px;
+  right: 17px;
+}
+.has-feedback-icon .textarea .control-clear {
+  right: 42px;
 }
 
 .checkbox-group, .radio-group, .checkbox-group-horizontal, .radio-group-horizontal {

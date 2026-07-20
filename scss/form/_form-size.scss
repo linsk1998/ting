@@ -21,12 +21,6 @@
 		padding-top: ($ctrl-height-lg - $line-height-base)*.5;
 	}
 }
-.form-group-sm{
-	.form-control{
-		font-size: $ctrl-fontsize-sm;
-		padding:($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-sm;
-	}
-}
 
 .form-control-lg,
 .form-group-lg .form-control{
@@ -41,10 +35,15 @@
 	height: $ctrl-height-sm;
 }
 textarea.form-control-lg,
-.form-group-sm textarea.form-control{
+.form-group-lg textarea.form-control{
 	min-height: $ctrl-height-lg;
 }
 textarea.form-control-sm,
 .form-group-sm textarea.form-control{
 	min-height: $ctrl-height-sm;
+}
+.form,.form-horizontal {
+	textarea.form-control {
+		height: auto;
+	}
 }

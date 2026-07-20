@@ -1,0 +1,100 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.textarea{
+	position: relative;
+	font-size: 0;
+	line-height: 0;
+}
+.textarea textarea {
+	font-size: $ctrl-fontsize-md;
+	line-height: $ctrl-line-height;
+	color: $input-value-color;
+	padding:($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-md;
+	border: $ctrl-border-width solid $ctrl-border-color;
+	@if($enable-rounded) {
+		@include rounded($border-radius);
+	}
+	@else {
+		@include rounded(0);
+	}
+	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+	@include placeholder($input-placeholder-color);
+	&:focus{
+		outline: 0;
+		border-color: $input-focus-color;
+		z-index: $level-item-focus;
+	}
+	min-height: $ctrl-height-md;
+}
+.textarea-lg textarea,
+.form-group-lg .textarea textarea{
+	font-size: $ctrl-fontsize-lg;
+	padding: ($ctrl-height-lg - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-lg;
+	min-height: $ctrl-height-lg;
+}
+.textarea-sm textarea,
+.form-group-sm .textarea textarea{
+	font-size: $ctrl-fontsize-sm;
+	padding: ($ctrl-height-sm - 2*$ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-sm;
+	min-height: $ctrl-height-sm;
+}
+.form, .form-horizontal{
+	.textarea textarea {
+		display: block;
+		width: 100% !important;
+		resize: vertical;
+		vertical-align: top;
+	}
+}
+.form-inline .textarea {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: middle;
+}
+.form-inline .textarea textarea{
+	height: $ctrl-height-md;
+}
+.form-inline .textarea-lg textarea,
+.form-inline .form-group-lg .textarea textarea{
+	height: $ctrl-height-lg;
+}
+.form-inline .textarea-sm textarea,
+.form-inline .form-group-sm .textarea textarea{
+	height: $ctrl-height-sm;
+}
+.textarea-counter {
+	position: absolute;
+	right: 8px;
+	bottom: 2px;
+	color: $input-counter-color;
+	font-size: $input-counter-fontsize;
+	line-height: $input-counter-fontsize;
+	background: #fff;
+}
+.textarea-disabled textarea,
+.textarea-disabled .textarea-counter{
+	cursor: not-allowed;
+	background-color: $input-disabled-bg;
+}
+.textarea-disabled .control-clear{
+	display: none;
+}
+@if($enable-feedback-icon) {
+	.has-feedback-icon{
+		.textarea textarea {
+			padding-right: $feedback-icon-size + 17px;
+		}
+		.textarea textarea {
+			overflow-y: scroll;
+		}
+		.textarea .feedback-icon {
+			width: $feedback-icon-size;
+			right:17px;
+		}
+		.textarea .control-clear{
+			right: $feedback-icon-size + $ctrl-clear-right + 17px;
+		}
+	}
+}
