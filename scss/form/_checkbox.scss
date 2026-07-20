@@ -55,7 +55,8 @@ $check-padding-bottom: $check-padding-top - $check-gap-y;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
-	@include opacity(.01);
+	-moz-opacity: .01;
+	opacity: .01;
 	z-index: 1;
 }
 .checkbox-checked:after {
@@ -154,4 +155,9 @@ label .checkbox, label .radio {
 .has-invalid .radio {
 	border-color: $danger;
 }
-
+@media \0screen\,screen\9 {
+	.checkbox, .checkbox-checked, .radio, .radio-checked {
+		border: 0 none;
+		background: none;
+	}
+}

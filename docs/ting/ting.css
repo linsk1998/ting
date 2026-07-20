@@ -8246,13 +8246,6 @@ html body .btn-disabled .caret {
   cursor: pointer;
   -moz-opacity: 0.01;
   opacity: 0.01;
-}
-@media \0 screen\,screen\9  {
-  .checkbox input, .radio input {
-    filter: alpha(opacity=1);
-  }
-}
-.checkbox input, .radio input {
   z-index: 1;
 }
 
@@ -8359,6 +8352,12 @@ label .checkbox, label .radio {
   border-color: #dc3545;
 }
 
+@media \0 screen\,screen\9  {
+  .checkbox, .checkbox-checked, .radio, .radio-checked {
+    border: 0 none;
+    background: none;
+  }
+}
 .btn-toggle {
   color: #333;
   background-color: #fff;
