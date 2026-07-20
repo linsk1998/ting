@@ -280,6 +280,14 @@ $checkbox-disabled-bg: $input-disabled-bg !default;
 $checkbox-disabled-color: #bbb !default;
 $checkbox-disabled-border-color: $ctrl-border-color !default;
 
+$switch-width: 40px !default;
+$switch-height: 20px !default;
+$switch-bg: #bbbbbb !default;
+$switch-disabled-bg: #dddddd !default;
+$switch-thumb-size: 16px;
+$switch-thumb-loading-width: 24px;
+$switch-thumb-fontsize: 12px;
+
 $tags-input-padding-y: 2px !default;
 $tags-input-padding-x: 2px !default;
 $tags-input-gutter: 4px !default;
