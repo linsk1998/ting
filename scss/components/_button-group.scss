@@ -2,11 +2,17 @@
 @use '../variables' as *;
 
 .btn-toolbar{ font-size:0; *font-size:$font-size-base; margin:$margin-base 0; line-height:40px;}
-.btn-toolbar .btn,.btn-toolbar .btn-group{ margin-left:0; margin-right:5px;}
+.btn-toolbar .btn,
+.btn-toolbar .btn-group,
+.btn-toolbar .btn-toggle{
+	margin-left:0;
+	margin-right:5px;
+}
 .btn-toolbar>:last-child{ margin-right:0;}
 
 .btn-toolbar .pull-right .btn,
-.btn-toolbar .pull-right .btn-group {
+.btn-toolbar .pull-right .btn-group,
+.btn-toolbar .pull-right .btn-toggle {
 	margin-right: 0;
 	margin-left: 5px;
 }
@@ -22,7 +28,8 @@
 	*zoom: 1;
 	font-size: 0;
 }
-.btn-group .btn {
+.btn-group .btn,
+.btn-group .btn-toggle{
 	float: left;
 	margin-left: 0;
 	margin-right: -1px;
@@ -32,7 +39,8 @@
 .btn-group-vertical{
 	padding-bottom:1px;
 }
-.btn-group-vertical .btn{
+.btn-group-vertical .btn,
+.btn-group-vertical .btn-toggle{
 	margin-top: 0;
 	margin-bottom: -1px;
 	position: relative;

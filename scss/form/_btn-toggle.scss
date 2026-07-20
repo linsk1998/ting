@@ -1,23 +1,36 @@
 @use '../variables' as *;
+@use '../mixins' as *;
 @use '../functions' as *;
 
 .btn-toggle{
-	color:#333;
-	background-color:#fff;
-	border-color:$ctrl-border-color;
-	&:hover{
-		color:#333;
-		border-color:#aaa;
-	}
+	padding:($ctrl-height-md - 2 * $btn-border-width - $ctrl-line-height) * .5 $btn-padding-x-md;
+	border:$btn-border-width solid $btn-border-color;
+	background: #ffffff;
+	line-height:$ctrl-line-height;
+	font-size:$ctrl-fontsize-md;
+	text-align:center;
+	white-space:nowrap;
+	font-weight:normal;
+	cursor:pointer;
 }
-.btn-toggle-checked{
-	border-color:darken($theme-primary, 5%);
+label.btn-toggle {
+	display: inline-block;
+	*zoom: 1;
+}
+button.btn-toggle {
+	height: $ctrl-height-md;
+	outline:none;
+	-webkit-appearance:none;
+	appearance:none;
+	*width:auto; *overflow-x:visible;
+}
+label.btn-toggle-checked{
+	border-color: $theme-primary;
 	z-index: $level-item-active;
-	&:hover{
-		border-color:darken($theme-primary,17%);
-		z-index: $level-item-active;
-	}
 }
-html body .btn-toggle-checked:focus-within{
-	border-color:darken($theme-primary,17%);
+button.btn-toggle-checked{
+	background: $theme-primary;
+	border-color: $theme-primary;
+	color: #ffffff;
+	z-index: $level-item-active;
 }

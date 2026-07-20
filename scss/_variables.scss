@@ -227,6 +227,8 @@ $ctrl-padding-x-xs: 6px !default;
 $ctrl-clear-size: 14px !default;
 $ctrl-clear-right: ($ctrl-height-md - $ctrl-clear-size) * 0.5 !default;
 
+$btn-border-width: $ctrl-border-width !default;
+$btn-border-color: $ctrl-border-color !default;
 $btn-disabled-bg: #dddddd !default;
 $btn-disabled-color: #a0a0a0 !default;
 $btn-disabled-border-color: darken($btn-disabled-bg, 5%) !default;

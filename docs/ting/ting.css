@@ -7047,6 +7047,7 @@ input.btn, button.btn {
   margin: 0;
   outline: none;
   -webkit-appearance: none;
+  appearance: none;
   *width: auto;
   *overflow-x: visible;
 }
@@ -8338,7 +8339,6 @@ html body .btn-disabled .caret {
 }
 
 label .checkbox, label .radio {
-  margin-top: -1px;
   margin-right: 4px;
 }
 
@@ -8435,26 +8435,41 @@ label .checkbox, label .radio {
 }
 
 .btn-toggle {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
-}
-.btn-toggle:hover {
-  color: #333;
-  border-color: #aaa;
-}
-
-.btn-toggle-checked {
-  border-color: #3966B5;
-  z-index: 220;
-}
-.btn-toggle-checked:hover {
-  border-color: #2B4C87;
-  z-index: 220;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: normal;
+  cursor: pointer;
 }
 
-html body .btn-toggle-checked:focus-within {
-  border-color: #2B4C87;
+label.btn-toggle {
+  display: inline-block;
+  *zoom: 1;
+}
+
+button.btn-toggle {
+  height: 32px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  *width: auto;
+  *overflow-x: visible;
+}
+
+label.btn-toggle-checked {
+  border-color: #4472c4;
+  z-index: 220;
+}
+
+button.btn-toggle-checked {
+  background: #4472c4;
+  border-color: #4472c4;
+  color: #ffffff;
+  z-index: 220;
 }
 
 .btn-toolbar {
@@ -8464,7 +8479,9 @@ html body .btn-toggle-checked:focus-within {
   line-height: 40px;
 }
 
-.btn-toolbar .btn, .btn-toolbar .btn-group {
+.btn-toolbar .btn,
+.btn-toolbar .btn-group,
+.btn-toolbar .btn-toggle {
   margin-left: 0;
   margin-right: 5px;
 }
@@ -8474,7 +8491,8 @@ html body .btn-toggle-checked:focus-within {
 }
 
 .btn-toolbar .pull-right .btn,
-.btn-toolbar .pull-right .btn-group {
+.btn-toolbar .pull-right .btn-group,
+.btn-toolbar .pull-right .btn-toggle {
   margin-right: 0;
   margin-left: 5px;
 }
@@ -8492,7 +8510,8 @@ html body .btn-toggle-checked:focus-within {
   font-size: 0;
 }
 
-.btn-group .btn {
+.btn-group .btn,
+.btn-group .btn-toggle {
   float: left;
   margin-left: 0;
   margin-right: -1px;
@@ -8503,7 +8522,8 @@ html body .btn-toggle-checked:focus-within {
   padding-bottom: 1px;
 }
 
-.btn-group-vertical .btn {
+.btn-group-vertical .btn,
+.btn-group-vertical .btn-toggle {
   margin-top: 0;
   margin-bottom: -1px;
   position: relative;
