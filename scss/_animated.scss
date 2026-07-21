@@ -1,28 +1,64 @@
 .animated {
+	-moz-animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s;
 	animation-duration: 0.6s;
+	-moz-animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
 
 .animated.infinite {
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
 
 .animated.forwards {
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
 
 .animated.faster {
+	-moz-animation-duration:0.2s;
+	-webkit-animation-duration:0.2s;
 	animation-duration:0.2s;
 }
 
 .animated.fast {
+	-moz-animation-duration:0.3s;
+	-webkit-animation-duration:0.3s;
 	animation-duration:0.3s;
 }
 
 .animated.slow {
+	-moz-animation-duration:1.2s;
+	-webkit-animation-duration:1.2s;
 	animation-duration:1.2s;
 }
 
 .animated.slower {
+	-moz-animation-duration:2.4s;
+	-webkit-animation-duration:2.4s;
 	animation-duration:2.4s;
+}
+
+@for $i from 1 through 5 {
+	.animated.delay-#{$i}s{
+		-moz-animation-delay:#{$i}s;
+		-webkit-animation-delay:#{$i}s;
+		animation-delay:#{$i}s;
+	}
+}
+@for $i from 1 through 3 {
+	.animated.repeat-#{$i} {
+		-moz-animation-iteration-count:$i;
+		-webkit-animation-iteration-count:$i;
+		animation-iteration-count:$i;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.animated {
+		animation: none !important;
+	}
 }

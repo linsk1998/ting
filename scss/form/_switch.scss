@@ -58,4 +58,7 @@
 		width: $switch-thumb-loading-width;
 		left: ($switch-width - $switch-thumb-loading-width) * .5;
 	}
+	input {
+		cursor: wait;
+	}
 }

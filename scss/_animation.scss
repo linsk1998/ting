@@ -10,6 +10,8 @@
 @use './animation/flip';
 @use './animation/flipIn';
 @use './animation/flipOut';
+@use './animation/flyIn';
+@use './animation/flyOut';
 @use './animation/rotateIn';
 @use './animation/rotateOut';
 @use './animation/zoomIn';
@@ -20,4 +22,3 @@
 @use './animation/bounceOut';
 @use './animation/slideIn';
 @use './animation/slideOut';
-@use './animation/scale';

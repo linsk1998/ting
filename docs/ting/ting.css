@@ -657,6 +657,278 @@
   animation-name: flipOutY;
 }
 
+/* 从下滑入 */
+@-moz-keyframes flyInUp {
+  0% {
+    -moz-transform: translateY(-768px);
+    -moz-transform: translateY(-100vh);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes flyInUp {
+  0% {
+    -webkit-transform: translateY(-768px);
+    -webkit-transform: translateY(-100vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes flyInUp {
+  0% {
+    transform: translateY(-768px);
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.flyInUp {
+  -moz-animation-name: flyInUp;
+  -webkit-animation-name: flyInUp;
+  animation-name: flyInUp;
+}
+
+/* 从上滑入 */
+@-moz-keyframes flyInDown {
+  0% {
+    -moz-transform: translateY(768px);
+    -moz-transform: translateY(100vh);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes flyInDown {
+  0% {
+    -webkit-transform: translateY(768px);
+    -webkit-transform: translateY(100vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes flyInDown {
+  0% {
+    transform: translateY(768px);
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.flyInDown {
+  -moz-animation-name: flyInDown;
+  -webkit-animation-name: flyInDown;
+  animation-name: flyInDown;
+}
+
+/* 从右滑入 */
+@-moz-keyframes flyInLeft {
+  0% {
+    -moz-transform: translateX(-1366px);
+    -moz-transform: translateX(-100vw);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@-webkit-keyframes flyInLeft {
+  0% {
+    -webkit-transform: translateX(-1366px);
+    -webkit-transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes flyInLeft {
+  0% {
+    transform: translateX(-1366px);
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.flyInLeft {
+  -moz-animation-name: flyInLeft;
+  -webkit-animation-name: flyInLeft;
+  animation-name: flyInLeft;
+}
+
+/* 从左滑入 */
+@-moz-keyframes flyInRight {
+  0% {
+    -moz-transform: translateX(1366px);
+    -moz-transform: translateX(100vw);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@-webkit-keyframes flyInRight {
+  0% {
+    -webkit-transform: translateX(1366px);
+    -webkit-transform: translateX(100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes flyInRight {
+  0% {
+    transform: translateX(1366px);
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.flyInRight {
+  -moz-animation-name: flyInRight;
+  -webkit-animation-name: flyInRight;
+  animation-name: flyInRight;
+}
+
+/* 从下滑入 */
+@-moz-keyframes flyOutUp {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-768px);
+    -moz-transform: translateY(-100vh);
+  }
+}
+@-webkit-keyframes flyOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-768px);
+    -webkit-transform: translateY(-100vh);
+  }
+}
+@keyframes flyOutUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-768px);
+    transform: translateY(-100vh);
+  }
+}
+.flyOutUp {
+  -moz-animation-name: flyOutUp;
+  -webkit-animation-name: flyOutUp;
+  animation-name: flyOutUp;
+}
+
+/* 从上滑入 */
+@-moz-keyframes flyOutDown {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(768px);
+    -moz-transform: translateY(100vh);
+  }
+}
+@-webkit-keyframes flyOutDown {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(768px);
+    -webkit-transform: translateY(100vh);
+  }
+}
+@keyframes flyOutDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(768px);
+    transform: translateY(100vh);
+  }
+}
+.flyOutDown {
+  -moz-animation-name: flyOutDown;
+  -webkit-animation-name: flyOutDown;
+  animation-name: flyOutDown;
+}
+
+/* 从右滑入 */
+@-moz-keyframes flyOutLeft {
+  0% {
+    -moz-transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(-1366px);
+    -moz-transform: translateX(-100vw);
+  }
+}
+@-webkit-keyframes flyOutLeft {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1366px);
+    -webkit-transform: translateX(-100vw);
+  }
+}
+@keyframes flyOutLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1366px);
+    transform: translateX(-100vw);
+  }
+}
+.flyOutLeft {
+  -moz-animation-name: flyOutLeft;
+  -webkit-animation-name: flyOutLeft;
+  animation-name: flyOutLeft;
+}
+
+/* 从左滑入 */
+@-moz-keyframes flyOutRight {
+  0% {
+    -moz-transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(1366px);
+    -moz-transform: translateX(100vw);
+  }
+}
+@-webkit-keyframes flyOutRight {
+  100% {
+    -webkit-transform: translateX(0);
+  }
+  0% {
+    -webkit-transform: translateX(1366px);
+    -webkit-transform: translateX(100vw);
+  }
+}
+@keyframes flyOutRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1366px);
+    transform: translateX(100vw);
+  }
+}
+.flyOutRight {
+  -moz-animation-name: flyOutRight;
+  -webkit-animation-name: flyOutRight;
+  animation-name: flyOutRight;
+}
+
 /* 转入 */
 @-moz-keyframes rotateIn {
   0% {
@@ -8433,6 +8705,9 @@ label .checkbox, label .radio {
   width: 24px;
   left: 8px;
 }
+.switch-loading input {
+  cursor: wait;
+}
 
 .btn-toggle {
   padding: 5px 12px;
@@ -11612,14 +11887,14 @@ button.close {
   position: absolute;
   left: 50%;
   margin-left: -0.5em;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .icon-middle {
   position: absolute;
   top: 50%;
   margin-top: -0.5em;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .text-truncate, .line-1, .line-max-1 {
