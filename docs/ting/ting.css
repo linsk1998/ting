@@ -8732,8 +8732,7 @@ button.btn-toggle-checked {
   font-size: 0;
 }
 
-.btn-group .btn,
-.btn-group .btn-toggle {
+.btn-group .btn {
   float: left;
   margin-left: 0;
   margin-right: -1px;
@@ -8744,8 +8743,7 @@ button.btn-toggle-checked {
   padding-bottom: 1px;
 }
 
-.btn-group-vertical .btn,
-.btn-group-vertical .btn-toggle {
+.btn-group-vertical .btn {
   margin-top: 0;
   margin-bottom: -1px;
   position: relative;
