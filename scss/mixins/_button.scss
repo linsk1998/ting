@@ -1,35 +1,25 @@
 @use '../variables' as *;
 @use '../functions' as *;
+@use './autoprefixer' as *;
 
-@mixin btn($border:$ctrl-border-width){
+@mixin btn{
 	margin:0;
 	line-height:$ctrl-line-height;
 	font-size:$ctrl-fontsize-md;
-	border-width:$border;
+	border-width:$btn-border-width;
 	border-style:solid;
 	text-align:center;
 	white-space:nowrap;
 	font-weight:normal;
 	cursor:pointer;
-	-ms-touch-action:manipulation; touch-action:manipulation;
-	-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+	@include touch-action(manipulation);
+	@include user-select(none);
 	
 	&:hover {
 		z-index: $level-item-hover;
 	}
 	&:focus {
 		z-index: $level-item-focus;
-	}
-}
-@mixin btn-has-icon {
-	@media (-webkit-min-device-pixel-ratio:0){
-		@at-root{
-			input#{&},button#{&},a#{&},label#{&},div#{&},span#{&}{
-				display:-webkit-inline-box; display:inline-flex;
-				-webkit-box-align:center; align-items:center;
-				-webkit-box-pack:center; justify-content:center;
-			}
-		}
 	}
 }
 @mixin btn-button{
@@ -48,17 +38,8 @@
 	&:hover{ text-decoration:none;}
 }
 @mixin btn-size($height,$padding,$border:$ctrl-border-width){
-	// padding:($height - 2*$border - $ctrl-line-height)*.5 $padding;
-	// height:$height;
-	@at-root{
-		a#{&},label#{&} {
-			padding:($height - 2 * $border - $ctrl-line-height) * .5 $padding;
-		}
-		input#{&} ,button#{&} {
-			height: $height;
-			padding: 0 $padding;
-		}
-	}
+	padding:($height - 2 * $border - $ctrl-line-height) * .5 $padding;
+	height: $height;
 }
 @mixin btn-md{
 	@include btn-size($ctrl-height-md,$btn-padding-x-md);
@@ -66,6 +47,10 @@
 @mixin btn-lg{
 	font-size: $ctrl-fontsize-lg;
 	@include btn-size($ctrl-height-lg,$btn-padding-x-lg);
+}
+@mixin btn-xl{
+	font-size: $ctrl-fontsize-xl;
+	@include btn-size($ctrl-height-xl,$btn-padding-x-xl);
 }
 @mixin btn-sm{
 	font-size: $ctrl-fontsize-sm;
@@ -79,12 +64,12 @@
 	border-radius: 999px;
 }
 @mixin btn-default{
-	color:#333;
+	color:$theme-primary-text;
 	background-color:#fff;
-	border-color:$ctrl-border-color;
+	border-color:$btn-border-color;
 	&:hover{
-		color:#333;
-		border-color:#aaa;
+		color:$theme-primary-text;
+		border-color:darken($btn-border-color,10%);
 	}
 }
 @mixin btn-primary{
@@ -109,10 +94,8 @@
 		border-color:$color;
 		z-index: $level-item-active;
 	}
-	@at-root{
-		html body &:focus{
-			border-color:darken($color,15%);
-		}
+	&:focus{
+		border-color:darken($color,15%);
 	}
 }
 @mixin btn-success{

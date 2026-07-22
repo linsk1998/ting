@@ -41,6 +41,9 @@
 		border:0 none;
 		border-radius: 0;
 	}
+	.loading-grow{
+		background: none;
+	}
 	.loading-circular:before,.loading-grow:before{ content:"6";}
 }
 @media \0screen\,screen\9 {

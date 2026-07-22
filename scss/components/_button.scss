@@ -6,7 +6,6 @@
 	vertical-align:middle;
 	@include btn;
 	@include rounded(0);
-	transition:border-color .2s,background-color .2s,color .2s,box-shadow .2s;
 }
 input.btn,button.btn{
 	@include btn-button;
@@ -14,13 +13,28 @@ input.btn,button.btn{
 a.btn,label.btn,div.btn,span.btn{
 	@include btn-anchor;
 }
-.btn{
-	@include btn-has-icon;
+@media (-webkit-min-device-pixel-ratio:0){
+	.btn{
+		display:-webkit-inline-box; display:inline-flex;
+		-webkit-box-align:center; align-items:center;
+		-webkit-box-pack:center; justify-content:center;
+	}
 }
-.btn{ @include btn-md;}
-.btn-lg{ @include btn-lg;}
-.btn-sm{ @include btn-sm;}
-.btn-xs{ @include btn-xs;}
+a,label {
+	&.btn,&.btn-square{ padding:($ctrl-height-md - $ctrl-border-width * 2 - $ctrl-line-height) * .5 $btn-padding-x-md;}
+	&.btn-lg,&.btn-square-lg{ padding:($ctrl-height-lg - $ctrl-border-width * 2 - $ctrl-line-height) * .5 $btn-padding-x-lg;}
+	&.btn-xl,&.btn-square-xl{ padding:($ctrl-height-xl - $ctrl-border-width * 2 - $ctrl-line-height) * .5 $btn-padding-x-xl;}
+	&.btn-sm,&.btn-square-sm{ padding:($ctrl-height-sm - $ctrl-border-width * 2 - $ctrl-line-height) * .5 $btn-padding-x-sm;}
+	&.btn-xs,&.btn-square-xs{ padding:($ctrl-height-xs - $ctrl-border-width * 2 - $ctrl-line-height) * .5 $btn-padding-x-xs;}
+}
+input,button {
+	&.btn,&.btn-square{ height: $ctrl-height-md; padding: 0 $btn-padding-x-md;}
+	&.btn-lg,&.btn-square-lg{ height: $ctrl-height-lg; padding: 0 $btn-padding-x-lg;}
+	&.btn-xl,&.btn-square-xl{ height: $ctrl-height-xl; padding: 0 $btn-padding-x-xl;}
+	&.btn-sm,&.btn-square-sm{ height: $ctrl-height-sm; padding: 0 $btn-padding-x-sm;}
+	&.btn-xs,&.btn-square-xs{ height: $ctrl-height-xs; padding: 0 $btn-padding-x-xs;}
+}
+
 html .btn-round{
 	@include btn-round;
 }
@@ -34,6 +48,11 @@ html .btn-square-lg {
 	padding-right: 0;
 	width: $ctrl-height-lg;
 }
+html .btn-square-xl {
+	padding-left: 0;
+	padding-right: 0;
+	width: $ctrl-height-xl;
+}
 html .btn-square-sm {
 	padding-left: 0;
 	padding-right: 0;
@@ -45,25 +64,49 @@ html .btn-square-xs {
 	width: $ctrl-height-xs;
 }
 
-.btn-default{ @include btn-default;}
-.btn-primary{ @include btn-primary;}
-html body .btn-success{ @include btn-success;}
-html body .btn-info{ @include btn-info;}
-html body .btn-warning{ @include btn-warning;}
-html body .btn-danger{ @include btn-danger;}
-html body .btn-dark{ @include btn-dark;}
-.btn-outline,.btn-outline-primary{ @include btn-outline;}
-html body .btn-outline-success{ @include btn-outline($success);}
-html body .btn-outline-info{ @include btn-outline($info);}
-html body .btn-outline-warning{ @include btn-outline($warning);}
-html body .btn-outline-danger{ @include btn-outline($danger);}
-html body .btn-outline-dark{ @include btn-outline($dark);}
-input.btn:focus,button.btn:focus{ border-color:#000;}
-label.btn:focus-within{ border-color:#000; z-index: $level-item-focus;}
-a.btn:focus{ border-color:#000;}
+.btn-default:hover{
+	color:$theme-primary-text;
+	border-color:darken($btn-border-color,10%);
+}
+.btn-default,.btn-loading.btn-default{
+	color:$theme-primary-text;
+	background-color:#fff;
+	border-color:$btn-border-color;
+}
+@each $key, $color in $context {
+	.btn-#{$key}:hover{
+		color:#fff;
+		background-color:darken($color,10%);
+		border-color:darken($color,17%);
+		z-index: $level-item-hover;
+	}
+	.btn-#{$key},.btn-loading.btn-#{$key}{ 
+		color:#fff;
+		background-color:$color;
+		border-color:darken($color, 5%);
+	}
+}
+@each $key, $color in $context {
+	.btn-outline-#{$key}:hover{
+		color:#fff;
+		background-color:darken($color,10%);
+		border-color:darken($color,17%);
+		z-index: $level-item-hover;
+	}
+	.btn-outline-#{$key},.btn-loading.btn-outline-#{$key}{
+		color:$color;
+		background:none;
+		border-color:$color;
+	}
+}
+input.btn:focus,button.btn:focus{
+	outline: 1px solid #000;
+	outline-offset: -1px;
+}
 
-
-input.btn-block,button.btn-block,a.btn-block,label.btn-block{ @include btn-block; margin:$margin-base 0}
+input.btn-block,button.btn-block,a.btn-block,label.btn-block{
+	@include btn-block; margin:$margin-base 0;
+}
 
 .btn-label{ @include btn-label;}
 .btn-icon,.btn-icon-left,.btn-icon-right{ @include btn-icon;}
@@ -75,46 +118,7 @@ i.btn-icon,i.btn-icon-left,i.btn-icon-right{
 .btn-loading{
 	cursor:not-allowed !important;
 	pointer-events: none;
-}
-@media (min-width:0){
-	.btn-loading{
-		opacity:0.65;
-	}
-}
-@media \0screen\,screen\9 {
-	html body .btn.btn-loading,
-	html body .btn.btn-loading:hover,
-	html body .btn.btn-loading:focus{
-		background-color: #eee;
-		border-color: darken(#eee, 5%);
-		color: #a0a0a0;
-	}
-	html body .btn-loading{
-		img.btn-icon,img.btn-icon-left,img.btn-icon-right{
-			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=60); 
-		}
-		.caret{
-			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1) alpha(opacity=40); 
-		}
-	}
-}
-@media (min-width:0\0) and (min-resolution:.001dpcm) {
-	/*ie9*/
-	html body .btn.btn-loading{
-		background-color: #eee;
-		border-color: darken(#eee, 5%);
-		color: #a0a0a0;
-		opacity: 1;
-	}
-	html body .btn-loading{
-		img.btn-icon,img.btn-icon-left,img.btn-icon-right{
-			filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
-			opacity: .6;
-		}
-		.caret{
-			opacity: .4;
-		}
-	}
+	@include opacity(0.65);
 }
 
 html body .btn-disabled,
