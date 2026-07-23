@@ -304,6 +304,35 @@ $tag-padding-y-lg: 4px !default;
 $tag-padding-x-lg: 8px !default;
 $tag-padding-y-sm: 0px !default;
 $tag-padding-x-sm: 4px !default;
+$tag-rounded: 2px !default;
+$tag-fontsize-lg:14px;
+$tag-fontsize-md:13px;
+$tag-fontsize-sm:12px;
+
+$breadcrumb-padding: 8px 15px !default;
+$breadcrumb-margin: 0 0 $margin-base !default;
+$breadcrumb-bg: #f5f5f5 !default;
+$breadcrumb-color: $theme-secondary-text !default;
+$breadcrumb-spliter-color: #cccccc !default;
+$breadcrumb-gutter: 5px !default;
+
+$nav-margin: $margin-base 0 !default;
+$nav-padding: 10px 0 !default;
+$nav-pills-padding-y: 7px !default;
+$nav-pills-padding-x: 15px !default;
+$nav-pills-color: $theme-secondary-text !default;
+$nav-pills-hover-color: $theme-primary !default;
+$nav-pills-hover-bg: #eeeeee !default;
+$nav-pills-active-color: #fff !default;
+$nav-pills-active-bg: $theme-primary !default;
+$nav-indicator-padding-y: 7px !default;
+$nav-indicator-padding-x: 15px !default;
+$nav-indicator-color: $theme-secondary-text !default;
+$nav-indicator-active-color: $theme-primary !default;
+$nav-tabs-horizontal-side-width: 200px !default;
+$nav-tabs-horizontal-gutter: 20px !default;
+$nav-tabs-padding-y: 6px !default;
+$nav-tabs-padding-x: 16px !default;
 
 $dropdown-padding-y: 5px !default;
 $dropdown-border-width: $ctrl-border-width !default;

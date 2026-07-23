@@ -1,31 +1,31 @@
 @use '../variables' as *;
+@use '../mixins' as *;
 @use '../functions' as *;
 
-.nav{ list-style:none; margin:$margin-base 0; padding:0;}
+.nav{ list-style:none; margin:$nav-margin; padding:0;}
 .nav .nav-item{ display: inline-block; *display: inline; *zoom:1;}
 
 .nav-pills{ margin-left:0;}
 .nav-pills .nav-item{ display: inline-block; *display: inline; *zoom:1; vertical-align: bottom;}
-.nav-pills .nav-link{ color:$theme-secondary-text; padding:7px 15px; display: inline-block;}
-.nav-pills .nav-link:hover{ color:$theme-primary; background-color:#eee; text-decoration:none;}
+.nav-pills .nav-link{ color:$nav-pills-color; padding:$nav-pills-padding-y $nav-pills-padding-x; display: inline-block;}
+.nav-pills .nav-link:hover{ color:$nav-pills-hover-color; background-color:$nav-pills-hover-bg; text-decoration:none;}
 .nav-pills .active .nav-link, .nav-pills a.active,
-.nav-pills .active .nav-link:hover, .nav-pills a.active:hover{ background-color:$theme-primary; color:#fff;}
-
+.nav-pills .active .nav-link:hover, .nav-pills a.active:hover{ background-color:$nav-pills-active-bg; color:$nav-pills-active-color;}
 
 .nav-indicator{ margin-left:0; border-bottom:1px solid $theme-divider;}
 .nav-indicator .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
-.nav-indicator .nav-link{ color:$theme-secondary-text; padding:7px 15px; display: inline-block; *zoom:1;}
-.nav-indicator .nav-link:hover{ color:$theme-primary; text-decoration:none;}
+.nav-indicator .nav-link{ color:$theme-secondary-text; padding:$nav-indicator-padding-y $nav-indicator-padding-x; display: inline-block; *zoom:1;}
+.nav-indicator .nav-link:hover{ color:$nav-indicator-color; text-decoration:none;}
 .nav-indicator .active{ border-bottom:1px solid $theme-primary; margin-bottom:-1px;}
 .nav-indicator .active .nav-link, .nav-indicator a.active,
-.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$theme-primary;}
+.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$nav-indicator-active-color;}
 
 .nav-tabs{ margin-left:0; border-bottom:1px solid $theme-divider;}
 .nav-tabs .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
-.nav-tabs .nav-link{ color:$theme-secondary-text; padding:6px 16px; display: inline-block;}
+.nav-tabs .nav-link{ color:$theme-secondary-text; padding:$nav-tabs-padding-y $nav-tabs-padding-x; display: inline-block;}
 .nav-tabs .nav-link:hover{ color:$theme-primary; text-decoration: none;}
-.nav-tabs .active{ border:1px solid $theme-divider; border-bottom-color:#fff; background:#fff; margin-bottom:-1px;}
-.nav-tabs .active .nav-link, .nav-tabs a.active{ padding:8px 15px 6px;}
+.nav-tabs .active{ border:1px solid $theme-divider; border-bottom: 0 none; background:#fff; margin-bottom:-1px;}
+.nav-tabs .active .nav-link, .nav-tabs a.active{ padding:$nav-tabs-padding-y - 1px $nav-tabs-padding-x - 1px $nav-tabs-padding-y + 1px;}
 .nav-tabs .active .nav-link, .nav-tabs a.active,
 .nav-tabs .active .nav-link:hover, .nav-tabs a.active:hover{ color:$theme-primary-text;}
 
@@ -55,43 +55,63 @@ body:last-child .nav-justified, x:-moz-any-link {
 	.nav-justified .nav-item{ display:inline-block; *display:inline; *zoom:1;}
 }
 
+.tabs-left .nav { float: left; }
+.tabs-right .nav { float: right;}
+.tabs-left,.tabs-right {
+	@include clearfix;
+}
+.nav-tabs-left,.nav-tabs-right,
+.tabs-left .nav,.tabs-right .nav,.tabs-below .nav{
+	border-bottom: 0 none;
+}
+.nav-tabs-left,.nav-tabs-right,
+.tabs-left,.tabs-right
+{ overflow:visible; *width:$nav-tabs-horizontal-side-width;}
 .nav-tabs-left,
-.nav-tabs-right{ overflow:visible; *width:200px;}
-.nav-tabs-left{ border-right:1px solid $theme-divider; margin:0 20px 0 0;}
-.nav-tabs-right{ border-left:1px solid $theme-divider; margin:0 0 0 20px;}
-.nav-tabs-left .nav-item,
-.nav-tabs-right .nav-item
-{ display:block;}
-.nav-tabs-left .nav-link,
-.nav-tabs-right .nav-link
-{ color:$theme-primary-text; padding:8px 16px; display:block; *zoom:1; position:relative;}
-.nav-tabs-left .nav-link:hover,
-.nav-tabs-right .nav-link:hover
-{ text-decoration:none; color:$theme-primary;}
-.nav-tabs-left .active .nav-link,.nav-tabs-left a.active,
-.nav-tabs-right .active .nav-link,.nav-tabs-right a.active
-{ padding:7px 14px; border:1px solid $theme-divider; background-color:#fff;}
-.nav-tabs-left .active .nav-link{ border-right-color:#fff; left:1px;}
-.nav-tabs-right .active .nav-link{ border-left-color:#fff; right:1px;}
-
-.nav-tabs-1em{ *width:29px;}
-.nav-tabs-1em .nav-link{
-	text-align: center;
-	word-wrap: break-word;
-	width:28px; *width:auto;
-	padding:12px 6px;
-	line-height:16px;
+.tabs-left .nav{
+	border-right:1px solid $theme-divider;
+	margin:0 $nav-tabs-horizontal-gutter 0 0;
 }
-.nav-tabs-1em .active .nav-link{
-	padding:12px 5px;
+.nav-tabs-right,
+.tabs-right .nav{
+	border-left:1px solid $theme-divider;
+	margin:0 0 0 $nav-tabs-horizontal-gutter;
 }
+.tabs-below .nav{
+	border-top:1px solid $theme-divider;
+	margin:0 0 $nav-tabs-horizontal-gutter;
+}
+.nav-tabs-left .nav-item,.nav-tabs-right .nav-item,
+.tabs-left .nav-item,.tabs-right .nav-item
+{ display:block; margin-bottom: 0;}
+.nav-tabs-left .active,.nav-tabs-right .active,
+.tabs-left .nav .active,.tabs-right .nav .active,.tabs-below .nav .active
+{ border:1px solid $theme-divider;}
+.nav-tabs-left .active .nav-link,.nav-tabs-right .active .nav-link,
+.tabs-left .nav .active .nav-link,.tabs-right .nav .active .nav-link,
+.nav-tabs-left a.active,.nav-tabs-right a.active,
+.tabs-left .nav a.active,.tabs-right .nav a.active
+{ padding-top:$nav-tabs-padding-y - 1px; padding-bottom:$nav-tabs-padding-y - 1px}
+.nav-tabs-left .active .nav-link,.tabs-left .nav .active .nav-link,
+.nav-tabs-left a.active,.tabs-left .nav a.active
+{ padding-left:$nav-tabs-padding-x - 2px; padding-right: $nav-tabs-padding-x + 1px;}
+.nav-tabs-right .active .nav-link,.tabs-right .nav .active .nav-link,
+.nav-tabs-left a.active,.tabs-right .nav a.active
+{ padding-left:$nav-tabs-padding-x + 1px; padding-right: $nav-tabs-padding-x - 2px;}
+.nav-tabs-left .active,.tabs-left .nav .active
+{ border-right:0 none; position: relative; left: 1px;}
+.nav-tabs-right .active,.tabs-right .nav .active
+{ border-left:0 none; position: relative; left: -1px;}
+.tabs-below .nav .active .nav-link,.tabs-below .nav a.active
+{ padding-top:$nav-tabs-padding-y + 1px; padding-bottom: $nav-tabs-padding-y - 1px;}
+.tabs-below .nav .nav-item 
+{ vertical-align: top;}
+.tabs-below .nav .active
+{ border-top:0 none; margin-top: -1px;  margin-bottom: 0;}
 
-.tab-content{ overflow:auto;}
-.tab-pane{ display:none;}
-.tab-pane-active{ 
+.tabs-content,.tab-content{ overflow:auto;}
+.tabs-pane,.tab-pane{ display:none;}
+.tabs-content .active{ 
 	display:block;
 	height: 100%;
-	-webkit-animation:fadeIn .5s forwards;
-	-moz-animation:fadeIn .5s forwards;
-	animation:fadeIn .5s forwards;
 }

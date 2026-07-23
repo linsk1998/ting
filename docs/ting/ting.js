@@ -54,10 +54,10 @@ $(function(){
 	$(document).on('click',"[role=tabbable]>.nav>li",function(e){
 		var $siblings=$(this.parentNode).children().removeClass("active");
 		var index=$(this).index();
-		var $content=$(this.parentNode.parentNode).children(".tab-content");
+		var $content=$(this.parentNode.parentNode).children(".tabs-content,.tab-content");
 		$content.children(".active").removeClass("active");
 		$(this).addClass("active");
-		$content.children(".tab-pane").eq(index).addClass("active");
+		$content.children(".tabs-pane,.tab-pane").eq(index).addClass("active");
 	});
 	$(document).on('click',"[role=sidebar-nav]>.sidebar-nav-header",function(e){
 		var $this=$(this);
