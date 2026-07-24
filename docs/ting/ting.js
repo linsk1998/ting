@@ -54,10 +54,10 @@ $(function(){
 	$(document).on('click',"[role=tabbable]>.nav>li",function(e){
 		var $siblings=$(this.parentNode).children().removeClass("active");
 		var index=$(this).index();
-		var $content=$(this.parentNode.parentNode).children(".tabs-content,.tab-content");
+		var $content=$(this.parentNode.parentNode).children(".tabs-content");
 		$content.children(".active").removeClass("active");
 		$(this).addClass("active");
-		$content.children(".tabs-pane,.tab-pane").eq(index).addClass("active");
+		$content.children(".tabs-pane").eq(index).addClass("active");
 	});
 	$(document).on('click',"[role=sidebar-nav]>.sidebar-nav-header",function(e){
 		var $this=$(this);
@@ -103,11 +103,11 @@ $(function(){
 	var timer=setTimeout(autoNext,5000);
 	function setIndex($carousel,index){
 		$carousel.find(".carousel-indicators").each(function(){
-			$(this).children("li").removeClass("active").eq(index).addClass("active");
+			$(this).children().removeClass("active").eq(index).addClass("active");
 		});
 		var $inner=$carousel.find(".carousel-inner");
 		$inner.each(function(){
-			var $items=$(this).children(".item");
+			var $items=$(this).children();
 			var ele=$items[index];
 			if(ele){
 				scroll(this,ele.offsetLeft);
@@ -135,11 +135,30 @@ $(function(){
 			setIndex($carousel,index);
 		}
 	});
+	$(document).on('click',"[role=carousel] .carousel-control-prev",function(e){
+		var $this=$(this);
+		var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
+		var index=$carousel.find('.carousel-inner>.active').index();
+		if(index>0){
+			index--;
+			setIndex($carousel,index);
+		}
+	});
 	$(document).on('click',"[role=carousel] .carousel-control>.right",function(e){
 		var $this=$(this);
 		var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
 		var $items=$carousel.find('.carousel-inner>.item');
 		var index=$items.filter(".active").index(".item");
+		if(index<$items.length-1){
+			index++;
+			setIndex($carousel,index);
+		}
+	});
+	$(document).on('click',"[role=carousel] .carousel-control-next",function(e){
+		var $this=$(this);
+		var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
+		var $items=$carousel.find('.carousel-inner>*');
+		var index=$items.filter(".active").index();
 		if(index<$items.length-1){
 			index++;
 			setIndex($carousel,index);

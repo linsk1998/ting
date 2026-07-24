@@ -41,7 +41,7 @@
 .input-group-append:focus-within:not(:focus):not(:has(>:first-child:focus)){
 	z-index: unset;
 }
-.input-group-body .form-control{ width:100%;}
+.input-group-body .form-control{ width:100%; display: block; }
 
 .input-group .input-group-prepend{
 	margin-right: -1px; _margin-right:-4px;

@@ -65,7 +65,7 @@ body:last-child .nav-justified, x:-moz-any-link {
 	border-bottom: 0 none;
 }
 .nav-tabs-left,.nav-tabs-right,
-.tabs-left,.tabs-right
+.tabs-left .nav,.tabs-right .nav
 { overflow:visible; *width:$nav-tabs-horizontal-side-width;}
 .nav-tabs-left,
 .tabs-left .nav{

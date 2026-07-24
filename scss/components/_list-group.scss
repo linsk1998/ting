@@ -51,11 +51,6 @@ button.list-group-item::-moz-focus-inner{
 .list-group-item:hover {
     background-color: darken(#fff, 5%);
 }
-.list-group .active{
-	background-color:$theme-primary;
-	border-color:$theme-primary;
-	z-index:$level-item-active;
-}
 @each $key, $color in $context {
 	.list-group .list-group-item-#{$key} { background-color:mix($color, #fff, 18%);}
 	.list-group .list-group-item-#{$key}, .list-group .list-group-item-#{$key} a { color: darken(adjust-hue($color, -10), 7%);}
@@ -65,6 +60,11 @@ button.list-group-item::-moz-focus-inner{
 		background-color:$color;
 		border-color:$color;
 	}
+}
+.list-group .active,.list-group .active:hover{
+	background-color:$theme-primary;
+	border-color:$theme-primary;
+	z-index:$level-item-active;
 }
 .list-group .active, .list-group .active a,
 .list-group .active:hover, .list-group .active a:hover {
@@ -90,4 +90,16 @@ button.list-group-item::-moz-focus-inner{
 		color:lighten($color, 50%);
 	}
 	.list-group>.list-group-item-#{$key}.active .badge{ color: $color;}
+}
+.list-group-horizontal {
+	padding-bottom: 0;
+	padding-right: 1px;
+}
+.list-group-horizontal li{
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: top;
+	margin-bottom: 0;
+	margin-right: -1px;
 }
