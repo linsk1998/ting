@@ -345,6 +345,10 @@ $dropdown-item-hover-bg: #f5f5f5 !default;
 $dropdown-item-disabled-bg: #999999 !default;
 $dropdown-item-active-bg: $theme-primary !default;
 $dropdown-item-active-color: #fff !default;
+$dropdown-header-padding-y: $dropdown-item-padding-y !default;
+$dropdown-header-padding-x: $dropdown-item-padding-x * .5 !default;
+$dropdown-header-color: #777 !default;
+$dropdown-header-fontsize: 12px !default;
 
 $navbar-height: 50px !default;
 $navbar-toggle-size: 34px !default;

@@ -2,11 +2,18 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-.dropdown{ position:relative;}
+.dropdown, .dropup, .dropright, .dropleft,
+.dropdown-submenu, .dropup-submenu, .dropright-submenu, .dropleft-submenu{
+	position:relative;
+	anchor-name: --dropdown;
+	anchor-scope: all;
+}
 .dropdown-menu{
 	z-index:$level-dropdown;
 	position:absolute;
+	*zoom:1;
 	min-width:$dropdown-min-width;
+	_width:$dropdown-min-width;
 	padding:$dropdown-padding-y 0;
 	margin:$dropdown-margin;
 	text-align:left;
@@ -15,18 +22,41 @@
 	border:$ctrl-border-width solid $dropdown-border-color;
 	display:none;
 	left:0; top:100%;
+	font-size:$font-size-base;
+	overflow: visible;
 }
 .dropdown-menu-right{
 	left:auto;
 	right:0;
 }
-.dropdown-menu-right[popover]{
-	left:auto;
-	right: anchor(right);
+.btn-group .dropdown-toggle-split{
+	padding-left: 4px;
+	padding-right: 4px;
 }
-.dropup .dropdown-menu{
+.dropdown-toggle-split .caret{
+	margin: 0;
+}
+.dropup .dropdown-menu,
+.dropup-submenu .dropdown-menu{
 	top:auto; bottom:100%;
 	margin:0 0 2px;
+}
+.dropright .dropdown-menu,
+.dropright-submenu .dropdown-menu{
+	top: 0;
+	left: 100%;
+	margin:0 0 0 2px;
+}
+.dropleft .dropdown-menu,
+.dropleft-submenu .dropdown-menu{
+	top: 0;
+	right: 100%;
+	left: auto;
+	margin:0 2px 0 0;
+}
+.dropdown-submenu,.dropup-submenu,.dropleft-submenu,.dropright-submenu{
+	font-size: 0;
+	line-height: 0;
 }
 .dropdown-menu a, .dropdown-item{
 	display:block;
@@ -35,12 +65,12 @@
 	font-weight: normal;
 	color: $theme-primary-text;
 	white-space: nowrap;
-	font-size:$font-size-base;
 	width: 100%;
 	border: 0 none;
 	background: none;
 	text-align: left;
 	cursor: pointer;
+	position: relative;
 }
 .dropdown-menu li a:hover,
 .dropdown-item:hover{
@@ -53,33 +83,37 @@
 	background-color: $dropdown-item-active-bg;
 	color: $dropdown-item-active-color;
 }
-.dropdown-item[disabled] {
+// .dropright-submenu:has(>.dropdown-menu[popover]:popover-open)>.dropdown-item{
+// 	background-color: $dropdown-item-active-bg;
+// 	color: $dropdown-item-active-color;
+// }
+html .dropdown-item[disabled] {
 	color: $dropdown-item-disabled-bg;
+	background: none;
 	cursor: not-allowed;
 }
 .dropdown-divider {
 	margin: $dropdown-padding-y 0;
 	border-top: $ctrl-border-width solid $dropdown-border-color;
+	height: $ctrl-border-width;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
 }
-.open .dropdown-menu{display:block}
-
-
-.dropdown-panel {
+.dropdown-header {
+	display: block;
+	padding: $dropdown-header-padding-y $dropdown-header-padding-x;
+	font-size: $dropdown-header-fontsize;
+	color: $dropdown-header-color;
+	white-space: nowrap;
+	margin: 0;
+}
+.dropdown-item-right {
 	position: absolute;
-	margin: $dropdown-margin;
-	padding: 0;
-	overflow: auto;
-	border: $ctrl-border-width solid $dropdown-border-color;
-	text-align: left;
-	background-color: #fff;
-	.dropdown-list {
-		border: 0 none;
-	}
-	z-index: $level-popup;
-	@if($enable-rounded) {
-		@include rounded($border-radius);
-	}
+	right: 8px;
 }
+.open .dropdown-menu, .show .dropdown-menu{display:block}
+
 
 .dropdown-list{
 	width: 100%;
@@ -109,20 +143,34 @@
 	background-color: $dropdown-item-active-bg;
 	color: $dropdown-item-active-color;
 }
-
-.dropdown-panel[popover], .dropdown-menu[popover] {
-	display: block;
+.dropdown-menu[popover]:popover-open,
+.dropdown-submenu .dropdown-menu[popover]:popover-open {
 	inset: auto;
-	width: anchor-size(width);
-	top: anchor(bottom);
-	left: anchor(left);
+	width: anchor-size(--dropdown width);
+	top: anchor(--dropdown bottom);
+	left: anchor(--dropdown left);
 	/* 空间不足自动翻到上方 */
 	position-try-fallbacks: flip-block;
+	position: fixed;
+    display: block;
 }
-.dropdown-panel[popover]:where(:not(:popover-open)), .dropdown-menu[popover]:where(:not(:popover-open)) {
-    display: none;
+.dropdown-menu-right[popover]:popover-open{
+	left:auto;
+	right: anchor(--dropdown right);
 }
-.dropup[popover] {
+.dropup .dropdown-menu[popover]:popover-open,
+.dropup-submenu .dropdown-menu[popover]:popover-open{
 	top: auto;
-	bottom: anchor(top);
+	bottom: anchor(--dropdown top);
+}
+.dropright .dropdown-menu[popover]:popover-open,
+.dropright-submenu .dropdown-menu[popover]:popover-open{
+	top: anchor(--dropdown top);
+	left: anchor(--dropdown right);
+}
+.dropleft .dropdown-menu[popover]:popover-open,
+.dropleft-submenu .dropdown-menu[popover]:popover-open{
+	top: anchor(--dropdown top);
+	left: auto;
+	right: anchor(--dropdown left);
 }

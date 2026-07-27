@@ -1,34 +1,3 @@
-(function() {
-	var html5Styles,unknownElements;
-	try {
-		var a = document.createElement('a');
-		a.innerHTML = '<xyz></xyz>';
-		//if the hidden property is implemented we can assume, that the browser supports basic HTML5 Styles
-		html5Styles = ('hidden' in a);
-
-		unknownElements=a.childNodes.length == 1 || (function() {
-		  // assign a false positive if unable to shiv
-		  (document.createElement)('a');
-		  var frag = document.createDocumentFragment();
-		  return (
-			typeof frag.cloneNode == 'undefined' ||
-			typeof frag.createDocumentFragment == 'undefined' ||
-			typeof frag.createElement == 'undefined'
-		  );
-		}());
-		'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video'
-		.split(" ").forEach(function(tag){
-			document.createElement(tag);
-		});
-	} catch(e) {
-	  // assign a false positive if detection fails => unable to shiv
-	  html5Styles=true;
-	  unknownElements=true;
-	}
-	Sky.support.html5Styles=html5Styles;
-	Sky.support.unknownElements=unknownElements;
-}());
-
 
 $(function(){
 	$(document).on("click","[role=dropdown]>.dropdown-toggle",function(e){
@@ -226,96 +195,38 @@ $(function(){
 		});
 	}
 });
-$(function(){
-	function setScrollBarPoi(e){
-		var ch=this.clientHeight,sh=this.scrollHeight,st=this.scrollTop;
-		if(ch>0 && sh>ch){
-			var $this=$(this);
-			var scrollBar=$this.data("scrollBar");
-			if(!scrollBar){
-				scrollBar=document.createElement('div');
-				scrollBar.className="scrollBar";
-				document.body.appendChild(scrollBar);
-				$this.data("scrollBar",scrollBar);
-			}
-			var ra=ch/sh;
-			var th=Math.round(ch*ra);
-			var mh=5;
-			if(th<mh){
-				th=mh;
-				ra=(ch-mh)/(sh-ch);
-			}
-			var tt=Math.round(st*ra);
-			var oh=parseInt($(scrollBar).css('height'));
-			scrollBar.style.height=(oh-scrollBar.offsetHeight+th)+'px';
-			var offset=$this.offset();
-			scrollBar.style.left=(offset.left+this.clientLeft+this.clientWidth-scrollBar.offsetWidth)+'px';
-			scrollBar.style.top=(offset.top+this.clientTop+tt)+'px';
-		}
-	}
-	function endScroll(e){
-		var $this=$(this);
-		var scrollBar=$this.data("scrollBar");
-		if(scrollBar){
-			scrollBar.parentNode.removeChild(scrollBar);
-			$this.data("scrollBar",null);
-		}
-	}
-	if('ontouchstart' in document){
-		for (var i=0;i<document.styleSheets.length;i++) {
-			var rules=document.styleSheets[i].cssRules;
-			if(!rules){
-				rules=document.styleSheets[i].rules;
-			}
-			for(var j=0;j<rules.length;j++){
-				var rule=rules[j];
-				if(rule.selectorText==".scroller"){
-					rule.style.overflowY="auto";
+$(function() {
+	if('popover' in document.body) {
+		$(document).on('mousedown',function(e) {
+			$("[popover]").each(function() {
+				if(!this.contains(e.target)) {
+					this.hidePopover();
 				}
-			}
-		}
-		document.addEventListener('scroll',function(e){
-			if(e.target==document){
-				return ;
-			}
-			var me=Sky.matches(e.target, "[role=scroller]", this);
-			if(me){
-				return setScrollBarPoi.call(me,e);
-			}
-		},true);
-	}else{
-		$(document).on('mouseenter',"[role=scroller]",setScrollBarPoi);
-		$(document).on('wheel',function(e){
-			var target=e.target;
-			do{
-				var wheelDelta = e.wheelDelta;
-				if(target.getAttribute('role')=="scroller"){
-					var ch=target.clientHeight,sh=target.scrollHeight,st=target.scrollTop;
-					if(ch>0 && sh>ch){
-						if(wheelDelta>0) {
-							if(st>0){
-								target.scrollTop=st-=e.wheelDelta;
-								setScrollBarPoi.call(target);
-								e.preventDefault();
-								e.stopPropagation();
-								return false;
-							}
-						}else{
-							var maxScrollTop=sh-ch;
-							if(maxScrollTop>st){
-								st=st-e.wheelDelta;
-								target.scrollTop=st=Math.min(st,maxScrollTop);
-								setScrollBarPoi.call(target);
-								e.preventDefault();
-								e.stopPropagation();
-								return false;
-							}
-						}
-					}
-				}
-				target=target.parentNode;
-			}while(target && target!=document);
+			});
 		});
-		$(document).on('mouseleave',"[role=scroller]",endScroll);
+	} else {
+		$(document).on('click',"[popovertarget]",function(e) {
+			var popoverTargetId = $(this).attr('popovertarget');
+			var $popoverTarget = $(document.getElementById(popoverTargetId));
+			$popoverTarget.css('display', 'block');
+		});
+		$(document).on('mouseenter',"[interestfor]",function(e) {
+			var popoverTargetId = $(this).attr('interestfor');
+			var $popoverTarget = $(document.getElementById(popoverTargetId));
+			$popoverTarget.css('display', 'block');
+		});
+		$(document).on('click',"[popovertargetaction=hide]",function(e) {
+			var popoverTargetId = $(this).attr('popovertarget');
+			var $popoverTarget = $(document.getElementById(popoverTargetId));
+			$popoverTarget.css('display', 'none');
+		});
+		$(document).on('mousedown',function(e) {
+			if($(e.target).is('[interestfor],[interestfor] *')) return;
+			$("[popover]").each(function() {
+				if(!this.contains(e.target)) {
+					$(this).css('display', 'none');
+				}
+			});
+		});
 	}
 });

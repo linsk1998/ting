@@ -2995,6 +2995,10 @@ dialog {
   background: white;
 }
 
+[interestfor] {
+  interest-delay: 0.125s 0.125s;
+}
+
 .container,
 .container-md,
 .container-sm {
@@ -10214,14 +10218,19 @@ html body .callout-success {
   border-left-color: #dc3545;
 }
 
-.dropdown {
+.dropdown, .dropup, .dropright, .dropleft,
+.dropdown-submenu, .dropup-submenu, .dropright-submenu, .dropleft-submenu {
   position: relative;
+  anchor-name: --dropdown;
+  anchor-scope: all;
 }
 
 .dropdown-menu {
   z-index: 700;
   position: absolute;
+  *zoom: 1;
   min-width: 160px;
+  _width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
   text-align: left;
@@ -10231,6 +10240,8 @@ html body .callout-success {
   display: none;
   left: 0;
   top: 100%;
+  font-size: 14px;
+  overflow: visible;
 }
 
 .dropdown-menu-right {
@@ -10238,15 +10249,40 @@ html body .callout-success {
   right: 0;
 }
 
-.dropdown-menu-right[popover] {
-  left: auto;
-  right: anchor(right);
+.btn-group .dropdown-toggle-split {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-.dropup .dropdown-menu {
+.dropdown-toggle-split .caret {
+  margin: 0;
+}
+
+.dropup .dropdown-menu,
+.dropup-submenu .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin: 0 0 2px;
+}
+
+.dropright .dropdown-menu,
+.dropright-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin: 0 0 0 2px;
+}
+
+.dropleft .dropdown-menu,
+.dropleft-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  left: auto;
+  margin: 0 2px 0 0;
+}
+
+.dropdown-submenu, .dropup-submenu, .dropleft-submenu, .dropright-submenu {
+  font-size: 0;
+  line-height: 0;
 }
 
 .dropdown-menu a, .dropdown-item {
@@ -10256,12 +10292,12 @@ html body .callout-success {
   font-weight: normal;
   color: #212121;
   white-space: nowrap;
-  font-size: 14px;
   width: 100%;
   border: 0 none;
   background: none;
   text-align: left;
   cursor: pointer;
+  position: relative;
 }
 
 .dropdown-menu li a:hover,
@@ -10277,34 +10313,37 @@ html body .callout-success {
   color: #fff;
 }
 
-.dropdown-item[disabled] {
+html .dropdown-item[disabled] {
   color: #999999;
+  background: none;
   cursor: not-allowed;
 }
 
 .dropdown-divider {
   margin: 5px 0;
   border-top: 1px solid #e0e0e0;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
 }
 
-.open .dropdown-menu {
+.dropdown-header {
   display: block;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #777;
+  white-space: nowrap;
+  margin: 0;
 }
 
-.dropdown-panel {
+.dropdown-item-right {
   position: absolute;
-  margin: 2px 0 0;
-  padding: 0;
-  overflow: auto;
-  border: 1px solid #e0e0e0;
-  text-align: left;
-  background-color: #fff;
+  right: 8px;
 }
-.dropdown-panel .dropdown-list {
-  border: 0 none;
-}
-.dropdown-panel {
-  z-index: 10000000;
+
+.open .dropdown-menu, .show .dropdown-menu {
+  display: block;
 }
 
 .dropdown-list {
@@ -10337,23 +10376,40 @@ html body .callout-success {
   color: #fff;
 }
 
-.dropdown-panel[popover], .dropdown-menu[popover] {
-  display: block;
+.dropdown-menu[popover]:popover-open,
+.dropdown-submenu .dropdown-menu[popover]:popover-open {
   inset: auto;
-  width: anchor-size(width);
-  top: anchor(bottom);
-  left: anchor(left);
+  width: anchor-size(--dropdown width);
+  top: anchor(--dropdown bottom);
+  left: anchor(--dropdown left);
   /* 空间不足自动翻到上方 */
   position-try-fallbacks: flip-block;
+  position: fixed;
+  display: block;
 }
 
-.dropdown-panel[popover]:where(:not(:popover-open)), .dropdown-menu[popover]:where(:not(:popover-open)) {
-  display: none;
+.dropdown-menu-right[popover]:popover-open {
+  left: auto;
+  right: anchor(--dropdown right);
 }
 
-.dropup[popover] {
+.dropup .dropdown-menu[popover]:popover-open,
+.dropup-submenu .dropdown-menu[popover]:popover-open {
   top: auto;
-  bottom: anchor(top);
+  bottom: anchor(--dropdown top);
+}
+
+.dropright .dropdown-menu[popover]:popover-open,
+.dropright-submenu .dropdown-menu[popover]:popover-open {
+  top: anchor(--dropdown top);
+  left: anchor(--dropdown right);
+}
+
+.dropleft .dropdown-menu[popover]:popover-open,
+.dropleft-submenu .dropdown-menu[popover]:popover-open {
+  top: anchor(--dropdown top);
+  left: auto;
+  right: anchor(--dropdown left);
 }
 
 .navbar {
