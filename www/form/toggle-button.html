@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="true" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>表单</title>
-	<!-- InstanceEndEditable -->
+	<title>开关按钮 - 表单 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,37 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">表单</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item active"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -73,46 +37,125 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">开关按钮</h1>
-			<div class="btn-toolbar"
-				><label class="btn btn-toggle"><div class="checkbox"><input type="checkbox" name="checkbox"></div>未选中</label
-				><label class="btn btn-toggle btn-toggle-checked"><div class="checkbox checkbox-checked"><input type="checkbox" name="checkbox"></div>选中</label
-				><button class="btn btn-toggle">未选中</button
-				><button class="btn btn-toggle btn-toggle-checked">选中</button
-			></div>
-			<div class="btn-toolbar"
-				><label class="btn btn-toggle"><div class="radio"><input type="radio" name="radio"></div>未选中</label
-				><label class="btn btn-toggle btn-toggle-checked"><div class="radio radio-checked"><input type="radio" name="radio"></div>选中</label
-				><button class="btn btn-toggle">未选中</button
-				><button class="btn btn-toggle btn-toggle-checked">选中</button
-			></div>
-			<div class="btn-toolbar">
-				<div class="btn-group"
-					><label class="btn btn-toggle"><div class="checkbox"><input type="checkbox" name="checkbox"></div>未选中</label
-					><label class="btn btn-toggle btn-toggle-checked"><div class="checkbox checkbox-checked"><input type="checkbox" name="checkbox"></div>选中</label
-				></div>
-				<div class="btn-group"
-					><button class="btn btn-toggle">未选中</button
-					><button class="btn btn-toggle btn-toggle-checked">选中</button
-				></div>
-			</div>
-			<div class="btn-toolbar">
-				<div class="btn-group"
-					><label class="btn btn-toggle"><div class="radio"><input type="radio" name="radio"></div>未选中</label
-					><label class="btn btn-toggle btn-toggle-checked"><div class="radio radio-checked"><input type="radio" name="radio"></div>选中</label
-				></div>
-				<div class="btn-group"
-					><button class="btn btn-toggle">未选中</button
-					><button class="btn btn-toggle btn-toggle-checked">选中</button
-				></div>
-			</div>
+<h1 class="page-header" id="开关按钮">开关按钮</h1>
+<p>开关按钮（<code>.btn-toggle</code>）提供按钮形式的开关交互，适用于需要在两个状态间切换的场景。支持独立使用、放入按钮组、内含 checkbox / radio 等形态。</p>
+<h2 class="page-header" id="基本用法">基本用法</h2>
+<p><code>.btn-toggle</code> 可作用于 <code>&lt;label&gt;</code>（内含 <code>.checkbox</code> 或 <code>.radio</code>）或 <code>&lt;button&gt;</code>。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><div class="btn-toolbar">
+  <label class="btn btn-toggle">
+    <div class="checkbox"><input type="checkbox"></div>
+    未选中
+  </label>
+  <label class="btn btn-toggle btn-toggle-checked">
+    <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+    选中
+  </label>
+  <button class="btn btn-toggle">未选中</button>
+  <button class="btn btn-toggle btn-toggle-checked">选中</button>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-toolbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    未选中</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle btn-toggle-checked&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox checkbox-checked&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    选中</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle&quot;</font><font color="#24292E">&gt;未选中&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle btn-toggle-checked&quot;</font><font color="#24292E">&gt;选中&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h3 id="含radio单选">含 radio 单选</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><div class="btn-toolbar">
+  <label class="btn btn-toggle">
+    <div class="radio"><input type="radio" name="radio-group"></div>
+    未选中
+  </label>
+  <label class="btn btn-toggle btn-toggle-checked">
+    <div class="radio radio-checked"><input type="radio" name="radio-group"></div>
+    选中
+  </label>
+  <button class="btn btn-toggle">未选中</button>
+  <button class="btn btn-toggle btn-toggle-checked">选中</button>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-toolbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;radio&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;radio&quot;</font><font color="#24292E"> </font><font color="#6F42C1">name</font><font color="#24292E">=</font><font color="#032F62">&quot;radio-group&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    未选中</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle btn-toggle-checked&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;radio radio-checked&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;radio&quot;</font><font color="#24292E"> </font><font color="#6F42C1">name</font><font color="#24292E">=</font><font color="#032F62">&quot;radio-group&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    选中</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle&quot;</font><font color="#24292E">&gt;未选中&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle btn-toggle-checked&quot;</font><font color="#24292E">&gt;选中&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h3 id="放入按钮组">放入按钮组</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><div class="btn-toolbar">
+  <div class="btn-group">
+    <label class="btn btn-toggle">
+      <div class="checkbox"><input type="checkbox"></div>
+      未选中
+    </label>
+    <label class="btn btn-toggle btn-toggle-checked">
+      <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+      选中
+    </label>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-toggle">未选中</button>
+    <button class="btn btn-toggle btn-toggle-checked">选中</button>
+  </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-toolbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      未选中</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle btn-toggle-checked&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox checkbox-checked&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;checkbox&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      选中</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle&quot;</font><font color="#24292E">&gt;未选中&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-toggle btn-toggle-checked&quot;</font><font color="#24292E">&gt;选中&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

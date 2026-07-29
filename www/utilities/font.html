@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="true" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>辅助类</title>
-	<!-- InstanceEndEditable -->
+	<title>字体 - 工具类 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,37 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">工具类</a></li>
-						
-						
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item active"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -73,38 +37,86 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">辅助类</h1>
-			<h2>字体</h2>
-			<ul>
-				<li>.font-sans 非衬线字体(黑)，通常在标题使用。</li>
-				<li>.font-serif 衬线字体(宋)，通常在正文使用。</li>
-				<li>.font-cursive 手写体(楷)，通常在横幅使用。</li>
-				<li>.font-monospace 等宽字体，通常在代码使用。</li>
-			</ul>
-			<p class="font-sans">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
-				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
-				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
-				<br/><b>宇字</b>
-			</p>
-			<p class="font-serif">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
-				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
-				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
-			</p>
-			<p class="font-cursive">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
-				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
-				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
-			</p>
-			<p class="font-monospace">I need JINKELA! Africans aren’t good at agricultures, we need JINKELA badly!
-				<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
-				<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
-			</p>
+<h1 class="page-header" id="字体">字体</h1>
+<p>多种字体样式类，适用于标题、正文、横幅等不同场景。</p>
+<ul>
+<li><code>.font-sans</code> 非衬线字体(黑)，通常在标题使用。</li>
+<li><code>.font-serif</code> 衬线字体(宋)，通常在正文使用。</li>
+<li><code>.font-cursive</code> 手写体(楷)，通常在横幅使用。</li>
+<li><code>.font-monospace</code> 等宽字体，通常在代码使用。</li>
+</ul>
+<h2 class="page-header" id="非衬线字体">非衬线字体</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><p class="font-sans">I need JINKELA! Africans aren't good at agricultures, we need JINKELA badly!
+<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！
+<br/><b>宇字</b></p></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">p</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;font-sans&quot;</font><font color="#24292E">&gt;I need JINKELA! Africans aren&#39;t good at agricultures, we need JINKELA badly!</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲农业不发达，必须要用金坷垃！</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲農業不發達，必須要用金坷垃！</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;&lt;</font><font color="#22863A">b</font><font color="#24292E">&gt;宇字&lt;/</font><font color="#22863A">b</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">p</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="衬线字体">衬线字体</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><p class="font-serif">I need JINKELA! Africans aren't good at agricultures, we need JINKELA badly!
+<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！</p></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">p</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;font-serif&quot;</font><font color="#24292E">&gt;I need JINKELA! Africans aren&#39;t good at agricultures, we need JINKELA badly!</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲农业不发达，必须要用金坷垃！</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲農業不發達，必須要用金坷垃！&lt;/</font><font color="#22863A">p</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="手写体">手写体</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><p class="font-cursive">I need JINKELA! Africans aren't good at agricultures, we need JINKELA badly!
+<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！</p></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">p</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;font-cursive&quot;</font><font color="#24292E">&gt;I need JINKELA! Africans aren&#39;t good at agricultures, we need JINKELA badly!</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲农业不发达，必须要用金坷垃！</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲農業不發達，必須要用金坷垃！&lt;/</font><font color="#22863A">p</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="等宽字体">等宽字体</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><p class="font-monospace">I need JINKELA! Africans aren't good at agricultures, we need JINKELA badly!
+<br/>我要金坷垃！非洲农业不发达，必须要用金坷垃！
+<br/>我要金坷垃！非洲農業不發達，必須要用金坷垃！</p></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">p</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;font-monospace&quot;</font><font color="#24292E">&gt;I need JINKELA! Africans aren&#39;t good at agricultures, we need JINKELA badly!</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲农业不发达，必须要用金坷垃！</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;我要金坷垃！非洲農業不發達，必須要用金坷垃！&lt;/</font><font color="#22863A">p</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="true" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>表单</title>
-	<!-- InstanceEndEditable -->
+	<title>表单尺寸 - 表单 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,37 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">表单</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item active"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -73,57 +37,138 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">表单项尺寸</h1>
-			<form class="form">
-				<div class="form-group form-group-lg">
-					<label class="form-label">form-group-lg</label>
-					<input class="form-control" type="text">
-				</div>
-				<div class="form-group form-group-sm">
-					<label class="form-label">form-group-sm</label>
-					<input class="form-control" type="text">
-				</div>
-			</form>
-			<h2 class="page-header">水平表单</h2>
-			<form class="form-horizontal">
-				<div class="form-group form-group-lg">
-					<label class="form-label">form-group-lg</label>
-					<input class="form-control" type="text">
-				</div>
-				<div class="form-group form-group-sm">
-					<label class="form-label">form-group-sm</label>
-					<input class="form-control" type="text">
-				</div>
-			</form>
-			<h2 class="page-header">内联表单</h2>
-			<form class="form-inline">
-				<div class="form-group form-group-lg">
-					<label class="form-label">form-group-lg</label>
-					<input class="form-control" type="text">
-				</div>
-				<div class="form-group form-group-sm">
-					<label class="form-label">form-group-sm</label>
-					<input class="form-control" type="text">
-				</div>
-			</form>
-			<h1 class="page-header">控件尺寸</h1>
-			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="form-label">form-control-lg</label>
-					<input class="form-control form-control-lg" type="text">
-				</div>
-				<div class="form-group">
-					<label class="form-label">form-control-sm</label>
-					<input class="form-control form-control-sm" type="text">
-				</div>
-			</form>
+<h1 class="page-header" id="表单尺寸">表单尺寸</h1>
+<p>通过 <code>.form-group-lg</code> / <code>.form-group-sm</code> 设置表单项级别尺寸，或 <code>.form-control-lg</code> / <code>.form-control-sm</code> 控制单个控件尺寸。</p>
+<h2 class="page-header" id="表单项尺寸">表单项尺寸</h2>
+<p>在表单组 <code>.form-group</code> 上添加 <code>.form-group-lg</code> 或 <code>.form-group-sm</code>，标签和控件会同步调整字号与高度。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form">
+  <div class="form-group form-group-lg">
+    <label class="form-label">form-group-lg</label>
+    <input class="form-control" type="text">
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="form-label">form-group-sm</label>
+    <input class="form-control" type="text">
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="水平表单">水平表单</h2>
+<p>表单项尺寸在水平表单 <code>.form-horizontal</code> 中同样有效，标签还会自动调整垂直对齐。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-horizontal">
+  <div class="form-group form-group-lg">
+    <label class="form-label">form-group-lg</label>
+    <input class="form-control" type="text">
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="form-label">form-group-sm</label>
+    <input class="form-control" type="text">
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-horizontal&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="内联表单">内联表单</h2>
+<p>在内联表单 <code>.form-inline</code> 中也可正常使用。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-inline">
+  <div class="form-group form-group-lg">
+    <label class="form-label">form-group-lg</label>
+    <input class="form-control" type="text">
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="form-label">form-group-sm</label>
+    <input class="form-control" type="text">
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-inline&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="控件尺寸">控件尺寸</h2>
+<p>在控件本身添加 <code>.form-control-lg</code> / <code>.form-control-sm</code>，只影响控件大小，不影响标签。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-horizontal">
+  <div class="form-group">
+    <label class="form-label">form-control-lg</label>
+    <input class="form-control form-control-lg" type="text">
+  </div>
+  <div class="form-group">
+    <label class="form-label">form-control-sm</label>
+    <input class="form-control form-control-sm" type="text">
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-horizontal&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-control-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control form-control-lg&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-control-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control form-control-sm&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

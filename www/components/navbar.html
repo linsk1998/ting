@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="true" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>导航条</title>
-	<!-- InstanceEndEditable -->
+	<title>导航条 - 组件 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,39 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">组件</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
-						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item active"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 					</div>
 				</div>
@@ -73,104 +35,566 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-					<a class="navbar-brand" href="javascript:void 0">首页</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="navbar-collapse collapse">
-					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link" href="#">新闻中心</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">信息公开</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">网上办事</a></li>
-						<li class="nav-item dropdown">
-							<a href="javascript:void 0" class="nav-link dropdown-toggle">
-								公众参与
-								<span class="fa">&#xf0d7;</span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">在线咨询</a></li>
-								<li><a href="#">领导信箱</a></li>
-								<li><a href="#">在线访谈</a></li>
-								<li class="divider"></li>
-								<li><a href="#">网站投稿</a></li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<label class="form-label">搜索：</label>
-							<input type="text" class="form-control" placeholder="请输入关键词">
-						</div><button type="submit" class="btn btn-default">搜索</button>
-					</form>
-					<ul class="navbar-nav navbar-right">
-						<li class="nav-item">
-							<a class="nav-link" href="#">友情链接</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a href="javascript:void 0" class="nav-link dropdown-toggle">
-								公共服务
-								<span class="fa">&#xf0d7;</span>
-							</a>
-							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a href="#">申请服务</a></li>
-								<li><a href="#">咨询服务</a></li>
-								<li><a href="#">视频会议</a></li>
-								<li><a href="#">办公平台</a></li>
-								<li><a href="#">行政审批</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-					<a class="navbar-brand" href="#">首页</a></div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="navbar-collapse collapse">
-					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link" href="#">新闻中心</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">信息公开</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">网上办事</a></li>
-						<li class="nav-item dropdown">
-							<a href="javascript:void 0" class="nav-link dropdown-toggle">
-								公众参与
-								<span class="fa">&#xf0d7;</span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">在线咨询</a></li>
-								<li><a href="#">领导信箱</a></li>
-								<li><a href="#">在线访谈</a></li>
-								<li class="divider"></li>
-								<li><a href="#">网站投稿</a></li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-right">
-						<div class="input-group">
-							<div class="input-group-append input-group-btn">
-								<button class="btn btn-default" type="button">搜索</button>
-							</div>
-							<div class="input-group-body">
-								<input type="text" class="form-control" placeholder="关键词"/>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</nav>
-		<!-- InstanceEndEditable -->
+		<div class="container">
+<h1 class="page-header" id="导航条">导航条</h1>
+<p>导航条（<code>.navbar</code>）用作站点的导航头部。它内置了响应式折叠、品牌标识、导航链接、表单、下拉菜单等支持。</p>
+<h2 class="page-header" id="工作原理">工作原理</h2>
+<p>导航条在使用前需要了解以下要点：</p>
+<ul>
+<li>导航条需要包裹一个 <code>.navbar-header</code> 和一个 <code>.navbar-collapse</code> 以实现响应式行为。</li>
+<li>导航条默认会有一个底部边框，并带有 <code>position: relative</code> 和清除浮动。</li>
+<li>导航链接基于 <code>.nav</code> 组件构建，使用 <code>.navbar-nav</code> 作为导航列表的增强版本。</li>
+<li><code>.navbar-collapse</code> 配合 <code>.collapse</code> 类可在移动端通过 <code>.navbar-toggle</code> 按钮展开/折叠。</li>
+</ul>
+<h2 class="page-header" id="基本结构">基本结构</h2>
+<p>一个典型的导航条包含品牌标识、导航链接和表单：</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+    <a class="navbar-brand" href="javascript:void 0">Brand</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
+      <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
+      <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+    </ul>
+  </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;Brand&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;链接&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;关于&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="带下拉菜单的导航链接">带下拉菜单的导航链接</h2>
+<p>在 <code>.nav-item</code> 上添加 <code>.dropdown</code> 类，并嵌入下拉菜单：</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <button type="button" class="nav-link" popovertarget="dropdownMenu">
+                    原生下拉
+                    <span class="fa">&#xf0d7;</span>
+                </button>
+                <ul id="dropdownMenu" class="dropdown-menu" popover>
+                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">在线咨询</button></li>
+                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">领导信箱</button></li>
+                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">在线访谈</button></li>
+                    <li class="divider"></li>
+                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">网站投稿</button></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="javascript:void 0" class="nav-link dropdown-toggle">
+                    js下拉
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void 0">申请服务</a></li>
+                    <li><a href="javascript:void 0">咨询服务</a></li>
+                    <li><a href="javascript:void 0">视频会议</a></li>
+                    <li><a href="javascript:void 0">办公平台</a></li>
+                    <li><a href="javascript:void 0">行政审批</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;Brand&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    原生下拉</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;在线咨询&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;领导信箱&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;在线访谈&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;网站投稿&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link dropdown-toggle&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    js下拉</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;申请服务&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;咨询服务&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;视频会议&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;办公平台&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;行政审批&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="表单">表单</h2>
+<p><code>.navbar-form</code> 用于在导航条中放置内联表单元素，如表单控件和按钮：</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+        </ul>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <label class="form-label">搜索：</label>
+                <input type="text" class="form-control" placeholder="请输入关键词">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;Brand&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;链接&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;关于&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-form navbar-left&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;搜索：&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;请输入关键词&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;submit&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E">&gt;搜索&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="对齐方式">对齐方式</h2>
+<p>使用 <code>.navbar-left</code> 和 <code>.navbar-right</code> 可将导航元素浮动到导航条左侧或右侧：</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+        </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">首页</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a href="javascript:void 0" class="nav-link dropdown-toggle">
+                    右侧菜单
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="javascript:void 0">申请服务</a></li>
+                    <li><a href="javascript:void 0">咨询服务</a></li>
+                    <li><a href="javascript:void 0">视频会议</a></li>
+                    <li><a href="javascript:void 0">办公平台</a></li>
+                    <li><a href="javascript:void 0">行政审批</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;Brand&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;链接&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;关于&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav navbar-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link dropdown-toggle&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    右侧菜单</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu dropdown-menu-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;申请服务&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;咨询服务&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;视频会议&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;办公平台&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;行政审批&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="按钮">按钮</h2>
+<p>可以直接在导航条内放置 <code>.btn</code> 按钮，配合内边距与导航条高度对齐。使用 <code>.navbar-btn</code> 类可获得更好的垂直对齐：</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+            <button type="button" class="btn btn-default navbar-btn">登录(左)</button>
+        </ul>
+        <div class="navbar-right">
+            <button type="button" class="btn btn-default navbar-btn">登录(右)</button>
+        </div>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;Brand&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;链接&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;关于&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default navbar-btn&quot;</font><font color="#24292E">&gt;登录(左)&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default navbar-btn&quot;</font><font color="#24292E">&gt;登录(右)&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="纯文本">纯文本</h2>
+<p><code>.navbar-text</code> 用于在导航条内展示纯文本内容，保持与导航链接一致的行高和对齐：</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+        </ul>
+        <span class="navbar-text">欢迎您，用户名(左)</span>
+        <div class="navbar-right">
+            <span class="navbar-text">欢迎您，用户名(右)</span>
+        </div>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;Brand&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;链接&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;关于&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-text&quot;</font><font color="#24292E">&gt;欢迎您，用户名(左)&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-text&quot;</font><font color="#24292E">&gt;欢迎您，用户名(右)&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="非导航的链接">非导航的链接</h2>
+<p>或许你希望在标准的导航组件之外添加标准链接，那么，使用 <code>.navbar-link</code> 类可以让链接有正确的默认颜色和反色设置。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+        </ul>
+        <span class="navbar-text">欢迎您，<a href="index.html" class="navbar-link">用户名</a></span>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;Brand&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;链接&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;关于&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-text&quot;</font><font color="#24292E">&gt;欢迎您，&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;index.html&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-link&quot;</font><font color="#24292E">&gt;用户名&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="完整示例">完整示例</h2>
+<p>以下展示了两个典型的导航条用法，涵盖下拉菜单、搜索表单和右侧对齐等常见场景。</p>
+<h3 id="示例一搜索框">示例一：搜索框</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+      <a class="navbar-brand" href="javascript:void 0">首页</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item active"><a class="nav-link" href="javascript:void 0">新闻中心</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:void 0">信息公开</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:void 0">网上办事</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="input-group">
+          <div class="input-group-append input-group-btn">
+            <button class="btn btn-default" type="button">搜索</button>
+          </div>
+          <div class="input-group-body">
+            <input type="text" class="form-control" placeholder="关键词"/>
+          </div>
+        </div>
+      </form>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar navbar-default&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    </font><font color="#6A737D">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    </font><font color="#6A737D">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;新闻中心&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;信息公开&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;网上办事&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-form navbar-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append input-group-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;搜索&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;关键词&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h3 id="示例二多区域导航右侧下拉">示例二：多区域导航 + 右侧下拉</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+      <a class="navbar-brand" href="javascript:void 0">首页</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item active"><a class="nav-link" href="javascript:void 0">新闻中心</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:void 0">信息公开</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:void 0">网上办事</a></li>
+        <li class="nav-item dropdown">
+          <a href="javascript:void 0" class="nav-link dropdown-toggle">
+            公众参与
+            <span class="fa">&#xf0d7;</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void 0">在线咨询</a></li>
+            <li><a href="javascript:void 0">领导信箱</a></li>
+            <li><a href="javascript:void 0">在线访谈</a></li>
+            <li class="divider"></li>
+            <li><a href="javascript:void 0">网站投稿</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <label class="form-label">搜索：</label>
+          <input type="text" class="form-control" placeholder="请输入关键词">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void 0">友情链接</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="javascript:void 0" class="nav-link dropdown-toggle">
+            公共服务
+            <span class="fa">&#xf0d7;</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="javascript:void 0">申请服务</a></li>
+            <li><a href="javascript:void 0">咨询服务</a></li>
+            <li><a href="javascript:void 0">视频会议</a></li>
+            <li><a href="javascript:void 0">办公平台</a></li>
+            <li><a href="javascript:void 0">行政审批</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">nav</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar navbar-default&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    </font><font color="#6A737D">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-toggle fa icon-lg&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0c9;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-brand&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;首页&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    </font><font color="#6A737D">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;新闻中心&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;信息公开&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;网上办事&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link dropdown-toggle&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            公众参与</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;在线咨询&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;领导信箱&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;在线访谈&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;网站投稿&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-form navbar-left&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;搜索：&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;请输入关键词&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;submit&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E">&gt;搜索&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;navbar-nav navbar-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;友情链接&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-item dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-link dropdown-toggle&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            公共服务</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu dropdown-menu-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;申请服务&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;咨询服务&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;视频会议&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;办公平台&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;javascript:void 0&quot;</font><font color="#24292E">&gt;行政审批&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">nav</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><p>此示例展示了更复杂的导航条结构：左侧导航 + 左侧表单（带标签的搜索框）+ 右侧导航链接和下拉菜单。右侧下拉菜单使用 <code>.dropdown-menu-right</code> 确保下拉内容在右侧对齐，避免溢出。</p>
+
+		</div>
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

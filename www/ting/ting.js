@@ -1,16 +1,15 @@
 
 $(function(){
-	$(document).on("click","[role=dropdown]>.dropdown-toggle",function(e){
-		$(this.parentNode).toggleClass("open");
+	$(document).on("click",".dropdown .dropdown-toggle",function(e){
+		$(this.parentNode).closest(".dropdown").toggleClass("open");
 	});
-	function closeDropdown(e){
-		$(".open[role=dropdown]>.dropdown-toggle",document).each(function(){
-			if(this!=this.parentNode && !this.contains(e.target)){
-				$(this.parentNode).removeClass("open");
+	$(document).on("mousedown",function(e){
+		$(".dropdown.open").each(function(){
+			if(!this.contains(e.target)){
+				$(this).removeClass("open");
 			}
 		});
-	}
-	$(document).on("click",closeDropdown);
+	});
 	$(document).on('click',"[data-dismiss]",function(e){
 		var dismiss=this.getAttribute("data-dismiss");
 		if(dismiss){
@@ -21,12 +20,28 @@ $(function(){
 		$(this.parentNode).siblings(".navbar-collapse").toggleClass("collapse");
 	});
 	$(document).on('click',"[role=tabbable]>.nav>li",function(e){
-		var $siblings=$(this.parentNode).children().removeClass("active");
+		$(this.parentNode).children().removeClass("active");
 		var index=$(this).index();
 		var $content=$(this.parentNode.parentNode).children(".tabs-content");
-		$content.children(".active").removeClass("active");
 		$(this).addClass("active");
-		$content.children(".tabs-pane").eq(index).addClass("active");
+		$content.children().removeClass("tabs-active");
+		$content.children(".tabs-pane").eq(index).addClass("tabs-active");
+	});
+	$(document).on('click',"[role=presentation]",function(e){
+		if(e.target.tagName=="A") {
+			e.preventDefault();
+		}
+		var $this=$(this);
+		if($this.hasClass("active")) return;
+		var $target=$(e.target);
+		var target = $target.attr("data-target") || $target.attr("href");
+		if(target){
+			$this.siblings().removeClass("active");
+			$this.addClass("active");
+			var $tabpane=$(target);
+			$tabpane.siblings().removeClass("tabs-active");
+			$tabpane.addClass("tabs-active");
+		}
 	});
 	$(document).on('click',"[role=sidebar-nav]>.sidebar-nav-header",function(e){
 		var $this=$(this);
@@ -69,131 +84,159 @@ $(function(){
 	}
 });
 $(function(){
-	var timer=setTimeout(autoNext,5000);
-	function setIndex($carousel,index){
-		$carousel.find(".carousel-indicators").each(function(){
-			$(this).children().removeClass("active").eq(index).addClass("active");
-		});
-		var $inner=$carousel.find(".carousel-inner");
-		$inner.each(function(){
-			var $items=$(this).children();
-			var ele=$items[index];
-			if(ele){
-				scroll(this,ele.offsetLeft);
-				$items.removeClass("active");
-				$(ele).addClass("active");
-			}
-		});
-		clearTimeout(timer);
-		timer=setTimeout(autoNext,5000);
-	}
-	$(document).on('click',"[role=carousel] .carousel-indicators>li",function(e){
-		var $this=$(this);
-		var index=$this.index('li');
-		if(index>=0){
-			var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
-			setIndex($carousel,index);
+	$('[role=carousel]').each(function() {
+		var $carousel = $(this);
+		var timer = null;
+		var AUTO_PLAY_INTERVAL = 5000;
+
+		// Get all carousel items
+		function getItems() {
+			return $carousel.find('.carousel-inner').children('.carousel-item, .item');
 		}
-	});
-	$(document).on('click',"[role=carousel] .carousel-control>.left",function(e){
-		var $this=$(this);
-		var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
-		var index=$carousel.find('.carousel-inner>.item.active').index(".item");
-		if(index>0){
-			index--;
-			setIndex($carousel,index);
-		}
-	});
-	$(document).on('click',"[role=carousel] .carousel-control-prev",function(e){
-		var $this=$(this);
-		var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
-		var index=$carousel.find('.carousel-inner>.active').index();
-		if(index>0){
-			index--;
-			setIndex($carousel,index);
-		}
-	});
-	$(document).on('click',"[role=carousel] .carousel-control>.right",function(e){
-		var $this=$(this);
-		var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
-		var $items=$carousel.find('.carousel-inner>.item');
-		var index=$items.filter(".active").index(".item");
-		if(index<$items.length-1){
-			index++;
-			setIndex($carousel,index);
-		}
-	});
-	$(document).on('click',"[role=carousel] .carousel-control-next",function(e){
-		var $this=$(this);
-		var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
-		var $items=$carousel.find('.carousel-inner>*');
-		var index=$items.filter(".active").index();
-		if(index<$items.length-1){
-			index++;
-			setIndex($carousel,index);
-		}
-	});
-	function scroll(ele,to){
-		var count=18;
-		var begin=ele.scrollLeft;
-		var i=1;
-		var timer=setInterval(function(){
-			if(i<count){
-				ele.scrollLeft=begin+(to-begin)*line(i/count);
-			}else{
-				ele.scrollLeft=to;
-				clearInterval(timer);
-			}
-			i++;
-		},50/3);
-	}
-	function line(rate){
-		//return rate;
-		return rate+(1-rate)*rate*0.8;
-	}
-	function autoNext(){
-		$("div[role=carousel]",document).each(function(){
-			var $carousel=$(this);
-			var $items=$carousel.find('.carousel-inner>.item');
-			var index=$items.filter(".active").index(".item");
-			if(index<$items.length-1){
-				index++;
-				setIndex($carousel,index);
-			}else{
-				setIndex($carousel,0);
-			}
-		});
-	}
-	
-	var startX;
-	var startLeft;
-	if(document.addEventListener) {
-		$(document).on('touchstart',"[role=carousel] .carousel-inner",function(e){
-			startX=e.touches[0].pageX;
-			startLeft=this.scrollLeft;
-			clearTimeout(timer);
-		});
-		$(document).on('touchmove',"[role=carousel] .carousel-inner",function(e){
-			this.scrollLeft=startX-e.touches[0].pageX+startLeft;
-		});
-		$(document).on('touchend',"[role=carousel] .carousel-inner",function(e){
-			var endX=e.changedTouches[0].pageX;
-			if(Math.abs(startLeft-this.scrollLeft)/this.offsetWidth>0.2){
-				var $this=$(this);
-				var $carousel=$this.parentsUntil("[role=carousel]").last().parent();
-				var index=$carousel.find('.carousel-inner>.item.active').index(".item");
-				if(startX>endX){
-					index++;
-				}else if(startX<endX){
-					index--;
+
+		// Smooth scroll using setInterval with easing
+		function smoothScroll(ele, to, duration) {
+			duration = duration || 300;
+			var begin = ele.scrollLeft;
+			var startTime = Date.now();
+			var scrollTimer = setInterval(function() {
+				var elapsed = Date.now() - startTime;
+				var progress = Math.min(elapsed / duration, 1);
+				// ease-out cubic
+				var eased = 1 - Math.pow(1 - progress, 3);
+				ele.scrollLeft = begin + (to - begin) * eased;
+				if (progress >= 1) {
+					clearInterval(scrollTimer);
 				}
-				setIndex($carousel,index);
-			}else{
-				scroll(this,startLeft);
-				timer=setTimeout(autoNext,5000);
+			}, 16);
+		}
+
+		// Reset auto-play timer
+		function resetTimer() {
+			if (timer) clearTimeout(timer);
+			timer = setTimeout(next, AUTO_PLAY_INTERVAL);
+		}
+
+		// Pause auto-play
+		function pauseTimer() {
+			if (timer) {
+				clearTimeout(timer);
+				timer = null;
+			}
+		}
+
+		// Set active item by index (with loop-around)
+		function setIndex(index) {
+			var $items = getItems();
+			var count = $items.length;
+			if (count === 0) return;
+
+			// Normalize index with wrap-around
+			index = ((index % count) + count) % count;
+
+			// Update indicators
+			$carousel.find('.carousel-indicators').children().removeClass('active').eq(index).addClass('active');
+
+			// Update items
+			$items.removeClass('active');
+			var $target = $items.eq(index);
+			$target.addClass('active');
+
+			// Scroll inner container
+			smoothScroll($target.parent()[0], $target[0].offsetLeft);
+
+			// Resume auto-play
+			resetTimer();
+		}
+
+		// Go to next item
+		function next() {
+			var $items = getItems();
+			var index = $items.filter('.active').index();
+			setIndex((index + 1) % $items.length);
+		}
+
+		// Go to previous item
+		function prev() {
+			var $items = getItems();
+			var count = $items.length;
+			var index = $items.filter('.active').index();
+			setIndex((index - 1 + count) % count);
+		}
+
+		// ==================== Event bindings ====================
+
+		// Indicator click
+		$carousel.on('click', '.carousel-indicators li', function() {
+			var index = $(this).index();
+			if (index >= 0) {
+				setIndex(index);
 			}
 		});
-	}
+
+		// Prev button (support both .carousel-control-prev and .carousel-control .left)
+		$carousel.on('click', '.carousel-control-prev, .carousel-control .left', function() {
+			prev();
+		});
+
+		// Next button (support both .carousel-control-next and .carousel-control .right)
+		$carousel.on('click', '.carousel-control-next, .carousel-control .right', function() {
+			next();
+		});
+
+		// Pause auto-play on hover
+		$carousel.on('mouseenter', function() { pauseTimer(); });
+		$carousel.on('mouseleave', function() { resetTimer(); });
+
+		// Touch support
+		if ('ontouchstart' in window) {
+			var touchState = null;
+			var inner = $carousel.find('.carousel-inner')[0];
+			if (inner) {
+				inner.addEventListener('touchstart', function(e) {
+					touchState = {
+						startX: e.touches[0].pageX,
+						startY: e.touches[0].pageY,
+						startLeft: inner.scrollLeft,
+						moved: false
+					};
+					pauseTimer();
+				}, false);
+
+				inner.addEventListener('touchmove', function(e) {
+					if (!touchState) return;
+					var dx = e.touches[0].pageX - touchState.startX;
+					var dy = e.touches[0].pageY - touchState.startY;
+
+					if (Math.abs(dx) > Math.abs(dy)) {
+						e.preventDefault();
+						touchState.moved = true;
+					}
+					inner.scrollLeft = touchState.startLeft - dx;
+				}, false);
+
+				inner.addEventListener('touchend', function(e) {
+					if (!touchState) return;
+					var endX = e.changedTouches[0].pageX;
+					var dx = touchState.startX - endX;
+					var threshold = inner.offsetWidth * 0.2;
+
+					if (touchState.moved && Math.abs(dx) > threshold) {
+						dx > 0 ? next() : prev();
+					} else {
+						// Snap back to current item
+						var $active = getItems().filter('.active');
+						smoothScroll(inner, $active.length ? $active[0].offsetLeft : touchState.startLeft, 200);
+						resetTimer();
+					}
+					touchState = null;
+				}, false);
+			}
+		}
+
+		// Initialize auto-play
+		resetTimer();
+	});
 });
 $(function() {
 	if('popover' in document.body) {

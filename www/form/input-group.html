@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="true" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>输入框组</title>
-	<!-- InstanceEndEditable -->
+	<title>输入框组 - 表单 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,37 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">表单</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item active"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -73,247 +37,401 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">输入框组</h2>
-			<form>
-				<div class="input-group">
-					<div class="input-group-prepend input-group-text" id="basic-addon1">@</div>
-					<div class="input-group-body">
-						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-					</div>
-				</div>
-				<br/>
-				<div class="input-group">
-					<div class="input-group-append input-group-text" id="basic-addon2">@example.com</div>
-					<div class="input-group-body">
-						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"/>
-					</div>
-				</div>
-				<br/>
-				<div class="input-group">
-					<div class="input-group-prepend input-group-text">$</div>
-					<div class="input-group-append input-group-text">.00</div>
-					<!--控件需要放在最后-->
-					<div class="input-group-body">
-						<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
-					</div>
-				</div>
-				<br/>
-				<label for="basic-url">Your vanity URL</label>
-				<div class="input-group">
-					<div class="input-group-prepend input-group-text" id="basic-addon3">https://example.com/users/</div>
-					<div class="input-group-body">
-						<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
-					</div>
-				</div>
-				<br/>
-				<label>作为额外元素的按钮</label>
-				<div class="row row-gx-4">
-					<div class="col-md-4 col-gx-4">
-						<div class="input-group">
-							<button class="input-group-prepend btn btn-default" type="button">搜索</button>
-							<button class="input-group-append btn btn-primary" type="button">搜索</button>
-							<div class="input-group-body">
-								<input type="text" class="form-control" placeholder="关键词"/>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-8 col-gx-4">
-						<div class="input-group">
-							<div class="input-group-prepend btn-group">
-								<button type="button" class="btn btn-default">按钮 1</button>
-								<button type="button" class="btn btn-default">按钮 2</button>
-							</div>
-							<div class="input-group-append btn-group ">
-								<button type="button" class="btn btn-default">按钮 1</button>
-								<button type="button" class="btn btn-primary">按钮 2</button>
-							</div>
-							<div class="input-group-body">
-								<input type="text" class="form-control" placeholder="关键词"/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</form>
-			<h2 class="page-header">清空图标</h2>
-			<div class="input-group">
-				<div class="input-group-prepend input-group-text">@</div>
-				<div class="input-group-body"
-					><input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"
-					><button type="button" class="control-clear fa">&#xf057;</button
-				></div>
-			</div>
-			<h2 class="page-header">置灰状态</h2>
-			<form class="form">
-				<div class="form-group">
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append btn-group ">
-							<button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
-							<button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-body">
-							<input type="text" class="form-control" disabled/>
-						</div>
-					</div>
-				</div>
-			</form>
-			<h2 class="page-header">内联表单</h2>
-			<form class="form-inline"
-				><div class="form-group">
-					<label class="form-label" for="exampleInputName2">Name</label>
-					<input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-				</div
-				><div class="form-group">
-					<label class="form-label" for="exampleInputEmail2">Email</label>
-					<div style="width:300px;" class="input-group">
-						<div class="input-group-append">
-							<div class="input-group-text">
-								@shengdiyage.us
-							</div>
-						</div>
-						<div class="input-group-body">
-							<input type="text" class="form-control"/>
-						</div>
-					</div>
-				</div
-			></form>
-			<h2 class="page-header">组件大小</h2>
-			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="form-label">input-group-lg</label>
-					<div class="input-group input-group-lg">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append">
-							<div class="input-group-text">
-								元
-							</div>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-body">
-							<input type="text" class="form-control form-control-lg"/>
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">input-group-sm</label>
-					<div class="input-group input-group-sm">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append">
-							<div class="input-group-text">
-								元
-							</div>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-body">
-							<input type="text" class="form-control form-control-sm"/>
-						</div>
-					</div>
-				</div>
-				<div class="form-group form-group-lg">
-					<label class="form-label">form-group-lg</label>
-					<div class="input-group input-group-lg">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append">
-							<div class="input-group-text">
-								元
-							</div>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-body">
-							<input type="text" class="form-control"/>
-						</div>
-					</div>
-				</div>
-				<div class="form-group form-group-sm">
-					<label class="form-label">form-group-sm</label>
-					<div class="input-group input-group-sm">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append">
-							<div class="input-group-text">
-								元
-							</div>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-body">
-							<input type="text" class="form-control"/>
-						</div>
-					</div>
-				</div>
-			</form>
-			<h2 class="page-header">校验</h2>
-			<form class="form-horizontal">
-				<div class="form-group has-valid has-feedback-icon">
-					<label class="form-label">has-valid</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append">
-							<div class="input-group-text">
-								元
-							</div>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-body">
-							<input type="text" class="form-control"/>
-							<button type="button" class="control-clear fa">&#xf057;</button>
-							<i class="feedback-icon fa">&#xf00c;</i>
-						</div>
-					</div>
-					<p class="feedback-text">Example block-level help text here.</p>
-				</div>
-				<div class="form-group has-invalid has-feedback-icon">
-					<label class="form-label">has-invalid</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<div class="input-group-text">
-								█
-							</div>
-						</div>
-						<div class="input-group-append">
-							<div class="input-group-text">
-								元
-							</div>
-						</div>
-						<!--控件需要放在最后-->
-						<div class="input-group-body">
-							<input type="text" class="form-control"/>
-							<button type="button" class="control-clear fa">&#xf057;</button>
-							<i class="feedback-icon fa">&#xf00d;</i>
-						</div>
-					</div>
-					<p class="feedback-text">Example block-level help text here.</p>
-				</div>
-			</form>
-		</div><!-- InstanceEndEditable -->
+<h1 class="page-header" id="输入框组">输入框组</h1>
+<p>通过 <code>.input-group</code> 将文本、按钮等附加元素与输入框组合在一起，使用 <code>.input-group-prepend</code> 前置、<code>.input-group-append</code> 后置，控件放在 <code>.input-group-body</code> 中。</p>
+<h2 class="page-header" id="基础用法">基础用法</h2>
+<h3 id="文本前置后置">文本前置 / 后置</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><label for="basic-url">前置</label>
+<div class="input-group">
+  <div class="input-group-prepend input-group-text" id="basic-addon3">https://example.com/users/</div>
+  <div class="input-group-body">
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
+  </div>
+</div>
+<br/>
+<label for="basic-addon1">后置</label>
+<div class="input-group">
+  <div class="input-group-append input-group-text">@example.com</div>
+  <div class="input-group-body">
+    <input id="basic-addon1" type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon1"/>
+  </div>
+</div>
+<br/>
+<label for="basic-addon2">同时使用前后附加</label>
+<div class="input-group">
+  <div class="input-group-prepend input-group-text">$</div>
+  <div class="input-group-append input-group-text">.00</div>
+  <!--控件需要放在最后-->
+  <div class="input-group-body">
+    <input id="basic-addon2" type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
+  </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">for</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-url&quot;</font><font color="#24292E">&gt;前置&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend input-group-text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-addon3&quot;</font><font color="#24292E">&gt;https://example.com/users/&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-url&quot;</font><font color="#24292E"> </font><font color="#6F42C1">aria-describedby</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-addon3&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">for</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-addon1&quot;</font><font color="#24292E">&gt;后置&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append input-group-text&quot;</font><font color="#24292E">&gt;@example.com&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-addon1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;Recipient&#39;s username&quot;</font><font color="#24292E"> </font><font color="#6F42C1">aria-describedby</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-addon1&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">for</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-addon2&quot;</font><font color="#24292E">&gt;同时使用前后附加&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend input-group-text&quot;</font><font color="#24292E">&gt;$&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append input-group-text&quot;</font><font color="#24292E">&gt;.00&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  </font><font color="#6A737D">&lt;!--控件需要放在最后--&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;basic-addon2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">aria-label</font><font color="#24292E">=</font><font color="#032F62">&quot;Amount (to the nearest dollar)&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h3 id="作为额外元素的按钮">作为额外元素的按钮</h3>
+<p><code>input-group-prepend</code> 和 <code>input-group-append</code> 可以直接放按钮或按钮组。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><div class="input-group">
+  <button class="input-group-prepend btn btn-default" type="button">搜索</button>
+  <button class="input-group-append btn btn-primary" type="button">搜索</button>
+  <div class="input-group-body">
+    <input type="text" class="form-control" placeholder="关键词"/>
+  </div>
+</div>
+<br/>
+<div class="input-group">
+  <div class="input-group-prepend btn-group">
+    <button type="button" class="btn btn-default">按钮 1</button>
+    <button type="button" class="btn btn-default">按钮 2</button>
+  </div>
+  <div class="input-group-append btn-group">
+    <button type="button" class="btn btn-default">按钮 1</button>
+    <button type="button" class="btn btn-primary">按钮 2</button>
+  </div>
+  <div class="input-group-body">
+    <input type="text" class="form-control" placeholder="关键词"/>
+  </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;搜索&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append btn btn-primary&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;搜索&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;关键词&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">br</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E">&gt;按钮 1&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E">&gt;按钮 2&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E">&gt;按钮 1&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-primary&quot;</font><font color="#24292E">&gt;按钮 2&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;关键词&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="清空图标">清空图标</h2>
+<p>在 <code>.input-group-body</code> 内放入 <code>.control-clear</code> 清空按钮。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><div class="input-group">
+  <div class="input-group-prepend input-group-text">@</div>
+  <div class="input-group-body">
+    <input type="text" class="form-control" placeholder="Username"/>
+    <button type="button" class="control-clear fa">&#xf057;</button>
+  </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend input-group-text&quot;</font><font color="#24292E">&gt;@&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;Username&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="置灰状态">置灰状态</h2>
+<p>对控件和按钮设置 <code>disabled</code> 属性即可。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><div class="input-group">
+  <div class="input-group-prepend">
+    <div class="input-group-text">█</div>
+  </div>
+  <div class="input-group-append btn-group">
+    <button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
+    <button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
+  </div>
+  <!--控件需要放在最后-->
+  <div class="input-group-body">
+    <input type="text" class="form-control" disabled/>
+  </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;█&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default btn-disabled&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;按钮 1&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-primary btn-disabled&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;按钮 2&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  </font><font color="#6A737D">&lt;!--控件需要放在最后--&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="内联表单">内联表单</h2>
+<p><code>.input-group</code> 可直接放在 <code>.form-inline</code> 中使用。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-inline">
+  <div class="form-group">
+    <label class="form-label" for="exampleInputName2">Name</label>
+    <input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="exampleInputEmail2">Email</label>
+    <div style="width:300px;" class="input-group">
+      <div class="input-group-append">
+        <div class="input-group-text">@shengdiyage.us</div>
+      </div>
+      <div class="input-group-body">
+        <input type="text" class="form-control"/>
+      </div>
+    </div>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-inline&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E"> </font><font color="#6F42C1">for</font><font color="#24292E">=</font><font color="#032F62">&quot;exampleInputName2&quot;</font><font color="#24292E">&gt;Name&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">style</font><font color="#24292E">=</font><font color="#032F62">&quot;width:160px;&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;exampleInputName2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">placeholder</font><font color="#24292E">=</font><font color="#032F62">&quot;Jane Doe&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E"> </font><font color="#6F42C1">for</font><font color="#24292E">=</font><font color="#032F62">&quot;exampleInputEmail2&quot;</font><font color="#24292E">&gt;Email&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">style</font><font color="#24292E">=</font><font color="#032F62">&quot;width:300px;&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;@shengdiyage.us&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="组件大小">组件大小</h2>
+<p>使用 <code>.input-group-lg</code> / <code>.input-group-sm</code> 控制输入框组尺寸，配合 <code>.form-group-lg</code> / <code>.form-group-sm</code> 或 <code>.form-control-lg</code> / <code>.form-control-sm</code>。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-horizontal">
+  <div class="form-group">
+    <label class="form-label">input-group-lg</label>
+    <div class="input-group input-group-lg">
+      <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+      <div class="input-group-append"><div class="input-group-text">元</div></div>
+      <!--控件需要放在最后-->
+      <div class="input-group-body">
+        <input type="text" class="form-control form-control-lg"/>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">input-group-sm</label>
+    <div class="input-group input-group-sm">
+      <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+      <div class="input-group-append"><div class="input-group-text">元</div></div>
+      <div class="input-group-body">
+        <input type="text" class="form-control form-control-sm"/>
+      </div>
+    </div>
+  </div>
+  <div class="form-group form-group-lg">
+    <label class="form-label">form-group-lg</label>
+    <div class="input-group input-group-lg">
+      <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+      <div class="input-group-append"><div class="input-group-text">元</div></div>
+      <div class="input-group-body">
+        <input type="text" class="form-control"/>
+      </div>
+    </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="form-label">form-group-sm</label>
+    <div class="input-group input-group-sm">
+      <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+      <div class="input-group-append"><div class="input-group-text">元</div></div>
+      <div class="input-group-body">
+        <input type="text" class="form-control"/>
+      </div>
+    </div>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-horizontal&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;input-group-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group input-group-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;█&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;元&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      </font><font color="#6A737D">&lt;!--控件需要放在最后--&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control form-control-lg&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;input-group-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group input-group-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;█&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;元&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control form-control-sm&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group input-group-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;█&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;元&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group input-group-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;█&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;元&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="校验">校验</h2>
+<p><code>.input-group</code> 可配合 <code>.has-valid</code> / <code>.has-invalid</code> 校验状态，<code>feedback-icon</code> 和 <code>control-clear</code> 可共存于 <code>.input-group-body</code> 内。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-horizontal">
+  <div class="form-group has-valid has-feedback-icon">
+    <label class="form-label">has-valid</label>
+    <div class="input-group">
+      <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+      <div class="input-group-append"><div class="input-group-text">元</div></div>
+      <!--控件需要放在最后-->
+      <div class="input-group-body">
+        <input type="text" class="form-control"/>
+        <button type="button" class="control-clear fa">&#xf057;</button>
+        <i class="feedback-icon fa">&#xf00c;</i>
+      </div>
+    </div>
+    <p class="feedback-text">Example block-level help text here.</p>
+  </div>
+  <div class="form-group has-invalid has-feedback-icon">
+    <label class="form-label">has-invalid</label>
+    <div class="input-group">
+      <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+      <div class="input-group-append"><div class="input-group-text">元</div></div>
+      <div class="input-group-body">
+        <input type="text" class="form-control"/>
+        <button type="button" class="control-clear fa">&#xf057;</button>
+        <i class="feedback-icon fa">&#xf00d;</i>
+      </div>
+    </div>
+    <p class="feedback-text">Example block-level help text here.</p>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-horizontal&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-valid has-feedback-icon&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;has-valid&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;█&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;元&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      </font><font color="#6A737D">&lt;!--控件需要放在最后--&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;feedback-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf00c;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">p</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;feedback-text&quot;</font><font color="#24292E">&gt;Example block-level help text here.&lt;/</font><font color="#22863A">p</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid has-feedback-icon&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;has-invalid&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-prepend&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;█&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-append&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-text&quot;</font><font color="#24292E">&gt;元&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;input-group-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;text&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-control&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;feedback-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf00d;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">p</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;feedback-text&quot;</font><font color="#24292E">&gt;Example block-level help text here.&lt;/</font><font color="#22863A">p</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div>
+		</div>
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

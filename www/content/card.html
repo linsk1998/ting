@@ -1,3 +1,4 @@
+
 <!--BORDERBOX-->
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
@@ -19,7 +20,7 @@
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
 	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
@@ -184,45 +185,48 @@
 				<div class="col-md-4 col-sm-12 col-gx-4">
 					<div class="card">
 						<div class="card-header">
-							<ul class="nav nav-tabs card-header-tabs">
-								<li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-								<li class="nav-item"><a class="nav-link" href="javascript:void 0">个人设置</a></li>
-								<li class="nav-item"><a class="nav-link" href="javascript:void 0">消息</a></li>
+							<ul class="nav nav-tabs card-header-tabs" role="tablist">
+								<li class="nav-item active" role="presentation"><a class="nav-link" role="tab" href="#home1">首页</a></li>
+								<li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="#profile1">个人设置</a></li>
+								<li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="#contact1">消息</a></li>
 							</ul>
 						</div>
-						<div class="card-body">
-							<h3 class="card-title">导航</h3>
-							<p class="card-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<div class="card-body tabs-content">
+							<div class="tabs-pane active" role="tabpanel" id="home1">首页</div>
+							<div class="tabs-pane" role="tabpanel" id="profile1">个人设置</div>
+							<div class="tabs-pane" role="tabpanel" id="contact1">消息</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12 col-gx-4">
 					<div class="card">
 						<div class="card-header">
-							<ul class="nav nav-pills card-header-pills">
-								<li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-								<li class="nav-item"><a class="nav-link" href="javascript:void 0">个人设置</a></li>
-								<li class="nav-item"><a class="nav-link" href="javascript:void 0">消息</a></li>
+							<ul class="nav nav-pills card-header-pills" role="tablist">
+								<li class="nav-item active" role="presentation"><button type="button" class="nav-link" data-target="#home2">首页</button></li>
+								<li class="nav-item" role="presentation"><button type="button" class="nav-link" data-target="#profile2">个人设置</button></li>
+								<li class="nav-item" role="presentation"><button type="button" class="nav-link" data-target="#contact2">消息</button></li>
 							</ul>
 						</div>
-						<div class="card-body">
-							<h3 class="card-title">导航</h3>
-							<p class="card-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<div class="card-body tabs-content">
+							<div class="tabs-pane active" role="tabpanel" id="home2">首页</div>
+							<div class="tabs-pane" role="tabpanel" id="profile2">个人设置</div>
+							<div class="tabs-pane" role="tabpanel" id="contact2">消息</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12 col-gx-4">
 					<div class="card">
 						<div class="card-header">
-							<ul class="nav nav-indicator card-header-indicator">
-								<li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-								<li class="nav-item"><a class="nav-link" href="javascript:void 0">个人设置</a></li>
-								<li class="nav-item"><a class="nav-link" href="javascript:void 0">消息</a></li>
+							<ul class="nav nav-indicator card-header-indicator" role="tablist">
+								<li class="nav-item active" role="presentation"><a class="nav-link" role="tab" href="#home3">首页</a></li>
+								<li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="#profile3">个人设置</a></li>
+								<li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="#contact3">消息</a></li>
 							</ul>
 						</div>
-						<div class="card-body">
-							<h3 class="card-title">导航</h3>
-							<p class="card-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<div class="card-body tabs-content">
+							<div class="tabs-pane active" role="tabpanel" id="home3">首页</div>
+							<div class="tabs-pane" role="tabpanel" id="profile3">个人设置</div>
+							<div class="tabs-pane" role="tabpanel" id="contact3">消息</div>
 						</div>
 					</div>
 				</div>

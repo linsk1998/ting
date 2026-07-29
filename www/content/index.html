@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="true" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>页面内容</title>
-	<!-- InstanceEndEditable -->
+	<title>页面内容 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,37 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">页面内容</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item active"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -73,650 +37,443 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">页面内容</h1>
-			<h2>文章排版</h2>
-			<p>
-				排版定义了各种标题、段落、列表及其他内联元素的样式，您可以创建标题、段落、列表及其他内联元素。
-			</p>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.h1~.h6</td>
-					<td>设置为标题样式</td>
-				</tr>
-				<tr>
-					<td>.small、.mark</td>
-					<td>和HTML有相同样式的class</td>
-				</tr>
-				<tr>
-					<td>.pre、.nobr</td>
-					<td>和HTML有相同样式的class</td>
-				</tr>
-				<tr>
-					<td>.u、.s、.i、.b</td>
-					<td>和HTML有相同样式的class</td>
-				</tr>
-				<tr>
-					<td>.text-body</td>
-					<td>正文文本</td>
-				</tr>
-				<tr>
-					<td>.text-muted</td>
-					<td>减弱文本</td>
-				</tr>
-				<tr>
-					<td>.list-unstyled</td>
-					<td>移除默认的列表样式</td>
-				</tr>
-				<tr>
-					<td>.list-inline<br/>.list-inline-item</td>
-					<td>将所有列表项放置同一行</td>
-				</tr>
-				<tr>
-					<td>.line-{n}</td>
-					<td>强制高度为n行</td>
-				</tr>
-				<tr>
-					<td>.line-max-{n}</td>
-					<td>高度不得超过n行</td>
-				</tr>
-				<tr>
-					<td>.line-min-{n}</td>
-					<td>高度至少为n行</td>
-				</tr>
-			</tbody></table>
-			<p><a href="type.html">例子</a></p>
-			<h2 id="Link">超级链接</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.link-primary</td>
-					<td>主要链接</td>
-				</tr>
-				<tr>
-					<td>.link-secondary</td>
-					<td>次级链接</td>
-				</tr>
-				<tr>
-					<td>.link-disabled</td>
-					<td>禁用链接</td>
-				</tr>
-				<tr>
-					<td>.link-offset-*</td>
-					<td>增加下划线偏移量</td>
-				</tr>
-				<tr>
-					<td>.link-stretched</td>
-					<td>链接作用到容器（需要将链接放入position:relative的容器中）</td>
-				</tr>
-			</table>
-			<p>
-				<a class="link-primary" href="#Link">link-primary例子</a>
-				<a class="link-secondary" href="#Link">link-secondary例子</a>
-				<a class="link-disabled" href="javascript:;">link-disabled禁用</a>
-				<a class="link-success" href="#Link">link-success例子</a>
-				<a class="link-info" href="#Link">link-info例子</a>
-				<a class="link-warning" href="#Link">link-warning例子</a>
-				<a class="link-danger" href="#Link">link-danger例子</a>
-				<a class="link-primary u" href="#Link">强制带下划线</a>
-				<a class="link-primary u link-offset-1" href="#Link">下划线偏移</a>
-			</p>
-			<div class="alert alert-danger">
-				<a class="link-stretched alert-link" href="#Link">link-stretched</a>例子
-			</div>
-			<h1 class="page-header">页头</h1>
-			<p>页头组件能够为 <code>h1</code> 标签增加适当的空间，并且与页面的其他部分形成一定的分隔。它支持 <code>h1</code> 标签内内嵌 <code>small</code> 元素的默认效果，还支持大部分其他组件（需要增加一些额外的样式）。</p>
-			<pre><code>&lt;h1 class="page-header"&gt;页头&lt;/h1&gt;</code></pre>
-			<h2>按钮</h2>
-			<table class="table table-bordered table-striped table-condensed">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.btn</td>
-					<td>为按钮添加基本样式</td>
-				</tr>
-				<tr>
-					<td>.btn-default</td>
-					<td>默认/标准按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-{context}</td>
-					<td>语境色按钮 </td>
-				</tr>
-				<tr>
-					<td>.btn-outline</td>
-					<td>边框按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-{size}</td>
-					<td>按钮大小：大、小、超小</td>
-				</tr>
-				<tr>
-					<td>.btn-block</td>
-					<td>块级按钮(拉伸至父元素100%的宽度)</td>
-				</tr>
-				<tr>
-					<td>.btn-round</td>
-					<td>圆角按钮</td>
-				</tr>
-				<tr>
-					<td>.btn-square</td>
-					<td>正方形按钮，不同尺寸</td>
-				</tr>
-				<tr>
-					<td>.btn-label</td>
-					<td>按钮内部文字</td>
-				</tr>
-				<tr>
-					<td>.btn-icon<br/>.btn-icon-left<br/>.btn-icon-right</td>
-					<td>按钮内部图标</td>
-				</tr>
-				<tr>
-					<td>.btn-loading</td>
-					<td>加载状态按钮，禁用点击，半透明显示</td>
-				</tr>
-				<tr>
-					<td>.btn-disabled</td>
-					<td>禁用状态按钮，灰色背景，不可点击</td>
-				</tr>
-			</tbody></table>
-			<div class="btn-toolbar">
-				<a href="../components/button.html" class="btn btn-primary">例子</a>
-			</div>
-			<h2>按钮布局</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.btn-toolbar</td>
-					<td>按钮工具栏容器，管理按钮组的间距</td>
-				</tr>
-				<tr>
-					<td>.btn-group</td>
-					<td>按钮组容器，将多个按钮合并为一组</td>
-				</tr>
-				<tr>
-					<td>.btn-group-justified</td>
-					<td>宽度均分按钮组，按钮平均分配容器宽度</td>
-				</tr>
-				<tr>
-					<td>.btn-group-vertical</td>
-					<td>垂直排列按钮组，按钮纵向堆叠</td>
-				</tr>
-			</tbody></table>
-			<div class="btn-toolbar">
-				<a href="../components/button-group.html" class="btn btn-primary">例子</a>
-			</div>
-			<h2>表格</h2>
-			<table class="table table-bordered table-sm table-striped">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.table</td>
-					<td>为任意 &lt;table&gt; 添加基本样式 (只有横向分隔线) </td>
-				</tr>
-				<tr>
-					<td>.table-striped</td>
-					<td>在 &lt;tbody&gt; 内添加斑马线形式的条纹 ( IE8 不支持)</td>
-				</tr>
-				<tr>
-					<td>.table-bordered</td>
-					<td>为所有表格的单元格添加边框</td>
-				</tr>
-				<tr>
-					<td>.table-hover</td>
-					<td>在 &lt;tbody&gt; 内的任一行启用鼠标悬停状态</td>
-				</tr>
-				<tr>
-					<td>.table-sm、.table-xs</td>
-					<td>让表格更加紧凑</td>
-				</tr>
-				<tr>
-					<td>.table-subtle、.table-inverse</td>
-					<td>表头</td>
-				</tr>
-				<tr>
-					<td>
-						.table-primary、 .table-success、 .table-info、 .table-warning、 .table-danger
-					</td>
-					<td>语境类，可以用于整个表格，也可以用于整行，也可以用于单个单元格</td>
-				</tr>
-				<tr>
-					<td>.table-active</td>
-					<td>激活状态</td>
-				</tr>
-				<tr>
-					<td>.table-responsive</td>
-					<td>响应式表格</td>
-				</tr>
-				<tr>
-					<td>.table-fixed</td>
-					<td>强制固定表格宽度</td>
-				</tr>
-			</tbody></table>
-			<p><a href="./table.html">例子</a></p>
-			<h2>图片</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody>
-					<tr class="table-primary">
-						<th>类</th>
-						<th>描述</th>
-					</tr>
-					<tr>
-						<td>.img-rounded</td>
-						<td>圆角 </td>
-					</tr>
-					<tr>
-						<td>.img-circle</td>
-						<td>圆形</td>
-					</tr>
-					<tr>
-						<td>.img-thumbnail</td>
-						<td>带边框</td>
-					</tr>
-					<tr>
-						<td>.img-fluid</td>
-						<td>让图片占满容器宽度</td>
-					</tr>
-					<tr>
-						<td>.img-responsive</td>
-						<td>容器不够宽时自动缩放</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="row row-gx-4">
-				<div class="col-md-4 col-gx-4">
-					<img src="../images/bootstrap.jpg" class="img-rounded" width="100%"/>
-				</div>
-				<div class="col-md-4 col-gx-4 text-center">
-					<img src="../images/github.jpg" class="img-circle" width="200" height="200"/>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<img src="../images/devices.jpg" class="img-thumbnail" width="100%"/>
-				</div>
-			</div>
-			<h2>媒体对象</h2>
-			<p>专门解决图文混排、评论列表、消息流、动态信息流等场景的统一排版问题。</p>
-			<table class="table table-bordered table-striped table-sm">
-			<tbody>
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.media</td>
-					<td>媒体组件外层容器，使用弹性布局，统一管理图文间距，支持媒体嵌套</td>
-				</tr>
-				<tr>
-					<td>.media-left</td>
-					<td>左侧媒体容器，放置头像、缩略图，默认居上对齐</td>
-				</tr>
-				<tr>
-					<td>.media-right</td>
-					<td>右侧媒体容器，图片放置在文本内容右侧</td>
-				</tr>
-				<tr>
-					<td>.media-center</td>
-					<td>媒体主体内容容器，自动自适应剩余宽度，承载标题、正文、嵌套媒体</td>
-				</tr>
-				<tr>
-					<td>.media-object</td>
-					<td>媒体内部图片专用类，清除图片默认边距、适配容器宽高，防止溢出</td>
-				</tr>
-				<tr>
-					<td>.media-heading</td>
-					<td>媒体内容标题，自带底部间距，区分标题与正文文本</td>
-				</tr>
-				<tr>
-					<td>.media-middle</td>
-					<td>配合 .media-left / .media-right 使用，图片垂直居中对齐</td>
-				</tr>
-				<tr>
-					<td>.media-bottom</td>
-					<td>配合 .media-left / .media-right 使用，图片垂直底部对齐</td>
-				</tr>
-				<tr>
-					<td>.media-list</td>
-					<td>媒体列表外层，清除列表默认内外边距，批量渲染多条 media 评论/信息流</td>
-				</tr>
-			</tbody>
-			</table>
-			<pre class="code">&lt;div class=&quot;media&quot;&gt;
-	&lt;div class=&quot;media-left&quot;&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;media-object&quot; src=&quot;http://placeholder.qiniudn.com/64x64&quot; width=&quot;64&quot; height=&quot;64&quot;/&gt;&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;media-right&quot;&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;media-object&quot; src=&quot;http://placeholder.qiniudn.com/64x64&quot; width=&quot;64&quot; height=&quot;64&quot;/&gt;&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;media-center&quot;&gt;
-		&lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
-		Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-	&lt;/div&gt;
-&lt;/div&gt;</pre>
-			<p><a href="./media.html">media</a></p>
-			<h2>列表</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.list</td>
-					<td>只带有横线的列表</td>
-				</tr>
-				<tr>
-					<td>.list-dashed</td>
-					<td>虚线列表</td>
-				</tr>
-				<tr>
-					<td>.list-flush</td>
-					<td>没有边框的列表</td>
-				</tr>
-				<tr>
-					<td>.list-bordered</td>
-					<td>含有边框的列表</td>
-				</tr>
-				<tr>
-					<td>.list-striped</td>
-					<td>隔行变色</td>
-				</tr>
-				<tr>
-					<td>.list-hover</td>
-					<td>鼠标经过样式</td>
-				</tr>
-				<tr>
-					<td>
-						.list-item-success<br/>
-						.list-item-info<br/>
-						.list-item-warning<br/>
-						.list-item-danger
-					</td>
-					<td>列表项的语境色</td>
-				</tr>
-				<tr>
-					<td>.active</td>
-					<td>列表项的活动样式</td>
-				</tr>
-			</tbody></table>
-			<p><a href="./list.html">效果演示</a></p>
-			<h2>卡片</h2>
-			<p>通过缩略图组件扩展和栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。</p>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.card</td>
-					<td>卡片容器</td>
-				</tr>	
-				<tr>
-					<td>.card-body</td>
-					<td>卡片主体内容区域，提供内边距</td>
-				</tr>
-				<tr>
-					<td>.card-header</td>
-					<td>卡片头部区域</td>
-				</tr>
-				<tr>
-					<td>.card-footer</td>
-					<td>卡片底部区域</td>
-				</tr>
-				<tr>
-					<td>.card-title</td>
-					<td>卡片标题</td>
-				</tr>
-				<tr>
-					<td>.card-subtitle</td>
-					<td>卡片副标题</td>
-				</tr>
-				<tr>
-					<td>.card-text</td>
-					<td>卡片段落文本</td>
-				</tr>
-				<tr>
-					<td>.card-link</td>
-					<td>卡片内的链接</td>
-				</tr>
-				<tr>
-					<td>.card-img-top</td>
-					<td>卡片顶部图片</td>
-				</tr>
-				<tr>
-					<td>.card-img-bottom</td>
-					<td>卡片底部图片</td>
-				</tr>
-				<tr>
-					<td>.card-img</td>
-					<td>卡片图片，同时是顶部图片和底部图片时，可以使用此类</td>
-				</tr>
-				<tr>
-					<td>.card-img-overlay</td>
-					<td>覆盖在图片上方的内容层，用于图文叠加</td>
-				</tr>
-				<tr>
-					<td>.card-header-tabs</td>
-					<td>卡片头部的标签页导航样式</td>
-				</tr>
-				<tr>
-					<td>.card-header-pills</td>
-					<td>卡片头部的药丸导航样式</td>
-				</tr>
-				<tr>
-					<td>.card-header-indicator</td>
-					<td>卡片头部的指示器样式</td>
-				</tr>
-			</tbody></table>
-			<pre class="code">&lt;a href="#" class="card"&gt;
-	&lt;img src="..." alt="..."&gt;
-&lt;/a&gt;</pre>
-			<p><a href="card.html">示例</a></p>
-			<h2>凹陷</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.well</td>
-					<td>凹陷容器，浅灰色背景，带边框和内阴影效果</td>
-				</tr>
-				<tr>
-					<td>.well-lg</td>
-					<td>大号凹陷，内边距22px</td>
-				</tr>
-				<tr>
-					<td>.well-sm</td>
-					<td>小号凹陷，内边距9px</td>
-				</tr>
-			</tbody></table>
-			<div class="well">Look, I'm in a well!</div>
-			<div class="well well-lg">Look, I'm in a large well!</div>
-			<div class="well well-sm">Look, I'm in a small well!</div>
-			<h2>突起</h2>
-			<div class="card card-default">
-				<div class="card-body">
-					Look, I'm in a 突起!
-				</div>
-			</div>
-			<h2>标志</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.callout</td>
-					<td>标志容器，白色背景，带左侧5px边框标识和阴影</td>
-				</tr>
-				<tr>
-					<td>.callout-{context}</td>
-					<td>标志容器，语境色</td>
-				</tr>
-			</tbody></table>
-			<div class="row row-gx-4">
-				<div class="col-md-4 col-gx-4">
-					<div class="callout">
-						<h4>I am a primary callout!</h4>
-						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<div class="callout callout-primary">
-						<h4>I am a primary callout!</h4>
-						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<div class="callout callout-success">
-						<h4>I am a danger callout!</h4>
-						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<div class="callout callout-info">
-						<h4>I am a info callout!</h4>
-						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<div class="callout callout-warning">
-						<h4>I am a warning callout!</h4>
-						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<div class="callout callout-danger">
-						<h4>I am a danger callout!</h4>
-						<p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-					</div>
-				</div>
-			</div>
-			<h2>徽章</h2>
-			<p>给链接、导航等元素嵌套 <code>&lt;span class="badge"&gt;</code> 元素，可以很醒目的展示新的或未读的信息条目。</p>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.badge</td>
-					<td>徽章，圆角红色背景，白色文字，最小宽度18px</td>
-				</tr>
-			</tbody></table>
-			<p>徽章在语境色按钮或背景中会自动反色显示</p>
-			<p>Inbox <span class="badge">2</span></p>
-			<div class="btn-toolbar">
-				<button class="btn btn-primary" type="button">
-					<span class="btn-label">按钮</span>
-					<span class="btn-icon-right badge">2</span>
-				</button>
-				<button class="btn btn-success" type="button">
-					<span class="btn-label">按钮</span>
-					<span class="btn-icon-right badge">2</span>
-				</button>
-				<button class="btn btn-info" type="button">
-					<span class="btn-label">按钮</span>
-					<span class="btn-icon-right badge">2</span>
-				</button>
-				<button class="btn btn-warning" type="button">
-					<span class="btn-label">按钮</span>
-					<span class="btn-icon-right badge">2</span>
-				</button>
-				<button class="btn btn-danger" type="button">
-					<span class="btn-label">按钮</span>
-					<span class="btn-icon-right badge">2</span>
-				</button>
-			</div>
-			<h2>标签</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.tag</td>
-					<td>标签容器，带边框和内边距</td>
-				</tr>
-				<tr>
-					<td>.tag-{context}</td>
-					<td>标签语境色</td>
-				</tr>
-				<tr>
-					<td>.tag-{size}</td>
-					<td>标签大小</td>
-				</tr>
-			</tbody></table>
-			<p><a href="../components/tags.html">示例</a></p>
-			<h2>警告框</h2>
-			<table class="table table-bordered table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.alert</td>
-					<td>警告框容器，带内边距和边框</td>
-				</tr>
-				<tr>
-					<td>.alert-{context}</td>
-					<td>警告框语境色，不同的背景、文字和边框颜色</td>
-				</tr>
-				<tr>
-					<td>.alert-dismissible</td>
-					<td>可关闭警告框，左侧留出关闭按钮位置</td>
-				</tr>
-				<tr>
-					<td>.alert-link</td>
-					<td>警告框内的链接，加粗显示，悬停变色</td>
-				</tr>
-				<tr>
-					<td>.alert-heading</td>
-					<td>警告框内的标题</td>
-				</tr>
-			</tbody></table>
-			<p><a href="../components/alert.html">示例</a></p>
-			<h2>巨幕</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.jumbotron</td>
-					<td>延伸至整个浏览器视口来展示网站上的关键内容。</td>
-				</tr>
-			</table>
-			<h2>网站底部</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.footer</td>
-					<td>网站底部</td>
-				</tr>
-			</table>
+<h1 class="page-header" id="页面内容">页面内容</h1>
+<p>丰富的页面内容样式，包括排版、链接、表格、图片、卡片、列表、媒体对象等。</p>
+
+<h2 class="page-header" id="文章排版">文章排版</h2>
+<p>排版定义了各种标题、段落、列表及其他内联元素的样式，您可以创建标题、段落、列表及其他内联元素。</p>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.h1~.h6</td><td>设置为标题样式</td>
+</tr>
+<tr>
+<td>.small、.mark</td><td>和HTML有相同样式的class</td>
+</tr>
+<tr>
+<td>.pre、.nobr</td><td>和HTML有相同样式的class</td>
+</tr>
+<tr>
+<td>.u、.s、.i、.b</td><td>和HTML有相同样式的class</td>
+</tr>
+<tr>
+<td>.text-body</td><td>正文文本</td>
+</tr>
+<tr>
+<td>.text-muted</td><td>减弱文本</td>
+</tr>
+<tr>
+<td>.list-unstyled</td><td>移除默认的列表样式</td>
+</tr>
+<tr>
+<td>.list-inline<br/>.list-inline-item</td><td>将所有列表项放置同一行</td>
+</tr>
+</tbody></table></div>
+<p><a href="./type.html">使用方法</a></p>
+<h2 class="page-header" id="超级链接">超级链接</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.link-primary</td><td>主要链接</td>
+</tr>
+<tr>
+<td>.link-secondary</td><td>次级链接</td>
+</tr>
+<tr>
+<td>.link-disabled</td><td>禁用链接</td>
+</tr>
+<tr>
+<td>.link-offset-*</td><td>增加下划线偏移量</td>
+</tr>
+<tr>
+<td>.link-stretched</td><td>链接作用到容器（需要将链接放入position:relative的容器中）</td>
+</tr>
+</tbody></table></div>
+<p><a href="./link.html">使用方法</a></p>
+<h2 class="page-header" id="页头">页头</h2>
+<p>页头组件能够为 <code>h1</code> 标签增加适当的空间，并且与页面的其他部分形成一定的分隔。它支持 <code>h1</code> 标签内内嵌 <code>small</code> 元素的默认效果，还支持大部分其他组件（需要增加一些额外的样式）。</p>
+<pre class="code"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">h1</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;page-header&quot;</font><font color="#24292E">&gt;页头&lt;/</font><font color="#22863A">h1</font><font color="#24292E">&gt;</font></span>
+</pre>
+<h2 class="page-header" id="按钮">按钮</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.btn</td><td>为按钮添加基本样式</td>
+</tr>
+<tr>
+<td>.btn-default</td><td>默认/标准按钮</td>
+</tr>
+<tr>
+<td>.btn-{context}</td><td>语境色按钮</td>
+</tr>
+<tr>
+<td>.btn-outline</td><td>边框按钮</td>
+</tr>
+<tr>
+<td>.btn-{size}</td><td>按钮大小：大、小、超小</td>
+</tr>
+<tr>
+<td>.btn-block</td><td>块级按钮(拉伸至父元素100%的宽度)</td>
+</tr>
+<tr>
+<td>.btn-round</td><td>圆角按钮</td>
+</tr>
+<tr>
+<td>.btn-square</td><td>正方形按钮，不同尺寸</td>
+</tr>
+<tr>
+<td>.btn-label</td><td>按钮内部文字</td>
+</tr>
+<tr>
+<td>.btn-icon-left<br/>.btn-icon-right</td><td>按钮内部图标</td>
+</tr>
+<tr>
+<td>.btn-loading</td><td>加载状态按钮，禁用点击，半透明显示</td>
+</tr>
+<tr>
+<td>.btn-disabled</td><td>禁用状态按钮，灰色背景，不可点击</td>
+</tr>
+</tbody></table></div>
+<p><a href="./button.html">使用方法</a></p>
+<h2 class="page-header" id="按钮布局">按钮布局</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.btn-toolbar</td><td>按钮工具栏容器，管理按钮组的间距</td>
+</tr>
+<tr>
+<td>.btn-group</td><td>按钮组容器，将多个按钮合并为一组</td>
+</tr>
+<tr>
+<td>.btn-group-justified</td><td>宽度均分按钮组，按钮平均分配容器宽度</td>
+</tr>
+<tr>
+<td>.btn-group-vertical</td><td>垂直排列按钮组，按钮纵向堆叠</td>
+</tr>
+</tbody></table></div>
+<p><a href="./button-group.html">使用方法</a></p>
+<h2 class="page-header" id="表格">表格</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.table</td><td>为任意  添加基本样式 (只有横向分隔线)</td>
+</tr>
+<tr>
+<td>.table-striped</td><td>在  内添加斑马线形式的条纹 ( IE8 不支持)</td>
+</tr>
+<tr>
+<td>.table-bordered</td><td>为所有表格的单元格添加边框</td>
+</tr>
+<tr>
+<td>.table-hover</td><td>在  内的任一行启用鼠标悬停状态</td>
+</tr>
+<tr>
+<td>.table-sm</td><td>让表格更加紧凑</td>
+</tr>
+<tr>
+<td>.table-subtle<br/>.table-inverse</td><td>表头</td>
+</tr>
+<tr>
+<td>.table-{context}</td><td>语境类，可以用于整个表格，也可以用于整行，也可以用于单个单元格</td>
+</tr>
+<tr>
+<td>.table-active</td><td>激活状态</td>
+</tr>
+<tr>
+<td>.table-responsive</td><td>响应式表格</td>
+</tr>
+<tr>
+<td>.table-fixed</td><td>强制固定表格宽度</td>
+</tr>
+</tbody></table></div>
+<p><a href="./table.html">使用方法</a></p>
+<h2 class="page-header" id="图片">图片</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.img-rounded</td><td>圆角</td>
+</tr>
+<tr>
+<td>.img-circle</td><td>圆形</td>
+</tr>
+<tr>
+<td>.img-thumbnail</td><td>带边框</td>
+</tr>
+<tr>
+<td>.img-fluid</td><td>让图片占满容器宽度</td>
+</tr>
+<tr>
+<td>.img-responsive</td><td>容器不够宽时自动缩放</td>
+</tr>
+</tbody></table></div>
+<p><a href="./img.html">使用方法</a></p>
+<h2 class="page-header" id="媒体对象">媒体对象</h2>
+<p>专门解决图文混排、评论列表、消息流、动态信息流等场景的统一排版问题。</p>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.media</td><td>媒体组件外层容器，使用弹性布局，统一管理图文间距，支持媒体嵌套</td>
+</tr>
+<tr>
+<td>.media-left</td><td>左侧媒体容器，放置头像、缩略图，默认居上对齐</td>
+</tr>
+<tr>
+<td>.media-right</td><td>右侧媒体容器，图片放置在文本内容右侧</td>
+</tr>
+<tr>
+<td>.media-center</td><td>媒体主体内容容器，自动自适应剩余宽度，承载标题、正文、嵌套媒体</td>
+</tr>
+<tr>
+<td>.media-object</td><td>媒体内部图片专用类，清除图片默认边距、适配容器宽高，防止溢出</td>
+</tr>
+<tr>
+<td>.media-heading</td><td>媒体内容标题，自带底部间距，区分标题与正文文本</td>
+</tr>
+<tr>
+<td>.media-middle</td><td>配合 .media-left / .media-right 使用，图片垂直居中对齐</td>
+</tr>
+<tr>
+<td>.media-bottom</td><td>配合 .media-left / .media-right 使用，图片垂直底部对齐</td>
+</tr>
+<tr>
+<td>.media-list</td><td>媒体列表外层，清除列表默认内外边距，批量渲染多条 media 评论/信息流</td>
+</tr>
+</tbody></table></div>
+<pre class="code"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;media&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;media-left&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">		&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">img</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;media-object&quot;</font><font color="#24292E"> </font><font color="#6F42C1">src</font><font color="#24292E">=</font><font color="#032F62">&quot;http://placeholder.qiniudn.com/64x64&quot;</font><font color="#24292E"> </font><font color="#6F42C1">width</font><font color="#24292E">=</font><font color="#032F62">&quot;64&quot;</font><font color="#24292E"> </font><font color="#6F42C1">height</font><font color="#24292E">=</font><font color="#032F62">&quot;64&quot;</font><font color="#24292E">/&gt;&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;media-right&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">		&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">img</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;media-object&quot;</font><font color="#24292E"> </font><font color="#6F42C1">src</font><font color="#24292E">=</font><font color="#032F62">&quot;http://placeholder.qiniudn.com/64x64&quot;</font><font color="#24292E"> </font><font color="#6F42C1">width</font><font color="#24292E">=</font><font color="#032F62">&quot;64&quot;</font><font color="#24292E"> </font><font color="#6F42C1">height</font><font color="#24292E">=</font><font color="#032F62">&quot;64&quot;</font><font color="#24292E">/&gt;&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;media-center&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">		&lt;</font><font color="#22863A">h4</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;media-heading&quot;</font><font color="#24292E">&gt;Media heading&lt;/</font><font color="#22863A">h4</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">		Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</font></span>
+<span class="line"><font color="#24292E">	&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre><p><a href="./media.html">使用方法</a></p>
+<h2 class="page-header" id="列表">列表</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.list</td><td>只带有横线的列表</td>
+</tr>
+<tr>
+<td>.list-dashed</td><td>虚线列表</td>
+</tr>
+<tr>
+<td>.list-flush</td><td>没有边框的列表</td>
+</tr>
+<tr>
+<td>.list-bordered</td><td>含有边框的列表</td>
+</tr>
+<tr>
+<td>.list-striped</td><td>隔行变色</td>
+</tr>
+<tr>
+<td>.list-hover</td><td>鼠标经过样式</td>
+</tr>
+<tr>
+<td>.list-item-{context}</td><td>列表项的语境色</td>
+</tr>
+<tr>
+<td>.active</td><td>列表项的活动样式</td>
+</tr>
+</tbody></table></div>
+<p><a href="list.html">效果演示</a></p>
+
+<h2 class="page-header" id="卡片">卡片</h2>
+<p>通过缩略图组件扩展和栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。</p>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.card</td><td>卡片容器</td>
+</tr>
+<tr>
+<td>.card-body</td><td>卡片主体内容区域，提供内边距</td>
+</tr>
+<tr>
+<td>.card-header</td><td>卡片头部区域</td>
+</tr>
+<tr>
+<td>.card-footer</td><td>卡片底部区域</td>
+</tr>
+<tr>
+<td>.card-title</td><td>卡片标题</td>
+</tr>
+<tr>
+<td>.card-subtitle</td><td>卡片副标题</td>
+</tr>
+<tr>
+<td>.card-text</td><td>卡片段落文本</td>
+</tr>
+<tr>
+<td>.card-link</td><td>卡片内的链接</td>
+</tr>
+<tr>
+<td>.card-img-top</td><td>卡片顶部图片</td>
+</tr>
+<tr>
+<td>.card-img-bottom</td><td>卡片底部图片</td>
+</tr>
+<tr>
+<td>.card-img</td><td>卡片图片，同时是顶部图片和底部图片时，可以使用此类</td>
+</tr>
+<tr>
+<td>.card-img-overlay</td><td>覆盖在图片上方的内容层，用于图文叠加</td>
+</tr>
+<tr>
+<td>.card-header-tabs</td><td>卡片头部的标签页导航样式</td>
+</tr>
+<tr>
+<td>.card-header-pills</td><td>卡片头部的药丸导航样式</td>
+</tr>
+<tr>
+<td>.card-header-indicator</td><td>卡片头部的指示器样式</td>
+</tr>
+</tbody></table></div>
+<pre class="code"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;card&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;</font><font color="#22863A">img</font><font color="#24292E"> </font><font color="#6F42C1">src</font><font color="#24292E">=</font><font color="#032F62">&quot;...&quot;</font><font color="#24292E"> </font><font color="#6F42C1">alt</font><font color="#24292E">=</font><font color="#032F62">&quot;...&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+</pre><p><a href="card.html">效果演示</a></p>
+
+<h2 class="page-header" id="凹陷">凹陷</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.well</td><td>凹陷容器，浅灰色背景，带边框和内阴影效果</td>
+</tr>
+<tr>
+<td>.well-lg</td><td>大号凹陷，内边距22px</td>
+</tr>
+<tr>
+<td>.well-sm</td><td>小号凹陷，内边距9px</td>
+</tr>
+</tbody></table></div>
+<p><a href="./well.html">使用方法</a></p>
+<h2 class="page-header" id="标志">标志</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.callout</td><td>标志容器，白色背景，带左侧5px边框标识和阴影</td>
+</tr>
+<tr>
+<td>.callout-{context}</td><td>标志容器，语境色</td>
+</tr>
+</tbody></table></div>
+<p><a href="./callout.html">使用方法</a></p>
+<h2 class="page-header" id="徽章">徽章</h2>
+<p>给链接、导航等元素嵌套  元素，可以很醒目的展示新的或未读的信息条目。</p>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.badge</td><td>徽章，圆角红色背景，白色文字，最小宽度18px</td>
+</tr>
+</tbody></table></div>
+<p><a href="./badge.html">使用方法</a></p>
+<h2 class="page-header" id="标签">标签</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.tag</td><td>标签容器，带边框和内边距</td>
+</tr>
+<tr>
+<td>.tag-{context}</td><td>标签语境色</td>
+</tr>
+<tr>
+<td>.tag-{size}</td><td>标签大小</td>
+</tr>
+</tbody></table></div>
+<p><a href="./tag.html">使用方法</a></p>
+<h2 class="page-header" id="警告框">警告框</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.alert</td><td>警告框容器，带内边距和边框</td>
+</tr>
+<tr>
+<td>.alert-{context}</td><td>警告框语境色，不同的背景、文字和边框颜色</td>
+</tr>
+<tr>
+<td>.alert-dismissible</td><td>可关闭警告框，左侧留出关闭按钮位置</td>
+</tr>
+<tr>
+<td>.alert-link</td><td>警告框内的链接，加粗显示，悬停变色</td>
+</tr>
+<tr>
+<td>.alert-heading</td><td>警告框内的标题</td>
+</tr>
+</tbody></table></div>
+<p><a href="./alert.html">使用方法</a></p>
+<h2 class="page-header" id="巨幕">巨幕</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.jumbotron</td><td>延伸至整个浏览器视口来展示网站上的关键内容。</td>
+</tr>
+</tbody></table></div>
+
+<h2 class="page-header" id="网站底部">网站底部</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.footer</td><td>网站底部</td>
+</tr>
+</tbody></table></div>
+
 		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="true" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>起步</title>
-	<!-- InstanceEndEditable -->
+	<title>起步 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,37 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">起步</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li class="nav-item active"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -73,64 +37,63 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">起步</h1>
-			<p>ting.css，有多种使用方式，最简单的方式就是直接引入全量。</p>
-			<p>首先<a href="../ting/ting.css" download="ting.css">下载ting.css</a>，然后在你的页面上用link标签引入。</p>
-			<h2 class="page-header">基本的HTML模版</h2>
-			<p>新版本只支持border-box盒模型，如果您想要兼容IE6、IE7需要在doctype之前打一行注释。</p>
-			<pre class="code">&lt;!--BORDERBOX--&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;title&gt;Ting&lt;/title&gt;
-		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
-		&lt;link href="css/ting.css" rel="stylesheet"/&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-		&lt;h1&gt;Hello, world!&lt;/h1&gt;
-	&lt;/body&gt;
-&lt;/html&gt;</pre>
-			<p><a href="../layout/container.html">示例</a></p>
-			<h2 class="page-header">高级使用方式</h2>
-			<h3>结合purgecss，通过使用情况自动化按需打包</h3>
-			<p>webpack插件例子</p>
-			<pre class="code">const PurgecssPlugin = require('purgecss-webpack-plugin');
-new PurgecssPlugin({
-	paths:["public/index.html"],
-	safelist:[略],
-	keyframes:true,
-	fontFace:true
-})</pre>
-			<p>postcss插件例子</p>
-			<pre class="code">const purgecss = require('postcss-purgecss');
-purgecss({
-	content: ["index.html"],
-	whitelist: [略],
-	keyframes: true,
-	fontFace:true
-});</pre>
-			<h3>作为mixin库使用</h3>
-			<p>vue-cli例子</p>
-			<pre class="code">{
-	css: {
-		loaderOptions: {
-			sass: {
-				implementation: require('sass'),
-				prependData: `
-@import '~@ting-ui/css/scss/variables.scss';
-@import '~@ting-ui/css/scss/mixin.scss';`
-			}
-		}
-	}
-}</pre>
-			<!--作为bootstrap主题或兼容库（未完成）-->
+<h1 class="page-header" id="起步">起步</h1>
+<p>ting.css，有多种使用方式，最简单的方式就是直接引入全量。</p>
+<p>首先下载<a href="../ting/ting.css">ting.css</a>，然后在你的页面上用link标签引入。</p>
+
+<h2 class="page-header" id="基本的html模版">基本的HTML模版</h2>
+<p>新版本只支持border-box盒模型，如果您想要兼容IE6、IE7需要在doctype之前打一行注释。</p>
+<pre class="code"><span class="line"><font color="#6A737D">&lt;!--BORDERBOX--&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;!</font><font color="#22863A">DOCTYPE</font><font color="#24292E"> </font><font color="#6F42C1">html</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">html</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;</font><font color="#22863A">head</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">		&lt;</font><font color="#22863A">title</font><font color="#24292E">&gt;Ting&lt;/</font><font color="#22863A">title</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">		&lt;</font><font color="#22863A">meta</font><font color="#24292E"> </font><font color="#6F42C1">name</font><font color="#24292E">=</font><font color="#032F62">&quot;viewport&quot;</font><font color="#24292E"> </font><font color="#6F42C1">content</font><font color="#24292E">=</font><font color="#032F62">&quot;width=device-width, initial-scale=1.0&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">		&lt;</font><font color="#22863A">link</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;css/ting.css&quot;</font><font color="#24292E"> </font><font color="#6F42C1">rel</font><font color="#24292E">=</font><font color="#032F62">&quot;stylesheet&quot;</font><font color="#24292E">/&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;/</font><font color="#22863A">head</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;</font><font color="#22863A">body</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">		&lt;</font><font color="#22863A">h1</font><font color="#24292E">&gt;Hello, world!&lt;/</font><font color="#22863A">h1</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">	&lt;/</font><font color="#22863A">body</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">html</font><font color="#24292E">&gt;</font></span>
+</pre>
+<h2 class="page-header" id="高级使用方式">高级使用方式</h2>
+<h3 id="结合purgecss通过使用情况自动化按需打包">结合purgecss，通过使用情况自动化按需打包</h3>
+<p>webpack插件例子</p>
+<pre class="code"><span class="line"><font color="#D73A49">const</font><font color="#24292E"> </font><font color="#005CC5">PurgecssPlugin</font><font color="#24292E"> </font><font color="#D73A49">=</font><font color="#24292E"> </font><font color="#6F42C1">require</font><font color="#24292E">(</font><font color="#032F62">&#39;purgecss-webpack-plugin&#39;</font><font color="#24292E">);</font></span>
+<span class="line"><font color="#D73A49">new</font><font color="#24292E"> </font><font color="#6F42C1">PurgecssPlugin</font><font color="#24292E">({</font></span>
+<span class="line"><font color="#24292E">	paths:[</font><font color="#032F62">&quot;public/index.html&quot;</font><font color="#24292E">],</font></span>
+<span class="line"><font color="#24292E">	safelist:[略],</font></span>
+<span class="line"><font color="#24292E">	keyframes:</font><font color="#005CC5">true</font><font color="#24292E">,</font></span>
+<span class="line"><font color="#24292E">	fontFace:</font><font color="#005CC5">true</font></span>
+<span class="line"><font color="#24292E">})</font></span>
+</pre><p>postcss插件例子</p>
+<pre class="code"><span class="line"><font color="#D73A49">const</font><font color="#24292E"> </font><font color="#005CC5">purgecss</font><font color="#24292E"> </font><font color="#D73A49">=</font><font color="#24292E"> </font><font color="#6F42C1">require</font><font color="#24292E">(</font><font color="#032F62">&#39;postcss-purgecss&#39;</font><font color="#24292E">);</font></span>
+<span class="line"><font color="#6F42C1">purgecss</font><font color="#24292E">({</font></span>
+<span class="line"><font color="#24292E">	content: [</font><font color="#032F62">&quot;index.html&quot;</font><font color="#24292E">],</font></span>
+<span class="line"><font color="#24292E">	whitelist: [略],</font></span>
+<span class="line"><font color="#24292E">	keyframes: </font><font color="#005CC5">true</font><font color="#24292E">,</font></span>
+<span class="line"><font color="#24292E">	fontFace:</font><font color="#005CC5">true</font></span>
+<span class="line"><font color="#24292E">});</font></span>
+</pre><h3 id="作为mixin库使用">作为mixin库使用</h3>
+<p>vue-cli例子</p>
+<pre class="code"><span class="line"><font color="#24292E">{</font></span>
+<span class="line"><font color="#24292E">	</font><font color="#6F42C1">css</font><font color="#24292E">: {</font></span>
+<span class="line"><font color="#24292E">		</font><font color="#6F42C1">loaderOptions</font><font color="#24292E">: {</font></span>
+<span class="line"><font color="#24292E">			</font><font color="#6F42C1">sass</font><font color="#24292E">: {</font></span>
+<span class="line"><font color="#24292E">				</font><font color="#6F42C1">implementation</font><font color="#24292E">: </font><font color="#6F42C1">require</font><font color="#24292E">(</font><font color="#032F62">&#39;sass&#39;</font><font color="#24292E">),</font></span>
+<span class="line"><font color="#24292E">				</font><font color="#6F42C1">prependData</font><font color="#24292E">: </font><font color="#032F62">`</font></span>
+<span class="line"><font color="#032F62">@import &#39;~@ting-ui/css/scss/variables.scss&#39;;</font></span>
+<span class="line"><font color="#032F62">@import &#39;~@ting-ui/css/scss/mixin.scss&#39;;`</font></span>
+<span class="line"><font color="#24292E">			}</font></span>
+<span class="line"><font color="#24292E">		}</font></span>
+<span class="line"><font color="#24292E">	}</font></span>
+<span class="line"><font color="#24292E">}</font></span>
+</pre>
 		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

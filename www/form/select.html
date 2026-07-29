@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="true" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>选择按钮</title>
-	<!-- InstanceEndEditable -->
+	<title>选择按钮 - 表单 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,37 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">表单</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item active"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 						<ul class="navbar-nav navbar-right hidden-mobile">
 						</ul>
@@ -73,234 +37,508 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">选择按钮的不同状态</h2>
-			<form class="form">
-				<div class="form-group">
-					<label class="form-label">基本用法</label>
-					<div class="select dropdown">
-						<input type="hidden">
-						<button type="button" class="select-btn" popovertarget="myPop">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-						<button type="button" class="control-clear fa">&#xf057;</button>
-						<ul id="myPop" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线咨询</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">领导信箱</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线访谈</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">网站投稿</button></li>
-						</ul>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">空白占位</label>
-					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-placeholder">请选择XXX</span>
-							<div class="select-icon caret"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">置灰</label>
-					<input type="hidden">
-					<div class="select select-disabled">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-label">金坷拉</span>
-							<div class="caret select-icon"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">置灰空白占位</label>
-					<input type="hidden">
-					<div class="select select-disabled">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-placeholder">请选择XXX</span>
-							<div class="caret select-icon"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">加载中</label>
-					<input type="hidden">
-					<div class="select select-loading">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon icon loading-circular"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">加载中空白占位</label>
-					<input type="hidden">
-					<div class="select select-loading">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-placeholder">加载中...</span>
-							<div class="select-icon icon loading-circular"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">错误重试</label>
-					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-msg text-danger">网络加载错误</span>
-							<div class="select-icon icon fa fa-refresh"></div>
-						</button>
-					</div>
-				</div>
-			</form>
-			<h2 class="page-header">组件大小</h2>
-			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="form-label">select-lg</label>
-					<div class="select select-lg">
-						<button type="button" class="select-btn">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-						<button type="button" class="control-clear fa">&#xf057;</button>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">select-sm</label>
-					<div class="select select-sm">
-						<button type="button" class="select-btn">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-						<button type="button" class="control-clear fa">&#xf057;</button>
-					</div>
-				</div>
-				<div class="form-group form-group-lg">
-					<label class="form-label">form-group-lg</label>
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-						<button type="button" class="control-clear fa">&#xf057;</button>
-					</div>
-				</div>
-				<div class="form-group form-group-sm">
-					<label class="form-label">form-group-sm</label>
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-						<button type="button" class="control-clear fa">&#xf057;</button>
-					</div>
-				</div>
-			</form>
-			<h2 class="page-header">字段校验</h2>
-			<form class="form">
-				<div class="form-group has-invalid">
-					<label class="form-label">基本用法</label>
-					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">空白占位</label>
-					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-placeholder">请选择XXX</span>
-							<div class="select-icon caret"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">置灰</label>
-					<input type="hidden">
-					<div class="select select-disabled is-invalid">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-label">金坷拉</span>
-							<div class="caret select-icon"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">置灰空白占位</label>
-					<input type="hidden">
-					<div class="select select-disabled">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-placeholder">请选择XXX</span>
-							<div class="caret select-icon"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">加载中</label>
-					<input type="hidden">
-					<div class="select select-loading">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon icon loading-circular"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">加载中空白占位</label>
-					<input type="hidden">
-					<div class="select select-loading">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-placeholder">加载中...</span>
-							<div class="select-icon icon loading-circular"></div>
-						</button>
-					</div>
-				</div>
-				<div class="form-group has-invalid">
-					<label class="form-label">错误重试</label>
-					<input type="hidden">
-					<div class="select">
-						<button type="button" class="select-btn" disabled>
-							<span class="select-msg text-danger">网络加载错误</span>
-							<div class="select-icon icon fa fa-refresh"></div>
-						</button>
-					</div>
-				</div>
-			</form>
-			<h2 class="page-header">表单验证</h2>
-			<form class="form-horizontal">
-				<div class="form-group has-valid has-feedback-icon">
-					<label class="form-label">has-valid</label>
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-						<button type="button" class="control-clear fa">&#xf057;</button>
-						<i class="feedback-icon fa">&#xf00c;</i>
-					</div>
-				</div>
-				<div class="form-group has-invalid has-feedback-icon">
-					<label class="form-label">has-invalid</label>
-					<div class="select">
-						<button type="button" class="select-btn">
-							<span class="select-label">金坷拉</span>
-							<div class="select-icon caret"></div>
-						</button>
-						<button type="button" class="control-clear fa">&#xf057;</button>
-						<i class="feedback-icon fa">&#xf00d;</i>
-					</div>
-				</div>
-			</form>
-		</div><!-- InstanceEndEditable -->
+<h1 class="page-header" id="选择按钮">选择按钮</h1>
+<p>下拉选择按钮（<code>.select</code>）提供自定义样式的选择控件，支持下拉菜单、占位、置灰、加载中、错误重试等多种状态。</p>
+<h2 class="page-header" id="选择按钮的不同状态">选择按钮的不同状态</h2>
+<h3 id="基本用法">基本用法</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form">
+  <div class="form-group">
+    <label class="form-label">基本用法</label>
+    <div class="select dropdown">
+      <input type="hidden">
+      <button type="button" class="select-btn" popovertarget="myPop">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+      <button type="button" class="control-clear fa">&#xf057;</button>
+      <ul id="myPop" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线咨询</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">领导信箱</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线访谈</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">网站投稿</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">空白占位</label>
+    <input type="hidden">
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-placeholder">请选择XXX</span>
+        <div class="select-icon caret"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">置灰</label>
+    <input type="hidden">
+    <div class="select select-disabled">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-label">金坷拉</span>
+        <div class="caret select-icon"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">置灰空白占位</label>
+    <input type="hidden">
+    <div class="select select-disabled">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-placeholder">请选择XXX</span>
+        <div class="caret select-icon"></div>
+      </button>
+    </div>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;基本用法&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;myPop&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;myPop&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;myPop&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;在线咨询&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;myPop&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;领导信箱&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;myPop&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;在线访谈&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;myPop&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;网站投稿&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;空白占位&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-placeholder&quot;</font><font color="#24292E">&gt;请选择XXX&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;置灰&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-disabled&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret select-icon&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;置灰空白占位&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-disabled&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-placeholder&quot;</font><font color="#24292E">&gt;请选择XXX&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret select-icon&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h3 id="加载中">加载中</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form">
+  <div class="form-group">
+    <label class="form-label">加载中</label>
+    <input type="hidden">
+    <div class="select select-loading">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon icon loading-circular"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">加载中空白占位</label>
+    <input type="hidden">
+    <div class="select select-loading">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-placeholder">加载中...</span>
+        <div class="select-icon icon loading-circular"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">错误重试</label>
+    <input type="hidden">
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-msg text-danger">网络加载错误</span>
+        <div class="select-icon icon fa fa-refresh"></div>
+      </button>
+    </div>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;加载中&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-loading&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon icon loading-circular&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;加载中空白占位&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-loading&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-placeholder&quot;</font><font color="#24292E">&gt;加载中...&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon icon loading-circular&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;错误重试&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-msg text-danger&quot;</font><font color="#24292E">&gt;网络加载错误&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon icon fa fa-refresh&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="组件大小">组件大小</h2>
+<p><code>.select-lg</code> / <code>.select-sm</code> 控制选择按钮大小，可配合 <code>.form-group-lg</code> / <code>.form-group-sm</code>（此时 <code>.select</code> 无需额外尺寸类）。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-horizontal">
+  <div class="form-group">
+    <label class="form-label">select-lg</label>
+    <div class="select select-lg">
+      <button type="button" class="select-btn">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+      <button type="button" class="control-clear fa">&#xf057;</button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">select-sm</label>
+    <div class="select select-sm">
+      <button type="button" class="select-btn">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+      <button type="button" class="control-clear fa">&#xf057;</button>
+    </div>
+  </div>
+  <div class="form-group form-group-lg">
+    <label class="form-label">form-group-lg</label>
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+      <button type="button" class="control-clear fa">&#xf057;</button>
+    </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="form-label">form-group-sm</label>
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+      <button type="button" class="control-clear fa">&#xf057;</button>
+    </div>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-horizontal&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;select-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;select-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-lg&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-lg&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group form-group-sm&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;form-group-sm&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="字段校验">字段校验</h2>
+<p>在 <code>.form-group</code> 上添加 <code>.has-invalid</code>，控件边框自动变红。支持全部 7 种状态，其中置灰态可额外加 <code>.is-invalid</code> 保持红色边框。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form">
+  <div class="form-group has-invalid">
+    <label class="form-label">基本用法</label>
+    <input type="hidden">
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group has-invalid">
+    <label class="form-label">空白占位</label>
+    <input type="hidden">
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-placeholder">请选择XXX</span>
+        <div class="select-icon caret"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group has-invalid">
+    <label class="form-label">置灰</label>
+    <input type="hidden">
+    <div class="select select-disabled is-invalid">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-label">金坷拉</span>
+        <div class="caret select-icon"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group has-invalid">
+    <label class="form-label">置灰空白占位</label>
+    <input type="hidden">
+    <div class="select select-disabled">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-placeholder">请选择XXX</span>
+        <div class="caret select-icon"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group has-invalid">
+    <label class="form-label">加载中</label>
+    <input type="hidden">
+    <div class="select select-loading">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon icon loading-circular"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group has-invalid">
+    <label class="form-label">加载中空白占位</label>
+    <input type="hidden">
+    <div class="select select-loading">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-placeholder">加载中...</span>
+        <div class="select-icon icon loading-circular"></div>
+      </button>
+    </div>
+  </div>
+  <div class="form-group has-invalid">
+    <label class="form-label">错误重试</label>
+    <input type="hidden">
+    <div class="select">
+      <button type="button" class="select-btn" disabled>
+        <span class="select-msg text-danger">网络加载错误</span>
+        <div class="select-icon icon fa fa-refresh"></div>
+      </button>
+    </div>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;基本用法&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;空白占位&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-placeholder&quot;</font><font color="#24292E">&gt;请选择XXX&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;置灰&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-disabled is-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret select-icon&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;置灰空白占位&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-disabled&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-placeholder&quot;</font><font color="#24292E">&gt;请选择XXX&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret select-icon&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;加载中&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-loading&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon icon loading-circular&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;加载中空白占位&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select select-loading&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-placeholder&quot;</font><font color="#24292E">&gt;加载中...&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon icon loading-circular&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;错误重试&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">input</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;hidden&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-msg text-danger&quot;</font><font color="#24292E">&gt;网络加载错误&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon icon fa fa-refresh&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="表单验证">表单验证</h2>
+<p>配合 <code>.has-valid</code> / <code>.has-invalid</code> + <code>.has-feedback-icon</code>，<code>feedback-icon</code> 和 <code>control-clear</code> 放在 <code>.select</code> 内。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane active"><form class="form-horizontal">
+  <div class="form-group has-valid has-feedback-icon">
+    <label class="form-label">has-valid</label>
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+      <button type="button" class="control-clear fa">&#xf057;</button>
+      <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+  </div>
+  <div class="form-group has-invalid has-feedback-icon">
+    <label class="form-label">has-invalid</label>
+    <div class="select">
+      <button type="button" class="select-btn">
+        <span class="select-label">金坷拉</span>
+        <div class="select-icon caret"></div>
+      </button>
+      <button type="button" class="control-clear fa">&#xf057;</button>
+      <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+  </div>
+</form></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">form</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-horizontal&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-valid has-feedback-icon&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;has-valid&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;feedback-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf00c;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-group has-invalid has-feedback-icon&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">label</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;form-label&quot;</font><font color="#24292E">&gt;has-invalid&lt;/</font><font color="#22863A">label</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-btn&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-label&quot;</font><font color="#24292E">&gt;金坷拉&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;select-icon caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;control-clear fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf057;</font><font color="#24292E">&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;feedback-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf00d;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">form</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div>
+		</div>
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

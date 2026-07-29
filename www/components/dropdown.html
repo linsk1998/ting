@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="true" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>下拉</title>
-	<!-- InstanceEndEditable -->
+	<title>下拉菜单 - 组件 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,39 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">组件</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
-						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item active"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 					</div>
 				</div>
@@ -73,212 +35,385 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">下拉</h2>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="btn-group dropdown">
-						<button class="btn btn-default" type="button" popovertarget="dropdownMenu3">
-							状态
-							<span class="caret"></span>
-						</button>
-						<ul id="dropdownMenu3" class="dropdown-menu" popover>
-							<li class="dropdown-header">分组标题</li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">默认状态</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide" disabled>置灰状态</button></li>
-							<li class="dropdown-header">分组标题</li>
-							<li><button type="button" class="dropdown-item active" popovertarget="dropdownMenu3" popovertargetaction="hide">激活状态</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">分割线</button></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="btn-group dropdown">
-						<button class="btn btn-default" type="button">
-							按钮组
-						</button>
-						<button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu4">
-							<span class="caret"></span>
-						</button>
-						<ul id="dropdownMenu4" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Separated link</button></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="btn-group dropdown">
-						<button class="btn btn-default" type="button">
-							对齐
-						</button>
-						<button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu5">
-							<span class="caret"></span>
-						</button>
-						<ul id="dropdownMenu5" class="dropdown-menu dropdown-menu-right" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Separated link</button></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<h2 class="page-header">方向</h2>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="dropdown btn-group">
-						<button class="btn btn-default" type="button" popovertarget="dropdownMenu1">
-							下拉
-							<i class="btn-icon-right fa">&#xf0d7;</i>
-						</button>
-						<ul id="dropdownMenu1" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Separated link</button></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="dropup btn-group">
-						<button class="btn btn-default" type="button" popovertarget="dropupMenu1">
-							上拉
-							<i class="btn-icon-right fa">&#xf0d8;</i>
-						</button>
-						<ul id="dropupMenu1" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Separated link</button></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="dropright btn-group">
-						<button class="btn btn-default" type="button" popovertarget="droprightMenu1">
-							右拉
-							<i class="btn-icon-right fa">&#xf0da;</i>
-						</button>
-						<ul id="droprightMenu1" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Separated link</button></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="dropleft btn-group">
-						<button class="btn btn-default" type="button" popovertarget="dropleftMenu1">
-							<i class="btn-icon-left fa">&#xf0d9;</i>
-							左拉
-						</button>
-						<ul id="dropleftMenu1" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Separated link</button></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<h2 class="page-header">子菜单</h2>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="dropdown btn-group"
-						><button class="btn btn-default" type="button" popovertarget="firstMenu1">
-							点击展开
-							<span class="caret"></span>
-						</button
-						><ul id="firstMenu1" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li class="dropright-submenu">
-								<button type="button" class="dropdown-item" popovertarget="secondMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-								<ul id="secondMenu1" class="dropdown-menu" popover>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-									<li class="dropright-submenu">
-										<button type="button" class="dropdown-item" popovertarget="thirdMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-										<ul id="thirdMenu1" class="dropdown-menu" popover>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul
-					></div>
-				</div>
-				<div class="col-md-3">
-					<div class="dropdown btn-group">
-						<button class="btn btn-default" type="button" interestfor="firstMenu2">
-							经过展开
-							<span class="caret"></span>
-						</button>
-						<ul id="firstMenu2" class="dropdown-menu" popover>
-							<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Another action</button></li>
-							<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Something else here</button></li>
-							<li role="separator" class="dropdown-divider"></li>
-							<li class="dropright-submenu">
-								<button type="button" class="dropdown-item" interestfor="secondMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-								<ul id="secondMenu2" class="dropdown-menu" popover>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-									<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-									<li class="dropright-submenu">
-										<button type="button" class="dropdown-item" interestfor="thirdMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-										<ul id="thirdMenu2" class="dropdown-menu" popover>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-											<li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
+<h1 class="page-header" id="下拉菜单">下拉菜单</h1>
+<p>下拉菜单（<code>.dropdown</code>）配合按钮组可实现弹出菜单，支持多种状态、方向控制和多级子菜单。</p>
+<h2 class="page-header" id="状态">状态</h2>
+<p>菜单项支持默认、置灰（<code>disabled</code>）、激活（<code>.active</code>）三种状态，以及分组标题（<code>.dropdown-header</code>）和分割线（<code>.dropdown-divider</code>）。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><div class="btn-group dropdown">
+  <button class="btn btn-default" type="button" popovertarget="dropdownMenu3">
+    状态
+    <span class="caret"></span>
+  </button>
+  <ul id="dropdownMenu3" class="dropdown-menu" popover>
+    <li class="dropdown-header">分组标题</li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">默认状态</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide" disabled>置灰状态</button></li>
+    <li class="dropdown-header">分组标题</li>
+    <li><button type="button" class="dropdown-item active" popovertarget="dropdownMenu3" popovertargetaction="hide">激活状态</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">分割线</button></li>
+  </ul>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-group dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu3&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    状态</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu3&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-header&quot;</font><font color="#24292E">&gt;分组标题&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu3&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;默认状态&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu3&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E"> </font><font color="#6F42C1">disabled</font><font color="#24292E">&gt;置灰状态&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-header&quot;</font><font color="#24292E">&gt;分组标题&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item active&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu3&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;激活状态&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu3&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;分割线&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="按钮组">按钮组</h2>
+<p>使用 <code>.dropdown-toggle-split</code> 将按钮与下拉触发器分离，实现左右分区的按钮组。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><div class="btn-group dropdown">
+  <button class="btn btn-default" type="button">
+    按钮组
+  </button>
+  <button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu4">
+    <span class="caret"></span>
+  </button>
+  <ul id="dropdownMenu4" class="dropdown-menu" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Separated link</button></li>
+  </ul>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-group dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    按钮组</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default dropdown-toggle-split&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu4&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu4&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu4&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu4&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu4&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu4&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Separated link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="对齐">对齐</h2>
+<p>使用 <code>.dropdown-menu-right</code> 让菜单向右对齐容器的右边界。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><div class="btn-group dropdown">
+  <button class="btn btn-default" type="button">
+    对齐
+  </button>
+  <button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu5">
+    <span class="caret"></span>
+  </button>
+  <ul id="dropdownMenu5" class="dropdown-menu dropdown-menu-right" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Separated link</button></li>
+  </ul>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-group dropdown&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    对齐</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default dropdown-toggle-split&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu5&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu5&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu dropdown-menu-right&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu5&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu5&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu5&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu5&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Separated link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="方向">方向</h2>
+<p>通过 <code>.dropdown</code>（下拉）、<code>.dropup</code>（上拉）、<code>.dropright</code>（右拉）、<code>.dropleft</code>（左拉）控制菜单弹出方向。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><div class="dropdown btn-group">
+  <button class="btn btn-default" type="button" popovertarget="dropdownMenu1">
+    下拉
+    <i class="btn-icon-right fa">&#xf0d7;</i>
+  </button>
+  <ul id="dropdownMenu1" class="dropdown-menu" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Separated link</button></li>
+  </ul>
+</div>
+<div class="dropup btn-group">
+  <button class="btn btn-default" type="button" popovertarget="dropupMenu1">
+    上拉
+    <i class="btn-icon-right fa">&#xf0d8;</i>
+  </button>
+  <ul id="dropupMenu1" class="dropdown-menu" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Separated link</button></li>
+  </ul>
+</div>
+<div class="dropright btn-group">
+  <button class="btn btn-default" type="button" popovertarget="droprightMenu1">
+    右拉
+    <i class="btn-icon-right fa">&#xf0da;</i>
+  </button>
+  <ul id="droprightMenu1" class="dropdown-menu" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Separated link</button></li>
+  </ul>
+</div>
+<div class="dropleft btn-group">
+  <button class="btn btn-default" type="button" popovertarget="dropleftMenu1">
+    <i class="btn-icon-left fa">&#xf0d9;</i>
+    左拉
+  </button>
+  <ul id="dropleftMenu1" class="dropdown-menu" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Separated link</button></li>
+  </ul>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu1&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    下拉</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-icon-right fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdownMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Separated link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropup btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropupMenu1&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    上拉</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-icon-right fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d8;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;dropupMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropupMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropupMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropupMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropupMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Separated link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropright btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;droprightMenu1&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    右拉</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-icon-right fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0da;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;droprightMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;droprightMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;droprightMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;droprightMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;droprightMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Separated link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropleft btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropleftMenu1&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn-icon-left fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d9;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    左拉</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;dropleftMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropleftMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropleftMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropleftMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;dropleftMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Separated link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="子菜单">子菜单</h2>
+<p>使用 <code>.dropright-submenu</code> 可实现多级子菜单。支持点击（<code>popovertarget</code>）和经过（<code>interestfor</code>）两种触发方式。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane tabs-active"><div class="dropdown btn-group">
+  <button class="btn btn-default" type="button" popovertarget="firstMenu1">
+    点击展开
+    <span class="caret"></span>
+  </button>
+  <ul id="firstMenu1" class="dropdown-menu" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li class="dropright-submenu">
+      <button type="button" class="dropdown-item" popovertarget="secondMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+      <ul id="secondMenu1" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+        <li class="dropright-submenu">
+          <button type="button" class="dropdown-item" popovertarget="thirdMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+          <ul id="thirdMenu1" class="dropdown-menu" popover>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="dropdown btn-group">
+  <button class="btn btn-default" type="button" interestfor="firstMenu2">
+    经过展开
+    <span class="caret"></span>
+  </button>
+  <ul id="firstMenu2" class="dropdown-menu" popover>
+    <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Another action</button></li>
+    <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Something else here</button></li>
+    <li role="separator" class="dropdown-divider"></li>
+    <li class="dropright-submenu">
+      <button type="button" class="dropdown-item" interestfor="secondMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+      <ul id="secondMenu2" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+        <li class="dropright-submenu">
+          <button type="button" class="dropdown-item" interestfor="thirdMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+          <ul id="thirdMenu2" class="dropdown-menu" popover>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+            <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    点击展开</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropright-submenu&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;secondMenu1&quot;</font><font color="#24292E">&gt;点击展开&lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item-right fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0da;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;secondMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropright-submenu&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;thirdMenu1&quot;</font><font color="#24292E">&gt;点击展开&lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item-right fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0da;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;thirdMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown btn-group&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;btn btn-default&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">interestfor</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    经过展开</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">span</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;caret&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">span</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Another action&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Something else here&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">role</font><font color="#24292E">=</font><font color="#032F62">&quot;separator&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-divider&quot;</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropright-submenu&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">interestfor</font><font color="#24292E">=</font><font color="#032F62">&quot;secondMenu2&quot;</font><font color="#24292E">&gt;经过展开&lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item-right fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0da;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;secondMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Second level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropright-submenu&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">interestfor</font><font color="#24292E">=</font><font color="#032F62">&quot;thirdMenu2&quot;</font><font color="#24292E">&gt;经过展开&lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item-right fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0da;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;thirdMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-menu&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popover</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">li</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;dropdown-item&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertarget</font><font color="#24292E">=</font><font color="#032F62">&quot;firstMenu2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">popovertargetaction</font><font color="#24292E">=</font><font color="#032F62">&quot;hide&quot;</font><font color="#24292E">&gt;Third level link&lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">          &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>
