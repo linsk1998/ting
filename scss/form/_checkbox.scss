@@ -39,6 +39,7 @@ $check-padding-bottom: $check-padding-top - $check-gap-y;
 	width: $checkbox-size;
 	height: $checkbox-size;
 	vertical-align: middle;
+	margin-bottom: 2px;
 	background: #ffffff;
 	border: $checkbox-border-width solid $checkbox-border-color;
 	@include user-select(none);

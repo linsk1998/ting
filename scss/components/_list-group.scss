@@ -56,10 +56,7 @@ button.list-group-item::-moz-focus-inner{
 	.list-group .list-group-item-#{$key}, .list-group .list-group-item-#{$key} a { color: darken(adjust-hue($color, -10), 7%);}
 	.list-group .list-group-item-#{$key}:hover { background-color:darken(mix($color, #fff, 18%),5%);}
 	.list-group .list-group-item-#{$key}:hover, .list-group .list-group-item-#{$key} a:hover { color: darken(adjust-hue($color, -10), 12%);}
-	.list-group>.list-group-item-#{$key}.active {
-		background-color:$color;
-		border-color:$color;
-	}
+	.list-group>.list-group-item-#{$key}.active, .list-group>.list-group-item-#{$key}.active:hover { background-color:$color; border-color:$color;}
 }
 .list-group .active,.list-group .active:hover{
 	background-color:$theme-primary;

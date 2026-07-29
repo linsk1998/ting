@@ -72,13 +72,16 @@ $tag-padding-line-height-sm: $ctrl-height-sm - $ctrl-border-width * 2 - $tags-in
 .tag .close{
 	padding: 0;
 	height: $tag-padding-line-height-md;
+	line-height: $tag-padding-line-height-md;
 	font-size: $tag-fontsize-md;
 }
 .tag-lg .close{
 	height: $tag-padding-line-height-lg;
+	line-height: $tag-padding-line-height-lg;
 	font-size: $tag-fontsize-lg;
 }
 .tag-sm .close{
 	height: $tag-padding-line-height-sm;
+	line-height: $tag-padding-line-height-sm;
 	font-size: $tag-fontsize-sm;
 }

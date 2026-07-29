@@ -5,6 +5,10 @@
 .nav{ list-style:none; margin:$nav-margin; padding:0;}
 .nav .nav-item{ display: inline-block; *display: inline; *zoom:1;}
 
+.nav-link { border: 0 none; background: none; cursor: pointer;}
+button.nav-link, input.nav-link { cursor: pointer;}
+.nav-link::-moz-focus-inner{ padding:0; border:0 none;}
+
 .nav-pills{ margin-left:0;}
 .nav-pills .nav-item{ display: inline-block; *display: inline; *zoom:1; vertical-align: bottom;}
 .nav-pills .nav-link{ color:$nav-pills-color; padding:$nav-pills-padding-y $nav-pills-padding-x; display: inline-block;}
@@ -109,9 +113,5 @@ body:last-child .nav-justified, x:-moz-any-link {
 .tabs-below .nav .active
 { border-top:0 none; margin-top: -1px;  margin-bottom: 0;}
 
-.tabs-content,.tab-content{ overflow:auto;}
 .tabs-pane,.tab-pane{ display:none;}
-.tabs-content .active{ 
-	display:block;
-	height: 100%;
-}
+.tabs-active, .tab-pane .active{ display:block;}

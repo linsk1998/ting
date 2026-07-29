@@ -120,23 +120,25 @@ td,th {
 }
 
 .table-responsive .table {
+	margin: -1px 0;
+}
+.table-responsive .table-bordered {
 	margin: -1px;
 }
-.table-responsive>.table-bordered {
+.table-responsive>.table {
 	margin: 0;
 	border: 0 none;
 }
-
-.table-responsive>.table-bordered>*>tr>*:last-child{
+.table-responsive>.table>*>tr>*:last-child{
 	border-right: 0 none;
 }
-.table-responsive>.table-bordered>*>tr>*:first-child{
+.table-responsive>.table>*>tr>*:first-child{
 	border-left: 0 none;
 }
-.table-responsive>.table-bordered>*>tr:first-child>*{
+.table-responsive>.table>:first-child>tr:first-child>*{
 	border-top: 0 none;
 }
-.table-responsive>.table-bordered>*>tr:last-child>*{
+.table-responsive>.table>:last-child>tr:last-child>*{
 	border-bottom: 0 none;
 }
 

@@ -37,7 +37,7 @@ pre code,
 pre.code{
 	background:#f4f0f9;
 	padding:10px;
-	padding-left:30px;
+	padding-left:13px + 17px;
 	border-left:5px solid #55bb8a;
 	font-size:13px;
 	display:block;
@@ -45,4 +45,34 @@ pre.code{
 	white-space: -o-pre-wrap;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+}
+@supports selector(:has(*)) {
+	pre.code:has(>.line) {
+		counter-reset: line;
+		position: relative;
+	}
+	pre.code>.line::before {
+		counter-increment: line;
+		content: counter(line);
+		display: block;
+		text-align: right;
+		color: #94a3b8;
+		user-select: none;
+		white-space: nowrap;
+		position: absolute;
+		left: 0;
+		width: 13px + 8px;
+	}
+	pre.code:has(>.line:nth-child(100)) {
+		padding-left: 13px * 1.5 + 17px;
+	}
+	pre.code:has(>.line:nth-child(100))>.line::before {
+		width: 13px * 1.5+ 8px;
+	}
+	pre.code:has(>.line:nth-child(1000)) {
+		padding-left: 13px * 2 + 17px;
+	}
+	pre.code:has(>.line:nth-child(1000))>.line::before {
+		width: 13px * 2 + 8px;
+	}
 }

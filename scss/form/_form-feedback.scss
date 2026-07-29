@@ -15,9 +15,7 @@
 	line-height: $feedback-tooltip-line-height;
 	padding: $feedback-tooltip-padding;
 	z-index: $level-tooltip;
-	@if($enable-rounded) {
-		@include rounded($feedback-tooltip-rounded);
-	}
+	@include rounded($feedback-tooltip-rounded);
 }
 
 @if($enable-feedback-icon) {

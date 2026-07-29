@@ -18,8 +18,8 @@
 	margin:$dropdown-margin;
 	text-align:left;
 	list-style:none;
-	background-color:#fff;
-	border:$ctrl-border-width solid $dropdown-border-color;
+	background:#fff;
+	border:$dropdown-border-width solid $dropdown-border-color;
 	display:none;
 	left:0; top:100%;
 	font-size:$font-size-base;
@@ -94,8 +94,8 @@ html .dropdown-item[disabled] {
 }
 .dropdown-divider {
 	margin: $dropdown-padding-y 0;
-	border-top: $ctrl-border-width solid $dropdown-border-color;
-	height: $ctrl-border-width;
+	border-top: $dropdown-border-width solid $dropdown-border-color;
+	height: $dropdown-border-width;
 	font-size: 0;
 	line-height: 0;
 	overflow: hidden;
@@ -122,7 +122,7 @@ html .dropdown-item[disabled] {
 	min-width: $dropdown-min-width;
 	padding: $dropdown-padding-y 0;
 	text-align: left;
-	border: $ctrl-border-width solid $dropdown-border-color;
+	border: $dropdown-border-width solid $dropdown-border-color;
 	background-color: #fff;
 	@if($enable-rounded) {
 		@include rounded($border-radius);

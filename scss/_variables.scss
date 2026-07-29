@@ -250,7 +250,7 @@ $feedback-icon-width: $ctrl-height-md !default;
 $feedback-tooltip-line-height: 15px !default;
 $feedback-tooltip-padding: 6px !default;
 $feedback-tooltip-margin-top: 2px !default;
-$feedback-tooltip-rounded: 3px !default;
+$feedback-tooltip-rounded: 2px !default;
 
 $input-value-color: #555555 !default;
 $input-placeholder-color: #999999 !default;
@@ -347,10 +347,16 @@ $dropdown-item-active-bg: $theme-primary !default;
 $dropdown-item-active-color: #fff !default;
 $dropdown-header-padding-y: $dropdown-item-padding-y !default;
 $dropdown-header-padding-x: $dropdown-item-padding-x * .5 !default;
-$dropdown-header-color: #777 !default;
+$dropdown-header-color: #777777 !default;
 $dropdown-header-fontsize: 12px !default;
 
 $navbar-height: 50px !default;
+$navbar-border-bottom-width: 1px !default;
 $navbar-toggle-size: 34px !default;
+$navbar-toggle-border-width: $btn-border-width !default;
+$navbar-color: #444 !default;
+$navbar-nav-hover-bg: #e7e7e7 !default;
+$navbar-nav-item-padding-x: 15px !default;
+$navbar-nav-item-padding-sm: 10px 15px !default;
 
 $modal-alpha: 0.4 !default; //模不透明度
