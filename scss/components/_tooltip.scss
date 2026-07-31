@@ -1,0 +1,106 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	z-index: $level-popover;
+}
+
+.tooltip-inner {
+	max-width: $tooltip-max-width;
+	padding: $tooltip-padding;
+	color: #fff;
+	text-align: center;
+	background-color: $tooltip-bg;
+	@include rounded($border-radius-sm);
+}
+
+.tooltip-arrow {
+	position: absolute;
+	width: $tooltip-arrow-size * 2;
+	height: $tooltip-arrow-size * 2;
+	border: $tooltip-arrow-size solid transparent;
+	_border: $tooltip-arrow-size dotted #fff;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+.top .tooltip-inner, .bottom .tooltip-inner,
+.tooltip-top .tooltip-inner, .tooltip-bottom .tooltip-inner {
+    margin: $tooltip-arrow-size 0;
+}
+.left .tooltip-inner, .right .tooltip-inner,
+.tooltip-left .tooltip-inner, .tooltip-right .tooltip-inner {
+    margin: 0 $tooltip-arrow-size;
+}
+
+// Top: 向上弹出，箭头朝下
+.tooltip-top .tooltip-arrow,
+.top .tooltip-arrow {
+	top: 100%;
+	left: 50%;
+	margin-left: -$tooltip-arrow-size;
+	margin-top: -$tooltip-arrow-size;
+	border-top: $tooltip-arrow-size solid $tooltip-bg;
+}
+
+// Right: 向右弹出，箭头朝左
+.tooltip-right .tooltip-arrow,
+.right .tooltip-arrow {
+	right: 100%;
+	top: 50%;
+	margin-top: -$tooltip-arrow-size;
+	margin-right: -$tooltip-arrow-size;
+	border-right: $tooltip-arrow-size solid $tooltip-bg;
+}
+
+// Bottom: 向下弹出，箭头朝上
+.tooltip-bottom .tooltip-arrow,
+.bottom .tooltip-arrow {
+	bottom: 100%;
+	left: 50%;
+	margin-left: -$tooltip-arrow-size;
+	margin-bottom: -$tooltip-arrow-size;
+	border-bottom: $tooltip-arrow-size solid $tooltip-bg;
+}
+
+// Left: 向左弹出，箭头朝右
+.tooltip-left .tooltip-arrow,
+.left .tooltip-arrow {
+	left: 100%;
+	top: 50%;
+	margin-top: -$tooltip-arrow-size;
+	margin-left: -$tooltip-arrow-size;
+	border-left: $tooltip-arrow-size solid $tooltip-bg;
+}
+@supports(position-area: top) {
+	.tooltip[popover]:not(:popover-open) {
+		display: none;
+	}
+	.tooltip[popover]:popover-open {
+		position: fixed;
+		border: 0 none;
+		padding: 0;
+		background: none;
+		overflow: visible;
+	}
+	.tooltip-left[popover]:popover-open {
+		position: fixed;
+		position-area: left;
+	}
+	.tooltip-right[popover]:popover-open {
+		position: fixed;
+		position-area: right;
+	}
+	.tooltip-top[popover]:popover-open {
+		position: fixed;
+		position-area: top;
+	}
+	.tooltip-bottom[popover]:popover-open {
+		position: fixed;
+		position-area: bottom;
+	}
+}

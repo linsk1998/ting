@@ -14,7 +14,7 @@
 	max-width: 100%;
 	line-height: $feedback-tooltip-line-height;
 	padding: $feedback-tooltip-padding;
-	z-index: $level-tooltip;
+	z-index: $level-popover;
 	@include rounded($feedback-tooltip-rounded);
 }
 

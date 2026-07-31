@@ -19,7 +19,7 @@
 	text-align:left;
 	list-style:none;
 	background:#fff;
-	border:$dropdown-border-width solid $dropdown-border-color;
+	border:$popover-border-width solid $popover-border-color;
 	display:none;
 	left:0; top:100%;
 	font-size:$font-size-base;
@@ -94,8 +94,8 @@ html .dropdown-item[disabled] {
 }
 .dropdown-divider {
 	margin: $dropdown-padding-y 0;
-	border-top: $dropdown-border-width solid $dropdown-border-color;
-	height: $dropdown-border-width;
+	border-top: $popover-border-width solid $popover-border-color;
+	height: $popover-border-width;
 	font-size: 0;
 	line-height: 0;
 	overflow: hidden;
@@ -122,7 +122,7 @@ html .dropdown-item[disabled] {
 	min-width: $dropdown-min-width;
 	padding: $dropdown-padding-y 0;
 	text-align: left;
-	border: $dropdown-border-width solid $dropdown-border-color;
+	border: $popover-border-width solid $popover-border-color;
 	background-color: #fff;
 	@if($enable-rounded) {
 		@include rounded($border-radius);
@@ -143,34 +143,36 @@ html .dropdown-item[disabled] {
 	background-color: $dropdown-item-active-bg;
 	color: $dropdown-item-active-color;
 }
-.dropdown-menu[popover]:popover-open,
-.dropdown-submenu .dropdown-menu[popover]:popover-open {
-	inset: auto;
-	width: anchor-size(--dropdown width);
-	top: anchor(--dropdown bottom);
-	left: anchor(--dropdown left);
-	/* 空间不足自动翻到上方 */
-	position-try-fallbacks: flip-block;
-	position: fixed;
-    display: block;
-}
-.dropdown-menu-right[popover]:popover-open{
-	left:auto;
-	right: anchor(--dropdown right);
-}
-.dropup .dropdown-menu[popover]:popover-open,
-.dropup-submenu .dropdown-menu[popover]:popover-open{
-	top: auto;
-	bottom: anchor(--dropdown top);
-}
-.dropright .dropdown-menu[popover]:popover-open,
-.dropright-submenu .dropdown-menu[popover]:popover-open{
-	top: anchor(--dropdown top);
-	left: anchor(--dropdown right);
-}
-.dropleft .dropdown-menu[popover]:popover-open,
-.dropleft-submenu .dropdown-menu[popover]:popover-open{
-	top: anchor(--dropdown top);
-	left: auto;
-	right: anchor(--dropdown left);
+@supports(anchor-scope: all) {
+	.dropdown-menu[popover]:popover-open,
+	.dropdown-submenu .dropdown-menu[popover]:popover-open {
+		inset: auto;
+		width: anchor-size(--dropdown width);
+		top: anchor(--dropdown bottom);
+		left: anchor(--dropdown left);
+		/* 空间不足自动翻到上方 */
+		position-try: flip-block;
+		position: fixed;
+		display: block;
+	}
+	.dropdown-menu-right[popover]:popover-open{
+		left:auto;
+		right: anchor(--dropdown right);
+	}
+	.dropup .dropdown-menu[popover]:popover-open,
+	.dropup-submenu .dropdown-menu[popover]:popover-open{
+		top: auto;
+		bottom: anchor(--dropdown top);
+	}
+	.dropright .dropdown-menu[popover]:popover-open,
+	.dropright-submenu .dropdown-menu[popover]:popover-open{
+		top: anchor(--dropdown top);
+		left: anchor(--dropdown right);
+	}
+	.dropleft .dropdown-menu[popover]:popover-open,
+	.dropleft-submenu .dropdown-menu[popover]:popover-open{
+		top: anchor(--dropdown top);
+		left: auto;
+		right: anchor(--dropdown left);
+	}
 }

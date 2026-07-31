@@ -98,9 +98,9 @@ $(function(){
 		function smoothScroll(ele, to, duration) {
 			duration = duration || 300;
 			var begin = ele.scrollLeft;
-			var startTime = Date.now();
+			var startTime = new Date().getTime();
 			var scrollTimer = setInterval(function() {
-				var elapsed = Date.now() - startTime;
+				var elapsed = new Date().getTime() - startTime;
 				var progress = Math.min(elapsed / duration, 1);
 				// ease-out cubic
 				var eased = 1 - Math.pow(1 - progress, 3);

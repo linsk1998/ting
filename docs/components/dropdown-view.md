@@ -165,7 +165,7 @@
 </div>
 <div class="dropdown btn-group">
   <button class="btn btn-default" type="button" interestfor="firstMenu2">
-    经过展开
+    经过展开(实验性)
     <span class="caret"></span>
   </button>
   <ul id="firstMenu2" class="dropdown-menu" popover>

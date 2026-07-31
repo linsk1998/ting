@@ -150,7 +150,7 @@ a.navbar-brand:hover {
 
 	.navbar-right,.navbar-left{ float:none;}
 	.navbar-nav .dropdown-menu{ top:auto; position:relative; margin:0 3px;}
-	.navbar-right,.navbar-form{ border-top:$dropdown-border-width solid $dropdown-border-color;}
+	.navbar-right,.navbar-form{ border-top:$popover-border-width solid $popover-border-color;}
 	.navbar-right:empty{ display:none;}
 	
 	.navbar-form{

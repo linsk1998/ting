@@ -1,4 +1,3 @@
-@use "./content/jumbotron";
 @use "./content/page-header";
 @use "./content/lead";
 @use "./content/type";
@@ -10,4 +9,10 @@
 @use "./content/ratio";
 @use "./content/card";
 @use './content/well';
+@use './content/callout';
+@use './content/tag';
+@use './content/label';
+@use './content/badge';
+@use './content/alert';
+@use "./content/jumbotron";
 @use "./content/footer";
