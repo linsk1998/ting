@@ -82,7 +82,7 @@ function createRenderer(options = {}) {
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example tabs-active">${text}</div>
+    <div class="tabs-pane ting-example active">${text}</div>
     <div class="tabs-pane"><pre class="code m-0">${html}</pre></div>
   </div>
 </div>`;

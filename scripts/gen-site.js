@@ -74,6 +74,7 @@ const { initRenderer } = require('./gen-site-renderer');
 		'dropdown',
 		'tooltip',
 		'popover',
+		'collapse',
 		// 'modal',
 		// 'toast',
 		// 'dialog',

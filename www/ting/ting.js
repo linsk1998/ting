@@ -1,5 +1,11 @@
 
 $(function(){
+	$(document).on("click","[data-toggle=collapse]",function(e){
+		var target=this.getAttribute("data-target");
+		if(target){
+			$(target).toggleClass("show");
+		}
+	});
 	$(document).on("click",".dropdown .dropdown-toggle",function(e){
 		$(this.parentNode).closest(".dropdown").toggleClass("open");
 	});
@@ -17,15 +23,15 @@ $(function(){
 		}
 	});
 	$(document).on('click',"[role=navbar] button.navbar-toggle",function(e){
-		$(this.parentNode).siblings(".navbar-collapse").toggleClass("collapse");
+		$(this.parentNode).siblings(".navbar-collapse").toggleClass("show");
 	});
 	$(document).on('click',"[role=tabbable]>.nav>li",function(e){
 		$(this.parentNode).children().removeClass("active");
 		var index=$(this).index();
 		var $content=$(this.parentNode.parentNode).children(".tabs-content");
 		$(this).addClass("active");
-		$content.children().removeClass("tabs-active");
-		$content.children(".tabs-pane").eq(index).addClass("tabs-active");
+		$content.children().removeClass("active");
+		$content.children(".tabs-pane").eq(index).addClass("active");
 	});
 	$(document).on('click',"[role=presentation]",function(e){
 		if(e.target.tagName=="A") {
@@ -38,9 +44,6 @@ $(function(){
 		if(target){
 			$this.siblings().removeClass("active");
 			$this.addClass("active");
-			var $tabpane=$(target);
-			$tabpane.siblings().removeClass("tabs-active");
-			$tabpane.addClass("tabs-active");
 		}
 	});
 	$(document).on('click',"[role=sidebar-nav]>.sidebar-nav-header",function(e){
@@ -82,8 +85,6 @@ $(function(){
 			}
 		});
 	}
-});
-$(function(){
 	$('[role=carousel]').each(function() {
 		var $carousel = $(this);
 		var timer = null;
@@ -237,8 +238,6 @@ $(function(){
 		// Initialize auto-play
 		resetTimer();
 	});
-});
-$(function() {
 	if('popover' in document.body) {
 		$(document).on('mousedown',function(e) {
 			$("[popover]").each(function() {

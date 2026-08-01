@@ -135,8 +135,8 @@ a.navbar-brand:hover {
 @media (max-width:$screen-sm){
 	.navbar-header{ float:none;}
 	.navbar-toggle{ display:block;}
-	.navbar-collapse.collapse{ display:none;}
 	.navbar-collapse{
+		display:none;
 		clear:both;
 		background:#FFF;
 		border:1px solid #ddd;

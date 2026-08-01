@@ -1,27 +1,17 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="true" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>侧栏导航</title>
-	<!-- InstanceEndEditable -->
+	<title>侧栏导航 - 组件 - Ting UI</title>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
@@ -29,39 +19,11 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapse">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">组件</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
-						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li><li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li><li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li><li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li><li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li><li class="nav-item active"><a class="nav-link" href="../components/index.html">组件</a></li><li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
 						</ul>
 					</div>
 				</div>
@@ -73,204 +35,182 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">侧边导航</h2>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-6 col-xs-12 col-gx-4">
-					<div class="sidebar sidebar-nav" >
-						<div class="sidebar-nav-header">
-							<span class="align-middle">系统设置</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li class="nav-list-item"><i class="fa icon-fw">&#xf015;</i> 环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw">&#xf02d;</i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header">
-							<span class="align-middle">用户管理</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item"> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header">
-							<span class="align-middle">内容管理</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header">
-							<span class="align-middle">运营管理</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li class="nav-list-item">环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 col-gx-4">
-					<div class="inverse sidebar-inverse sidebar-nav" >
-						<div class="sidebar-nav-header">
-							<span class="align-middle">系统设置</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li class="nav-list-item"><i class="fa icon-fw">&#xf015;</i> 环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw">&#xf02d;</i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header">
-							<span class="align-middle">用户管理</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item"> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header">
-							<span class="align-middle">内容管理</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header">
-							<span class="align-middle">运营管理</span>
-						</div>
-						<div class="sidebar-nav-body">
-							<ul class="nav-list">
-								<li class="nav-list-item">环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 col-gx-4">
-					<div class="sidebar sidebar-nav flex col-flex" style="height:500px;">
-						<div class="sidebar-nav-header row-shrink expanded">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle"><i class="fa icon-fw">&#xf013;</i>系统设置</span>
-						</div>
-						<div class="sidebar-nav-body row-grow">
-							<ul class="nav-list">
-								<li class="nav-list-item"><i class="fa icon-fw">&#xf015;</i> 环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw">&#xf02d;</i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header row-shrink">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle">用户管理</span>
-						</div>
-						<div class="sidebar-nav-body row-grow collapsed">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item"> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header row-shrink">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle">内容管理</span>
-						</div>
-						<div class="sidebar-nav-body row-grow collapsed">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header row-shrink">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle">运营管理</span>
-						</div>
-						<div class="sidebar-nav-body row-grow collapsed">
-							<ul class="nav-list">
-								<li class="nav-list-item">环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 col-gx-4">
-					<div class="inverse sidebar-inverse sidebar-nav flex col-flex" style="height:500px;">
-						<div class="sidebar-nav-header row-shrink expanded">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle"><i class="fa icon-fw">&#xf013;</i>系统设置</span>
-						</div>
-						<div class="sidebar-nav-body row-grow">
-							<ul class="nav-list">
-								<li class="nav-list-item"><i class="fa icon-fw">&#xf015;</i> 环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw">&#xf02d;</i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item"><i class="fa icon-fw"></i> 环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header row-shrink">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle">用户管理</span>
-						</div>
-						<div class="sidebar-nav-body row-grow collapsed">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item"> 环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header row-shrink">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle">内容管理</span>
-						</div>
-						<div class="sidebar-nav-body row-grow collapsed">
-							<ul class="nav-list">
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-						<div class="sidebar-nav-header row-shrink">
-							<i class="fa pull-right">&#xf107;</i>
-							<span class="align-middle">运营管理</span>
-						</div>
-						<div class="sidebar-nav-body row-grow collapsed">
-							<ul class="nav-list">
-								<li class="nav-list-item">环境变量设置 <small>sys var</small></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-								<li><a href="#" class="nav-list-item">环境变量设置 <small>sys var</small></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+<h1 class="page-header" id="侧栏导航">侧栏导航</h1>
+<p>侧栏导航（<code>.sidebar</code>）用于构建后台管理系统的侧边导航菜单，支持亮色和暗色主题，以及折叠/展开功能。</p>
+<h2 class="page-header" id="亮色主题">亮色主题</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="sidebar">
+  <div class="sidebar-nav">
+    <div class="sidebar-nav-header">
+      <a class="sidebar-nav-link" href="#">
+        <i class="fa fa-fw">&#xf015;</i> 首页
+        <i class="fa pull-right tree-caret">&#xf0d7;</i>
+      </a>
+    </div>
+    <div class="sidebar-nav-body collapse">
+      <ul class="nav-list">
+        <li class="nav-list-item active"><a href="#">子菜单1</a></li>
+        <li class="nav-list-item"><a href="#">子菜单2</a></li>
+        <li class="nav-list-item"><a href="#">子菜单3</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sidebar-nav">
+    <div class="sidebar-nav-header expanded">
+      <a class="sidebar-nav-link" href="#">
+        <i class="fa fa-fw">&#xf013;</i> 设置
+        <i class="fa pull-right tree-caret">&#xf0d7;</i>
+      </a>
+    </div>
+    <div class="sidebar-nav-body">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="#">个人设置</a></li>
+        <li class="nav-list-item"><a href="#">系统设置</a></li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa fa-fw&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf015;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt; 首页</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa pull-right tree-caret&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-body collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list-item active&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;子菜单1&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;子菜单2&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;子菜单3&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-header expanded&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa fa-fw&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf013;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt; 设置</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa pull-right tree-caret&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-body&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;个人设置&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;系统设置&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="暗色主题">暗色主题</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="sidebar sidebar-inverse">
+  <div class="sidebar-nav">
+    <div class="sidebar-nav-header expanded">
+      <a class="sidebar-nav-link" href="#">
+        <i class="fa fa-fw">&#xf015;</i> 首页
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-nav">
+    <div class="sidebar-nav-header">
+      <a class="sidebar-nav-link" href="#">
+        <i class="fa fa-fw">&#xf013;</i> 设置
+        <i class="fa pull-right tree-caret">&#xf0d7;</i>
+      </a>
+    </div>
+    <div class="sidebar-nav-body collapse">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="#">个人设置</a></li>
+        <li class="nav-list-item"><a href="#">系统设置</a></li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar sidebar-inverse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-header expanded&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa fa-fw&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf015;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt; 首页</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-header&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-link&quot;</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa fa-fw&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf013;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt; 设置</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;fa pull-right tree-caret&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf0d7;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;sidebar-nav-body collapse&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">ul</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list&quot;</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;个人设置&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">li</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;nav-list-item&quot;</font><font color="#24292E">&gt;&lt;</font><font color="#22863A">a</font><font color="#24292E"> </font><font color="#6F42C1">href</font><font color="#24292E">=</font><font color="#032F62">&quot;#&quot;</font><font color="#24292E">&gt;系统设置&lt;/</font><font color="#22863A">a</font><font color="#24292E">&gt;&lt;/</font><font color="#22863A">li</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">ul</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="核心类">核心类</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td><code>.sidebar</code></td><td>亮色侧栏容器</td>
+</tr>
+<tr>
+<td><code>.sidebar-inverse</code></td><td>暗色侧栏容器</td>
+</tr>
+<tr>
+<td><code>.sidebar-nav</code></td><td>导航项容器</td>
+</tr>
+<tr>
+<td><code>.sidebar-nav-header</code></td><td>导航头部（带蓝色边框标识）</td>
+</tr>
+<tr>
+<td><code>.sidebar-nav-body</code></td><td>导航主体内容</td>
+</tr>
+<tr>
+<td><code>.sidebar-nav-link</code></td><td>导航链接</td>
+</tr>
+<tr>
+<td><code>.nav-list</code></td><td>子导航列表</td>
+</tr>
+<tr>
+<td><code>.nav-list-item</code></td><td>子导航列表项</td>
+</tr>
+<tr>
+<td><code>.expanded</code></td><td>展开状态</td>
+</tr>
+<tr>
+<td><code>.collapsed</code></td><td>收起状态</td>
+</tr>
+<tr>
+<td><code>.collapse</code></td><td>默认隐藏</td>
+</tr>
+</tbody></table></div>
+
 		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
-			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
-		</footer>
+            <p>本项目是一个全局公用CSS库.</p>
+            <p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+        </footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

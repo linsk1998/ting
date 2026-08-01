@@ -3,6 +3,7 @@
 
 //=============================== 全局公用 ======================================
 $enable-rounded: false !default; // 保持圆角开启
+$enable-animation: false !default; // 保持动画开启
 $enable-feedback-icon: true !default; // 保持反馈图标开启
 
 $margin-base: 10px !default;
@@ -309,6 +310,10 @@ $tag-fontsize-lg:14px;
 $tag-fontsize-md:13px;
 $tag-fontsize-sm:12px;
 
+//=============================== 助手 ======================================
+
+//=============================== 组件 ======================================
+
 $breadcrumb-padding: 8px 15px !default;
 $breadcrumb-margin: 0 0 $margin-base !default;
 $breadcrumb-bg: #f5f5f5 !default;
@@ -377,5 +382,7 @@ $tooltip-arrow-size: 5px !default;
 $tooltip-padding: 3px 8px !default;
 $tooltip-max-width: 200px !default;
 $tooltip-bg: #000 !default;
+
+$collapse-duration: .3s !default;
 
 $modal-alpha: 0.4 !default; //模不透明度

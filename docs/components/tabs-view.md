@@ -4,7 +4,7 @@
 
 ## 基本用法
 
-`.tabs` 容器内包含 `.nav-tabs` 导航和 `.tabs-content` 内容面板，`.tabs-pane` + `.tabs-active` 标记当前激活面板。
+`.tabs` 容器内包含 `.nav-tabs` 导航和 `.tabs-content` 内容面板，`.tabs-pane` + `.active` 标记当前激活面板。
 
 ```html
 <div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
@@ -15,7 +15,7 @@
       <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
     </ul>
     <div class="tabs-content">
-      <div class="tabs-pane tabs-active">111</div>
+      <div class="tabs-pane active">111</div>
       <div class="tabs-pane">222</div>
       <div class="tabs-pane">333</div>
     </div>
@@ -38,7 +38,7 @@
       <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
     </ul>
     <div class="tabs-content">
-      <div class="tabs-pane tabs-active">111</div>
+      <div class="tabs-pane active">111</div>
       <div class="tabs-pane">222</div>
       <div class="tabs-pane">333</div>
     </div>
@@ -59,7 +59,7 @@
       <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
     </ul>
     <div class="tabs-content">
-      <div class="tabs-pane tabs-active">111</div>
+      <div class="tabs-pane active">111</div>
       <div class="tabs-pane">222</div>
       <div class="tabs-pane">333</div>
     </div>
@@ -75,7 +75,7 @@
 <div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
   <div class="tabs tabs-below" role="tabbable">
     <div class="tabs-content">
-      <div class="tabs-pane tabs-active">111</div>
+      <div class="tabs-pane active">111</div>
       <div class="tabs-pane">222</div>
       <div class="tabs-pane">333</div>
     </div>

@@ -17,10 +17,9 @@
 @use './components/modal';
 @use './components/dialog';
 @use './components/toast';
-@use './components/msgbox';
-@use './components/window';
 @use './components/carousel';
+@use './components/collapse';
 @use './components/sidebar';
 @use './components/tree';
-@use "./components/close";
-@use "./components/caret";
+@use './components/msgbox';
+@use './components/window';

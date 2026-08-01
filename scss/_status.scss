@@ -1,4 +1,4 @@
-@use '../mixins' as *;
+@use './mixins' as *;
 
 .disabled{
 	opacity:0.65;
@@ -9,4 +9,10 @@
 	.disabled{
 		filter:alpha(opacity=65);
 	}
+}
+.show {
+    display: block;
+}
+.active {
+    display: block;
 }

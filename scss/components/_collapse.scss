@@ -1,0 +1,33 @@
+@use '../variables' as *;
+
+.collapse,.collapse-horizontal {
+	display: none;
+}
+@if $enable-animation {
+	@supports (transition-behavior: allow-discrete) and (interpolate-size: allow-keywords) {
+		/* 折叠状态 */
+		.collapse {
+			height: 0;
+			overflow: hidden;
+			transition: 
+				display $collapse-duration allow-discrete, 
+				height $collapse-duration cubic-bezier(0.4, 0, 0.2, 1),
+				overflow $collapse-duration allow-discrete;
+		}
+		/* 展开状态 */
+		.collapse.show {
+			display: block;
+			height: calc-size(auto, size);
+		}
+		.collapse:where(.show) {
+			overflow: visible; /* 要求：完全展开后允许溢出 */
+		}
+		/* display:none 切换到block */
+		@starting-style {
+			.collapse.show {
+				height: 0;
+				overflow: hidden;
+			}
+		}
+	}
+}
