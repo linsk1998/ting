@@ -1,33 +1,55 @@
 @use '../variables' as *;
+@use '../mixins' as *;
 
-.collapse,.collapse-horizontal {
-	display: none;
+.collapsible,.collapse{
+	overflow-y: hidden;
+	*zoom: 1;
 }
-@if $enable-animation {
-	@supports (transition-behavior: allow-discrete) and (interpolate-size: allow-keywords) {
+.collapsible-horizontal,.collapse-horizontal{
+	overflow-x: hidden;
+	*zoom: 1;
+}
+@if $enable-transition {
+	@supports (height: calc-size(auto, size)) {
+		/* 折叠状态 */
+		.collapsible {
+			height: calc-size(auto, size);
+			transition: height $collapse-duration;
+		}
+		/* 展开状态 */
+		.collapsible.hide {
+			display: block;
+			height: 0;
+		}
+		/* 折叠状态 */
+		.collapsible-horizontal {
+			width: calc-size(auto, size);
+			transition: width $collapse-duration;
+		}
+		/* 展开状态 */
+		.collapsible-horizontal.hide {
+			display: block;
+			width: 0;
+		}
 		/* 折叠状态 */
 		.collapse {
+			display: block;
 			height: 0;
-			overflow: hidden;
-			transition: 
-				display $collapse-duration allow-discrete, 
-				height $collapse-duration cubic-bezier(0.4, 0, 0.2, 1),
-				overflow $collapse-duration allow-discrete;
+			transition: height $collapse-duration;
 		}
 		/* 展开状态 */
 		.collapse.show {
-			display: block;
 			height: calc-size(auto, size);
 		}
-		.collapse:where(.show) {
-			overflow: visible; /* 要求：完全展开后允许溢出 */
+		/* 折叠状态 */
+		.collapse-horizontal {
+			display: block;
+			width: 0;
+			transition: width $collapse-duration;
 		}
-		/* display:none 切换到block */
-		@starting-style {
-			.collapse.show {
-				height: 0;
-				overflow: hidden;
-			}
+		/* 展开状态 */
+		.collapse-horizontal.show {
+			width: calc-size(auto, size);
 		}
 	}
 }

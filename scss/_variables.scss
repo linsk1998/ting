@@ -3,7 +3,7 @@
 
 //=============================== 全局公用 ======================================
 $enable-rounded: false !default; // 保持圆角开启
-$enable-animation: false !default; // 保持动画开启
+$enable-transition: true !default; // 保持过渡动画开启
 $enable-feedback-icon: true !default; // 保持反馈图标开启
 
 $margin-base: 10px !default;
@@ -357,7 +357,7 @@ $popover-bg: #fff !default;
 $popover-arrow-size: 10px !default;
 $popover-arrow-outer-size: ($popover-arrow-size + 1) !default;
 $popover-max-width: 276px !default;
-$popover-header-bg: darken($popover-bg, 3%) !default;
+$popover-header-bg: #eeeeee !default;
 $popover-header-padding: 8px 14px !default;
 $popover-body-padding: 9px 14px !default;
 $popover-arrow-color: $popover-bg !default;

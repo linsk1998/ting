@@ -15,6 +15,15 @@ async function initRenderer(text, lang) {
 function createRenderer(options = {}) {
 	const { htmlPreview = false } = options;
 	const renderer = new marked.Renderer();
+	renderer.link = function ({ href, title, text }) {
+		if((/[0-9a-zA-Z-_$]+\-view.md$/).test(href)) {
+			return `<a href="${escapeHtml(href.replace(/\-view.md$/, '.html'))}">${escapeHtml(text)}</a>`;
+		}
+		if (href.startsWith('http')) {
+			return `<a href="${escapeHtml(href)}" target="_blank">${escapeHtml(text)}</a>`;
+		}
+		return `<a href="${escapeHtml(href)}">${escapeHtml(text)}</a>`;
+	};
 	renderer.heading = function ({ text, depth, raw }) {
 		const classAttr = depth <= 2 ? ` class="page-header"` : '';
 

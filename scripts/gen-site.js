@@ -1,5 +1,10 @@
-const genSiteList = require('./gen-site-list');
+const path = require('path');
 const { initRenderer } = require('./gen-site-renderer');
+const genSiteList = require('./gen-site-list');
+const genSiteView = require('./gen-site-view');
+
+const ROOT = path.resolve(__dirname, '..');
+const DOCS_DIR = path.join(ROOT, 'docs');
 
 (async function() {
 	await initRenderer();
@@ -83,6 +88,11 @@ const { initRenderer } = require('./gen-site-renderer');
 		'select-list',
 		'panel'
 	]);
+	['collapse'].map(async (name) => {
+		const sectionDir = path.join(DOCS_DIR, 'components');
+		const viewPath = path.join(sectionDir, `${name}-view.md`);
+		await genSiteView(viewPath, name);
+	});
 	await genSiteList('utilities', [
 		'color',
 		'text',
