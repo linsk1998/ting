@@ -10708,6 +10708,135 @@ html .dropdown-item[disabled] {
     right: anchor(--dropdown left);
   }
 }
+.accordion {
+  background: #ffffff;
+  padding: 1px 0;
+}
+
+.accordion-flush {
+  overflow: hidden;
+  padding: 0;
+}
+.accordion-flush .accordion-item {
+  border-left: 0 none;
+  border-right: 0 none;
+}
+
+.accordion-item {
+  border: 1px solid #e0e0e0;
+  margin: -1px 0;
+}
+
+.accordion-header {
+  margin: 0;
+  background: #eeeeee;
+}
+
+.accordion-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -0.5em;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  *zoom: 1;
+}
+
+.accordion-button {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 10px 15px;
+  text-align: left;
+  background: #eeeeee;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.accordion-button::-moz-focus-inner {
+  padding: 0;
+  border: 0 none;
+}
+
+.accordion-collapse {
+  display: none;
+}
+
+.accordion-collapsed .accordion-collapsible {
+  display: none;
+}
+
+.accordion-body {
+  border-top: 1px solid #e0e0e0;
+  padding: 15px;
+}
+
+@supports (display: flex) {
+  .accordion-fill {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-fill > .accordion-item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-fill > .accordion-item.accordion-collapsed {
+    flex-grow: 0;
+  }
+  .accordion-fill > .accordion-item > .show {
+    flex-grow: 1;
+  }
+}
+@supports (height: calc-size(auto, size)) {
+  .accordion .accordion-collapsible {
+    display: block;
+    height: calc-size(auto, size);
+    overflow-y: hidden;
+    transition: height 0.3s;
+  }
+  .accordion-collapsed .accordion-collapsible {
+    height: 0;
+  }
+}
+@supports (display: contents) {
+  .accordion-fill {
+    padding: 0;
+    border: 1px solid #e0e0e0;
+  }
+  .accordion-flush {
+    border: 0 none;
+  }
+  .accordion-fill > .accordion-item {
+    display: contents;
+  }
+  .accordion-fill > .accordion-item > .accordion-header {
+    border-top: 1px solid #e0e0e0;
+  }
+  .accordion-fill > .accordion-item:first-child > .accordion-header {
+    border-top: 0 none;
+  }
+  .accordion-fill > .accordion-item > .accordion-collapsible {
+    flex: 1 1 0;
+    transition: flex-grow 0.3s;
+    display: block;
+  }
+  .accordion-fill > .accordion-collapsed > .accordion-collapsible {
+    flex-grow: 0;
+  }
+  .accordion-fill > .accordion-item > .accordion-collapsible > .accordion-body {
+    overflow: auto;
+    height: 100%;
+  }
+}
 .tooltip {
   position: relative;
   display: inline-block;
@@ -10945,7 +11074,7 @@ html .dropdown-item[disabled] {
 .popover-header, .popover-title {
   margin: 0;
   padding: 8px 14px;
-  background-color: #F7F7F7;
+  background-color: #eeeeee;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -11483,10 +11612,58 @@ html body .dialog-dark .dialog-header {
     margin: 10px;
   }
 }
-.collapse, .collapse-horizontal {
-  display: none;
+.collapsible, .collapse {
+  overflow-y: hidden;
+  *zoom: 1;
 }
 
+.collapsible-horizontal, .collapse-horizontal {
+  overflow-x: hidden;
+  *zoom: 1;
+}
+
+@supports (height: calc-size(auto, size)) {
+  /* 折叠状态 */
+  .collapsible {
+    height: calc-size(auto, size);
+    transition: height 0.3s;
+  }
+  /* 展开状态 */
+  .collapsible.hide {
+    display: block;
+    height: 0;
+  }
+  /* 折叠状态 */
+  .collapsible-horizontal {
+    width: calc-size(auto, size);
+    transition: width 0.3s;
+  }
+  /* 展开状态 */
+  .collapsible-horizontal.hide {
+    display: block;
+    width: 0;
+  }
+  /* 折叠状态 */
+  .collapse {
+    display: block;
+    height: 0;
+    transition: height 0.3s;
+  }
+  /* 展开状态 */
+  .collapse.show {
+    height: calc-size(auto, size);
+  }
+  /* 折叠状态 */
+  .collapse-horizontal {
+    display: block;
+    width: 0;
+    transition: width 0.3s;
+  }
+  /* 展开状态 */
+  .collapse-horizontal.show {
+    width: calc-size(auto, size);
+  }
+}
 .sidebar {
   background: #fcfcfc;
 }
@@ -12030,7 +12207,7 @@ html body .msgbox-danger {
     display: inline !important;
   }
 }
-.hidden, .hide, .d-none {
+.hidden, .d-none {
   display: none !important;
 }
 
@@ -13576,4 +13753,8 @@ a.text-dark:hover, .text-dark a:hover {
 
 .active {
   display: block;
+}
+
+.hide {
+  display: none;
 }

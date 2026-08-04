@@ -385,4 +385,13 @@ $tooltip-bg: #000 !default;
 
 $collapse-duration: .3s !default;
 
+// Accordion
+$accordion-bg: #ffffff !default;
+$accordion-border-width: 1px !default;
+$accordion-border-color: $theme-divider !default;
+$accordion-header-bg: #eeeeee !default;
+$accordion-header-padding-y: 10px !default;
+$accordion-header-padding-x: 15px !default;
+$accordion-body-padding: 15px !default;
+
 $modal-alpha: 0.4 !default; //模不透明度

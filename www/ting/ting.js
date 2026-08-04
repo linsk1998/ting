@@ -1,13 +1,67 @@
 
 $(function(){
 	$(document).on("click","[data-toggle=collapse]",function(e){
-		var target=this.getAttribute("data-target");
+		var $this=$(this);
+		var target=$this.attr("data-target");
 		if(target){
-			$(target).toggleClass("show");
+			var $target=$(target);
+			var parent = $this.attr("data-parent");
+			if(parent){
+				if($target.hasClass("show")) {
+					$target.removeClass("show");
+					$this.removeClass("collapsed");
+				} else {
+					$(parent).find(".collapse").each(function(){
+						var $this=$(this);
+						$this.removeClass("show");
+					})
+					$target.addClass("show");
+					$this.addClass("collapsed");
+				}
+			} else {
+				$target.toggleClass("show");
+				$this.toggleClass("collapsed");
+			}
+		}
+	});
+	$(document).on("click","[data-toggle=collapsible]",function(e){
+		var $this=$(this);
+		var target=$this.attr("data-target");
+		if(target){
+			var $target=$(target);
+			var parent = $target.attr("data-parent");
+			if(parent){
+				if($target.hasClass("hide")) {
+					$target.removeClass("hide");
+					$this.removeClass("collapsed");
+				} else {
+					$(parent).find(".collapsible").each(function(){
+						var $this=$(this);
+						if($this.attr("data-parent")==parent) {
+							$this.removeClass("hide");
+						}
+					})
+					$target.addClass("hide");
+				}
+			} else {
+				$target.toggleClass("hide");
+			}
+		}
+	});
+	$(document).on("click",".accordion-button",function(e){
+		var $this=$(this);
+		var target=$this.attr("data-target");
+		if(target) return;
+		var $item = $this.closest(".accordion-item");
+		if($item.hasClass("accordion-collapsed")){
+			$item.siblings().addClass("accordion-collapsed");
+			$item.removeClass("accordion-collapsed");
+		} else {
+			$item.addClass("accordion-collapsed");
 		}
 	});
 	$(document).on("click",".dropdown .dropdown-toggle",function(e){
-		$(this.parentNode).closest(".dropdown").toggleClass("open");
+		$(this).closest(".dropdown").toggleClass("open");
 	});
 	$(document).on("mousedown",function(e){
 		$(".dropdown.open").each(function(){

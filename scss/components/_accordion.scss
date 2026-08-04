@@ -1,0 +1,128 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.accordion {
+	background: $accordion-bg;
+	padding: $accordion-border-width 0;
+}
+.accordion-flush {
+	overflow: hidden;
+	padding: 0;
+	.accordion-item {
+		border-left: 0 none;
+		border-right: 0 none;
+	}
+}
+
+.accordion-item {
+	border: $accordion-border-width solid $accordion-border-color;
+	margin: -$accordion-border-width 0;
+}
+
+.accordion-header {
+	margin: 0;
+	background: $accordion-header-bg;
+}
+.accordion-icon {
+	position: absolute;
+	top: 50%;
+	right: $accordion-header-padding-x;
+	margin-top: -.5em;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-align: center;
+	display: inline-block;
+	*zoom: 1;
+}
+
+.accordion-button {
+	position: relative;
+	width: 100%;
+	display: block;
+	padding: $accordion-header-padding-y $accordion-header-padding-x;
+	text-align: left;
+	background: $accordion-header-bg;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	@include rounded(0);
+	&::-moz-focus-inner{
+		padding:0;
+		border:0 none;
+	}
+}
+.accordion-collapse{
+	display: none;
+}
+.accordion-collapsed .accordion-collapsible{
+	display: none;
+}
+
+.accordion-body {
+	border-top: $accordion-border-width solid $accordion-border-color;
+	padding: $accordion-body-padding;
+}
+
+@supports(display: flex) {
+	.accordion-fill {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.accordion-fill>.accordion-item {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	.accordion-fill>.accordion-item.accordion-collapsed {
+		flex-grow: 0;
+	}
+	.accordion-fill>.accordion-item>.show {
+		flex-grow: 1;
+	}
+}
+@if $enable-transition {
+	@supports (height: calc-size(auto, size)) {
+		.accordion .accordion-collapsible{
+			display: block;
+			height: calc-size(auto, size);
+			overflow-y: hidden;
+			transition: height $collapse-duration;
+		}
+		.accordion-collapsed .accordion-collapsible{
+			height: 0;
+		}
+	}
+	@supports (display:contents) {
+		.accordion-fill {
+			padding: 0;
+			border: $accordion-border-width solid $accordion-border-color;
+		}
+		.accordion-flush {
+			border: 0 none;
+		}
+		.accordion-fill>.accordion-item {
+			display:contents;
+		}
+		.accordion-fill>.accordion-item>.accordion-header{
+			border-top: $accordion-border-width solid $accordion-border-color;
+		}
+		.accordion-fill>.accordion-item:first-child>.accordion-header{
+			border-top: 0 none;
+		}
+		.accordion-fill>.accordion-item>.accordion-collapsible{
+			flex: 1 1 0;
+			transition: flex-grow .3s;
+			display: block;
+		}
+		.accordion-fill>.accordion-collapsed>.accordion-collapsible{
+			flex-grow: 0;
+		}
+		.accordion-fill>.accordion-item>.accordion-collapsible>.accordion-body{
+			overflow: auto;
+			height: 100%;
+		}
+	}
+}
