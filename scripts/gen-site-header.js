@@ -8,16 +8,17 @@ function navbar(currentSection) {
 	let navbarHtml = '';
 	for (const section in SECTION_MAP) {
 		const active = section === currentSection ? ' active' : '';
-		navbarHtml += `<li class="nav-item${active}"><a class="nav-link" href="../${escapeHtml(section)}/index.html">${escapeHtml(SECTION_MAP[section])}</a></li>`;
+		const classAttr = active ? ' class="active"' : '';
+		navbarHtml += `<li${classAttr}><a href="../${escapeHtml(section)}/index.html">${escapeHtml(SECTION_MAP[section])}</a></li>`;
 	}
 
-	return `<div class="navbar navbar-top" role="navbar">
-				<div class="container">
+	return `<div class="container">
+				<div class="navbar navbar-flush">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
 						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
-					<div class="navbar-collapse">
+					<div class="navbar-responsive-dropdown">
 						<ul class="navbar-nav">
 							${navbarHtml}
 						</ul>

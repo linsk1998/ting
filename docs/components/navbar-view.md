@@ -6,26 +6,24 @@
 
 导航条在使用前需要了解以下要点：
 
-- 导航条需要包裹一个 `.navbar-header` 和一个 `.navbar-collapse` 以实现响应式行为。
-- 导航条默认会有一个底部边框，并带有 `position: relative` 和清除浮动。
-- 导航链接基于 `.nav` 组件构建，使用 `.navbar-nav` 作为导航列表的增强版本。
-- `.navbar-collapse` 配合 `.collapse` 类可在移动端通过 `.navbar-toggle` 按钮展开/折叠。
+- 导航条需要包裹一个 `.navbar-header` 和一个 `.navbar-responsive-dropdown` 以实现响应式行为。
+- `.navbar-responsive-dropdown` 类可在移动端通过 `.navbar-toggle` 按钮展开/折叠。
 
 ## 基本结构
 
 一个典型的导航条包含品牌标识、导航链接和表单：
 
 ```html
-<nav class="navbar">
+<nav class="navbar" style="z-index:590">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
     <a class="navbar-brand" href="javascript:void 0">Brand</a>
   </div>
-  <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
-      <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+  <div class="navbar-responsive-dropdown">
+    <ul class="navbar-nav">
+      <li class="active"><a href="javascript:void 0">首页</a></li>
+      <li><a href="javascript:void 0">链接</a></li>
+      <li><a href="javascript:void 0">关于</a></li>
     </ul>
   </div>
 </nav>
@@ -36,28 +34,15 @@
 在 `.nav-item` 上添加 `.dropdown` 类，并嵌入下拉菜单：
 
 ```html
-<nav class="navbar">
+<nav class="navbar" style="z-index:589">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="nav-item dropdown">
-                <button type="button" class="nav-link" popovertarget="dropdownMenu">
-                    原生下拉
-                    <span class="fa">&#xf0d7;</span>
-                </button>
-                <ul id="dropdownMenu" class="dropdown-menu" popover>
-                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">在线咨询</button></li>
-                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">领导信箱</button></li>
-                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">在线访谈</button></li>
-                    <li class="divider"></li>
-                    <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu" popovertargetaction="hide">网站投稿</button></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="javascript:void 0" class="nav-link dropdown-toggle">
+    <div class="navbar-responsive-dropdown">
+        <ul class="navbar-nav">
+            <li class="dropdown">
+                <a href="javascript:void 0" class="dropdown-toggle">
                     js下拉
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -79,16 +64,16 @@
 `.navbar-form` 用于在导航条中放置内联表单元素，如表单控件和按钮：
 
 ```html
-<nav class="navbar">
+<nav class="navbar" style="z-index:588">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+    <div class="navbar-responsive-dropdown">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
         </ul>
         <form class="navbar-form navbar-left">
             <div class="form-group">
@@ -106,19 +91,19 @@
 使用 `.navbar-left` 和 `.navbar-right` 可将导航元素浮动到导航条左侧或右侧：
 
 ```html
-<nav class="navbar">
+<nav class="navbar" style="z-index:587">
     <div class="navbar-header">
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
         </div>
-    <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">首页</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+    <div class="navbar-responsive-dropdown">
+        <ul class="navbar-nav">
+            <li><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item dropdown">
-                <a href="javascript:void 0" class="nav-link dropdown-toggle">
+        <ul class="navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="javascript:void 0" class="dropdown-toggle">
                     右侧菜单
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -140,16 +125,16 @@
 可以直接在导航条内放置 `.btn` 按钮，配合内边距与导航条高度对齐。使用 `.navbar-btn` 类可获得更好的垂直对齐：
 
 ```html
-<nav class="navbar">
+<nav class="navbar" style="z-index:586">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+    <div class="navbar-responsive-dropdown">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
             <button type="button" class="btn btn-default navbar-btn">登录(左)</button>
         </ul>
         <div class="navbar-right">
@@ -164,16 +149,16 @@
 `.navbar-text` 用于在导航条内展示纯文本内容，保持与导航链接一致的行高和对齐：
 
 ```html
-<nav class="navbar">
+<nav class="navbar" style="z-index:585">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+    <div class="navbar-responsive-dropdown">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
         </ul>
         <span class="navbar-text">欢迎您，用户名(左)</span>
         <div class="navbar-right">
@@ -188,16 +173,16 @@
 或许你希望在标准的导航组件之外添加标准链接，那么，使用 `.navbar-link` 类可以让链接有正确的默认颜色和反色设置。
 
 ```html
-<nav class="navbar">
-    <div class="navbar-header">
+<nav class="navbar" style="z-index:584">
+    <div class="navbar-header" style="z-index:503">
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">链接</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">关于</a></li>
+    <div class="navbar-responsive-dropdown">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
         </ul>
         <span class="navbar-text">欢迎您，<a href="index.html" class="navbar-link">用户名</a></span>
     </div>
@@ -211,18 +196,18 @@
 ### 示例一：搜索框
 
 ```html
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="z-index:583">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
       <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar-collapse collapse">
+    <div class="navbar-responsive-dropdown">
       <ul class="navbar-nav">
-        <li class="nav-item active"><a class="nav-link" href="javascript:void 0">新闻中心</a></li>
-        <li class="nav-item"><a class="nav-link" href="javascript:void 0">信息公开</a></li>
-        <li class="nav-item"><a class="nav-link" href="javascript:void 0">网上办事</a></li>
+        <li class="active"><a href="javascript:void 0">新闻中心</a></li>
+        <li><a href="javascript:void 0">信息公开</a></li>
+        <li><a href="javascript:void 0">网上办事</a></li>
       </ul>
       <form class="navbar-form navbar-right">
         <div class="input-group">
@@ -241,20 +226,20 @@
 ### 示例二：多区域导航 + 右侧下拉
 
 ```html
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="z-index:582">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
       <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar-collapse collapse">
+    <div class="navbar-responsive-dropdown">
       <ul class="navbar-nav">
-        <li class="nav-item active"><a class="nav-link" href="javascript:void 0">新闻中心</a></li>
-        <li class="nav-item"><a class="nav-link" href="javascript:void 0">信息公开</a></li>
-        <li class="nav-item"><a class="nav-link" href="javascript:void 0">网上办事</a></li>
-        <li class="nav-item dropdown">
-          <a href="javascript:void 0" class="nav-link dropdown-toggle">
+        <li class="active"><a href="javascript:void 0">新闻中心</a></li>
+        <li><a href="javascript:void 0">信息公开</a></li>
+        <li><a href="javascript:void 0">网上办事</a></li>
+        <li class="dropdown">
+          <a href="javascript:void 0" class="dropdown-toggle">
             公众参与
             <span class="fa">&#xf0d7;</span>
           </a>
@@ -275,11 +260,11 @@
         <button type="submit" class="btn btn-default">搜索</button>
       </form>
       <ul class="navbar-nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void 0">友情链接</a>
+        <li>
+          <a href="javascript:void 0">友情链接</a>
         </li>
-        <li class="nav-item dropdown">
-          <a href="javascript:void 0" class="nav-link dropdown-toggle">
+        <li class="dropdown">
+          <a href="javascript:void 0" class="dropdown-toggle">
             公共服务
             <span class="fa">&#xf0d7;</span>
           </a>
@@ -297,3 +282,23 @@
 ```
 
 此示例展示了更复杂的导航条结构：左侧导航 + 左侧表单（带标签的搜索框）+ 右侧导航链接和下拉菜单。右侧下拉菜单使用 `.dropdown-menu-right` 确保下拉内容在右侧对齐，避免溢出。
+
+## 兼容 bootstrap 写法
+
+在 bootstrap 中，导航条使用 `navbar-collapse collapse` 来实现折叠效果。ting-ui 中，使用 `.navbar-responsive-dropdown` 来实现折叠效果。
+
+```html
+<nav class="navbar">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
+    <a class="navbar-brand" href="javascript:void 0">Brand</a>
+  </div>
+  <div id="bs-collapse" class="navbar-collapse collapse">
+    <ul class="navbar-nav">
+      <li class="active"><a href="javascript:void 0">首页</a></li>
+      <li><a href="javascript:void 0">链接</a></li>
+      <li><a href="javascript:void 0">关于</a></li>
+    </ul>
+  </div>
+</nav>
+```

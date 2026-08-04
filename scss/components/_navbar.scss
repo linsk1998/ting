@@ -3,10 +3,15 @@
 @use '../functions' as *;
 
 .navbar{
-	border-bottom: $navbar-border-bottom-width solid $theme-divider;
+	border: $navbar-border-width solid $theme-divider;
+	padding: $navbar-border-padding;
 	position:relative;
 	z-index:$level-navbar;
 	@include clearfix;
+}
+.navbar-flush {
+	border: 0 none;
+	padding: 0;
 }
 .navbar-header{ float: left;}
 .navbar-brand {
@@ -59,31 +64,33 @@ a.navbar-brand:hover {
 	padding:0;
 	float: left;
 }
-.navbar-nav .nav-item{
+.navbar-nav .nav-item,
+.navbar-nav li{
 	list-style: none;
 	float: left;
 	position: relative;
 }
-.navbar-nav .nav-link{
+.navbar-nav .nav-link,
+.navbar-nav a{
 	color: $navbar-color;
 	display: block;
+	width: 100%;
 	line-height: $line-height-base;
 	padding: ($navbar-height - $line-height-base) * .5 $navbar-nav-item-padding-x;
 }
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover,
+.navbar-nav a:hover{
 	color: darken($navbar-color, 10%);
 	text-decoration: none;
 }
-.navbar-nav .active .nav-link,.navbar-nav .open{
+.navbar-nav .active .nav-link,
+.navbar-nav .active a,.navbar-nav .open{
 	background: $navbar-nav-hover-bg;
 }
-.navbar-nav .dropdown:has(.dropdown-menu[popover]:popover-open) > .nav-link{
+.navbar-nav .dropdown:has(.dropdown-menu[popover]:popover-open) > a{
 	background: $navbar-nav-hover-bg;
 }
 .navbar-nav .dropdown-menu{ margin:0;}
-
-.navbar-right{ float:right;}
-.navbar-left{ float:left;}
 
 .navbar-form .form-group {
 	display: inline-block;
@@ -128,14 +135,22 @@ a.navbar-brand:hover {
 .navbar-link{ color: $theme-secondary-text;}
 .navbar-link:hover{ color: darken($theme-secondary-text, 10%);}
 
-
-.navbar-collapse{
+.navbar-responsive-dropdown{
 	@include clearfix;
 }
+.navbar-collapse {
+	display: block;
+	height: auto;
+	@include clearfix;
+}
+
+.navbar-right{ float:right; padding-right: 0;}
+.navbar-left{ float:left;}
+
 @media (max-width:$screen-sm){
 	.navbar-header{ float:none;}
 	.navbar-toggle{ display:block;}
-	.navbar-collapse{
+	.navbar-responsive-dropdown{
 		display:none;
 		clear:both;
 		background:#FFF;
@@ -143,17 +158,19 @@ a.navbar-brand:hover {
 		position: absolute;
 		left:15px; right:15px;
 		top:$navbar-height;
+		z-index: $level-dropdown;
 	}
 	.navbar-nav{ float:none;}
-	.navbar-nav>.nav-item{ float:none;}
-	.navbar-nav>.nav-item>a{ padding:$navbar-nav-item-padding-sm;}
+	.navbar-nav .nav-item,.navbar-nav li{ float:none; display: block;}
+	.navbar-nav .nav-link,.navbar-nav a{ padding:$navbar-nav-item-padding-y-sm $navbar-nav-item-padding-x-sm;}
 
 	.navbar-right,.navbar-left{ float:none;}
 	.navbar-nav .dropdown-menu{ top:auto; position:relative; margin:0 3px;}
 	.navbar-right,.navbar-form{ border-top:$popover-border-width solid $popover-border-color;}
 	.navbar-right:empty{ display:none;}
-	
+
 	.navbar-form{
+		padding: ($navbar-height - $ctrl-height-md)*.5 15px;
 		white-space:normal;
 	}
 	.navbar-form .form-group {
@@ -169,5 +186,63 @@ a.navbar-brand:hover {
 	.navbar-form .form-control {
 		display: block;
 		width:100%;
+	}
+	.navbar-text {
+		margin: 0;
+		padding: 8px;
+	}
+	.navbar .navbar-btn {
+		margin: 0;
+		float: none;
+		display: block;
+		width: 100%;
+		border: 0 none;
+		text-align: left;
+		padding: $navbar-nav-item-padding-y-sm $navbar-nav-item-padding-x-sm;
+		height: $navbar-nav-item-padding-y-sm * 2 + $ctrl-line-height;
+	}
+	.navbar .navbar-btn:focus {
+		outline: 0 none;
+	}
+	@if $enable-transition {
+		@keyframes navbar-dropdown-in {
+			0% {
+				clip-path: inset(0 0 100% 0);
+			}
+			100% {
+				clip-path: inset(0 0 0 0);
+			}
+		}
+		@keyframes navbar-dropdown-out {
+			0% {
+				clip-path: inset(0 0 0 0);
+			}
+			100% {
+				clip-path: inset(0 0 100% 0);
+			}
+		}
+		@supports (clip-path: inset(0 0 0 0)) {
+			.navbar-responsive-dropdown{
+				clip-path: none;
+			}
+			.navbar-responsive-dropdown.show{
+				animation: navbar-dropdown-in $dropdown-duration;
+			}
+			.navbar-responsive-dropdown.hide{
+				display: block;
+				animation: navbar-dropdown-out $dropdown-duration forwards;
+			}
+		}
+		.navbar-collapse{
+			clear: both;
+		}
+		@supports (height: calc-size(auto, size)) {
+			.navbar-collapse {
+				height: 0;
+			}
+			.navbar-collapse.show {
+				height: calc-size(auto, size);
+			}
+		}
 	}
 }

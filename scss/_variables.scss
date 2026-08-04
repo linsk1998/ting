@@ -340,13 +340,15 @@ $nav-tabs-padding-y: 6px !default;
 $nav-tabs-padding-x: 16px !default;
 
 $navbar-height: 50px !default;
-$navbar-border-bottom-width: 1px !default;
+$navbar-border-padding: 0 16px !default;
+$navbar-border-width: 1px !default;
 $navbar-toggle-size: 34px !default;
 $navbar-toggle-border-width: $btn-border-width !default;
 $navbar-color: #444 !default;
 $navbar-nav-hover-bg: #e7e7e7 !default;
 $navbar-nav-item-padding-x: 15px !default;
-$navbar-nav-item-padding-sm: 10px 15px !default;
+$navbar-nav-item-padding-y-sm: 10px !default;
+$navbar-nav-item-padding-x-sm: 15px !default;
 
 // Popover
 $popover-border-width: $ctrl-border-width !default;
@@ -377,6 +379,7 @@ $dropdown-header-padding-y: $dropdown-item-padding-y !default;
 $dropdown-header-padding-x: $dropdown-item-padding-x * .5 !default;
 $dropdown-header-color: #777777 !default;
 $dropdown-header-fontsize: 12px !default;
+$dropdown-duration: .3s !default;
 
 $tooltip-arrow-size: 5px !default;
 $tooltip-padding: 3px 8px !default;
