@@ -22,6 +22,11 @@ function navbar(currentSection) {
 						<ul class="navbar-nav">
 							${navbarHtml}
 						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+							
+						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>`;

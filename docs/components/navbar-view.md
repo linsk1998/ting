@@ -47,11 +47,11 @@
                     <span class="fa">&#xf0d7;</span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="javascript:void 0">申请服务</a></li>
-                    <li><a href="javascript:void 0">咨询服务</a></li>
-                    <li><a href="javascript:void 0">视频会议</a></li>
-                    <li><a href="javascript:void 0">办公平台</a></li>
-                    <li><a href="javascript:void 0">行政审批</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
                 </ul>
             </li>
         </ul>
@@ -108,11 +108,11 @@
                     <span class="fa">&#xf0d7;</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="javascript:void 0">申请服务</a></li>
-                    <li><a href="javascript:void 0">咨询服务</a></li>
-                    <li><a href="javascript:void 0">视频会议</a></li>
-                    <li><a href="javascript:void 0">办公平台</a></li>
-                    <li><a href="javascript:void 0">行政审批</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
                 </ul>
             </li>
         </ul>
@@ -244,11 +244,11 @@
             <span class="fa">&#xf0d7;</span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="javascript:void 0">在线咨询</a></li>
-            <li><a href="javascript:void 0">领导信箱</a></li>
-            <li><a href="javascript:void 0">在线访谈</a></li>
-            <li class="divider"></li>
-            <li><a href="javascript:void 0">网站投稿</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">在线咨询</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">领导信箱</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">在线访谈</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="javascript:void 0">网站投稿</a></li>
           </ul>
         </li>
       </ul>
@@ -269,11 +269,11 @@
             <span class="fa">&#xf0d7;</span>
           </a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="javascript:void 0">申请服务</a></li>
-            <li><a href="javascript:void 0">咨询服务</a></li>
-            <li><a href="javascript:void 0">视频会议</a></li>
-            <li><a href="javascript:void 0">办公平台</a></li>
-            <li><a href="javascript:void 0">行政审批</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
+            <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
           </ul>
         </li>
       </ul>

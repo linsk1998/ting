@@ -1,8 +1,6 @@
 @use "../variables" as *;
 @use "../mixins" as *;
 
-.text-muted{ color:$theme-secondary-text;}
-
 .list-unstyled, .text-body-secondary{ padding-left:0; list-style:none;}
 
 .list-inline{ padding-left:0; margin-left:-5px; list-style:none;}

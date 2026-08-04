@@ -3,6 +3,7 @@
 @use './components/toolbar';
 @use './components/breadcrumb';
 @use './components/nav';
+@use './components/navbar';
 @use './components/pagination';
 @use './components/pager';
 @use './components/list-group';
@@ -18,7 +19,6 @@
 @use './components/tree';
 @use './components/sidebar';
 @use './components/carousel';
-@use './components/navbar';
 @use './components/overlay';
 @use './components/modal';
 @use './components/dialog';
