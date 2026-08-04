@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
 	<title>手风琴 - 组件 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
@@ -90,44 +91,44 @@
     </div>
   </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #1</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the first item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #2</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the second item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #3</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the third item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #1</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">strong</span><span class="">&gt;This is the first item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #2</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">strong</span><span class="">&gt;This is the second item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #3</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">strong</span><span class="">&gt;This is the third item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
 </pre></div>
   </div>
 </div><h2 class="page-header" id="使用图标">使用图标</h2>
@@ -185,52 +186,52 @@
     </div>
   </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #1</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf077;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;收起&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #2</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf078;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;展开&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #3</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf068;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;减号&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #4</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">i</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-icon fa&quot;</font><font color="#24292E">&gt;</font><font color="#005CC5">&amp;#xf067;</font><font color="#24292E">&lt;/</font><font color="#22863A">i</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;加号&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #1</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">i</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-icon fa&quot;</span><span class="">&gt;</span><span class="">&amp;#xf077;</span><span class="">&lt;/</span><span class="">i</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;收起&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #2</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">i</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-icon fa&quot;</span><span class="">&gt;</span><span class="">&amp;#xf078;</span><span class="">&lt;/</span><span class="">i</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;展开&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #3</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">i</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-icon fa&quot;</span><span class="">&gt;</span><span class="">&amp;#xf068;</span><span class="">&lt;/</span><span class="">i</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;减号&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #4</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">i</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-icon fa&quot;</span><span class="">&gt;</span><span class="">&amp;#xf067;</span><span class="">&lt;/</span><span class="">i</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;加号&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
 </pre></div>
   </div>
 </div><h2 class="page-header" id="去除边框">去除边框</h2>
@@ -274,38 +275,38 @@
     </div>
   </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion accordion-flush&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #1</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;1&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #2</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;2&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #3</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;3&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion accordion-flush&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #1</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;1&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #2</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;2&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #3</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;3&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
 </pre></div>
   </div>
 </div><h2 class="page-header" id="适配容器高度">适配容器高度</h2>
@@ -402,92 +403,182 @@
         </div>
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;row&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;col-md-6&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">style</font><font color="#24292E">=</font><font color="#032F62">&quot;width: 300px; height: 400px; overflow-y: auto;&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion accordion-fill&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            包含边框</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            很多内容：&lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the first item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            Accordion Item #2</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            少内容</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            Accordion Item #3</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            少内容</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">            &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;col-md-6&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">style</font><font color="#24292E">=</font><font color="#032F62">&quot;width: 300px; height: 400px; overflow-y: auto;&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">            &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion accordion-flush accordion-fill&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            去除边框</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            很多内容：&lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the first item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            Accordion Item #2</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            少内容</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item accordion-collapsed&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            Accordion Item #3</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapsible&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                        &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                            少内容</font></span>
-<span class="line"><font color="#24292E">                        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">                &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">            &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;row&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;col-md-6&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">style</span><span class="">=</span><span class="">&quot;width: 300px; height: 400px; overflow-y: auto;&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion accordion-fill&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            包含边框</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            很多内容：&lt;</span><span class="">strong</span><span class="">&gt;This is the first item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            Accordion Item #2</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            少内容</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            Accordion Item #3</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            少内容</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;col-md-6&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">style</span><span class="">=</span><span class="">&quot;width: 300px; height: 400px; overflow-y: auto;&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion accordion-flush accordion-fill&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            去除边框</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            很多内容：&lt;</span><span class="">strong</span><span class="">&gt;This is the first item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            Accordion Item #2</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            少内容</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            Accordion Item #3</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                            少内容</span></span>
+<span class="line"><span class="">                        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="黑暗模式">黑暗模式</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dark" style="width: 300px; height: 400px; overflow-y: auto; border: 4px solid #000;">
+    <div class="accordion accordion-flush accordion-fill">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    去除边框
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item accordion-collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    少内容
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item accordion-collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    少内容
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;dark&quot;</span><span class=""> </span><span class="">style</span><span class="">=</span><span class="">&quot;width: 300px; height: 400px; overflow-y: auto; border: 4px solid #000;&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion accordion-flush accordion-fill&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    去除边框</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    很多内容：&lt;</span><span class="">strong</span><span class="">&gt;This is the first item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    Accordion Item #2</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    少内容</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item accordion-collapsed&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    Accordion Item #3</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapsible&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">                    少内容</span></span>
+<span class="line"><span class="">                &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">            &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
 </pre></div>
   </div>
 </div><h2 class="page-header" id="兼容bootstrap写法">兼容 bootstrap 写法</h2>
@@ -537,44 +628,44 @@
     </div>
   </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code m-0"><span class="line"><font color="#24292E">&lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion&quot;</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;bs-accordion&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-toggle</font><font color="#24292E">=</font><font color="#032F62">&quot;collapse&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-parent</font><font color="#24292E">=</font><font color="#032F62">&quot;#bs-accordion&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-target</font><font color="#24292E">=</font><font color="#032F62">&quot;#accordion1&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #1</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion1&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapse collapse show&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the first item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button collapsed&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-toggle</font><font color="#24292E">=</font><font color="#032F62">&quot;collapse&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-parent</font><font color="#24292E">=</font><font color="#032F62">&quot;#bs-accordion&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-target</font><font color="#24292E">=</font><font color="#032F62">&quot;#accordion2&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #2</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion2&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the second item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-item&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">h2</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-header&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">button</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-button collapsed&quot;</font><font color="#24292E"> </font><font color="#6F42C1">type</font><font color="#24292E">=</font><font color="#032F62">&quot;button&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-toggle</font><font color="#24292E">=</font><font color="#032F62">&quot;collapse&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-parent</font><font color="#24292E">=</font><font color="#032F62">&quot;#bs-accordion&quot;</font><font color="#24292E"> </font><font color="#6F42C1">data-target</font><font color="#24292E">=</font><font color="#032F62">&quot;#accordion3&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        Accordion Item #3</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">button</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">h2</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">id</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion3&quot;</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-collapse collapse&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">      &lt;</font><font color="#22863A">div</font><font color="#24292E"> </font><font color="#6F42C1">class</font><font color="#24292E">=</font><font color="#032F62">&quot;accordion-body&quot;</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">        &lt;</font><font color="#22863A">strong</font><font color="#24292E">&gt;This is the third item&#39;s accordion body.&lt;/</font><font color="#22863A">strong</font><font color="#24292E">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</font><font color="#22863A">code</font><font color="#24292E">&gt;.accordion-body&lt;/</font><font color="#22863A">code</font><font color="#24292E">&gt;, though the transition does limit overflow.</font></span>
-<span class="line"><font color="#24292E">      &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">    &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">  &lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
-<span class="line"><font color="#24292E">&lt;/</font><font color="#22863A">div</font><font color="#24292E">&gt;</font></span>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion&quot;</span><span class=""> </span><span class="">id</span><span class="">=</span><span class="">&quot;bs-accordion&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class=""> </span><span class="">data-toggle</span><span class="">=</span><span class="">&quot;collapse&quot;</span><span class=""> </span><span class="">data-parent</span><span class="">=</span><span class="">&quot;#bs-accordion&quot;</span><span class=""> </span><span class="">data-target</span><span class="">=</span><span class="">&quot;#accordion1&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #1</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">id</span><span class="">=</span><span class="">&quot;accordion1&quot;</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapse collapse show&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">strong</span><span class="">&gt;This is the first item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button collapsed&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class=""> </span><span class="">data-toggle</span><span class="">=</span><span class="">&quot;collapse&quot;</span><span class=""> </span><span class="">data-parent</span><span class="">=</span><span class="">&quot;#bs-accordion&quot;</span><span class=""> </span><span class="">data-target</span><span class="">=</span><span class="">&quot;#accordion2&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #2</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">id</span><span class="">=</span><span class="">&quot;accordion2&quot;</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapse collapse&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">strong</span><span class="">&gt;This is the second item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-item&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">h2</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-header&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">button</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-button collapsed&quot;</span><span class=""> </span><span class="">type</span><span class="">=</span><span class="">&quot;button&quot;</span><span class=""> </span><span class="">data-toggle</span><span class="">=</span><span class="">&quot;collapse&quot;</span><span class=""> </span><span class="">data-parent</span><span class="">=</span><span class="">&quot;#bs-accordion&quot;</span><span class=""> </span><span class="">data-target</span><span class="">=</span><span class="">&quot;#accordion3&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        Accordion Item #3</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">button</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">h2</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;</span><span class="">div</span><span class=""> </span><span class="">id</span><span class="">=</span><span class="">&quot;accordion3&quot;</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-collapse collapse&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">      &lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;accordion-body&quot;</span><span class="">&gt;</span></span>
+<span class="line"><span class="">        &lt;</span><span class="">strong</span><span class="">&gt;This is the third item&#39;s accordion body.&lt;/</span><span class="">strong</span><span class="">&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;</span><span class="">code</span><span class="">&gt;.accordion-body&lt;/</span><span class="">code</span><span class="">&gt;, though the transition does limit overflow.</span></span>
+<span class="line"><span class="">      &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">    &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">  &lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
 </pre></div>
   </div>
 </div>

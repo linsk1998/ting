@@ -1,13 +1,52 @@
 const marked = require("marked");
+const cssVarTheme = require('github-vscode-themes/dist/light.json')
 const { createHighlighter } = require("shiki")
 const escapeHtml = require('escape-html');
 
 let hl;
 
+function kabaCase(str) {
+	return str.replace(/\W/g, '-');
+}
+function variable(scope) {
+	return `var(--${kabaCase(scope)})`;
+}
+cssVarTheme.name = 'css-variables';
+cssVarTheme.tokenColors = cssVarTheme.tokenColors.reduce((arr, cur) => {
+	var scope = cur.scope;
+	if(!scope) {
+		arr.push({
+			...cur,
+			settings: {
+				...cur.settings,
+				foreground: variable(scope),
+			}
+		});
+	} else if(Array.isArray(scope)) {
+		scope.forEach(s => {
+			arr.push({
+				...cur,
+				scope: s,
+				settings: {
+					...cur.settings,
+					foreground: variable(`token-${s}`),
+				}
+			});
+		});
+	} else {
+		arr.push({
+			...cur,
+			settings : {
+				...cur.settings,
+				foreground: variable(`token-${scope}`),
+			}
+		});
+	}
+	return arr;
+}, []);
 async function initRenderer(text, lang) {
-	// 【只启动阶段执行一次 await】
 	hl = await createHighlighter({
-		themes: ['github-light'],
+		themes: [cssVarTheme, 'github-light', 'github-dark'],
 		langs: ['html', 'css', 'javascript', 'scss']
 	});
 }
@@ -69,17 +108,25 @@ function createRenderer(options = {}) {
 			// 获取 Tokens 数据，而不是 HTML 字符串
 			const tokens = hl.codeToTokens(text, {
 				lang: lang,
-				theme: 'github-light'
+				theme: 'css-variables',
+  				wrap: true
 			});
 
 			// 手动构建 HTML，完全由你控制结构
 			let html = '';
 
 			tokens.tokens.forEach((line) => {
-				html += '<span class="line">';
-				line.forEach((token) => {
-					// token.color 是颜色值，token.content 是文字
-					html += `<font color="${token.color}">${escapeHtml(token.content)}</font>`;
+				html += '<span class="shiki-line">';
+				line.forEach((t) => {
+					// html += `<font color="${t.color}">${escapeHtml(t.content)}</font>`;
+					if(t.color.startsWith('var(--')) {
+						let color = t.color.slice(5, -1);
+						if(color.startsWith('-token-')) {
+							html += `<span class="shiki${color.substring(6)}">${escapeHtml(t.content)}</span>`;
+							return;
+						}
+					}
+					html += escapeHtml(t.content);
 				})
 				html += '</span>\r\n';
 			});
@@ -92,15 +139,15 @@ function createRenderer(options = {}) {
   </ul>
   <div class="tabs-content">
     <div class="tabs-pane ting-example active">${text}</div>
-    <div class="tabs-pane"><pre class="code m-0">${html}</pre></div>
+    <div class="tabs-pane"><pre class="code shiki m-0">${html}</pre></div>
   </div>
 </div>`;
 			}
-			return `<pre class="code">${html}</pre>`;
+			return `<pre class="code shiki">${html}</pre>`;
 		} catch (error) {
 			console.error(`Shiki highlight error for ${lang}:`, error);
 			// 降级处理：直接返回转义后的代码
-			return `<pre class="code">${escapeHtml(text)}</pre>`;
+			return `<pre class="code shiki">${escapeHtml(text)}</pre>`;
 		}
 	};
 	return renderer;

@@ -20,6 +20,9 @@ importers:
       escape-html:
         specifier: ^1.0.3
         version: 1.0.3
+      github-vscode-themes:
+        specifier: ^6.3.4
+        version: 6.3.4
       http-server:
         specifier: ^14.1.0
         version: 14.1.1
@@ -747,6 +750,9 @@ packages:
   get-uri@6.0.5:
     resolution: {integrity: sha512-b1O07XYq8eRuVzBNgJLstU6FYc1tS6wnMtF1I1D9lE8LxZSOGZ7LhxN54yPP6mGw5f2CkXY2BQUL9Fx41qvcIg==}
     engines: {node: '>= 14'}
+
+  github-vscode-themes@6.3.4:
+    resolution: {integrity: sha512-yd9zUf7E8PfcuJYIk38J3HArhZaVT+dixg4/3H9q8eE3Uhe4dW6iChUvV34q0qOA8bz9RR/5/wWlv344cfwGEA==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -2357,6 +2363,8 @@ snapshots:
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
+
+  github-vscode-themes@6.3.4: {}
 
   glob-parent@5.1.2:
     dependencies:

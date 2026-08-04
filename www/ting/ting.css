@@ -6003,36 +6003,6 @@ pre.code {
   word-wrap: break-word;
 }
 
-@supports selector(:has(*)) {
-  pre.code:has(> .line) {
-    counter-reset: line;
-    position: relative;
-  }
-  pre.code > .line::before {
-    counter-increment: line;
-    content: counter(line);
-    display: block;
-    text-align: right;
-    color: #94a3b8;
-    user-select: none;
-    white-space: nowrap;
-    position: absolute;
-    left: 0;
-    width: 21px;
-  }
-  pre.code:has(> .line:nth-child(100)) {
-    padding-left: 36.5px;
-  }
-  pre.code:has(> .line:nth-child(100)) > .line::before {
-    width: 27.5px;
-  }
-  pre.code:has(> .line:nth-child(1000)) {
-    padding-left: 43px;
-  }
-  pre.code:has(> .line:nth-child(1000)) > .line::before {
-    width: 34px;
-  }
-}
 .link {
   margin-left: 4px;
   margin-right: 4px;
@@ -11071,58 +11041,6 @@ html .dropdown-item[disabled] {
   border-radius: 3px;
 }
 
-.collapsible, .collapse {
-  overflow-y: hidden;
-  *zoom: 1;
-}
-
-.collapsible-horizontal, .collapse-horizontal {
-  overflow-x: hidden;
-  *zoom: 1;
-}
-
-@supports (height: calc-size(auto, size)) {
-  /* 折叠状态 */
-  .collapsible {
-    height: calc-size(auto, size);
-    transition: height 0.3s;
-  }
-  /* 展开状态 */
-  .collapsible.hide {
-    display: block;
-    height: 0;
-  }
-  /* 折叠状态 */
-  .collapsible-horizontal {
-    width: calc-size(auto, size);
-    transition: width 0.3s;
-  }
-  /* 展开状态 */
-  .collapsible-horizontal.hide {
-    display: block;
-    width: 0;
-  }
-  /* 折叠状态 */
-  .collapse {
-    display: block;
-    height: 0;
-    transition: height 0.3s;
-  }
-  /* 展开状态 */
-  .collapse.show {
-    height: calc-size(auto, size);
-  }
-  /* 折叠状态 */
-  .collapse-horizontal {
-    display: block;
-    width: 0;
-    transition: width 0.3s;
-  }
-  /* 展开状态 */
-  .collapse-horizontal.show {
-    width: calc-size(auto, size);
-  }
-}
 .accordion {
   background: #ffffff;
   padding: 1px 0;
@@ -11211,6 +11129,10 @@ html .dropdown-item[disabled] {
     flex-grow: 1;
   }
 }
+.dark .accordion {
+  background: #1b1b1b;
+}
+
 @supports (height: calc-size(auto, size)) {
   .accordion .accordion-collapsible {
     display: block;
@@ -11440,6 +11362,58 @@ a.nav-list-item:hover, .nav-list-item a:hover {
   color: #666f77;
 }
 
+.collapsible, .collapse {
+  overflow-y: hidden;
+  *zoom: 1;
+}
+
+.collapsible-horizontal, .collapse-horizontal {
+  overflow-x: hidden;
+  *zoom: 1;
+}
+
+@supports (height: calc-size(auto, size)) {
+  /* 折叠状态 */
+  .collapsible {
+    height: calc-size(auto, size);
+    transition: height 0.3s;
+  }
+  /* 展开状态 */
+  .collapsible.hide {
+    display: block;
+    height: 0;
+  }
+  /* 折叠状态 */
+  .collapsible-horizontal {
+    width: calc-size(auto, size);
+    transition: width 0.3s;
+  }
+  /* 展开状态 */
+  .collapsible-horizontal.hide {
+    display: block;
+    width: 0;
+  }
+  /* 折叠状态 */
+  .collapse {
+    display: block;
+    height: 0;
+    transition: height 0.3s;
+  }
+  /* 展开状态 */
+  .collapse.show {
+    height: calc-size(auto, size);
+  }
+  /* 折叠状态 */
+  .collapse-horizontal {
+    display: block;
+    width: 0;
+    transition: width 0.3s;
+  }
+  /* 展开状态 */
+  .collapse-horizontal.show {
+    width: calc-size(auto, size);
+  }
+}
 .carousel {
   position: relative;
 }
@@ -12179,8 +12153,42 @@ html body .msgbox-danger {
   border: 5px solid red;
 }
 
-.inverse, .dark {
-  color: #fff;
+.dark {
+  color: #eee;
+  background: #1b1b1b;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #444444;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+.dark {
+  scrollbar-color: #444444 #1a1a1a;
+}
+
+/* IE私有属性，挂载html.dark全局生效，全部属性均支持继承 */
+.dark {
+  /* 滑块主体颜色，等价scrollbar-color第一个值 #444444 */
+  scrollbar-face-color: #444444;
+  /* 滚动条轨道底色，等价scrollbar-color第二个值 #1a1a1a */
+  scrollbar-track-color: #1a1a1a;
+  /* 上下左右箭头三角颜色，适配深色背景浅灰箭头 */
+  scrollbar-arrow-color: #777777;
+  /* 抹平IE老式3D凹凸边框，全部统一深色，消除突兀白边 */
+  scrollbar-highlight-color: #222222;
+  scrollbar-shadow-color: #222222;
+  scrollbar-3dlight-color: #222222;
+  scrollbar-darkshadow-color: #222222;
+  /* 兜底基准色，前面属性失效时自动降级 */
+  scrollbar-base-color: #444444;
 }
 
 .clearfix:after {

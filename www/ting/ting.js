@@ -378,7 +378,7 @@ $(function(){
 					$lightLi=$('<li></li>').addClass(dark?'':'active').append(
 						$('<a href="javascript:void 0" class="dropdown-item"></a>').append(
 							$lightCheck=$('<span class="pull-right text-muted">✓</span>').addClass(dark?'hide':''),
-							$('<i class="icon-fw fa text-muted">&#xf185;</i>'),
+							$('<i class="icon-fw icon-left fa text-muted">&#xf185;</i>'),
 							'白天模式'
 						).click(function() {
 							setDark(false);
@@ -393,7 +393,7 @@ $(function(){
 					$darkLi=$('<li></li>').addClass(dark?'active':'').append(
 						$('<a href="javascript:void 0" class="dropdown-item"></a>').append(
 							$darkCheck=$('<span class="pull-right text-muted">✓</span>').addClass(dark?'':'hide'),
-							$('<i class="icon-fw fa text-muted">&#xf186;</i>'),
+							$('<i class="icon-fw icon-left fa text-muted">&#xf186;</i>'),
 							'黑夜模式'
 						).click(function() {
 							setDark(true);

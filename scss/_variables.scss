@@ -2,6 +2,7 @@
 @use 'functions' as *;
 
 //=============================== 全局公用 ======================================
+$enable-dark: true !default; // 保持圆角开启
 $enable-rounded: false !default; // 保持圆角开启
 $enable-transition: true !default; // 保持过渡动画开启
 $enable-feedback-icon: true !default; // 保持反馈图标开启
@@ -30,6 +31,11 @@ $theme-accent: #FF4081 !default;
 $theme-primary-text: #212121 !default;
 $theme-secondary-text: #757575 !default;
 $theme-divider: #e0e0e0 !default;
+
+$dark-bg: #1a1a1a !default;
+$dark-text: #eee !default;
+$dark-bg: #1a1a1a !default;
+$dark-text: #eee !default;
 
 $colors: (
 	'teal':#009688,

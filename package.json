@@ -41,6 +41,7 @@
 		"backstopjs": "^6.3.0",
 		"color-convert": "^2.0.1",
 		"escape-html": "^1.0.3",
+		"github-vscode-themes": "^6.3.4",
 		"http-server": "^14.1.0",
 		"marked": "^17.0.0",
 		"postcss": "^8.4.49",
