@@ -11370,18 +11370,20 @@ html .dropdown-item[disabled] {
     overflow: auto;
     height: 100%;
   }
-  .dark .accordion-fill {
-    border-color: #495057;
-  }
-  .dark .accordion-fill > .accordion-item > .accordion-header {
-    border-top-color: #495057;
-  }
-  .dark .accordion-button {
-    background: #343a40;
-    color: #f8f9fa;
-  }
 }
-/* CSS Document */
+.dark .accordion-fill {
+  border-color: #495057;
+}
+
+.dark .accordion-fill > .accordion-item > .accordion-header {
+  border-top-color: #495057;
+}
+
+.dark .accordion-button {
+  background: #343a40;
+  color: #f8f9fa;
+}
+
 .tree {
   position: relative;
   padding: 3px;
@@ -11394,11 +11396,11 @@ html .dropdown-item[disabled] {
 
 .tree li {
   position: relative;
+  margin: 0;
+  padding: 0;
   padding-left: 22px;
   list-style: none;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .tree label, .tree a {
@@ -11408,18 +11410,25 @@ html .dropdown-item[disabled] {
   _zoom: 1;
 }
 
+.tree .active a, .tree .active a:hover,
+.tree .active label, .tree .active label:hover {
+  background: #4472c4;
+  color: #fff;
+}
+
+.tree .active u label, .tree .active u a,
+.tree label, .tree a,
+.tree label:hover, .tree a:hover {
+  color: #212121;
+}
+
+.tree .active u label:hover, .tree .active u a:hover,
 .tree label:hover, .tree a:hover {
   background: #CFDDEF;
 }
 
 .tree a, .tree a:hover {
-  color: #333;
   text-decoration: none;
-}
-
-.tree a.active {
-  background: #4472c4;
-  color: #fff;
 }
 
 .tree-icon {
@@ -11430,7 +11439,7 @@ html .dropdown-item[disabled] {
   vertical-align: middle;
 }
 
-.tree-caret {
+.tree-expander {
   position: absolute;
   margin-left: -18px;
   width: 22px;
@@ -11446,7 +11455,7 @@ html .dropdown-item[disabled] {
   *zoom: expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;');
 }
 
-.tree-caret:before {
+.tree-expander:before {
   content: "\f0d7";
 }
 
@@ -11456,12 +11465,12 @@ html .dropdown-item[disabled] {
   line-height: 26px;
 }
 
-.tree .collapse ul {
+.tree-collapsed ul {
   display: none;
 }
 
 @media (min-width: 0) {
-  .tree .collapse .tree-caret {
+  .tree-collapsed .tree-expander {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -11470,22 +11479,44 @@ html .dropdown-item[disabled] {
   }
 }
 @media \0 screen\,screen\9  {
-  .tree .collapse .tree-caret {
+  .tree-collapsed .tree-expander {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   }
 }
-.inverse .tree a, .inverse .tree a:hover {
-  color: #ccc;
+.dark .tree label, .dark .tree a,
+.dark .tree label:hover, .dark .tree a:hover {
+  color: #adb5bd;
 }
 
-.inverse .tree label:hover, .inverse .tree a:hover {
+.dark .tree label:hover, .dark .tree a:hover {
   background: #34414c;
 }
 
-.inverse .tree-caret {
+.dark .tree-expander {
   color: #fff;
 }
 
+@supports (height: calc-size(auto, size)) {
+  .tree ul {
+    display: block;
+    min-width: fit-content;
+    height: calc-size(auto, size);
+    overflow: hidden;
+    transition: height 0s, display 0s allow-discrete;
+  }
+  .tree-collapsed ul {
+    height: 0;
+    display: none;
+  }
+  @starting-style {
+    .tree ul {
+      height: 0;
+    }
+  }
+  .tree-expander:focus ~ ul {
+    transition-duration: 0.3s;
+  }
+}
 .sidebar {
   background: #fcfcfc;
 }

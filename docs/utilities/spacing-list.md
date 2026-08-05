@@ -9,4 +9,5 @@
 | .mb-{size} | .pb-{size} |
 | .mx-{size} | .px-{size} |
 | .my-{size} | .py-{size} |
-| 其中 {size} 可以为 0, 1, 2, 3, 4, 5 |
+
+其中 {size} 可以为 0, 1, 2, 3, 4, 5, 6

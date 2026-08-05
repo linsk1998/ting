@@ -5,74 +5,43 @@
 ## 基本用法
 
 ```html
-<div class="tree">
-  <ul>
-    <li>
-      <div class="active">
-        <i class="fa tree-caret">&#xf0d7;</i>
-        <i class="fa tree-icon">&#xf07b;</i>
-        节点 1
-      </div>
-      <ul>
-        <li>
-          <div>
-            <i class="fa tree-caret">&#xf0d7;</i>
-            <i class="fa tree-icon">&#xf07b;</i>
-            节点 1-1
-          </div>
-          <ul>
-            <li>
-              <div>
-                <i class="fa tree-caret tree-caret-empty"></i>
-                <i class="fa tree-icon">&#xf15b;</i>
-                节点 1-1-1
-              </div>
+<div style="width: 300px; height: 300px; overflow: auto; border: 4px solid #000;">
+    <div class="tree">
+        <ul>
+            <li class="tree-collapsed">
+                <i class="tree-expander" tabindex="0"></i>
+                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <ul>
+                    <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>重要会议</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>视频新闻</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>各地要闻</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>国际局势</a></li>
+                </ul>
+            </li>
+            <li class="tree-collapsed">
+                <i class="tree-expander" tabindex="0"></i>
+                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <ul>
+                    <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
+                    <li><a href="javascript:void 0">重要会议</a></li>
+                    <li><a href="javascript:void 0">视频新闻</a></li>
+                    <li><a href="javascript:void 0">各地要闻</a></li>
+                    <li><a href="javascript:void 0">国际局势</a></li>
+                </ul>
             </li>
             <li>
-              <div>
-                <i class="fa tree-caret tree-caret-empty"></i>
-                <i class="fa tree-icon">&#xf15b;</i>
-                节点 1-1-2
-              </div>
+                <i class="tree-expander" tabindex="0"></i>
+                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <ul>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>重要会议</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>视频新闻</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>各地要闻</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>国际局势</label></li>
+                </ul>
             </li>
-          </ul>
-        </li>
-        <li>
-          <div>
-            <i class="fa tree-caret tree-caret-empty"></i>
-            <i class="fa tree-icon">&#xf15b;</i>
-            节点 1-2
-          </div>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <div>
-        <i class="fa tree-caret">&#xf0d7;</i>
-        <i class="fa tree-icon">&#xf07b;</i>
-        节点 2
-      </div>
-      <ul class="collapse">
-        <li>
-          <div>
-            <i class="fa tree-caret tree-caret-empty"></i>
-            <i class="fa tree-icon">&#xf15b;</i>
-            节点 2-1
-          </div>
-        </li>
-      </ul>
-    </li>
-  </ul>
+        </ul>
+    </div>
 </div>
 ```
-
-## 核心类
-
-| 类 | 描述 |
-|---|---|
-| `.tree` | 树容器 |
-| `.tree-caret` | 展开/收起三角箭头 |
-| `.tree-caret-empty` | 空白占位（无子节点的缩进） |
-| `.tree-icon` | 节点图标 |
-| `.active` | 选中节点 |
-| `.collapse` | 收起状态（隐藏子节点） |

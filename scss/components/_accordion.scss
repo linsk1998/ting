@@ -132,12 +132,12 @@
 			overflow: auto;
 			height: 100%;
 		}
-		@if $enable-dark {
-			.dark {
-				.accordion-fill { border-color: $accordion-dark-border-color;}
-				.accordion-fill>.accordion-item>.accordion-header{ border-top-color: $accordion-dark-border-color;}
-				.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis;}
-			}
+	}
+	@if $enable-dark {
+		.dark {
+			.accordion-fill { border-color: $accordion-dark-border-color;}
+			.accordion-fill>.accordion-item>.accordion-header{ border-top-color: $accordion-dark-border-color;}
+			.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis;}
 		}
 	}
 }

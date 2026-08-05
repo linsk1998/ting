@@ -120,8 +120,8 @@ $(function(){
 			$next.removeClass('collapsed');
 		}
 	});
-	$(document).on('click',"[role=tree] .tree-caret",function(e){
-		$(this).parent().toggleClass("collapse");
+	$(document).on('click',".tree-expander",function(e){
+		$(this).parent().toggleClass("tree-collapsed");
 	});
 	if(document.addEventListener){
 		$(document).on('click',"[role=radio]>label",function(e){
