@@ -2,7 +2,6 @@
 @use '../mixins' as *;
 @use '../functions' as *;
 
-
 .tree{
 	position: relative;
 	padding: $tree-padding;
@@ -17,7 +16,7 @@
 }
 .tree label,.tree a{
 	padding-left:5px;
-	line-height:26px;
+	line-height:$tree-item-height;
 	display:block;
 	_zoom:1;
 }
@@ -40,25 +39,47 @@
 }
 .tree-icon{
 	margin-right:5px;
-	line-height:26px;
+	line-height:$tree-item-height;
 	font-size:$tree-icon-size;
 	display:inline-block;
 	vertical-align:middle;
 }
-.tree-expander{ position:absolute; margin-left:-18px; width:22px; text-align:center; line-height:26px; cursor:pointer; transition:transform 0.2s;
- font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-*zoom:#{"expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;')"};}
-.tree-expander:before{ content:"\f0d7";}
-.tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:26px;}
-.tree-collapsed ul{ display:none;}
-@media (min-width:0){
-	.tree-collapsed .tree-expander{
-		@include transform(-90deg);
+.tree-expander{
+	position:absolute;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	width: 4px;
+	height: 8px;
+	border: 4px solid transparent;
+  	_border-style: dotted;
+	border-right: 0 none;
+	border-left: 4px solid $light-text;
+	color: $light-text;
+	left: $tree-indent * .5 - 2px;
+	*left: $tree-indent * .5 - 2px - $tree-indent;
+    top: $tree-item-height * .5 - 4px;
+	cursor:pointer;
+	&:after {
+		content: " ";
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		left: -10px;
+		top: -8px;
 	}
 }
-@media \0screen\,screen\9 {
-	.tree-collapsed .tree-expander{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+@media (min-width:0){
+	.tree-expander{ @include transform(90deg);}
+	.tree-collapsed .tree-expander{ @include transform(0deg);}
 }
+@media \0screen\,screen\9 {
+	.tree-expander{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+	.tree-collapsed .tree-expander{ filter:none;}
+}
+.tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:$tree-item-height;}
+.tree-collapsed ul{ display:none;}
+
 @if $enable-dark {
 	.dark {
 		.tree label,.tree a,
@@ -66,11 +87,14 @@
 			color: $dark-text;
 		}
 		.tree label:hover,.tree a:hover{ background:#34414c;}
-		.tree-expander{ color:#fff;}
+		.tree-expander{ border-left-color: $dark-text; color: $dark-text;}
 	}
 }
 @if $enable-transition {
 	@supports (height: calc-size(auto, size)) {
+		.tree-expander{
+			transition: transform $collapse-duration;
+		}
 		.tree ul{
 			display: block;
 			min-width: fit-content;

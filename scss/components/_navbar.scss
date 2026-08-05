@@ -10,6 +10,7 @@
 }
 .navbar-fixed-top {
 	position: fixed;
+	_position: absolute;
 	z-index:$level-navbar + 100;
 	top: 0;
 	left: 0;
@@ -75,8 +76,8 @@
 .navbar-nav .nav-link,
 .navbar-nav a{
 	color: $navbar-color;
-	display: block;
-	width: 100%;
+	display: inline-block;
+	*zoom:1;
 	line-height: $line-height-base;
 	padding: ($navbar-height - $line-height-base) * .5 $navbar-nav-item-padding-x;
 }
@@ -164,7 +165,10 @@
 	}
 	.navbar-nav{ float:none;}
 	.navbar-nav .nav-item,.navbar-nav li{ float:none; display: block;}
-	.navbar-nav .nav-link,.navbar-nav a{ padding:$navbar-nav-item-padding-y-sm $navbar-nav-item-padding-x-sm;}
+	.navbar-nav .nav-link,.navbar-nav a{
+		display: block;
+		padding:$navbar-nav-item-padding-y-sm $navbar-nav-item-padding-x-sm;
+	}
 
 	.navbar-right,.navbar-left{ float:none;}
 	.navbar-nav .dropdown-menu{ top:auto; position:relative; margin:0 3px;}

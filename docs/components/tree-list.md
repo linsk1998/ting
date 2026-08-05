@@ -5,5 +5,5 @@
 | .tree | 树组件容器，相对定位，带内边距 |
 | .tree-icon | 树节点图标，垂直居中对齐 |
 | .tree-expander | 树节点展开/收起三角箭头，使用FontAwesome图标 |
-| .collapse | 收起状态的树节点，隐藏子节点，箭头旋转 |
+| .tree-collapsed | 收起状态的树节点，隐藏子节点，箭头旋转 |
 | .active | 选中的树节点，使用主题色背景 |
