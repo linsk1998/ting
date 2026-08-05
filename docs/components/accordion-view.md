@@ -233,7 +233,7 @@
 
 ## 黑暗模式
 
-使用`.accordion-dark`或容器上使用`.dark`可以开启黑暗模式。
+使用`.accordion-dark`或容器上使用`.dark`可以开启黑暗模式。如果使用`.accordion-dark`一般还要额外添加`.dark`，使得子组件也是黑暗模式。
 
 ```html
 <div style="width: 300px; border: 4px solid #000;">
