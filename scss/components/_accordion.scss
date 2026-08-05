@@ -43,6 +43,7 @@
 	display: block;
 	padding: $accordion-header-padding-y $accordion-header-padding-x;
 	text-align: left;
+	color: $light-emphasis;
 	background: $accordion-header-bg;
 	border: 0;
 	outline: 0;
@@ -81,6 +82,13 @@
 	}
 	.accordion-fill>.accordion-item>.show {
 		flex-grow: 1;
+	}
+}
+@if $enable-dark {
+	.dark .accordion, .accordion-dark{ background: $dark-bg;}
+	.dark {
+		.accordion-item { border-color: $accordion-dark-border-color;}
+		.accordion-body { border-top-color: $accordion-dark-border-color;}
 	}
 }
 @if $enable-transition {
@@ -123,6 +131,13 @@
 		.accordion-fill>.accordion-item>.accordion-collapsible>.accordion-body{
 			overflow: auto;
 			height: 100%;
+		}
+		@if $enable-dark {
+			.dark {
+				.accordion-fill { border-color: $accordion-dark-border-color;}
+				.accordion-fill>.accordion-item>.accordion-header{ border-top-color: $accordion-dark-border-color;}
+				.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis;}
+			}
 		}
 	}
 }

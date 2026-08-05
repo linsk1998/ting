@@ -3036,6 +3036,12 @@ dialog {
   color: #8BB9FE;
 }
 
+.dark code {
+  background: #2d333b;
+  color: #ff6b81;
+  border: 1px solid #3d444d;
+}
+
 .container,
 .container-md,
 .container-sm {
@@ -11243,7 +11249,7 @@ html .dropdown-item[disabled] {
 
 .accordion-header {
   margin: 0;
-  background: #eeeeee;
+  background: #e9ecef;
 }
 
 .accordion-icon {
@@ -11265,7 +11271,8 @@ html .dropdown-item[disabled] {
   display: block;
   padding: 10px 15px;
   text-align: left;
-  background: #eeeeee;
+  color: #111111;
+  background: #e9ecef;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -11311,8 +11318,16 @@ html .dropdown-item[disabled] {
     flex-grow: 1;
   }
 }
-.dark .accordion {
-  background: #1b1b1b;
+.dark .accordion, .accordion-dark {
+  background: #212529;
+}
+
+.dark .accordion-item {
+  border-color: #495057;
+}
+
+.dark .accordion-body {
+  border-top-color: #495057;
 }
 
 @supports (height: calc-size(auto, size)) {
@@ -11354,6 +11369,16 @@ html .dropdown-item[disabled] {
   .accordion-fill > .accordion-item > .accordion-collapsible > .accordion-body {
     overflow: auto;
     height: 100%;
+  }
+  .dark .accordion-fill {
+    border-color: #495057;
+  }
+  .dark .accordion-fill > .accordion-item > .accordion-header {
+    border-top-color: #495057;
+  }
+  .dark .accordion-button {
+    background: #343a40;
+    color: #f8f9fa;
   }
 }
 /* CSS Document */

@@ -32,6 +32,9 @@ $theme-accent: #FF4081 !default;
 $theme-primary-text: #212121 !default;
 $theme-secondary-text: #757575 !default;
 $theme-divider: #e0e0e0 !default;
+$light-heading: #000000 !default;
+$light-emphasis: #111111 !default;
+$light-text: #212121 !default;
 $light-muted: #757575 !default;
 $light-secondary-bg: #e9ecef;
 $light-tertiary-bg: #f8f9fa;
@@ -424,9 +427,11 @@ $collapse-duration: .3s !default;
 $accordion-bg: #ffffff !default;
 $accordion-border-width: 1px !default;
 $accordion-border-color: $theme-divider !default;
-$accordion-header-bg: #eeeeee !default;
+$accordion-header-bg: $light-secondary-bg !default;
 $accordion-header-padding-y: 10px !default;
 $accordion-header-padding-x: 15px !default;
 $accordion-body-padding: 15px !default;
+$accordion-dark-border-color: $dark-divider !default;
+$accordion-dark-header-bg: $dark-secondary-bg !default;
 
 $modal-alpha: 0.4 !default; //模不透明度

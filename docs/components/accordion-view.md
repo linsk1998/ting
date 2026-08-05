@@ -233,19 +233,20 @@
 
 ## 黑暗模式
 
+使用`.accordion-dark`或容器上使用`.dark`可以开启黑暗模式。
 
 ```html
-<div class="dark" style="width: 300px; height: 400px; overflow-y: auto; border: 4px solid #000;">
-    <div class="accordion accordion-flush accordion-fill">
+<div style="width: 300px; border: 4px solid #000;">
+    <div class="accordion accordion-dark dark">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button">
-                    去除边框
+                    Accordion Item #1
                 </button>
             </h2>
             <div class="accordion-collapsible">
                 <div class="accordion-body">
-                    很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    1
                 </div>
             </div>
         </div>
@@ -257,7 +258,7 @@
             </h2>
             <div class="accordion-collapsible">
                 <div class="accordion-body">
-                    少内容
+                    2
                 </div>
             </div>
         </div>
@@ -269,7 +270,7 @@
             </h2>
             <div class="accordion-collapsible">
                 <div class="accordion-body">
-                    少内容
+                    3
                 </div>
             </div>
         </div>
