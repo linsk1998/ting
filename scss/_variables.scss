@@ -2,6 +2,7 @@
 @use 'functions' as *;
 
 //=============================== 全局公用 ======================================
+$enable-components: true !default; // 启用组件
 $enable-dark: true !default; // 保持圆角开启
 $enable-rounded: false !default; // 保持圆角开启
 $enable-transition: true !default; // 保持过渡动画开启
@@ -31,11 +32,30 @@ $theme-accent: #FF4081 !default;
 $theme-primary-text: #212121 !default;
 $theme-secondary-text: #757575 !default;
 $theme-divider: #e0e0e0 !default;
+$light-muted: #757575 !default;
+$light-secondary-bg: #e9ecef;
+$light-tertiary-bg: #f8f9fa;
+$light-bg-subtle: #f8f9fa;
 
-$dark-bg: #1a1a1a !default;
-$dark-text: #eee !default;
-$dark-bg: #1a1a1a !default;
-$dark-text: #eee !default;
+$dark-bg: #212529 !default;
+$dark-heading: #fff !default;
+$dark-emphasis: #f8f9fa !default;
+$dark-text: #adb5bd !default;
+$dark-muted: #6c757d !default;
+$dark-primary: #6ea8fe !default;
+$dark-success: #75b798 !default;
+$dark-info: #6edff6 !default;
+$dark-warning: #ffda6a !default;
+$dark-danger: #ea868f !default;
+
+$dark-secondary-bg: #343a40;
+$dark-tertiary-bg: #2b3035;
+
+$dark-bg-subtle: #212529;
+$dark-divider: #495057;
+
+$dark-scrollbar-track: $dark-bg-subtle !default;
+$dark-scrollbar-thumb: #444444 !default;
 
 $colors: (
 	'teal':#009688,
@@ -103,6 +123,7 @@ $level-item-hover: 210 !default;
 $level-item-active: 220 !default;
 $level-item-focus: 230 !default;
 $level-item-emphasis: 240 !default;
+$level-nav: 400 !default;
 $level-navbar: 500 !default;
 $level-scrollbar: 600 !default;
 $level-dropdown: 700 !default;
@@ -194,12 +215,15 @@ $jumbotron-title-fontsize-sm: 34px !default;
 $jumbotron-text-fontsize-sm: 18px !default;
 $jumbotron-title-fontsize-xs: 20px !default;
 $jumbotron-text-fontsize-xs: 16px !default;
+$jumbotron-dark-bg: #2b333c !default;
 
-$footer-bg: #f5f5f5 !default;
-$footer-color: #666 !default;
+$footer-bg: $light-tertiary-bg !default;
+$footer-color: $light-muted !default;
 $footer-padding: 30px 0 !default;
 $footer-margin: 16px 0 0 !default;
 $footer-text-align: center !default;
+$footer-dark-bg: $dark-tertiary-bg !default;
+$footer-dark-color: $dark-muted !default;
 
 //=============================== 表单 ======================================
 $form-group-margin-bottom: 20px !default;
@@ -346,15 +370,17 @@ $nav-tabs-padding-y: 6px !default;
 $nav-tabs-padding-x: 16px !default;
 
 $navbar-height: 50px !default;
-$navbar-border-padding: 0 16px !default;
 $navbar-border-width: 1px !default;
 $navbar-toggle-size: 34px !default;
 $navbar-toggle-border-width: $btn-border-width !default;
 $navbar-color: #444 !default;
-$navbar-nav-hover-bg: #e7e7e7 !default;
+$navbar-nav-active-bg: #e7e7e7 !default;
 $navbar-nav-item-padding-x: 15px !default;
 $navbar-nav-item-padding-y-sm: 10px !default;
 $navbar-nav-item-padding-x-sm: 15px !default;
+$navbar-dark-bg: $dark-tertiary-bg !default;
+$navbar-dark-color: $dark-text !default;
+$navbar-dark-nav-active-bg: #212121 !default;
 
 // Popover
 $popover-border-width: $ctrl-border-width !default;

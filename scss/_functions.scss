@@ -22,6 +22,10 @@
 	@return color.adjust($color, $saturation: -$saturation);
 }
 
+@function scale-color($color, $lightness) {
+	@return color.scale($color, $lightness: $lightness);
+}
+
 @function mix($color1, $color2, $weight: 50%) {
 	@return color.mix($color1, $color2, $weight);
 }

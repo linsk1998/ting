@@ -19,3 +19,4 @@
 	.jumbotron h1,.jumbotron-title{ font-size:$jumbotron-title-fontsize-xs;}
 	.jumbotron p,.jumbotron-text{ font-size:$jumbotron-text-fontsize-xs;}
 }
+.dark .jumbotron{ background:$jumbotron-dark-bg;}

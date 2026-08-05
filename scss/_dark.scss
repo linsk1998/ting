@@ -1,39 +1,39 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'functions' as *;
 
 @if $enable-dark {
 	.dark{
-		color:$theme-inverse-text;
-		background: $theme-inverse;
+		color: $dark-text;
+		background: $dark-bg;
 	}
 	.dark ::-webkit-scrollbar-track {
-		background: #1a1a1a;
+		background: darken($dark-scrollbar-track, 3%);
 	}
 	.dark ::-webkit-scrollbar-thumb {
-		background-color: #444444;
+		background-color: $dark-scrollbar-thumb;
 	}
 	.dark ::-webkit-scrollbar-thumb:hover {
-		background-color: #555555;
+		background-color: lighten($dark-scrollbar-thumb, 8%);
 	}
 	.dark {
-		scrollbar-color: #444444 #1a1a1a;
+		scrollbar-color: $dark-scrollbar-thumb $dark-scrollbar-track;
 	}
-	/* IE私有属性，挂载html.dark全局生效，全部属性均支持继承 */
 	.dark {
-		/* 滑块主体颜色，等价scrollbar-color第一个值 #444444 */
-		scrollbar-face-color: #444444;
-		/* 滚动条轨道底色，等价scrollbar-color第二个值 #1a1a1a */
-		scrollbar-track-color: #1a1a1a;
-		/* 上下左右箭头三角颜色，适配深色背景浅灰箭头 */
-		scrollbar-arrow-color: #777777;
+		/* 滑块主体颜色，等价scrollbar-color第一个值 */
+		scrollbar-face-color: $dark-scrollbar-thumb;
+		/* 滚动条轨道底色，等价scrollbar-color第二个值 */
+		scrollbar-track-color: $dark-scrollbar-track;
+		/* 上下左右箭头三角颜色 */
+		scrollbar-arrow-color: lighten($dark-scrollbar-thumb, 20%);
 
-		/* 抹平IE老式3D凹凸边框，全部统一深色，消除突兀白边 */
-		scrollbar-highlight-color: #222222;
-		scrollbar-shadow-color: #222222;
-		scrollbar-3dlight-color: #222222;
-		scrollbar-darkshadow-color: #222222;
+		/* 老式3D凹凸边框，全部统一深色，消除突兀白边 */
+		scrollbar-highlight-color: $dark-scrollbar-track;
+		scrollbar-shadow-color: $dark-scrollbar-track;
+		scrollbar-3dlight-color: $dark-scrollbar-track;
+		scrollbar-darkshadow-color: $dark-scrollbar-track;
 
 		/* 兜底基准色，前面属性失效时自动降级 */
-		scrollbar-base-color: #444444;
+		scrollbar-base-color: $dark-scrollbar-thumb;
 	}
 }

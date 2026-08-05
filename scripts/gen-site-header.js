@@ -12,8 +12,9 @@ function navbar(currentSection) {
 		navbarHtml += `<li${classAttr}><a href="../${escapeHtml(section)}/index.html">${escapeHtml(SECTION_MAP[section])}</a></li>`;
 	}
 
-	return `<div class="container">
-				<div class="navbar navbar-flush">
+	return `<div class="navbar"><div class="navbar-brand"></div></div>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
 						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>

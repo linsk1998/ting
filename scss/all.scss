@@ -1,12 +1,16 @@
-@use './variables';
+@use 'sass:meta';
+@use './variables' as *;
 @use './mixins';
-@use './animation';
-@use './reset';
-@use './layout';
-@use './content';
-@use './form';
-@use './components';
-@use './dark';
-@use './helpers';
-@use './utilities';
-@use './status'
+
+@include meta.load-css('./animation');
+@include meta.load-css('./reset');
+@include meta.load-css('./layout');
+@include meta.load-css('./content');
+@include meta.load-css('./form');
+@if $enable-components {
+	@include meta.load-css('./components');
+}
+@include meta.load-css('./dark');
+@include meta.load-css('./helpers');
+@include meta.load-css('./utilities');
+@include meta.load-css('./status');

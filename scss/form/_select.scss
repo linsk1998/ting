@@ -98,7 +98,7 @@
 }
 .select .control-clear{
 	right: $ctrl-border-width + $select-addon-gap + $select-addon-size + $ctrl-clear-right;
-	z-index: $level-navbar;
+	z-index: $level-nav;
 }
 @if($enable-feedback-icon) {
 	.has-feedback-icon .select-btn{
@@ -106,7 +106,7 @@
 	}
 	.select .feedback-icon{
 		right: $select-addon-gap + $select-addon-size;
-		z-index: $level-navbar;
+		z-index: $level-nav;
 	}
 	.has-feedback-icon .select .control-clear {
 		right: $select-addon-gap + $select-addon-size + $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-clear-right;

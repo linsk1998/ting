@@ -1,3 +1,12 @@
 @use "../variables" as *;
 
-.footer{ background:$footer-bg; padding:$footer-padding; margin:$footer-margin; color:$footer-color; text-align:$footer-text-align;}
+.footer {
+    background: $footer-bg;
+    padding: $footer-padding;
+    margin: $footer-margin;
+    color: $footer-color;
+    text-align: $footer-text-align;
+}
+.dark{
+    .footer{ background: $footer-dark-bg; color: $footer-dark-color; }
+}

@@ -3,15 +3,18 @@
 @use '../functions' as *;
 
 .navbar{
-	border: $navbar-border-width solid $theme-divider;
-	padding: $navbar-border-padding;
 	position:relative;
 	z-index:$level-navbar;
 	@include clearfix;
+	background: #fff;
 }
-.navbar-flush {
-	border: 0 none;
-	padding: 0;
+.navbar-fixed-top {
+	position: fixed;
+	z-index:$level-navbar + 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: $navbar-border-width solid $theme-divider;
 }
 .navbar-header{ float: left;}
 .navbar-brand {
@@ -25,10 +28,8 @@
 	display:-moz-box;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
 	-moz-box-align:center; -webkit-box-align:center; -ms-flex-align:center; -webkit-align-items:center; align-items:center;
 }
-.navbar-brand a,
-a.navbar-brand,
-.navbar-brand a:hover,
-a.navbar-brand:hover {
+.navbar-brand a,a.navbar-brand,
+.navbar-brand a:hover,a.navbar-brand:hover {
 	text-decoration: none;
 	color: $theme-primary-text;
 }
@@ -45,8 +46,6 @@ a.navbar-brand:hover {
 	height: $navbar-toggle-size;
 	margin-top: ($navbar-height - $navbar-toggle-size)*.5;
 	border: $navbar-toggle-border-width solid $ctrl-border-color;
-	background: #fff;
-	color: $theme-primary-text;
 }
 .navbar-toggle::-moz-focus-inner,.navbar-toggle::-moz-focus-inner{
 	padding:0;
@@ -88,10 +87,10 @@ a.navbar-brand:hover {
 }
 .navbar-nav .active .nav-link,
 .navbar-nav .active a,.navbar-nav .open{
-	background: $navbar-nav-hover-bg;
+	background: $navbar-nav-active-bg;
 }
 .navbar-nav .dropdown:has(.dropdown-menu[popover]:popover-open) > a{
-	background: $navbar-nav-hover-bg;
+	background: $navbar-nav-active-bg;
 }
 .navbar-nav .dropdown-menu{ margin:0;}
 
@@ -247,5 +246,33 @@ a.navbar-brand:hover {
 				height: calc-size(auto, size);
 			}
 		}
+	}
+}
+.dark {
+	.navbar{ background: $navbar-dark-bg;}
+	.navbar-fixed-top { border-bottom-color: $dark-divider;}
+	.navbar-brand a,a.navbar-brand,
+	.navbar-brand a:hover,a.navbar-brand:hover {
+		color: $dark-heading;
+	}
+	.navbar-nav a {
+		color: $navbar-dark-color;
+	}
+	.navbar-nav .nav-link:hover,
+	.navbar-nav a:hover {
+		color: lighten($navbar-dark-color, 10%);
+	}
+	.navbar-form .form-label,
+	.navbar-form .control-label {
+		color: $navbar-dark-color;
+	}
+	.navbar-nav .active .nav-link,
+	.navbar-nav .active a,.navbar-nav .open{
+		background: $navbar-dark-nav-active-bg;
+		color: $dark-emphasis;
+	}
+	.navbar-nav .dropdown:has(.dropdown-menu[popover]:popover-open) > a{
+		background: $navbar-dark-nav-active-bg;
+		color: $dark-emphasis;
 	}
 }
