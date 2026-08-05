@@ -27,6 +27,7 @@
 	},
 	"scripts": {
 		"build": "node scripts/build.js",
+		"build:shiki": "node scripts/build-shiki.js",
 		"gen:site": "node scripts/gen-site.js",
 		"serve": "http-server www -p 3000",
 		"backstop-reference": "backstop reference",

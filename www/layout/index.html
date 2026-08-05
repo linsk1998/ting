@@ -72,13 +72,13 @@
 <h2 class="page-header" id="布局容器">布局容器</h2>
 <p>.container 类用于固定宽度并支持响应式布局的容器。
 		</p>
-<pre class="code"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;container&quot;</span><span class="">&gt;</span></span>
-<span class="line"><span class="">    ...</span></span>
-<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    ...</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 </pre><p>.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。</p>
-<pre class="code"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;container-fluid&quot;</span><span class="">&gt;</span></span>
-<span class="line"><span class="">    ...</span></span>
-<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container-fluid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    ...</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 </pre><div class="table-responsive">
 <table class="table table-sm table-bordered table-striped">
 <thead class="thead-subtle"><tr>
@@ -119,19 +119,19 @@
 
 <h2 class="page-header" id="栅格系统">栅格系统</h2>
 <p>不带间隔支持响应式的布局样式类。由于使用的是border-box，因此可以加入padding，实现固定宽度间隙。</p>
-<pre class="code"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;container&quot;</span><span class="">&gt;</span></span>
-<span class="line"><span class="">	&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;row&quot;</span><span class="">&gt;</span></span>
-<span class="line"><span class="">		&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;col-md-2&quot;</span><span class="">&gt;&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
-<span class="line"><span class="">		&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;col-md-10&quot;</span><span class="">&gt;&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
-<span class="line"><span class="">	&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
-<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">	&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">		&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">		&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-10</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">	&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 </pre><p>加入宽度为24px的间隙。</p>
-<pre class="code"><span class="line"><span class="">&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;container&quot;</span><span class="">&gt;</span></span>
-<span class="line"><span class="">	&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;row row-gx-4&quot;</span><span class="">&gt;</span></span>
-<span class="line"><span class="">		&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;col-md-2 col-gx-4&quot;</span><span class="">&gt;&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
-<span class="line"><span class="">		&lt;</span><span class="">div</span><span class=""> </span><span class="">class</span><span class="">=</span><span class="">&quot;col-md-10 col-gx-4&quot;</span><span class="">&gt;&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
-<span class="line"><span class="">	&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
-<span class="line"><span class="">&lt;/</span><span class="">div</span><span class="">&gt;</span></span>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">	&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">row row-gx-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">		&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-gx-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">		&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-10 col-gx-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">	&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 </pre><div class="table-responsive">
 <table class="table table-sm table-bordered table-striped">
 <thead class="thead-subtle"><tr>

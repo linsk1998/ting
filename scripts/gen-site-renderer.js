@@ -1,10 +1,14 @@
 const marked = require("marked");
-const cssVarTheme = require('github-vscode-themes/dist/light.json')
-const { createHighlighter } = require("shiki")
+const { createHighlighter } = require("shiki");
 const escapeHtml = require('escape-html');
 
-let hl;
+const lightTheme = require('github-vscode-themes/dist/light.json');
+const darkTheme = require('github-vscode-themes/dist/dark.json');
+lightTheme.name = 'github-light';
+darkTheme.name = 'github-dark';
 
+let hl;
+const cssVarTheme = structuredClone(lightTheme);
 function kabaCase(str) {
 	return str.replace(/\W/g, '-');
 }
@@ -46,7 +50,7 @@ cssVarTheme.tokenColors = cssVarTheme.tokenColors.reduce((arr, cur) => {
 }, []);
 async function initRenderer(text, lang) {
 	hl = await createHighlighter({
-		themes: [cssVarTheme, 'github-light', 'github-dark'],
+		themes: [cssVarTheme, lightTheme, darkTheme],
 		langs: ['html', 'css', 'javascript', 'scss']
 	});
 }

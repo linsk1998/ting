@@ -231,6 +231,52 @@
 </div>
 ```
 
+## 黑暗模式
+
+
+```html
+<div class="dark" style="width: 300px; height: 400px; overflow-y: auto; border: 4px solid #000;">
+    <div class="accordion accordion-flush accordion-fill">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    去除边框
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item accordion-collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    少内容
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item accordion-collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    少内容
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
 ## 兼容 bootstrap 写法
 
 bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-collapsible`。bootstrap 没有 `accordion-fill` 功能。
