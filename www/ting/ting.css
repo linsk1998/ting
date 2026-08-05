@@ -11511,6 +11511,12 @@ html .dropdown-item[disabled] {
   background: #34414c;
 }
 
+.dark .tree .active a, .dark .tree .active a:hover,
+.dark .tree .active label, .dark .tree .active label:hover {
+  background: #6ea8fe;
+  color: #fff;
+}
+
 .dark .tree-expander {
   border-left-color: #adb5bd;
   color: #adb5bd;

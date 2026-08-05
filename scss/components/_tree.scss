@@ -87,6 +87,8 @@
 			color: $dark-text;
 		}
 		.tree label:hover,.tree a:hover{ background:#34414c;}
+		.tree .active a, .tree .active a:hover,
+		.tree .active label, .tree .active label:hover { background: $dark-primary; color: #fff;}
 		.tree-expander{ border-left-color: $dark-text; color: $dark-text;}
 	}
 }

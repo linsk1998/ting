@@ -66,6 +66,10 @@ function kabaCase(str) {
     position: absolute;
     left: 0;
     width: 21px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 @supports selector(:has(*)) {
 	.shiki:has(>.shiki-line:nth-child(100)) {
