@@ -18,9 +18,9 @@ button.nav-link, input.nav-link { cursor: pointer;}
 
 .nav-indicator{ margin-left:0; border-bottom:1px solid $theme-divider;}
 .nav-indicator .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
-.nav-indicator .nav-link{ color:$theme-secondary-text; padding:$nav-indicator-padding-y $nav-indicator-padding-x; display: inline-block; *zoom:1;}
-.nav-indicator .nav-link:hover{ color:$nav-indicator-color; text-decoration:none;}
-.nav-indicator .active{ border-bottom:1px solid $theme-primary; margin-bottom:-1px;}
+.nav-indicator .nav-link{ color:$nav-indicator-color; padding:$nav-indicator-padding-y $nav-indicator-padding-x; display: inline-block; *zoom:1;}
+.nav-indicator .nav-link:hover{ color:$nav-indicator-color-hover; text-decoration:none;}
+.nav-indicator .active{ border-bottom:1px solid $nav-indicator-active-color; margin-bottom:-1px;}
 .nav-indicator .active .nav-link, .nav-indicator a.active,
 .nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$nav-indicator-active-color;}
 
@@ -115,3 +115,12 @@ body:last-child .nav-justified, x:-moz-any-link {
 
 .tabs-pane,.tab-pane{ display:none;}
 .tabs-active { display:block;}
+
+@if $enable-dark {
+	.nav-indicator{ border-bottom-color:$dark-divider;}
+	.nav-indicator .nav-link{ color:$nav-dark-indicator-color;}
+	.nav-indicator .nav-link:hover{ color:$nav-dark-indicator-color-hover;}
+	.nav-indicator .active{ border-bottom-color:$nav-dark-indicator-active-color;}
+	.nav-indicator .active .nav-link, .nav-indicator a.active,
+	.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$nav-dark-indicator-active-color;}
+}

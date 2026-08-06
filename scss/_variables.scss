@@ -375,12 +375,16 @@ $nav-pills-active-color: #fff !default;
 $nav-pills-active-bg: $theme-primary !default;
 $nav-indicator-padding-y: 7px !default;
 $nav-indicator-padding-x: 15px !default;
-$nav-indicator-color: $theme-secondary-text !default;
+$nav-indicator-color: $light-muted !default;
+$nav-indicator-color-hover: $light-muted !default;
 $nav-indicator-active-color: $theme-primary !default;
 $nav-tabs-horizontal-side-width: 200px !default;
 $nav-tabs-horizontal-gutter: 20px !default;
 $nav-tabs-padding-y: 6px !default;
 $nav-tabs-padding-x: 16px !default;
+$nav-dark-indicator-color: $dark-muted !default;
+$nav-dark-indicator-color-hover: $dark-muted !default;
+$nav-dark-indicator-active-color: $dark-primary !default;
 
 $navbar-height: 50px !default;
 $navbar-border-width: 1px !default;

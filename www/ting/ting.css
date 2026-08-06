@@ -10055,6 +10055,27 @@ body:last-child .nav-justified, x:-moz-any-link {
   display: block;
 }
 
+.nav-indicator {
+  border-bottom-color: #495057;
+}
+
+.nav-indicator .nav-link {
+  color: #6c757d;
+}
+
+.nav-indicator .nav-link:hover {
+  color: #6c757d;
+}
+
+.nav-indicator .active {
+  border-bottom-color: #6ea8fe;
+}
+
+.nav-indicator .active .nav-link, .nav-indicator a.active,
+.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover {
+  color: #6ea8fe;
+}
+
 .navbar {
   position: relative;
   z-index: 500;
