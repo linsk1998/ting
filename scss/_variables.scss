@@ -403,7 +403,6 @@ $navbar-dark-nav-active-bg: #212121 !default;
 $popover-border-width: $ctrl-border-width !default;
 $popover-border-color: $theme-divider !default;
 $popover-box-shadow: none !default;
-
 $popover-bg: #fff !default;
 $popover-arrow-size: 10px !default;
 $popover-arrow-outer-size: ($popover-arrow-size + 1) !default;
@@ -411,16 +410,15 @@ $popover-max-width: 276px !default;
 $popover-header-bg: #eeeeee !default;
 $popover-header-padding: 8px 14px !default;
 $popover-body-padding: 9px 14px !default;
-$popover-arrow-color: $popover-bg !default;
-$popover-arrow-outer-color: rgba(0, 0, 0, .25) !default;
-$popover-arrow-outer-fallback-color: #999 !default;
+$popover-dark-bg: $dark-bg !default;
+$popover-dark-border-color: $dark-divider !default;
 
 $dropdown-padding-y: 5px !default;
 $dropdown-margin: 2px 0 0;
 $dropdown-min-width: 160px !default;
 $dropdown-item-padding-y: 4px !default;
 $dropdown-item-padding-x: 20px !default;
-$dropdown-item-hover-bg: #f5f5f5 !default;
+$dropdown-item-hover-bg: darken($popover-bg, 5%) !default;
 $dropdown-item-disabled-bg: #999999 !default;
 $dropdown-item-active-bg: $theme-primary !default;
 $dropdown-item-active-color: #fff !default;
@@ -429,6 +427,10 @@ $dropdown-header-padding-x: $dropdown-item-padding-x * .5 !default;
 $dropdown-header-color: #777777 !default;
 $dropdown-header-fontsize: 12px !default;
 $dropdown-duration: .3s !default;
+$dropdown-dark-active-bg: $dark-primary !default;
+$dropdown-dark-item-hover-bg: lighten($popover-dark-bg, 5%) !default;
+$dropdown-dark-header-color: $dark-muted !default;
+$dropdown-dark-item-disabled-bg: #666666 !default;
 
 $tooltip-arrow-size: 5px !default;
 $tooltip-padding: 3px 8px !default;

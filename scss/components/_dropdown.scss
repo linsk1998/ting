@@ -1,6 +1,7 @@
 
 @use '../variables' as *;
 @use '../mixins' as *;
+@use '../functions' as *;
 
 .dropdown, .dropup, .dropright, .dropleft,
 .dropdown-submenu, .dropup-submenu, .dropright-submenu, .dropleft-submenu{
@@ -18,7 +19,7 @@
 	margin:$dropdown-margin;
 	text-align:left;
 	list-style:none;
-	background:#fff;
+	background:$popover-bg;
 	border:$popover-border-width solid $popover-border-color;
 	display:none;
 	left:0; top:100%;
@@ -63,7 +64,7 @@
 	*zoom:1;
 	padding: $dropdown-item-padding-y $dropdown-item-padding-x; 
 	font-weight: normal;
-	color: $theme-primary-text;
+	color: $light-text;
 	white-space: nowrap;
 	width: 100%;
 	border: 0 none;
@@ -74,9 +75,9 @@
 }
 .dropdown-menu li a:hover,
 .dropdown-item:hover{
-	color:$theme-primary-text;
+	color:$light-text;
 	text-decoration:none;
-	background-color:$dropdown-item-hover-bg;
+	background: $dropdown-item-hover-bg;
 }
 .dropdown-menu .active,
 .dropdown-menu .active:hover {
@@ -174,5 +175,36 @@ html .dropdown-item[disabled] {
 		top: anchor(--dropdown top);
 		left: auto;
 		right: anchor(--dropdown left);
+	}
+}
+@if $enable-dark {
+	.dark .dropdown-menu, .dropdown-menu-dark{
+		background: $popover-dark-bg;
+		border-color: $popover-dark-border-color;
+	}
+	.dark {
+		.dropdown-menu a, .dropdown-item{
+			color: $dark-text;
+		}
+		.dropdown-menu .active,
+		.dropdown-menu .active:hover {
+			color: $popover-dark-bg;
+			background: $dropdown-dark-active-bg;
+		}
+		.dropdown-menu a:hover,
+		.dropdown-item:hover{
+			color:$dark-text;
+			background-color: $dropdown-dark-item-hover-bg;
+		}
+		.dropdown-item[disabled] {
+			color: $dropdown-dark-item-disabled-bg;
+			background: none;
+		}
+		.dropdown-divider{
+			border-color: $popover-dark-border-color;
+		}
+		.dropdown-header{
+			color: $dropdown-dark-header-color;
+		}
 	}
 }

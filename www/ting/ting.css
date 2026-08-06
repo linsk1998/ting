@@ -11379,7 +11379,7 @@ html body .progress-bar-danger {
 .dropdown-item:hover {
   color: #212121;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background: #F2F2F2;
 }
 
 .dropdown-menu .active,
@@ -11443,7 +11443,7 @@ html .dropdown-item[disabled] {
 }
 
 .dropdown-list option:hover {
-  background-color: #f5f5f5;
+  background-color: #F2F2F2;
 }
 
 .dropdown-list option:checked {
@@ -11484,6 +11484,40 @@ html .dropdown-item[disabled] {
     right: anchor(--dropdown left);
   }
 }
+.dark .dropdown-menu, .dropdown-menu-dark {
+  background: #212529;
+  border-color: #495057;
+}
+
+.dark .dropdown-menu a, .dark .dropdown-item {
+  color: #adb5bd;
+}
+
+.dark .dropdown-menu .active,
+.dark .dropdown-menu .active:hover {
+  color: #212529;
+  background: #6ea8fe;
+}
+
+.dark .dropdown-menu a:hover,
+.dark .dropdown-item:hover {
+  color: #adb5bd;
+  background-color: #2C3237;
+}
+
+.dark .dropdown-item[disabled] {
+  color: #666666;
+  background: none;
+}
+
+.dark .dropdown-divider {
+  border-color: #495057;
+}
+
+.dark .dropdown-header {
+  color: #6c757d;
+}
+
 @media \0 screen\,screen\9  {
   .toast {
     filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
