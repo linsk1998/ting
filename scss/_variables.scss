@@ -38,7 +38,7 @@ $light-text: #212121 !default;
 $light-muted: #757575 !default;
 $light-secondary-bg: #e9ecef;
 $light-tertiary-bg: #f8f9fa;
-$light-bg-subtle: #f8f9fa;
+$light-inverse: #1b1b1b !default;
 
 $dark-bg: #212529 !default;
 $dark-heading: #fff !default;
@@ -50,14 +50,12 @@ $dark-success: #75b798 !default;
 $dark-info: #6edff6 !default;
 $dark-warning: #ffda6a !default;
 $dark-danger: #ea868f !default;
-
 $dark-secondary-bg: #343a40;
 $dark-tertiary-bg: #2b3035;
-
-$dark-bg-subtle: #212529;
 $dark-divider: #495057;
+$dark-inverse: #e9ecef !default;
 
-$dark-scrollbar-track: $dark-bg-subtle !default;
+$dark-scrollbar-track: lighten($dark-bg, 4%)!default;
 $dark-scrollbar-thumb: #444444 !default;
 
 $colors: (
@@ -85,6 +83,13 @@ $context: (
 	'info':$info,
 	'warning':$warning,
 	'danger':$danger
+) !default;
+$dark-context: (
+	'primary':$dark-primary,
+	'success':$dark-success,
+	'info':$dark-info,
+	'warning':$warning,
+	'danger':$dark-danger
 ) !default;
 $primary-text: $theme-primary-dark !default;
 $primary-bg: mix($theme-primary, #fff, 20%) !default;
@@ -174,9 +179,14 @@ $table-cell-padding-sm: 4px !default;
 $table-cell-padding-xs: 2px !default;
 $table-border-width: 1px !default;
 $table-border-color: $theme-divider !default;
-$table-thead-inverse-bg: $theme-inverse !default;
-$table-thead-subtle-bg: #f2f2f2 !default;
+$table-thead-inverse-bg: $light-inverse !default;
+$table-thead-subtle-bg: $light-secondary-bg !default;
 $table-active: #a5a5a5 !default;
+$table-dark-bg: $dark-bg !default;
+$table-dark-border-color: $dark-divider !default;
+$table-dark-thead-inverse-bg: $dark-inverse !default;
+$table-dark-thead-subtle-bg: $dark-secondary-bg !default;
+$table-dark-active: #a5a5a5 !default;
 
 $img-thumbnail-padding: 4px !default;
 $img-thumbnail-rounded: $border-radius !default;

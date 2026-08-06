@@ -6154,6 +6154,7 @@ pre.code {
   padding: 8px;
   line-height: 20px;
   border-bottom: 1px solid #e0e0e0;
+  background-clip: padding-box;
 }
 
 .table-sm td, .table-sm th, .table-condensed td, .table-condensed th {
@@ -6178,27 +6179,22 @@ td.table-xs, th.table-xs {
 
 .table-primary {
   background-color: #E9EEF8;
-  background-clip: padding-box;
 }
 
 .table-success {
   background-color: #EEF5E9;
-  background-clip: padding-box;
 }
 
 .table-info {
   background-color: #E9F1F9;
-  background-clip: padding-box;
 }
 
 .table-warning {
   background-color: #FEEFE4;
-  background-clip: padding-box;
 }
 
 .table-danger {
   background-color: #FBE7E9;
-  background-clip: padding-box;
 }
 
 table.table-primary {
@@ -6280,123 +6276,120 @@ table.table-danger {
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #FCFCFC;
-  background-clip: padding-box;
+  background: #FCFCFC;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > .table-primary,
 .table-striped > tbody > tr.table-primary:nth-of-type(odd) {
-  background-color: #E5EBF7;
+  background: #E5EBF7;
 }
 
 .table-primary.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #F8F9FD;
+  background: #F8F9FD;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > .table-success,
 .table-striped > tbody > tr.table-success:nth-of-type(odd) {
-  background-color: #EBF4E5;
+  background: #EBF4E5;
 }
 
 .table-success.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #F9FCF8;
+  background: #F9FCF8;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > .table-info,
 .table-striped > tbody > tr.table-info:nth-of-type(odd) {
-  background-color: #E5EFF8;
+  background: #E5EFF8;
 }
 
 .table-info.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #F8FAFD;
+  background: #F8FAFD;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > .table-warning,
 .table-striped > tbody > tr.table-warning:nth-of-type(odd) {
-  background-color: #FDEDDF;
+  background: #FDEDDF;
 }
 
 .table-warning.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #FFFAF6;
+  background: #FFFAF6;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > .table-danger,
 .table-striped > tbody > tr.table-danger:nth-of-type(odd) {
-  background-color: #FAE3E5;
+  background: #FAE3E5;
 }
 
 .table-danger.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #FEF7F8;
+  background: #FEF7F8;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > .table-active,
 .table-striped > tbody > tr.table-active:nth-of-type(odd) {
-  background-color: #F1F1F1;
+  background: #F1F1F1;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
-  background-color: #F0F0F0;
+  background: #F0F0F0;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-primary,
 .table-striped.table-hover > tbody > tr.table-primary:nth-of-type(odd):hover {
-  background-color: #D2DDF1;
+  background: #D2DDF1;
 }
 
 .table-primary.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
-  background-color: #F0F4FA;
+  background: #F0F4FA;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-success,
 .table-striped.table-hover > tbody > tr.table-success:nth-of-type(odd):hover {
-  background-color: #DDEBD3;
+  background: #DDEBD3;
 }
 
 .table-success.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
-  background-color: #F4F8F0;
+  background: #F4F8F0;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-info,
 .table-striped.table-hover > tbody > tr.table-info:nth-of-type(odd):hover {
-  background-color: #D2E3F3;
+  background: #D2E3F3;
 }
 
 .table-info.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
-  background-color: #F0F6FB;
+  background: #F0F6FB;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-warning,
 .table-striped.table-hover > tbody > tr.table-warning:nth-of-type(odd):hover {
-  background-color: #FCDFC9;
+  background: #FCDFC9;
 }
 
 .table-warning.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
-  background-color: #FEF4ED;
+  background: #FEF4ED;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-danger,
 .table-striped.table-hover > tbody > tr.table-danger:nth-of-type(odd):hover {
-  background-color: #F7CFD2;
+  background: #F7CFD2;
 }
 
 .table-danger.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
-  background-color: #FCEFF0;
+  background: #FCEFF0;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-active,
 .table-striped.table-hover > tbody > tr.table-active:nth-of-type(odd):hover {
-  background-color: #e4e4e4;
+  background: #e4e4e4;
 }
 
 .thead-inverse, .thead-dark {
   background-color: #1b1b1b;
-  background-clip: padding-box;
   color: #eee;
 }
 
 .thead-subtle, .thead-light {
-  background-color: #f2f2f2;
-  background-clip: padding-box;
+  background-color: #e9ecef;
 }
 
 table.table-primary .thead-inverse,
@@ -6489,6 +6482,279 @@ table.table-danger .thead-subtle,
 
 .table-fixed {
   table-layout: fixed;
+}
+
+.dark .table {
+  background: #212529;
+}
+
+.dark .table-responsive, .dark .table, .dark .table td, .dark .table th {
+  border-color: #495057;
+}
+
+.dark .table-primary {
+  background-color: #2A3543;
+}
+
+.dark .table-success {
+  background-color: #2B3736;
+}
+
+.dark .table-info {
+  background-color: #2A3B42;
+}
+
+.dark .table-warning {
+  background-color: #3A2F28;
+}
+
+.dark .table-danger {
+  background-color: #393135;
+}
+
+.dark table.table-primary {
+  background-color: #22262B;
+}
+
+.dark table.table-success {
+  background-color: #22262A;
+}
+
+.dark table.table-info {
+  background-color: #22272B;
+}
+
+.dark table.table-warning {
+  background-color: #232629;
+}
+
+.dark table.table-danger {
+  background-color: #23262A;
+}
+
+.dark .table-active {
+  background-color: #313438;
+}
+
+.dark .table-hover > tbody > tr:hover {
+  background-color: #2A2F34;
+}
+
+.dark .table-hover > tbody > tr:hover > .table-primary,
+.dark .table-hover > tbody > tr.table-primary:hover {
+  background-color: #324258;
+}
+
+.dark .table-primary.table-hover > tbody > tr:hover, .dark .table-primary > tbody.table-hover > tr:hover {
+  background-color: #262D36;
+}
+
+.dark .table-hover > tbody > tr:hover > .table-success,
+.dark .table-hover > tbody > tr.table-success:hover {
+  background-color: #334541;
+}
+
+.dark .table-success.table-hover > tbody > tr:hover, .dark .table-success > tbody.table-hover > tr:hover {
+  background-color: #262E30;
+}
+
+.dark .table-hover > tbody > tr:hover > .table-info,
+.dark .table-hover > tbody > tr.table-info:hover {
+  background-color: #324E56;
+}
+
+.dark .table-info.table-hover > tbody > tr:hover, .dark .table-info > tbody.table-hover > tr:hover {
+  background-color: #263035;
+}
+
+.dark .table-hover > tbody > tr:hover > .table-warning,
+.dark .table-hover > tbody > tr.table-warning:hover {
+  background-color: #4F3826;
+}
+
+.dark .table-warning.table-hover > tbody > tr:hover, .dark .table-warning > tbody.table-hover > tr:hover {
+  background-color: #2E2A28;
+}
+
+.dark .table-hover > tbody > tr:hover > .table-danger,
+.dark .table-hover > tbody > tr.table-danger:hover {
+  background-color: #4D3A3F;
+}
+
+.dark .table-danger.table-hover > tbody > tr:hover, .dark .table-danger > tbody.table-hover > tr:hover {
+  background-color: #2D2B2F;
+}
+
+.dark .table-hover > tbody > tr:hover > .table-active,
+.dark .table-hover > tbody > tr.table-active:hover {
+  background-color: #434649;
+}
+
+.dark .table-striped > tbody > tr:nth-of-type(odd) {
+  background: #23282C;
+}
+
+.dark .table-striped > tbody > tr:nth-of-type(odd) > .table-primary,
+.dark .table-striped > tbody > tr.table-primary:nth-of-type(odd) {
+  background: #2C3747;
+}
+
+.dark .table-primary.table-striped > tbody > tr:nth-of-type(odd) {
+  background: #242A32;
+}
+
+.dark .table-striped > tbody > tr:nth-of-type(odd) > .table-success,
+.dark .table-striped > tbody > tr.table-success:nth-of-type(odd) {
+  background: #2D3939;
+}
+
+.dark .table-success.table-striped > tbody > tr:nth-of-type(odd) {
+  background: #242B2D;
+}
+
+.dark .table-striped > tbody > tr:nth-of-type(odd) > .table-info,
+.dark .table-striped > tbody > tr.table-info:nth-of-type(odd) {
+  background: #2C3F46;
+}
+
+.dark .table-info.table-striped > tbody > tr:nth-of-type(odd) {
+  background: #242C31;
+}
+
+.dark .table-striped > tbody > tr:nth-of-type(odd) > .table-warning,
+.dark .table-striped > tbody > tr.table-warning:nth-of-type(odd) {
+  background: #3E3127;
+}
+
+.dark .table-warning.table-striped > tbody > tr:nth-of-type(odd) {
+  background: #292829;
+}
+
+.dark .table-striped > tbody > tr:nth-of-type(odd) > .table-danger,
+.dark .table-striped > tbody > tr.table-danger:nth-of-type(odd) {
+  background: #3D3337;
+}
+
+.dark .table-danger.table-striped > tbody > tr:nth-of-type(odd) {
+  background: #29292D;
+}
+
+.dark .table-striped > tbody > tr:nth-of-type(odd) > .table-active,
+.dark .table-striped > tbody > tr.table-active:nth-of-type(odd) {
+  background: #36393D;
+}
+
+.dark .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
+  background: #2F343A;
+}
+
+.dark .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-primary,
+.dark .table-striped.table-hover > tbody > tr.table-primary:nth-of-type(odd):hover {
+  background: #33445C;
+}
+
+.dark .table-primary.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
+  background: #272F3A;
+}
+
+.dark .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-success,
+.dark .table-striped.table-hover > tbody > tr.table-success:nth-of-type(odd):hover {
+  background: #354844;
+}
+
+.dark .table-success.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
+  background: #283132;
+}
+
+.dark .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-info,
+.dark .table-striped.table-hover > tbody > tr.table-info:nth-of-type(odd):hover {
+  background: #33525A;
+}
+
+.dark .table-info.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
+  background: #273439;
+}
+
+.dark .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-warning,
+.dark .table-striped.table-hover > tbody > tr.table-warning:nth-of-type(odd):hover {
+  background: #533A26;
+}
+
+.dark .table-warning.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
+  background: #322C28;
+}
+
+.dark .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-danger,
+.dark .table-striped.table-hover > tbody > tr.table-danger:nth-of-type(odd):hover {
+  background: #513C41;
+}
+
+.dark .table-danger.table-striped.table-hover > tbody > tr:nth-of-type(odd):hover {
+  background: #312D31;
+}
+
+.dark .table-striped.table-hover > tbody > tr:nth-of-type(odd):hover > .table-active,
+.dark .table-striped.table-hover > tbody > tr.table-active:nth-of-type(odd):hover {
+  background: #494B4E;
+}
+
+.dark .thead-inverse {
+  background-color: #e9ecef;
+  color: #212529;
+}
+
+.dark .thead-subtle {
+  background-color: #343a40;
+}
+
+.dark table.table-primary .thead-inverse,
+.dark .thead-inverse .table-primary {
+  background-color: #6ea8fe;
+}
+
+.dark table.table-primary .thead-subtle,
+.dark .thead-subtle .table-primary {
+  background-color: #EFF5FF;
+}
+
+.dark table.table-success .thead-inverse,
+.dark .thead-inverse .table-success {
+  background-color: #75b798;
+}
+
+.dark table.table-success .thead-subtle,
+.dark .thead-subtle .table-success {
+  background-color: #F0F7F4;
+}
+
+.dark table.table-info .thead-inverse,
+.dark .thead-inverse .table-info {
+  background-color: #6edff6;
+}
+
+.dark table.table-info .thead-subtle,
+.dark .thead-subtle .table-info {
+  background-color: #EFFBFE;
+}
+
+.dark table.table-warning .thead-inverse,
+.dark .thead-inverse .table-warning {
+  background-color: #F37B1D;
+}
+
+.dark table.table-warning .thead-subtle,
+.dark .thead-subtle .table-warning {
+  background-color: #FEF0E6;
+}
+
+.dark table.table-danger .thead-inverse,
+.dark .thead-inverse .table-danger {
+  background-color: #ea868f;
+}
+
+.dark table.table-danger .thead-subtle,
+.dark .thead-subtle .table-danger {
+  background-color: #FDF2F3;
 }
 
 .media:after {
@@ -12434,7 +12700,7 @@ html body .msgbox-danger {
 }
 
 .dark ::-webkit-scrollbar-track {
-  background: #1A1D21;
+  background: #23282C;
 }
 
 .dark ::-webkit-scrollbar-thumb {
@@ -12446,21 +12712,21 @@ html body .msgbox-danger {
 }
 
 .dark {
-  scrollbar-color: #444444 #212529;
+  scrollbar-color: #444444 #2A2F34;
 }
 
 .dark {
   /* 滑块主体颜色，等价scrollbar-color第一个值 */
   scrollbar-face-color: #444444;
   /* 滚动条轨道底色，等价scrollbar-color第二个值 */
-  scrollbar-track-color: #212529;
+  scrollbar-track-color: #2A2F34;
   /* 上下左右箭头三角颜色 */
   scrollbar-arrow-color: #777777;
   /* 老式3D凹凸边框，全部统一深色，消除突兀白边 */
-  scrollbar-highlight-color: #212529;
-  scrollbar-shadow-color: #212529;
-  scrollbar-3dlight-color: #212529;
-  scrollbar-darkshadow-color: #212529;
+  scrollbar-highlight-color: #2A2F34;
+  scrollbar-shadow-color: #2A2F34;
+  scrollbar-3dlight-color: #2A2F34;
+  scrollbar-darkshadow-color: #2A2F34;
   /* 兜底基准色，前面属性失效时自动降级 */
   scrollbar-base-color: #444444;
 }

@@ -348,16 +348,18 @@ $(function(){
 	}
 	function setDark(dark){
 		if(dark){
-			$(document.documentElement).addClass('dark');
+			document.documentElement.className = "dark";
 			setCookie('dark','1');
 		}else{
-			$(document.documentElement).removeClass('dark');
+			document.documentElement.className = "light";
 			setCookie('dark','0');
 		}
 	}
 	var dark = getCookie('dark')=='1';
 	if(dark){
-		$(document.documentElement).addClass('dark');
+		document.documentElement.className = "dark";
+	} else {
+		document.documentElement.className = "light";
 	}
 	window.initDarkLi = function() {
 		var script = getLastScript();

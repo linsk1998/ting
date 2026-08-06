@@ -73,7 +73,7 @@
 
 ## 表头样式
 
-### 深色表头
+### 反转色表头
 
 ```html
 <table class="table table-bordered table-striped table-hover">
