@@ -3,13 +3,17 @@ const SECTION_MAP = require('./SECTION_MAP.json');
 
 /**
  * 生成导航条 HTML
+ * @param {string} currentSection - 当前 section，空字符串表示首页
  */
 function navbar(currentSection) {
+	const prefix = currentSection ? '../' : '';
+
 	let navbarHtml = '';
 	for (const section in SECTION_MAP) {
 		const active = section === currentSection ? ' active' : '';
 		const classAttr = active ? ' class="active"' : '';
-		navbarHtml += `<li${classAttr}><a href="../${escapeHtml(section)}/index.html">${escapeHtml(SECTION_MAP[section])}</a></li>`;
+		navbarHtml += `
+							<li${classAttr}><a href="${prefix}${escapeHtml(section)}/index.html">${escapeHtml(SECTION_MAP[section])}</a></li>`;
 	}
 
 	return `<div class="navbar"><div class="navbar-brand"></div></div>
@@ -17,15 +21,13 @@ function navbar(currentSection) {
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+						<a href="${prefix}index.html" class="navbar-brand"><img height="37" src="${prefix}images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-responsive-dropdown">
-						<ul class="navbar-nav">
-							${navbarHtml}
+						<ul class="navbar-nav">${navbarHtml}
 						</ul>
 						<ul class="navbar-nav navbar-right">
 							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
-							
 						</ul>
 						<script>initDarkLi()</script>
 					</div>
