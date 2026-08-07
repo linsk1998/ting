@@ -77,10 +77,10 @@ async function run({ src, dest }) {
 
   // 复制 dist/ting.all.css 到 www/ting/ting.css
   const srcPath = resolve(root, 'dist/ting.all.css');
-  const destPath = resolve(root, 'www/ting/ting.css');
+  const destPath = resolve(root, 'docs/ting/ting.css');
   await mkdir(dirname(destPath), { recursive: true });
   await copyFile(srcPath, destPath);
-  console.log(`✓  dist/ting.all.css  →  www/ting/ting.css`);
+  console.log(`✓  dist/ting.all.css  →  docs/ting/ting.css`);
 })().catch(err => {
   console.error(err);
   process.exit(1);

@@ -85,5 +85,5 @@ function kabaCase(str) {
 		width: 34px;
 	}
 }`);
-	await fs.writeFile(path.resolve(__dirname, '../www/ting/shiki.css'), cssContents.join(''));
+	await fs.writeFile(path.resolve(__dirname, '../docs/ting/shiki.css'), cssContents.join(''));
 })();
