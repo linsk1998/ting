@@ -9,21 +9,20 @@ const { createRenderer } = require('./gen-site-renderer');
 
 const ROOT = path.resolve(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, 'docs');
-const WWW_DIR = path.join(ROOT, 'www');
 
 /**
- * 生成详情页，输出到 www/{section}/{name}.html
- * @param {string} viewPath - view.md 文件的绝对路径（如 docs/helpers/float-view.md）
+ * 生成详情页，输出到 docs/{section}/{name}.html
+ * @param {string} sectionDir - section 目录的绝对路径（如 docs/components）
  * @param {string} name - 子页面名（如 "float"）
  */
-async function genSiteView(viewPath, name) {
-	const relativePath = path.relative(DOCS_DIR, viewPath);
-	const section = relativePath.split(path.sep)[0];
+async function genSiteView(sectionDir, name) {
+	const section = path.relative(DOCS_DIR, sectionDir);
 	const sectionTitle = SECTION_MAP[section] || section;
 	const renderer = createRenderer({
         htmlPreview: true
     });
 
+	const viewPath = path.join(sectionDir, `${name}.md`);
 	const viewSource = await fs.readFile(viewPath, 'utf-8');
 	const viewHtml = marked.parse(viewSource, { renderer });
 
@@ -56,11 +55,9 @@ ${viewHtml}
 	</body>
 </html>`;
 
-	const outputDir = path.join(WWW_DIR, section);
-	await fs.mkdir(outputDir, { recursive: true });
-	await fs.writeFile(path.join(outputDir, `${name}.html`), html, 'utf-8');
+	await fs.writeFile(path.join(sectionDir, `${name}.html`), html, 'utf-8');
 
-	console.log(`Generated: www/${section}/${name}.html`);
+	console.log(`Generated: docs/${section}/${name}.html`);
 }
 
 module.exports = genSiteView;

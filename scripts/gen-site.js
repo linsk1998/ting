@@ -1,103 +1,30 @@
 const path = require('path');
+const fs = require('fs/promises');
 const { initRenderer } = require('./gen-site-renderer');
 const genSiteList = require('./gen-site-list');
-const genSiteView = require('./gen-site-view');
 
 const ROOT = path.resolve(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, 'docs');
 
 (async function() {
 	await initRenderer();
-	await genSiteList('getting-started', [
-		'template',
-		'advanced'
-	]);
-	await genSiteList('layout', [
-		'breakpoints',
-		'container',
-		'grid',
-		'flex',
-		'ratio',
-		'align'
-	]);
-	await genSiteList('content', [
-		'type',
-		'link',
-		'page-header',
-		'button',
-		'button-group',
-		'table',
-		'img',
-		'media',
-		'list',
-		'card',
-		'well',
-		'callout',
-		'badge',
-		'tag',
-		'alert',
-		'jumbotron',
-		'footer'
-	]);
-	await genSiteList('form', [
-		'control',
-		'form',
-		'sizing',
-		'validation',
-		'static',
-		'input-group',
-		'input',
-		'tags-input',
-		'select',
-		'textarea',
-		'checkbox',
-		'switch',
-		'toggle-button'
-	]);
-	await genSiteList('helpers', [
-		'float',
-		'sr-only',
-		'visibility',
-		'line',
-		'caret',
-		'close',
-		'loading',
-		'icon',
-		'animation'
-	]);
-	await genSiteList('components', [
-		'breadcrumb',
-		'nav',
-		'tabs',
-		'navbar',
-		'pagination',
-		'list-group',
-		'progress',
-		'carousel',
-		'dropdown',
-		'tooltip',
-		'popover',
-		'collapsible',
-		'accordion',
-		'tree',
-		// 'sidebar',
-		// 'modal',
-		// 'toast',
-		// 'dialog',
-		// 'msgbox',
-		// 'window',
-		'select-list',
-		'panel'
-	]);
-	['collapse'].map(async (name) => {
-		const sectionDir = path.join(DOCS_DIR, 'components');
-		const viewPath = path.join(sectionDir, `${name}-view.md`);
-		await genSiteView(viewPath, name);
-	});
-	await genSiteList('utilities', [
-		'color',
-		'text',
-		'font',
-		'spacing'
-	]);
+
+	// 扫描 docs/ 下所有包含 index.md 的子目录作为 section
+	const entries = await fs.readdir(DOCS_DIR, { withFileTypes: true });
+	for (const entry of entries) {
+		if (!entry.isDirectory()) continue;
+		const sectionDir = path.join(DOCS_DIR, entry.name);
+		try {
+			await fs.access(path.join(sectionDir, 'index.md'));
+		} catch {
+			continue;
+		}
+		// 扫描该 section 下所有 *.md（排除 index.md）作为详情页
+		const sectionEntries = await fs.readdir(sectionDir, { withFileTypes: true });
+		const names = sectionEntries
+			.filter(e => e.isFile() && e.name.endsWith('.md') && e.name !== 'index.md')
+			.map(e => e.name.replace(/\.md$/, ''));
+
+		await genSiteList(entry.name, names);
+	}
 })();

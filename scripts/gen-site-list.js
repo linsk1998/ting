@@ -10,10 +10,9 @@ const { createRenderer } = require('./gen-site-renderer');
 
 const ROOT = path.resolve(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, 'docs');
-const WWW_DIR = path.join(ROOT, 'www');
 
 /**
- * 生成栏目页面，输出到 www/{section}/index.html
+ * 生成栏目页面，输出到 docs/{section}/index.html
  * @param {string} section - 栏目名（如 "getting-started"、"components" 等）
  * @param {string[]} names - 子页面名列表（如 ["template", "advanced"]）
  */
@@ -22,24 +21,14 @@ async function genSiteList(section, names) {
 	const sectionTitle = SECTION_MAP[section] || section;
 	const renderer = createRenderer();
 
-	// 读取栏目总介绍 docs/{section}/index.md
+	// 读取栏目总介绍 docs/{section}/index.md（已包含所有组件文档）
 	const overviewMd = await fs.readFile(path.join(sectionDir, 'index.md'), 'utf-8');
 	const overviewHtml = marked.parse(overviewMd, { renderer });
 
-	// 读取各子页面 docs/{section}/{name}-list.md
-	const partsHtml = await Promise.all(names.map(async (name) => {
-		const listPath = path.join(sectionDir, `${name}-list.md`);
-		const viewPath = path.join(sectionDir, `${name}-view.md`);
-		const listSource = await fs.readFile(listPath, 'utf-8');
-		const listHtml = marked.parse(listSource, { renderer });
-		try {
-			await fs.access(viewPath);
-			await genSiteView(viewPath, name);
-			return `${listHtml}<p><a href="./${escapeHtml(name)}.html">使用方法</a></p>`;
-		} catch {
-			return listHtml;
-		}
-	}));
+	// 生成各个组件的详情页
+	for (const name of names) {
+		await genSiteView(sectionDir, name);
+	}
 
 	// 组装完整 HTML 页面
 	const html = `<!--BORDERBOX-->
@@ -62,18 +51,15 @@ async function genSiteList(section, names) {
 		${header(section)}
 		<div class="container">
 ${overviewHtml}
-${partsHtml.join('\n')}
 		</div>
 		${footer()}
 	</body>
 </html>`;
 
-	// 写入 www/{section}/index.html
-	const outputDir = path.join(WWW_DIR, section);
-	await fs.mkdir(outputDir, { recursive: true });
-	await fs.writeFile(path.join(outputDir, 'index.html'), html, 'utf-8');
+	// 写入 docs/{section}/index.html
+	await fs.writeFile(path.join(sectionDir, 'index.html'), html, 'utf-8');
 
-	console.log(`Generated: www/${section}/index.html`);
+	console.log(`Generated: docs/${section}/index.html`);
 }
 
 module.exports = genSiteList;
