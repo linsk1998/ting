@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<title>ratio - 布局 - Ting UI</title>
+	<title>固定比例容器 - 布局 - Ting UI</title>
 	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
@@ -43,31 +43,8 @@
 			</div>
 		</header>
 		<div class="container">
-<h2 class="page-header" id="固定比例容器">固定比例容器</h2>
-<div class="table-responsive">
-<table class="table table-sm table-bordered table-striped">
-<thead class="thead-subtle"><tr>
-<th>类</th><th>描述</th></tr></thead>
-<tbody>
-<tr>
-<td>.ratio</td><td>固定比例媒体容器</td>
-</tr>
-<tr>
-<td>.ratio-21x9</td><td>21:9容器</td>
-</tr>
-<tr>
-<td>.ratio-16x9</td><td>16:9容器</td>
-</tr>
-<tr>
-<td>.ratio-4x3</td><td>4:3容器</td>
-</tr>
-<tr>
-<td>.ratio-1x1</td><td>1:1容器</td>
-</tr>
-<tr>
-<td>.ratio-item</td><td>媒体内容</td>
-</tr>
-</tbody></table></div>
+<h1 class="page-header" id="固定比例容器">固定比例容器</h1>
+<h2 class="page-header" id="219容器">21:9 容器</h2>
 
 <div class="tabs" role="tabbable">
   <ul class="nav nav-indicator">
@@ -75,68 +52,74 @@
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><div class="row row-gx-4 row-gy-4">
-    <div class="col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4">
-        <div class="ratio ratio-1x1">
-            <img class="ratio-item" src="../images/github.jpg"/>
-        </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4">
-        <div class="ratio ratio-1x1">
-            <img class="ratio-item" src="../images/devices.jpg"/>
-        </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4">
-        <div class="ratio ratio-1x1">
-            <img class="ratio-item" src="../images/functions.jpg"/>
-        </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4">
-        <div class="ratio ratio-1x1">
-            <img class="ratio-item" src="../images/bootstrap.jpg"/>
-        </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4">
-        <div class="ratio ratio-1x1">
-            <img class="ratio-item" src="../images/purgecss.png"/>
-        </div>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4">
-        <div class="ratio ratio-1x1">
-            <img class="ratio-item" src="../images/hole.jpg"/>
-        </div>
+    <div class="tabs-pane ting-example active"><div style="width: 300px">
+    <div class="ratio ratio-21x9">
+        <img class="ratio-item" src="../images/devices.jpg"/>
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">row row-gx-4 row-gy-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-1x1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/github.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
-<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-21x9</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/devices.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-1x1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/devices.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
-<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="169容器">16:9 容器</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div style="width: 300px">
+    <div class="ratio ratio-16x9">
+        <img class="ratio-item" src="../images/bootstrap.jpg"/>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-16x9</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/bootstrap.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-1x1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/functions.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
-<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="43容器">4:3 容器</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div style="width: 300px">
+    <div class="ratio ratio-4x3">
+        <img class="ratio-item" src="../images/functions.jpg"/>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-4x3</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/functions.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-1x1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/bootstrap.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
-<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-1x1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/purgecss.png</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
-<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-sm-4 col-xs-6 col-gx-4 col-gy-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-1x1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/hole.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
-<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="11容器">1:1 容器</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div style="width: 300px">
+    <div class="ratio ratio-1x1">
+        <img class="ratio-item" src="../images/hole.jpg"/>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio ratio-1x1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">ratio-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/hole.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 </pre></div>
