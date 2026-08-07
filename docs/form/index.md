@@ -11,6 +11,8 @@
 | .form-check-inline | 单选框和复选框的内联容器 |
 | .form-text | 帮助文本 |
 
+[使用方法](./control.html)
+
 ## 布局
 
 | 类 | 描述 |
@@ -22,6 +24,8 @@
 | .form-label | 控件用的标签 |
 | .form-control | 输入控件 |
 
+[使用方法](./form.html)
+
 ## 控件大小
 
 | 类 | 描述 |
@@ -30,6 +34,8 @@
 | .form-group-sm | .form-group-sm下面的标签的控件小一号 |
 | .form-control-lg | .form-control-lg控件大一号 |
 | .form-control-sm | .form-control-sm控件小一号 |
+
+[使用方法](./sizing.html)
 
 ## 字段校验
 
@@ -42,11 +48,15 @@
 | .feedback-text | 反馈文字 |
 | .feedback-tooltip | 反馈飘浮提示文字 |
 
+[使用方法](./validation.html)
+
 ## 静态控件
 
 | 类 | 描述 |
 |---|---|
 | .form-control-static | 静态控件 |
+
+[使用方法](./static.html)
 
 ## 输入框组
 
@@ -67,6 +77,8 @@
 
 以下组件更推荐封装成组件使用
 
+[使用方法](./input-group.html)
+
 ## 前后缀输入框
 
 通过在文本输入框  前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。
@@ -82,6 +94,8 @@
 | .input-disabled | 禁用状态 |
 | .input-counter | 输入框计数器样式 |
 
+[使用方法](./input.html)
+
 ## 标签输入框
 
 | 类 | 描述 |
@@ -93,6 +107,8 @@
 | .tags-input-lg | 标签输入框大尺寸 |
 | .tags-input-sm | 标签输入框小尺寸 |
 | .tags-input-disabled | 标签输入框禁用 |
+
+[使用方法](./tags-input.html)
 
 ## 下拉按钮
 
@@ -107,6 +123,8 @@
 | .select-lg | 大号选择按钮 |
 | .select-sm | 小号选择按钮 |
 
+[使用方法](./select.html)
+
 ## 文本域
 
 | 类 | 描述 |
@@ -115,6 +133,8 @@
 | .textarea-counter | 文本域计数器样式 |
 | .textarea-lg | 大号文本域 |
 | .textarea-sm | 小号文本域 |
+
+[使用方法](./textarea.html)
 
 ## 单选、多选框
 
@@ -132,6 +152,8 @@
 | .radio-checked | 单选框选中状态 |
 | .checkbox-indeterminate | 多选框不确定状态 |
 
+[使用方法](./checkbox.html)
+
 ## 开关
 
 | 类 | 描述 |
@@ -141,9 +163,13 @@
 | .switch-disabled | 开关按钮禁用 |
 | .switch-loading | 开关按钮加载中 |
 
+[使用方法](./switch.html)
+
 ## 开关按钮
 
 | 类 | 描述 |
 |---|---|
 | .btn-toggle | 开关按钮 |
 | .btn-toggle-checked | 开关按钮选中状态 |
+[使用方法](./toggle-button.html)
+

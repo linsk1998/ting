@@ -27,6 +27,8 @@
 | .text-brown | .bg-brown | .border-brown |
 | .text-green | .bg-green | .border-green |
 
+[使用方法](./color.html)
+
 ## 文本
 
 | 类 | 描述 |
@@ -50,6 +52,8 @@
 | .font-serif | 衬线字体(宋)，通常在正文使用。 |
 | .font-cursive | 手写体(楷)，通常在横幅使用。 |
 | .font-monospace | 等宽字体，通常在代码使用。 |
+
+[使用方法](./font.html)
 
 ## 尺寸
 

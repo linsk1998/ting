@@ -18,6 +18,8 @@
 | .list-unstyled | 移除默认的列表样式 |
 | .list-inline<br/>.list-inline-item | 将所有列表项放置同一行 |
 
+[使用方法](./type.html)
+
 ## 超级链接
 
 | 类 | 描述 |
@@ -27,6 +29,8 @@
 | .link-disabled | 禁用链接 |
 | .link-offset-* | 增加下划线偏移量 |
 | .link-stretched | 链接作用到容器（需要将链接放入position:relative的容器中） |
+
+[使用方法](./link.html)
 
 ## 页头
 
@@ -53,6 +57,8 @@
 | .btn-loading | 加载状态按钮，禁用点击，半透明显示 |
 | .btn-disabled | 禁用状态按钮，灰色背景，不可点击 |
 
+[使用方法](./button.html)
+
 ## 按钮布局
 
 | 类 | 描述 |
@@ -61,6 +67,8 @@
 | .btn-group | 按钮组容器，将多个按钮合并为一组 |
 | .btn-group-justified | 宽度均分按钮组，按钮平均分配容器宽度 |
 | .btn-group-vertical | 垂直排列按钮组，按钮纵向堆叠 |
+
+[使用方法](./button-group.html)
 
 ## 表格
 
@@ -77,6 +85,8 @@
 | .table-responsive | 响应式表格 |
 | .table-fixed | 强制固定表格宽度 |
 
+[使用方法](./table.html)
+
 ## 图片
 
 | 类 | 描述 |
@@ -86,6 +96,8 @@
 | .img-thumbnail | 带边框 |
 | .img-fluid | 让图片占满容器宽度 |
 | .img-responsive | 容器不够宽时自动缩放 |
+
+[使用方法](./img.html)
 
 ## 媒体对象
 
@@ -119,6 +131,8 @@
 	</div>
 </div>
 ```
+
+[使用方法](./media.html)
 
 ## 列表
 
@@ -175,12 +189,16 @@
 | .well-lg | 大号凹陷，内边距22px |
 | .well-sm | 小号凹陷，内边距9px |
 
+[使用方法](./well.html)
+
 ## 标志
 
 | 类 | 描述 |
 |---|---|
 | .callout | 标志容器，白色背景，带左侧5px边框标识和阴影 |
 | .callout-{context} | 标志容器，语境色 |
+
+[使用方法](./callout.html)
 
 ## 徽章
 
@@ -191,6 +209,8 @@
 |---|---|
 | .badge | 徽章，圆角红色背景，白色文字，最小宽度18px |
 
+[使用方法](./badge.html)
+
 ## 标签
 
 | 类 | 描述 |
@@ -198,6 +218,8 @@
 | .tag | 标签容器，带边框和内边距 |
 | .tag-{context} | 标签语境色 |
 | .tag-{size} | 标签大小 |
+
+[使用方法](./tag.html)
 
 ## 警告框
 
@@ -208,6 +230,8 @@
 | .alert-dismissible | 可关闭警告框，左侧留出关闭按钮位置 |
 | .alert-link | 警告框内的链接，加粗显示，悬停变色 |
 | .alert-heading | 警告框内的标题 |
+
+[使用方法](./alert.html)
 
 ## 巨幕
 

@@ -46,7 +46,6 @@
 <h1 class="page-header" id="起步">起步</h1>
 <p>ting.css，有多种使用方式，最简单的方式就是直接引入全量。</p>
 <p>首先下载<a href="../ting/ting.css">ting.css</a>，然后在你的页面上用link标签引入。</p>
-
 <h2 class="page-header" id="基本的html模版">基本的HTML模版</h2>
 <p>新版本只支持border-box盒模型，如果您想要兼容IE6、IE7需要在doctype之前打一行注释。</p>
 <pre class="code shiki"><span class="shiki-line"><span class="shiki-punctuation-definition-comment">&lt;!--</span><span class="shiki-comment">BORDERBOX</span><span class="shiki-punctuation-definition-comment">--&gt;</span></span>
@@ -61,8 +60,7 @@
 <span class="shiki-line">		&lt;<span class="shiki-entity-name-tag">h1</span>&gt;Hello, world!&lt;/<span class="shiki-entity-name-tag">h1</span>&gt;</span>
 <span class="shiki-line">	&lt;/<span class="shiki-entity-name-tag">body</span>&gt;</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">html</span>&gt;</span>
-</pre>
-<h2 class="page-header" id="高级使用方式">高级使用方式</h2>
+</pre><h2 class="page-header" id="高级使用方式">高级使用方式</h2>
 <h3 id="结合purgecss通过使用情况自动化按需打包">结合purgecss，通过使用情况自动化按需打包</h3>
 <p>webpack插件例子</p>
 <pre class="code shiki"><span class="shiki-line"><span class="shiki-storage-type">const</span> <span class="shiki-variable-other-constant">PurgecssPlugin</span> <span class="shiki-keyword">=</span> <span class="shiki-entity-name">require</span>(<span class="shiki-punctuation-definition-string">&#39;</span><span class="shiki-string">purgecss-webpack-plugin</span><span class="shiki-punctuation-definition-string">&#39;</span>);</span>

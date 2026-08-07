@@ -10,6 +10,8 @@
 | .pull-right | 元素浮动到右边 |
 | .clearfix | 清除容器内的浮动浮动 |
 
+[使用方法](./float.html)
+
 ## 视觉隐藏
 
 通过 .sr-only 类在视觉上隐藏某个元素的同时，仍然能够被辅助技术识别。
@@ -53,7 +55,7 @@
 
 | 类 | 描述 |
 |---|---|
-| .close | 关闭按钮，显示“✕”符号，悬停变深 |
+| .close | 关闭按钮，显示"✕"符号，悬停变深 |
 
 ## 加载中
 
@@ -61,6 +63,8 @@
 |---|---|
 | .loading-circular | 环形加载指示 |
 | .loading-grow | 闪烁加载指示 |
+
+[使用方法](./loading.html)
 
 ## 图标
 
@@ -72,6 +76,8 @@
 | .icon-lg<br/>.icon-2x<br/>.icon-3x<br/>.icon-4x<br/>.icon-5x | 大字体图标。 |
 | .icon-rotate-* .icon-flip-* | 对图标进行旋转和翻转 |
 
+[使用方法](./icon.html)
+
 ## 动画
 
 | 类 | 描述 |
@@ -82,3 +88,5 @@
 | .animated.fast | 快速。 |
 | .animated.faster | 更快。 |
 | .animated.slower | 更慢。 |
+[使用方法](./animation.html)
+

@@ -116,6 +116,8 @@
 | .ratio-1x1 | 1:1容器 |
 | .ratio-item | 媒体内容 |
 
+[使用方法](./ratio.html)
+
 ## 对齐
 
 | 类 | 描述 |
@@ -124,3 +126,5 @@
 | .vertical-align | 垂直对齐容器。 |
 | .vertical-align-middle | 垂直居中内容。 |
 | .vertical-align-bottom | 底部对齐内容。 |
+[使用方法](./align.html)
+
