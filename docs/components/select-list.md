@@ -8,33 +8,33 @@
 
 ```html
 <div class="row row-gx-4 mb-4">
-  <div class="col-md-3 col-gx-4">
-    <ul class="select-list">
-      <li>
-        <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-        <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-        <input type="checkbox" value=""/>
-        <span class="line-middle">环境变量设</span>
-      </li>
-      <li>
-        <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-        <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-        <input type="checkbox" value=""/>
-        <span class="line-middle">环境变量设</span>
-      </li>
-      <li>
-        <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-        <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-        <input type="checkbox" value=""/>
-        <span class="line-middle">环境变量设</span>
-      </li>
-      <li>
-        <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-        <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-        <input type="checkbox" value=""/>
-        <span class="line-middle">环境变量设</span>
-      </li>
-    </ul>
-  </div>
+    <div class="col-md-3 col-gx-4">
+        <ul class="select-list">
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="line-middle">环境变量设</span>
+            </li>
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="line-middle">环境变量设</span>
+            </li>
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="line-middle">环境变量设</span>
+            </li>
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="line-middle">环境变量设</span>
+            </li>
+        </ul>
+    </div>
 </div>
 ```

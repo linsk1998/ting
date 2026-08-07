@@ -8,18 +8,18 @@
 
 ```html
 <div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-  <div class="tabs" role="tabbable">
-    <ul class="nav nav-tabs">
-      <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-    </ul>
-    <div class="tabs-content">
-      <div class="tabs-pane active">111</div>
-      <div class="tabs-pane">222</div>
-      <div class="tabs-pane">333</div>
+    <div class="tabs" role="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
     </div>
-  </div>
 </div>
 ```
 
@@ -31,18 +31,18 @@
 
 ```html
 <div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-  <div class="tabs tabs-left" role="tabbable">
-    <ul class="nav nav-tabs">
-      <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-    </ul>
-    <div class="tabs-content">
-      <div class="tabs-pane active">111</div>
-      <div class="tabs-pane">222</div>
-      <div class="tabs-pane">333</div>
+    <div class="tabs tabs-left" role="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
     </div>
-  </div>
 </div>
 ```
 
@@ -52,18 +52,18 @@
 
 ```html
 <div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-  <div class="tabs tabs-right" role="tabbable">
-    <ul class="nav nav-tabs">
-      <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-    </ul>
-    <div class="tabs-content">
-      <div class="tabs-pane active">111</div>
-      <div class="tabs-pane">222</div>
-      <div class="tabs-pane">333</div>
+    <div class="tabs tabs-right" role="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
     </div>
-  </div>
 </div>
 ```
 
@@ -73,17 +73,17 @@
 
 ```html
 <div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-  <div class="tabs tabs-below" role="tabbable">
-    <div class="tabs-content">
-      <div class="tabs-pane active">111</div>
-      <div class="tabs-pane">222</div>
-      <div class="tabs-pane">333</div>
+    <div class="tabs tabs-below" role="tabbable">
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
     </div>
-    <ul class="nav nav-tabs">
-      <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-      <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-    </ul>
-  </div>
 </div>
 ```

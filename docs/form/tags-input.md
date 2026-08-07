@@ -10,16 +10,16 @@
 </div>
 占位文字
 <div class="tags-input">
-  <div class="tags-input-placeholder">请输入XXX</div>
+    <div class="tags-input-placeholder">请输入XXX</div>
 </div>
 有标签
 <div class="tags-input">
-  <div class="tags-input-wrap">
-    <div class="tag tag-default">金坷垃</div>
-    <div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div>
-    <div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div>
-  </div>
-  <button type="button" class="control-clear fa">&#xf057;</button>
+    <div class="tags-input-wrap">
+        <div class="tag tag-default">金坷垃</div>
+        <div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div>
+        <div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div>
+    </div>
+    <button type="button" class="control-clear fa">&#xf057;</button>
 </div>
 ```
 
@@ -214,50 +214,50 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group">
-    <label class="form-label">tags-input-lg</label>
-    <div class="tags-input tags-input-lg">
-      <div class="tags-input-wrap"
-        ><div class="tag tag-lg tag-default">金坷垃</div
-        ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-        ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-      ></div>
-      <button type="button" class="control-clear fa">&#xf057;</button>
+    <div class="form-group">
+        <label class="form-label">tags-input-lg</label>
+        <div class="tags-input tags-input-lg">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-lg tag-default">金坷垃</div
+                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label class="form-label">tags-input-sm</label>
-    <div class="tags-input tags-input-sm">
-      <div class="tags-input-wrap"
-        ><div class="tag tag-sm tag-default">金坷垃</div
-        ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-        ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-      ></div>
-      <button type="button" class="control-clear fa">&#xf057;</button>
+    <div class="form-group">
+        <label class="form-label">tags-input-sm</label>
+        <div class="tags-input tags-input-sm">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-sm tag-default">金坷垃</div
+                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
     </div>
-  </div>
-  <div class="form-group form-group-lg">
-    <label class="form-label">form-group-lg</label>
-    <div class="tags-input">
-      <div class="tags-input-wrap"
-        ><div class="tag tag-lg tag-default">金坷垃</div
-        ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-        ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-      ></div>
-      <button type="button" class="control-clear fa">&#xf057;</button>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="tags-input">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-lg tag-default">金坷垃</div
+                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
     </div>
-  </div>
-  <div class="form-group form-group-sm">
-    <label class="form-label">form-group-sm</label>
-    <div class="tags-input">
-      <div class="tags-input-wrap"
-        ><div class="tag tag-sm tag-default">金坷垃</div
-        ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-        ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-      ></div>
-      <button type="button" class="control-clear fa">&#xf057;</button>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="tags-input">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-sm tag-default">金坷垃</div
+                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
     </div>
-  </div>
 </form>
 ```
 
@@ -267,38 +267,38 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group">
-    <label class="form-label">空白控件</label>
-    <div class="tags-input tags-input-disabled">
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="form-label">placeholder</label>
-    <div class="input-group">
-      <button type="button" class="input-group-append btn btn-default btn-disabled" disabled><span class="caret"></span></button>
-      <div class="input-group-body">
+    <div class="form-group">
+        <label class="form-label">空白控件</label>
         <div class="tags-input tags-input-disabled">
-          <div class="tags-input-placeholder">请输入XXX</div>
-          <button type="button" class="control-clear fa">&#xf057;</button>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label class="form-label">标签输入</label>
-    <div class="tags-input tags-input-disabled">
-      <div class="tags-input-wrap"
-        ><div class="tag tag-default">金坷垃</div
-        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-        ><div class="tag tag-default">两米下</div
-        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
-      ></div>
-      <input type="text" placeholder="请输入内容" disabled>
-      <button type="button" class="control-clear fa">&#xf057;</button>
+    <div class="form-group">
+        <label class="form-label">placeholder</label>
+        <div class="input-group">
+            <button type="button" class="input-group-append btn btn-default btn-disabled" disabled><span class="caret"></span></button>
+            <div class="input-group-body">
+                <div class="tags-input tags-input-disabled">
+                    <div class="tags-input-placeholder">请输入XXX</div>
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="form-group">
+        <label class="form-label">标签输入</label>
+        <div class="tags-input tags-input-disabled">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-default">金坷垃</div
+                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default">两米下</div
+                ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+            ></div>
+            <input type="text" placeholder="请输入内容" disabled>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
 </form>
 ```
 
@@ -308,39 +308,39 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group has-valid has-feedback-icon">
-    <label class="form-label">has-valid</label>
-    <div class="input-group">
-      <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
-      <!--控件需要放在最后-->
-      <div class="input-group-body">
-        <div class="tags-input">
-          <div class="tags-input-wrap"
-            ><div class="tag tag-default">金坷垃</div
-          ></div>
-          <button type="button" class="control-clear fa">&#xf057;</button>
-          <i class="feedback-icon fa">&#xf00c;</i>
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="input-group">
+            <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <div class="tags-input">
+                    <div class="tags-input-wrap"
+                        ><div class="tag tag-default">金坷垃</div
+                    ></div>
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                    <i class="feedback-icon fa">&#xf00c;</i>
+                </div>
+            </div>
         </div>
-      </div>
+        <p class="form-text">Example block-level help text here.</p>
     </div>
-    <p class="form-text">Example block-level help text here.</p>
-  </div>
-  <div class="form-group has-invalid has-feedback-icon">
-    <label class="form-label">has-invalid</label>
-    <div class="input-group">
-      <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
-      <!--控件需要放在最后-->
-      <div class="input-group-body">
-        <div class="tags-input">
-          <div class="tags-input-wrap"
-            ><div class="tag tag-default">金坷垃</div
-          ></div>
-          <button type="button" class="control-clear fa">&#xf057;</button>
-          <i class="feedback-icon fa">&#xf00d;</i>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="input-group">
+            <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <div class="tags-input">
+                    <div class="tags-input-wrap"
+                        ><div class="tag tag-default">金坷垃</div
+                    ></div>
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                    <i class="feedback-icon fa">&#xf00d;</i>
+                </div>
+            </div>
         </div>
-      </div>
+        <p class="form-text">Example block-level help text here.</p>
     </div>
-    <p class="form-text">Example block-level help text here.</p>
-  </div>
 </form>
 ```

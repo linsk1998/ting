@@ -8,16 +8,16 @@
 
 ```html
 <div class="alert alert-success" role="alert">
-  <strong>Well done!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+    <strong>Well done!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
 <div class="alert alert-info" role="alert">
-  <strong>Heads up!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+    <strong>Heads up!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
 <div class="alert alert-warning" role="alert">
-  <strong>Warning!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+    <strong>Warning!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
 <div class="alert alert-danger" role="alert">
-  <strong>Oh snap!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+    <strong>Oh snap!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
 ```
 
@@ -27,8 +27,8 @@
 
 ```html
 <div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert"></button>
-  <strong>Warning!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+    <button type="button" class="close" data-dismiss="alert"></button>
+    <strong>Warning!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
 ```
 
@@ -36,9 +36,9 @@
 
 ```html
 <div class="alert alert-success" role="alert">
-  <h4 class="alert-heading">Well done!</h4>
-  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-  <hr>
-  <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 </div>
 ```

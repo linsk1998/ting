@@ -6,35 +6,35 @@
 
 ```html
 <div class="sidebar">
-  <div class="sidebar-nav">
-    <div class="sidebar-nav-header">
-      <a class="sidebar-nav-link" href="#">
-        <i class="fa fa-fw">&#xf015;</i> 首页
-        <i class="fa pull-right tree-caret">&#xf0d7;</i>
-      </a>
+    <div class="sidebar-nav">
+        <div class="sidebar-nav-header">
+            <a class="sidebar-nav-link" href="#">
+                <i class="fa fa-fw">&#xf015;</i> 首页
+                <i class="fa pull-right tree-caret">&#xf0d7;</i>
+            </a>
+        </div>
+        <div class="sidebar-nav-body collapse">
+            <ul class="nav-list">
+                <li class="nav-list-item active"><a href="#">子菜单1</a></li>
+                <li class="nav-list-item"><a href="#">子菜单2</a></li>
+                <li class="nav-list-item"><a href="#">子菜单3</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="sidebar-nav-body collapse">
-      <ul class="nav-list">
-        <li class="nav-list-item active"><a href="#">子菜单1</a></li>
-        <li class="nav-list-item"><a href="#">子菜单2</a></li>
-        <li class="nav-list-item"><a href="#">子菜单3</a></li>
-      </ul>
+    <div class="sidebar-nav">
+        <div class="sidebar-nav-header expanded">
+            <a class="sidebar-nav-link" href="#">
+                <i class="fa fa-fw">&#xf013;</i> 设置
+                <i class="fa pull-right tree-caret">&#xf0d7;</i>
+            </a>
+        </div>
+        <div class="sidebar-nav-body">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#">个人设置</a></li>
+                <li class="nav-list-item"><a href="#">系统设置</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <div class="sidebar-nav">
-    <div class="sidebar-nav-header expanded">
-      <a class="sidebar-nav-link" href="#">
-        <i class="fa fa-fw">&#xf013;</i> 设置
-        <i class="fa pull-right tree-caret">&#xf0d7;</i>
-      </a>
-    </div>
-    <div class="sidebar-nav-body">
-      <ul class="nav-list">
-        <li class="nav-list-item"><a href="#">个人设置</a></li>
-        <li class="nav-list-item"><a href="#">系统设置</a></li>
-      </ul>
-    </div>
-  </div>
 </div>
 ```
 
@@ -42,27 +42,27 @@
 
 ```html
 <div class="sidebar sidebar-inverse">
-  <div class="sidebar-nav">
-    <div class="sidebar-nav-header expanded">
-      <a class="sidebar-nav-link" href="#">
-        <i class="fa fa-fw">&#xf015;</i> 首页
-      </a>
+    <div class="sidebar-nav">
+        <div class="sidebar-nav-header expanded">
+            <a class="sidebar-nav-link" href="#">
+                <i class="fa fa-fw">&#xf015;</i> 首页
+            </a>
+        </div>
     </div>
-  </div>
-  <div class="sidebar-nav">
-    <div class="sidebar-nav-header">
-      <a class="sidebar-nav-link" href="#">
-        <i class="fa fa-fw">&#xf013;</i> 设置
-        <i class="fa pull-right tree-caret">&#xf0d7;</i>
-      </a>
+    <div class="sidebar-nav">
+        <div class="sidebar-nav-header">
+            <a class="sidebar-nav-link" href="#">
+                <i class="fa fa-fw">&#xf013;</i> 设置
+                <i class="fa pull-right tree-caret">&#xf0d7;</i>
+            </a>
+        </div>
+        <div class="sidebar-nav-body collapse">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#">个人设置</a></li>
+                <li class="nav-list-item"><a href="#">系统设置</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="sidebar-nav-body collapse">
-      <ul class="nav-list">
-        <li class="nav-list-item"><a href="#">个人设置</a></li>
-        <li class="nav-list-item"><a href="#">系统设置</a></li>
-      </ul>
-    </div>
-  </div>
 </div>
 ```
 

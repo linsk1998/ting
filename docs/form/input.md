@@ -11,18 +11,18 @@
 
 ```html
 <div class="input">
-  <div class="input-prefix"
-    ><span class="line-middle"></span
-    ><i class="icon fa">&#xf002;</i
-  ></div>
-  <div class="input-suffix"
-    ><span class="line-middle"></span
-    ><i class="icon fa">&#xf133;</i
-  ></div>
-  <!--控件需要放在最后-->
-  <div class="input-body">
-    <input type="text"/>
-  </div>
+    <div class="input-prefix"
+        ><span class="line-middle"></span
+        ><i class="icon fa">&#xf002;</i
+    ></div>
+    <div class="input-suffix"
+        ><span class="line-middle"></span
+        ><i class="icon fa">&#xf133;</i
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body">
+        <input type="text"/>
+    </div>
 </div>
 ```
 
@@ -32,28 +32,28 @@
 
 ```html
 <div class="input-group">
-  <div class="input-group-prepend">
-    <div class="input-group-text">█</div>
-  </div>
-  <div class="input-group-append">
-    <div class="input-group-text">元</div>
-  </div>
-  <div class="input-group-body">
-    <div class="input">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf133;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body">
-        <input type="text"/>
-      </div>
+    <div class="input-group-prepend">
+        <div class="input-group-text">█</div>
     </div>
-  </div>
+    <div class="input-group-append">
+        <div class="input-group-text">元</div>
+    </div>
+    <div class="input-group-body">
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body">
+                <input type="text"/>
+            </div>
+        </div>
+    </div>
 </div>
 ```
 
@@ -64,54 +64,54 @@
 ```html
 <!-- 没有后缀 -->
 <div class="input">
-  <div class="input-prefix"
-    ><span class="line-middle"></span
-    ><i class="icon fa">&#xf002;</i
-  ></div>
-  <!--控件需要放在最后-->
-  <div class="input-body"
-    ><input type="text"
-    ><button type="button" class="control-clear fa">&#xf057;</button
-  ></div>
+    <div class="input-prefix"
+        ><span class="line-middle"></span
+        ><i class="icon fa">&#xf002;</i
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body"
+        ><input type="text"
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
 </div>
 <br/>
 <!-- 有后缀 -->
 <div class="input">
-  <div class="input-prefix"
-    ><i class="icon fa">&#xf002;</i
-    ><span class="line-middle"></span
-  ></div>
-  <div class="input-suffix"
-    ><span class="line-middle"></span
-    ><i class="icon fa">&#xf133;</i
-    ><button type="button" class="control-clear fa">&#xf057;</button
-  ></div>
-  <!--控件需要放在最后-->
-  <div class="input-body"
-    ><input type="text"
-    ><button type="button" class="control-clear fa">&#xf057;</button
-  ></div>
+    <div class="input-prefix"
+        ><i class="icon fa">&#xf002;</i
+        ><span class="line-middle"></span
+    ></div>
+    <div class="input-suffix"
+        ><span class="line-middle"></span
+        ><i class="icon fa">&#xf133;</i
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body"
+        ><input type="text"
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
 </div>
 <br/>
 <!-- 有按钮：带计数器 -->
 <div class="input">
-  <div class="input-prefix"
-    ><span class="line-middle"></span
-    ><i class="icon fa">&#xf002;</i
-  ></div>
-  <div class="input-suffix"
-    ><span class="line-middle"></span
-    ><span class="input-counter">0/111</span
-  ></div>
-  <div class="input-suffix"
-    ><span class="line-middle"></span
-    ><i class="icon fa">&#xf133;</i
-  ></div>
-  <!--控件需要放在最后-->
-  <div class="input-body"
-    ><input type="text"
-    ><button type="button" class="control-clear fa">&#xf057;</button
-  ></div>
+    <div class="input-prefix"
+        ><span class="line-middle"></span
+        ><i class="icon fa">&#xf002;</i
+    ></div>
+    <div class="input-suffix"
+        ><span class="line-middle"></span
+        ><span class="input-counter">0/111</span
+    ></div>
+    <div class="input-suffix"
+        ><span class="line-middle"></span
+        ><i class="icon fa">&#xf133;</i
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body"
+        ><input type="text"
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
 </div>
 ```
 
@@ -121,33 +121,33 @@
 
 ```html
 <div class="input-group">
-  <div class="input-group-prepend">
-    <div class="input-group-text">█</div>
-  </div>
-  <div class="input-group-append btn-group">
-    <button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
-    <button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
-  </div>
-  <div class="input-group-body">
-    <div class="input input-disabled">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><span class="input-counter">0/111</span
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf133;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body"
-        ><input type="text" disabled
-      ></div>
+    <div class="input-group-prepend">
+        <div class="input-group-text">█</div>
     </div>
-  </div>
+    <div class="input-group-append btn-group">
+        <button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
+        <button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
+    </div>
+    <div class="input-group-body">
+        <div class="input input-disabled">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text" disabled
+            ></div>
+        </div>
+    </div>
 </div>
 ```
 
@@ -157,56 +157,56 @@
 
 ```html
 <form class="form-inline">
-  <div class="form-group">
-    <label class="form-label">Name</label>
-    <input style="width:160px;" type="text" class="form-control" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label class="form-label">Cash</label>
-    <div style="width:200px" class="input">
-      <div class="input-prefix">
-        <span class="vertical-align-middle">￥</span>
-        <span class="line-middle"></span>
-      </div>
-      <div class="input-suffix">
-        <span class="line-middle"></span>
-        <span class="vertical-align-middle">元</span>
-        <span class="input-counter">0/20</span>
-      </div>
-      <!--控件需要放在最后-->
-      <div class="input-body">
-        <input type="text"/>
-      </div>
+    <div class="form-group">
+        <label class="form-label">Name</label>
+        <input style="width:160px;" type="text" class="form-control" placeholder="Jane Doe">
     </div>
-  </div>
-  <div class="form-group">
-    <label class="form-label">Page</label>
-    <div style="width:300px;" class="input-group">
-      <div class="input-group-prepend">
-        <div class="input-group-text">http://</div>
-      </div>
-      <div class="input-group-body">
-        <div class="input">
-          <div class="input-prefix"
-            ><span class="line-middle"></span
-            ><span class="vertical-align-middle">www.</span
-          ></div>
-          <div class="input-suffix"
-            ><span class="line-middle"></span
-            ><span class="vertical-align-middle">.com</span
-          ></div>
-          <div class="input-suffix"
-            ><span class="line-middle"></span
-            ><span class="input-counter">0/20</span
-          ></div>
-          <!--控件需要放在最后-->
-          <div class="input-body">
-            <input type="text"/>
-          </div>
+    <div class="form-group">
+        <label class="form-label">Cash</label>
+        <div style="width:200px" class="input">
+            <div class="input-prefix">
+                <span class="vertical-align-middle">￥</span>
+                <span class="line-middle"></span>
+            </div>
+            <div class="input-suffix">
+                <span class="line-middle"></span>
+                <span class="vertical-align-middle">元</span>
+                <span class="input-counter">0/20</span>
+            </div>
+            <!--控件需要放在最后-->
+            <div class="input-body">
+                <input type="text"/>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+    <div class="form-group">
+        <label class="form-label">Page</label>
+        <div style="width:300px;" class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">http://</div>
+            </div>
+            <div class="input-group-body">
+                <div class="input">
+                    <div class="input-prefix"
+                        ><span class="line-middle"></span
+                        ><span class="vertical-align-middle">www.</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="line-middle"></span
+                        ><span class="vertical-align-middle">.com</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="line-middle"></span
+                        ><span class="input-counter">0/20</span
+                    ></div>
+                    <!--控件需要放在最后-->
+                    <div class="input-body">
+                        <input type="text"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </form>
 ```
 
@@ -216,115 +216,115 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group">
-    <label class="form-label">input-lg</label>
-    <div class="input input-lg">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><span class="input-counter">0/111</span
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf133;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-      ></div>
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="form-label">input-sm</label>
-    <div class="input input-sm">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><span class="input-counter">0/111</span
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf133;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-      ></div>
-    </div>
-  </div>
-  <div class="form-group form-group-lg">
-    <label class="form-label">form-group-lg</label>
-    <div class="input-group input-group-lg">
-      <div class="input-group-prepend">
-        <div class="input-group-text">█</div>
-      </div>
-      <div class="input-group-append">
-        <div class="input-group-text">元</div>
-      </div>
-      <!--控件需要放在最后-->
-      <div class="input-group-body">
-        <div class="input">
-          <div class="input-prefix"
-            ><span class="line-middle"></span
-            ><i class="icon fa">&#xf002;</i
-          ></div>
-          <div class="input-suffix"
-            ><span class="line-middle"></span
-            ><span class="input-counter">0/111</span
-          ></div>
-          <div class="input-suffix"
-            ><span class="line-middle"></span
-            ><i class="icon fa">&#xf133;</i
-          ></div>
-          <!--控件需要放在最后-->
-          <div class="input-body"
-            ><input type="text"
-            ><button type="button" class="control-clear fa">&#xf057;</button
-          ></div>
+    <div class="form-group">
+        <label class="form-label">input-lg</label>
+        <div class="input input-lg">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+            ></div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="form-group form-group-sm">
-    <label class="form-label">form-group-sm</label>
-    <div class="input-group input-group-sm">
-      <div class="input-group-prepend">
-        <div class="input-group-text">█</div>
-      </div>
-      <div class="input-group-append">
-        <div class="input-group-text">元</div>
-      </div>
-      <div class="input-group-body">
-        <div class="input">
-          <div class="input-prefix"
-            ><span class="line-middle"></span
-            ><i class="icon fa">&#xf002;</i
-          ></div>
-          <div class="input-suffix"
-            ><span class="line-middle"></span
-            ><span class="input-counter">0/111</span
-          ></div>
-          <div class="input-suffix"
-            ><span class="line-middle"></span
-            ><i class="icon fa">&#xf133;</i
-          ></div>
-          <!--控件需要放在最后-->
-          <div class="input-body"
-            ><input type="text"
-            ><button type="button" class="control-clear fa">&#xf057;</button
-          ></div>
+    <div class="form-group">
+        <label class="form-label">input-sm</label>
+        <div class="input input-sm">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+            ></div>
         </div>
-      </div>
     </div>
-  </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+                <div class="input-group-text">█</div>
+            </div>
+            <div class="input-group-append">
+                <div class="input-group-text">元</div>
+            </div>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <div class="input">
+                    <div class="input-prefix"
+                        ><span class="line-middle"></span
+                        ><i class="icon fa">&#xf002;</i
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="line-middle"></span
+                        ><span class="input-counter">0/111</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="line-middle"></span
+                        ><i class="icon fa">&#xf133;</i
+                    ></div>
+                    <!--控件需要放在最后-->
+                    <div class="input-body"
+                        ><input type="text"
+                        ><button type="button" class="control-clear fa">&#xf057;</button
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+                <div class="input-group-text">█</div>
+            </div>
+            <div class="input-group-append">
+                <div class="input-group-text">元</div>
+            </div>
+            <div class="input-group-body">
+                <div class="input">
+                    <div class="input-prefix"
+                        ><span class="line-middle"></span
+                        ><i class="icon fa">&#xf002;</i
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="line-middle"></span
+                        ><span class="input-counter">0/111</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="line-middle"></span
+                        ><i class="icon fa">&#xf133;</i
+                    ></div>
+                    <!--控件需要放在最后-->
+                    <div class="input-body"
+                        ><input type="text"
+                        ><button type="button" class="control-clear fa">&#xf057;</button
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </form>
 ```
 
@@ -334,85 +334,85 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group has-valid has-feedback-icon">
-    <label class="form-label">has-valid</label>
-    <div class="input">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-        ><i class="feedback-icon fa">&#xf00c;</i
-      ></div>
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00c;</i
+            ></div>
+        </div>
+        <p class="feedback-text">没有后缀</p>
     </div>
-    <p class="feedback-text">没有后缀</p>
-  </div>
-  <div class="form-group has-invalid has-feedback-icon">
-    <label class="form-label">has-invalid</label>
-    <div class="input">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-        ><i class="feedback-icon fa">&#xf00d;</i
-      ></div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00d;</i
+            ></div>
+        </div>
+        <p class="feedback-text">没有后缀</p>
     </div>
-    <p class="feedback-text">没有后缀</p>
-  </div>
-  <div class="form-group has-valid has-feedback-icon">
-    <label class="form-label">has-valid</label>
-    <div class="input">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><span class="input-counter">0/111</span
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf133;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-        ><i class="feedback-icon fa">&#xf00c;</i
-      ></div>
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00c;</i
+            ></div>
+        </div>
+        <p class="feedback-text">有后缀</p>
     </div>
-    <p class="feedback-text">有后缀</p>
-  </div>
-  <div class="form-group has-invalid has-feedback-icon">
-    <label class="form-label">has-invalid</label>
-    <div class="input">
-      <div class="input-prefix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf002;</i
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><span class="input-counter">0/111</span
-      ></div>
-      <div class="input-suffix"
-        ><span class="line-middle"></span
-        ><i class="icon fa">&#xf133;</i
-      ></div>
-      <!--控件需要放在最后-->
-      <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-        ><i class="feedback-icon fa">&#xf00d;</i
-      ></div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="line-middle"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00d;</i
+            ></div>
+        </div>
+        <p class="feedback-text">有后缀</p>
     </div>
-    <p class="feedback-text">有后缀</p>
-  </div>
 </form>
 ```

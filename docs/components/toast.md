@@ -6,7 +6,7 @@
 
 ```html
 <div class="toast">
-  恭喜提交成功！<a href="#">编辑</a>
+    恭喜提交成功！<a href="#">编辑</a>
 </div>
 ```
 
@@ -14,7 +14,7 @@
 
 ```html
 <div class="msg">
-  恭喜提交成功！<a href="#">编辑</a>
+    恭喜提交成功！<a href="#">编辑</a>
 </div>
 ```
 

@@ -40,20 +40,20 @@
 
 ```html
 <div class="dialog dialog-primary">
-  <div class="dialog-header">
-    <span class="dialog-title">primary对话框</span>
-    <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-  </div>
-  <div class="dialog-body">
-    <i class="fa icon-3x text-success">&#xf058;</i>
-    <i class="fa icon-3x text-success">&#xf05d;</i>
-    <i class="fa icon-3x text-danger">&#xf057;</i>
-    <i class="fa icon-3x text-danger">&#xf05c;</i>
-    <i class="fa icon-3x text-info">&#xf059;</i>
-    <i class="fa icon-3x text-info">&#xf05a;</i>
-    <i class="fa icon-3x text-warning">&#xf06a;</i>
-    <i class="fa icon-3x text-warning">&#xf005;</i>
-  </div>
+    <div class="dialog-header">
+        <span class="dialog-title">primary对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body">
+        <i class="fa icon-3x text-success">&#xf058;</i>
+        <i class="fa icon-3x text-success">&#xf05d;</i>
+        <i class="fa icon-3x text-danger">&#xf057;</i>
+        <i class="fa icon-3x text-danger">&#xf05c;</i>
+        <i class="fa icon-3x text-info">&#xf059;</i>
+        <i class="fa icon-3x text-info">&#xf05a;</i>
+        <i class="fa icon-3x text-warning">&#xf06a;</i>
+        <i class="fa icon-3x text-warning">&#xf005;</i>
+    </div>
 </div>
 ```
 
@@ -63,20 +63,20 @@
 
 ```html
 <div class="row row-gx-3 row-gy-3">
-  <div class="col-1/5 col-gx-3 col-gy-3">
-    <div class="border border-primary">border-primary</div>
-  </div>
-  <div class="col-1/5 col-gx-3 col-gy-3">
-    <div class="border border-success">border-success</div>
-  </div>
-  <div class="col-1/5 col-gx-3 col-gy-3">
-    <div class="border border-info">border-info</div>
-  </div>
-  <div class="col-1/5 col-gx-3 col-gy-3">
-    <div class="border border-warning">border-warning</div>
-  </div>
-  <div class="col-1/5 col-gx-3 col-gy-3">
-    <div class="border border-danger">border-danger</div>
-  </div>
+    <div class="col-1/5 col-gx-3 col-gy-3">
+        <div class="border border-primary">border-primary</div>
+    </div>
+    <div class="col-1/5 col-gx-3 col-gy-3">
+        <div class="border border-success">border-success</div>
+    </div>
+    <div class="col-1/5 col-gx-3 col-gy-3">
+        <div class="border border-info">border-info</div>
+    </div>
+    <div class="col-1/5 col-gx-3 col-gy-3">
+        <div class="border border-warning">border-warning</div>
+    </div>
+    <div class="col-1/5 col-gx-3 col-gy-3">
+        <div class="border border-danger">border-danger</div>
+    </div>
 </div>
 ```

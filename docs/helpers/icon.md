@@ -29,10 +29,10 @@
 
 ```html
 <div class="list-group">
-  <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf015;</i> Home</a>
-  <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf02d;</i> Library</a>
-  <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf040;</i> Applications</a>
-  <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf013;</i> Settings</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf015;</i> Home</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf02d;</i> Library</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf040;</i> Applications</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf013;</i> Settings</a>
 </div>
 ```
 
@@ -69,23 +69,23 @@
 
 ```html
 <span class="icon-stack icon-lg">
-  <i class="fa icon-stack-2x">&#xf096;</i>
-  <i class="fa icon-stack-1x">&#xf099;</i>
+    <i class="fa icon-stack-2x">&#xf096;</i>
+    <i class="fa icon-stack-1x">&#xf099;</i>
 </span>
 fa-twitter on fa-square-o
 <span class="icon-stack icon-lg">
-  <i class="fa icon-stack-2x">&#xf111;</i>
-  <i class="fa icon-stack-1x icon-inverse">&#xf024;</i>
+    <i class="fa icon-stack-2x">&#xf111;</i>
+    <i class="fa icon-stack-1x icon-inverse">&#xf024;</i>
 </span>
 fa-flag on fa-circle
 <span class="icon-stack icon-lg">
-  <i class="fa icon-stack-2x">&#xf0c8;</i>
-  <i class="fa icon-stack-1x icon-inverse">&#xf120;</i>
+    <i class="fa icon-stack-2x">&#xf0c8;</i>
+    <i class="fa icon-stack-1x icon-inverse">&#xf120;</i>
 </span>
 fa-terminal on fa-square
 <span class="icon-stack icon-lg">
-  <i class="fa icon-stack-1x">&#xf030;</i>
-  <i class="fa icon-stack-2x text-danger">&#xf05e;</i>
+    <i class="fa icon-stack-1x">&#xf030;</i>
+    <i class="fa icon-stack-2x text-danger">&#xf05e;</i>
 </span>
 fa-ban on fa-camera
 ```
@@ -96,9 +96,9 @@ fa-ban on fa-camera
 
 ```html
 <button type="button" class="btn btn-default" aria-label="Left Align">
-  <i class="fa" aria-hidden="true">&#xf036;</i>
+    <i class="fa" aria-hidden="true">&#xf036;</i>
 </button>
 <button type="button" class="btn btn-default">
-  <i class="fa" aria-hidden="true">&#xf005;</i> Star
+    <i class="fa" aria-hidden="true">&#xf005;</i> Star
 </button>
 ```

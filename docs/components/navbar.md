@@ -15,17 +15,17 @@
 
 ```html
 <nav class="navbar" style="z-index:590">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-    <a class="navbar-brand" href="javascript:void 0">Brand</a>
-  </div>
-  <div class="navbar-responsive-dropdown">
-    <ul class="navbar-nav">
-      <li class="active"><a href="javascript:void 0">首页</a></li>
-      <li><a href="javascript:void 0">链接</a></li>
-      <li><a href="javascript:void 0">关于</a></li>
-    </ul>
-  </div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-responsive-dropdown">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+    </div>
 </nav>
 ```
 
@@ -94,7 +94,7 @@
 <nav class="navbar" style="z-index:587">
     <div class="navbar-header">
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
-        </div>
+    </div>
     <div class="navbar-responsive-dropdown">
         <ul class="navbar-nav">
             <li><a href="javascript:void 0">首页</a></li>
@@ -199,26 +199,26 @@
 <nav class="navbar navbar-default" style="z-index:583">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-      <a class="navbar-brand" href="javascript:void 0">首页</a>
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="navbar-responsive-dropdown">
-      <ul class="navbar-nav">
-        <li class="active"><a href="javascript:void 0">新闻中心</a></li>
-        <li><a href="javascript:void 0">信息公开</a></li>
-        <li><a href="javascript:void 0">网上办事</a></li>
-      </ul>
-      <form class="navbar-form navbar-right">
-        <div class="input-group">
-          <div class="input-group-append input-group-btn">
-            <button class="btn btn-default" type="button">搜索</button>
-          </div>
-          <div class="input-group-body">
-            <input type="text" class="form-control" placeholder="关键词"/>
-          </div>
-        </div>
-      </form>
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">新闻中心</a></li>
+            <li><a href="javascript:void 0">信息公开</a></li>
+            <li><a href="javascript:void 0">网上办事</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+            <div class="input-group">
+                <div class="input-group-append input-group-btn">
+                    <button class="btn btn-default" type="button">搜索</button>
+                </div>
+                <div class="input-group-body">
+                    <input type="text" class="form-control" placeholder="关键词"/>
+                </div>
+            </div>
+        </form>
     </div>
 </nav>
 ```
@@ -229,54 +229,54 @@
 <nav class="navbar navbar-default" style="z-index:582">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-      <a class="navbar-brand" href="javascript:void 0">首页</a>
+        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="navbar-responsive-dropdown">
-      <ul class="navbar-nav">
-        <li class="active"><a href="javascript:void 0">新闻中心</a></li>
-        <li><a href="javascript:void 0">信息公开</a></li>
-        <li><a href="javascript:void 0">网上办事</a></li>
-        <li class="dropdown">
-          <a href="javascript:void 0" class="dropdown-toggle">
-            公众参与
-            <span class="fa">&#xf0d7;</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="javascript:void 0">在线咨询</a></li>
-            <li><a class="dropdown-item" href="javascript:void 0">领导信箱</a></li>
-            <li><a class="dropdown-item" href="javascript:void 0">在线访谈</a></li>
-            <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="javascript:void 0">网站投稿</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <label class="form-label">搜索：</label>
-          <input type="text" class="form-control" placeholder="请输入关键词">
-        </div>
-        <button type="submit" class="btn btn-default">搜索</button>
-      </form>
-      <ul class="navbar-nav navbar-right">
-        <li>
-          <a href="javascript:void 0">友情链接</a>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void 0" class="dropdown-toggle">
-            公共服务
-            <span class="fa">&#xf0d7;</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
-            <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
-            <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
-            <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
-            <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
-          </ul>
-        </li>
-      </ul>
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">新闻中心</a></li>
+            <li><a href="javascript:void 0">信息公开</a></li>
+            <li><a href="javascript:void 0">网上办事</a></li>
+            <li class="dropdown">
+                <a href="javascript:void 0" class="dropdown-toggle">
+                    公众参与
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void 0">在线咨询</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">领导信箱</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">在线访谈</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">网站投稿</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <label class="form-label">搜索：</label>
+                <input type="text" class="form-control" placeholder="请输入关键词">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+        <ul class="navbar-nav navbar-right">
+            <li>
+                <a href="javascript:void 0">友情链接</a>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void 0" class="dropdown-toggle">
+                    公共服务
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </nav>
 ```
@@ -289,16 +289,16 @@
 
 ```html
 <nav class="navbar">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
-    <a class="navbar-brand" href="javascript:void 0">Brand</a>
-  </div>
-  <div id="bs-collapse" class="navbar-collapse collapse">
-    <ul class="navbar-nav">
-      <li class="active"><a href="javascript:void 0">首页</a></li>
-      <li><a href="javascript:void 0">链接</a></li>
-      <li><a href="javascript:void 0">关于</a></li>
-    </ul>
-  </div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div id="bs-collapse" class="navbar-collapse collapse">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+    </div>
 </nav>
 ```

@@ -8,18 +8,18 @@
 
 ```html
 <label>
-  <div class="switch">
-    <div class="switch-thumb"></div>
-    <input type="checkbox">
-  </div>
-  默认状态
+    <div class="switch">
+        <div class="switch-thumb"></div>
+        <input type="checkbox">
+    </div>
+    默认状态
 </label>
 <label>
-  <div class="switch switch-checked">
-    <div class="switch-thumb"></div>
-    <input type="checkbox">
-  </div>
-  选中
+    <div class="switch switch-checked">
+        <div class="switch-thumb"></div>
+        <input type="checkbox">
+    </div>
+    选中
 </label>
 ```
 
@@ -29,18 +29,18 @@
 
 ```html
 <label>
-  <div class="switch switch-disabled">
-    <div class="switch-thumb"></div>
-    <input type="checkbox" disabled>
-  </div>
-  默认状态
+    <div class="switch switch-disabled">
+        <div class="switch-thumb"></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
 </label>
 <label>
-  <div class="switch switch-checked switch-disabled">
-    <div class="switch-thumb"></div>
-    <input type="checkbox" disabled>
-  </div>
-  选中
+    <div class="switch switch-checked switch-disabled">
+        <div class="switch-thumb"></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
 </label>
 ```
 
@@ -50,31 +50,31 @@
 
 ```html
 <label>
-  <div class="switch switch-loading">
-    <div class="switch-thumb"><div class="loading-circular"></div></div>
-    <input type="checkbox" disabled>
-  </div>
-  默认状态
+    <div class="switch switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
 </label>
 <label>
-  <div class="switch switch-checked switch-loading">
-    <div class="switch-thumb"><div class="loading-circular"></div></div>
-    <input type="checkbox" disabled>
-  </div>
-  选中
+    <div class="switch switch-checked switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
 </label>
 <label>
-  <div class="switch switch-disabled switch-loading">
-    <div class="switch-thumb"><div class="loading-circular"></div></div>
-    <input type="checkbox" disabled>
-  </div>
-  默认状态
+    <div class="switch switch-disabled switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
 </label>
 <label>
-  <div class="switch switch-checked switch-disabled switch-loading">
-    <div class="switch-thumb"><div class="loading-circular"></div></div>
-    <input type="checkbox" disabled>
-  </div>
-  选中
+    <div class="switch switch-checked switch-disabled switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
 </label>
 ```

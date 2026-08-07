@@ -8,12 +8,12 @@
 
 ```html
 <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
-  切换折叠
+    切换折叠
 </button>
 <div id="demo" class="collapse">
-  <div class="well m-0">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-  </div>
+    <div class="well m-0">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    </div>
 </div>
 ```
 
@@ -21,9 +21,9 @@
 
 ```html
 <div class="collapse show">
-  <div class="well m-0">
-    默认展开的可折叠内容。
-  </div>
+    <div class="well m-0">
+        默认展开的可折叠内容。
+    </div>
 </div>
 ```
 
@@ -31,11 +31,11 @@
 
 ```html
 <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">
-  切换折叠
+    切换折叠
 </button>
 <div id="demo2" class="collapse-horizontal">
-  <div class="well m-0" style="width: 300px;">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-  </div>
+    <div class="well m-0" style="width: 300px;">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    </div>
 </div>
 ```

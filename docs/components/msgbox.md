@@ -6,18 +6,18 @@
 
 ```html
 <div class="msgbox">
-  <div class="msgbox-header">
-    <i class="fa icon-4x text-warning">&#xf06a;</i>
-    <h4 class="msgbox-title">提示标题</h4>
-    <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-  </div>
-  <div class="msgbox-body">
-    <p>您确定要执行此操作吗？</p>
-  </div>
-  <div class="msgbox-footer">
-    <button type="button" class="btn btn-default">取消</button>
-    <button type="button" class="btn btn-primary">确定</button>
-  </div>
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-warning">&#xf06a;</i>
+        <h4 class="msgbox-title">提示标题</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body">
+        <p>您确定要执行此操作吗？</p>
+    </div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+    </div>
 </div>
 ```
 
@@ -27,15 +27,15 @@
 
 ```html
 <div class="msgbox msgbox-info">
-  <div class="msgbox-header">
-    <i class="fa icon-4x text-info">&#xf05a;</i>
-    <h4 class="msgbox-title">信息</h4>
-    <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-  </div>
-  <div class="msgbox-body"><p>这是一条提示信息。</p></div>
-  <div class="msgbox-footer">
-    <button type="button" class="btn btn-info">确定</button>
-  </div>
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-info">&#xf05a;</i>
+        <h4 class="msgbox-title">信息</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>这是一条提示信息。</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-info">确定</button>
+    </div>
 </div>
 ```
 
@@ -43,15 +43,15 @@
 
 ```html
 <div class="msgbox msgbox-success">
-  <div class="msgbox-header">
-    <i class="fa icon-4x text-success">&#xf058;</i>
-    <h4 class="msgbox-title">成功</h4>
-    <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-  </div>
-  <div class="msgbox-body"><p>操作已成功完成！</p></div>
-  <div class="msgbox-footer">
-    <button type="button" class="btn btn-success">确定</button>
-  </div>
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-success">&#xf058;</i>
+        <h4 class="msgbox-title">成功</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>操作已成功完成！</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-success">确定</button>
+    </div>
 </div>
 ```
 
@@ -59,16 +59,16 @@
 
 ```html
 <div class="msgbox msgbox-warning">
-  <div class="msgbox-header">
-    <i class="fa icon-4x text-warning">&#xf06a;</i>
-    <h4 class="msgbox-title">警告</h4>
-    <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-  </div>
-  <div class="msgbox-body"><p>此操作不可撤销！</p></div>
-  <div class="msgbox-footer">
-    <button type="button" class="btn btn-default">取消</button>
-    <button type="button" class="btn btn-warning">确定</button>
-  </div>
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-warning">&#xf06a;</i>
+        <h4 class="msgbox-title">警告</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>此操作不可撤销！</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-warning">确定</button>
+    </div>
 </div>
 ```
 
@@ -76,15 +76,15 @@
 
 ```html
 <div class="msgbox msgbox-danger">
-  <div class="msgbox-header">
-    <i class="fa icon-4x text-danger">&#xf057;</i>
-    <h4 class="msgbox-title">错误</h4>
-    <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-  </div>
-  <div class="msgbox-body"><p>操作失败，请重试。</p></div>
-  <div class="msgbox-footer">
-    <button type="button" class="btn btn-danger">确定</button>
-  </div>
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-danger">&#xf057;</i>
+        <h4 class="msgbox-title">错误</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>操作失败，请重试。</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-danger">确定</button>
+    </div>
 </div>
 ```
 

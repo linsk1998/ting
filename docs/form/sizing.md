@@ -8,14 +8,14 @@
 
 ```html
 <form class="form">
-  <div class="form-group form-group-lg">
-    <label class="form-label">form-group-lg</label>
-    <input class="form-control" type="text">
-  </div>
-  <div class="form-group form-group-sm">
-    <label class="form-label">form-group-sm</label>
-    <input class="form-control" type="text">
-  </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
 </form>
 ```
 
@@ -25,14 +25,14 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group form-group-lg">
-    <label class="form-label">form-group-lg</label>
-    <input class="form-control" type="text">
-  </div>
-  <div class="form-group form-group-sm">
-    <label class="form-label">form-group-sm</label>
-    <input class="form-control" type="text">
-  </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
 </form>
 ```
 
@@ -42,14 +42,14 @@
 
 ```html
 <form class="form-inline">
-  <div class="form-group form-group-lg">
-    <label class="form-label">form-group-lg</label>
-    <input class="form-control" type="text">
-  </div>
-  <div class="form-group form-group-sm">
-    <label class="form-label">form-group-sm</label>
-    <input class="form-control" type="text">
-  </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
 </form>
 ```
 
@@ -59,13 +59,13 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group">
-    <label class="form-label">form-control-lg</label>
-    <input class="form-control form-control-lg" type="text">
-  </div>
-  <div class="form-group">
-    <label class="form-label">form-control-sm</label>
-    <input class="form-control form-control-sm" type="text">
-  </div>
+    <div class="form-group">
+        <label class="form-label">form-control-lg</label>
+        <input class="form-control form-control-lg" type="text">
+    </div>
+    <div class="form-group">
+        <label class="form-label">form-control-sm</label>
+        <input class="form-control form-control-sm" type="text">
+    </div>
 </form>
 ```

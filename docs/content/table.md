@@ -6,17 +6,17 @@
 
 ```html
 <table class="table">
-  <thead>
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
-  <tfoot>
-    <tr><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td></tr>
-  </tfoot>
+    <thead>
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
+    <tfoot>
+        <tr><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td></tr>
+    </tfoot>
 </table>
 ```
 
@@ -26,14 +26,14 @@
 
 ```html
 <table class="table table-striped">
-  <thead>
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <thead>
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -43,14 +43,14 @@
 
 ```html
 <table class="table table-bordered table-striped">
-  <thead class="thead-subtle">
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <thead class="thead-subtle">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -60,14 +60,14 @@
 
 ```html
 <table class="table table-bordered table-striped table-hover">
-  <thead class="thead-subtle">
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <thead class="thead-subtle">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -77,13 +77,13 @@
 
 ```html
 <table class="table table-bordered table-striped table-hover">
-  <thead class="thead-inverse">
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <thead class="thead-inverse">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -91,13 +91,13 @@
 
 ```html
 <table class="table table-bordered table-striped table-hover">
-  <thead class="thead-subtle">
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <thead class="thead-subtle">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -107,13 +107,13 @@
 
 ```html
 <table class="table table-bordered table-sm table-striped table-hover">
-  <thead class="thead-subtle">
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <thead class="thead-subtle">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -125,12 +125,12 @@
 
 ```html
 <table class="table table-bordered table-primary table-striped table-hover">
-  <thead class="thead-inverse">
-    <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <thead class="thead-inverse">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -138,14 +138,14 @@
 
 ```html
 <table class="table table-bordered table-sm table-striped table-hover">
-  <tbody>
-    <tr class="table-active"><th>active</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr class="table-primary"><th>primary</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr class="table-success"><th>success</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr class="table-info"><th>info</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr class="table-warning"><th>warning</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-    <tr class="table-danger"><th>danger</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-  </tbody>
+    <tbody>
+        <tr class="table-active"><th>active</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr class="table-primary"><th>primary</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr class="table-success"><th>success</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr class="table-info"><th>info</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr class="table-warning"><th>warning</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr class="table-danger"><th>danger</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+    </tbody>
 </table>
 ```
 
@@ -153,28 +153,28 @@
 
 ```html
 <table class="table table-bordered table-sm table-striped table-hover">
-  <thead class="thead-inverse">
-    <tr>
-      <th>语境色</th>
-      <th>active</th>
-      <th class="table-primary">primary</th>
-      <th class="table-success">success</th>
-      <th class="table-info">info</th>
-      <th class="table-warning">warning</th>
-      <th class="table-danger">danger</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>数据</td>
-      <td class="table-active">active</td>
-      <td class="table-primary">primary</td>
-      <td class="table-success">success</td>
-      <td class="table-info">info</td>
-      <td class="table-warning">warning</td>
-      <td class="table-danger">danger</td>
-    </tr>
-  </tbody>
+    <thead class="thead-inverse">
+        <tr>
+            <th>语境色</th>
+            <th>active</th>
+            <th class="table-primary">primary</th>
+            <th class="table-success">success</th>
+            <th class="table-info">info</th>
+            <th class="table-warning">warning</th>
+            <th class="table-danger">danger</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>数据</td>
+            <td class="table-active">active</td>
+            <td class="table-primary">primary</td>
+            <td class="table-success">success</td>
+            <td class="table-info">info</td>
+            <td class="table-warning">warning</td>
+            <td class="table-danger">danger</td>
+        </tr>
+    </tbody>
 </table>
 ```
 
@@ -184,15 +184,15 @@
 
 ```html
 <div class="table-responsive">
-  <table class="table table-bordered table-sm table-striped table-hover">
-    <tr>
-      <td class="nobr">长长长长长长长长长长长长</td>
-      <td class="nobr">长长长长长长长长长长长长</td>
-      <td class="nobr">长长长长长长长长长长长长</td>
-      <td class="nobr">长长长长长长长长长长长长</td>
-      <td class="nobr">长长长长长长长长长长长长</td>
-      <td class="nobr">长长长长长长长长长长长长</td>
-    </tr>
-  </table>
+    <table class="table table-bordered table-sm table-striped table-hover">
+        <tr>
+            <td class="nobr">长长长长长长长长长长长长</td>
+            <td class="nobr">长长长长长长长长长长长长</td>
+            <td class="nobr">长长长长长长长长长长长长</td>
+            <td class="nobr">长长长长长长长长长长长长</td>
+            <td class="nobr">长长长长长长长长长长长长</td>
+            <td class="nobr">长长长长长长长长长长长长</td>
+        </tr>
+    </table>
 </div>
 ```

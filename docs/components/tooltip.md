@@ -12,27 +12,27 @@
 
 ```html
 <div class="tooltip tooltip-left">
-  <div class="tooltip-arrow"></div>
-  <div class="tooltip-inner">
-    Tooltip on the left
-  </div>
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the left
+    </div>
 </div>
 <div class="tooltip tooltip-top">
-  <div class="tooltip-arrow"></div>
-  <div class="tooltip-inner">
-    Tooltip on the top
-  </div>
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the top
+    </div>
 </div>
 <div class="tooltip tooltip-bottom">
-  <div class="tooltip-arrow"></div>
-  <div class="tooltip-inner">
-    Tooltip on the bottom
-  </div>
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the bottom
+    </div>
 </div>
 <div class="tooltip tooltip-right">
-  <div class="tooltip-arrow"></div>
-  <div class="tooltip-inner">
-    Tooltip on the right
-  </div>
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the right
+    </div>
 </div>
 ```

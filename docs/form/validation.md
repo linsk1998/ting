@@ -8,16 +8,16 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group has-valid">
-    <label class="form-label">Valid</label>
-    <input type="text" class="form-control"/>
-    <div class="feedback-text">校验通过</div>
-  </div>
-  <div class="form-group has-invalid">
-    <label class="form-label">Invalid</label>
-    <input type="text" class="form-control"/>
-    <p class="feedback-text">Example block-level help text here.</p>
-  </div>
+    <div class="form-group has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-text">校验通过</div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
 </form>
 ```
 
@@ -27,17 +27,17 @@
 
 ```html
 <form class="form">
-  <div class="form-group has-feedback-icon has-valid">
-    <label class="form-label">Valid</label>
-    <input type="text" class="form-control"/>
-    <i class="feedback-icon fa">&#xf00c;</i>
-  </div>
-  <div class="form-group has-feedback-icon has-invalid">
-    <label class="form-label">Invalid</label>
-    <textarea class="form-control"></textarea>
-    <i class="feedback-icon fa">&#xf00d;</i>
-    <p class="feedback-text">Example block-level help text here.</p>
-  </div>
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <textarea class="form-control"></textarea>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
 </form>
 ```
 
@@ -47,18 +47,18 @@
 
 ```html
 <form class="form">
-  <div class="form-group has-valid">
-    <label class="form-label">is-valid</label>
-    <input type="text" class="form-control"/>
-    <div class="feedback-tooltip">
-      校验通过
+    <div class="form-group has-valid">
+        <label class="form-label">is-valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">
+            校验通过
+        </div>
     </div>
-  </div>
-  <div class="form-group has-invalid">
-    <label class="form-label">is-invalid</label>
-    <input type="text" class="form-control"/>
-    <div class="feedback-tooltip">请输入活动名称</div>
-  </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">is-invalid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">请输入活动名称</div>
+    </div>
 </form>
 ```
 
@@ -68,17 +68,17 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group has-feedback-icon has-valid">
-    <label class="form-label">Valid</label>
-    <input type="text" class="form-control"/>
-    <i class="feedback-icon fa">&#xf00c;</i>
-  </div>
-  <div class="form-group has-feedback-icon has-invalid">
-    <label class="form-label">Invalid</label>
-    <input type="text" class="form-control"/>
-    <i class="feedback-icon fa">&#xf00d;</i>
-    <p class="feedback-text">Example block-level help text here.</p>
-  </div>
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
 </form>
 ```
 
@@ -88,16 +88,16 @@
 
 ```html
 <form class="form-inline">
-  <div class="form-group has-feedback-icon has-valid">
-    <label class="form-label">Valid</label>
-    <input type="text" class="form-control"/>
-    <i class="feedback-icon fa">&#xf00c;</i>
-  </div>
-  <div class="form-group has-feedback-icon has-invalid">
-    <label class="form-label">Invalid</label>
-    <input type="text" class="form-control"/>
-    <i class="feedback-icon fa">&#xf00d;</i>
-  </div>
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
 </form>
 ```
 
@@ -107,16 +107,16 @@
 
 ```html
 <form class="form">
-  <div class="form-group form-group-lg has-feedback-icon has-valid">
-    <label class="form-label">form-group-lg</label>
-    <input class="form-control" type="text">
-    <i class="feedback-icon fa">&#xf00c;</i>
-  </div>
-  <div class="form-group form-group-sm has-feedback-icon has-invalid">
-    <label class="form-label">form-group-sm</label>
-    <input class="form-control" type="text">
-    <i class="feedback-icon fa">&#xf00d;</i>
-  </div>
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
 </form>
 ```
 
@@ -124,16 +124,16 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group form-group-lg has-feedback-icon has-valid">
-    <label class="form-label">form-group-lg</label>
-    <input class="form-control" type="text">
-    <i class="feedback-icon fa">&#xf00c;</i>
-  </div>
-  <div class="form-group form-group-sm has-feedback-icon has-invalid">
-    <label class="form-label">form-group-sm</label>
-    <input class="form-control" type="text">
-    <i class="feedback-icon fa">&#xf00d;</i>
-  </div>
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
 </form>
 ```
 
@@ -141,16 +141,16 @@
 
 ```html
 <form class="form-inline">
-  <div class="form-group form-group-lg has-feedback-icon has-valid">
-    <label class="form-label">form-group-lg</label>
-    <input class="form-control" type="text">
-    <i class="feedback-icon fa">&#xf00c;</i>
-  </div>
-  <div class="form-group form-group-sm has-feedback-icon has-invalid">
-    <label class="form-label">form-group-sm</label>
-    <input class="form-control" type="text">
-    <i class="feedback-icon fa">&#xf00d;</i>
-  </div>
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
 </form>
 ```
 
@@ -160,15 +160,15 @@
 
 ```html
 <form class="form-inline">
-  <div class="form-group has-feedback-icon has-valid">
-    <label class="form-label">form-control-lg</label>
-    <input class="form-control form-control-lg" type="text">
-    <i class="feedback-icon fa">&#xf00c;</i>
-  </div>
-  <div class="form-group form-group-sm has-feedback-icon has-invalid">
-    <label class="form-label">form-group-sm</label>
-    <input class="form-control form-control-sm" type="text">
-    <i class="feedback-icon fa">&#xf00d;</i>
-  </div>
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">form-control-lg</label>
+        <input class="form-control form-control-lg" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control form-control-sm" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
 </form>
 ```

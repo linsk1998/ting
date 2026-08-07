@@ -12,31 +12,31 @@
 
 ```html
 <div class="popover popover-left">
-  <div class="popover-arrow"></div>
-  <h3 class="popover-header">Popover title</h3>
-  <div class="popover-body">
-    And here's some amazing content. It's very engaging.
-  </div>
+    <div class="popover-arrow"></div>
+    <h3 class="popover-header">Popover title</h3>
+    <div class="popover-body">
+        And here's some amazing content. It's very engaging.
+    </div>
 </div>
 <div class="popover popover-top">
-  <div class="popover-arrow"></div>
-  <h3 class="popover-header">Popover title</h3>
-  <div class="popover-body">
-    And here's some amazing content. It's very engaging.
-  </div>
+    <div class="popover-arrow"></div>
+    <h3 class="popover-header">Popover title</h3>
+    <div class="popover-body">
+        And here's some amazing content. It's very engaging.
+    </div>
 </div>
 <div class="popover popover-bottom">
-  <div class="popover-arrow"></div>
-  <h3 class="popover-header">Popover title</h3>
-  <div class="popover-body">
-    And here's some amazing content. It's very engaging.
-  </div>
+    <div class="popover-arrow"></div>
+    <h3 class="popover-header">Popover title</h3>
+    <div class="popover-body">
+        And here's some amazing content. It's very engaging.
+    </div>
 </div>
 <div class="popover popover-right">
-  <div class="popover-arrow"></div>
-  <h3 class="popover-header">Popover title</h3>
-  <div class="popover-body">
-    And here's some amazing content. It's very engaging.
-  </div>
+    <div class="popover-arrow"></div>
+    <h3 class="popover-header">Popover title</h3>
+    <div class="popover-body">
+        And here's some amazing content. It's very engaging.
+    </div>
 </div>
 ```

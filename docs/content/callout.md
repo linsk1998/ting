@@ -8,8 +8,8 @@
 
 ```html
 <div class="callout">
-  <h4>Hello!</h4>
-  <p>A wonderful serenity has taken possession of my entire soul.</p>
+    <h4>Hello!</h4>
+    <p>A wonderful serenity has taken possession of my entire soul.</p>
 </div>
 ```
 
@@ -19,27 +19,27 @@
 
 ```html
 <div class="callout callout-primary">
-  <h4>主要标志</h4>
-  <p>A wonderful serenity has taken possession of my entire soul.</p>
+    <h4>主要标志</h4>
+    <p>A wonderful serenity has taken possession of my entire soul.</p>
 </div>
 
 <div class="callout callout-success">
-  <h4>成功标志</h4>
-  <p>A wonderful serenity has taken possession of my entire soul.</p>
+    <h4>成功标志</h4>
+    <p>A wonderful serenity has taken possession of my entire soul.</p>
 </div>
 
 <div class="callout callout-info">
-  <h4>信息标志</h4>
-  <p>A wonderful serenity has taken possession of my entire soul.</p>
+    <h4>信息标志</h4>
+    <p>A wonderful serenity has taken possession of my entire soul.</p>
 </div>
 
 <div class="callout callout-warning">
-  <h4>警告标志</h4>
-  <p>A wonderful serenity has taken possession of my entire soul.</p>
+    <h4>警告标志</h4>
+    <p>A wonderful serenity has taken possession of my entire soul.</p>
 </div>
 
 <div class="callout callout-danger">
-  <h4>危险标志</h4>
-  <p>A wonderful serenity has taken possession of my entire soul.</p>
+    <h4>危险标志</h4>
+    <p>A wonderful serenity has taken possession of my entire soul.</p>
 </div>
 ```

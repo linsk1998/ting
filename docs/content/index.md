@@ -119,16 +119,16 @@
 			
 ```html
 <div class="media">
-	<div class="media-left">
-		<a href="#"><img class="media-object" src="http://placeholder.qiniudn.com/64x64" width="64" height="64"/></a>
-	</div>
-	<div class="media-right">
-		<a href="#"><img class="media-object" src="http://placeholder.qiniudn.com/64x64" width="64" height="64"/></a>
-	</div>
-	<div class="media-center">
-		<h4 class="media-heading">Media heading</h4>
-		Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-	</div>
+    <div class="media-left">
+        <a href="#"><img class="media-object" src="http://placeholder.qiniudn.com/64x64" width="64" height="64"/></a>
+    </div>
+    <div class="media-right">
+        <a href="#"><img class="media-object" src="http://placeholder.qiniudn.com/64x64" width="64" height="64"/></a>
+    </div>
+    <div class="media-center">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+    </div>
 </div>
 ```
 
@@ -175,7 +175,7 @@
 			
 ```html
 <a href="#" class="card">
-	<img src="..." alt="...">
+    <img src="..." alt="...">
 </a>
 ```
 

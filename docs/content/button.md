@@ -84,12 +84,12 @@
 
 ```html
 <button type="button" class="btn btn-primary">
-  <i class="fa btn-icon-left">&#xf007;</i>
-  <span class="btn-label">用户</span>
+    <i class="fa btn-icon-left">&#xf007;</i>
+    <span class="btn-label">用户</span>
 </button>
 <button type="button" class="btn btn-primary">
-  <span class="btn-label">下载</span>
-  <i class="fa btn-icon-right">&#xf019;</i>
+    <span class="btn-label">下载</span>
+    <i class="fa btn-icon-right">&#xf019;</i>
 </button>
 ```
 

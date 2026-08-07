@@ -8,9 +8,9 @@
 
 ```html
 <div style="height:80px; background:#eee; margin-bottom:20px; padding:0 200px;">
-  <div class="center-block" style="width:150px; background-color:#ccc;">
-    center-block<br/>该 div 显示在中间
-  </div>
+    <div class="center-block" style="width:150px; background-color:#ccc;">
+        center-block<br/>该 div 显示在中间
+    </div>
 </div>
 ```
 
@@ -22,7 +22,7 @@
 
 ```html
 <div class="vertical-align" style="height:80px; background:#eee; margin-bottom:20px;">
-  <div class="vertical-align-middle">vertical-align-middle</div>
+    <div class="vertical-align-middle">vertical-align-middle</div>
 </div>
 ```
 
@@ -30,7 +30,7 @@
 
 ```html
 <div class="vertical-align" style="height:80px; background:#eee; margin-bottom:20px;">
-  <div class="vertical-align-bottom">vertical-align-bottom</div>
+    <div class="vertical-align-bottom">vertical-align-bottom</div>
 </div>
 ```
 
@@ -40,7 +40,7 @@
 
 ```html
 <div class="vertical-align" style="height:100px; background:#eee;">
-  <img class="vertical-align-middle" src="../images/logo.png" width="48" height="48"/>
-  <span class="vertical-align-middle">多行文字<br/>垂直<br/>居中</span>
+    <img class="vertical-align-middle" src="../images/logo.png" width="48" height="48"/>
+    <span class="vertical-align-middle">多行文字<br/>垂直<br/>居中</span>
 </div>
 ```

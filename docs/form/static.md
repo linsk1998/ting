@@ -4,10 +4,10 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group">
-    <label class="form-label">Text</label>
-    <p class="form-control-static">email@example.com</p>
-  </div>
+    <div class="form-group">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
 </form>
 ```
 
@@ -17,13 +17,13 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group form-group-lg">
-    <label class="form-label">Text</label>
-    <p class="form-control-static">email@example.com</p>
-  </div>
-  <div class="form-group form-group-sm">
-    <label class="form-label">Text</label>
-    <p class="form-control-static">email@example.com</p>
-  </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
 </form>
 ```

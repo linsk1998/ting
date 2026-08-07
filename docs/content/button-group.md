@@ -8,9 +8,9 @@
 
 ```html
 <div class="btn-group">
-  <button type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
 </div>
 ```
 
@@ -20,20 +20,20 @@
 
 ```html
 <div class="btn-toolbar">
-  <div class="btn-group">
-    <button type="button" class="btn btn-default">1</button>
-    <button type="button" class="btn btn-default">2</button>
-    <button type="button" class="btn btn-default">3</button>
-    <button type="button" class="btn btn-default">4</button>
-  </div>
-  <div class="btn-group">
-    <button type="button" class="btn btn-default">5</button>
-    <button type="button" class="btn btn-default">6</button>
-    <button type="button" class="btn btn-default">7</button>
-  </div>
-  <div class="btn-group">
-    <button type="button" class="btn btn-default">8</button>
-  </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+        <button type="button" class="btn btn-default">4</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">5</button>
+        <button type="button" class="btn btn-default">6</button>
+        <button type="button" class="btn btn-default">7</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">8</button>
+    </div>
 </div>
 ```
 
@@ -43,9 +43,9 @@
 
 ```html
 <div class="btn-group">
-  <button type="button" class="btn btn-default btn-lg">Left</button>
-  <button type="button" class="btn btn-default btn-lg">Middle</button>
-  <button type="button" class="btn btn-default btn-lg">Right</button>
+    <button type="button" class="btn btn-default btn-lg">Left</button>
+    <button type="button" class="btn btn-default btn-lg">Middle</button>
+    <button type="button" class="btn btn-default btn-lg">Right</button>
 </div>
 ```
 
@@ -53,9 +53,9 @@
 
 ```html
 <div class="btn-group">
-  <button type="button" class="btn btn-default btn-sm">Left</button>
-  <button type="button" class="btn btn-default btn-sm">Middle</button>
-  <button type="button" class="btn btn-default btn-sm">Right</button>
+    <button type="button" class="btn btn-default btn-sm">Left</button>
+    <button type="button" class="btn btn-default btn-sm">Middle</button>
+    <button type="button" class="btn btn-default btn-sm">Right</button>
 </div>
 ```
 
@@ -63,9 +63,9 @@
 
 ```html
 <div class="btn-group">
-  <button type="button" class="btn btn-default btn-xs">Left</button>
-  <button type="button" class="btn btn-default btn-xs">Middle</button>
-  <button type="button" class="btn btn-default btn-xs">Right</button>
+    <button type="button" class="btn btn-default btn-xs">Left</button>
+    <button type="button" class="btn btn-default btn-xs">Middle</button>
+    <button type="button" class="btn btn-default btn-xs">Right</button>
 </div>
 ```
 
@@ -75,9 +75,9 @@
 
 ```html
 <div class="btn-group btn-group-justified">
-  <button type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
 </div>
 ```
 
@@ -87,9 +87,9 @@
 
 ```html
 <div class="btn-group-vertical">
-  <button type="button" class="btn btn-default">Top</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Bottom</button>
+    <button type="button" class="btn btn-default">Top</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Bottom</button>
 </div>
 ```
 
@@ -99,9 +99,9 @@
 
 ```html
 <div class="btn-group">
-  <button type="button" class="btn btn-primary">Action</button>
-  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split">
-    <i class="fa">&#xf0d7;</i>
-  </button>
+    <button type="button" class="btn btn-primary">Action</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split">
+        <i class="fa">&#xf0d7;</i>
+    </button>
 </div>
 ```

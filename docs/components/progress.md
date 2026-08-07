@@ -6,24 +6,24 @@
 
 ```html
 <div class="progress">
-	<div class="progress-bar" style="width:26%">26%</div>
+    <div class="progress-bar" style="width:26%">26%</div>
 </div>
 <div class="progress">
-	<div class="progress-bar progress-bar-success" style="width:26%">26%</div>
+    <div class="progress-bar progress-bar-success" style="width:26%">26%</div>
 </div>
 <div class="progress">
-	<div class="progress-bar progress-bar-info" style="width:16%">18%</div><div class="progress-bar progress-bar-danger" style="width:5%">5%</div>
+    <div class="progress-bar progress-bar-info" style="width:16%">18%</div><div class="progress-bar progress-bar-danger" style="width:5%">5%</div>
 </div>
 <div class="progress">
-	<div class="progress-bar progress-bar-warning" style="width:26%">26%</div>
+    <div class="progress-bar progress-bar-warning" style="width:26%">26%</div>
 </div>
 <div class="progress">
-	<div class="progress-bar progress-bar-danger" style="width:26%">26%</div>
+    <div class="progress-bar progress-bar-danger" style="width:26%">26%</div>
 </div>
 <div class="progress progress-sm">
-	<div class="progress-bar progress-bar-danger" style="width:26%"></div>
+    <div class="progress-bar progress-bar-danger" style="width:26%"></div>
 </div>
 <div class="progress progress-xs">
-	<div class="progress-bar progress-bar-danger" style="width:26%"></div>
+    <div class="progress-bar progress-bar-danger" style="width:26%"></div>
 </div>
 ```

@@ -6,25 +6,25 @@
 
 ```html
 <div class="win" style="left: 50px; top: 50px; width: 400px; height: 300px;">
-  <div class="win-header">
-    <span class="win-title">
-      <i class="fa">&#xf0ca;</i> 窗口标题
-    </span>
-    <div class="win-btn-group">
-      <button type="button" class="btn btn-default btn-square-xs">
-        <i class="fa">&#xf068;</i>
-      </button>
-      <button type="button" class="btn btn-default btn-square-xs">
-        <i class="fa">&#xf065;</i>
-      </button>
-      <button type="button" class="btn btn-danger btn-square-xs win-close">
-        <i class="fa">&#xf00d;</i>
-      </button>
+    <div class="win-header">
+        <span class="win-title">
+            <i class="fa">&#xf0ca;</i> 窗口标题
+        </span>
+        <div class="win-btn-group">
+            <button type="button" class="btn btn-default btn-square-xs">
+                <i class="fa">&#xf068;</i>
+            </button>
+            <button type="button" class="btn btn-default btn-square-xs">
+                <i class="fa">&#xf065;</i>
+            </button>
+            <button type="button" class="btn btn-danger btn-square-xs win-close">
+                <i class="fa">&#xf00d;</i>
+            </button>
+        </div>
     </div>
-  </div>
-  <div class="win-body">
-    <p>窗口内容区域</p>
-  </div>
+    <div class="win-body">
+        <p>窗口内容区域</p>
+    </div>
 </div>
 ```
 
@@ -34,12 +34,12 @@
 
 ```html
 <div class="win win-active" style="position:relative; width:400px; height:200px;">
-  <div class="win-header">
-    <span class="win-title">激活窗口</span>
-  </div>
-  <div class="win-body">
-    <p>激活状态下的窗口</p>
-  </div>
+    <div class="win-header">
+        <span class="win-title">激活窗口</span>
+    </div>
+    <div class="win-body">
+        <p>激活状态下的窗口</p>
+    </div>
 </div>
 ```
 
@@ -49,13 +49,13 @@
 
 ```html
 <div class="win win-disabled" style="position:relative; width:400px; height:150px;">
-  <div class="win-header">
-    <span class="win-title">禁用窗口</span>
-  </div>
-  <div class="win-body">
-    <p>无法操作的窗口</p>
-  </div>
-  <div class="win-hit"></div>
+    <div class="win-header">
+        <span class="win-title">禁用窗口</span>
+    </div>
+    <div class="win-body">
+        <p>无法操作的窗口</p>
+    </div>
+    <div class="win-hit"></div>
 </div>
 ```
 
@@ -65,13 +65,13 @@
 
 ```html
 <div class="win win-active" style="position:relative; width:400px; height:200px;">
-  <div class="win-header">
-    <span class="win-title">可缩放窗口</span>
-  </div>
-  <div class="win-body">
-    <p>拖拽右下角进行缩放</p>
-  </div>
-  <div class="win-resize"></div>
+    <div class="win-header">
+        <span class="win-title">可缩放窗口</span>
+    </div>
+    <div class="win-body">
+        <p>拖拽右下角进行缩放</p>
+    </div>
+    <div class="win-resize"></div>
 </div>
 ```
 

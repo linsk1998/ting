@@ -46,10 +46,10 @@
 
 ```html
 <div class="card" style="position:relative">
-  <div class="card-body">
-    <h3>卡片标题</h3>
-    <p>卡片的描述文字...</p>
-    <a class="link link-stretched" href="#">拉伸链接</a>
-  </div>
+    <div class="card-body">
+        <h3>卡片标题</h3>
+        <p>卡片的描述文字...</p>
+        <a class="link link-stretched" href="#">拉伸链接</a>
+    </div>
 </div>
 ```

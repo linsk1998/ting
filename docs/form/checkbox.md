@@ -10,9 +10,9 @@
 
 ```html
 <div class="checkbox-group">
-  <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-  <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-  <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
 </div>
 ```
 
@@ -20,9 +20,9 @@
 
 ```html
 <div class="checkbox-group-horizontal">
-  <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-  <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-  <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
 </div>
 ```
 
@@ -32,9 +32,9 @@
 
 ```html
 <div class="checkbox-group-horizontal">
-  <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
-  <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
-  <label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
+    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
 </div>
 ```
 
@@ -44,11 +44,11 @@
 
 ```html
 <div class="checkbox-group-horizontal has-invalid">
-  <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-  <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-  <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
-  <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
-  <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
 </div>
 ```
 
@@ -60,8 +60,8 @@
 
 ```html
 <div class="radio-group">
-  <label><div class="radio"><input type="radio" name="demo"></div>默认状态</label>
-  <label><div class="radio radio-checked"><input type="radio" name="demo"></div>选中</label>
+    <label><div class="radio"><input type="radio" name="demo"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo"></div>选中</label>
 </div>
 ```
 
@@ -69,8 +69,8 @@
 
 ```html
 <div class="radio-group-horizontal">
-  <label><div class="radio"><input type="radio" name="demo2"></div>默认状态</label>
-  <label><div class="radio radio-checked"><input type="radio" name="demo2"></div>选中</label>
+    <label><div class="radio"><input type="radio" name="demo2"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo2"></div>选中</label>
 </div>
 ```
 
@@ -78,8 +78,8 @@
 
 ```html
 <div class="radio-group-horizontal">
-  <label><div class="radio radio-disabled"><input type="radio" name="demo3" disabled></div>默认状态</label>
-  <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo3" disabled></div>选中</label>
+    <label><div class="radio radio-disabled"><input type="radio" name="demo3" disabled></div>默认状态</label>
+    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo3" disabled></div>选中</label>
 </div>
 ```
 
@@ -87,9 +87,9 @@
 
 ```html
 <div class="radio-group-horizontal has-invalid">
-  <label><div class="radio"><input type="radio" name="demo4"></div>默认状态</label>
-  <label><div class="radio radio-checked"><input type="radio" name="demo4"></div>选中</label>
-  <label><div class="radio radio-disabled"><input type="radio" name="demo4" disabled></div>默认状态</label>
-  <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo4" disabled></div>选中</label>
+    <label><div class="radio"><input type="radio" name="demo4"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo4"></div>选中</label>
+    <label><div class="radio radio-disabled"><input type="radio" name="demo4" disabled></div>默认状态</label>
+    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo4" disabled></div>选中</label>
 </div>
 ```

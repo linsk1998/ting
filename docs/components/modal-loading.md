@@ -6,9 +6,9 @@
 
 ```html
 <div class="modal modal-loading">
-  <div class="loading-circular" role="status">
-    <span class="sr-only">加载中...</span>
-  </div>
+    <div class="loading-circular" role="status">
+        <span class="sr-only">加载中...</span>
+    </div>
 </div>
 ```
 

@@ -6,29 +6,29 @@
 
 ```html
 <form class="form">
-  <div class="form-group">
-    <label class="form-label" for="email">普通文本</label>
-    <input type="email" class="form-control" name="email" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label class="form-label" for="password">密码</label>
-    <input type="password" class="form-control" name="password" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label class="form-label">文本域</label>
-    <textarea class="form-control" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label class="form-label">下拉</label>
-    <select class="form-control">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="form-group">
+        <label class="form-label" for="email">普通文本</label>
+        <input type="email" class="form-control" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="password">密码</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label class="form-label">文本域</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="form-label">下拉</label>
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 ```
 
@@ -67,20 +67,20 @@
 
 ```html
 <form class="form-horizontal">
-  <div class="form-group">
-    <label class="form-label">Email</label>
-    <input type="email" class="form-control" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label class="form-label">Password</label>
-    <input type="password" class="form-control" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label class="form-check"><input type="checkbox"> Remember me</label>
-  </div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </div>
+    <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label class="form-check"><input type="checkbox"> Remember me</label>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
 </form>
 ```
 
@@ -90,30 +90,30 @@
 
 ```html
 <form class="form">
-  <div class="form-group row">
-    <label class="form-label col-md-2">Email</label>
-    <div class="col-md-10">
-      <input type="email" class="form-control" placeholder="Email">
+    <div class="form-group row">
+        <label class="form-label col-md-2">Email</label>
+        <div class="col-md-10">
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <label class="form-label col-md-2">Password</label>
-    <div class="col-md-10">
-      <input type="password" class="form-control" placeholder="Password">
+    <div class="form-group row">
+        <label class="form-label col-md-2">Password</label>
+        <div class="col-md-10">
+            <input type="password" class="form-control" placeholder="Password">
+        </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-md-offset-2 col-md-10">
-      <div class="form-check">
-        <label><input type="checkbox"> Remember me</label>
-      </div>
+    <div class="form-group row">
+        <div class="col-md-offset-2 col-md-10">
+            <div class="form-check">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-md-offset-2 col-md-10">
-      <button type="submit" class="btn btn-primary">Sign in</button>
+    <div class="form-group row">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
     </div>
-  </div>
 </form>
 ```
 

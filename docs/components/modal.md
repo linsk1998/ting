@@ -6,19 +6,19 @@
 
 ```html
 <div class="modal">
-  <div class="modal-center">
-    <div class="dialog">
-      <div class="dialog-header">
-        <span class="dialog-title">标题</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-      </div>
-      <div class="dialog-body"><p>模态遮罩内容</p></div>
-      <div class="dialog-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-primary">确定</button>
-      </div>
+    <div class="modal-center">
+        <div class="dialog">
+            <div class="dialog-header">
+                <span class="dialog-title">标题</span>
+                <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+            </div>
+            <div class="dialog-body"><p>模态遮罩内容</p></div>
+            <div class="dialog-footer">
+                <button type="button" class="btn btn-default">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 ```
 

@@ -8,16 +8,16 @@
 
 ```html
 <div class="btn-toolbar">
-  <label class="btn btn-toggle">
-    <div class="checkbox"><input type="checkbox"></div>
-    未选中
-  </label>
-  <label class="btn btn-toggle btn-toggle-checked">
-    <div class="checkbox checkbox-checked"><input type="checkbox"></div>
-    选中
-  </label>
-  <button class="btn btn-toggle">未选中</button>
-  <button class="btn btn-toggle btn-toggle-checked">选中</button>
+    <label class="btn btn-toggle">
+        <div class="checkbox"><input type="checkbox"></div>
+        未选中
+    </label>
+    <label class="btn btn-toggle btn-toggle-checked">
+        <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+        选中
+    </label>
+    <button class="btn btn-toggle">未选中</button>
+    <button class="btn btn-toggle btn-toggle-checked">选中</button>
 </div>
 ```
 
@@ -25,16 +25,16 @@
 
 ```html
 <div class="btn-toolbar">
-  <label class="btn btn-toggle">
-    <div class="radio"><input type="radio" name="radio-group"></div>
-    未选中
-  </label>
-  <label class="btn btn-toggle btn-toggle-checked">
-    <div class="radio radio-checked"><input type="radio" name="radio-group"></div>
-    选中
-  </label>
-  <button class="btn btn-toggle">未选中</button>
-  <button class="btn btn-toggle btn-toggle-checked">选中</button>
+    <label class="btn btn-toggle">
+        <div class="radio"><input type="radio" name="radio-group"></div>
+        未选中
+    </label>
+    <label class="btn btn-toggle btn-toggle-checked">
+        <div class="radio radio-checked"><input type="radio" name="radio-group"></div>
+        选中
+    </label>
+    <button class="btn btn-toggle">未选中</button>
+    <button class="btn btn-toggle btn-toggle-checked">选中</button>
 </div>
 ```
 
@@ -42,19 +42,19 @@
 
 ```html
 <div class="btn-toolbar">
-  <div class="btn-group">
-    <label class="btn btn-toggle">
-      <div class="checkbox"><input type="checkbox"></div>
-      未选中
-    </label>
-    <label class="btn btn-toggle btn-toggle-checked">
-      <div class="checkbox checkbox-checked"><input type="checkbox"></div>
-      选中
-    </label>
-  </div>
-  <div class="btn-group">
-    <button class="btn btn-toggle">未选中</button>
-    <button class="btn btn-toggle btn-toggle-checked">选中</button>
-  </div>
+    <div class="btn-group">
+        <label class="btn btn-toggle">
+            <div class="checkbox"><input type="checkbox"></div>
+            未选中
+        </label>
+        <label class="btn btn-toggle btn-toggle-checked">
+            <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+            选中
+        </label>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-toggle">未选中</button>
+        <button class="btn btn-toggle btn-toggle-checked">选中</button>
+    </div>
 </div>
 ```

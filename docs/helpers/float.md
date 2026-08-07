@@ -8,8 +8,8 @@
 
 ```html
 <div class="clearfix">
-  <div class="pull-right">先写右</div>
-  <div class="pull-left">再写左</div>
+    <div class="pull-right">先写右</div>
+    <div class="pull-left">再写左</div>
 </div>
 ```
 
