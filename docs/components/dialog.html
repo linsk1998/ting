@@ -1,72 +1,42 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="true" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>对话框</title>
-	<!-- InstanceEndEditable -->
+	<title>对话框 - 组件 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" -->
-	<style>
-	.row .modal-center{ margin-bottom:32px;}
-	</style>
-	<!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar"><div class="navbar-brand"></div></div>
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse">
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-responsive-dropdown">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">组件</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li class="active"><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
@@ -77,190 +47,294 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">模态对话框</h1>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">对话框</span>
-						</div>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-warning">&#xf071;</i>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="dialog-footer">
-							<a href="javascript:voud 0" class="btn btn-primary">保存</a>
-							<a href="javascript:voud 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog dialog-primary" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">primary对话框</span>
-						</div>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-success">&#xf058;</i>
-							<i class="fa icon-3x icon-pull-left text-success">&#xf05d;</i>
-							<i class="fa icon-3x icon-pull-left text-danger">&#xf057;</i>
-							<i class="fa icon-3x icon-pull-left text-danger">&#xf05c;</i>
-							<i class="fa icon-3x icon-pull-left text-info">&#xf059;</i>
-							<i class="fa icon-3x icon-pull-left text-info">&#xf05a;</i>
-							<i class="fa icon-3x icon-pull-left text-warning">&#xf06a;</i>
-							<i class="fa icon-3x icon-pull-left text-warning">&#xf005;</i>
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="dialog-footer">
-							<a href="javascript:void 0" class="btn btn-primary">保存</a>
-							<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog dialog-danger" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">danger对话框</span>
-						</div>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-danger">&#xf057;</i>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="dialog-footer" align="right">
-							<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-							<a href="javascript:void 0" class="btn btn-danger">保存</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog dialog-warning" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">warning对话框</span>
-						</div>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-warning">&#xf06a;</i>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="dialog-footer" align="right">
-							<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-							<a href="javascript:void 0" class="btn btn-warning">保存</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog dialog-success" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">success对话框</span>
-						</div>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-success">&#xf058;</i>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="dialog-footer" align="right">
-							<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-							<a href="javascript:void 0" class="btn btn-success">保存</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog dialog-info" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">info对话框</span>
-						</div>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-info">&#xf059;</i>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="dialog-footer" align="right">
-							<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-							<a href="javascript:void 0" class="btn btn-info">保存</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog dialog-dark" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">黑色对话框</span>
-						</div>
-						<div class="dialog-footer" align="right">
-							<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-							<a href="javascript:void 0" class="btn btn-dark">保存</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog dialog-rim" style="_width:400px; min-width:400px;">
-						<div class="dialog-header">
-							<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-							<span class="dialog-title">对话框边缘</span>
-						</div>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-success">&#xf058;</i>
-							<p>One fine body&hellip;</p>
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="dialog-footer" align="right">
-							<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-							<a href="javascript:void 0" class="btn btn-primary">保存</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 modal-center">
-					<div class="dialog" style="_width:400px; min-width:400px;">
-						<a href="javascript:;" class="dialog-close"></a>
-						<div class="dialog-body">
-							<i class="fa icon-3x icon-pull-left text-success">&#xf058;</i>
-							<p>One fine body&hellip;</p>
-							<p class="dropshadow">One fine body&hellip;</p>
-						</div>
-					</div>
-				</div>
-			</div>
+<h1 class="page-header" id="对话框">对话框</h1>
+<p>对话框（<code>.dialog</code>）用于在页面中弹出浮层进行内容展示或交互，支持多种语境色主题。</p>
+<h2 class="page-header" id="基本用法">基本用法</h2>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog">
+    <div class="dialog-header">
+        <span class="dialog-title">对话框标题</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body">
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+    </div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;对话框标题&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">p</span>&gt;Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;取消&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="语境色">语境色</h2>
+<h3 id="主题色对话框">主题色对话框</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog dialog-primary">
+    <div class="dialog-header">
+        <span class="dialog-title">primary对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog dialog-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;primary对话框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;内容&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;取消&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="成功对话框">成功对话框</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog dialog-success">
+    <div class="dialog-header">
+        <span class="dialog-title">success对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-success">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog dialog-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;success对话框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;内容&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="信息对话框">信息对话框</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog dialog-info">
+    <div class="dialog-header">
+        <span class="dialog-title">info对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-info">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog dialog-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;info对话框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;内容&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="警告对话框">警告对话框</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog dialog-warning">
+    <div class="dialog-header">
+        <span class="dialog-title">warning对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-warning">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog dialog-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;warning对话框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;内容&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="危险对话框">危险对话框</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog dialog-danger">
+    <div class="dialog-header">
+        <span class="dialog-title">danger对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-danger">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog dialog-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;danger对话框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;内容&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="暗色对话框">暗色对话框</h3>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog dialog-dark">
+    <div class="dialog-header">
+        <span class="dialog-title">dark对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-dark">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog dialog-dark</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;dark对话框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;内容&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;取消&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-dark</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="带外边框">带外边框</h2>
+<p>使用 <code>.dialog-rim</code> 为对话框添加额外的外层边框。</p>
+
+<div class="tabs" role="tabbable">
+  <ul class="nav nav-indicator">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example active"><div class="dialog dialog-rim">
+    <div class="dialog-header">
+        <span class="dialog-title">带外边框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary">确定</button>
+    </div>
+</div></div>
+    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog dialog-rim</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;带外边框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;内容&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dialog-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="核心类">核心类</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td><code>.dialog</code></td><td>对话框容器</td>
+</tr>
+<tr>
+<td><code>.dialog-header</code></td><td>头部区域</td>
+</tr>
+<tr>
+<td><code>.dialog-title</code></td><td>标题文字</td>
+</tr>
+<tr>
+<td><code>.dialog-body</code></td><td>主体内容</td>
+</tr>
+<tr>
+<td><code>.dialog-footer</code></td><td>底部按钮区</td>
+</tr>
+<tr>
+<td><code>.dialog-primary</code> / <code>.dialog-success</code> / <code>.dialog-info</code> / <code>.dialog-warning</code> / <code>.dialog-danger</code> / <code>.dialog-dark</code></td><td>语境色主题</td>
+</tr>
+<tr>
+<td><code>.dialog-rim</code></td><td>外边框样式</td>
+</tr>
+</tbody></table></div>
+
 		</div>
-		<div class="modal modal-center" role="modal">
-			<!--[if lte IE 6]><iframe class="modal-hit"></iframe><![endif]-->
-			<!--[if (lte IE 8)&(gte IE 7)]><div class="modal-hit"></div><![endif]-->
-			<div class="dialog" style="_width:400px; min-width:400px;">
-				<div class="dialog-header">
-					<a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-					<span class="dialog-title">对话框</span>
-				</div>
-				<div class="dialog-body">
-					<p>在对话框关闭按钮中，加入属性data-dismiss，来关闭指定role的对话框</p>
-					<p>One fine body&hellip;</p>
-					<p>One fine body&hellip;</p>
-				</div>
-				<div class="dialog-footer">
-					<a href="javascript:void 0" class="btn btn-default" data-dismiss="modal">关闭</a>
-					<a href="javascript:void 0" class="btn btn-primary">保存</a>
-				</div>
-			</div>
-		</div>
-		<!-- InstanceEndEditable -->
 		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
 			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>
