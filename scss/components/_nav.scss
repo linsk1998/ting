@@ -117,10 +117,12 @@ body:last-child .nav-justified, x:-moz-any-link {
 .tabs-active { display:block;}
 
 @if $enable-dark {
-	.nav-indicator{ border-bottom-color:$dark-divider;}
-	.nav-indicator .nav-link{ color:$nav-dark-indicator-color;}
-	.nav-indicator .nav-link:hover{ color:$nav-dark-indicator-color-hover;}
-	.nav-indicator .active{ border-bottom-color:$nav-dark-indicator-active-color;}
-	.nav-indicator .active .nav-link, .nav-indicator a.active,
-	.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$nav-dark-indicator-active-color;}
+	.dark {
+		.nav-indicator{ border-bottom-color:$dark-divider;}
+		.nav-indicator .nav-link{ color:$nav-dark-indicator-color;}
+		.nav-indicator .nav-link:hover{ color:$nav-dark-indicator-color-hover;}
+		.nav-indicator .active{ border-bottom-color:$nav-dark-indicator-active-color;}
+		.nav-indicator .active .nav-link, .nav-indicator a.active,
+		.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$nav-dark-indicator-active-color;}
+	}
 }

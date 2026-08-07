@@ -1,6 +1,6 @@
 # 折叠块
 
-折叠块用于隐藏/显示内容区域，通过切换 `.show` 类来控制展开和收起。这个类用于兼容 Bootstrap 的 `collapse`，本项目推荐使用 [collapsible](collapsible-view.md)。
+折叠块用于隐藏/显示内容区域，通过切换 `.show` 类来控制展开和收起。这个类用于兼容 Bootstrap 的 `collapse`，本项目推荐使用 [collapsible](collapsible.md)。
 
 ## 基本用法
 
