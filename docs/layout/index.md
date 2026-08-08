@@ -123,8 +123,11 @@
 | 类 | 描述 |
 |---|---|
 | .center-block | 设置元素为 display:block 并居中显示 |
-| .vertical-align | 垂直对齐容器。 |
-| .vertical-align-middle | 垂直居中内容。 |
-| .vertical-align-bottom | 底部对齐内容。 |
+| .valign | 使子元素垂直对齐容器。 |
+| .valign-sibling | 使兄弟元素垂直对齐 |
+| .valign-top | 顶部对齐内容。 |
+| .valign-middle | 垂直居中内容。 |
+| .valign-bottom | 底部对齐内容。 |
+
 [使用方法](./align.md)
 

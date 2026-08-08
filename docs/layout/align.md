@@ -16,21 +16,21 @@
 
 ## 垂直对齐
 
-使用 `.vertical-align` 容器配合 `.vertical-align-middle` 或 `.vertical-align-bottom` 实现垂直居中或底部对齐。
+使用 `.valign` 容器配合 `.valign-middle` 或 `.valign-bottom` 实现垂直居中或底部对齐。
 
 ### 垂直居中
 
 ```html
-<div class="vertical-align" style="height:80px; background:#eee; margin-bottom:20px;">
-    <div class="vertical-align-middle">vertical-align-middle</div>
+<div class="valign" style="height:80px; background:#eee; margin-bottom:20px;">
+    <div class="valign-middle">valign-middle</div>
 </div>
 ```
 
 ### 底部对齐
 
 ```html
-<div class="vertical-align" style="height:80px; background:#eee; margin-bottom:20px;">
-    <div class="vertical-align-bottom">vertical-align-bottom</div>
+<div class="valign" style="height:80px; background:#eee; margin-bottom:20px;">
+    <div class="valign-bottom">valign-bottom</div>
 </div>
 ```
 
@@ -39,22 +39,22 @@
 可同时使用图片和文字的垂直居中：
 
 ```html
-<div class="vertical-align" style="height:100px; background:#eee;">
-    <img class="vertical-align-middle" src="../images/logo.png" width="48" height="48"/>
-    <span class="vertical-align-middle">多行文字<br/>垂直<br/>居中</span>
+<div class="valign" style="height:100px; background:#eee;">
+    <img class="valign-middle" src="../images/logo.png" width="48" height="48"/>
+    <span class="valign-middle">多行文字<br/>垂直<br/>居中</span>
 </div>
 ```
 
 ## 兄弟节点垂直对齐
 
-使用 `.vertical-align-sibling` 可以使其兄弟节点垂对齐。然后兄弟就可以使用 `.vertical-align-middle` 或 `.vertical-align-bottom` 实现垂直居中或底部对齐。
+使用 `.valign-sibling` 可以使其兄弟节点垂对齐。然后兄弟就可以使用 `.valign-middle` 或 `.valign-bottom` 实现垂直居中或底部对齐。
 
 ### 垂直居中
 
 ```html
 <div style="height:80px; background:#eee; margin-bottom:20px;">
-    <div class="vertical-align-sibling"></div>
-    <div class="vertical-align-middle">vertical-align-middle</div>
+    <div class="valign-sibling"></div>
+    <div class="valign-middle">valign-middle</div>
 </div>
 ```
 
@@ -62,7 +62,7 @@
 
 ```html
 <div style="height:80px; background:#eee; margin-bottom:20px;">
-    <div class="vertical-align-sibling"></div>
-    <div class="vertical-align-bottom">vertical-align-bottom</div>
+    <div class="valign-sibling"></div>
+    <div class="valign-bottom">valign-bottom</div>
 </div>
 ```

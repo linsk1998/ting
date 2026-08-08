@@ -5748,7 +5748,7 @@ body.layout-full {
     content: none;
   }
 }
-.vertical-align:after {
+.valign:after {
   width: 0;
   overflow: hidden;
   content: "|";
@@ -5758,7 +5758,7 @@ body.layout-full {
 }
 
 @media (-webkit-min-device-pixel-ratio: 0) {
-  .vertical-align.inline-block {
+  .valign.inline-block {
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-align: center;
@@ -5768,17 +5768,17 @@ body.layout-full {
   }
 }
 @media screen\9  {
-  .vertical-align {
+  .valign {
     *overflow: hidden;
   }
-  .vertical-align .vertical-align-middle {
+  .valign .valign-middle {
     *vertical-align: top;
     *position: relative;
     *zoom: 1;
     *display: inline;
     *top: expression(Math.max(Math.round(this.parentNode.clientHeight/2-this.offsetHeight/2),0)+'px');
   }
-  .vertical-align .vertical-align-bottom {
+  .valign .valign-bottom {
     *vertical-align: top;
     *position: relative;
     *zoom: 1;
@@ -5786,29 +5786,29 @@ body.layout-full {
     *top: expression(Math.max(this.parentNode.clientHeight-this.offsetHeight,0)+'px');
   }
 }
-.vertical-align-top {
+.valign-top {
   vertical-align: top;
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.vertical-align-middle {
+.valign-middle {
   vertical-align: middle;
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.vertical-align-bottom {
+.valign-bottom {
   vertical-align: bottom;
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.vertical-align-sibling,
-.vertical-align-sibling {
+.valign-sibling,
+.valign-sibling {
   height: 100%;
   vertical-align: middle;
   display: inline-block;
