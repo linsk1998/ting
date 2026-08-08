@@ -12,11 +12,11 @@
 ```html
 <div class="input">
     <div class="input-prefix"
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
         ><i class="icon fa">&#xf002;</i
     ></div>
     <div class="input-suffix"
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
         ><i class="icon fa">&#xf133;</i
     ></div>
     <!--控件需要放在最后-->
@@ -41,11 +41,11 @@
     <div class="input-group-body">
         <div class="input">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf133;</i
             ></div>
             <!--控件需要放在最后-->
@@ -65,7 +65,7 @@
 <!-- 没有后缀 -->
 <div class="input">
     <div class="input-prefix"
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
         ><i class="icon fa">&#xf002;</i
     ></div>
     <!--控件需要放在最后-->
@@ -79,10 +79,10 @@
 <div class="input">
     <div class="input-prefix"
         ><i class="icon fa">&#xf002;</i
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
     ></div>
     <div class="input-suffix"
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
         ><i class="icon fa">&#xf133;</i
         ><button type="button" class="control-clear fa">&#xf057;</button
     ></div>
@@ -96,15 +96,15 @@
 <!-- 有按钮：带计数器 -->
 <div class="input">
     <div class="input-prefix"
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
         ><i class="icon fa">&#xf002;</i
     ></div>
     <div class="input-suffix"
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
         ><span class="input-counter">0/111</span
     ></div>
     <div class="input-suffix"
-        ><span class="line-middle"></span
+        ><span class="vertical-align-sibling"></span
         ><i class="icon fa">&#xf133;</i
     ></div>
     <!--控件需要放在最后-->
@@ -131,15 +131,15 @@
     <div class="input-group-body">
         <div class="input input-disabled">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><span class="input-counter">0/111</span
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf133;</i
             ></div>
             <!--控件需要放在最后-->
@@ -166,10 +166,10 @@
         <div style="width:200px" class="input">
             <div class="input-prefix">
                 <span class="vertical-align-middle">￥</span>
-                <span class="line-middle"></span>
+                <span class="vertical-align-sibling"></span>
             </div>
             <div class="input-suffix">
-                <span class="line-middle"></span>
+                <span class="vertical-align-sibling"></span>
                 <span class="vertical-align-middle">元</span>
                 <span class="input-counter">0/20</span>
             </div>
@@ -188,15 +188,15 @@
             <div class="input-group-body">
                 <div class="input">
                     <div class="input-prefix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><span class="vertical-align-middle">www.</span
                     ></div>
                     <div class="input-suffix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><span class="vertical-align-middle">.com</span
                     ></div>
                     <div class="input-suffix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><span class="input-counter">0/20</span
                     ></div>
                     <!--控件需要放在最后-->
@@ -220,15 +220,15 @@
         <label class="form-label">input-lg</label>
         <div class="input input-lg">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><span class="input-counter">0/111</span
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf133;</i
             ></div>
             <!--控件需要放在最后-->
@@ -242,15 +242,15 @@
         <label class="form-label">input-sm</label>
         <div class="input input-sm">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><span class="input-counter">0/111</span
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf133;</i
             ></div>
             <!--控件需要放在最后-->
@@ -273,15 +273,15 @@
             <div class="input-group-body">
                 <div class="input">
                     <div class="input-prefix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><i class="icon fa">&#xf002;</i
                     ></div>
                     <div class="input-suffix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><span class="input-counter">0/111</span
                     ></div>
                     <div class="input-suffix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><i class="icon fa">&#xf133;</i
                     ></div>
                     <!--控件需要放在最后-->
@@ -305,15 +305,15 @@
             <div class="input-group-body">
                 <div class="input">
                     <div class="input-prefix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><i class="icon fa">&#xf002;</i
                     ></div>
                     <div class="input-suffix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><span class="input-counter">0/111</span
                     ></div>
                     <div class="input-suffix"
-                        ><span class="line-middle"></span
+                        ><span class="vertical-align-sibling"></span
                         ><i class="icon fa">&#xf133;</i
                     ></div>
                     <!--控件需要放在最后-->
@@ -338,7 +338,7 @@
         <label class="form-label">has-valid</label>
         <div class="input">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <!--控件需要放在最后-->
@@ -354,7 +354,7 @@
         <label class="form-label">has-invalid</label>
         <div class="input">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <!--控件需要放在最后-->
@@ -370,15 +370,15 @@
         <label class="form-label">has-valid</label>
         <div class="input">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><span class="input-counter">0/111</span
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf133;</i
             ></div>
             <!--控件需要放在最后-->
@@ -394,15 +394,15 @@
         <label class="form-label">has-invalid</label>
         <div class="input">
             <div class="input-prefix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf002;</i
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><span class="input-counter">0/111</span
             ></div>
             <div class="input-suffix"
-                ><span class="line-middle"></span
+                ><span class="vertical-align-sibling"></span
                 ><i class="icon fa">&#xf133;</i
             ></div>
             <!--控件需要放在最后-->

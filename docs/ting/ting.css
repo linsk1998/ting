@@ -5807,7 +5807,8 @@ body.layout-full {
   *display: inline;
 }
 
-.line-middle {
+.vertical-align-sibling,
+.vertical-align-sibling {
   height: 100%;
   vertical-align: middle;
   display: inline-block;

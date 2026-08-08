@@ -14,25 +14,25 @@
                 <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
                 <i class="select-list-drag fa">&#xf142; &#xf142;</i>
                 <input type="checkbox" value=""/>
-                <span class="line-middle">环境变量设</span>
+                <span class="vertical-align-sibling">环境变量设</span>
             </li>
             <li>
                 <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
                 <i class="select-list-drag fa">&#xf142; &#xf142;</i>
                 <input type="checkbox" value=""/>
-                <span class="line-middle">环境变量设</span>
+                <span class="vertical-align-sibling">环境变量设</span>
             </li>
             <li>
                 <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
                 <i class="select-list-drag fa">&#xf142; &#xf142;</i>
                 <input type="checkbox" value=""/>
-                <span class="line-middle">环境变量设</span>
+                <span class="vertical-align-sibling">环境变量设</span>
             </li>
             <li>
                 <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
                 <i class="select-list-drag fa">&#xf142; &#xf142;</i>
                 <input type="checkbox" value=""/>
-                <span class="line-middle">环境变量设</span>
+                <span class="vertical-align-sibling">环境变量设</span>
             </li>
         </ul>
     </div>
