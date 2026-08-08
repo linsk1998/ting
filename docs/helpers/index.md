@@ -10,7 +10,7 @@
 | .pull-right | 元素浮动到右边 |
 | .clearfix | 清除容器内的浮动浮动 |
 
-[使用方法](./float.html)
+[使用方法](./float.md)
 
 ## 视觉隐藏
 
@@ -64,7 +64,7 @@
 | .loading-circular | 环形加载指示 |
 | .loading-grow | 闪烁加载指示 |
 
-[使用方法](./loading.html)
+[使用方法](./loading.md)
 
 ## 图标
 
@@ -76,7 +76,7 @@
 | .icon-lg<br/>.icon-2x<br/>.icon-3x<br/>.icon-4x<br/>.icon-5x | 大字体图标。 |
 | .icon-rotate-* .icon-flip-* | 对图标进行旋转和翻转 |
 
-[使用方法](./icon.html)
+[使用方法](./icon.md)
 
 ## 动画
 

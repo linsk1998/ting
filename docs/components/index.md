@@ -11,7 +11,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 |---|---|
 | .breadcrumb | 路径导航容器，浅灰色背景，使用斜杠分隔各级 |
 
-[使用方法](./breadcrumb.html)
+[使用方法](./breadcrumb.md)
 
 ## 导航
 
@@ -27,7 +27,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .nav-justified | 两端对齐导航，导航项平均分配宽度 |
 | .nav-tabs-left<br/>.nav-tabs-right | 左侧/右侧垂直选项卡导航 |
 
-[使用方法](./nav.html)
+[使用方法](./nav.md)
 
 ## 标签页
 
@@ -41,7 +41,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .tabs-right | 导航右排 |
 | .tabs-below | 导航下排，content需放在nav前面 |
 
-[使用方法](./tabs.html)
+[使用方法](./tabs.md)
 
 ## 导航条
 
@@ -60,7 +60,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .navbar-text | 导航栏内的文本内容，自动适配行高和对齐 |
 | .navbar-link | 导航栏内的普通链接样式 |
 
-[使用方法](./navbar.html)
+[使用方法](./navbar.md)
 
 ## 分页
 
@@ -75,7 +75,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .active | 当前激活的页码项 |
 | .disabled | 禁用的页码项，不可点击 |
 
-[使用方法](./pagination.html)
+[使用方法](./pagination.md)
 
 ## 列表组
 
@@ -99,7 +99,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .progress-sm | 小号进度条，高度12px |
 | .progress-xs | 超小进度条，高度6px |
 
-[使用方法](./progress.html)
+[使用方法](./progress.md)
 
 ## 轮播图
 
@@ -113,7 +113,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .carousel-control-next | 右切换按钮 |
 | .carousel-caption | 轮播图文字说明，底部半透明黑色背景 |
 
-[使用方法](./carousel.html)
+[使用方法](./carousel.md)
 
 ## 下拉菜单
 
@@ -130,7 +130,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .dropdown-header | 分组标题 |
 | .dropdown-divider | 分割线 |
 
-[使用方法](./dropdown.html)
+[使用方法](./dropdown.md)
 
 ## 工具提示
 
@@ -144,7 +144,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .tooltip-bottom | 向下弹出，箭头朝上 |
 | .tooltip-left | 向左弹出，箭头朝右 |
 
-[使用方法](./tooltip.html)
+[使用方法](./tooltip.md)
 
 ## 弹出框
 
@@ -159,7 +159,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .popover-bottom | 向下弹出，箭头朝上 |
 | .popover-left | 向左弹出，箭头朝右 |
 
-[使用方法](./popover.html)
+[使用方法](./popover.md)
 
 ## 可折叠块
 
@@ -168,7 +168,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .collapsible | 可折叠容器，默认展开显示内容 |
 | .collapsible.hide | 折叠状态，隐藏内容 |
 
-[使用方法](./collapsible.html)
+[使用方法](./collapsible.md)
 
 ## 手风琴
 
@@ -184,7 +184,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .accordion-collapsible | 可折叠内容容器，默认展开，父组件可用`.accordion-collapsed`收起 |
 | .accordion-body | 手风琴内容正文 |
 
-[使用方法](./accordion.html)
+[使用方法](./accordion.md)
 
 ## 树
 
@@ -196,7 +196,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .tree-collapsed | 收起状态的树节点，隐藏子节点，箭头旋转 |
 | .active | 选中的树节点，使用主题色背景 |
 
-[使用方法](./tree.html)
+[使用方法](./tree.md)
 
 ## 侧栏导航
 
@@ -293,7 +293,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .select-list-drag | 列表项拖动手柄，可移动光标 |
 | .select-list-tools | 列表项操作工具区，悬停时显示 |
 
-[使用方法](./select-list.html)
+[使用方法](./select-list.md)
 
 ## 面版
 

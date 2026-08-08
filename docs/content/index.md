@@ -18,7 +18,7 @@
 | .list-unstyled | 移除默认的列表样式 |
 | .list-inline<br/>.list-inline-item | 将所有列表项放置同一行 |
 
-[使用方法](./type.html)
+[使用方法](./type.md)
 
 ## 超级链接
 
@@ -30,7 +30,7 @@
 | .link-offset-* | 增加下划线偏移量 |
 | .link-stretched | 链接作用到容器（需要将链接放入position:relative的容器中） |
 
-[使用方法](./link.html)
+[使用方法](./link.md)
 
 ## 页头
 
@@ -57,7 +57,7 @@
 | .btn-loading | 加载状态按钮，禁用点击，半透明显示 |
 | .btn-disabled | 禁用状态按钮，灰色背景，不可点击 |
 
-[使用方法](./button.html)
+[使用方法](./button.md)
 
 ## 按钮布局
 
@@ -68,7 +68,7 @@
 | .btn-group-justified | 宽度均分按钮组，按钮平均分配容器宽度 |
 | .btn-group-vertical | 垂直排列按钮组，按钮纵向堆叠 |
 
-[使用方法](./button-group.html)
+[使用方法](./button-group.md)
 
 ## 表格
 
@@ -85,7 +85,7 @@
 | .table-responsive | 响应式表格 |
 | .table-fixed | 强制固定表格宽度 |
 
-[使用方法](./table.html)
+[使用方法](./table.md)
 
 ## 图片
 
@@ -97,7 +97,7 @@
 | .img-fluid | 让图片占满容器宽度 |
 | .img-responsive | 容器不够宽时自动缩放 |
 
-[使用方法](./img.html)
+[使用方法](./img.md)
 
 ## 媒体对象
 
@@ -132,7 +132,7 @@
 </div>
 ```
 
-[使用方法](./media.html)
+[使用方法](./media.md)
 
 ## 列表
 
@@ -189,7 +189,7 @@
 | .well-lg | 大号凹陷，内边距22px |
 | .well-sm | 小号凹陷，内边距9px |
 
-[使用方法](./well.html)
+[使用方法](./well.md)
 
 ## 标志
 
@@ -198,7 +198,7 @@
 | .callout | 标志容器，白色背景，带左侧5px边框标识和阴影 |
 | .callout-{context} | 标志容器，语境色 |
 
-[使用方法](./callout.html)
+[使用方法](./callout.md)
 
 ## 徽章
 
@@ -209,7 +209,7 @@
 |---|---|
 | .badge | 徽章，圆角红色背景，白色文字，最小宽度18px |
 
-[使用方法](./badge.html)
+[使用方法](./badge.md)
 
 ## 标签
 
@@ -219,7 +219,7 @@
 | .tag-{context} | 标签语境色 |
 | .tag-{size} | 标签大小 |
 
-[使用方法](./tag.html)
+[使用方法](./tag.md)
 
 ## 警告框
 

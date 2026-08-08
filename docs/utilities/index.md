@@ -27,7 +27,7 @@
 | .text-brown | .bg-brown | .border-brown |
 | .text-green | .bg-green | .border-green |
 
-[使用方法](./color.html)
+[使用方法](./color.md)
 
 ## 文本
 
@@ -53,7 +53,7 @@
 | .font-cursive | 手写体(楷)，通常在横幅使用。 |
 | .font-monospace | 等宽字体，通常在代码使用。 |
 
-[使用方法](./font.html)
+[使用方法](./font.md)
 
 ## 尺寸
 
