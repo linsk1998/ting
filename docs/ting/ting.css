@@ -6798,7 +6798,7 @@ table.table-danger .thead-subtle,
   .media-left {
     order: -1;
   }
-  .media-center, .media-body {
+  .media-body, .media-body {
     min-width: 0;
     order: 0;
     flex-grow: 1;
@@ -6813,7 +6813,7 @@ table.table-danger .thead-subtle,
     align-self: flex-end;
   }
 }
-.media-center, .media-body {
+.media-body, .media-body {
   overflow: auto;
 }
 

@@ -38,7 +38,7 @@
 - [按钮组](content/button-group.md): `.btn-toolbar`、`.btn-group`、`.btn-group-justified`、`.btn-group-vertical` 等按钮布局类。
 - [表格](content/table.md): `.table`、`.table-striped`、`.table-bordered`、`.table-hover`、`.table-sm`、`.table-subtle`/`.table-inverse`、`.table-{context}`、`.table-active`、`.table-responsive`、`.table-fixed` 等表格样式类。
 - [图片](content/img.md): `.img-rounded`、`.img-circle`、`.img-thumbnail`、`.img-fluid`、`.img-responsive` 等图片样式类。
-- [媒体对象](content/media.md): `.media`、`.media-left`、`.media-right`、`.media-center`、`.media-object`、`.media-heading`、`.media-middle`/`.media-bottom`、`.media-list` 等图文混排组件使用方法。
+- [媒体对象](content/media.md): `.media`、`.media-left`、`.media-right`、`.media-body`、`.media-object`、`.media-heading`、`.media-middle`/`.media-bottom`、`.media-list` 等图文混排组件使用方法。
 - [卡片](content/card.html): `.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-indicator` 等卡片组件 Demo。
 - [列表](content/list.html): `.list`、`.list-dashed`、`.list-flush`、`.list-bordered`、`.list-striped`、`.list-hover`、`.list-item-{context}`、`.active` 等列表样式 Demo。
 - [凹陷容器](content/well.md): `.well`、`.well-lg`、`.well-sm` 凹陷容器样式。

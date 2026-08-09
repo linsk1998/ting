@@ -22,7 +22,7 @@
 	.media-left{
 		order:-1;
 	}
-	.media-center,.media-body{
+	.media-body{
 		min-width:0;
 		order:0; 
 		flex-grow:1;
@@ -37,7 +37,7 @@
 		align-self:flex-end;
 	}
 }
-.media-center,.media-body{ overflow:auto;}
+.media-body{ overflow:auto;}
 .media-object{ @include media-object;}
 .media-heading{ @include media-heading;}
 .media-list{ @include media-list;}

@@ -11,7 +11,7 @@
     <div class="media-left">
         <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
     </div>
-    <div class="media-center">
+    <div class="media-body">
         <h4 class="media-heading">Media heading</h4>
         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
     </div>
@@ -27,14 +27,14 @@
     <div class="media-left">
         <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
     </div>
-    <div class="media-center">
+    <div class="media-body">
         <h4 class="media-heading">Media heading</h4>
         Cras sit amet nibh libero, in gravida nulla...
         <div class="media mt-3">
             <div class="media-left">
                 <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
             </div>
-            <div class="media-center">
+            <div class="media-body">
                 <h4 class="media-heading">Nested media heading</h4>
                 Cras sit amet nibh libero, in gravida nulla...
             </div>
@@ -52,7 +52,7 @@
     <div class="media-right">
         <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
     </div>
-    <div class="media-center">
+    <div class="media-body">
         <h4 class="media-heading">Media heading</h4>
         Cras sit amet nibh libero, in gravida nulla...
     </div>
@@ -71,7 +71,7 @@
     <div class="media-right">
         <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
     </div>
-    <div class="media-center">
+    <div class="media-body">
         <h4 class="media-heading">Media heading</h4>
         Cras sit amet nibh libero, in gravida nulla...
     </div>
@@ -89,7 +89,7 @@
     <div class="media-left media-middle">
         <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
     </div>
-    <div class="media-center">
+    <div class="media-body">
         <h4 class="media-heading">Middle aligned media</h4>
         Cras sit amet nibh libero, in gravida nulla...
     </div>
@@ -103,7 +103,7 @@
     <div class="media-left media-bottom">
         <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
     </div>
-    <div class="media-center">
+    <div class="media-body">
         <h4 class="media-heading">Bottom aligned media</h4>
         Cras sit amet nibh libero, in gravida nulla...
     </div>
@@ -120,7 +120,7 @@
         <div class="media-left">
             <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
         </div>
-        <div class="media-center">
+        <div class="media-body">
             <h4 class="media-heading">Media heading</h4>
             <p class="line-2">Cras sit amet nibh libero, in gravida nulla...</p>
         </div>
@@ -129,7 +129,7 @@
         <div class="media-left">
             <a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
         </div>
-        <div class="media-center">
+        <div class="media-body">
             <h4 class="media-heading">Media heading</h4>
             <p class="line-2">Cras sit amet nibh libero, in gravida nulla...</p>
         </div>
