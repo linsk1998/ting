@@ -49,7 +49,7 @@
 
 ## 使用图标
 
-可以用`.accordion-icon`将图标定位到特定位置。
+可以用`.accordion-indicator`将图标定位到特定位置。
 
 ```html
 <div class="accordion">
@@ -57,7 +57,7 @@
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #1
-                <i class="accordion-icon fa">&#xf077;</i>
+                <i class="accordion-indicator fa">&#xf077;</i>
             </button>
         </h2>
         <div class="accordion-collapsible">
@@ -68,7 +68,7 @@
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #2
-                <i class="accordion-icon fa">&#xf078;</i>
+                <i class="accordion-indicator fa">&#xf078;</i>
             </button>
         </h2>
         <div class="accordion-collapsible">
@@ -79,7 +79,7 @@
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #3
-                <i class="accordion-icon fa">&#xf068;</i>
+                <i class="accordion-indicator fa">&#xf068;</i>
             </button>
         </h2>
         <div class="accordion-collapsible">
@@ -90,7 +90,7 @@
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #4
-                <i class="accordion-icon fa">&#xf067;</i>
+                <i class="accordion-indicator fa">&#xf067;</i>
             </button>
         </h2>
         <div class="accordion-collapsible">

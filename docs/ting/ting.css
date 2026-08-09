@@ -11578,7 +11578,7 @@ html .dropdown-item[disabled] {
   background: #e9ecef;
 }
 
-.accordion-icon {
+.accordion-indicator {
   position: absolute;
   top: 50%;
   right: 15px;
