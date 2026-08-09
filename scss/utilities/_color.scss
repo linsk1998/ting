@@ -17,12 +17,3 @@
 	.bg-#{$key},.bg-#{$key} a,.bg-#{$key} a:hover{ color:#fff;}
 	.border-#{$key}{ border-color:$color !important;}
 }
-@each $key, $color in $colors {
-	.text-#{$key}{ color:$color !important;}
-	a.text-#{$key},.text-#{$key} a{ color:darken($color,10%) !important;}
-	a.text-#{$key}:hover,.text-#{$key} a:hover{ color:darken($color,15%) !important;}
-	.bg-#{$key}{ background-color:$color !important;}
-	.bg-#{$key},.bg-#{$key} a,.bg-#{$key} a:hover{ color:#fff;}
-	.border-#{$key}{ border-color:$color !important;}
-}
-

@@ -89,5 +89,5 @@
 ## 工具类
 
 - [工具类概述](utilities/index.md): 语境颜色、主题颜色、文本对齐与转换、字体族、间距 (margin/padding) 等工具类速查表。
-- [颜色](utilities/color.md): 语境颜色 (.text-primary/.bg-primary/.border-primary 等) 和主题颜色 (.text-teal/.bg-teal/.border-teal 等) 的详细使用方法。
+- [颜色](utilities/color.md): 语境颜色 (.text-primary/.bg-primary/.border-primary 等) 的详细使用方法。
 - [字体](utilities/font.md): .font-sans、.font-serif、.font-cursive、.font-monospace 字体族类的使用方法。
