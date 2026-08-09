@@ -14,7 +14,7 @@
 	height: auto;
 	padding: $padding;
 	background-color: #fff;
-	border: 1px solid $theme-divider;
+	border: 1px solid $light-divider;
 	@if($enable-rounded) {
 		@include rounded($img-thumbnail-rounded);
 	}

@@ -35,3 +35,20 @@
 @function floor($number) {
 	@return math.floor($number);
 }
+// 加白色提亮
+@function tint-color($color, $weight) {
+	@return mix(white, $color, $weight);
+}
+// 加黑色压暗
+@function shade-color($color, $weight) {
+	@return mix(black, $color, $weight);
+}
+@function light-text($color) {
+	@return shade-color($color, 60%);
+}
+@function light-bg($color) {
+	@return tint-color($color, 80%);
+}
+@function light-border($color) {
+	@return tint-color(adjust-hue($color, -10), 60%);
+}

@@ -6,25 +6,25 @@
 
 html .has-valid{
 	.feedback-icon,.feedback-text,.help-block{
-		color:$success;
+		color:$light-success;
 	}
 	.form-control,.input,.tags-input,.select-btn,.textarea textarea{
-		border-color:$success;
+		border-color:$light-success;
 	}
 	.feedback-tooltip{
 		color: #fff;
-		background: rgba($success, .9);
+		background: rgba($light-success, .9);
 	}
 }
 html .has-invalid{
 	.feedback-icon,.feedback-text,.help-block{
-		color:$danger;
+		color:$light-danger;
 	}
 	.form-control,.input,.tags-input,.select-btn,.textarea textarea{
-		border-color:$danger;
+		border-color:$light-danger;
 	}
 	.feedback-tooltip{
 		color: #fff;
-		background: rgba($danger, .9);
+		background: rgba($light-danger, .9);
 	}
 }

@@ -3,7 +3,7 @@
 
 //=============================== 全局公用 ======================================
 $enable-components: true !default; // 启用组件
-$enable-dark: true !default; // 保持圆角开启
+$enable-dark: true !default; // 保持暗黑模式开启
 $enable-rounded: false !default; // 保持圆角开启
 $enable-feedback-icon: true !default; // 保持反馈图标开启
 
@@ -13,85 +13,64 @@ $padding-base: 8px 15px !default;
 $font-size-base: 14px !default;
 $line-height-base: 20px !default;
 
-$border-radius: 6px !default; // 将基础圆角从 0.25rem 改为 0.5rem
-$border-radius-lg: 12px !default; // 同时调整大号圆角
-$border-radius-sm: 4px !default; // 以及小号圆角
+$border-radius: 6px !default; // 基础圆角
+$border-radius-lg: 12px !default; // 大号圆角
+$border-radius-sm: 4px !default; // 小号圆角
 
-$theme-inverse: #1b1b1b !default;
-$theme-inverse-text: #eee !default;
-$theme-inverse-text-hover: #FFF !default;
-
-// $theme-primary: #337ab7 !default;
-$theme-primary: #4472c4 !default;
-$theme-primary-dark: #26659f !default;
-$theme-primary-light: #C5CAE9 !default;
-
-$theme-text: #fff !default;
-$theme-accent: #FF4081 !default;
-$theme-primary-text: #212121 !default;
-$theme-secondary-text: #757575 !default;
-$theme-divider: #e0e0e0 !default;
-$light-heading: #000000 !default;
-$light-emphasis: #111111 !default;
-$light-text: #212121 !default;
-$light-muted: #757575 !default;
+$light-body-bg: #ffffff !default;
 $light-secondary-bg: #e9ecef;
 $light-tertiary-bg: #f8f9fa;
+$light-heading-text: #000000 !default;
+$light-emphasis-text: #111111 !default;
+$light-body-text: #212121 !default;
+$light-secondary-text: mix($light-body-text, $light-body-bg, 75%) !default;
+$light-tertiary-text: mix($light-body-text, $light-body-bg, 50%) !default;
+$light-divider: #e0e0e0 !default;
 $light-inverse: #1b1b1b !default;
 
-$dark-bg: #212529 !default;
-$dark-heading: #fff !default;
-$dark-emphasis: #f8f9fa !default;
-$dark-text: #adb5bd !default;
-$dark-muted: #6c757d !default;
+$dark-body-bg: #212529 !default;
+$dark-secondary-bg: #2b3035;
+$dark-tertiary-bg: #343a40;
+$dark-heading-text: #fff !default;
+$dark-emphasis-text: #f8f9fa !default;
+$dark-body-text: #adb5bd !default;
+$dark-secondary-text: mix($dark-body-text, $dark-body-bg, 75%) !default;
+$dark-tertiary-text: mix($dark-body-text, $dark-body-bg, 50%) !default;
+$dark-secondary-text: #909192 !default;
+$dark-tertiary-text: #6B6D6F !default;
+$dark-divider: #495057;
+$dark-inverse: #e9ecef !default;
+
+$dark-scrollbar-track: lighten($dark-body-bg, 4%)!default;
+$dark-scrollbar-thumb: #444444 !default;
+
+// $light-primary: #337ab7 !default;
+$light-primary: #4472c4 !default;
+$light-success: #70ad47 !default;
+$light-info: #458ccf !default;
+$light-warning: #ffc107 !default;
+$light-danger: #dc3545 !default;
+
 $dark-primary: #6ea8fe !default;
 $dark-success: #75b798 !default;
 $dark-info: #6edff6 !default;
 $dark-warning: #ffda6a !default;
 $dark-danger: #ea868f !default;
-$dark-secondary-bg: #343a40;
-$dark-tertiary-bg: #2b3035;
-$dark-divider: #495057;
-$dark-inverse: #e9ecef !default;
-
-$dark-scrollbar-track: lighten($dark-bg, 4%)!default;
-$dark-scrollbar-thumb: #444444 !default;
-
-$success: #70ad47 !default;
-$info: #458ccf !default;
-$warning: #F37B1D !default;
-$danger: #dc3545 !default;
-$dark: #444 !default;
 
 $context: (
-	'primary':$theme-primary,
-	'success':$success,
-	'info':$info,
-	'warning':$warning,
-	'danger':$danger
+	'primary':$light-primary,
+	'success':$light-success,
+	'info':$light-info,
+	'warning':$light-warning,
+	'danger':$light-danger
 ) !default;
 $dark-context: (
 	'primary':$dark-primary,
 	'success':$dark-success,
 	'info':$dark-info,
-	'warning':$warning,
+	'warning':$light-warning,
 	'danger':$dark-danger
 ) !default;
-$primary-text: $theme-primary-dark !default;
-$primary-bg: mix($theme-primary, #fff, 20%) !default;
-$primary-border: darken(adjust-hue($primary-bg, -10), 7%) !default;
-$success-text: #3c763d !default;
-$success-bg: #dff0d8 !default;
-$success-border: darken(adjust-hue($success-bg, -10), 7%) !default;
-$info-text: #31708f !default;
-$info-bg: #d9edf7 !default;
-$info-border: darken(adjust-hue($info-bg, -10), 9%) !default;
-$warning-text: #8a6d3b !default;
-$warning-bg: darken(#fcf8e3, 3%) !default;
-$warning-border: darken(adjust-hue($warning-bg, -10), 13%) !default;
-$danger-text: #a94442 !default;
-$danger-bg: #f2dede !default;
-$danger-border: darken(adjust-hue($danger-bg, -10), 7%) !default;
 
 $spacer: 16px !default;
 $spacers: (
@@ -102,7 +81,6 @@ $spacers: (
 	4: $spacer,
 	5: ($spacer * 1.25),
 	6: ($spacer * 1.5)) !default;
-
 
 $zindex-levels: (
   n1: -1,
@@ -159,16 +137,16 @@ $pre-scrollable-max-height: 350px !default;
 
 $link-offsets: 3 !default;
 
-$table-bg: #fff !default;
+$table-bg: $light-body-bg !default;
 $table-cell-padding: 8px !default;
 $table-cell-padding-sm: 4px !default;
 $table-cell-padding-xs: 2px !default;
 $table-border-width: 1px !default;
-$table-border-color: $theme-divider !default;
+$table-border-color: $light-divider !default;
 $table-thead-inverse-bg: $light-inverse !default;
 $table-thead-subtle-bg: $light-secondary-bg !default;
 $table-active: #a5a5a5 !default;
-$table-dark-bg: $dark-bg !default;
+$table-dark-bg: $dark-body-bg !default;
 $table-dark-border-color: $dark-divider !default;
 $table-dark-thead-inverse-bg: $dark-inverse !default;
 $table-dark-thead-subtle-bg: $dark-secondary-bg !default;
@@ -183,11 +161,11 @@ $list-padding-x: 15px !default;
 $list-padding-y: 10px !default;
 $list-striped-bg: #fcfcfc !default;
 
-$card-bg: #fff !default;
+$card-bg: $light-body-bg !default;
 $card-spacer-y: 8px !default;
 $card-spacer-x: 15px !default;
 $card-border-width: 1px !default;
-$card-border-color: $theme-divider !default;
+$card-border-color: $light-divider !default;
 $card-cap-padding-y: 10px !default;
 $card-cap-padding-x: 15px !default;
 $card-cap-bg: #f5f5f5 !default;
@@ -196,7 +174,7 @@ $card-img-overlay-padding-x: 16px !default;
 
 $well-bg: #f5f5f5 !default;
 $well-border-width: 1px !default;
-$well-border-color: $theme-divider !default;
+$well-border-color: $light-divider !default;
 $well-padding: 15px !default;
 $well-padding-lg: 22px !default;
 $well-padding-sm: 9px !default;
@@ -217,12 +195,12 @@ $jumbotron-text-fontsize-xs: 16px !default;
 $jumbotron-dark-bg: #2b333c !default;
 
 $footer-bg: $light-tertiary-bg !default;
-$footer-color: $light-muted !default;
+$footer-color: $light-tertiary-text !default;
 $footer-padding: 30px 0 !default;
 $footer-margin: 16px 0 0 !default;
 $footer-text-align: center !default;
 $footer-dark-bg: $dark-tertiary-bg !default;
-$footer-dark-color: $dark-muted !default;
+$footer-dark-color: $dark-tertiary-text !default;
 
 //=============================== 表单 ======================================
 $form-group-margin-bottom: 20px !default;
@@ -258,7 +236,7 @@ $ctrl-clear-right: ($ctrl-height-md - $ctrl-clear-size) * 0.5 !default;
 
 $btn-border-width: $ctrl-border-width !default;
 $btn-border-color: $ctrl-border-color !default;
-$btn-default-bg: #fff !default;
+$btn-default-bg: $light-body-bg !default;
 $btn-default-color: #333 !default;
 $btn-default-border-color: #ccc !default;
 $btn-disabled-bg: #dddddd !default;
@@ -291,7 +269,7 @@ $input-padding-y-lg: $ctrl-padding-x-lg !default;
 $input-padding-y-sm: $ctrl-padding-x-sm !default;
 $input-counter-offset-y: 1px !default;
 $input-counter-fontsize: 12px !default;
-$input-counter-color: $theme-secondary-text !default;
+$input-counter-color: $light-tertiary-text !default;
 $input-addon-size: 14px !default;
 $input-addon-gap: ($ctrl-height-md - $input-addon-size) * 0.5 !default;
 $input-has-feedback-padding-right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-padding-x-md - $ctrl-border-width;
@@ -346,7 +324,7 @@ $tag-fontsize-sm:12px;
 $breadcrumb-padding: 8px 15px !default;
 $breadcrumb-margin: 0 0 $margin-base !default;
 $breadcrumb-bg: #f5f5f5 !default;
-$breadcrumb-color: $theme-secondary-text !default;
+$breadcrumb-color: $light-secondary-text !default;
 $breadcrumb-spliter-color: #cccccc !default;
 $breadcrumb-gutter: 5px !default;
 
@@ -354,22 +332,22 @@ $nav-margin: $margin-base 0 !default;
 $nav-padding: 10px 0 !default;
 $nav-pills-padding-y: 7px !default;
 $nav-pills-padding-x: 15px !default;
-$nav-pills-color: $theme-secondary-text !default;
-$nav-pills-hover-color: $theme-primary !default;
+$nav-pills-color: $light-secondary-text !default;
+$nav-pills-hover-color: $light-primary !default;
 $nav-pills-hover-bg: #eeeeee !default;
 $nav-pills-active-color: #fff !default;
-$nav-pills-active-bg: $theme-primary !default;
+$nav-pills-active-bg: $light-primary !default;
 $nav-indicator-padding-y: 7px !default;
 $nav-indicator-padding-x: 15px !default;
-$nav-indicator-color: $light-muted !default;
-$nav-indicator-color-hover: $light-muted !default;
-$nav-indicator-active-color: $theme-primary !default;
+$nav-indicator-color: $light-secondary-text !default;
+$nav-indicator-color-hover: $light-secondary-text !default;
+$nav-indicator-active-color: $light-primary !default;
 $nav-tabs-horizontal-side-width: 200px !default;
 $nav-tabs-horizontal-gutter: 20px !default;
 $nav-tabs-padding-y: 6px !default;
 $nav-tabs-padding-x: 16px !default;
-$nav-dark-indicator-color: $dark-muted !default;
-$nav-dark-indicator-color-hover: $dark-muted !default;
+$nav-dark-indicator-color: $dark-secondary-text !default;
+$nav-dark-indicator-color-hover: $dark-secondary-text !default;
 $nav-dark-indicator-active-color: $dark-primary !default;
 
 $navbar-height: 50px !default;
@@ -382,21 +360,21 @@ $navbar-nav-item-padding-x: 15px !default;
 $navbar-nav-item-padding-y-sm: 10px !default;
 $navbar-nav-item-padding-x-sm: 15px !default;
 $navbar-dark-bg: $dark-tertiary-bg !default;
-$navbar-dark-color: $dark-text !default;
+$navbar-dark-color: $dark-body-text !default;
 $navbar-dark-nav-active-bg: #212121 !default;
 
 // Popover
 $popover-border-width: $ctrl-border-width !default;
-$popover-border-color: $theme-divider !default;
+$popover-border-color: $light-divider !default;
 $popover-box-shadow: none !default;
-$popover-bg: #fff !default;
+$popover-bg: $light-body-bg !default;
 $popover-arrow-size: 10px !default;
 $popover-arrow-outer-size: ($popover-arrow-size + 1) !default;
 $popover-max-width: 276px !default;
 $popover-header-bg: #eeeeee !default;
 $popover-header-padding: 8px 14px !default;
 $popover-body-padding: 9px 14px !default;
-$popover-dark-bg: $dark-bg !default;
+$popover-dark-bg: $dark-body-bg !default;
 $popover-dark-border-color: $dark-divider !default;
 
 $dropdown-padding-y: 5px !default;
@@ -406,7 +384,7 @@ $dropdown-item-padding-y: 4px !default;
 $dropdown-item-padding-x: 20px !default;
 $dropdown-item-hover-bg: darken($popover-bg, 5%) !default;
 $dropdown-item-disabled-bg: #999999 !default;
-$dropdown-item-active-bg: $theme-primary !default;
+$dropdown-item-active-bg: $light-primary !default;
 $dropdown-item-active-color: #fff !default;
 $dropdown-header-padding-y: $dropdown-item-padding-y !default;
 $dropdown-header-padding-x: $dropdown-item-padding-x * .5 !default;
@@ -415,7 +393,7 @@ $dropdown-header-fontsize: 12px !default;
 $dropdown-duration: .3s !default;
 $dropdown-dark-active-bg: $dark-primary !default;
 $dropdown-dark-item-hover-bg: lighten($popover-dark-bg, 5%) !default;
-$dropdown-dark-header-color: $dark-muted !default;
+$dropdown-dark-header-color: $dark-secondary-text !default;
 $dropdown-dark-item-disabled-bg: #666666 !default;
 
 $tooltip-arrow-size: 5px !default;
@@ -426,9 +404,9 @@ $tooltip-bg: #000 !default;
 $collapse-duration: .3s !default;
 
 // Accordion
-$accordion-bg: #ffffff !default;
+$accordion-bg: $light-body-bg !default;
 $accordion-border-width: 1px !default;
-$accordion-border-color: $theme-divider !default;
+$accordion-border-color: $light-divider !default;
 $accordion-header-bg: $light-secondary-bg !default;
 $accordion-header-padding-y: 10px !default;
 $accordion-header-padding-x: 15px !default;
@@ -443,22 +421,22 @@ $tree-item-hover: #CFDDEF !default;
 $tree-icon-size: 16px !default;
 
 $sidebar-collapsed-width: 300px !default;
-$sidebar-color: $light-emphasis !default;
-$sidebar-bg: #ffffff !default;
+$sidebar-color: $light-emphasis-text !default;
+$sidebar-bg: $light-body-bg !default;
 $sidebar-icon-width: 40px !default;          // 图标列宽度
 $sidebar-icon-size: 14px !default;           // 图标字号
 $sidebar-item-height: $sidebar-icon-width !default;
-$sidebar-item-hover-bg: mix($theme-primary, $sidebar-bg, 5%) !default;
-$sidebar-item-hover-color: $light-text !default;
+$sidebar-item-hover-bg: mix($light-primary, $sidebar-bg, 5%) !default;
+$sidebar-item-hover-color: $light-body-text !default;
 $sidebar-link-padding-x: 10px !default;
 $sidebar-link-bold: true !default;
 $sidebar-indent: 20px !default;        // 子菜单每级额外缩进
-$sidebar-subitem-color: $light-text !default;
+$sidebar-subitem-color: $light-body-text !default;
 $sidebar-subitem-height: 36px !default;
-$sidebar-subitem-hover-bg: mix($theme-primary, $sidebar-bg, 5%) !default;
-$sidebar-subitem-hover-color: $light-text !default;
-$sidebar-subitem-active-bg: mix($theme-primary, $sidebar-bg, 10%) !default;
-$sidebar-subitem-active-color: $theme-primary !default;
+$sidebar-subitem-hover-bg: mix($light-primary, $sidebar-bg, 5%) !default;
+$sidebar-subitem-hover-color: $light-body-text !default;
+$sidebar-subitem-active-bg: mix($light-primary, $sidebar-bg, 10%) !default;
+$sidebar-subitem-active-color: $light-primary !default;
 $sidebar-max-level: 3 !default;
 
 $modal-alpha: 0.4 !default; //模不透明度

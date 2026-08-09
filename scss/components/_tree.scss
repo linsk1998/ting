@@ -22,13 +22,13 @@
 }
 .tree .active a, .tree .active a:hover,
 .tree .active label, .tree .active label:hover {
-	background: $theme-primary;
+	background: $light-primary;
 	color: #fff;
 }
 .tree .active u label,.tree .active u a,
 .tree label,.tree a,
 .tree label:hover,.tree a:hover{
-	color: $light-text;
+	color: $light-body-text;
 }
 .tree .active u label:hover,.tree .active u a:hover,
 .tree label:hover,.tree a:hover{
@@ -54,8 +54,8 @@
 	border: 4px solid transparent;
   	_border-style: dotted;
 	border-right: 0 none;
-	border-left: 4px solid $light-text;
-	color: $light-text;
+	border-left: 4px solid $light-body-text;
+	color: $light-body-text;
 	left: $tree-indent * .5 - 2px;
 	*left: $tree-indent * .5 - 2px - $tree-indent;
     top: $tree-item-height * .5 - 4px;
@@ -84,12 +84,12 @@
 	.dark {
 		.tree label,.tree a,
 		.tree label:hover,.tree a:hover{
-			color: $dark-text;
+			color: $dark-body-text;
 		}
 		.tree label:hover,.tree a:hover{ background:#34414c;}
 		.tree .active a, .tree .active a:hover,
 		.tree .active label, .tree .active label:hover { background: $dark-primary; color: #fff;}
-		.tree-expander{ border-left-color: $dark-text; color: $dark-text;}
+		.tree-expander{ border-left-color: $dark-body-text; color: $dark-body-text;}
 	}
 }
 @media (prefers-reduced-motion: no-preference) {

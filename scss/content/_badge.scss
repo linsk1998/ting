@@ -26,47 +26,47 @@
 .btn-primary .badge,
 .list .active .badge,
 .panel-primary .panel-heading .badge{
-	color:$theme-primary;
+	color:$light-primary;
 	background-color:#fff;
 }
 .btn-primary:hover .badge{
-	color:darken($theme-primary,10%);
+	color:darken($light-primary,10%);
 }
 .bg-success .badge,
 .btn-success .badge
 {
-	color:$success;
+	color:$light-success;
 	background-color:#fff;
 }
 .btn-success:hover .badge{
-	color:darken($success,10%);
+	color:darken($light-success,10%);
 }
 .bg-info .badge,
 .btn-info .badge{
-	color:$info;
+	color:$light-info;
 	background-color:#fff;
 }
 .btn-info:hover .badge{
-	color:darken($info,10%);
+	color:darken($light-info,10%);
 }
 .bg-warning .badge,
 .btn-warning .badge{
-	color:$warning;
+	color:$light-warning;
 	background-color:#fff;
 }
 .btn-warning:hover .badge{
-	color:darken($warning,10%);
+	color:darken($light-warning,10%);
 }
 .bg-danger .badge,
 .btn-danger .badge{
-	color:$danger;
+	color:$light-danger;
 	background-color:#fff;
 }
 .btn-danger:hover .badge{
-	color:darken($danger,10%);
+	color:darken($light-danger,10%);
 }
 
-.list>.list-item-success.active .badge{ color:$success;}
-.list>.list-item-info.active .badge{ color:$info;}
-.list>.list-item-warning.active .badge{ color:$warning;}
-.list>.list-item-danger.active .badge{ color:$danger;}
+.list>.list-item-success.active .badge{ color:$light-success;}
+.list>.list-item-info.active .badge{ color:$light-info;}
+.list>.list-item-warning.active .badge{ color:$light-warning;}
+.list>.list-item-danger.active .badge{ color:$light-danger;}

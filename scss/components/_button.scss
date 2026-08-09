@@ -65,11 +65,11 @@ html .btn-square-xs {
 }
 
 .btn-default:hover{
-	color:$theme-primary-text;
+	color:$light-body-text;
 	border-color:darken($btn-border-color,10%);
 }
 .btn-default,.btn-loading.btn-default{
-	color:$theme-primary-text;
+	color:$light-body-text;
 	background-color:#fff;
 	border-color:$btn-border-color;
 }

@@ -4,8 +4,8 @@
 
 @if $enable-dark {
 	.dark{
-		color: $dark-text;
-		background: $dark-bg;
+		color: $dark-body-text;
+		background: $dark-body-bg;
 	}
 	.dark ::-webkit-scrollbar-track {
 		background: darken($dark-scrollbar-track, 3%);

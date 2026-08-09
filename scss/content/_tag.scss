@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../functions' as *;
 @use '../mixins' as *;
 
 .tag{
@@ -18,32 +19,17 @@
 .tag-default{
 	color:#555;
 	background-color:#eee;
-	border-color:$theme-divider;
+	border-color:$light-divider;
 }
-.tag-primary{
-	color:$primary-text;
-	background-color: $primary-bg;
-	border-color:$primary-border;
-}
-.tag-success{
-	color:$success-text;
-	background-color: $success-bg;
-	border-color:$success-border;
-}
-.tag-info{
-	color:$info-text;
-	background-color: $info-bg;
-	border-color:$info-border;
-}
-.tag-warning{
-	color:$warning-text;
-	background-color: $warning-bg;
-	border-color:$warning-border;
-}
-.tag-danger{
-	color:$danger-text;
-	background-color: $danger-bg;
-	border-color:$danger-border;
+@each $key, $color in $context {
+	$text: light-text($color);
+	$bg: light-bg($color);
+	$border: light-border($color);
+	.tag-#{$key}{
+		color: $text;
+		background-color: $bg;
+		border-color: $border;
+	}
 }
 $tag-padding-line-height-md: $ctrl-height-md - $ctrl-border-width * 2 - $tags-input-padding-y * 2 - $tag-gap * 2 - $tag-border-width * 2 - $tag-padding-y-md * 2;
 $tag-padding-line-height-lg: $ctrl-height-lg - $ctrl-border-width * 2 - $tags-input-padding-y * 2 - $tag-gap * 2 - $tag-border-width * 2 - $tag-padding-y-lg * 2;

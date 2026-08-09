@@ -23,7 +23,7 @@ cite,em,address{font-style:normal;}
 abbr,b,cite,em,font,i,label,q,s,span,strike,strong,u{ vertical-align: top;}
 ul,ol{ padding:0; padding-left:30px; margin:$margin-base 0;}
 ol ol, ol ul, ul ol, ul ul {margin: 0;}
-hr{ display:block; border:0 none; border-top:1px solid $theme-divider; height:1px; overflow:hidden; margin:$margin-base 0;}
+hr{ display:block; border:0 none; border-top:1px solid $light-divider; height:1px; overflow:hidden; margin:$margin-base 0;}
 mark,.mark{ background:#ff0;}
 img{ -ms-interpolation-mode:bicubic; vertical-align:middle;}
 code,kbd,samp,.code{ font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace; font-size:1em;
@@ -36,13 +36,13 @@ del,.del,.s{ text-decoration:line-through;}
 em,.em,.i{ font-style:italic;}
 strong,.strong,.b{ font-weight:bold;}
 code{ direction:ltr; text-align:left; white-space:pre;}
-kbd{ padding:2px 4px; font-size:90%; color:$theme-inverse-text-hover; background-color:$theme-inverse; @include rounded(3px); margin-left:4px; margin-right:4px;}
+kbd{ padding:2px 4px; font-size:90%; color:$dark-heading-text; background-color:$light-inverse; @include rounded(3px); margin-left:4px; margin-right:4px;}
 [hidden]{ display:none;}
 
-body{ *text-align:center; color:$theme-primary-text;}
+body{ *text-align:center; color:$light-body-text;}
 
-a{ color:$theme-primary; text-decoration:none; cursor:pointer; outline:none;}
-a:hover{ color:darken($theme-primary,15%); text-decoration:underline;}
+a{ color:$light-primary; text-decoration:none; cursor:pointer; outline:none;}
+a:hover{ color:darken($light-primary,15%); text-decoration:underline;}
 small,.small{ font-size: 85%;}
 
 code{ background:#f9f2f4; padding:2px 4px; font-size:90%; border-radius:4px; color:#d14; border:1px solid #e1e1e8; _display:inline-block;}
@@ -83,8 +83,8 @@ overflow: auto; display: none;}
 
 @if $enable-dark {
 	.dark{
-		body{ color:$dark-text;}
-		h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{ color: $dark-heading;}
+		body{ color:$dark-body-text;}
+		h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{ color: $dark-heading-text;}
 		a{ color:$dark-primary;}
 		a:hover{ color:scale-color($dark-primary, +20%);}
 		code { background: #2d333b;  color: #ff6b81; border: 1px solid #3d444d; }

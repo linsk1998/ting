@@ -4,7 +4,7 @@
 
 .divider {
 	margin:1em 0;
-	border-bottom:1px solid $theme-divider;
+	border-bottom:1px solid $light-divider;
 }
 .divider-text{
 	padding:0 1em;
@@ -20,7 +20,7 @@
 			content: "-";
 			font-size: 0;
 			display: table-cell;
-			border-bottom:1px solid $theme-divider;
+			border-bottom:1px solid $light-divider;
 		}
 	}
 	.divider-left:before{

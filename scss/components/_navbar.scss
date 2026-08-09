@@ -15,7 +15,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	border-bottom: $navbar-border-width solid $theme-divider;
+	border-bottom: $navbar-border-width solid $light-divider;
 }
 .navbar-header{ float: left;}
 .navbar-brand {
@@ -32,7 +32,7 @@
 .navbar-brand a,a.navbar-brand,
 .navbar-brand a:hover,a.navbar-brand:hover {
 	text-decoration: none;
-	color: $theme-primary-text;
+	color: $light-body-text;
 }
 .navbar-brand img{
 	max-height: $navbar-height;
@@ -129,14 +129,14 @@
 }
 .navbar-text {
 	margin-top: ($navbar-height - $line-height-base) * .5;
-    color: $theme-secondary-text;
+    color: $light-secondary-text;
 	display: inline-block;
 	*display:inline;
 	*zoom:1;
 	vertical-align: middle;
 }
-.navbar-link{ color: $theme-secondary-text;}
-.navbar-link:hover{ color: darken($theme-secondary-text, 10%);}
+.navbar-link{ color: $light-secondary-text;}
+.navbar-link:hover{ color: darken($light-secondary-text, 10%);}
 
 .navbar-responsive-dropdown{
 	@include clearfix;
@@ -257,7 +257,7 @@
 	.navbar-fixed-top { border-bottom-color: $dark-divider;}
 	.navbar-brand a,a.navbar-brand,
 	.navbar-brand a:hover,a.navbar-brand:hover {
-		color: $dark-heading;
+		color: $dark-heading-text;
 	}
 	.navbar-nav a {
 		color: $navbar-dark-color;
@@ -273,10 +273,10 @@
 	.navbar-nav .active .nav-link,
 	.navbar-nav .active a,.navbar-nav .open{
 		background: $navbar-dark-nav-active-bg;
-		color: $dark-emphasis;
+		color: $dark-emphasis-text;
 	}
 	.navbar-nav .dropdown:has(.dropdown-menu[popover]:popover-open) > a{
 		background: $navbar-dark-nav-active-bg;
-		color: $dark-emphasis;
+		color: $dark-emphasis-text;
 	}
 }

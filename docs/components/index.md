@@ -202,10 +202,9 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
 | 类 | 描述 |
 |---|---|
-| .sidebar | 亮色侧栏容器 |
+| .sidebar | 导航项容器 |
 | .sidebar-dark | 暗色侧栏容器，一般还要搭配 `.dark` 使得子组件也变暗 |
 | .sidebar-collapsed | 折叠状态，折叠后只显示图标 |
-| .sidebar | 导航项容器 |
 | .sidebar-menu | 一级菜单 |
 | .sidebar-item | 导航项 |
 | .sidebar-item-collapsed | 导航项折叠状态 |

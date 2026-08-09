@@ -12,13 +12,13 @@ $list-group-disabled-bg: #eee !default;
 	list-style-type: none;
 	padding-bottom: 1px;
 }
-.list-group a{ color:$theme-primary-text; text-decoration: none;}
+.list-group a{ color:$light-body-text; text-decoration: none;}
 
 .list-group-item {
 	padding: $list-group-padding-y $list-group-padding-x;
 	background-color: #fff;
 	margin-bottom:-1px;
-	border: 1px solid $theme-divider;
+	border: 1px solid $light-divider;
 	position: relative;
 	*zoom:1;
 }
@@ -52,15 +52,17 @@ button.list-group-item::-moz-focus-inner{
     background-color: darken(#fff, 5%);
 }
 @each $key, $color in $context {
-	.list-group .list-group-item-#{$key} { background-color:mix($color, #fff, 18%);}
-	.list-group .list-group-item-#{$key}, .list-group .list-group-item-#{$key} a { color: darken(adjust-hue($color, -10), 7%);}
-	.list-group .list-group-item-#{$key}:hover { background-color:darken(mix($color, #fff, 18%),5%);}
-	.list-group .list-group-item-#{$key}:hover, .list-group .list-group-item-#{$key} a:hover { color: darken(adjust-hue($color, -10), 12%);}
+	$text: light-text($color);
+	$bg: light-bg($color);
+	.list-group .list-group-item-#{$key} { background-color:$bg;}
+	.list-group .list-group-item-#{$key}, .list-group .list-group-item-#{$key} a { color: $text;}
+	.list-group .list-group-item-#{$key}:hover { background-color:darken($bg,5%);}
+	.list-group .list-group-item-#{$key}:hover, .list-group .list-group-item-#{$key} a:hover { color: darken($text, 12%);}
 	.list-group>.list-group-item-#{$key}.active, .list-group>.list-group-item-#{$key}.active:hover { background-color:$color; border-color:$color;}
 }
 .list-group .active,.list-group .active:hover{
-	background-color:$theme-primary;
-	border-color:$theme-primary;
+	background-color:$light-primary;
+	border-color:$light-primary;
 	z-index:$level-item-active;
 }
 .list-group .active, .list-group .active a,
@@ -77,10 +79,10 @@ button.list-group-item::-moz-focus-inner{
 
 .list-group-item-heading{ margin-top:0; margin-bottom:5px;}
 .list-group-item-text{ margin:0;}
-.list-group .active .list-group-item-text{ color: mix($theme-primary, #fff, 20%); }
+.list-group .active .list-group-item-text{ color: mix($light-primary, #fff, 20%); }
 
 .list-group-item .badge { float: right; }
-.list-group .active .badge{ color: $theme-primary; background-color: #fff;}
+.list-group .active .badge{ color: $light-primary; background-color: #fff;}
 
 @each $key, $color in $context {
 	.list-group>.list-group-item-#{$key}.active .list-group-item-text{

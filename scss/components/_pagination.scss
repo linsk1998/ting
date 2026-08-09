@@ -22,19 +22,19 @@
 .pagination li a,.pagination li span{
 	display: block;
 	padding:($ctrl-height-md - 2px - $line-height-base)*.5 ($ctrl-height-md - 2px - $font-size-base*.5)*.5;
-	color:$theme-primary-text;
+	color:$light-body-text;
 	text-decoration:none;
 }
 .pagination li:hover{
 	background-color:#eee;
 }
 .pagination li a:hover{
-	color:darken($theme-primary,15%);
+	color:darken($light-primary,15%);
 }
 .pagination li.active{
 	z-index:$level-item-active;
-	background-color:$theme-primary;
-	border-color:$theme-primary;
+	background-color:$light-primary;
+	border-color:$light-primary;
 }
 .pagination li.active,.pagination li.active *,.pagination li.active a:hover{
 	color:#fff;

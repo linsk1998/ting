@@ -1,7 +1,7 @@
 
 @use '../variables' as *;
 
-.msgbox{ position:relative; max-width:90%; background:#fff; display:inline-block; *display:inline; *zoom:1; border-top:4px solid $theme-primary; padding:8px 12px; text-align:center; margin-bottom:20px;
+.msgbox{ position:relative; max-width:90%; background:#fff; display:inline-block; *display:inline; *zoom:1; border-top:4px solid $light-primary; padding:8px 12px; text-align:center; margin-bottom:20px;
 -moz-box-shadow:0 0 10px rgba(0,0,0,.5);-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);}
 .msgbox-lg{ width:90%;}
 .msgbox-md{ width:600px;}
@@ -14,10 +14,10 @@
 .msgbox-body{ margin:12px 56px; overflow:auto;}
 .msgbox-footer{ text-align:center; margin:0 56px 12px;}
 .msgbox-footer .btn{ min-width:60px;}
-html body .msgbox-info{ border-top-color:$info;}
-html body .msgbox-success{ border-top-color:$success;}
-html body .msgbox-warning{ border-top-color:$warning;}
-html body .msgbox-danger{ border-top-color:$danger;}
+html body .msgbox-info{ border-top-color:$light-info;}
+html body .msgbox-success{ border-top-color:$light-success;}
+html body .msgbox-warning{ border-top-color:$light-warning;}
+html body .msgbox-danger{ border-top-color:$light-danger;}
 
 @media \0screen\,screen\9 {
 	.msgbox-body{ text-align:left;}

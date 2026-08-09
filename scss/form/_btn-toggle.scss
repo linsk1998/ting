@@ -25,12 +25,12 @@ button.btn-toggle {
 	*width:auto; *overflow-x:visible;
 }
 label.btn-toggle-checked{
-	border-color: $theme-primary;
+	border-color: $light-primary;
 	z-index: $level-item-active;
 }
 button.btn-toggle-checked{
-	background: $theme-primary;
-	border-color: $theme-primary;
+	background: $light-primary;
+	border-color: $light-primary;
 	color: #ffffff;
 	z-index: $level-item-active;
 }

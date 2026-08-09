@@ -41,8 +41,8 @@
 	@include opacity(.01);
 }
 .switch-checked {
-	border-color: $info;
-	background: $info;
+	border-color: $light-info;
+	background: $light-info;
 }
 .switch-checked .switch-thumb {
 	left: $switch-width - $switch-thumb-size - ($switch-height - $switch-thumb-size) *.5;

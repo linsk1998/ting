@@ -124,7 +124,7 @@ $popover-border-width-ie: math.div($popover-border-width,1px);
     margin: 0;
 	padding: $popover-header-padding;
 	background-color: $popover-header-bg;
-	border-bottom: $popover-border-width solid $theme-divider;
+	border-bottom: $popover-border-width solid $light-divider;
     @if $enable-rounded {
 	    @include radius($border-radius, $border-radius, 0, 0);
 	}

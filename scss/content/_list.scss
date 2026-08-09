@@ -7,13 +7,13 @@
 	padding-bottom: 1px;
 	*zoom:1;
 }
-.list a{ color:$theme-primary-text;}
-.list a:hover{ color:$theme-primary;}
+.list a{ color:$light-body-text;}
+.list a:hover{ color:$light-primary;}
 
 .list-item{
 	padding: $list-padding-y 0;
 	margin-bottom:-1px;
-	border: 1px solid $theme-divider;
+	border: 1px solid $light-divider;
 	border-left: 0 none;
 	border-right: 0 none;
 	position: relative;
@@ -35,7 +35,7 @@
 }
 .list-bordered .list-item{
 	padding: $list-padding-y $list-padding-x;
-	border: 1px solid $theme-divider;
+	border: 1px solid $light-divider;
 }
 .list-striped>*:nth-of-type(odd){
 	background-color: $list-striped-bg;
@@ -46,16 +46,18 @@
 }
 
 .list .active{
-	background-color:$theme-primary;
-	border-color:$theme-primary;
+	background-color:$light-primary;
+	border-color:$light-primary;
 	z-index:$level-item-active;
 }
 
 @each $key, $color in $context {
-	.list .list-item-#{$key} { background-color:mix($color, #fff, 18%);}
-	.list .list-item-#{$key}, .list .list-item-#{$key} a { color: darken(adjust-hue($color, -10), 7%);}
-	.list .list-item-#{$key}:hover { background-color:darken(mix($color, #fff, 18%),5%);}
-	.list .list-item-#{$key}:hover, .list .list-item-#{$key} a:hover { color: darken(adjust-hue($color, -10), 12%);}
+	$text: light-text($color);
+	$bg: light-bg($color);
+	.list .list-item-#{$key} { background-color:$bg;}
+	.list .list-item-#{$key}, .list .list-item-#{$key} a { color: $text;}
+	.list .list-item-#{$key}:hover { background-color:darken($bg,5%);}
+	.list .list-item-#{$key}:hover, .list .list-item-#{$key} a:hover { color: darken($text, 12%);}
 	.list>.list-item-#{$key}.active {
 		background-color:$color;
 		border-color:$color;

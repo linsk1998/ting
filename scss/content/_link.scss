@@ -3,23 +3,13 @@
 
 .link{ margin-left: 4px; margin-right: 4px;}
 
-.link-primary{ color:$theme-primary;}
-.link-primary:hover{ color:darken($theme-primary, 15%);}
-
-.link-secondary{ color:$theme-primary-text;}
-.link-secondary:hover{ color:$theme-primary;}
-
-.link-success{ color:$success;}
-.link-success:hover{ color:$success-text;}
-
-.link-info{ color:$info;}
-.link-info:hover{ color:$info-text;}
-
-.link-warning{ color:$warning;}
-.link-warning:hover{ color:$warning-text;}
-
-.link-danger{ color:$danger;}
-.link-danger:hover{ color:$danger-text;}
+@each $key, $color in $context {
+	$text: light-text($color);
+	.link-#{$key}{ color:$color;}
+	.link-#{$key}:hover{ color:$text;}
+}
+.link-secondary{ color:$light-body-text;}
+.link-secondary:hover{ color:$light-primary;}
 
 .link-disabled{ cursor: not-allowed; color:#a0a0a0; text-shadow:1px 1px #fff;}
 .link-disabled:hover{ color:#a0a0a0; text-decoration:none;}

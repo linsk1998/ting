@@ -43,7 +43,7 @@
 	display: block;
 	padding: $accordion-header-padding-y $accordion-header-padding-x;
 	text-align: left;
-	color: $light-emphasis;
+	color: $light-emphasis-text;
 	background: $accordion-header-bg;
 	border: 0;
 	outline: 0;
@@ -85,11 +85,11 @@
 	}
 }
 @if $enable-dark {
-	.dark .accordion, .accordion-dark{ background: $dark-bg;}
+	.dark .accordion, .accordion-dark{ background: $dark-body-bg;}
 	.dark {
 		.accordion-item { border-color: $accordion-dark-border-color;}
 		.accordion-body { border-top-color: $accordion-dark-border-color;}
-		.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis;}
+		.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis-text;}
 	}
 }
 @media (prefers-reduced-motion: no-preference) {

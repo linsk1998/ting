@@ -75,8 +75,8 @@ $check-padding-bottom: $check-padding-top - $check-gap-y;
 	color: #fff;
 }
 .checkbox-checked {
-	border-color: $info;
-	background: $info;
+	border-color: $light-info;
+	background: $light-info;
 }
 $radio-point-pos: ceil(($checkbox-size - $checkbox-border-width * 2) * .25);
 $radio-point-size: $checkbox-size - $checkbox-border-width * 2 - $radio-point-pos * 2;
@@ -95,12 +95,12 @@ $radio-point-size: $checkbox-size - $checkbox-border-width * 2 - $radio-point-po
 	background: #fff;
 }
 .radio-checked {
-	border-color: $info;
-	background: $info;
+	border-color: $light-info;
+	background: $light-info;
 }
 
 .checkbox-indeterminate {
-	border-color: $info;
+	border-color: $light-info;
 	background: #fff;
 }
 
@@ -115,8 +115,8 @@ $radio-point-size: $checkbox-size - $checkbox-border-width * 2 - $radio-point-po
 	left: 2px;
 	top: 2px;
 	overflow: hidden;
-	color: $info;
-	background: $info;
+	color: $light-info;
+	background: $light-info;
 }
 
 .checkbox-disabled, .radio-disabled {
@@ -149,11 +149,11 @@ label .checkbox, label .radio {
 
 .has-valid .checkbox,
 .has-valid .radio {
-	border-color: $success;
+	border-color: $light-success;
 }
 .has-invalid .checkbox,
 .has-invalid .radio {
-	border-color: $danger;
+	border-color: $light-danger;
 }
 @media \0screen\,screen\9 {
 	.checkbox, .checkbox-checked, .radio, .radio-checked {

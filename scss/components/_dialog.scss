@@ -8,12 +8,11 @@
 
 .dialog-body{ padding:16px;}
 .dialog-footer{ border-top:1px solid #eee; padding:12px 16px; margin:0;}
-.dialog-primary .dialog-header{ color:#fff; background-color:$theme-primary; border-color:$theme-primary;}
-html body .dialog-danger .dialog-header{ color:#fff; background-color:$danger; border-color:$danger;}
-html body .dialog-warning .dialog-header{ color:#fff; background-color:$warning; border-color:$warning;}
-html body .dialog-success .dialog-header{ color:#fff; background-color:$success; border-color:$success;}
-html body .dialog-info .dialog-header{ color:#fff; background-color:$info; border-color:$info;}
-html body .dialog-dark .dialog-header{ color:#fff; background-color:$dark; border-color:#ebccd1;}
+.dialog-primary .dialog-header{ color:#fff; background-color:$light-primary; border-color:$light-primary;}
+html body .dialog-danger .dialog-header{ color:#fff; background-color:$light-danger; border-color:$light-danger;}
+html body .dialog-warning .dialog-header{ color:#fff; background-color:$light-warning; border-color:$light-warning;}
+html body .dialog-success .dialog-header{ color:#fff; background-color:$light-success; border-color:$light-success;}
+html body .dialog-info .dialog-header{ color:#fff; background-color:$light-info; border-color:$light-info;}
 .dialog-primary .dialog-header .close,
 .dialog-danger .dialog-header .close,
 .dialog-warning .dialog-header .close,

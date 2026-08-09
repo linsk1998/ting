@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../functions' as *;
 @use '../mixins' as *;
 
 .panel {
@@ -18,15 +19,22 @@
 .panel-title a,.panel-title small{ color:inherit;}
 .panel-body{ padding:15px;}
 
-.panel-default{ border-color:$theme-divider;}
-.panel-default .panel-heading{ color:$theme-primary-text; background-color:#f5f5f5; border-color:$theme-divider;}
-.panel-primary{ border-color:$theme-primary;}
-.panel-primary .panel-heading{ color:#fff; background-color:$theme-primary; border-color:$theme-primary;}
-html body .panel-success{ border-color:$success-border;}
-html body .panel-success .panel-heading{ color:$success-text; background-color:$success-bg; border-color:$success-border;}
-html body .panel-info{ border-color:$info-border;}
-html body .panel-info .panel-heading{ color:$info-text; background-color:$info-bg; border-color:$info-border;}
-html body .panel-warning{ border-color:$warning-border;}
-html body .panel-warning .panel-heading{ color:$warning-text; background-color:$warning-bg; border-color:$warning-border;}
-html body .panel-danger{ border-color:$danger-border;}
-html body .panel-danger .panel-heading{ color:$danger-text; background-color:$danger-bg; border-color:$danger-border;}
+.panel-default{ border-color:$light-divider;}
+.panel-default .panel-heading{ color:$light-body-text; background-color:#f5f5f5; border-color:$light-divider;}
+
+@each $key, $color in $context {
+	$text: light-text($color);
+	$bg: light-bg($color);
+	$border: light-border($color);
+	@if $key == 'primary' {
+		.panel-#{$key}{
+			border-color: $color;
+			.panel-heading{ color:#fff; background-color:$color; border-color:$color; }
+		}
+	} @else {
+		.panel-#{$key}{
+			border-color: $border;
+			.panel-heading{ color:$text; background-color:$bg; border-color:$border; }
+		}
+	}
+}
