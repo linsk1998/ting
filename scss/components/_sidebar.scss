@@ -102,6 +102,37 @@
 	background: $sidebar-subitem-active-bg;
 }
 
+@if $enable-dark {
+	.dark {
+		.sidebar {
+			background: $sidebar-dark-bg;
+		}
+		.sidebar-link {
+			color: $sidebar-dark-color;
+			&:hover {
+				color: $sidebar-dark-item-hover-color;
+				background: $sidebar-dark-item-hover-bg;
+			}
+		}
+		.sidebar-submenu li a {
+			color: $sidebar-dark-subitem-color;
+		}
+		.sidebar-submenu a:hover {
+			color: $sidebar-dark-subitem-hover-color;
+			background: $sidebar-dark-subitem-hover-bg;
+		}
+		.sidebar-submenu .active a,
+		.sidebar-submenu .active a:hover {
+			color: $sidebar-dark-subitem-active-color;
+			background: $sidebar-dark-subitem-active-bg;
+		}
+		.sidebar-collapsed .sidebar-collapsible {
+			background: $sidebar-dark-bg;
+			border-color: $popover-dark-border-color;
+		}
+	}
+}
+
 .sidebar-item-collapsed .sidebar-collapsible{
 	display: none;
 }

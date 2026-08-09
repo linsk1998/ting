@@ -438,5 +438,14 @@ $sidebar-subitem-hover-color: $light-body-text !default;
 $sidebar-subitem-active-bg: mix($light-primary, $sidebar-bg, 10%) !default;
 $sidebar-subitem-active-color: $light-primary !default;
 $sidebar-max-level: 3 !default;
+$sidebar-dark-bg: $dark-body-bg !default;
+$sidebar-dark-color: $dark-emphasis-text !default;
+$sidebar-dark-item-hover-bg: mix($dark-primary, $dark-body-bg, 5%) !default;
+$sidebar-dark-item-hover-color: $dark-body-text !default;
+$sidebar-dark-subitem-color: $dark-body-text !default;
+$sidebar-dark-subitem-hover-bg: mix($dark-primary, $dark-body-bg, 5%) !default;
+$sidebar-dark-subitem-hover-color: $dark-body-text !default;
+$sidebar-dark-subitem-active-bg: mix($dark-primary, $dark-body-bg, 10%) !default;
+$sidebar-dark-subitem-active-color: $dark-primary !default;
 
 $modal-alpha: 0.4 !default; //模不透明度

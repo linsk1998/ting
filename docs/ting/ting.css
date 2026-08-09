@@ -6798,7 +6798,7 @@ table.table-danger .thead-subtle,
   .media-left {
     order: -1;
   }
-  .media-body, .media-body {
+  .media-body {
     min-width: 0;
     order: 0;
     flex-grow: 1;
@@ -6813,7 +6813,7 @@ table.table-danger .thead-subtle,
     align-self: flex-end;
   }
 }
-.media-body, .media-body {
+.media-body {
   overflow: auto;
 }
 
@@ -11974,6 +11974,39 @@ html .dropdown-item[disabled] {
   background: #ECF1F9;
 }
 
+.dark .sidebar {
+  background: #212529;
+}
+
+.dark .sidebar-link {
+  color: #f8f9fa;
+}
+
+.dark .sidebar-link:hover {
+  color: #adb5bd;
+  background: #252C34;
+}
+
+.dark .sidebar-submenu li a {
+  color: #adb5bd;
+}
+
+.dark .sidebar-submenu a:hover {
+  color: #adb5bd;
+  background: #252C34;
+}
+
+.dark .sidebar-submenu .active a,
+.dark .sidebar-submenu .active a:hover {
+  color: #6ea8fe;
+  background: #29323E;
+}
+
+.dark .sidebar-collapsed .sidebar-collapsible {
+  background: #212529;
+  border-color: #495057;
+}
+
 .sidebar-item-collapsed .sidebar-collapsible {
   display: none;
 }
@@ -13846,11 +13879,11 @@ a.text-primary:hover, .text-primary a:hover {
   color: #2D508F !important;
 }
 
-.bg-primary {
+.bg-primary, .text-bg-primary {
   background-color: #4472c4 !important;
 }
 
-.bg-primary, .bg-primary a, .bg-primary a:hover {
+.text-bg-primary, .text-bg-primary a, .text-bg-primary a:hover {
   color: #fff;
 }
 
@@ -13874,11 +13907,11 @@ a.text-success:hover, .text-success a:hover {
   color: #4D7731 !important;
 }
 
-.bg-success {
+.bg-success, .text-bg-success {
   background-color: #70ad47 !important;
 }
 
-.bg-success, .bg-success a, .bg-success a:hover {
+.text-bg-success, .text-bg-success a, .text-bg-success a:hover {
   color: #fff;
 }
 
@@ -13902,11 +13935,11 @@ a.text-info:hover, .text-info a:hover {
   color: #29659F !important;
 }
 
-.bg-info {
+.bg-info, .text-bg-info {
   background-color: #458ccf !important;
 }
 
-.bg-info, .bg-info a, .bg-info a:hover {
+.text-bg-info, .text-bg-info a, .text-bg-info a:hover {
   color: #fff;
 }
 
@@ -13930,11 +13963,11 @@ a.text-warning:hover, .text-warning a:hover {
   color: #BA8B00 !important;
 }
 
-.bg-warning {
+.bg-warning, .text-bg-warning {
   background-color: #ffc107 !important;
 }
 
-.bg-warning, .bg-warning a, .bg-warning a:hover {
+.text-bg-warning, .text-bg-warning a, .text-bg-warning a:hover {
   color: #fff;
 }
 
@@ -13958,11 +13991,11 @@ a.text-danger:hover, .text-danger a:hover {
   color: #A71D2A !important;
 }
 
-.bg-danger {
+.bg-danger, .text-bg-danger {
   background-color: #dc3545 !important;
 }
 
-.bg-danger, .bg-danger a, .bg-danger a:hover {
+.text-bg-danger, .text-bg-danger a, .text-bg-danger a:hover {
   color: #fff;
 }
 
