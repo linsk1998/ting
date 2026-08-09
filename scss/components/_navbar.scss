@@ -210,7 +210,7 @@
 	.navbar .navbar-btn:focus {
 		outline: 0 none;
 	}
-	@if $enable-transition {
+	@media (prefers-reduced-motion: no-preference) {
 		@keyframes navbar-dropdown-in {
 			0% {
 				clip-path: inset(0 0 100% 0);

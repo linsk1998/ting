@@ -9,7 +9,7 @@
 	overflow-x: hidden;
 	*zoom: 1;
 }
-@if $enable-transition {
+@media (prefers-reduced-motion: no-preference) {
 	@supports (height: calc-size(auto, size)) {
 		/* 折叠状态 */
 		.collapsible {

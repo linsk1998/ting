@@ -32,3 +32,6 @@
 @function ceil($number) {
 	@return math.ceil($number);
 }
+@function floor($number) {
+	@return math.floor($number);
+}

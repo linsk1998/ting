@@ -89,9 +89,10 @@
 	.dark {
 		.accordion-item { border-color: $accordion-dark-border-color;}
 		.accordion-body { border-top-color: $accordion-dark-border-color;}
+		.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis;}
 	}
 }
-@if $enable-transition {
+@media (prefers-reduced-motion: no-preference) {
 	@supports (height: calc-size(auto, size)) {
 		.accordion .accordion-collapsible{
 			display: block;
@@ -99,7 +100,7 @@
 			overflow-y: hidden;
 			transition: height $collapse-duration;
 		}
-		.accordion-collapsed .accordion-collapsible{
+		.accordion-collapsed>.accordion-collapsible{
 			height: 0;
 		}
 	}
@@ -132,12 +133,11 @@
 			overflow: auto;
 			height: 100%;
 		}
-	}
-	@if $enable-dark {
-		.dark {
-			.accordion-fill { border-color: $accordion-dark-border-color;}
-			.accordion-fill>.accordion-item>.accordion-header{ border-top-color: $accordion-dark-border-color;}
-			.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis;}
+		@if $enable-dark {
+			.dark {
+				.accordion-fill { border-color: $accordion-dark-border-color;}
+				.accordion-fill>.accordion-item>.accordion-header{ border-top-color: $accordion-dark-border-color;}
+			}
 		}
 	}
 }

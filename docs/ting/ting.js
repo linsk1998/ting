@@ -60,6 +60,22 @@ $(function(){
 			$item.addClass("accordion-collapsed");
 		}
 	});
+	$(document).on("click",".sidebar a,.sidebar .sidebar-icon",function(e){
+		var $this=$(this);
+		var $li=$this.parent();
+		$li.toggleClass("sidebar-item-collapsed");
+		if($li.children(".sidebar-collapsible").length === 0) {
+			$this.closest(".sidebar").find("li").removeClass("active");
+			$li.addClass("active");
+		}
+	});
+	$(document).on("mousedown",function(e){
+		$(".sidebar-collapsed ul.sidebar-submenu").each(function(){
+			if(!this.contains(e.target)){
+				$(this).closest("li").addClass("sidebar-item-collapsed");
+			}
+		});
+	});
 	$(document).on("click",".dropdown .dropdown-toggle",function(e){
 		$(this).closest(".dropdown").toggleClass("open");
 	});

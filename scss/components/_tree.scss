@@ -70,8 +70,8 @@
 	}
 }
 @media (min-width:0){
-	.tree-expander{ @include transform(90deg);}
-	.tree-collapsed .tree-expander{ @include transform(0deg);}
+	.tree-expander{ @include transform(rotate(90deg));}
+	.tree-collapsed .tree-expander{ @include transform(rotate(0deg));}
 }
 @media \0screen\,screen\9 {
 	.tree-expander{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
@@ -92,7 +92,7 @@
 		.tree-expander{ border-left-color: $dark-text; color: $dark-text;}
 	}
 }
-@if $enable-transition {
+@media (prefers-reduced-motion: no-preference) {
 	@supports (height: calc-size(auto, size)) {
 		.tree-expander{
 			transition: transform $collapse-duration;

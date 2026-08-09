@@ -5,7 +5,6 @@
 $enable-components: true !default; // 启用组件
 $enable-dark: true !default; // 保持圆角开启
 $enable-rounded: false !default; // 保持圆角开启
-$enable-transition: true !default; // 保持过渡动画开启
 $enable-feedback-icon: true !default; // 保持反馈图标开启
 
 $margin-base: 10px !default;
@@ -455,5 +454,24 @@ $tree-indent: 22px !default;
 $tree-item-height: 26px !default;
 $tree-item-hover: #CFDDEF !default;
 $tree-icon-size: 16px !default;
+
+$sidebar-collapsed-width: 300px !default;
+$sidebar-color: $light-emphasis !default;
+$sidebar-bg: #ffffff !default;
+$sidebar-icon-width: 40px !default;          // 图标列宽度
+$sidebar-icon-size: 14px !default;           // 图标字号
+$sidebar-item-height: $sidebar-icon-width !default;
+$sidebar-item-hover-bg: mix($theme-primary, $sidebar-bg, 5%) !default;
+$sidebar-item-hover-color: $light-text !default;
+$sidebar-link-padding-x: 10px !default;
+$sidebar-link-bold: true !default;
+$sidebar-indent: 20px !default;        // 子菜单每级额外缩进
+$sidebar-subitem-color: $light-text !default;
+$sidebar-subitem-height: 36px !default;
+$sidebar-subitem-hover-bg: mix($theme-primary, $sidebar-bg, 5%) !default;
+$sidebar-subitem-hover-color: $light-text !default;
+$sidebar-subitem-active-bg: mix($theme-primary, $sidebar-bg, 10%) !default;
+$sidebar-subitem-active-color: $theme-primary !default;
+$sidebar-max-level: 3 !default;
 
 $modal-alpha: 0.4 !default; //模不透明度

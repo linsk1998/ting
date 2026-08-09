@@ -73,11 +73,11 @@
 | .input-group-lg | 输入框组大尺寸 |
 | .input-group-sm | 输入框组小尺寸 |
 
+[使用方法](./input-group.html)
+
 # 表单组件
 
 以下组件更推荐封装成组件使用
-
-[使用方法](./input-group.html)
 
 ## 前后缀输入框
 
