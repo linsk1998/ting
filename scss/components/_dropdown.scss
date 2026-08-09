@@ -179,8 +179,8 @@ html .dropdown-item[disabled] {
 }
 @if $enable-dark {
 	.dark .dropdown-menu, .dropdown-menu-dark{
-		background: $popover-dark-bg;
-		border-color: $popover-dark-border-color;
+		background: $dark-popover-bg;
+		border-color: $dark-popover-border-color;
 	}
 	.dark {
 		.dropdown-menu a, .dropdown-item{
@@ -188,23 +188,23 @@ html .dropdown-item[disabled] {
 		}
 		.dropdown-menu .active,
 		.dropdown-menu .active:hover {
-			color: $popover-dark-bg;
-			background: $dropdown-dark-active-bg;
+			color: $dark-popover-bg;
+			background: $dark-dropdown-active-bg;
 		}
 		.dropdown-menu a:hover,
 		.dropdown-item:hover{
 			color:$dark-body-text;
-			background-color: $dropdown-dark-item-hover-bg;
+			background-color: $dark-dropdown-item-hover-bg;
 		}
 		.dropdown-item[disabled] {
-			color: $dropdown-dark-item-disabled-bg;
+			color: $dark-dropdown-item-disabled-bg;
 			background: none;
 		}
 		.dropdown-divider{
-			border-color: $popover-dark-border-color;
+			border-color: $dark-popover-border-color;
 		}
 		.dropdown-header{
-			color: $dropdown-dark-header-color;
+			color: $dark-dropdown-header-color;
 		}
 	}
 }

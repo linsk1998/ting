@@ -9,6 +9,6 @@
 }
 @if $enable-dark {
 	.dark{
-		.footer{ background: $footer-dark-bg; color: $footer-dark-color; }
+		.footer{ background: $dark-footer-bg; color: $dark-footer-color; }
 	}
 }

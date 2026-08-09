@@ -105,30 +105,30 @@
 @if $enable-dark {
 	.dark {
 		.sidebar {
-			background: $sidebar-dark-bg;
+			background: $dark-sidebar-bg;
 		}
 		.sidebar-link {
-			color: $sidebar-dark-color;
+			color: $dark-sidebar-color;
 			&:hover {
-				color: $sidebar-dark-item-hover-color;
-				background: $sidebar-dark-item-hover-bg;
+				color: $dark-sidebar-item-hover-color;
+				background: $dark-sidebar-item-hover-bg;
 			}
 		}
 		.sidebar-submenu li a {
-			color: $sidebar-dark-subitem-color;
+			color: $dark-sidebar-subitem-color;
 		}
 		.sidebar-submenu a:hover {
-			color: $sidebar-dark-subitem-hover-color;
-			background: $sidebar-dark-subitem-hover-bg;
+			color: $dark-sidebar-subitem-hover-color;
+			background: $dark-sidebar-subitem-hover-bg;
 		}
 		.sidebar-submenu .active a,
 		.sidebar-submenu .active a:hover {
-			color: $sidebar-dark-subitem-active-color;
-			background: $sidebar-dark-subitem-active-bg;
+			color: $dark-sidebar-subitem-active-color;
+			background: $dark-sidebar-subitem-active-bg;
 		}
 		.sidebar-collapsed .sidebar-collapsible {
-			background: $sidebar-dark-bg;
-			border-color: $popover-dark-border-color;
+			background: $dark-sidebar-bg;
+			border-color: $dark-popover-border-color;
 		}
 	}
 }

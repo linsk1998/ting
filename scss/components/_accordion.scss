@@ -87,9 +87,9 @@
 @if $enable-dark {
 	.dark .accordion, .accordion-dark{ background: $dark-body-bg;}
 	.dark {
-		.accordion-item { border-color: $accordion-dark-border-color;}
-		.accordion-body { border-top-color: $accordion-dark-border-color;}
-		.accordion-button { background: $accordion-dark-header-bg; color: $dark-emphasis-text;}
+		.accordion-item { border-color: $dark-accordion-border-color;}
+		.accordion-body { border-top-color: $dark-accordion-border-color;}
+		.accordion-button { background: $dark-accordion-header-bg; color: $dark-emphasis-text;}
 	}
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -135,8 +135,8 @@
 		}
 		@if $enable-dark {
 			.dark {
-				.accordion-fill { border-color: $accordion-dark-border-color;}
-				.accordion-fill>.accordion-item>.accordion-header{ border-top-color: $accordion-dark-border-color;}
+				.accordion-fill { border-color: $dark-accordion-border-color;}
+				.accordion-fill>.accordion-item>.accordion-header{ border-top-color: $dark-accordion-border-color;}
 			}
 		}
 	}

@@ -146,11 +146,11 @@ $table-border-color: $light-divider !default;
 $table-thead-inverse-bg: $light-inverse !default;
 $table-thead-subtle-bg: $light-secondary-bg !default;
 $table-active: #a5a5a5 !default;
-$table-dark-bg: $dark-body-bg !default;
-$table-dark-border-color: $dark-divider !default;
-$table-dark-thead-inverse-bg: $dark-inverse !default;
-$table-dark-thead-subtle-bg: $dark-secondary-bg !default;
-$table-dark-active: #a5a5a5 !default;
+$dark-table-bg: $dark-body-bg !default;
+$dark-table-border-color: $dark-divider !default;
+$dark-table-thead-inverse-bg: $dark-inverse !default;
+$dark-table-thead-subtle-bg: $dark-secondary-bg !default;
+$dark-table-active: #a5a5a5 !default;
 
 $img-thumbnail-padding: 4px !default;
 $img-thumbnail-rounded: $border-radius !default;
@@ -192,15 +192,15 @@ $jumbotron-title-fontsize-sm: 34px !default;
 $jumbotron-text-fontsize-sm: 18px !default;
 $jumbotron-title-fontsize-xs: 20px !default;
 $jumbotron-text-fontsize-xs: 16px !default;
-$jumbotron-dark-bg: #2b333c !default;
+$dark-jumbotron-bg: #2b333c !default;
 
 $footer-bg: $light-tertiary-bg !default;
 $footer-color: $light-tertiary-text !default;
 $footer-padding: 30px 0 !default;
 $footer-margin: 16px 0 0 !default;
 $footer-text-align: center !default;
-$footer-dark-bg: $dark-tertiary-bg !default;
-$footer-dark-color: $dark-tertiary-text !default;
+$dark-footer-bg: $dark-tertiary-bg !default;
+$dark-footer-color: $dark-tertiary-text !default;
 
 //=============================== 表单 ======================================
 $form-group-margin-bottom: 20px !default;
@@ -346,9 +346,9 @@ $nav-tabs-horizontal-side-width: 200px !default;
 $nav-tabs-horizontal-gutter: 20px !default;
 $nav-tabs-padding-y: 6px !default;
 $nav-tabs-padding-x: 16px !default;
-$nav-dark-indicator-color: $dark-secondary-text !default;
-$nav-dark-indicator-color-hover: $dark-secondary-text !default;
-$nav-dark-indicator-active-color: $dark-primary !default;
+$dark-nav-indicator-color: $dark-secondary-text !default;
+$dark-nav-indicator-color-hover: $dark-secondary-text !default;
+$dark-nav-indicator-active-color: $dark-primary !default;
 
 $navbar-height: 50px !default;
 $navbar-border-width: 1px !default;
@@ -359,9 +359,9 @@ $navbar-nav-active-bg: #e7e7e7 !default;
 $navbar-nav-item-padding-x: 15px !default;
 $navbar-nav-item-padding-y-sm: 10px !default;
 $navbar-nav-item-padding-x-sm: 15px !default;
-$navbar-dark-bg: $dark-tertiary-bg !default;
-$navbar-dark-color: $dark-body-text !default;
-$navbar-dark-nav-active-bg: #212121 !default;
+$dark-navbar-bg: $dark-tertiary-bg !default;
+$dark-navbar-color: $dark-body-text !default;
+$dark-navbar-nav-active-bg: #212121 !default;
 
 // Popover
 $popover-border-width: $ctrl-border-width !default;
@@ -374,8 +374,8 @@ $popover-max-width: 276px !default;
 $popover-header-bg: #eeeeee !default;
 $popover-header-padding: 8px 14px !default;
 $popover-body-padding: 9px 14px !default;
-$popover-dark-bg: $dark-body-bg !default;
-$popover-dark-border-color: $dark-divider !default;
+$dark-popover-bg: $dark-body-bg !default;
+$dark-popover-border-color: $dark-divider !default;
 
 $dropdown-padding-y: 5px !default;
 $dropdown-margin: 2px 0 0;
@@ -391,10 +391,10 @@ $dropdown-header-padding-x: $dropdown-item-padding-x * .5 !default;
 $dropdown-header-color: #777777 !default;
 $dropdown-header-fontsize: 12px !default;
 $dropdown-duration: .3s !default;
-$dropdown-dark-active-bg: $dark-primary !default;
-$dropdown-dark-item-hover-bg: lighten($popover-dark-bg, 5%) !default;
-$dropdown-dark-header-color: $dark-secondary-text !default;
-$dropdown-dark-item-disabled-bg: #666666 !default;
+$dark-dropdown-active-bg: $dark-primary !default;
+$dark-dropdown-item-hover-bg: lighten($dark-popover-bg, 5%) !default;
+$dark-dropdown-header-color: $dark-secondary-text !default;
+$dark-dropdown-item-disabled-bg: #666666 !default;
 
 $tooltip-arrow-size: 5px !default;
 $tooltip-padding: 3px 8px !default;
@@ -411,8 +411,8 @@ $accordion-header-bg: $light-secondary-bg !default;
 $accordion-header-padding-y: 10px !default;
 $accordion-header-padding-x: 15px !default;
 $accordion-body-padding: 15px !default;
-$accordion-dark-border-color: $dark-divider !default;
-$accordion-dark-header-bg: $dark-secondary-bg !default;
+$dark-accordion-border-color: $dark-divider !default;
+$dark-accordion-header-bg: $dark-secondary-bg !default;
 
 $tree-padding: 3px !default;
 $tree-indent: 22px !default;
@@ -430,7 +430,7 @@ $sidebar-item-hover-bg: mix($light-primary, $sidebar-bg, 5%) !default;
 $sidebar-item-hover-color: $light-body-text !default;
 $sidebar-link-padding-x: 10px !default;
 $sidebar-link-bold: true !default;
-$sidebar-indent: 20px !default;        // 子菜单每级额外缩进
+$sidebar-indent: 20px !default;        // 子菜单每级额外缩
 $sidebar-subitem-color: $light-body-text !default;
 $sidebar-subitem-height: 36px !default;
 $sidebar-subitem-hover-bg: mix($light-primary, $sidebar-bg, 5%) !default;
@@ -438,14 +438,14 @@ $sidebar-subitem-hover-color: $light-body-text !default;
 $sidebar-subitem-active-bg: mix($light-primary, $sidebar-bg, 10%) !default;
 $sidebar-subitem-active-color: $light-primary !default;
 $sidebar-max-level: 3 !default;
-$sidebar-dark-bg: $dark-body-bg !default;
-$sidebar-dark-color: $dark-emphasis-text !default;
-$sidebar-dark-item-hover-bg: mix($dark-primary, $dark-body-bg, 5%) !default;
-$sidebar-dark-item-hover-color: $dark-body-text !default;
-$sidebar-dark-subitem-color: $dark-body-text !default;
-$sidebar-dark-subitem-hover-bg: mix($dark-primary, $dark-body-bg, 5%) !default;
-$sidebar-dark-subitem-hover-color: $dark-body-text !default;
-$sidebar-dark-subitem-active-bg: mix($dark-primary, $dark-body-bg, 10%) !default;
-$sidebar-dark-subitem-active-color: $dark-primary !default;
+$dark-sidebar-bg: $dark-body-bg !default;
+$dark-sidebar-color: $dark-emphasis-text !default;
+$dark-sidebar-item-hover-bg: mix($dark-primary, $dark-body-bg, 5%) !default;
+$dark-sidebar-item-hover-color: $dark-body-text !default;
+$dark-sidebar-subitem-color: $dark-body-text !default;
+$dark-sidebar-subitem-hover-bg: mix($dark-primary, $dark-body-bg, 5%) !default;
+$dark-sidebar-subitem-hover-color: $dark-body-text !default;
+$dark-sidebar-subitem-active-bg: mix($dark-primary, $dark-body-bg, 10%) !default;
+$dark-sidebar-subitem-active-color: $dark-primary !default;
 
 $modal-alpha: 0.4 !default; //模不透明度

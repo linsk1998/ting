@@ -147,71 +147,71 @@ td,th {
 
 @if $enable-dark {
 	.dark {
-		.table{ background: $table-dark-bg;}
-		.table-responsive,.table, .table td, .table th{ border-color: $table-dark-border-color;}
+		.table{ background: $dark-table-bg;}
+		.table-responsive,.table, .table td, .table th{ border-color: $dark-table-border-color;}
 
 		@each $key, $color in $dark-context {
-			.table-#{$key}{ background-color:mix($color, $table-dark-bg, 12%);}
+			.table-#{$key}{ background-color:mix($color, $dark-table-bg, 12%);}
 		}
 		@each $key, $color in $dark-context {
-			table.table-#{$key}{ background-color:mix($color, $table-dark-bg, 1%);}
+			table.table-#{$key}{ background-color:mix($color, $dark-table-bg, 1%);}
 		}
 		.table-active {
-			background-color:mix($table-active, $table-dark-bg, 12%);
+			background-color:mix($table-active, $dark-table-bg, 12%);
 		}
 
 		.table-hover>tbody>tr:hover{
-			background-color:lighten($table-dark-bg,4%);
+			background-color:lighten($dark-table-bg,4%);
 		}
 		@each $key, $color in $dark-context {
 			.table-hover>tbody>tr:hover>.table-#{$key},
 			.table-hover>tbody>tr.table-#{$key}:hover{
-				background-color:mix($color, $table-dark-bg, 22%);
+				background-color:mix($color, $dark-table-bg, 22%);
 			}
 			.table-#{$key}.table-hover>tbody>tr:hover,.table-#{$key}>tbody.table-hover>tr:hover{
-				background-color:mix($color, $table-dark-bg, 6%);
+				background-color:mix($color, $dark-table-bg, 6%);
 			}
 		}
 
 		.table-hover>tbody>tr:hover>.table-active,
 		.table-hover>tbody>tr.table-active:hover{
-			background-color:mix($table-active, $table-dark-bg, 26%);
+			background-color:mix($table-active, $dark-table-bg, 26%);
 		}
 		.table-striped>tbody>tr:nth-of-type(odd){
-			background:lighten($table-dark-bg,1%);
+			background:lighten($dark-table-bg,1%);
 		}
 		@each $key, $color in $dark-context {
 			.table-striped>tbody>tr:nth-of-type(odd)>.table-#{$key},
 			.table-striped>tbody>tr.table-#{$key}:nth-of-type(odd){
-				background:mix($color, $table-dark-bg, 14%);
+				background:mix($color, $dark-table-bg, 14%);
 			}
 			.table-#{$key}.table-striped>tbody>tr:nth-of-type(odd){
-				background:mix($color, $table-dark-bg, 4%);
+				background:mix($color, $dark-table-bg, 4%);
 			}
 		}
 		.table-striped>tbody>tr:nth-of-type(odd)>.table-active,
 		.table-striped>tbody>tr.table-active:nth-of-type(odd){
-			background:mix($table-active, $table-dark-bg, 16%);
+			background:mix($table-active, $dark-table-bg, 16%);
 		}
 
 		.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover{
-			background:lighten($table-dark-bg,6%);
+			background:lighten($dark-table-bg,6%);
 		}
 		@each $key, $color in $dark-context {
 			.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover>.table-#{$key},
 			.table-striped.table-hover>tbody>tr.table-#{$key}:nth-of-type(odd):hover{
-				background:mix($color, $table-dark-bg, 24%);
+				background:mix($color, $dark-table-bg, 24%);
 			}
 			.table-#{$key}.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover{
-				background:mix($color, $table-dark-bg, 8%);
+				background:mix($color, $dark-table-bg, 8%);
 			}
 		}
 		.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover>.table-active,
 		.table-striped.table-hover>tbody>tr.table-active:nth-of-type(odd):hover{
-			background:mix($table-active, $table-dark-bg, 30%);
+			background:mix($table-active, $dark-table-bg, 30%);
 		}
-		.thead-inverse{ background-color: $table-dark-thead-inverse-bg; color: $dark-body-bg;}
-		.thead-subtle{ background-color:$table-dark-thead-subtle-bg;}
+		.thead-inverse{ background-color: $dark-table-thead-inverse-bg; color: $dark-body-bg;}
+		.thead-subtle{ background-color:$dark-table-thead-subtle-bg;}
 		@each $key, $color in $dark-context {
 			table.table-#{$key} .thead-inverse,
 			.thead-inverse .table-#{$key} { background-color:$color; }

@@ -253,30 +253,30 @@
 	}
 }
 .dark {
-	.navbar{ background: $navbar-dark-bg;}
+	.navbar{ background: $dark-navbar-bg;}
 	.navbar-fixed-top { border-bottom-color: $dark-divider;}
 	.navbar-brand a,a.navbar-brand,
 	.navbar-brand a:hover,a.navbar-brand:hover {
 		color: $dark-heading-text;
 	}
 	.navbar-nav a {
-		color: $navbar-dark-color;
+		color: $dark-navbar-color;
 	}
 	.navbar-nav .nav-link:hover,
 	.navbar-nav a:hover {
-		color: lighten($navbar-dark-color, 10%);
+		color: lighten($dark-navbar-color, 10%);
 	}
 	.navbar-form .form-label,
 	.navbar-form .control-label {
-		color: $navbar-dark-color;
+		color: $dark-navbar-color;
 	}
 	.navbar-nav .active .nav-link,
 	.navbar-nav .active a,.navbar-nav .open{
-		background: $navbar-dark-nav-active-bg;
+		background: $dark-navbar-nav-active-bg;
 		color: $dark-emphasis-text;
 	}
 	.navbar-nav .dropdown:has(.dropdown-menu[popover]:popover-open) > a{
-		background: $navbar-dark-nav-active-bg;
+		background: $dark-navbar-nav-active-bg;
 		color: $dark-emphasis-text;
 	}
 }
