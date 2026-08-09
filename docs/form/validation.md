@@ -48,14 +48,14 @@
 ```html
 <form class="form">
     <div class="form-group has-valid">
-        <label class="form-label">is-valid</label>
+        <label class="form-label">has-valid</label>
         <input type="text" class="form-control"/>
         <div class="feedback-tooltip">
             校验通过
         </div>
     </div>
     <div class="form-group has-invalid">
-        <label class="form-label">is-invalid</label>
+        <label class="form-label">has-invalid</label>
         <input type="text" class="form-control"/>
         <div class="feedback-tooltip">请输入活动名称</div>
     </div>

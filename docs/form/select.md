@@ -147,7 +147,7 @@
 
 ## 字段校验
 
-在 `.form-group` 上添加 `.has-invalid`，控件边框自动变红。支持全部 7 种状态，其中置灰态可额外加 `.is-invalid` 保持红色边框。
+在 `.form-group` 上添加 `.has-invalid`，控件边框自动变红。
 
 ```html
 <form class="form">
@@ -174,7 +174,7 @@
     <div class="form-group has-invalid">
         <label class="form-label">置灰</label>
         <input type="hidden">
-        <div class="select select-disabled is-invalid">
+        <div class="select select-disabled">
             <button type="button" class="select-btn" disabled>
                 <span class="select-label">金坷拉</span>
                 <div class="caret select-icon"></div>
