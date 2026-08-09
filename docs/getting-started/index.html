@@ -65,17 +65,14 @@
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h1</span>&gt;Hello, world!&lt;/<span class="shiki-entity-name-tag">h1</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">body</span>&gt;</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">html</span>&gt;</span>
-</pre><h2 class="page-header" id="高级使用方式">高级使用方式</h2>
-<h3 id="结合purgecss通过使用情况自动化按需打包">结合purgecss，通过使用情况自动化按需打包</h3>
-<p>webpack插件例子</p>
-<pre class="code shiki"><span class="shiki-line"><span class="shiki-storage-type">const</span> <span class="shiki-variable-other-constant">PurgecssPlugin</span> <span class="shiki-keyword">=</span> <span class="shiki-entity-name">require</span>(<span class="shiki-punctuation-definition-string">&#39;</span><span class="shiki-string">purgecss-webpack-plugin</span><span class="shiki-punctuation-definition-string">&#39;</span>);</span>
-<span class="shiki-line"><span class="shiki-keyword">new</span> <span class="shiki-entity-name">PurgecssPlugin</span>({</span>
-<span class="shiki-line">    paths:[<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">public/index.html</span><span class="shiki-punctuation-definition-string">&quot;</span>],</span>
-<span class="shiki-line">    safelist:[<span class="shiki-variable-other">略</span>],</span>
-<span class="shiki-line">    keyframes:<span class="shiki-constant">true</span>,</span>
-<span class="shiki-line">    fontFace:<span class="shiki-constant">true</span></span>
-<span class="shiki-line">})</span>
-</pre><p>postcss插件例子</p>
+</pre><h2 class="page-header" id="工程化项目使用">工程化项目使用</h2>
+<p>可以通过 <code>npm i @ting-ui/css</code> 安装，然后在你的项目中的html模板中插入标签。</p>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">link</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">node_modules/@ting-ui/css/ting.css</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">rel</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">stylesheet</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+</pre><p>如果你的构建工具支持的话，会自动生成到dist目录下。</p>
+<h2 class="page-header" id="暗黑模式使用">暗黑模式使用</h2>
+<p>本项目支持部分暗黑模式和全局暗黑模式。假如你把左侧栏设为暗黑模式，在左侧栏的容器上加入<code>.dark</code>样式类，左侧栏就会是黑色的。如果要全局使用暗黑模式，在html上加入<code>.dark</code>样式类。</p>
+<h2 class="page-header" id="高级使用方式">高级使用方式</h2>
+<h3 id="postcss插件实现按需构建例子">postcss插件实现按需构建例子</h3>
 <pre class="code shiki"><span class="shiki-line"><span class="shiki-storage-type">const</span> <span class="shiki-variable-other-constant">purgecss</span> <span class="shiki-keyword">=</span> <span class="shiki-entity-name">require</span>(<span class="shiki-punctuation-definition-string">&#39;</span><span class="shiki-string">postcss-purgecss</span><span class="shiki-punctuation-definition-string">&#39;</span>);</span>
 <span class="shiki-line"><span class="shiki-entity-name">purgecss</span>({</span>
 <span class="shiki-line">    content: [<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">index.html</span><span class="shiki-punctuation-definition-string">&quot;</span>],</span>
@@ -83,20 +80,6 @@
 <span class="shiki-line">    keyframes: <span class="shiki-constant">true</span>,</span>
 <span class="shiki-line">    fontFace:<span class="shiki-constant">true</span></span>
 <span class="shiki-line">});</span>
-</pre><h3 id="作为mixin库使用">作为mixin库使用</h3>
-<p>vue-cli例子</p>
-<pre class="code shiki"><span class="shiki-line">{</span>
-<span class="shiki-line">    <span class="shiki-entity-name">css</span>: {</span>
-<span class="shiki-line">        <span class="shiki-entity-name">loaderOptions</span>: {</span>
-<span class="shiki-line">            <span class="shiki-entity-name">sass</span>: {</span>
-<span class="shiki-line">                <span class="shiki-entity-name">implementation</span>: <span class="shiki-entity-name">require</span>(<span class="shiki-punctuation-definition-string">&#39;</span><span class="shiki-string">sass</span><span class="shiki-punctuation-definition-string">&#39;</span>),</span>
-<span class="shiki-line">                <span class="shiki-entity-name">prependData</span>: <span class="shiki-punctuation-definition-string">`</span></span>
-<span class="shiki-line"><span class="shiki-string">@import &#39;~@ting-ui/css/scss/variables.scss&#39;;</span></span>
-<span class="shiki-line"><span class="shiki-string">@import &#39;~@ting-ui/css/scss/mixin.scss&#39;;</span><span class="shiki-punctuation-definition-string">`</span></span>
-<span class="shiki-line">            }</span>
-<span class="shiki-line">        }</span>
-<span class="shiki-line">    }</span>
-<span class="shiki-line">}</span>
 </pre>
 		</div>
 		<footer class="footer">

@@ -13,8 +13,7 @@
 	"author": "linsk",
 	"license": "MIT",
 	"files": [
-		"all.css",
-		"no-component.css",
+		"dist/",
 		"scss/"
 	],
 	"exports": {
