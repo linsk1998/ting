@@ -4,13 +4,13 @@
 
 ## 语境颜色
 
-| 浅色背景颜色 | 文本颜色 | 背景颜色 | 边框颜色 |
-|---|---|---|---|
-| .primary | .text-primary | .bg-primary | .border-primary |
-| .success | .text-success | .bg-success | .border-success |
-| .info | .text-info | .bg-info | .border-info |
-| .warning | .text-warning | .bg-warning | .border-warning |
-| .danger | .text-danger | .bg-danger | .border-danger |
+| 浅色背景颜色 | 文本颜色 | 背景颜色 | 背景颜色+文字变白 | 边框颜色 |
+|---|---|---|---|---|
+| .primary | .text-primary | .bg-primary | .text-bg-primary | .border-primary |
+| .success | .text-success | .bg-success | .text-bg-success | .border-success |
+| .info | .text-info | .bg-info | .text-bg-info | .border-info |
+| .warning | .text-warning | .bg-warning | .text-bg-warning | .border-warning |
+| .danger | .text-danger | .bg-danger | .text-bg-danger | .border-danger |
 
 [使用方法](./color.md)
 
