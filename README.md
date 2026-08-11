@@ -20,7 +20,11 @@ https://linsk1998.github.io/ting/
 
 ### 命名风格
 
-本项目的风格是.{组件}-{状态}、.{组件}-{子元素}风格。示例：`.btn`、`.btn-primary`。以下这种`.btn.primary`组合使用的风格不是本项目的风格。同理，`.btn.is-disabled`、`.btn.disabled`也是一样的。
+本项目的风格是.{组件}-{状态}、.{组件}-{子元素}风格。示例：`.btn`、`.btn-primary`。以下这种`.btn.primary`组合使用的风格不是本项目的风格。同理，`.btn.is-disabled`、`.btn.disabled`也是一样的。但考虑到兼容 bootstrap，我提供了一个全局公用样式`.disabled`，这是公用的，不针对 `.btn`。
+
+### 避免子元素选择器
+
+例如 `.carousel-control>.left` 不是本项目的风格，应该写成 `.carousel-control-prev`。
 
 ### 渐进增强 & 优雅降级
 
@@ -28,7 +32,11 @@ https://linsk1998.github.io/ting/
 
 ### 优先展示
 
-bootstrap是优先隐藏的，比如 bootstrap 的`.collapse`是一个可折叠容器，默认是折叠的，加上`.show`出现。本项目用的是`.collapsible`默认是展开的，加上`.hide`隐藏。当然，也提供了`.collapse`来兼容 bootstrap。
+bootstrap是优先隐藏的，比如 bootstrap 的`.collapse`是一个可折叠容器，默认是折叠的，加上`.show`出现。本项目用的是`.collapsible`默认是展开的，加上`.hide`隐藏。当然，也提供了`.collapse`来兼容 bootstrap。同理还有 `.navbar-collapse`、`.accordion-collapse`等。
+
+### 不包含图标
+
+本项目是纯样式库，样式中避免使用特定图标，有使用图标的地方都放到了 html 中维户，用户可以自己替换。示例中所使用的图标为 fontawesome。
 
 ### 动画支持浏览器关闭
 

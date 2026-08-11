@@ -36,7 +36,7 @@
 
 ## 图标颜色
 
-语境色类同样适用于 FontAwesome 图标等元素。
+语境色类同样适用于字体图标等元素。
 
 ```html
 <div class="dialog dialog-primary">

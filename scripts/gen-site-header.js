@@ -21,7 +21,7 @@ function navbar(currentSection) {
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="${prefix}index.html" class="navbar-brand"><img height="37" src="${prefix}images/logo.png"/><span class="line-middle">Ting Web UI</span></a>
+						<a href="${prefix}index.html" class="navbar-brand"><img height="37" src="${prefix}images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-responsive-dropdown">
 						<ul class="navbar-nav">${navbarHtml}

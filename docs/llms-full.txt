@@ -1654,7 +1654,2661 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 ---
 
 # =============================================================================
-# 四、组件 (components)
+# 四、表单 (form)
+# =============================================================================
+
+
+---
+# 源文件: form/index.md
+---
+# 表单
+
+强大的表单相关样式，包括基础控件、各种布局、大小尺寸、字段校验以及丰富的表单组件。
+
+## 基础控件
+
+| 类 | 描述 |
+|---|---|
+| .form-control | 输入控件 |
+| .form-check | 单选框和复选框的容器 |
+| .form-check-inline | 单选框和复选框的内联容器 |
+| .form-text | 帮助文本 |
+
+[使用方法](./control.html)
+
+## 布局
+
+| 类 | 描述 |
+|---|---|
+| .form | 换行布局的表单 |
+| .form-inline | 内联表单 |
+| .form-horizontal | 水平排列的表单 |
+| .form-group | label和一个输入框的组合 |
+| .form-label | 控件用的标签 |
+| .form-control | 输入控件 |
+
+[使用方法](./form.html)
+
+## 控件大小
+
+| 类 | 描述 |
+|---|---|
+| .form-group-lg | .form-group-lg下面的标签的控件大一号 |
+| .form-group-sm | .form-group-sm下面的标签的控件小一号 |
+| .form-control-lg | .form-control-lg控件大一号 |
+| .form-control-sm | .form-control-sm控件小一号 |
+
+[使用方法](./sizing.html)
+
+## 字段校验
+
+| 类 | 描述 |
+|---|---|
+| .has-valid | 定义成功效果的form-group |
+| .has-invalid | 定义错误效果的form-group |
+| .has-feedback-icon | 添加额外的图标 |
+| .feedback-icon | 反馈图标 |
+| .feedback-text | 反馈文字 |
+| .feedback-tooltip | 反馈飘浮提示文字 |
+
+[使用方法](./validation.html)
+
+## 静态控件
+
+| 类 | 描述 |
+|---|---|
+| .form-control-static | 静态控件 |
+
+[使用方法](./static.html)
+
+## 输入框组
+
+通过在文本输入框  前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。
+
+			
+| 类 | 描述 |
+|---|---|
+| .input-group | 输入框组 |
+| .input-group-prepend | 输入框组左侧额外的元素 |
+| .input-group-append | 输入框组右侧额外的元素 |
+| .input-group-body | 输入框组中间容器 |
+| .input-group-text | 输入框组左侧右侧文本 |
+| .input-group-lg | 输入框组大尺寸 |
+| .input-group-sm | 输入框组小尺寸 |
+
+[使用方法](./input-group.html)
+
+# 表单组件
+
+以下组件更推荐封装成组件使用
+
+## 前后缀输入框
+
+通过在文本输入框  前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。
+	
+| 类 | 描述 |
+|---|---|
+| .input | 输入框 |
+| .input-prefix | 输入框前缀 |
+| .input-suffix | 输入框后缀 |
+| .input-body | 输入框控件容器 |
+| .input-lg | 输入框大尺寸 |
+| .input-sm | 输入框小尺寸 |
+| .input-disabled | 禁用状态 |
+| .input-counter | 输入框计数器样式 |
+
+[使用方法](./input.html)
+
+## 标签输入框
+
+| 类 | 描述 |
+|---|---|
+| .tags-input | 标签输入框 |
+| .tags-input-placeholder | 标签输入框占位文字 |
+| .tags-input-nowrap | 标签输入框标签不换行容器 |
+| .tags-input-wrap | 标签输入框标签可换行容器 |
+| .tags-input-lg | 标签输入框大尺寸 |
+| .tags-input-sm | 标签输入框小尺寸 |
+| .tags-input-disabled | 标签输入框禁用 |
+
+[使用方法](./tags-input.html)
+
+## 下拉按钮
+
+| 类 | 描述 |
+|---|---|
+| .select | 选择按钮 |
+| .select-label | 选择按钮内部文字 |
+| .select-placeholder | 选择按钮占位文字 |
+| .select-icon | 选择按钮右侧图标 |
+| .select-disabled | 选择按钮禁用 |
+| .select-loading | 选择按钮加载中 |
+| .select-lg | 大号选择按钮 |
+| .select-sm | 小号选择按钮 |
+
+[使用方法](./select.html)
+
+## 文本域
+
+| 类 | 描述 |
+|---|---|
+| .textarea | 文本域 |
+| .textarea-counter | 文本域计数器样式 |
+| .textarea-lg | 大号文本域 |
+| .textarea-sm | 小号文本域 |
+
+[使用方法](./textarea.html)
+
+## 单选、多选框
+
+| 类 | 描述 |
+|---|---|
+| .checkbox-group | 多选组 |
+| .radio-group | 单选组 |
+| .checkbox-group-horizontal | 水平布局多选组 |
+| .radio-group-horizontal | 水平布局单选组 |
+| .checkbox | 多选框 |
+| .radio | 单选框 |
+| .checkbox-disabled | 多选框禁用 |
+| .radio-disabled | 单选框禁用 |
+| .checkbox-checked | 多选框选中状态 |
+| .radio-checked | 单选框选中状态 |
+| .checkbox-indeterminate | 多选框不确定状态 |
+
+[使用方法](./checkbox.html)
+
+## 开关
+
+| 类 | 描述 |
+|---|---|
+| .switch | 开关按钮 |
+| .switch-checked | 开关按钮选中状态 |
+| .switch-disabled | 开关按钮禁用 |
+| .switch-loading | 开关按钮加载中 |
+
+[使用方法](./switch.html)
+
+## 开关按钮
+
+| 类 | 描述 |
+|---|---|
+| .btn-toggle | 开关按钮 |
+| .btn-toggle-checked | 开关按钮选中状态 |
+[使用方法](./toggle-button.html)
+
+
+
+---
+# 源文件: form/checkbox.md
+---
+# 单选和多选
+
+美化的单选（`.radio`）和多选（`.checkbox`）控件，支持默认、选中、部分选中、禁用和校验状态，以及垂直和水平两种布局。
+
+## 多选
+
+使用 `.checkbox-group` 垂直布局，`.checkbox-group-horizontal` 水平布局。`.checkbox` + `.checkbox-checked` / `.checkbox-indeterminate` 控制状态。
+
+### 垂直布局
+
+```html
+<div class="checkbox-group">
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+</div>
+```
+
+### 水平布局
+
+```html
+<div class="checkbox-group-horizontal">
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+</div>
+```
+
+### 置灰
+
+添加 `.checkbox-disabled`，`<input>` 设置 `disabled`。
+
+```html
+<div class="checkbox-group-horizontal">
+    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
+</div>
+```
+
+### 校验
+
+在容器上添加 `.has-invalid`。
+
+```html
+<div class="checkbox-group-horizontal has-invalid">
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+</div>
+```
+
+## 单选
+
+使用 `.radio-group` 垂直布局，`.radio-group-horizontal` 水平布局。`.radio` + `.radio-checked` 控制状态。
+
+### 垂直布局
+
+```html
+<div class="radio-group">
+    <label><div class="radio"><input type="radio" name="demo"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo"></div>选中</label>
+</div>
+```
+
+### 水平布局
+
+```html
+<div class="radio-group-horizontal">
+    <label><div class="radio"><input type="radio" name="demo2"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo2"></div>选中</label>
+</div>
+```
+
+### 置灰
+
+```html
+<div class="radio-group-horizontal">
+    <label><div class="radio radio-disabled"><input type="radio" name="demo3" disabled></div>默认状态</label>
+    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo3" disabled></div>选中</label>
+</div>
+```
+
+### 校验
+
+```html
+<div class="radio-group-horizontal has-invalid">
+    <label><div class="radio"><input type="radio" name="demo4"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo4"></div>选中</label>
+    <label><div class="radio radio-disabled"><input type="radio" name="demo4" disabled></div>默认状态</label>
+    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo4" disabled></div>选中</label>
+</div>
+```
+
+
+---
+# 源文件: form/control.md
+---
+# 基础控件
+
+表单基础控件包括文本输入、下拉选择、文本域、文件上传、复选框和单选框等所有基础表单元素。
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label" for="email">普通文本</label>
+        <input type="email" class="form-control" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="password">密码</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+        <p class="form-text">Example block-level help text here.</p>
+    </div>
+    <div class="form-group">
+        <label class="form-label">置灰状态</label>
+        <input type="text" class="form-control input-disabled" disabled>
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="attachment">上传</label>
+        <input type="file" name="attachment">
+    </div>
+    <div class="form-group">
+        <label class="form-label">多选</label>
+        <div>
+            <label class="form-check"><input type="checkbox">Check me out</label>
+            <label class="form-check"><input type="checkbox">同时可以选我</label>
+            <label class="form-check"><input type="checkbox">还可以选我</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">单选</label>
+        <div>
+            <label class="form-check"><input type="radio" name="radio">Check me out</label>
+            <label class="form-check"><input type="radio" name="radio">同时可以选我</label>
+            <label class="form-check"><input type="radio" name="radio">还可以选我</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">水平布局多选</label>
+        <div>
+            <label class="form-check form-check-inline"><input type="checkbox">Check me out</label>
+            <label class="form-check form-check-inline"><input type="checkbox">同时可以选我</label>
+            <label class="form-check form-check-inline"><input type="checkbox">还可以选我</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">水平布局单选</label>
+        <div>
+            <label class="form-check form-check-inline"><input type="radio" name="radio">Check me out</label>
+            <label class="form-check form-check-inline"><input type="radio" name="radio">同时可以选我</label>
+            <label class="form-check form-check-inline"><input type="radio" name="radio">还可以选我</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">文本域</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="form-label">置灰状态</label>
+        <textarea class="form-control input-disabled" rows="3" disabled></textarea>
+    </div>
+    <div class="form-group">
+        <label class="form-label">下拉</label>
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label class="form-label">置灰状态</label>
+        <select class="form-control input-disabled" disabled>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+```
+
+
+---
+# 源文件: form/form.md
+---
+# 表单布局
+
+表单布局提供了多种排列方式，包括基本表单、内联表单、水平排列以及配合格栅系统的灵活布局。
+
+## 垂直布局表单
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label" for="email">普通文本</label>
+        <input type="email" class="form-control" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="password">密码</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label class="form-label">文本域</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="form-label">下拉</label>
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+```
+
+## 内联表单
+
+通过 `.form-inline` 类可以使表单元素水平排列在同一行。
+
+```html
+<form class="form-inline"
+    ><div class="form-group"
+        ><label class="form-label" for="exampleInputName2">Name</label
+        ><input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"
+    ></div
+    ><div class="form-group"
+        ><label class="form-label" for="exampleInputEmail2">Email</label
+        ><input style="width:160px;" type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com"
+    ></div
+    ><div class="form-group"
+        ><label class="form-label">Password</label
+        ><input type="password" class="form-control"
+    ></div
+    ><div class="form-group">
+        <div class="radio-group">
+            <label><input type="checkbox">记住登入</label>
+            <label><input type="checkbox">同时可以选我</label>
+            <label><input type="checkbox">还可以选我</label>
+        </div>
+    </div
+    ><button type="submit" class="btn btn-primary">Send invitation</button
+></form>
+```
+
+## 水平排列的表单
+
+使用 `.form-horizontal` 类可以让表单的 label 和控件水平排列。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label class="form-check"><input type="checkbox"> Remember me</label>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+</form>
+```
+
+## 使用格栅系统
+
+结合 `.row` 和 `.col-*` 类可以实现更灵活的表单布局。
+
+```html
+<form class="form">
+    <div class="form-group row">
+        <label class="form-label col-md-2">Email</label>
+        <div class="col-md-10">
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="form-label col-md-2">Password</label>
+        <div class="col-md-10">
+            <input type="password" class="form-control" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-offset-2 col-md-10">
+            <div class="form-check">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </div>
+</form>
+```
+
+## 表格形式
+
+将表单嵌入表格中，适用于批量数据输入场景。
+
+```html
+<form class="form">
+    <table class="table table-bordered table-sm">
+        <colgroup>
+            <col width="10.33%"/><col width="20%"/>
+            <col width="10.33%"/><col width="20%"/>
+            <col width="10.33%"/><col width="20%"/>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th class="thead-subtle">流水号</th>
+                <td><input type="email" class="form-control"/></td>
+                <th class="thead-subtle">订单号</th>
+                <td><input type="email" class="form-control"/></td>
+                <th class="thead-subtle">状态</th>
+                <td><input type="email" class="form-control"/></td>
+            </tr>
+            <tr>
+                <th class="thead-subtle">原因</th>
+                <td><input type="email" class="form-control"/></td>
+                <th class="thead-subtle">要求</th>
+                <td><input type="email" class="form-control"/></td>
+                <th class="thead-subtle">申请时间</th>
+                <td><input type="email" class="form-control"/></td>
+            </tr>
+            <tr>
+                <th class="thead-subtle">详细说明</th>
+                <td colspan="5">
+                    <textarea class="form-control" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th class="thead-subtle">附件</th>
+                <td colspan="5">
+                    <input type="file" name="attachment">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+```
+
+
+---
+# 源文件: form/input-group.md
+---
+# 输入框组
+
+通过 `.input-group` 将文本、按钮等附加元素与输入框组合在一起，使用 `.input-group-prepend` 前置、`.input-group-append` 后置，控件放在 `.input-group-body` 中。
+
+## 基础用法
+
+### 文本前置 / 后置
+
+```html
+<label for="basic-url">前置</label>
+<div class="input-group">
+    <div class="input-group-prepend input-group-text" id="basic-addon3">https://example.com/users/</div>
+    <div class="input-group-body">
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
+    </div>
+</div>
+<br/>
+<label for="basic-addon1">后置</label>
+<div class="input-group">
+    <div class="input-group-append input-group-text">@example.com</div>
+    <div class="input-group-body">
+        <input id="basic-addon1" type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon1"/>
+    </div>
+</div>
+<br/>
+<label for="basic-addon2">同时使用前后附加</label>
+<div class="input-group">
+    <div class="input-group-prepend input-group-text">$</div>
+    <div class="input-group-append input-group-text">.00</div>
+    <!--控件需要放在最后-->
+    <div class="input-group-body">
+        <input id="basic-addon2" type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
+    </div>
+</div>
+```
+
+### 作为额外元素的按钮
+
+`input-group-prepend` 和 `input-group-append` 可以直接放按钮或按钮组。
+
+```html
+<div class="input-group">
+    <button class="input-group-prepend btn btn-default" type="button">搜索</button>
+    <button class="input-group-append btn btn-primary" type="button">搜索</button>
+    <div class="input-group-body">
+        <input type="text" class="form-control" placeholder="关键词"/>
+    </div>
+</div>
+<br/>
+<div class="input-group">
+    <div class="input-group-prepend btn-group">
+        <button type="button" class="btn btn-default">按钮 1</button>
+        <button type="button" class="btn btn-default">按钮 2</button>
+    </div>
+    <div class="input-group-append btn-group">
+        <button type="button" class="btn btn-default">按钮 1</button>
+        <button type="button" class="btn btn-primary">按钮 2</button>
+    </div>
+    <div class="input-group-body">
+        <input type="text" class="form-control" placeholder="关键词"/>
+    </div>
+</div>
+```
+
+## 清空图标
+
+在 `.input-group-body` 内放入 `.control-clear` 清空按钮。
+
+```html
+<div class="input-group">
+    <div class="input-group-prepend input-group-text">@</div>
+    <div class="input-group-body">
+        <input type="text" class="form-control" placeholder="Username"/>
+        <button type="button" class="control-clear fa">&#xf057;</button>
+    </div>
+</div>
+```
+
+## 置灰状态
+
+对控件和按钮设置 `disabled` 属性即可。
+
+```html
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">█</div>
+    </div>
+    <div class="input-group-append btn-group">
+        <button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
+        <button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
+    </div>
+    <!--控件需要放在最后-->
+    <div class="input-group-body">
+        <input type="text" class="form-control" disabled/>
+    </div>
+</div>
+```
+
+## 内联表单
+
+`.input-group` 可直接放在 `.form-inline` 中使用。
+
+```html
+<form class="form-inline">
+    <div class="form-group">
+        <label class="form-label" for="exampleInputName2">Name</label>
+        <input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="exampleInputEmail2">Email</label>
+        <div style="width:300px;" class="input-group">
+            <div class="input-group-append">
+                <div class="input-group-text">@shengdiyage.us</div>
+            </div>
+            <div class="input-group-body">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+    </div>
+</form>
+```
+
+## 组件大小
+
+使用 `.input-group-lg` / `.input-group-sm` 控制输入框组尺寸，配合 `.form-group-lg` / `.form-group-sm` 或 `.form-control-lg` / `.form-control-sm`。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">input-group-lg</label>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+            <div class="input-group-append"><div class="input-group-text">元</div></div>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <input type="text" class="form-control form-control-lg"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">input-group-sm</label>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+            <div class="input-group-append"><div class="input-group-text">元</div></div>
+            <div class="input-group-body">
+                <input type="text" class="form-control form-control-sm"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+            <div class="input-group-append"><div class="input-group-text">元</div></div>
+            <div class="input-group-body">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+            <div class="input-group-append"><div class="input-group-text">元</div></div>
+            <div class="input-group-body">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+    </div>
+</form>
+```
+
+## 校验
+
+`.input-group` 可配合 `.has-valid` / `.has-invalid` 校验状态，`feedback-icon` 和 `control-clear` 可共存于 `.input-group-body` 内。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="input-group">
+            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+            <div class="input-group-append"><div class="input-group-text">元</div></div>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <input type="text" class="form-control"/>
+                <button type="button" class="control-clear fa">&#xf057;</button>
+                <i class="feedback-icon fa">&#xf00c;</i>
+            </div>
+        </div>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="input-group">
+            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
+            <div class="input-group-append"><div class="input-group-text">元</div></div>
+            <div class="input-group-body">
+                <input type="text" class="form-control"/>
+                <button type="button" class="control-clear fa">&#xf057;</button>
+                <i class="feedback-icon fa">&#xf00d;</i>
+            </div>
+        </div>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/input.md
+---
+# 前后缀输入框
+
+前后缀输入框（`.input`）是一种增强型输入控件，支持在输入框前后添加图标、文字、计数器等附加内容。附加元素通过 `.input-prefix` / `.input-suffix` 放置，控件本身放在 `.input-body` 中。
+
+
+## 前后缀输入框
+
+### 单独使用
+
+`.input-prefix` 前置图标，`.input-suffix` 后置图标，控件必须放在 `.input-body` 内。
+
+```html
+<div class="input">
+    <div class="input-prefix"
+        ><span class="valign-sibling"></span
+        ><i class="icon fa">&#xf002;</i
+    ></div>
+    <div class="input-suffix"
+        ><span class="valign-sibling"></span
+        ><i class="icon fa">&#xf133;</i
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body">
+        <input type="text"/>
+    </div>
+</div>
+```
+
+### 配合 input-group 使用
+
+`.input` 可嵌套在 `.input-group` 中，形成输入框组 + 前后缀的复合结构。
+
+```html
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">█</div>
+    </div>
+    <div class="input-group-append">
+        <div class="input-group-text">元</div>
+    </div>
+    <div class="input-group-body">
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body">
+                <input type="text"/>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+## 清空图标
+
+在 `.input-body` 或 `.input-suffix` 中放入 `.control-clear` 清空按钮。当没有后缀时放在 `.input-body` 内，有后缀时可放在 `.input-suffix` 中。
+
+```html
+<!-- 没有后缀 -->
+<div class="input">
+    <div class="input-prefix"
+        ><span class="valign-sibling"></span
+        ><i class="icon fa">&#xf002;</i
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body"
+        ><input type="text"
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
+</div>
+<br/>
+<!-- 有后缀 -->
+<div class="input">
+    <div class="input-prefix"
+        ><i class="icon fa">&#xf002;</i
+        ><span class="valign-sibling"></span
+    ></div>
+    <div class="input-suffix"
+        ><span class="valign-sibling"></span
+        ><i class="icon fa">&#xf133;</i
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body"
+        ><input type="text"
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
+</div>
+<br/>
+<!-- 有按钮：带计数器 -->
+<div class="input">
+    <div class="input-prefix"
+        ><span class="valign-sibling"></span
+        ><i class="icon fa">&#xf002;</i
+    ></div>
+    <div class="input-suffix"
+        ><span class="valign-sibling"></span
+        ><span class="input-counter">0/111</span
+    ></div>
+    <div class="input-suffix"
+        ><span class="valign-sibling"></span
+        ><i class="icon fa">&#xf133;</i
+    ></div>
+    <!--控件需要放在最后-->
+    <div class="input-body"
+        ><input type="text"
+        ><button type="button" class="control-clear fa">&#xf057;</button
+    ></div>
+</div>
+```
+
+## 置灰状态
+
+在 `.input` 上添加 `.input-disabled`，同时给 `<input>` 设置 `disabled` 属性。
+
+```html
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">█</div>
+    </div>
+    <div class="input-group-append btn-group">
+        <button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
+        <button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
+    </div>
+    <div class="input-group-body">
+        <div class="input input-disabled">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text" disabled
+            ></div>
+        </div>
+    </div>
+</div>
+```
+
+## 内联表单
+
+`.input` 可在 `.form-inline` 内联表单中使用，配合 `.input-group` 组合更复杂的场景。
+
+```html
+<form class="form-inline">
+    <div class="form-group">
+        <label class="form-label">Name</label>
+        <input style="width:160px;" type="text" class="form-control" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Cash</label>
+        <div style="width:200px" class="input">
+            <div class="input-prefix">
+                <span class="valign-middle">￥</span>
+                <span class="valign-sibling"></span>
+            </div>
+            <div class="input-suffix">
+                <span class="valign-sibling"></span>
+                <span class="valign-middle">元</span>
+                <span class="input-counter">0/20</span>
+            </div>
+            <!--控件需要放在最后-->
+            <div class="input-body">
+                <input type="text"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Page</label>
+        <div style="width:300px;" class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">http://</div>
+            </div>
+            <div class="input-group-body">
+                <div class="input">
+                    <div class="input-prefix"
+                        ><span class="valign-sibling"></span
+                        ><span class="valign-middle">www.</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="valign-sibling"></span
+                        ><span class="valign-middle">.com</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="valign-sibling"></span
+                        ><span class="input-counter">0/20</span
+                    ></div>
+                    <!--控件需要放在最后-->
+                    <div class="input-body">
+                        <input type="text"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+```
+
+## 组件大小
+
+`.input` 支持 `.input-lg` / `.input-sm`，`.input-group` 支持 `.input-group-lg` / `.input-group-sm`，还可配合 `.form-group-lg` / `.form-group-sm` 实现表单项级别的尺寸控制。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">input-lg</label>
+        <div class="input input-lg">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+            ></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">input-sm</label>
+        <div class="input input-sm">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+            ></div>
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+                <div class="input-group-text">█</div>
+            </div>
+            <div class="input-group-append">
+                <div class="input-group-text">元</div>
+            </div>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <div class="input">
+                    <div class="input-prefix"
+                        ><span class="valign-sibling"></span
+                        ><i class="icon fa">&#xf002;</i
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="valign-sibling"></span
+                        ><span class="input-counter">0/111</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="valign-sibling"></span
+                        ><i class="icon fa">&#xf133;</i
+                    ></div>
+                    <!--控件需要放在最后-->
+                    <div class="input-body"
+                        ><input type="text"
+                        ><button type="button" class="control-clear fa">&#xf057;</button
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+                <div class="input-group-text">█</div>
+            </div>
+            <div class="input-group-append">
+                <div class="input-group-text">元</div>
+            </div>
+            <div class="input-group-body">
+                <div class="input">
+                    <div class="input-prefix"
+                        ><span class="valign-sibling"></span
+                        ><i class="icon fa">&#xf002;</i
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="valign-sibling"></span
+                        ><span class="input-counter">0/111</span
+                    ></div>
+                    <div class="input-suffix"
+                        ><span class="valign-sibling"></span
+                        ><i class="icon fa">&#xf133;</i
+                    ></div>
+                    <!--控件需要放在最后-->
+                    <div class="input-body"
+                        ><input type="text"
+                        ><button type="button" class="control-clear fa">&#xf057;</button
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+```
+
+## 校验
+
+`.input` 可配合 `.has-valid` / `.has-invalid` 校验状态，`.feedback-icon` 和 `.control-clear` 共存于 `.input-body` 内。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00c;</i
+            ></div>
+        </div>
+        <p class="feedback-text">没有后缀</p>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00d;</i
+            ></div>
+        </div>
+        <p class="feedback-text">没有后缀</p>
+    </div>
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00c;</i
+            ></div>
+        </div>
+        <p class="feedback-text">有后缀</p>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="input">
+            <div class="input-prefix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf002;</i
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><span class="input-counter">0/111</span
+            ></div>
+            <div class="input-suffix"
+                ><span class="valign-sibling"></span
+                ><i class="icon fa">&#xf133;</i
+            ></div>
+            <!--控件需要放在最后-->
+            <div class="input-body"
+                ><input type="text"
+                ><button type="button" class="control-clear fa">&#xf057;</button
+                ><i class="feedback-icon fa">&#xf00d;</i
+            ></div>
+        </div>
+        <p class="feedback-text">有后缀</p>
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/select.md
+---
+# 选择按钮
+
+下拉选择按钮（`.select`）提供自定义样式的选择控件，支持下拉菜单、占位、置灰、加载中、错误重试等多种状态。
+
+## 选择按钮的不同状态
+
+### 基本用法
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">基本用法</label>
+        <div class="select dropdown">
+            <input type="hidden">
+            <button type="button" class="select-btn" popovertarget="myPop">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+            <ul id="myPop" class="dropdown-menu" popover>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线咨询</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">领导信箱</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线访谈</button></li>
+                <li role="separator" class="dropdown-divider"></li>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">网站投稿</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">空白占位</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="select-icon caret"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">置灰</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">置灰空白占位</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+</form>
+```
+
+### 加载中
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">加载中</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon icon loading-circular"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">加载中空白占位</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">加载中...</span>
+                <div class="select-icon icon loading-circular"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">错误重试</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-msg text-danger">网络加载错误</span>
+                <div class="select-icon icon fa fa-refresh"></div>
+            </button>
+        </div>
+    </div>
+</form>
+```
+
+## 组件大小
+
+`.select-lg` / `.select-sm` 控制选择按钮大小，可配合 `.form-group-lg` / `.form-group-sm`（此时 `.select` 无需额外尺寸类）。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">select-lg</label>
+        <div class="select select-lg">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">select-sm</label>
+        <div class="select select-sm">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+</form>
+```
+
+## 字段校验
+
+在 `.form-group` 上添加 `.has-invalid`，控件边框自动变红。
+
+```html
+<form class="form">
+    <div class="form-group has-invalid">
+        <label class="form-label">基本用法</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">空白占位</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="select-icon caret"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">置灰</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">置灰空白占位</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">加载中</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon icon loading-circular"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">加载中空白占位</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">加载中...</span>
+                <div class="select-icon icon loading-circular"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">错误重试</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-msg text-danger">网络加载错误</span>
+                <div class="select-icon icon fa fa-refresh"></div>
+            </button>
+        </div>
+    </div>
+</form>
+```
+
+## 表单验证
+
+配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`，`feedback-icon` 和 `control-clear` 放在 `.select` 内。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+            <i class="feedback-icon fa">&#xf00c;</i>
+        </div>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+            <i class="feedback-icon fa">&#xf00d;</i>
+        </div>
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/sizing.md
+---
+# 表单尺寸
+
+通过 `.form-group-lg` / `.form-group-sm` 设置表单项级别尺寸，或 `.form-control-lg` / `.form-control-sm` 控制单个控件尺寸。
+
+## 表单项尺寸
+
+在表单组 `.form-group` 上添加 `.form-group-lg` 或 `.form-group-sm`，标签和控件会同步调整字号与高度。
+
+```html
+<form class="form">
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
+</form>
+```
+
+## 水平表单
+
+表单项尺寸在水平表单 `.form-horizontal` 中同样有效，标签还会自动调整垂直对齐。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
+</form>
+```
+
+## 内联表单
+
+在内联表单 `.form-inline` 中也可正常使用。
+
+```html
+<form class="form-inline">
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
+</form>
+```
+
+## 控件尺寸
+
+在控件本身添加 `.form-control-lg` / `.form-control-sm`，只影响控件大小，不影响标签。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">form-control-lg</label>
+        <input class="form-control form-control-lg" type="text">
+    </div>
+    <div class="form-group">
+        <label class="form-label">form-control-sm</label>
+        <input class="form-control form-control-sm" type="text">
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/static.md
+---
+# 静态控件
+
+如果需要将一行纯文本和 `label` 元素放置于同一行，为 `<p>` 元素添加 `.form-control-static` 类即可。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+</form>
+```
+
+## 静态控件尺寸
+
+`.form-control-static` 会随 `.form-group-lg` / `.form-group-sm` 自动适配字号和间距。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group form-group-lg">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/switch.md
+---
+# 开关按钮
+
+开关按钮（`.switch`）用于布尔值切换的场景，支持选中、禁用和加载中状态。
+
+## 基本用法
+
+`.switch` + `.switch-thumb` 构成开关滑块，配合 `<input type="checkbox">` 和 `<label>`。
+
+```html
+<label>
+    <div class="switch">
+        <div class="switch-thumb"></div>
+        <input type="checkbox">
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked">
+        <div class="switch-thumb"></div>
+        <input type="checkbox">
+    </div>
+    选中
+</label>
+```
+
+## 置灰
+
+添加 `.switch-disabled`，`<input>` 设置 `disabled`。
+
+```html
+<label>
+    <div class="switch switch-disabled">
+        <div class="switch-thumb"></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked switch-disabled">
+        <div class="switch-thumb"></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
+</label>
+```
+
+## 加载中
+
+添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-circular`。选中和置灰状态可叠加。
+
+```html
+<label>
+    <div class="switch switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
+</label>
+<label>
+    <div class="switch switch-disabled switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked switch-disabled switch-loading">
+        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
+</label>
+```
+
+
+---
+# 源文件: form/tags-input.md
+---
+# 输入框组
+
+标签输入框（`.tags-input`）用于在输入框中展示和管理多个标签，支持换行/不换行、清空、配合 input-group、标签输入、大小控制和校验反馈。
+
+## 多选控件
+
+```html
+空白
+<div class="tags-input">
+</div>
+占位文字
+<div class="tags-input">
+    <div class="tags-input-placeholder">请输入XXX</div>
+</div>
+有标签
+<div class="tags-input">
+    <div class="tags-input-wrap">
+        <div class="tag tag-default">金坷垃</div>
+        <div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div>
+        <div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div>
+    </div>
+    <button type="button" class="control-clear fa">&#xf057;</button>
+</div>
+```
+
+### 超出行为
+
+`.tags-input-wrap` 超出换行，`.tags-input-nowrap` 超出不换行（保持单行滚动）。
+
+```html
+<form class="form">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group" style="max-width: 320px; _width: 320px;">
+                <label class="form-label">超出换行</label>
+                <div class="tags-input">
+                    <div class="tags-input-wrap"
+                        ><div class="tag tag-default">金坷垃</div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default">两米下</div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group" style="max-width: 320px; _width: 320px;">
+                <label class="form-label">超出不换行</label>
+                <div class="tags-input">
+                    <div class="tags-input-nowrap"
+                        ><div class="tag tag-default">金坷垃</div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default">两米下</div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+```
+
+### 配合 input-group
+
+`.tags-input` 可放在 `.input-group-body` 中使用。
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">配合input-group多选控件</label>
+        <div class="input-group">
+            <button type="button" class="input-group-append btn btn-default">
+                <i class="fa">&#xf093;</i>
+            </button>
+            <div class="input-group-body">
+                <div class="tags-input">
+                    <div class="tags-input-wrap"
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
+                    ></div>
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group" style="max-width: 320px; _width: 320px;">
+                <label class="form-label">配合input-group超出换行</label>
+                <div class="input-group">
+                    <button type="button" class="input-group-append btn btn-default">
+                        <i class="fa">&#xf093;</i>
+                    </button>
+                    <div class="input-group-body">
+                        <div class="tags-input">
+                            <div class="tags-input-wrap"
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
+                            ></div>
+                            <button type="button" class="control-clear fa">&#xf057;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group" style="max-width: 320px; _width: 320px;">
+                <label class="form-label">配合input-group超出不换行</label>
+                <div class="input-group">
+                    <button type="button" class="input-group-append btn btn-default">
+                        <i class="fa">&#xf093;</i>
+                    </button>
+                    <div class="input-group-body">
+                        <div class="tags-input">
+                            <div class="tags-input-nowrap"
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
+                            ></div>
+                            <button type="button" class="control-clear fa">&#xf057;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+```
+
+### 标签输入
+
+在 `.tags-input` 中放入 `<input>` 元素实现标签输入。
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">标签输入</label>
+        <div class="tags-input">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-default">金坷垃</div
+                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+            ></div>
+            <input type="text" placeholder="请输入内容">
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="tags-input">
+            <div class="tags-input-nowrap"
+                ><div class="tag tag-default">金坷垃</div
+                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+            ></div>
+            <input type="text" placeholder="请输入内容">
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group" style="max-width: 320px; _width: 320px;">
+                <label class="form-label">标签输入超出换行</label>
+                <div class="tags-input">
+                    <div class="tags-input-wrap"
+                        ><div class="tag tag-default">金坷垃</div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default">两米下</div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                    ></div>
+                    <input type="text" placeholder="请输入内容">
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group" style="max-width: 320px; _width: 320px;">
+                <label class="form-label">标签输入超出不换行</label>
+                <div class="tags-input">
+                    <div class="tags-input-nowrap"
+                        ><div class="tag tag-default">金坷垃</div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default">两米下</div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                    ></div>
+                    <input type="text" placeholder="请输入内容">
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+```
+
+## 控件大小
+
+使用 `.tags-input-lg` / `.tags-input-sm`，标签本身也需用 `.tag-lg` / `.tag-sm`。还可配合 `.form-group-lg` / `.form-group-sm`（此时 `.tags-input` 无需额外尺寸类，标签仍需 `.tag-lg` / `.tag-sm`）。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">tags-input-lg</label>
+        <div class="tags-input tags-input-lg">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-lg tag-default">金坷垃</div
+                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">tags-input-sm</label>
+        <div class="tags-input tags-input-sm">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-sm tag-default">金坷垃</div
+                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="tags-input">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-lg tag-default">金坷垃</div
+                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="tags-input">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-sm tag-default">金坷垃</div
+                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+            ></div>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+</form>
+```
+
+## 置灰
+
+在 `.tags-input` 上添加 `.tags-input-disabled`，内部 `<input>` 也需 `disabled`。空白控件、placeholder、标签输入三种场景均支持。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">空白控件</label>
+        <div class="tags-input tags-input-disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">placeholder</label>
+        <div class="input-group">
+            <button type="button" class="input-group-append btn btn-default btn-disabled" disabled><span class="caret"></span></button>
+            <div class="input-group-body">
+                <div class="tags-input tags-input-disabled">
+                    <div class="tags-input-placeholder">请输入XXX</div>
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">标签输入</label>
+        <div class="tags-input tags-input-disabled">
+            <div class="tags-input-wrap"
+                ><div class="tag tag-default">金坷垃</div
+                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default">两米下</div
+                ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+            ></div>
+            <input type="text" placeholder="请输入内容" disabled>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+</form>
+```
+
+## 校验
+
+配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`，`tags-input` 嵌套在 `.input-group-body` 内，`feedback-icon` 放在 `.tags-input` 内。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="input-group">
+            <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <div class="tags-input">
+                    <div class="tags-input-wrap"
+                        ><div class="tag tag-default">金坷垃</div
+                    ></div>
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                    <i class="feedback-icon fa">&#xf00c;</i>
+                </div>
+            </div>
+        </div>
+        <p class="form-text">Example block-level help text here.</p>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="input-group">
+            <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
+            <!--控件需要放在最后-->
+            <div class="input-group-body">
+                <div class="tags-input">
+                    <div class="tags-input-wrap"
+                        ><div class="tag tag-default">金坷垃</div
+                    ></div>
+                    <button type="button" class="control-clear fa">&#xf057;</button>
+                    <i class="feedback-icon fa">&#xf00d;</i>
+                </div>
+            </div>
+        </div>
+        <p class="form-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/textarea.md
+---
+# 文本域
+
+文本域（`.textarea`）封装了多行文本输入控件，支持字数计数、清空按钮、置灰、大小控制和校验反馈。
+
+## 基本用法
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">基本用法</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+        ></div>
+    </div>
+</form>
+```
+
+## 字数与清空
+
+使用 `.textarea-counter` 显示字数，`.control-clear` 清空按钮。
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">显示字数、清空按钮</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+</form>
+```
+
+## 置灰
+
+添加 `.textarea-disabled`，`<textarea>` 设置 `disabled`。
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">置灰</label>
+        <div class="textarea textarea-disabled"
+            ><textarea placeholder="请输入XXX" disabled></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+</form>
+```
+
+## 内联表单
+
+`.textarea` 可在 `.form-inline` 中使用。
+
+```html
+<form class="form-inline"
+    ><div class="form-group">
+        <label class="form-label" for="exampleInputName2">Name</label>
+        <input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    </div
+    ><div class="form-group">
+        <label class="form-label" for="exampleInputEmail2">文本域</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div
+></form>
+```
+
+## 组件大小
+
+`.textarea-lg` / `.textarea-sm` 控制文本域大小，可配合 `.form-group-lg` / `.form-group-sm`（此时 `.textarea` 无需额外尺寸类）。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">textarea-lg</label>
+        <div class="textarea textarea-lg"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">textarea-sm</label>
+        <div class="textarea textarea-sm"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+</form>
+```
+
+## 表单验证
+
+配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+            ><i class="feedback-icon fa">&#xf00c;</i
+        ></div>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+            ><i class="feedback-icon fa">&#xf00d;</i
+        ></div>
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/toggle-button.md
+---
+# 开关按钮
+
+开关按钮（`.btn-toggle`）提供按钮形式的开关交互，适用于需要在两个状态间切换的场景。支持独立使用、放入按钮组、内含 checkbox / radio 等形态。
+
+## 基本用法
+
+`.btn-toggle` 可作用于 `<label>`（内含 `.checkbox` 或 `.radio`）或 `<button>`。
+
+```html
+<div class="btn-toolbar">
+    <label class="btn btn-toggle">
+        <div class="checkbox"><input type="checkbox"></div>
+        未选中
+    </label>
+    <label class="btn btn-toggle btn-toggle-checked">
+        <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+        选中
+    </label>
+    <button class="btn btn-toggle">未选中</button>
+    <button class="btn btn-toggle btn-toggle-checked">选中</button>
+</div>
+```
+
+### 含 radio 单选
+
+```html
+<div class="btn-toolbar">
+    <label class="btn btn-toggle">
+        <div class="radio"><input type="radio" name="radio-group"></div>
+        未选中
+    </label>
+    <label class="btn btn-toggle btn-toggle-checked">
+        <div class="radio radio-checked"><input type="radio" name="radio-group"></div>
+        选中
+    </label>
+    <button class="btn btn-toggle">未选中</button>
+    <button class="btn btn-toggle btn-toggle-checked">选中</button>
+</div>
+```
+
+### 放入按钮组
+
+```html
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <label class="btn btn-toggle">
+            <div class="checkbox"><input type="checkbox"></div>
+            未选中
+        </label>
+        <label class="btn btn-toggle btn-toggle-checked">
+            <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+            选中
+        </label>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-toggle">未选中</button>
+        <button class="btn btn-toggle btn-toggle-checked">选中</button>
+    </div>
+</div>
+```
+
+
+---
+# 源文件: form/validation.md
+---
+# 表单校验状态
+
+表单校验的视觉反馈，包括 `.has-valid` 成功和 `.has-invalid` 错误状态，支持图标、文字提示和飘浮气泡。
+
+## 表单组验证
+
+在 `.form-group` 上添加 `.has-valid` 或 `.has-invalid`，控件边框和反馈文字会自动变色。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-text">校验通过</div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+## 添加额外的图标
+
+使用 `.has-feedback-icon` 开启图标反馈，放入 `.feedback-icon` 图标元素。成功和错误状态分别控制图标颜色。
+
+```html
+<form class="form">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <textarea class="form-control"></textarea>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+## 飘浮气泡文字
+
+使用 `.feedback-tooltip` 替代 `.feedback-text`，提示文字将以半透明背景气泡形式飘浮在控件上方。
+
+```html
+<form class="form">
+    <div class="form-group has-valid">
+        <label class="form-label">has-valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">
+            校验通过
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">has-invalid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">请输入活动名称</div>
+    </div>
+</form>
+```
+
+## 水平表单
+
+校验状态在 `.form-horizontal` 中同样可用。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+## 内联表单
+
+`.form-inline` 内联表单也可结合校验状态。
+
+```html
+<form class="form-inline">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+## 表单项尺寸
+
+校验状态可与 `.form-group-lg` / `.form-group-sm` 结合使用。
+
+```html
+<form class="form">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+### 水平表单
+
+```html
+<form class="form-horizontal">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+### 内联表单
+
+```html
+<form class="form-inline">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+## 控件尺寸
+
+校验图标也可配合 `.form-control-lg` / `.form-control-sm` 使用。
+
+```html
+<form class="form-inline">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">form-control-lg</label>
+        <input class="form-control form-control-lg" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control form-control-sm" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+
+
+# =============================================================================
+# 五、助手 (helpers)
+# =============================================================================
+
+
+---
+# 源文件: helpers/index.md
+---
+# 助手
+
+助手类，帮助你快速完成常见的前端任务，包括浮动清除、显示隐藏、文本截断、图标、动画、加载指示等。
+
+## 清除浮动
+
+| 类 | 描述 |
+|---|---|
+| .pull-left | 元素浮动到左边 |
+| .pull-right | 元素浮动到右边 |
+| .clearfix | 清除容器内的浮动浮动 |
+
+[使用方法](./float.md)
+
+## 视觉隐藏
+
+通过 .sr-only 类在视觉上隐藏某个元素的同时，仍然能够被辅助技术识别。
+
+			
+| 类 | 描述 |
+|---|---|
+| .sr-only | 在视觉上隐藏某个元素。 |
+
+## 显示
+
+| 类 | 描述 |
+|---|---|
+| .hidden-xl | 在超大屏幕隐藏 |
+| .hidden-lg | 在大屏幕隐藏 |
+| .hidden-md | 在中隐藏 |
+| .hidden-sm | 在略小隐藏 |
+| .hidden-xs | 在小隐藏 |
+| .hidden | 强制元素隐藏 |
+| .block | 将元素显示为block |
+| .inline-block | 将元素显示为inline-block |
+| .inline | 将元素显示为inline |
+| .invisible | 将元素设为不可见（仍然占据体积） |
+| .visible | 将元素设为可见（与invisible相对） |
+
+## 文本截断
+
+| 类 | 描述 |
+|---|---|
+| .line-{n} | 强制高度为n行，n为1~6。 |
+| .line-max-{n} | 高度不得超过n行，n为1~6。 |
+| .line-min-{n} | 高度不得低于n行，n为1~6。 |
+
+## 三角标识
+
+| 类 | 描述 |
+|---|---|
+| .caret | 向下三角标识，常用于下拉菜单按钮旁 |
+
+## 关闭按钮
+
+| 类 | 描述 |
+|---|---|
+| .close | 关闭按钮，显示"✕"符号，悬停变深 |
+
+## 加载中
+
+| 类 | 描述 |
+|---|---|
+| .loading-circular | 环形加载指示 |
+| .loading-grow | 闪烁加载指示 |
+
+[使用方法](./loading.md)
+
+## 图标
+
+| 类 | 描述 |
+|---|---|
+| .icon | 表示一个图标，生成一个方形inline-block。 |
+| .icon-fw | 可以将图标设置为一个固定宽度。 |
+| .icon-left<br/>.icon-right | 左侧的图标。右侧的图标。 |
+| .icon-lg<br/>.icon-2x<br/>.icon-3x<br/>.icon-4x<br/>.icon-5x | 大字体图标。 |
+| .icon-rotate-* .icon-flip-* | 对图标进行旋转和翻转 |
+
+[使用方法](./icon.md)
+
+## 动画
+
+| 类 | 描述 |
+|---|---|
+| .animated | 动画基础类。 |
+| .animated.infinite | 循环动画。 |
+| .animated.forwards | 动画结束后保持最后一个帧。 |
+| .animated.fast | 快速。 |
+| .animated.faster | 更快。 |
+| .animated.slower | 更慢。 |
+[使用方法](./animation.html)
+
+
+
+---
+# 源文件: helpers/float.md
+---
+# 清除浮动
+
+通过 `.pull-left` 和 `.pull-right` 类快速设置浮动，使用 `.clearfix` 清除容器内的浮动。
+
+## 快速浮动
+
+注意 HTML 书写顺序：先写右浮动元素，再写左浮动元素，可以避免一些布局问题。
+
+```html
+<div class="clearfix">
+    <div class="pull-right">先写右</div>
+    <div class="pull-left">再写左</div>
+</div>
+```
+
+## 相关类
+
+| 类 | 描述 |
+|---|---|
+| .pull-left | 元素浮动到左边 |
+| .pull-right | 元素浮动到右边 |
+| .clearfix | 清除容器内的浮动 |
+
+
+---
+# 源文件: helpers/icon.md
+---
+# 图标
+
+参考 FontAwesome 提供了一套丰富的图标样式类，包括尺寸缩放、固定宽度、旋转翻转、堆叠组合等功能。
+
+## 基本图标
+
+使用样式类 `.icon` 生成一个方形 inline-block。
+
+```html
+<i class="icon fa">&#xf004;</i>
+<i class="icon fa fa-heart"></i>
+```
+
+## 大图标
+
+使用 `icon-lg`（33% 递增）、`icon-2x`、`icon-3x`、`icon-4x` 或 `icon-5x` 类来放大图标。
+
+```html
+<i class="fa icon-lg">&#xf083;</i>
+<i class="fa icon-2x">&#xf083;</i>
+<i class="fa icon-3x">&#xf083;</i>
+<i class="fa icon-4x">&#xf083;</i>
+<i class="fa icon-5x">&#xf083;</i>
+```
+
+## 固定宽度
+
+使用 `icon-fw` 可以将图标设置为一个固定宽度，主要用于不同宽度图标无法对齐的情况，尤其在列表或导航时起到重要作用。
+
+```html
+<div class="list-group">
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf015;</i> Home</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf02d;</i> Library</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf040;</i> Applications</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf013;</i> Settings</a>
+</div>
+```
+
+## 动画
+
+使用 `icon-spin` 类来使任意图标旋转，也可以使用 `icon-pulse` 来使其进行8方位旋转。尤其适合加载中和设置类图标。
+
+```html
+<i class="fa icon-spin">&#xf110;</i>
+<i class="fa icon-spin">&#xf1ce;</i>
+<i class="fa icon-spin">&#xf013;</i>
+<i class="fa icon-spin">&#xf021;</i>
+<i class="fa icon-pulse">&#xf110;</i>
+```
+
+> **提示**：CSS3 动画不支持 IE9 以下。
+
+## 旋转和翻转
+
+使用 `icon-rotate-*` 和 `icon-flip-*` 类对图标进行任意旋转和翻转。
+
+```html
+<i class="icon fa">&#xf132;</i> normal
+<i class="icon fa icon-rotate-90">&#xf132;</i> icon-rotate-90
+<i class="icon fa icon-rotate-180">&#xf132;</i> icon-rotate-180
+<i class="icon fa icon-rotate-270">&#xf132;</i> icon-rotate-270
+<i class="icon fa icon-flip-horizontal">&#xf132;</i> icon-flip-horizontal
+<i class="icon fa icon-flip-vertical">&#xf132;</i> icon-flip-vertical
+```
+
+## 组合使用
+
+使用 `icon-stack` 类作为父容器，`icon-stack-1x` 作为正常比例的图标，`icon-stack-2x` 作为大一些的图标。还可以使用 `icon-inverse` 类来切换图标颜色。可通过添加大图标类来控制整体大小。
+
+```html
+<span class="icon-stack icon-lg">
+    <i class="fa icon-stack-2x">&#xf096;</i>
+    <i class="fa icon-stack-1x">&#xf099;</i>
+</span>
+fa-twitter on fa-square-o
+<span class="icon-stack icon-lg">
+    <i class="fa icon-stack-2x">&#xf111;</i>
+    <i class="fa icon-stack-1x icon-inverse">&#xf024;</i>
+</span>
+fa-flag on fa-circle
+<span class="icon-stack icon-lg">
+    <i class="fa icon-stack-2x">&#xf0c8;</i>
+    <i class="fa icon-stack-1x icon-inverse">&#xf120;</i>
+</span>
+fa-terminal on fa-square
+<span class="icon-stack icon-lg">
+    <i class="fa icon-stack-1x">&#xf030;</i>
+    <i class="fa icon-stack-2x text-danger">&#xf05e;</i>
+</span>
+fa-ban on fa-camera
+```
+
+## 可访问性
+
+使用 `aria-hidden` 可以禁止屏幕朗读工具作用，使用 `aria-label` 可以让屏幕朗读工具读指定的内容。
+
+```html
+<button type="button" class="btn btn-default" aria-label="Left Align">
+    <i class="fa" aria-hidden="true">&#xf036;</i>
+</button>
+<button type="button" class="btn btn-default">
+    <i class="fa" aria-hidden="true">&#xf005;</i> Star
+</button>
+```
+
+
+---
+# 源文件: helpers/loading.md
+---
+## 加载中
+
+```html
+<div class="loading-circular text-primary" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-circular text-info" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-circular text-success" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-circular text-warning" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-circular text-danger" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-primary" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-info" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-success" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-warning" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-danger" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+```
+
+
+
+# =============================================================================
+# 六、组件 (components)
 # =============================================================================
 
 # 组件
@@ -4087,2663 +6741,9 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 
 
-# ========================================
-# ==== 板块: form ====
-# ========================================
-
-
----
-# 源文件: form/index.md
----
-# 表单
-
-强大的表单相关样式，包括基础控件、各种布局、大小尺寸、字段校验以及丰富的表单组件。
-
-## 基础控件
-
-| 类 | 描述 |
-|---|---|
-| .form-control | 输入控件 |
-| .form-check | 单选框和复选框的容器 |
-| .form-check-inline | 单选框和复选框的内联容器 |
-| .form-text | 帮助文本 |
-
-[使用方法](./control.html)
-
-## 布局
-
-| 类 | 描述 |
-|---|---|
-| .form | 换行布局的表单 |
-| .form-inline | 内联表单 |
-| .form-horizontal | 水平排列的表单 |
-| .form-group | label和一个输入框的组合 |
-| .form-label | 控件用的标签 |
-| .form-control | 输入控件 |
-
-[使用方法](./form.html)
-
-## 控件大小
-
-| 类 | 描述 |
-|---|---|
-| .form-group-lg | .form-group-lg下面的标签的控件大一号 |
-| .form-group-sm | .form-group-sm下面的标签的控件小一号 |
-| .form-control-lg | .form-control-lg控件大一号 |
-| .form-control-sm | .form-control-sm控件小一号 |
-
-[使用方法](./sizing.html)
-
-## 字段校验
-
-| 类 | 描述 |
-|---|---|
-| .has-valid | 定义成功效果的form-group |
-| .has-invalid | 定义错误效果的form-group |
-| .has-feedback-icon | 添加额外的图标 |
-| .feedback-icon | 反馈图标 |
-| .feedback-text | 反馈文字 |
-| .feedback-tooltip | 反馈飘浮提示文字 |
-
-[使用方法](./validation.html)
-
-## 静态控件
-
-| 类 | 描述 |
-|---|---|
-| .form-control-static | 静态控件 |
-
-[使用方法](./static.html)
-
-## 输入框组
-
-通过在文本输入框  前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。
-
-			
-| 类 | 描述 |
-|---|---|
-| .input-group | 输入框组 |
-| .input-group-prepend | 输入框组左侧额外的元素 |
-| .input-group-append | 输入框组右侧额外的元素 |
-| .input-group-body | 输入框组中间容器 |
-| .input-group-text | 输入框组左侧右侧文本 |
-| .input-group-lg | 输入框组大尺寸 |
-| .input-group-sm | 输入框组小尺寸 |
-
-[使用方法](./input-group.html)
-
-# 表单组件
-
-以下组件更推荐封装成组件使用
-
-## 前后缀输入框
-
-通过在文本输入框  前面、后面或是两边加上文字或按钮，可以实现对表单控件的扩展。
-	
-| 类 | 描述 |
-|---|---|
-| .input | 输入框 |
-| .input-prefix | 输入框前缀 |
-| .input-suffix | 输入框后缀 |
-| .input-body | 输入框控件容器 |
-| .input-lg | 输入框大尺寸 |
-| .input-sm | 输入框小尺寸 |
-| .input-disabled | 禁用状态 |
-| .input-counter | 输入框计数器样式 |
-
-[使用方法](./input.html)
-
-## 标签输入框
-
-| 类 | 描述 |
-|---|---|
-| .tags-input | 标签输入框 |
-| .tags-input-placeholder | 标签输入框占位文字 |
-| .tags-input-nowrap | 标签输入框标签不换行容器 |
-| .tags-input-wrap | 标签输入框标签可换行容器 |
-| .tags-input-lg | 标签输入框大尺寸 |
-| .tags-input-sm | 标签输入框小尺寸 |
-| .tags-input-disabled | 标签输入框禁用 |
-
-[使用方法](./tags-input.html)
-
-## 下拉按钮
-
-| 类 | 描述 |
-|---|---|
-| .select | 选择按钮 |
-| .select-label | 选择按钮内部文字 |
-| .select-placeholder | 选择按钮占位文字 |
-| .select-icon | 选择按钮右侧图标 |
-| .select-disabled | 选择按钮禁用 |
-| .select-loading | 选择按钮加载中 |
-| .select-lg | 大号选择按钮 |
-| .select-sm | 小号选择按钮 |
-
-[使用方法](./select.html)
-
-## 文本域
-
-| 类 | 描述 |
-|---|---|
-| .textarea | 文本域 |
-| .textarea-counter | 文本域计数器样式 |
-| .textarea-lg | 大号文本域 |
-| .textarea-sm | 小号文本域 |
-
-[使用方法](./textarea.html)
-
-## 单选、多选框
-
-| 类 | 描述 |
-|---|---|
-| .checkbox-group | 多选组 |
-| .radio-group | 单选组 |
-| .checkbox-group-horizontal | 水平布局多选组 |
-| .radio-group-horizontal | 水平布局单选组 |
-| .checkbox | 多选框 |
-| .radio | 单选框 |
-| .checkbox-disabled | 多选框禁用 |
-| .radio-disabled | 单选框禁用 |
-| .checkbox-checked | 多选框选中状态 |
-| .radio-checked | 单选框选中状态 |
-| .checkbox-indeterminate | 多选框不确定状态 |
-
-[使用方法](./checkbox.html)
-
-## 开关
-
-| 类 | 描述 |
-|---|---|
-| .switch | 开关按钮 |
-| .switch-checked | 开关按钮选中状态 |
-| .switch-disabled | 开关按钮禁用 |
-| .switch-loading | 开关按钮加载中 |
-
-[使用方法](./switch.html)
-
-## 开关按钮
-
-| 类 | 描述 |
-|---|---|
-| .btn-toggle | 开关按钮 |
-| .btn-toggle-checked | 开关按钮选中状态 |
-[使用方法](./toggle-button.html)
-
-
-
----
-# 源文件: form/checkbox.md
----
-# 单选和多选
-
-美化的单选（`.radio`）和多选（`.checkbox`）控件，支持默认、选中、部分选中、禁用和校验状态，以及垂直和水平两种布局。
-
-## 多选
-
-使用 `.checkbox-group` 垂直布局，`.checkbox-group-horizontal` 水平布局。`.checkbox` + `.checkbox-checked` / `.checkbox-indeterminate` 控制状态。
-
-### 垂直布局
-
-```html
-<div class="checkbox-group">
-    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
-</div>
-```
-
-### 水平布局
-
-```html
-<div class="checkbox-group-horizontal">
-    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
-</div>
-```
-
-### 置灰
-
-添加 `.checkbox-disabled`，`<input>` 设置 `disabled`。
-
-```html
-<div class="checkbox-group-horizontal">
-    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
-</div>
-```
-
-### 校验
-
-在容器上添加 `.has-invalid`。
-
-```html
-<div class="checkbox-group-horizontal has-invalid">
-    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
-    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
-</div>
-```
-
-## 单选
-
-使用 `.radio-group` 垂直布局，`.radio-group-horizontal` 水平布局。`.radio` + `.radio-checked` 控制状态。
-
-### 垂直布局
-
-```html
-<div class="radio-group">
-    <label><div class="radio"><input type="radio" name="demo"></div>默认状态</label>
-    <label><div class="radio radio-checked"><input type="radio" name="demo"></div>选中</label>
-</div>
-```
-
-### 水平布局
-
-```html
-<div class="radio-group-horizontal">
-    <label><div class="radio"><input type="radio" name="demo2"></div>默认状态</label>
-    <label><div class="radio radio-checked"><input type="radio" name="demo2"></div>选中</label>
-</div>
-```
-
-### 置灰
-
-```html
-<div class="radio-group-horizontal">
-    <label><div class="radio radio-disabled"><input type="radio" name="demo3" disabled></div>默认状态</label>
-    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo3" disabled></div>选中</label>
-</div>
-```
-
-### 校验
-
-```html
-<div class="radio-group-horizontal has-invalid">
-    <label><div class="radio"><input type="radio" name="demo4"></div>默认状态</label>
-    <label><div class="radio radio-checked"><input type="radio" name="demo4"></div>选中</label>
-    <label><div class="radio radio-disabled"><input type="radio" name="demo4" disabled></div>默认状态</label>
-    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo4" disabled></div>选中</label>
-</div>
-```
-
-
----
-# 源文件: form/control.md
----
-# 基础控件
-
-表单基础控件包括文本输入、下拉选择、文本域、文件上传、复选框和单选框等所有基础表单元素。
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label" for="email">普通文本</label>
-        <input type="email" class="form-control" name="email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="password">密码</label>
-        <input type="password" class="form-control" name="password" placeholder="Password">
-        <p class="form-text">Example block-level help text here.</p>
-    </div>
-    <div class="form-group">
-        <label class="form-label">置灰状态</label>
-        <input type="text" class="form-control input-disabled" disabled>
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="attachment">上传</label>
-        <input type="file" name="attachment">
-    </div>
-    <div class="form-group">
-        <label class="form-label">多选</label>
-        <div>
-            <label class="form-check"><input type="checkbox">Check me out</label>
-            <label class="form-check"><input type="checkbox">同时可以选我</label>
-            <label class="form-check"><input type="checkbox">还可以选我</label>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">单选</label>
-        <div>
-            <label class="form-check"><input type="radio" name="radio">Check me out</label>
-            <label class="form-check"><input type="radio" name="radio">同时可以选我</label>
-            <label class="form-check"><input type="radio" name="radio">还可以选我</label>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">水平布局多选</label>
-        <div>
-            <label class="form-check form-check-inline"><input type="checkbox">Check me out</label>
-            <label class="form-check form-check-inline"><input type="checkbox">同时可以选我</label>
-            <label class="form-check form-check-inline"><input type="checkbox">还可以选我</label>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">水平布局单选</label>
-        <div>
-            <label class="form-check form-check-inline"><input type="radio" name="radio">Check me out</label>
-            <label class="form-check form-check-inline"><input type="radio" name="radio">同时可以选我</label>
-            <label class="form-check form-check-inline"><input type="radio" name="radio">还可以选我</label>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">文本域</label>
-        <textarea class="form-control" rows="3"></textarea>
-    </div>
-    <div class="form-group">
-        <label class="form-label">置灰状态</label>
-        <textarea class="form-control input-disabled" rows="3" disabled></textarea>
-    </div>
-    <div class="form-group">
-        <label class="form-label">下拉</label>
-        <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label class="form-label">置灰状态</label>
-        <select class="form-control input-disabled" disabled>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-```
-
-
----
-# 源文件: form/form.md
----
-# 表单布局
-
-表单布局提供了多种排列方式，包括基本表单、内联表单、水平排列以及配合格栅系统的灵活布局。
-
-## 垂直布局表单
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label" for="email">普通文本</label>
-        <input type="email" class="form-control" name="email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="password">密码</label>
-        <input type="password" class="form-control" name="password" placeholder="Password">
-    </div>
-    <div class="form-group">
-        <label class="form-label">文本域</label>
-        <textarea class="form-control" rows="3"></textarea>
-    </div>
-    <div class="form-group">
-        <label class="form-label">下拉</label>
-        <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-```
-
-## 内联表单
-
-通过 `.form-inline` 类可以使表单元素水平排列在同一行。
-
-```html
-<form class="form-inline"
-    ><div class="form-group"
-        ><label class="form-label" for="exampleInputName2">Name</label
-        ><input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"
-    ></div
-    ><div class="form-group"
-        ><label class="form-label" for="exampleInputEmail2">Email</label
-        ><input style="width:160px;" type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com"
-    ></div
-    ><div class="form-group"
-        ><label class="form-label">Password</label
-        ><input type="password" class="form-control"
-    ></div
-    ><div class="form-group">
-        <div class="radio-group">
-            <label><input type="checkbox">记住登入</label>
-            <label><input type="checkbox">同时可以选我</label>
-            <label><input type="checkbox">还可以选我</label>
-        </div>
-    </div
-    ><button type="submit" class="btn btn-primary">Send invitation</button
-></form>
-```
-
-## 水平排列的表单
-
-使用 `.form-horizontal` 类可以让表单的 label 和控件水平排列。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" placeholder="Email">
-    </div>
-    <div class="form-group">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" placeholder="Password">
-    </div>
-    <div class="form-group">
-        <label class="form-check"><input type="checkbox"> Remember me</label>
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-</form>
-```
-
-## 使用格栅系统
-
-结合 `.row` 和 `.col-*` 类可以实现更灵活的表单布局。
-
-```html
-<form class="form">
-    <div class="form-group row">
-        <label class="form-label col-md-2">Email</label>
-        <div class="col-md-10">
-            <input type="email" class="form-control" placeholder="Email">
-        </div>
-    </div>
-    <div class="form-group row">
-        <label class="form-label col-md-2">Password</label>
-        <div class="col-md-10">
-            <input type="password" class="form-control" placeholder="Password">
-        </div>
-    </div>
-    <div class="form-group row">
-        <div class="col-md-offset-2 col-md-10">
-            <div class="form-check">
-                <label><input type="checkbox"> Remember me</label>
-            </div>
-        </div>
-    </div>
-    <div class="form-group row">
-        <div class="col-md-offset-2 col-md-10">
-            <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-    </div>
-</form>
-```
-
-## 表格形式
-
-将表单嵌入表格中，适用于批量数据输入场景。
-
-```html
-<form class="form">
-    <table class="table table-bordered table-sm">
-        <colgroup>
-            <col width="10.33%"/><col width="20%"/>
-            <col width="10.33%"/><col width="20%"/>
-            <col width="10.33%"/><col width="20%"/>
-        </colgroup>
-        <tbody>
-            <tr>
-                <th class="thead-subtle">流水号</th>
-                <td><input type="email" class="form-control"/></td>
-                <th class="thead-subtle">订单号</th>
-                <td><input type="email" class="form-control"/></td>
-                <th class="thead-subtle">状态</th>
-                <td><input type="email" class="form-control"/></td>
-            </tr>
-            <tr>
-                <th class="thead-subtle">原因</th>
-                <td><input type="email" class="form-control"/></td>
-                <th class="thead-subtle">要求</th>
-                <td><input type="email" class="form-control"/></td>
-                <th class="thead-subtle">申请时间</th>
-                <td><input type="email" class="form-control"/></td>
-            </tr>
-            <tr>
-                <th class="thead-subtle">详细说明</th>
-                <td colspan="5">
-                    <textarea class="form-control" rows="3"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <th class="thead-subtle">附件</th>
-                <td colspan="5">
-                    <input type="file" name="attachment">
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</form>
-```
-
-
----
-# 源文件: form/input-group.md
----
-# 输入框组
-
-通过 `.input-group` 将文本、按钮等附加元素与输入框组合在一起，使用 `.input-group-prepend` 前置、`.input-group-append` 后置，控件放在 `.input-group-body` 中。
-
-## 基础用法
-
-### 文本前置 / 后置
-
-```html
-<label for="basic-url">前置</label>
-<div class="input-group">
-    <div class="input-group-prepend input-group-text" id="basic-addon3">https://example.com/users/</div>
-    <div class="input-group-body">
-        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
-    </div>
-</div>
-<br/>
-<label for="basic-addon1">后置</label>
-<div class="input-group">
-    <div class="input-group-append input-group-text">@example.com</div>
-    <div class="input-group-body">
-        <input id="basic-addon1" type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon1"/>
-    </div>
-</div>
-<br/>
-<label for="basic-addon2">同时使用前后附加</label>
-<div class="input-group">
-    <div class="input-group-prepend input-group-text">$</div>
-    <div class="input-group-append input-group-text">.00</div>
-    <!--控件需要放在最后-->
-    <div class="input-group-body">
-        <input id="basic-addon2" type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
-    </div>
-</div>
-```
-
-### 作为额外元素的按钮
-
-`input-group-prepend` 和 `input-group-append` 可以直接放按钮或按钮组。
-
-```html
-<div class="input-group">
-    <button class="input-group-prepend btn btn-default" type="button">搜索</button>
-    <button class="input-group-append btn btn-primary" type="button">搜索</button>
-    <div class="input-group-body">
-        <input type="text" class="form-control" placeholder="关键词"/>
-    </div>
-</div>
-<br/>
-<div class="input-group">
-    <div class="input-group-prepend btn-group">
-        <button type="button" class="btn btn-default">按钮 1</button>
-        <button type="button" class="btn btn-default">按钮 2</button>
-    </div>
-    <div class="input-group-append btn-group">
-        <button type="button" class="btn btn-default">按钮 1</button>
-        <button type="button" class="btn btn-primary">按钮 2</button>
-    </div>
-    <div class="input-group-body">
-        <input type="text" class="form-control" placeholder="关键词"/>
-    </div>
-</div>
-```
-
-## 清空图标
-
-在 `.input-group-body` 内放入 `.control-clear` 清空按钮。
-
-```html
-<div class="input-group">
-    <div class="input-group-prepend input-group-text">@</div>
-    <div class="input-group-body">
-        <input type="text" class="form-control" placeholder="Username"/>
-        <button type="button" class="control-clear fa">&#xf057;</button>
-    </div>
-</div>
-```
-
-## 置灰状态
-
-对控件和按钮设置 `disabled` 属性即可。
-
-```html
-<div class="input-group">
-    <div class="input-group-prepend">
-        <div class="input-group-text">█</div>
-    </div>
-    <div class="input-group-append btn-group">
-        <button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
-        <button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
-    </div>
-    <!--控件需要放在最后-->
-    <div class="input-group-body">
-        <input type="text" class="form-control" disabled/>
-    </div>
-</div>
-```
-
-## 内联表单
-
-`.input-group` 可直接放在 `.form-inline` 中使用。
-
-```html
-<form class="form-inline">
-    <div class="form-group">
-        <label class="form-label" for="exampleInputName2">Name</label>
-        <input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="exampleInputEmail2">Email</label>
-        <div style="width:300px;" class="input-group">
-            <div class="input-group-append">
-                <div class="input-group-text">@shengdiyage.us</div>
-            </div>
-            <div class="input-group-body">
-                <input type="text" class="form-control"/>
-            </div>
-        </div>
-    </div>
-</form>
-```
-
-## 组件大小
-
-使用 `.input-group-lg` / `.input-group-sm` 控制输入框组尺寸，配合 `.form-group-lg` / `.form-group-sm` 或 `.form-control-lg` / `.form-control-sm`。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">input-group-lg</label>
-        <div class="input-group input-group-lg">
-            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
-            <div class="input-group-append"><div class="input-group-text">元</div></div>
-            <!--控件需要放在最后-->
-            <div class="input-group-body">
-                <input type="text" class="form-control form-control-lg"/>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">input-group-sm</label>
-        <div class="input-group input-group-sm">
-            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
-            <div class="input-group-append"><div class="input-group-text">元</div></div>
-            <div class="input-group-body">
-                <input type="text" class="form-control form-control-sm"/>
-            </div>
-        </div>
-    </div>
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <div class="input-group input-group-lg">
-            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
-            <div class="input-group-append"><div class="input-group-text">元</div></div>
-            <div class="input-group-body">
-                <input type="text" class="form-control"/>
-            </div>
-        </div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <div class="input-group input-group-sm">
-            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
-            <div class="input-group-append"><div class="input-group-text">元</div></div>
-            <div class="input-group-body">
-                <input type="text" class="form-control"/>
-            </div>
-        </div>
-    </div>
-</form>
-```
-
-## 校验
-
-`.input-group` 可配合 `.has-valid` / `.has-invalid` 校验状态，`feedback-icon` 和 `control-clear` 可共存于 `.input-group-body` 内。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid has-feedback-icon">
-        <label class="form-label">has-valid</label>
-        <div class="input-group">
-            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
-            <div class="input-group-append"><div class="input-group-text">元</div></div>
-            <!--控件需要放在最后-->
-            <div class="input-group-body">
-                <input type="text" class="form-control"/>
-                <button type="button" class="control-clear fa">&#xf057;</button>
-                <i class="feedback-icon fa">&#xf00c;</i>
-            </div>
-        </div>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-    <div class="form-group has-invalid has-feedback-icon">
-        <label class="form-label">has-invalid</label>
-        <div class="input-group">
-            <div class="input-group-prepend"><div class="input-group-text">█</div></div>
-            <div class="input-group-append"><div class="input-group-text">元</div></div>
-            <div class="input-group-body">
-                <input type="text" class="form-control"/>
-                <button type="button" class="control-clear fa">&#xf057;</button>
-                <i class="feedback-icon fa">&#xf00d;</i>
-            </div>
-        </div>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/input.md
----
-# 前后缀输入框
-
-前后缀输入框（`.input`）是一种增强型输入控件，支持在输入框前后添加图标、文字、计数器等附加内容。附加元素通过 `.input-prefix` / `.input-suffix` 放置，控件本身放在 `.input-body` 中。
-
-
-## 前后缀输入框
-
-### 单独使用
-
-`.input-prefix` 前置图标，`.input-suffix` 后置图标，控件必须放在 `.input-body` 内。
-
-```html
-<div class="input">
-    <div class="input-prefix"
-        ><span class="valign-sibling"></span
-        ><i class="icon fa">&#xf002;</i
-    ></div>
-    <div class="input-suffix"
-        ><span class="valign-sibling"></span
-        ><i class="icon fa">&#xf133;</i
-    ></div>
-    <!--控件需要放在最后-->
-    <div class="input-body">
-        <input type="text"/>
-    </div>
-</div>
-```
-
-### 配合 input-group 使用
-
-`.input` 可嵌套在 `.input-group` 中，形成输入框组 + 前后缀的复合结构。
-
-```html
-<div class="input-group">
-    <div class="input-group-prepend">
-        <div class="input-group-text">█</div>
-    </div>
-    <div class="input-group-append">
-        <div class="input-group-text">元</div>
-    </div>
-    <div class="input-group-body">
-        <div class="input">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf133;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body">
-                <input type="text"/>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-## 清空图标
-
-在 `.input-body` 或 `.input-suffix` 中放入 `.control-clear` 清空按钮。当没有后缀时放在 `.input-body` 内，有后缀时可放在 `.input-suffix` 中。
-
-```html
-<!-- 没有后缀 -->
-<div class="input">
-    <div class="input-prefix"
-        ><span class="valign-sibling"></span
-        ><i class="icon fa">&#xf002;</i
-    ></div>
-    <!--控件需要放在最后-->
-    <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-    ></div>
-</div>
-<br/>
-<!-- 有后缀 -->
-<div class="input">
-    <div class="input-prefix"
-        ><i class="icon fa">&#xf002;</i
-        ><span class="valign-sibling"></span
-    ></div>
-    <div class="input-suffix"
-        ><span class="valign-sibling"></span
-        ><i class="icon fa">&#xf133;</i
-        ><button type="button" class="control-clear fa">&#xf057;</button
-    ></div>
-    <!--控件需要放在最后-->
-    <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-    ></div>
-</div>
-<br/>
-<!-- 有按钮：带计数器 -->
-<div class="input">
-    <div class="input-prefix"
-        ><span class="valign-sibling"></span
-        ><i class="icon fa">&#xf002;</i
-    ></div>
-    <div class="input-suffix"
-        ><span class="valign-sibling"></span
-        ><span class="input-counter">0/111</span
-    ></div>
-    <div class="input-suffix"
-        ><span class="valign-sibling"></span
-        ><i class="icon fa">&#xf133;</i
-    ></div>
-    <!--控件需要放在最后-->
-    <div class="input-body"
-        ><input type="text"
-        ><button type="button" class="control-clear fa">&#xf057;</button
-    ></div>
-</div>
-```
-
-## 置灰状态
-
-在 `.input` 上添加 `.input-disabled`，同时给 `<input>` 设置 `disabled` 属性。
-
-```html
-<div class="input-group">
-    <div class="input-group-prepend">
-        <div class="input-group-text">█</div>
-    </div>
-    <div class="input-group-append btn-group">
-        <button type="button" class="btn btn-default btn-disabled" disabled>按钮 1</button>
-        <button type="button" class="btn btn-primary btn-disabled" disabled>按钮 2</button>
-    </div>
-    <div class="input-group-body">
-        <div class="input input-disabled">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><span class="input-counter">0/111</span
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf133;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body"
-                ><input type="text" disabled
-            ></div>
-        </div>
-    </div>
-</div>
-```
-
-## 内联表单
-
-`.input` 可在 `.form-inline` 内联表单中使用，配合 `.input-group` 组合更复杂的场景。
-
-```html
-<form class="form-inline">
-    <div class="form-group">
-        <label class="form-label">Name</label>
-        <input style="width:160px;" type="text" class="form-control" placeholder="Jane Doe">
-    </div>
-    <div class="form-group">
-        <label class="form-label">Cash</label>
-        <div style="width:200px" class="input">
-            <div class="input-prefix">
-                <span class="valign-middle">￥</span>
-                <span class="valign-sibling"></span>
-            </div>
-            <div class="input-suffix">
-                <span class="valign-sibling"></span>
-                <span class="valign-middle">元</span>
-                <span class="input-counter">0/20</span>
-            </div>
-            <!--控件需要放在最后-->
-            <div class="input-body">
-                <input type="text"/>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">Page</label>
-        <div style="width:300px;" class="input-group">
-            <div class="input-group-prepend">
-                <div class="input-group-text">http://</div>
-            </div>
-            <div class="input-group-body">
-                <div class="input">
-                    <div class="input-prefix"
-                        ><span class="valign-sibling"></span
-                        ><span class="valign-middle">www.</span
-                    ></div>
-                    <div class="input-suffix"
-                        ><span class="valign-sibling"></span
-                        ><span class="valign-middle">.com</span
-                    ></div>
-                    <div class="input-suffix"
-                        ><span class="valign-sibling"></span
-                        ><span class="input-counter">0/20</span
-                    ></div>
-                    <!--控件需要放在最后-->
-                    <div class="input-body">
-                        <input type="text"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
-```
-
-## 组件大小
-
-`.input` 支持 `.input-lg` / `.input-sm`，`.input-group` 支持 `.input-group-lg` / `.input-group-sm`，还可配合 `.form-group-lg` / `.form-group-sm` 实现表单项级别的尺寸控制。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">input-lg</label>
-        <div class="input input-lg">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><span class="input-counter">0/111</span
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf133;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body"
-                ><input type="text"
-                ><button type="button" class="control-clear fa">&#xf057;</button
-            ></div>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">input-sm</label>
-        <div class="input input-sm">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><span class="input-counter">0/111</span
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf133;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body"
-                ><input type="text"
-                ><button type="button" class="control-clear fa">&#xf057;</button
-            ></div>
-        </div>
-    </div>
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-                <div class="input-group-text">█</div>
-            </div>
-            <div class="input-group-append">
-                <div class="input-group-text">元</div>
-            </div>
-            <!--控件需要放在最后-->
-            <div class="input-group-body">
-                <div class="input">
-                    <div class="input-prefix"
-                        ><span class="valign-sibling"></span
-                        ><i class="icon fa">&#xf002;</i
-                    ></div>
-                    <div class="input-suffix"
-                        ><span class="valign-sibling"></span
-                        ><span class="input-counter">0/111</span
-                    ></div>
-                    <div class="input-suffix"
-                        ><span class="valign-sibling"></span
-                        ><i class="icon fa">&#xf133;</i
-                    ></div>
-                    <!--控件需要放在最后-->
-                    <div class="input-body"
-                        ><input type="text"
-                        ><button type="button" class="control-clear fa">&#xf057;</button
-                    ></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <div class="input-group input-group-sm">
-            <div class="input-group-prepend">
-                <div class="input-group-text">█</div>
-            </div>
-            <div class="input-group-append">
-                <div class="input-group-text">元</div>
-            </div>
-            <div class="input-group-body">
-                <div class="input">
-                    <div class="input-prefix"
-                        ><span class="valign-sibling"></span
-                        ><i class="icon fa">&#xf002;</i
-                    ></div>
-                    <div class="input-suffix"
-                        ><span class="valign-sibling"></span
-                        ><span class="input-counter">0/111</span
-                    ></div>
-                    <div class="input-suffix"
-                        ><span class="valign-sibling"></span
-                        ><i class="icon fa">&#xf133;</i
-                    ></div>
-                    <!--控件需要放在最后-->
-                    <div class="input-body"
-                        ><input type="text"
-                        ><button type="button" class="control-clear fa">&#xf057;</button
-                    ></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
-```
-
-## 校验
-
-`.input` 可配合 `.has-valid` / `.has-invalid` 校验状态，`.feedback-icon` 和 `.control-clear` 共存于 `.input-body` 内。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid has-feedback-icon">
-        <label class="form-label">has-valid</label>
-        <div class="input">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body"
-                ><input type="text"
-                ><button type="button" class="control-clear fa">&#xf057;</button
-                ><i class="feedback-icon fa">&#xf00c;</i
-            ></div>
-        </div>
-        <p class="feedback-text">没有后缀</p>
-    </div>
-    <div class="form-group has-invalid has-feedback-icon">
-        <label class="form-label">has-invalid</label>
-        <div class="input">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body"
-                ><input type="text"
-                ><button type="button" class="control-clear fa">&#xf057;</button
-                ><i class="feedback-icon fa">&#xf00d;</i
-            ></div>
-        </div>
-        <p class="feedback-text">没有后缀</p>
-    </div>
-    <div class="form-group has-valid has-feedback-icon">
-        <label class="form-label">has-valid</label>
-        <div class="input">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><span class="input-counter">0/111</span
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf133;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body"
-                ><input type="text"
-                ><button type="button" class="control-clear fa">&#xf057;</button
-                ><i class="feedback-icon fa">&#xf00c;</i
-            ></div>
-        </div>
-        <p class="feedback-text">有后缀</p>
-    </div>
-    <div class="form-group has-invalid has-feedback-icon">
-        <label class="form-label">has-invalid</label>
-        <div class="input">
-            <div class="input-prefix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf002;</i
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><span class="input-counter">0/111</span
-            ></div>
-            <div class="input-suffix"
-                ><span class="valign-sibling"></span
-                ><i class="icon fa">&#xf133;</i
-            ></div>
-            <!--控件需要放在最后-->
-            <div class="input-body"
-                ><input type="text"
-                ><button type="button" class="control-clear fa">&#xf057;</button
-                ><i class="feedback-icon fa">&#xf00d;</i
-            ></div>
-        </div>
-        <p class="feedback-text">有后缀</p>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/select.md
----
-# 选择按钮
-
-下拉选择按钮（`.select`）提供自定义样式的选择控件，支持下拉菜单、占位、置灰、加载中、错误重试等多种状态。
-
-## 选择按钮的不同状态
-
-### 基本用法
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">基本用法</label>
-        <div class="select dropdown">
-            <input type="hidden">
-            <button type="button" class="select-btn" popovertarget="myPop">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-            <ul id="myPop" class="dropdown-menu" popover>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线咨询</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">领导信箱</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线访谈</button></li>
-                <li role="separator" class="dropdown-divider"></li>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">网站投稿</button></li>
-            </ul>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">空白占位</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="select-icon caret"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">置灰</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">置灰空白占位</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-</form>
-```
-
-### 加载中
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">加载中</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-circular"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">加载中空白占位</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-circular"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">错误重试</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-msg text-danger">网络加载错误</span>
-                <div class="select-icon icon fa fa-refresh"></div>
-            </button>
-        </div>
-    </div>
-</form>
-```
-
-## 组件大小
-
-`.select-lg` / `.select-sm` 控制选择按钮大小，可配合 `.form-group-lg` / `.form-group-sm`（此时 `.select` 无需额外尺寸类）。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">select-lg</label>
-        <div class="select select-lg">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">select-sm</label>
-        <div class="select select-sm">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-</form>
-```
-
-## 字段校验
-
-在 `.form-group` 上添加 `.has-invalid`，控件边框自动变红。
-
-```html
-<form class="form">
-    <div class="form-group has-invalid">
-        <label class="form-label">基本用法</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">空白占位</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="select-icon caret"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">置灰</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">置灰空白占位</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">加载中</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-circular"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">加载中空白占位</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-circular"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">错误重试</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-msg text-danger">网络加载错误</span>
-                <div class="select-icon icon fa fa-refresh"></div>
-            </button>
-        </div>
-    </div>
-</form>
-```
-
-## 表单验证
-
-配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`，`feedback-icon` 和 `control-clear` 放在 `.select` 内。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid has-feedback-icon">
-        <label class="form-label">has-valid</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-            <i class="feedback-icon fa">&#xf00c;</i>
-        </div>
-    </div>
-    <div class="form-group has-invalid has-feedback-icon">
-        <label class="form-label">has-invalid</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-            <i class="feedback-icon fa">&#xf00d;</i>
-        </div>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/sizing.md
----
-# 表单尺寸
-
-通过 `.form-group-lg` / `.form-group-sm` 设置表单项级别尺寸，或 `.form-control-lg` / `.form-control-sm` 控制单个控件尺寸。
-
-## 表单项尺寸
-
-在表单组 `.form-group` 上添加 `.form-group-lg` 或 `.form-group-sm`，标签和控件会同步调整字号与高度。
-
-```html
-<form class="form">
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-    </div>
-</form>
-```
-
-## 水平表单
-
-表单项尺寸在水平表单 `.form-horizontal` 中同样有效，标签还会自动调整垂直对齐。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-    </div>
-</form>
-```
-
-## 内联表单
-
-在内联表单 `.form-inline` 中也可正常使用。
-
-```html
-<form class="form-inline">
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-    </div>
-</form>
-```
-
-## 控件尺寸
-
-在控件本身添加 `.form-control-lg` / `.form-control-sm`，只影响控件大小，不影响标签。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">form-control-lg</label>
-        <input class="form-control form-control-lg" type="text">
-    </div>
-    <div class="form-group">
-        <label class="form-label">form-control-sm</label>
-        <input class="form-control form-control-sm" type="text">
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/static.md
----
-# 静态控件
-
-如果需要将一行纯文本和 `label` 元素放置于同一行，为 `<p>` 元素添加 `.form-control-static` 类即可。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">Text</label>
-        <p class="form-control-static">email@example.com</p>
-    </div>
-</form>
-```
-
-## 静态控件尺寸
-
-`.form-control-static` 会随 `.form-group-lg` / `.form-group-sm` 自动适配字号和间距。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group form-group-lg">
-        <label class="form-label">Text</label>
-        <p class="form-control-static">email@example.com</p>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">Text</label>
-        <p class="form-control-static">email@example.com</p>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/switch.md
----
-# 开关按钮
-
-开关按钮（`.switch`）用于布尔值切换的场景，支持选中、禁用和加载中状态。
-
-## 基本用法
-
-`.switch` + `.switch-thumb` 构成开关滑块，配合 `<input type="checkbox">` 和 `<label>`。
-
-```html
-<label>
-    <div class="switch">
-        <div class="switch-thumb"></div>
-        <input type="checkbox">
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked">
-        <div class="switch-thumb"></div>
-        <input type="checkbox">
-    </div>
-    选中
-</label>
-```
-
-## 置灰
-
-添加 `.switch-disabled`，`<input>` 设置 `disabled`。
-
-```html
-<label>
-    <div class="switch switch-disabled">
-        <div class="switch-thumb"></div>
-        <input type="checkbox" disabled>
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked switch-disabled">
-        <div class="switch-thumb"></div>
-        <input type="checkbox" disabled>
-    </div>
-    选中
-</label>
-```
-
-## 加载中
-
-添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-circular`。选中和置灰状态可叠加。
-
-```html
-<label>
-    <div class="switch switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    选中
-</label>
-<label>
-    <div class="switch switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    选中
-</label>
-```
-
-
----
-# 源文件: form/tags-input.md
----
-# 输入框组
-
-标签输入框（`.tags-input`）用于在输入框中展示和管理多个标签，支持换行/不换行、清空、配合 input-group、标签输入、大小控制和校验反馈。
-
-## 多选控件
-
-```html
-空白
-<div class="tags-input">
-</div>
-占位文字
-<div class="tags-input">
-    <div class="tags-input-placeholder">请输入XXX</div>
-</div>
-有标签
-<div class="tags-input">
-    <div class="tags-input-wrap">
-        <div class="tag tag-default">金坷垃</div>
-        <div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div>
-        <div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div>
-    </div>
-    <button type="button" class="control-clear fa">&#xf057;</button>
-</div>
-```
-
-### 超出行为
-
-`.tags-input-wrap` 超出换行，`.tags-input-nowrap` 超出不换行（保持单行滚动）。
-
-```html
-<form class="form">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group" style="max-width: 320px; _width: 320px;">
-                <label class="form-label">超出换行</label>
-                <div class="tags-input">
-                    <div class="tags-input-wrap"
-                        ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
-                    ></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group" style="max-width: 320px; _width: 320px;">
-                <label class="form-label">超出不换行</label>
-                <div class="tags-input">
-                    <div class="tags-input-nowrap"
-                        ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
-                    ></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
-```
-
-### 配合 input-group
-
-`.tags-input` 可放在 `.input-group-body` 中使用。
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">配合input-group多选控件</label>
-        <div class="input-group">
-            <button type="button" class="input-group-append btn btn-default">
-                <i class="fa">&#xf093;</i>
-            </button>
-            <div class="input-group-body">
-                <div class="tags-input">
-                    <div class="tags-input-wrap"
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
-                    ></div>
-                    <button type="button" class="control-clear fa">&#xf057;</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group" style="max-width: 320px; _width: 320px;">
-                <label class="form-label">配合input-group超出换行</label>
-                <div class="input-group">
-                    <button type="button" class="input-group-append btn btn-default">
-                        <i class="fa">&#xf093;</i>
-                    </button>
-                    <div class="input-group-body">
-                        <div class="tags-input">
-                            <div class="tags-input-wrap"
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
-                            ></div>
-                            <button type="button" class="control-clear fa">&#xf057;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group" style="max-width: 320px; _width: 320px;">
-                <label class="form-label">配合input-group超出不换行</label>
-                <div class="input-group">
-                    <button type="button" class="input-group-append btn btn-default">
-                        <i class="fa">&#xf093;</i>
-                    </button>
-                    <div class="input-group-body">
-                        <div class="tags-input">
-                            <div class="tags-input-nowrap"
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
-                            ></div>
-                            <button type="button" class="control-clear fa">&#xf057;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
-```
-
-### 标签输入
-
-在 `.tags-input` 中放入 `<input>` 元素实现标签输入。
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">标签输入</label>
-        <div class="tags-input">
-            <div class="tags-input-wrap"
-                ><div class="tag tag-default">金坷垃</div
-                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-            ></div>
-            <input type="text" placeholder="请输入内容">
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="tags-input">
-            <div class="tags-input-nowrap"
-                ><div class="tag tag-default">金坷垃</div
-                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-            ></div>
-            <input type="text" placeholder="请输入内容">
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group" style="max-width: 320px; _width: 320px;">
-                <label class="form-label">标签输入超出换行</label>
-                <div class="tags-input">
-                    <div class="tags-input-wrap"
-                        ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
-                    ></div>
-                    <input type="text" placeholder="请输入内容">
-                    <button type="button" class="control-clear fa">&#xf057;</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group" style="max-width: 320px; _width: 320px;">
-                <label class="form-label">标签输入超出不换行</label>
-                <div class="tags-input">
-                    <div class="tags-input-nowrap"
-                        ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
-                    ></div>
-                    <input type="text" placeholder="请输入内容">
-                    <button type="button" class="control-clear fa">&#xf057;</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
-```
-
-## 控件大小
-
-使用 `.tags-input-lg` / `.tags-input-sm`，标签本身也需用 `.tag-lg` / `.tag-sm`。还可配合 `.form-group-lg` / `.form-group-sm`（此时 `.tags-input` 无需额外尺寸类，标签仍需 `.tag-lg` / `.tag-sm`）。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">tags-input-lg</label>
-        <div class="tags-input tags-input-lg">
-            <div class="tags-input-wrap"
-                ><div class="tag tag-lg tag-default">金坷垃</div
-                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-            ></div>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">tags-input-sm</label>
-        <div class="tags-input tags-input-sm">
-            <div class="tags-input-wrap"
-                ><div class="tag tag-sm tag-default">金坷垃</div
-                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-            ></div>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <div class="tags-input">
-            <div class="tags-input-wrap"
-                ><div class="tag tag-lg tag-default">金坷垃</div
-                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-            ></div>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <div class="tags-input">
-            <div class="tags-input-wrap"
-                ><div class="tag tag-sm tag-default">金坷垃</div
-                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-            ></div>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-</form>
-```
-
-## 置灰
-
-在 `.tags-input` 上添加 `.tags-input-disabled`，内部 `<input>` 也需 `disabled`。空白控件、placeholder、标签输入三种场景均支持。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">空白控件</label>
-        <div class="tags-input tags-input-disabled">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">placeholder</label>
-        <div class="input-group">
-            <button type="button" class="input-group-append btn btn-default btn-disabled" disabled><span class="caret"></span></button>
-            <div class="input-group-body">
-                <div class="tags-input tags-input-disabled">
-                    <div class="tags-input-placeholder">请输入XXX</div>
-                    <button type="button" class="control-clear fa">&#xf057;</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">标签输入</label>
-        <div class="tags-input tags-input-disabled">
-            <div class="tags-input-wrap"
-                ><div class="tag tag-default">金坷垃</div
-                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-default">两米下</div
-                ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
-            ></div>
-            <input type="text" placeholder="请输入内容" disabled>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-</form>
-```
-
-## 校验
-
-配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`，`tags-input` 嵌套在 `.input-group-body` 内，`feedback-icon` 放在 `.tags-input` 内。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid has-feedback-icon">
-        <label class="form-label">has-valid</label>
-        <div class="input-group">
-            <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
-            <!--控件需要放在最后-->
-            <div class="input-group-body">
-                <div class="tags-input">
-                    <div class="tags-input-wrap"
-                        ><div class="tag tag-default">金坷垃</div
-                    ></div>
-                    <button type="button" class="control-clear fa">&#xf057;</button>
-                    <i class="feedback-icon fa">&#xf00c;</i>
-                </div>
-            </div>
-        </div>
-        <p class="form-text">Example block-level help text here.</p>
-    </div>
-    <div class="form-group has-invalid has-feedback-icon">
-        <label class="form-label">has-invalid</label>
-        <div class="input-group">
-            <button type="button" class="input-group-append btn btn-default"><span class="caret"></span></button>
-            <!--控件需要放在最后-->
-            <div class="input-group-body">
-                <div class="tags-input">
-                    <div class="tags-input-wrap"
-                        ><div class="tag tag-default">金坷垃</div
-                    ></div>
-                    <button type="button" class="control-clear fa">&#xf057;</button>
-                    <i class="feedback-icon fa">&#xf00d;</i>
-                </div>
-            </div>
-        </div>
-        <p class="form-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/textarea.md
----
-# 文本域
-
-文本域（`.textarea`）封装了多行文本输入控件，支持字数计数、清空按钮、置灰、大小控制和校验反馈。
-
-## 基本用法
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">基本用法</label>
-        <div class="textarea"
-            ><textarea placeholder="请输入XXX"></textarea
-        ></div>
-    </div>
-</form>
-```
-
-## 字数与清空
-
-使用 `.textarea-counter` 显示字数，`.control-clear` 清空按钮。
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">显示字数、清空按钮</label>
-        <div class="textarea"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-        ></div>
-    </div>
-</form>
-```
-
-## 置灰
-
-添加 `.textarea-disabled`，`<textarea>` 设置 `disabled`。
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">置灰</label>
-        <div class="textarea textarea-disabled"
-            ><textarea placeholder="请输入XXX" disabled></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-        ></div>
-    </div>
-</form>
-```
-
-## 内联表单
-
-`.textarea` 可在 `.form-inline` 中使用。
-
-```html
-<form class="form-inline"
-    ><div class="form-group">
-        <label class="form-label" for="exampleInputName2">Name</label>
-        <input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-    </div
-    ><div class="form-group">
-        <label class="form-label" for="exampleInputEmail2">文本域</label>
-        <div class="textarea"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-        ></div>
-    </div
-></form>
-```
-
-## 组件大小
-
-`.textarea-lg` / `.textarea-sm` 控制文本域大小，可配合 `.form-group-lg` / `.form-group-sm`（此时 `.textarea` 无需额外尺寸类）。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">textarea-lg</label>
-        <div class="textarea textarea-lg"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-        ></div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">textarea-sm</label>
-        <div class="textarea textarea-sm"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-        ></div>
-    </div>
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <div class="textarea"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-        ></div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <div class="textarea"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-        ></div>
-    </div>
-</form>
-```
-
-## 表单验证
-
-配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid has-feedback-icon">
-        <label class="form-label">has-valid</label>
-        <div class="textarea"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-            ><i class="feedback-icon fa">&#xf00c;</i
-        ></div>
-    </div>
-    <div class="form-group has-invalid has-feedback-icon">
-        <label class="form-label">has-invalid</label>
-        <div class="textarea"
-            ><textarea placeholder="请输入XXX"></textarea
-            ><span class="textarea-counter">0/100</span
-            ><button type="button" class="control-clear fa">&#xf057;</button
-            ><i class="feedback-icon fa">&#xf00d;</i
-        ></div>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/toggle-button.md
----
-# 开关按钮
-
-开关按钮（`.btn-toggle`）提供按钮形式的开关交互，适用于需要在两个状态间切换的场景。支持独立使用、放入按钮组、内含 checkbox / radio 等形态。
-
-## 基本用法
-
-`.btn-toggle` 可作用于 `<label>`（内含 `.checkbox` 或 `.radio`）或 `<button>`。
-
-```html
-<div class="btn-toolbar">
-    <label class="btn btn-toggle">
-        <div class="checkbox"><input type="checkbox"></div>
-        未选中
-    </label>
-    <label class="btn btn-toggle btn-toggle-checked">
-        <div class="checkbox checkbox-checked"><input type="checkbox"></div>
-        选中
-    </label>
-    <button class="btn btn-toggle">未选中</button>
-    <button class="btn btn-toggle btn-toggle-checked">选中</button>
-</div>
-```
-
-### 含 radio 单选
-
-```html
-<div class="btn-toolbar">
-    <label class="btn btn-toggle">
-        <div class="radio"><input type="radio" name="radio-group"></div>
-        未选中
-    </label>
-    <label class="btn btn-toggle btn-toggle-checked">
-        <div class="radio radio-checked"><input type="radio" name="radio-group"></div>
-        选中
-    </label>
-    <button class="btn btn-toggle">未选中</button>
-    <button class="btn btn-toggle btn-toggle-checked">选中</button>
-</div>
-```
-
-### 放入按钮组
-
-```html
-<div class="btn-toolbar">
-    <div class="btn-group">
-        <label class="btn btn-toggle">
-            <div class="checkbox"><input type="checkbox"></div>
-            未选中
-        </label>
-        <label class="btn btn-toggle btn-toggle-checked">
-            <div class="checkbox checkbox-checked"><input type="checkbox"></div>
-            选中
-        </label>
-    </div>
-    <div class="btn-group">
-        <button class="btn btn-toggle">未选中</button>
-        <button class="btn btn-toggle btn-toggle-checked">选中</button>
-    </div>
-</div>
-```
-
-
----
-# 源文件: form/validation.md
----
-# 表单校验状态
-
-表单校验的视觉反馈，包括 `.has-valid` 成功和 `.has-invalid` 错误状态，支持图标、文字提示和飘浮气泡。
-
-## 表单组验证
-
-在 `.form-group` 上添加 `.has-valid` 或 `.has-invalid`，控件边框和反馈文字会自动变色。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <div class="feedback-text">校验通过</div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">Invalid</label>
-        <input type="text" class="form-control"/>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-## 添加额外的图标
-
-使用 `.has-feedback-icon` 开启图标反馈，放入 `.feedback-icon` 图标元素。成功和错误状态分别控制图标颜色。
-
-```html
-<form class="form">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group has-feedback-icon has-invalid">
-        <label class="form-label">Invalid</label>
-        <textarea class="form-control"></textarea>
-        <i class="feedback-icon fa">&#xf00d;</i>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-## 飘浮气泡文字
-
-使用 `.feedback-tooltip` 替代 `.feedback-text`，提示文字将以半透明背景气泡形式飘浮在控件上方。
-
-```html
-<form class="form">
-    <div class="form-group has-valid">
-        <label class="form-label">has-valid</label>
-        <input type="text" class="form-control"/>
-        <div class="feedback-tooltip">
-            校验通过
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">has-invalid</label>
-        <input type="text" class="form-control"/>
-        <div class="feedback-tooltip">请输入活动名称</div>
-    </div>
-</form>
-```
-
-## 水平表单
-
-校验状态在 `.form-horizontal` 中同样可用。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group has-feedback-icon has-invalid">
-        <label class="form-label">Invalid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00d;</i>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-## 内联表单
-
-`.form-inline` 内联表单也可结合校验状态。
-
-```html
-<form class="form-inline">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group has-feedback-icon has-invalid">
-        <label class="form-label">Invalid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-## 表单项尺寸
-
-校验状态可与 `.form-group-lg` / `.form-group-sm` 结合使用。
-
-```html
-<form class="form">
-    <div class="form-group form-group-lg has-feedback-icon has-valid">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-### 水平表单
-
-```html
-<form class="form-horizontal">
-    <div class="form-group form-group-lg has-feedback-icon has-valid">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-### 内联表单
-
-```html
-<form class="form-inline">
-    <div class="form-group form-group-lg has-feedback-icon has-valid">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-## 控件尺寸
-
-校验图标也可配合 `.form-control-lg` / `.form-control-sm` 使用。
-
-```html
-<form class="form-inline">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">form-control-lg</label>
-        <input class="form-control form-control-lg" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control form-control-sm" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-
-
-# ========================================
-# ==== 板块: helpers ====
-# ========================================
-
-
----
-# 源文件: helpers/index.md
----
-# 助手
-
-助手类，帮助你快速完成常见的前端任务，包括浮动清除、显示隐藏、文本截断、图标、动画、加载指示等。
-
-## 清除浮动
-
-| 类 | 描述 |
-|---|---|
-| .pull-left | 元素浮动到左边 |
-| .pull-right | 元素浮动到右边 |
-| .clearfix | 清除容器内的浮动浮动 |
-
-[使用方法](./float.md)
-
-## 视觉隐藏
-
-通过 .sr-only 类在视觉上隐藏某个元素的同时，仍然能够被辅助技术识别。
-
-			
-| 类 | 描述 |
-|---|---|
-| .sr-only | 在视觉上隐藏某个元素。 |
-
-## 显示
-
-| 类 | 描述 |
-|---|---|
-| .hidden-xl | 在超大屏幕隐藏 |
-| .hidden-lg | 在大屏幕隐藏 |
-| .hidden-md | 在中隐藏 |
-| .hidden-sm | 在略小隐藏 |
-| .hidden-xs | 在小隐藏 |
-| .hidden | 强制元素隐藏 |
-| .block | 将元素显示为block |
-| .inline-block | 将元素显示为inline-block |
-| .inline | 将元素显示为inline |
-| .invisible | 将元素设为不可见（仍然占据体积） |
-| .visible | 将元素设为可见（与invisible相对） |
-
-## 文本截断
-
-| 类 | 描述 |
-|---|---|
-| .line-{n} | 强制高度为n行，n为1~6。 |
-| .line-max-{n} | 高度不得超过n行，n为1~6。 |
-| .line-min-{n} | 高度不得低于n行，n为1~6。 |
-
-## 三角标识
-
-| 类 | 描述 |
-|---|---|
-| .caret | 向下三角标识，常用于下拉菜单按钮旁 |
-
-## 关闭按钮
-
-| 类 | 描述 |
-|---|---|
-| .close | 关闭按钮，显示"✕"符号，悬停变深 |
-
-## 加载中
-
-| 类 | 描述 |
-|---|---|
-| .loading-circular | 环形加载指示 |
-| .loading-grow | 闪烁加载指示 |
-
-[使用方法](./loading.md)
-
-## 图标
-
-| 类 | 描述 |
-|---|---|
-| .icon | 表示一个图标，生成一个方形inline-block。 |
-| .icon-fw | 可以将图标设置为一个固定宽度。 |
-| .icon-left<br/>.icon-right | 左侧的图标。右侧的图标。 |
-| .icon-lg<br/>.icon-2x<br/>.icon-3x<br/>.icon-4x<br/>.icon-5x | 大字体图标。 |
-| .icon-rotate-* .icon-flip-* | 对图标进行旋转和翻转 |
-
-[使用方法](./icon.md)
-
-## 动画
-
-| 类 | 描述 |
-|---|---|
-| .animated | 动画基础类。 |
-| .animated.infinite | 循环动画。 |
-| .animated.forwards | 动画结束后保持最后一个帧。 |
-| .animated.fast | 快速。 |
-| .animated.faster | 更快。 |
-| .animated.slower | 更慢。 |
-[使用方法](./animation.html)
-
-
-
----
-# 源文件: helpers/float.md
----
-# 清除浮动
-
-通过 `.pull-left` 和 `.pull-right` 类快速设置浮动，使用 `.clearfix` 清除容器内的浮动。
-
-## 快速浮动
-
-注意 HTML 书写顺序：先写右浮动元素，再写左浮动元素，可以避免一些布局问题。
-
-```html
-<div class="clearfix">
-    <div class="pull-right">先写右</div>
-    <div class="pull-left">再写左</div>
-</div>
-```
-
-## 相关类
-
-| 类 | 描述 |
-|---|---|
-| .pull-left | 元素浮动到左边 |
-| .pull-right | 元素浮动到右边 |
-| .clearfix | 清除容器内的浮动 |
-
-
----
-# 源文件: helpers/icon.md
----
-# 图标
-
-参考 FontAwesome 提供了一套丰富的图标样式类，包括尺寸缩放、固定宽度、旋转翻转、堆叠组合等功能。
-
-## 基本图标
-
-使用样式类 `.icon` 生成一个方形 inline-block。
-
-```html
-<i class="icon fa">&#xf004;</i>
-<i class="icon fa fa-heart"></i>
-```
-
-## 大图标
-
-使用 `icon-lg`（33% 递增）、`icon-2x`、`icon-3x`、`icon-4x` 或 `icon-5x` 类来放大图标。
-
-```html
-<i class="fa icon-lg">&#xf083;</i>
-<i class="fa icon-2x">&#xf083;</i>
-<i class="fa icon-3x">&#xf083;</i>
-<i class="fa icon-4x">&#xf083;</i>
-<i class="fa icon-5x">&#xf083;</i>
-```
-
-## 固定宽度
-
-使用 `icon-fw` 可以将图标设置为一个固定宽度，主要用于不同宽度图标无法对齐的情况，尤其在列表或导航时起到重要作用。
-
-```html
-<div class="list-group">
-    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf015;</i> Home</a>
-    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf02d;</i> Library</a>
-    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf040;</i> Applications</a>
-    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf013;</i> Settings</a>
-</div>
-```
-
-## 动画
-
-使用 `icon-spin` 类来使任意图标旋转，也可以使用 `icon-pulse` 来使其进行8方位旋转。尤其适合加载中和设置类图标。
-
-```html
-<i class="fa icon-spin">&#xf110;</i>
-<i class="fa icon-spin">&#xf1ce;</i>
-<i class="fa icon-spin">&#xf013;</i>
-<i class="fa icon-spin">&#xf021;</i>
-<i class="fa icon-pulse">&#xf110;</i>
-```
-
-> **提示**：CSS3 动画不支持 IE9 以下。
-
-## 旋转和翻转
-
-使用 `icon-rotate-*` 和 `icon-flip-*` 类对图标进行任意旋转和翻转。
-
-```html
-<i class="icon fa">&#xf132;</i> normal
-<i class="icon fa icon-rotate-90">&#xf132;</i> icon-rotate-90
-<i class="icon fa icon-rotate-180">&#xf132;</i> icon-rotate-180
-<i class="icon fa icon-rotate-270">&#xf132;</i> icon-rotate-270
-<i class="icon fa icon-flip-horizontal">&#xf132;</i> icon-flip-horizontal
-<i class="icon fa icon-flip-vertical">&#xf132;</i> icon-flip-vertical
-```
-
-## 组合使用
-
-使用 `icon-stack` 类作为父容器，`icon-stack-1x` 作为正常比例的图标，`icon-stack-2x` 作为大一些的图标。还可以使用 `icon-inverse` 类来切换图标颜色。可通过添加大图标类来控制整体大小。
-
-```html
-<span class="icon-stack icon-lg">
-    <i class="fa icon-stack-2x">&#xf096;</i>
-    <i class="fa icon-stack-1x">&#xf099;</i>
-</span>
-fa-twitter on fa-square-o
-<span class="icon-stack icon-lg">
-    <i class="fa icon-stack-2x">&#xf111;</i>
-    <i class="fa icon-stack-1x icon-inverse">&#xf024;</i>
-</span>
-fa-flag on fa-circle
-<span class="icon-stack icon-lg">
-    <i class="fa icon-stack-2x">&#xf0c8;</i>
-    <i class="fa icon-stack-1x icon-inverse">&#xf120;</i>
-</span>
-fa-terminal on fa-square
-<span class="icon-stack icon-lg">
-    <i class="fa icon-stack-1x">&#xf030;</i>
-    <i class="fa icon-stack-2x text-danger">&#xf05e;</i>
-</span>
-fa-ban on fa-camera
-```
-
-## 可访问性
-
-使用 `aria-hidden` 可以禁止屏幕朗读工具作用，使用 `aria-label` 可以让屏幕朗读工具读指定的内容。
-
-```html
-<button type="button" class="btn btn-default" aria-label="Left Align">
-    <i class="fa" aria-hidden="true">&#xf036;</i>
-</button>
-<button type="button" class="btn btn-default">
-    <i class="fa" aria-hidden="true">&#xf005;</i> Star
-</button>
-```
-
-
----
-# 源文件: helpers/loading.md
----
-## 加载中
-
-```html
-<div class="loading-circular text-primary" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-circular text-info" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-circular text-success" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-circular text-warning" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-circular text-danger" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-primary" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-info" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-success" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-warning" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-danger" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-```
-
-
-
-# ========================================
-# ==== 板块: utilities ====
-# ========================================
+# =============================================================================
+# 七、工具类 (utilities)
+# =============================================================================
 
 
 ---
