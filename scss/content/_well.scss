@@ -12,3 +12,10 @@
 .well blockquote{ border-color:#ddd; border-color:rgba(0,0,0,.15);}
 .well-lg{ padding: $well-padding-lg;}
 .well-sm{ padding: $well-padding-sm;}
+
+@if $enable-dark {
+	.dark .well {
+		background: $dark-well-bg;
+		border-color: $dark-well-border-color;
+	}
+}

@@ -1,8 +1,44 @@
 
 @use '../variables' as *;
 
-.breadcrumb{ position: relative; padding:$breadcrumb-padding; margin:$breadcrumb-margin; text-align:left; list-style:none; background-color:$breadcrumb-bg; color:$breadcrumb-spliter-color;}
+.breadcrumb{
+    position: relative;
+    padding:$breadcrumb-padding;
+    margin:$breadcrumb-margin;
+    text-align:left;
+    list-style:none;
+    background-color:$breadcrumb-bg;
+    color:$breadcrumb-spliter-color;
+}
 .breadcrumb li{ display:inline-block; *display:inline; *zoom:1;}
-.breadcrumb > li + li:before{ position: relative;  color:$breadcrumb-spliter-color; content:"/\00a0";}
-.breadcrumb span,.breadcrumb li{ color:$breadcrumb-color;}
-.breadcrumb span,.breadcrumb a{ margin-left:$breadcrumb-gutter; margin-right:$breadcrumb-gutter;}
+.breadcrumb > li + li:before{
+    position: relative;
+    color:$breadcrumb-spliter-color;
+    content:"/\00a0";
+}
+.breadcrumb span,.breadcrumb li{
+    color:$breadcrumb-color;
+}
+.breadcrumb span,.breadcrumb a{
+    margin-left:$breadcrumb-gutter;
+    margin-right:$breadcrumb-gutter;
+}
+
+@if $enable-dark {
+	.dark {
+		.breadcrumb {
+			background: $dark-breadcrumb-bg;
+			color: $dark-breadcrumb-spliter-color;
+		}
+		.breadcrumb a {
+			color: $dark-breadcrumb-color;
+		}
+		.breadcrumb > li + li:before {
+			color: $dark-breadcrumb-spliter-color;
+		}
+		.breadcrumb span,
+		.breadcrumb li {
+			color: $dark-breadcrumb-color;
+		}
+	}
+}

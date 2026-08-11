@@ -40,7 +40,7 @@ $check-padding-bottom: $check-padding-top - $check-gap-y;
 	height: $checkbox-size;
 	vertical-align: middle;
 	margin-bottom: 2px;
-	background: #ffffff;
+	background: $light-body-bg;
 	border: $checkbox-border-width solid $checkbox-border-color;
 	@include user-select(none);
 }
@@ -72,7 +72,7 @@ $check-padding-bottom: $check-padding-top - $check-gap-y;
 	font-size: $checkbox-size - $checkbox-border-width * 2;
 	font-weight: bold;
 	text-align: center;
-	color: #fff;
+	color: $light-body-bg;
 }
 .checkbox-checked {
 	border-color: $light-info;
@@ -91,8 +91,8 @@ $radio-point-size: $checkbox-size - $checkbox-border-width * 2 - $radio-point-po
 	width: $radio-point-size;
 	height: $radio-point-size;
 	@include rounded(50%);
-	color: #fff;
-	background: #fff;
+	color: $light-body-bg;
+	background: $light-body-bg;
 }
 .radio-checked {
 	border-color: $light-info;
@@ -101,7 +101,7 @@ $radio-point-size: $checkbox-size - $checkbox-border-width * 2 - $radio-point-po
 
 .checkbox-indeterminate {
 	border-color: $light-info;
-	background: #fff;
+	background: $light-body-bg;
 }
 
 .checkbox-indeterminate:before {
@@ -159,5 +159,58 @@ label .checkbox, label .radio {
 	.checkbox, .checkbox-checked, .radio, .radio-checked {
 		border: 0 none;
 		background: none;
+	}
+}
+
+@if $enable-dark {
+	.dark {
+		.checkbox,
+		.radio {
+			background: $dark-body-bg;
+			border-color: $dark-checkbox-border-color;
+		}
+		.checkbox-checked:after {
+			color: $dark-info;
+		}
+		.checkbox-checked {
+			border-color: $dark-info;
+		}
+		.radio-checked:after {
+			background: $dark-info;
+		}
+		.radio-checked {
+			border-color: $dark-info;
+		}
+		.checkbox-indeterminate {
+			border-color: $dark-info;
+		}
+		.checkbox-indeterminate:before {
+			color: $dark-info;
+			background: $dark-info;
+		}
+		.checkbox-disabled,
+		.radio-disabled {
+			background: $dark-checkbox-disabled-bg;
+			border-color: $dark-checkbox-disabled-border-color;
+		}
+		.checkbox-disabled.checkbox-checked:after {
+			color: $dark-checkbox-disabled-color;
+		}
+		.radio-disabled.radio-checked:after {
+			color: $dark-checkbox-disabled-color;
+			background: $dark-checkbox-disabled-color;
+		}
+		.checkbox-indeterminate.checkbox-disabled:before {
+			color: $dark-checkbox-disabled-color;
+			background: $dark-checkbox-disabled-color;
+		}
+		.has-valid .checkbox,
+		.has-valid .radio {
+			border-color: $dark-success;
+		}
+		.has-invalid .checkbox,
+		.has-invalid .radio {
+			border-color: $dark-danger;
+		}
 	}
 }

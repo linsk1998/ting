@@ -6,24 +6,26 @@
 	background-color: #ffffff;
 	border:1px solid $light-divider;
 	border-left: 5px solid #666;
-	border-radius:2px 0 0 3px;
+	border-radius: 2px;
 	@include box-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
 }
-.callout-primary {
-	border-left-color:$light-primary;
+
+@each $key, $color in $context {
+	.callout-#{$key} {
+		border-left-color:$color;
+	}
 }
 
-html body .callout-danger {
-	border-left-color:$light-success;
-}
-html body .callout-warning {
-	border-left-color:$light-info;
-}
-
-html body .callout-info {
-	border-left-color:$light-warning;
-}
-
-html body .callout-success {
-	border-left-color:$light-danger;
+@if $enable-dark {
+	.dark {
+		.callout {
+			background: $dark-body-bg;
+			border-color: $dark-divider;
+		}
+		@each $key, $color in $dark-context {
+			.callout-#{$key} {
+				border-left-color:$color;
+			}
+		}
+	}
 }

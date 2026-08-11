@@ -57,3 +57,17 @@
 	margin-right: - $card-cap-padding-x + $card-cap-padding-y;
 	margin-left: - $card-cap-padding-x + $card-cap-padding-y;
 }
+
+@if $enable-dark {
+	.dark {
+		.card {
+			background: $dark-card-bg;
+			border-color: $dark-card-border-color;
+		}
+		.card-header,
+		.card-footer {
+			background: $dark-card-cap-bg;
+			border-color: $dark-card-border-color;
+		}
+	}
+}

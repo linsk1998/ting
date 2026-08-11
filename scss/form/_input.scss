@@ -4,7 +4,7 @@
 @use '../mixins' as *;
 
 .input{
-	background-color: #fff;
+	background-color: $light-body-bg;
 	border: 1px solid $ctrl-border-color;
 	height: $ctrl-height-md;
 	@include clearfix;
@@ -176,5 +176,23 @@
 	}
 	.has-feedback-icon .input-body .control-clear {
 		right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-clear-right - $ctrl-border-width;
+	}
+}
+
+@if $enable-dark {
+	.dark {
+		.input {
+			background: $dark-body-bg;
+			border-color: $dark-ctrl-border-color;
+		}
+		.input:focus-within {
+			border-color: $dark-input-focus-color;
+		}
+		.input-body input {
+			color: $dark-input-value-color;
+		}
+		.input-disabled {
+			background: $dark-input-disabled-bg;
+		}
 	}
 }

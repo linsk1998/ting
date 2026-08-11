@@ -133,3 +133,40 @@ $popover-border-width-ie: math.div($popover-border-width,1px);
 .popover-body, .popover-content {
 	padding: $popover-body-padding;
 }
+
+@if $enable-dark {
+	.dark {
+		.popover {
+			background: $dark-popover-bg;
+			border-color: $dark-popover-border-color;
+		}
+		.popover-header, .popover-title {
+			background: $dark-popover-header-bg;
+			border-color: $dark-divider;
+		}
+		.popover-top .popover-arrow:after {
+			border-top-color: $dark-popover-bg;
+		}
+		.popover-top .popover-arrow:before {
+			border-top-color: $dark-popover-border-color;
+		}
+		.popover-right .popover-arrow:after {
+			border-right-color: $dark-popover-bg;
+		}
+		.popover-right .popover-arrow:before {
+			border-right-color: $dark-popover-border-color;
+		}
+		.popover-bottom .popover-arrow:after {
+			border-bottom-color: $dark-popover-bg;
+		}
+		.popover-bottom .popover-arrow:before {
+			border-bottom-color: $dark-popover-border-color;
+		}
+		.popover-left .popover-arrow:after {
+			border-left-color: $dark-popover-bg;
+		}
+		.popover-left .popover-arrow:before {
+			border-left-color: $dark-popover-border-color;
+		}
+	}
+}

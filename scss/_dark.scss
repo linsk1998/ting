@@ -4,6 +4,7 @@
 
 @if $enable-dark {
 	.dark{
+		color-scheme: dark;
 		color: $dark-body-text;
 		background: $dark-body-bg;
 	}

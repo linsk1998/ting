@@ -35,3 +35,25 @@
 	font-size: 0;
 	background-color: rgba(0,0,0,0);
 }
+
+@if $enable-dark {
+	.dark {
+		@each $key, $color in $dark-context {
+			.link-#{$key} { color: $color; }
+			.link-#{$key}:hover { color: tint-color($color, 15%); }
+		}
+		.link-secondary {
+			color: $dark-secondary-text;
+		}
+		.link-secondary:hover {
+			color: $dark-primary;
+		}
+		.link-disabled {
+			color: $dark-tertiary-text;
+			text-shadow: none;
+		}
+		.link-disabled:hover {
+			color: $dark-tertiary-text;
+		}
+	}
+}

@@ -11,7 +11,7 @@
 	width:100%;
 	position: relative;
 	border:$ctrl-border-width solid $ctrl-border-color;
-	background:#fff;
+	background: $light-body-bg;
 	text-align:left;
 	line-height:$ctrl-line-height;
 	font-size:$ctrl-fontsize-md;
@@ -72,6 +72,24 @@
 	color: $select-disabled-color;
 	cursor:not-allowed;
 	z-index: 0;
+}
+
+@if $enable-dark {
+	.dark {
+		.select-btn {
+			background: $dark-body-bg;
+			border-color: $dark-ctrl-border-color;
+			color: $dark-input-value-color;
+		}
+		.select-disabled .select-btn {
+			background: $dark-select-disabled-bg;
+			border-color: $dark-select-disabled-border-color;
+			color: $dark-select-disabled-color;
+		}
+		.select-placeholder {
+			color: $dark-input-placeholder-color;
+		}
+	}
 }
 .select-disabled{
 	.select-icon{

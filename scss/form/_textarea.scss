@@ -71,7 +71,7 @@
 	color: $input-counter-color;
 	font-size: $input-counter-fontsize;
 	line-height: $input-counter-fontsize;
-	background: #fff;
+	background: $light-body-bg;
 }
 .textarea-disabled textarea,
 .textarea-disabled .textarea-counter{
@@ -80,6 +80,27 @@
 }
 .textarea-disabled .control-clear{
 	display: none;
+}
+
+@if $enable-dark {
+	.dark {
+		.textarea textarea {
+			color: $dark-input-value-color;
+			border-color: $dark-ctrl-border-color;
+			background: $dark-body-bg;
+		}
+		.textarea textarea:focus {
+			border-color: $dark-input-focus-color;
+		}
+		.textarea-counter {
+			color: $input-counter-color;
+			background: $dark-body-bg;
+		}
+		.textarea-disabled textarea,
+		.textarea-disabled .textarea-counter {
+			background: $dark-input-disabled-bg;
+		}
+	}
 }
 @if($enable-feedback-icon) {
 	.has-feedback-icon{

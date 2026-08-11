@@ -22,7 +22,7 @@
 	height: $switch-thumb-size;
 	overflow: hidden;
 	@include rounded($switch-thumb-size * .5);
-	background: #fff;
+	background: $switch-thumb-bg;
 	line-height: 0;
 	font-size: $switch-thumb-fontsize;
 	color: $switch-disabled-bg;
@@ -49,6 +49,9 @@
 }
 .switch-disabled {
 	background: $switch-disabled-bg;
+	.switch-thumb {
+		background: $switch-thumb-disabled-bg;
+	}
 }
 .switch-disabled input {
 	cursor: not-allowed;
@@ -60,5 +63,22 @@
 	}
 	input {
 		cursor: wait;
+	}
+}
+
+@if $enable-dark {
+	.dark {
+		.switch {
+			background: $dark-switch-bg;
+		}
+		.switch-thumb {
+			background: $dark-switch-thumb-bg;
+		}
+		.switch-disabled {
+			background: $dark-switch-disabled-bg;
+			.switch-thumb {
+				background: $dark-switch-thumb-disabled-bg;
+			}
+		}
 	}
 }

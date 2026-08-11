@@ -2,10 +2,15 @@
 @use '../mixins' as *;
 @use '../functions' as *;
 
+$list-group-bg: $light-body-bg !default;
 $list-group-padding-x: 15px !default;
 $list-group-padding-y: 10px !default;
 $list-group-disabled-color: #777 !default;
 $list-group-disabled-bg: #eee !default;
+
+$dark-list-group-bg: $dark-body-bg !default;
+$dark-list-group-disabled-bg: $dark-secondary-bg !default;
+$dark-list-group-disabled-color: $dark-tertiary-text !default;
 
 .list-group {
 	padding: 0; margin: 0;
@@ -16,7 +21,7 @@ $list-group-disabled-bg: #eee !default;
 
 .list-group-item {
 	padding: $list-group-padding-y $list-group-padding-x;
-	background-color: #fff;
+	background-color: $list-group-bg;
 	margin-bottom:-1px;
 	border: 1px solid $light-divider;
 	position: relative;
@@ -49,7 +54,7 @@ button.list-group-item::-moz-focus-inner{
 }
 
 .list-group-item:hover {
-    background-color: darken(#fff, 5%);
+    background-color: darken($list-group-bg, 5%);
 }
 @each $key, $color in $context {
 	$text: light-text($color);
@@ -67,7 +72,7 @@ button.list-group-item::-moz-focus-inner{
 }
 .list-group .active, .list-group .active a,
 .list-group .active:hover, .list-group .active a:hover {
-	color: #fff;
+	color: $list-group-bg;
 }
 
 .list-group .disabled, .list-group .disabled:focus, .list-group .disabled:hover {
@@ -79,10 +84,10 @@ button.list-group-item::-moz-focus-inner{
 
 .list-group-item-heading{ margin-top:0; margin-bottom:5px;}
 .list-group-item-text{ margin:0;}
-.list-group .active .list-group-item-text{ color: mix($light-primary, #fff, 20%); }
+.list-group .active .list-group-item-text{ color: mix($light-primary, $list-group-bg, 20%); }
 
 .list-group-item .badge { float: right; }
-.list-group .active .badge{ color: $light-primary; background-color: #fff;}
+.list-group .active .badge{ color: $light-primary; background-color: $list-group-bg;}
 
 @each $key, $color in $context {
 	.list-group>.list-group-item-#{$key}.active .list-group-item-text{
@@ -101,4 +106,61 @@ button.list-group-item::-moz-focus-inner{
 	vertical-align: top;
 	margin-bottom: 0;
 	margin-right: -1px;
+}
+
+@if $enable-dark {
+	.dark {
+		.list-group a {
+			color: $dark-body-text;
+		}
+		.list-group-item {
+			background: $dark-list-group-bg;
+			border-color: $dark-divider;
+		}
+		.list-group-item:hover {
+			background: $dark-secondary-bg;
+		}
+		@each $key, $color in $dark-context {
+			$text: dark-text($color);
+			$bg: dark-bg($color);
+			.list-group .list-group-item-#{$key} { background: $bg; }
+			.list-group .list-group-item-#{$key},
+			.list-group .list-group-item-#{$key} a { color: $text; }
+			.list-group .list-group-item-#{$key}:hover { background: darken($bg, 5%); }
+			.list-group .list-group-item-#{$key}:hover,
+			.list-group .list-group-item-#{$key} a:hover { color: $color; }
+			.list-group > .list-group-item-#{$key}.active,
+			.list-group > .list-group-item-#{$key}.active:hover {
+				background: $color;
+				border-color: $color;
+			}
+		}
+		.list-group .active,
+		.list-group .active:hover {
+			background: $dark-primary;
+			border-color: $dark-primary;
+			color: $dark-list-group-bg;
+		}
+		.list-group .active a,
+		.list-group .active a:hover {
+			color: $dark-list-group-bg;
+		}
+		.list-group .disabled,
+		.list-group .disabled:focus,
+		.list-group .disabled:hover {
+			color: $dark-list-group-disabled-color;
+			background: $dark-list-group-disabled-bg;
+		}
+		.list-group .active .list-group-item-text {
+			color: mix($dark-primary, $dark-list-group-bg, 20%);
+		}
+		@each $key, $color in $dark-context {
+			.list-group > .list-group-item-#{$key}.active .list-group-item-text {
+				color: $dark-list-group-bg;
+			}
+			.list-group > .list-group-item-#{$key}.active .badge {
+				color: $color;
+			}
+		}
+	}
 }

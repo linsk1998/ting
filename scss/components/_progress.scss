@@ -29,3 +29,11 @@ html body .progress-bar-danger{ background-color:$light-danger !important;}
 
 .progress-sm .progress-bar{ line-height:12px;height:12px; font-size:12px;}
 .progress-xs .progress-bar{ line-height:6px;height:6px; font-size:6px;}
+
+@if $enable-dark {
+	.dark {
+		.progress {
+			background: $dark-secondary-bg;
+		}
+	}
+}

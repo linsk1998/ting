@@ -68,3 +68,11 @@
 		display:none;
 	}
 }
+
+@if $enable-dark {
+	.dark .help-block,
+	.dark .form-text,
+	.dark .feedback-text {
+		color: $dark-secondary-text;
+	}
+}

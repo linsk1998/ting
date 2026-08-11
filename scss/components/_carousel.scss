@@ -21,7 +21,6 @@ background:#222; color:#fff; opacity:0.5;}
 	background: none;
 	border: 0 none;
 	outline: none;
-	color: #ffffff;
 	margin: 0;
 	padding: 0;
 	display: block;
@@ -62,4 +61,16 @@ background:#222; color:#fff; opacity:0.5;}
 @media (max-width:480px){
 	.carousel-caption{ font-size:12px; word-wrap:normal;white-space:nowrap; text-overflow:ellipsis;overflow:hidden;}
 	.carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin:10px;}
+}
+@if $enable-dark {
+	.dark {
+		.carousel-control .left,.carousel-control .right,
+		.carousel-control .left:hover,.carousel-control .right:hover,
+		.carousel-control-next,.carousel-control-prev,
+		.carousel-control-next a,.carousel-control-prev a,
+		.carousel-control-next:hover,.carousel-control-prev:hover,
+		.carousel-control-next a:hover,.carousel-control-prev a:hover{
+			color: #ffffff;
+		}
+	}
 }

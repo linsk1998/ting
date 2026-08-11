@@ -13,3 +13,9 @@
 	border-bottom: 0 none;
 	border-top: $caret-height solid $light-body-text;
 }
+
+@if $enable-dark {
+	.dark .caret {
+		border-top-color: $dark-body-text;
+	}
+}

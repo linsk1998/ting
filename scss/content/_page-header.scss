@@ -2,6 +2,6 @@
 
 .page-header{ padding-bottom:9px; border-bottom:1px solid $light-divider;}
 
-.dark {
-    .page-header{ border-bottom-color: $dark-divider;}
+@if $enable-dark {
+	.dark .page-header{ border-bottom-color: $dark-divider;}
 }

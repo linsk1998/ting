@@ -52,3 +52,12 @@
 @function light-border($color) {
 	@return tint-color(adjust-hue($color, -10), 60%);
 }
+@function dark-text($color) {
+	@return tint-color($color, 40%);
+}
+@function dark-bg($color) {
+	@return shade-color($color, 80%);
+}
+@function dark-border($color) {
+	@return shade-color(adjust-hue($color, -10), 40%);
+}

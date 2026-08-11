@@ -5,7 +5,7 @@
 .btn-toggle{
 	padding:($ctrl-height-md - 2 * $btn-border-width - $ctrl-line-height) * .5 $btn-padding-x-md;
 	border:$btn-border-width solid $btn-border-color;
-	background: #ffffff;
+	background: $light-body-bg;
 	line-height:$ctrl-line-height;
 	font-size:$ctrl-fontsize-md;
 	text-align:center;
@@ -31,6 +31,23 @@ label.btn-toggle-checked{
 button.btn-toggle-checked{
 	background: $light-primary;
 	border-color: $light-primary;
-	color: #ffffff;
+	color: $light-body-bg;
 	z-index: $level-item-active;
+}
+
+@if $enable-dark {
+	.dark {
+		.btn-toggle {
+			background: $dark-btn-toggle-bg;
+			border-color: $dark-btn-border-color;
+		}
+		label.btn-toggle-checked {
+			border-color: $dark-primary;
+		}
+		button.btn-toggle-checked {
+			background: $dark-primary;
+			border-color: $dark-primary;
+			color: $dark-body-bg;
+		}
+	}
 }

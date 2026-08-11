@@ -112,3 +112,13 @@
 		padding-right: 8px;
 	}
 }
+
+@if $enable-dark {
+	.dark {
+		.input-group-text {
+			color: $dark-input-group-text-color;
+			background: $dark-input-group-text-bg;
+			border-color: $dark-ctrl-border-color;
+		}
+	}
+}

@@ -12,7 +12,7 @@
 .tooltip-inner {
 	max-width: $tooltip-max-width;
 	padding: $tooltip-padding;
-	color: #fff;
+	color: $tooltip-color;
 	text-align: center;
 	background-color: $tooltip-bg;
 	@include rounded($border-radius-sm);
@@ -76,6 +76,31 @@
 	margin-left: -$tooltip-arrow-size;
 	border-left: $tooltip-arrow-size solid $tooltip-bg;
 }
+@if $enable-dark {
+	.dark {
+		.tooltip-inner {
+			color: $dark-tooltip-color;
+			background: $dark-tooltip-bg;
+		}
+		.tooltip-top .tooltip-arrow,
+		.top .tooltip-arrow {
+			border-top-color: $dark-tooltip-bg;
+		}
+		.tooltip-right .tooltip-arrow,
+		.right .tooltip-arrow {
+			border-right-color: $dark-tooltip-bg;
+		}
+		.tooltip-bottom .tooltip-arrow,
+		.bottom .tooltip-arrow {
+			border-bottom-color: $dark-tooltip-bg;
+		}
+		.tooltip-left .tooltip-arrow,
+		.left .tooltip-arrow {
+			border-left-color: $dark-tooltip-bg;
+		}
+	}
+}
+
 @supports(position-area: top) {
 	.tooltip[popover]:not(:popover-open) {
 		display: none;

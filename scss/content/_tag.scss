@@ -71,3 +71,20 @@ $tag-padding-line-height-sm: $ctrl-height-sm - $ctrl-border-width * 2 - $tags-in
 	line-height: $tag-padding-line-height-sm;
 	font-size: $tag-fontsize-sm;
 }
+
+@if $enable-dark {
+	.dark {
+		.tag-default {
+			color: $dark-tag-color;
+			background: $dark-tag-bg;
+			border-color: $dark-tag-border-color;
+		}
+		@each $key, $color in $dark-context {
+			.tag-#{$key} {
+				color: dark-text($color);
+				background: dark-bg($color);
+				border-color: dark-border($color);
+			}
+		}
+	}
+}

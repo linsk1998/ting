@@ -12,9 +12,30 @@
 	@if $key != 'primary' {
 		.alert-#{$key}{ color:$text; background-color:$bg; border-color:$border;}
 		.alert-#{$key} hr{ border-top-color:darken($border,5%);}
-		.alert-#{$key} .alert-link{ color:darken($text,10%);}
-		.alert-#{$key} .alert-link:hover{ color:darken($text,15%);}
+		.alert-#{$key} .alert-link{ color:$text}
+		.alert-#{$key} .alert-link:hover{ color:darken($text,10%);}
 	}
 }
 .alert-dismissible,.alert-dismissible{ padding-left:35px; position:relative;}
 .alert-dismissible .close,.alert-dismissible .close{ position:absolute; top:50%; _top:#{'expression(this.parentNode.offsetHeight/2-2)'}; left:10px; _left:-25px; line-height:20px; margin-top:-10px;}
+
+@if $enable-dark {
+	.dark {
+		.alert {
+			color: $dark-emphasis-text;
+			background: $dark-body-bg;
+			border-color: $dark-divider;
+		}
+		@each $key, $color in $dark-context {
+			$text: dark-text($color);
+			$bg: dark-bg($color);
+			$border: dark-border($color);
+			@if $key != 'primary' {
+				.alert-#{$key} { color: $text; background: $bg; border-color: $border; }
+				.alert-#{$key} hr { border-top-color: lighten($border, 5%); }
+				.alert-#{$key} .alert-link { color: $text; }
+				.alert-#{$key} .alert-link:hover { color: lighten($text, 10%); }
+			}
+		}
+	}
+}

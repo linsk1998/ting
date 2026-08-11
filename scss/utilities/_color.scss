@@ -9,6 +9,24 @@
 	a.text-#{$key},.text-#{$key} a{ color:darken($color,10%) !important;}
 	a.text-#{$key}:hover,.text-#{$key} a:hover{ color:darken($color,15%) !important;}
 	.bg-#{$key},.text-bg-#{$key}{ background-color:$color !important;}
-	.text-bg-#{$key},.text-bg-#{$key} a,.text-bg-#{$key} a:hover{ color:#fff;}
+	.text-bg-#{$key},.text-bg-#{$key} a,.text-bg-#{$key} a:hover{ color:$light-body-bg;}
 	.border-#{$key}{ border-color:$color !important;}
+}
+.text-inverse,.text-bg-inverse{ color:$light-body-bg;}
+.bg-inverse,.text-bg-inverse{ color:$light-body-text;}
+
+@if $enable-dark {
+	.dark {
+		@each $key, $color in $dark-context {
+			.#{$key}{ background-color: dark-bg($color) !important; }
+			.text-#{$key}{ color: $color !important; }
+			a.text-#{$key}, .text-#{$key} a { color: tint-color($color, 10%) !important; }
+			a.text-#{$key}:hover, .text-#{$key} a:hover { color: tint-color($color, 15%) !important; }
+			.bg-#{$key}, .text-bg-#{$key} { background-color: $color !important; }
+			.text-bg-#{$key}, .text-bg-#{$key} a, .text-bg-#{$key} a:hover { color: $dark-body-bg; }
+			.border-#{$key}{ border-color: $color !important; }
+		}
+		.text-inverse,.text-bg-inverse{ color:$dark-body-bg;}
+		.bg-inverse,.text-bg-inverse{ color:$dark-body-text;}
+	}
 }

@@ -64,7 +64,50 @@
 	}
 }
 .list .active,.list .active a,
-.list .active a:hover,.list a.active:hover{ color:#fff;}
+.list .active a:hover,.list a.active:hover{ color:$light-body-bg;}
 
 .list-item-heading{ margin-top:0; margin-bottom:0;}
 .list-item-text{ margin-bottom:0; margin-top:0;}
+
+@if $enable-dark {
+	.dark {
+		.list-item {
+			background: $dark-body-bg;
+			border-color: $dark-divider;
+		}
+		.list-dashed .list-item {
+			border-color: $dark-divider;
+		}
+		.list-bordered .list-item {
+			border-color: $dark-divider;
+		}
+		.list-striped > *:nth-of-type(odd) {
+			background: $dark-list-striped-bg;
+		}
+		.list-hover .list-item:hover {
+			background: $dark-list-striped-bg;
+		}
+		.list a {
+			color: $dark-body-text;
+		}
+		.list a:hover {
+			color: $dark-primary;
+		}
+		@each $key, $color in $dark-context {
+			.list .list-item-#{$key} { background: dark-bg($color); }
+			.list .list-item-#{$key},
+			.list .list-item-#{$key} a { color: dark-text($color); }
+			.list .list-item-#{$key}:hover { background: darken(dark-bg($color), 5%); }
+			.list .list-item-#{$key}:hover,
+			.list .list-item-#{$key} a:hover { color: $color; }
+			.list > .list-item-#{$key}.active {
+				background: $color;
+				border-color: $color;
+			}
+		}
+		.list .active,
+		.list .active a,
+		.list .active a:hover,
+		.list a.active:hover { color: $dark-body-bg; }
+	}
+}

@@ -18,8 +18,8 @@ $border-radius-lg: 12px !default; // 大号圆角
 $border-radius-sm: 4px !default; // 小号圆角
 
 $light-body-bg: #ffffff !default;
-$light-secondary-bg: #e9ecef;
-$light-tertiary-bg: #f8f9fa;
+$light-secondary-bg: #eeeeee;
+$light-tertiary-bg: #f8f8f8;
 $light-heading-text: #000000 !default;
 $light-emphasis-text: #111111 !default;
 $light-body-text: #212121 !default;
@@ -31,7 +31,7 @@ $light-inverse: #1b1b1b !default;
 $dark-body-bg: #212529 !default;
 $dark-secondary-bg: #2b3035;
 $dark-tertiary-bg: #343a40;
-$dark-heading-text: #fff !default;
+$dark-heading-text: #ffffff !default;
 $dark-emphasis-text: #f8f9fa !default;
 $dark-body-text: #adb5bd !default;
 $dark-secondary-text: mix($dark-body-text, $dark-body-bg, 75%) !default;
@@ -43,6 +43,7 @@ $dark-inverse: #e9ecef !default;
 
 $dark-scrollbar-track: lighten($dark-body-bg, 4%)!default;
 $dark-scrollbar-thumb: #444444 !default;
+$dark-ctrl-border-color: $dark-divider !default;
 
 // $light-primary: #337ab7 !default;
 $light-primary: #4472c4 !default;
@@ -68,7 +69,7 @@ $dark-context: (
 	'primary':$dark-primary,
 	'success':$dark-success,
 	'info':$dark-info,
-	'warning':$light-warning,
+	'warning':$dark-warning,
 	'danger':$dark-danger
 ) !default;
 
@@ -155,11 +156,15 @@ $dark-table-active: #a5a5a5 !default;
 $img-thumbnail-padding: 4px !default;
 $img-thumbnail-rounded: $border-radius !default;
 
+$badge-bg: #b00 !default;
+$dark-badge-bg: #495057 !default;
+
 $media-gutter: 10px !default;
 
 $list-padding-x: 15px !default;
 $list-padding-y: 10px !default;
 $list-striped-bg: #fcfcfc !default;
+$dark-list-striped-bg: $dark-secondary-bg !default;
 
 $card-bg: $light-body-bg !default;
 $card-spacer-y: 8px !default;
@@ -171,6 +176,9 @@ $card-cap-padding-x: 15px !default;
 $card-cap-bg: #f5f5f5 !default;
 $card-img-overlay-padding-y: 16px !default;
 $card-img-overlay-padding-x: 16px !default;
+$dark-card-bg: $dark-body-bg !default;
+$dark-card-border-color: $dark-divider !default;
+$dark-card-cap-bg: $dark-secondary-bg !default;
 
 $well-bg: #f5f5f5 !default;
 $well-border-width: 1px !default;
@@ -178,6 +186,8 @@ $well-border-color: $light-divider !default;
 $well-padding: 15px !default;
 $well-padding-lg: 22px !default;
 $well-padding-sm: 9px !default;
+$dark-well-bg: #1c1c1c !default;
+$dark-well-border-color: $dark-divider !default;
 
 $jumbotron-bg: #2d3e50 !default;
 $jumbotron-padding: 40px 0 !default;
@@ -238,7 +248,7 @@ $btn-border-width: $ctrl-border-width !default;
 $btn-border-color: $ctrl-border-color !default;
 $btn-default-bg: $light-body-bg !default;
 $btn-default-color: #333 !default;
-$btn-default-border-color: #ccc !default;
+$btn-default-border-color: #cccccc !default;
 $btn-disabled-bg: #dddddd !default;
 $btn-disabled-color: #a0a0a0 !default;
 $btn-disabled-border-color: darken($btn-disabled-bg, 5%) !default;
@@ -247,6 +257,13 @@ $btn-padding-x-lg: $ctrl-padding-x-lg !default;
 $btn-padding-x-xl: $ctrl-padding-x-xl !default;
 $btn-padding-x-sm: $ctrl-padding-x-sm !default;
 $btn-padding-x-xs: $ctrl-padding-x-xs !default;
+$dark-btn-border-color: $dark-ctrl-border-color !default;
+$dark-btn-default-bg: $dark-body-bg !default;
+$dark-btn-default-color: $dark-emphasis-text !default;
+$dark-btn-default-border-color: $dark-btn-border-color !default;
+$dark-btn-disabled-bg: $dark-tertiary-bg !default;
+$dark-btn-disabled-color: $dark-tertiary-text !default;
+$dark-btn-disabled-border-color: $dark-btn-disabled-bg !default;
 
 $caret-width: 8px !default;
 $caret-height: $caret-width * 0.5 !default;
@@ -274,13 +291,23 @@ $input-addon-size: 14px !default;
 $input-addon-gap: ($ctrl-height-md - $input-addon-size) * 0.5 !default;
 $input-has-feedback-padding-right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-padding-x-md - $ctrl-border-width;
 $input-group-text-color: #555555 !default;
-$input-group-text-bg: #eeeeee !default;
+$input-group-text-bg: $light-tertiary-bg !default;
+$dark-input-value-color: $dark-emphasis-text !default;
+$dark-input-placeholder-color: $dark-tertiary-text !default;
+$dark-input-disabled-bg: $dark-tertiary-bg !default;
+$dark-input-focus-color: $dark-primary !default;
+$dark-input-counter-color: $dark-tertiary-text !default;
+$dark-input-group-text-color: $dark-emphasis-text !default;
+$dark-input-group-text-bg: $dark-tertiary-bg !default;
 
 $select-disabled-bg: $btn-disabled-bg !default;
 $select-disabled-color: $btn-disabled-color !default;
 $select-disabled-border-color: $btn-disabled-border-color !default;
 $select-addon-size: 14px !default;
 $select-addon-gap: ($ctrl-height-md - $select-addon-size) * 0.5 !default;
+$dark-select-disabled-bg: $dark-tertiary-bg !default;
+$dark-select-disabled-color: $dark-tertiary-text !default;
+$dark-select-disabled-border-color: $dark-divider !default;
 
 $check-gap-x: 10px !default;
 $check-gap-y: 5px !default;
@@ -292,14 +319,24 @@ $checkbox-border-width: $ctrl-border-width !default;
 $checkbox-disabled-bg: $input-disabled-bg !default;
 $checkbox-disabled-color: #bbb !default;
 $checkbox-disabled-border-color: $ctrl-border-color !default;
+$dark-checkbox-border-color: $dark-divider !default;
+$dark-checkbox-disabled-bg: $dark-tertiary-bg !default;
+$dark-checkbox-disabled-color: $dark-tertiary-text !default;
+$dark-checkbox-disabled-border-color: $dark-divider !default;
 
 $switch-width: 40px !default;
 $switch-height: 20px !default;
 $switch-bg: #bbbbbb !default;
+$switch-thumb-bg: #ffffff !default;
 $switch-disabled-bg: #dddddd !default;
+$switch-thumb-disabled-bg: #f8f8f8 !default;
 $switch-thumb-size: 16px;
 $switch-thumb-loading-width: 24px;
 $switch-thumb-fontsize: 12px;
+$dark-switch-bg: $dark-divider !default;
+$dark-switch-thumb-bg: #f8f8f8 !default;
+$dark-switch-disabled-bg: #666666 !default;
+$dark-switch-thumb-disabled-bg: #999999 !default;
 
 $tags-input-padding-y: 2px !default;
 $tags-input-padding-x: 2px !default;
@@ -316,6 +353,14 @@ $tag-rounded: 2px !default;
 $tag-fontsize-lg:14px;
 $tag-fontsize-md:13px;
 $tag-fontsize-sm:12px;
+$dark-tag-bg: $dark-body-bg !default;
+$dark-tag-border-color: $dark-divider !default;
+$dark-tag-color: $dark-body-text !default;
+
+$btn-toggle-bg: transparent !default;
+$btn-toggle-color: inherit !default;
+$dark-btn-toggle-bg: transparent !default;
+$dark-btn-toggle-color: $dark-emphasis-text !default;
 
 //=============================== 助手 ======================================
 
@@ -323,10 +368,13 @@ $tag-fontsize-sm:12px;
 
 $breadcrumb-padding: 8px 15px !default;
 $breadcrumb-margin: 0 0 $margin-base !default;
-$breadcrumb-bg: #f5f5f5 !default;
+$breadcrumb-bg: $light-tertiary-bg !default;
 $breadcrumb-color: $light-secondary-text !default;
-$breadcrumb-spliter-color: #cccccc !default;
+$breadcrumb-spliter-color: $light-tertiary-text !default;
 $breadcrumb-gutter: 5px !default;
+$dark-breadcrumb-bg: $dark-secondary-bg !default;
+$dark-breadcrumb-color: $dark-secondary-text !default;
+$dark-breadcrumb-spliter-color: $dark-tertiary-text !default;
 
 $nav-margin: $margin-base 0 !default;
 $nav-padding: 10px 0 !default;
@@ -371,11 +419,12 @@ $popover-bg: $light-body-bg !default;
 $popover-arrow-size: 10px !default;
 $popover-arrow-outer-size: ($popover-arrow-size + 1) !default;
 $popover-max-width: 276px !default;
-$popover-header-bg: #eeeeee !default;
+$popover-header-bg: $light-tertiary-bg !default;
 $popover-header-padding: 8px 14px !default;
 $popover-body-padding: 9px 14px !default;
 $dark-popover-bg: $dark-body-bg !default;
 $dark-popover-border-color: $dark-divider !default;
+$dark-popover-header-bg: $dark-tertiary-bg !default;
 
 $dropdown-padding-y: 5px !default;
 $dropdown-margin: 2px 0 0;
@@ -399,7 +448,10 @@ $dark-dropdown-item-disabled-bg: #666666 !default;
 $tooltip-arrow-size: 5px !default;
 $tooltip-padding: 3px 8px !default;
 $tooltip-max-width: 200px !default;
+$tooltip-color: #fff !default;
 $tooltip-bg: #000 !default;
+$dark-tooltip-bg: $dark-secondary-bg !default;
+$dark-tooltip-color: $dark-emphasis-text !default;
 
 $collapse-duration: .3s !default;
 

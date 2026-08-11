@@ -67,3 +67,21 @@ button.control-clear{
 :hover>.control-clear {
 	display: block;
 }
+
+@if $enable-dark {
+	.dark {
+		.form-control {
+			background: $dark-body-bg;
+		}
+		.form-control {
+			color: $dark-input-value-color;
+			border-color: $dark-ctrl-border-color;
+		}
+		.form-control[disabled] {
+			background: $dark-input-disabled-bg;
+		}
+		.form-control:focus {
+			border-color: $dark-input-focus-color;
+		}
+	}
+}

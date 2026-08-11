@@ -143,3 +143,61 @@ html body .btn-disabled{
 		opacity: .4;
 	}
 }
+
+@if $enable-dark {
+	.dark {
+		.btn-default,
+		.btn-loading.btn-default {
+			color: $dark-btn-default-color;
+			background: $dark-btn-default-bg;
+			border-color: $dark-btn-default-border-color;
+		}
+		.btn-default:hover {
+			color: $dark-emphasis-text;
+			border-color: lighten($dark-btn-default-border-color, 10%);
+		}
+		@each $key, $color in $dark-context {
+			.btn-#{$key}:hover {
+				color: #000;
+				background-color: lighten($color, 10%);
+				border-color: lighten($color, 17%);
+				z-index: $level-item-hover;
+			}
+			.btn-#{$key},
+			.btn-loading.btn-#{$key} {
+				color: #000;
+				background-color: $color;
+				border-color: lighten($color, 5%);
+			}
+		}
+		@each $key, $color in $dark-context {
+			.btn-outline-#{$key}:hover {
+				color: #000;
+				background-color: lighten($color, 10%);
+				border-color: lighten($color, 17%);
+				z-index: $level-item-hover;
+			}
+			.btn-outline-#{$key},
+			.btn-loading.btn-outline-#{$key} {
+				color: $color;
+				background: none;
+				border-color: $color;
+			}
+		}
+		input.btn:focus,
+		button.btn:focus {
+			outline-color: #fff;
+		}
+	}
+	html.dark .btn-disabled,
+	html.dark .btn-disabled:hover,
+	html.dark .btn-disabled:focus,
+	html .dark .btn-disabled,
+	html .dark .btn-disabled:hover,
+	html .dark .btn-disabled:focus {
+		color: $dark-btn-disabled-color;
+		background: $dark-btn-disabled-bg;
+		border-color: $dark-btn-disabled-border-color;
+		text-shadow: none;
+	}
+}

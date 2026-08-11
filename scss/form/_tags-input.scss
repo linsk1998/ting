@@ -3,7 +3,7 @@
 
 .tags-input {
 	padding: $tags-input-padding-y $tags-input-padding-x;
-	background-color: #fff;
+	background-color: $light-body-bg;
 	border: 1px solid $ctrl-border-color;
 	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
 	position: relative;
@@ -106,5 +106,20 @@
 	}
 	.has-feedback-icon .tags-input .control-clear {
 		right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-clear-right - $ctrl-border-width;
+	}
+}
+
+@if $enable-dark {
+	.dark {
+		.tags-input {
+			background: $dark-body-bg;
+			border-color: $dark-ctrl-border-color;
+		}
+		.tags-input-disabled {
+			background: $dark-input-disabled-bg;
+		}
+		.tags-input input {
+			color: $dark-input-value-color;
+		}
 	}
 }

@@ -39,7 +39,8 @@ code{ direction:ltr; text-align:left; white-space:pre;}
 kbd{ padding:2px 4px; font-size:90%; color:$dark-heading-text; background-color:$light-inverse; @include rounded(3px); margin-left:4px; margin-right:4px;}
 [hidden]{ display:none;}
 
-body{ *text-align:center; color:$light-body-text;}
+body{ *text-align:center;}
+body,button,input,textarea{ color:$light-body-text;}
 
 a{ color:$light-primary; text-decoration:none; cursor:pointer; outline:none;}
 a:hover{ color:darken($light-primary,15%); text-decoration:underline;}
@@ -83,7 +84,7 @@ overflow: auto; display: none;}
 
 @if $enable-dark {
 	.dark{
-		body{ color:$dark-body-text;}
+		body,button,input,textarea{ color:$dark-body-text;}
 		h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{ color: $dark-heading-text;}
 		a{ color:$dark-primary;}
 		a:hover{ color:scale-color($dark-primary, +20%);}

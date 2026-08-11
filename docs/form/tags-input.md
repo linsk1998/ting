@@ -25,7 +25,7 @@
 
 ### 超出行为
 
-`.tags-input-wrap` 超出换行，`.tags-input-nowrap` 超出不换行（保持单行滚动）。
+`.tags-input-wrap` 超出换行，`.tags-input-nowrap` 超出不换行。
 
 ```html
 <form class="form">

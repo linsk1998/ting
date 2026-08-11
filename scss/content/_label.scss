@@ -7,7 +7,7 @@
 	padding: 0.25em 0.6em 0.25em;
 	font-size: 75%;
 	font-weight: bold;
-	color: #fff;
+	color: $light-body-bg;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
@@ -16,13 +16,26 @@
 
 .label-default{ background-color:#777;}
 .label-default[href]:hover,.label-default[href]:focus{ background-color:#5e5e5e;}
-.label-primary{ background-color:$light-primary;}
-.label-primary[href]:hover,.label-primary[href]:focus{ background-color:darken($light-primary,10%);}
-html body .label-success{ background-color:$light-success;}
-html body .label-success[href]:hover,.label-success[href]:focus{ background-color:darken($light-success,10%);}
-html body .label-info{ background-color:$light-info;}
-html body .label-info[href]:hover,.label-info[href]:focus{ background-color:darken($light-info,10%);}
-html body .label-warning{ background-color:$light-warning;}
-html body .label-warning[href]:hover,.label-warning[href]:focus{ background-color:darken($light-warning,10%);}
-html body .label-danger{ background-color:$light-danger;}
-html body .label-danger[href]:hover,.label-danger[href]:focus{ background-color:darken($light-danger,10%);}
+
+@each $key, $color in $context {
+	.label-#{$key} { background: $color; }
+	.label-#{$key}[href]:hover,
+	.label-#{$key}[href]:focus { background: darken($color, 10%); }
+}
+
+@if $enable-dark {
+	.dark {
+		.label-default {
+			background: $dark-body-bg;
+		}
+		.label-default[href]:hover,
+		.label-default[href]:focus {
+			background: lighten($dark-divider, 10%);
+		}
+		@each $key, $color in $dark-context {
+			.label-#{$key} { background: $color; }
+			.label-#{$key}[href]:hover,
+			.label-#{$key}[href]:focus { background: lighten($color, 10%); }
+		}
+	}
+}
