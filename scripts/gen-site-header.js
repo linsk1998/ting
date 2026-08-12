@@ -22,7 +22,7 @@ function navbar(currentSection) {
 					<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
 					<a href="${prefix}index.html" class="navbar-brand"><img height="37" src="${prefix}images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
 				</div>
-				<div class="navbar-responsive-dropdown">
+				<div class="navbar-collapsible">
 					<ul class="navbar-nav">${navbarHtml}
 					</ul>
 					<ul class="navbar-nav navbar-right">

@@ -6,8 +6,8 @@
 
 导航条在使用前需要了解以下要点：
 
-- 导航条需要包裹一个 `.navbar-header` 和一个 `.navbar-responsive-dropdown` 以实现响应式行为。
-- `.navbar-responsive-dropdown` 类可在移动端通过 `.navbar-toggle` 按钮展开/折叠。
+- 导航条需要包裹一个 `.navbar-header` 和一个 `.navbar-collapsible` 以实现响应式行为。
+- `.navbar-collapsible` 类可在移动端通过 `.navbar-toggle` 按钮展开/折叠。
 
 ## 基本结构
 
@@ -19,7 +19,7 @@
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="active"><a href="javascript:void 0">首页</a></li>
             <li><a href="javascript:void 0">链接</a></li>
@@ -39,7 +39,7 @@
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="dropdown">
                 <a href="javascript:void 0" class="dropdown-toggle">
@@ -69,7 +69,7 @@
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="active"><a href="javascript:void 0">首页</a></li>
             <li><a href="javascript:void 0">链接</a></li>
@@ -95,7 +95,7 @@
     <div class="navbar-header">
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li><a href="javascript:void 0">首页</a></li>
             <li><a href="javascript:void 0">链接</a></li>
@@ -130,7 +130,7 @@
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="active"><a href="javascript:void 0">首页</a></li>
             <li><a href="javascript:void 0">链接</a></li>
@@ -154,7 +154,7 @@
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="active"><a href="javascript:void 0">首页</a></li>
             <li><a href="javascript:void 0">链接</a></li>
@@ -178,7 +178,7 @@
         <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="active"><a href="javascript:void 0">首页</a></li>
             <li><a href="javascript:void 0">链接</a></li>
@@ -203,7 +203,7 @@
         <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="active"><a href="javascript:void 0">新闻中心</a></li>
             <li><a href="javascript:void 0">信息公开</a></li>
@@ -233,7 +233,7 @@
         <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar-responsive-dropdown">
+    <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="active"><a href="javascript:void 0">新闻中心</a></li>
             <li><a href="javascript:void 0">信息公开</a></li>
@@ -285,7 +285,7 @@
 
 ## 兼容 bootstrap 写法
 
-在 bootstrap 中，导航条使用 `navbar-collapse collapse` 来实现折叠效果。ting-ui 中，使用 `.navbar-responsive-dropdown` 来实现折叠效果。
+在 bootstrap 中，导航条使用 `navbar-collapse collapse` 来实现折叠效果。ting-ui 中，使用 `.navbar-collapsible` 来实现折叠效果。
 
 ```html
 <nav class="navbar">

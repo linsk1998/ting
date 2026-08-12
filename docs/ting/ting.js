@@ -102,7 +102,7 @@ $(function(){
 		var $this=$(this);
 		var target=$this.attr("data-target");
 		if(target) return;
-		var $dropdown = $(this.parentNode).siblings(".navbar-responsive-dropdown");
+		var $dropdown = $(this.parentNode).siblings(".navbar-collapsible");
 		if($dropdown.hasClass("show")){
 			$dropdown.removeClass("show").addClass("hide");
 		} else {
