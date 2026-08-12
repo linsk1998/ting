@@ -48,7 +48,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | 类 | 描述 |
 |---|---|
 | .navbar | 导航栏基础容器，提供基本的定位和布局 |
-| .navbar-flush | 清除导航栏的边框和内边距 |
+| .navbar-sticky-top | 导航栏固定在顶部 |
 | .navbar-brand | 导航栏品牌标识区域，通常放置Logo或网站名称 |
 | .navbar-nav | 导航栏内的导航列表容器 |
 | .navbar-collapse | 响应式折叠区域，在小屏幕时可收起/展开 |

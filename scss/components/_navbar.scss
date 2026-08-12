@@ -8,6 +8,16 @@
 	@include clearfix;
 	background: #fff;
 }
+.navbar-spacer-top, .navbar-fixed-top, .navbar-sticky-top{
+	border-bottom: $navbar-border-width solid $light-divider;
+}
+.navbar-spacer-top {
+	line-height:$navbar-height;
+	border-bottom: $navbar-border-width solid $light-divider;
+}
+.navbar-spacer-top:empty:after{
+	content: '　';
+}
 .navbar-fixed-top {
 	position: fixed;
 	_position: absolute;
@@ -15,6 +25,12 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	border-bottom: $navbar-border-width solid $light-divider;
+}
+.navbar-sticky-top {
+	position: sticky;
+	z-index:$level-navbar + 100;
+	top: 0;
 	border-bottom: $navbar-border-width solid $light-divider;
 }
 .navbar-header{ float: left;}
@@ -254,7 +270,7 @@
 }
 .dark {
 	.navbar{ background: $dark-navbar-bg;}
-	.navbar-fixed-top { border-bottom-color: $dark-divider;}
+	.navbar-spacer-top,.navbar-fixed-bottom,.navbar-sticky-top { border-bottom-color: $dark-divider;}
 	.navbar-brand a,a.navbar-brand,
 	.navbar-brand a:hover,a.navbar-brand:hover {
 		color: $dark-heading-text;

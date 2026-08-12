@@ -10981,6 +10981,19 @@ body:last-child .nav-justified, x:-moz-any-link {
   background: #fff;
 }
 
+.navbar-spacer-top, .navbar-fixed-top, .navbar-sticky-top {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-spacer-top {
+  line-height: 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-spacer-top:empty:after {
+  content: "　";
+}
+
 .navbar-fixed-top {
   position: fixed;
   _position: absolute;
@@ -10988,6 +11001,13 @@ body:last-child .nav-justified, x:-moz-any-link {
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-sticky-top {
+  position: sticky;
+  z-index: 600;
+  top: 0;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -11312,7 +11332,7 @@ body:last-child .nav-justified, x:-moz-any-link {
   background: #343a40;
 }
 
-.dark .navbar-fixed-top {
+.dark .navbar-spacer-top, .dark .navbar-fixed-bottom, .dark .navbar-sticky-top {
   border-bottom-color: #495057;
 }
 
@@ -12458,9 +12478,24 @@ html body .progress-bar-danger {
   border-color: #495057;
 }
 
-.dark .popover-header, .dark .popover-title {
-  background: #343a40;
-  border-color: #495057;
+.dark .popover-top .popover-arrow {
+  _border-top: 10px solid #212529;
+  _filter: progid:DXImageTransform.Microsoft.DropShadow(color=#495057,offx=0,offy=1,strength=1);
+}
+
+.dark .popover-right .popover-arrow {
+  _border-right: 10px solid #212529;
+  _filter: progid:DXImageTransform.Microsoft.DropShadow(color=#495057,offx=-1,offy=0,strength=1);
+}
+
+.dark .popover-bottom .popover-arrow {
+  _border-bottom: 10px solid #212529;
+  _filter: progid:DXImageTransform.Microsoft.DropShadow(color=#495057,offx=0,offy=-1,strength=1);
+}
+
+.dark .popover-left .popover-arrow {
+  _border-left: 10px solid #212529;
+  _filter: progid:DXImageTransform.Microsoft.DropShadow(color=#495057,offx=1,offy=0,strength=1);
 }
 
 .dark .popover-top .popover-arrow:after {
@@ -12493,6 +12528,11 @@ html body .progress-bar-danger {
 
 .dark .popover-left .popover-arrow:before {
   border-left-color: #495057;
+}
+
+.dark .popover-header, .dark .popover-title {
+  background: #343a40;
+  border-color: #495057;
 }
 
 .dropdown, .dropup, .dropright, .dropleft,
@@ -14823,19 +14863,19 @@ button.close {
 }
 
 .font-sans {
-  font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Source Han Sans TC", "Noto Sans CJK TC", "Microsoft YaHei UI", "Microsoft JhengHei", "Microsoft YaHei", "WenQuanYi Micro Hei", FreeSans, Arimo, "Droid Sans", STHeiti, SimHei, "FontAwesome", sans-serif;
+  font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Source Han Sans TC", "Noto Sans CJK TC", "Microsoft YaHei UI", "Microsoft JhengHei", "Microsoft YaHei", "WenQuanYi Micro Hei", FreeSans, Arimo, "Droid Sans", STHeiti, SimHei, sans-serif;
 }
 
 .font-serif {
-  font-family: Georgia, "Times New Roman", Times, SimSun, "FontAwesome", serif;
+  font-family: Georgia, "Times New Roman", Times, SimSun, serif;
 }
 
 .font-cursive {
-  font-family: "Comic Sans MS", "Comic Sans", Times, Kai, "Kaiti SC", KaiTi, BiauKai, Arial, "FontAwesome", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", Times, Kai, "Kaiti SC", KaiTi, BiauKai, Arial, sans-serif;
 }
 
 .font-monospace {
-  font-family: Monaco, Menlo, Consolas, "Courier New", "FontAwesome", monospace;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 .font-size-0 {
