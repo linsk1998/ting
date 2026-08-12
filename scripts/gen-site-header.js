@@ -16,30 +16,31 @@ function navbar(currentSection) {
 							<li${classAttr}><a href="${prefix}${escapeHtml(section)}/index.html">${escapeHtml(SECTION_MAP[section])}</a></li>`;
 	}
 
-	return `<div class="navbar navbar-sticky-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-					<a href="${prefix}index.html" class="navbar-brand"><img height="37" src="${prefix}images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
-				</div>
-				<div class="navbar-collapsible">
-					<ul class="navbar-nav">${navbarHtml}
-					</ul>
-					<ul class="navbar-nav navbar-right">
-						<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
-					</ul>
-					<script>initDarkLi()</script>
+	return `<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+						<a href="${prefix}index.html" class="navbar-brand"><img height="37" src="${prefix}images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">${navbarHtml}
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
 				</div>
 			</div>
-		</div>`;
+			<div class="navbar-spacer-top"></div>`;
 }
 
 /**
  * 生成页面头部（导航条 + jumbotron，不含 DOCTYPE/<head>/<body>）
  */
 function header(currentSection) {
-	return `${navbar(currentSection)}
-		<header>
+	return `<header>
+			${navbar(currentSection)}
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
