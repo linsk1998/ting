@@ -54,9 +54,9 @@
 <div class="tag tag-info tag-sm">tag-sm标签 <span class="close">&times;</span></div>
 ```
 
-## 实心标签
+# 实心标签
 
-使用 `.label` 创建实心底色白字的标签，适合标记状态或计数。
+使用 `.label` 创建实心底色白字的标签，适合标记状态或计数。这个没什么用，主要是兼容bootstrap。
 
 ```html
 <span class="label label-default">Default</span>

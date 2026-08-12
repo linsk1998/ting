@@ -78,9 +78,9 @@
 </nav>
 ```
 
-## 翻页
+# 翻页
 
-`.pager` 提供简洁的前后翻页样式。使用 `.previous` / `.next` 可将链接对齐到两端。
+`.pager` 提供简洁的前后翻页样式。使用 `.previous` / `.next` 可将链接对齐到两端。这个没什么用，主要是兼容bootstrap。
 
 ```html
 <nav>
