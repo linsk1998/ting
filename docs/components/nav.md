@@ -20,7 +20,7 @@
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">个人设置</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">消息</a></li>
 </ul>
-<ul class="nav nav-indicator">
+<ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">个人设置</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">消息</a></li>
@@ -53,7 +53,7 @@
         <a class="nav-item nav-link" href="javascript:void 0">个人设置</a>
         <a class="nav-item nav-link" href="javascript:void 0">消息</a>
     </nav>
-    <nav class="nav nav-indicator nav-justified">
+    <nav class="nav nav-underline nav-justified">
         <a class="nav-item nav-link active" href="javascript:void 0">首页</a>
         <a class="nav-item nav-link" href="javascript:void 0">个人设置</a>
         <a class="nav-item nav-link" href="javascript:void 0">消息</a>

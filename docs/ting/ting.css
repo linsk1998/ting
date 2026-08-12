@@ -10705,37 +10705,37 @@ button.nav-link, input.nav-link {
   color: #fff;
 }
 
-.nav-indicator {
+.nav-underline {
   margin-left: 0;
   border-bottom: 1px solid #e0e0e0;
 }
 
-.nav-indicator .nav-item {
+.nav-underline .nav-item {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   vertical-align: bottom;
 }
 
-.nav-indicator .nav-link {
+.nav-underline .nav-link {
   color: #595959;
   padding: 7px 15px;
   display: inline-block;
   *zoom: 1;
 }
 
-.nav-indicator .nav-link:hover {
+.nav-underline .nav-link:hover {
   color: #595959;
   text-decoration: none;
 }
 
-.nav-indicator .active {
+.nav-underline .active {
   border-bottom: 1px solid #4472c4;
   margin-bottom: -1px;
 }
 
-.nav-indicator .active .nav-link, .nav-indicator a.active,
-.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover {
+.nav-underline .active .nav-link, .nav-underline a.active,
+.nav-underline .active .nav-link:hover, .nav-underline a.active:hover {
   color: #4472c4;
 }
 
@@ -10942,24 +10942,24 @@ body:last-child .nav-justified, x:-moz-any-link {
   display: block;
 }
 
-.dark .nav-indicator {
+.dark .nav-underline {
   border-bottom-color: #495057;
 }
 
-.dark .nav-indicator .nav-link {
+.dark .nav-underline .nav-link {
   color: #8a9198;
 }
 
-.dark .nav-indicator .nav-link:hover {
+.dark .nav-underline .nav-link:hover {
   color: #8a9198;
 }
 
-.dark .nav-indicator .active {
+.dark .nav-underline .active {
   border-bottom-color: #6ea8fe;
 }
 
-.dark .nav-indicator .active .nav-link, .dark .nav-indicator a.active,
-.dark .nav-indicator .active .nav-link:hover, .dark .nav-indicator a.active:hover {
+.dark .nav-underline .active .nav-link, .dark .nav-underline a.active,
+.dark .nav-underline .active .nav-link:hover, .dark .nav-underline a.active:hover {
   color: #6ea8fe;
 }
 

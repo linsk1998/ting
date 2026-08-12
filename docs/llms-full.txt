@@ -4380,7 +4380,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .nav | 导航基础容器，清除列表默认样式 |
 | .nav-pills | 药丸导航，圆角背景，激活项填充主题色 |
 | .nav-tabs | 选项卡导航，底部边框，激活项带边框和白色背景 |
-| .nav-indicator | 指示器导航，底部边框，激活项底部显示主题色指示线 |
+| .nav-underline | 指示器导航，底部边框，激活项底部显示主题色指示线 |
 | .nav-justified | 两端对齐导航，导航项平均分配宽度 |
 | .nav-tabs-left<br/>.nav-tabs-right | 左侧/右侧垂直选项卡导航 |
 
@@ -5694,7 +5694,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">个人设置</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">消息</a></li>
 </ul>
-<ul class="nav nav-indicator">
+<ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void 0">首页</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">个人设置</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void 0">消息</a></li>
@@ -5727,7 +5727,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
         <a class="nav-item nav-link" href="javascript:void 0">个人设置</a>
         <a class="nav-item nav-link" href="javascript:void 0">消息</a>
     </nav>
-    <nav class="nav nav-indicator nav-justified">
+    <nav class="nav nav-underline nav-justified">
         <a class="nav-item nav-link active" href="javascript:void 0">首页</a>
         <a class="nav-item nav-link" href="javascript:void 0">个人设置</a>
         <a class="nav-item nav-link" href="javascript:void 0">消息</a>

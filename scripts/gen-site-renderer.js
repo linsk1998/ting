@@ -137,7 +137,7 @@ function createRenderer(options = {}) {
 			if(lang === 'html' && htmlPreview) {
 				return `
 <div class="tabs" role="tabbable">
-  <ul class="nav nav-indicator">
+  <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>

@@ -16,13 +16,13 @@ button.nav-link, input.nav-link { cursor: pointer;}
 .nav-pills .active .nav-link, .nav-pills a.active,
 .nav-pills .active .nav-link:hover, .nav-pills a.active:hover{ background-color:$nav-pills-active-bg; color:$nav-pills-active-color;}
 
-.nav-indicator{ margin-left:0; border-bottom:1px solid $light-divider;}
-.nav-indicator .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
-.nav-indicator .nav-link{ color:$nav-indicator-color; padding:$nav-indicator-padding-y $nav-indicator-padding-x; display: inline-block; *zoom:1;}
-.nav-indicator .nav-link:hover{ color:$nav-indicator-color-hover; text-decoration:none;}
-.nav-indicator .active{ border-bottom:1px solid $nav-indicator-active-color; margin-bottom:-1px;}
-.nav-indicator .active .nav-link, .nav-indicator a.active,
-.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$nav-indicator-active-color;}
+.nav-underline{ margin-left:0; border-bottom:1px solid $light-divider;}
+.nav-underline .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
+.nav-underline .nav-link{ color:$nav-underline-color; padding:$nav-underline-padding-y $nav-underline-padding-x; display: inline-block; *zoom:1;}
+.nav-underline .nav-link:hover{ color:$nav-underline-color-hover; text-decoration:none;}
+.nav-underline .active{ border-bottom:1px solid $nav-underline-active-color; margin-bottom:-1px;}
+.nav-underline .active .nav-link, .nav-underline a.active,
+.nav-underline .active .nav-link:hover, .nav-underline a.active:hover{ color:$nav-underline-active-color;}
 
 .nav-tabs{ margin-left:0; border-bottom:1px solid $light-divider;}
 .nav-tabs .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
@@ -118,11 +118,11 @@ body:last-child .nav-justified, x:-moz-any-link {
 
 @if $enable-dark {
 	.dark {
-		.nav-indicator{ border-bottom-color:$dark-divider;}
-		.nav-indicator .nav-link{ color:$dark-nav-indicator-color;}
-		.nav-indicator .nav-link:hover{ color:$dark-nav-indicator-color-hover;}
-		.nav-indicator .active{ border-bottom-color:$dark-nav-indicator-active-color;}
-		.nav-indicator .active .nav-link, .nav-indicator a.active,
-		.nav-indicator .active .nav-link:hover, .nav-indicator a.active:hover{ color:$dark-nav-indicator-active-color;}
+		.nav-underline{ border-bottom-color:$dark-divider;}
+		.nav-underline .nav-link{ color:$dark-nav-underline-color;}
+		.nav-underline .nav-link:hover{ color:$dark-nav-underline-color-hover;}
+		.nav-underline .active{ border-bottom-color:$dark-nav-underline-active-color;}
+		.nav-underline .active .nav-link, .nav-underline a.active,
+		.nav-underline .active .nav-link:hover, .nav-underline a.active:hover{ color:$dark-nav-underline-active-color;}
 	}
 }

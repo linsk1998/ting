@@ -53,7 +53,7 @@
 
 - [组件概述](components/index.md): 全部 UI 组件的 CSS 类速查表，包括路径导航、导航、标签页、导航条、分页、列表组、进度条、轮播图、下拉菜单、工具提示、弹出框、可折叠块、手风琴、树、侧栏导航、模态对话框、提示信息、对话框、消息框、窗口、可选列表、面板等 23 个组件。
 - [路径导航](components/breadcrumb.md): `.breadcrumb` 路径导航组件，浅灰色背景，斜杠分隔。
-- [导航](components/nav.md): `.nav`、`.nav-pills`、`.nav-tabs`、`.nav-indicator`、`.nav-justified`、`.nav-tabs-left`/`.nav-tabs-right` 等导航组件。
+- [导航](components/nav.md): `.nav`、`.nav-pills`、`.nav-tabs`、`.nav-underline`、`.nav-justified`、`.nav-tabs-left`/`.nav-tabs-right` 等导航组件。
 - [标签页](components/tabs.md): `.tabs`、`.tabs-content`、`.tabs-pane`、`.tabs-left`/`.tabs-right`/`.tabs-below` 等标签页组件。
 - [导航条](components/navbar.md): `.navbar`、`.navbar-flush`、`.navbar-brand`、`.navbar-nav`、`.navbar-collapse`、`.navbar-toggle`、`.navbar-header`、`.navbar-right`、`.navbar-form`、`.navbar-btn`、`.navbar-text`、`.navbar-link` 等导航条组件。
 - [分页](components/pagination.md): `.pagination`、`.pagination-lg`/`.pagination-sm`、`.pagination-gutter`、`.active`、`.disabled` 等分页组件。
