@@ -3,7 +3,7 @@
 `.collapsible` = "可被折叠的" = 现在开着，但能关上。通过切换 `.hide` 类来控制开启和关上。
 
 ```html
-<button type="button" class="btn btn-primary" data-toggle="collapsible" data-target="#demo">
+<button type="button" class="btn btn-primary" onclick="$('#demo').toggleClass('hide')">
     切换折叠
 </button>
 <div id="demo" class="collapsible">
@@ -26,7 +26,7 @@
 ## 水平可折叠块
 
 ```html
-<button type="button" class="btn btn-primary" data-toggle="collapsible" data-target="#demo2">
+<button type="button" class="btn btn-primary" onclick="$('#demo2').toggleClass('hide')">
     切换折叠
 </button>
 <div id="demo2" class="collapsible-horizontal">

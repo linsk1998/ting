@@ -62,7 +62,7 @@
 </div>
 ```
 
-加入宽度为24px的间隙。
+加入宽度为16px的间隙。
 
 ```html
 <div class="container">

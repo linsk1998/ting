@@ -86,6 +86,12 @@ $(function(){
 			}
 		});
 	});
+	$(document).on("click",".alert-dismissible .close",function(e){
+		var dismiss = $(this).attr("data-dismiss");
+		if(!dismiss){
+			$(this).closest(".alert-dismissible").remove();
+		}
+	});
 	$(document).on('click',"[data-dismiss]",function(e){
 		var dismiss=this.getAttribute("data-dismiss");
 		if(dismiss){

@@ -26,9 +26,9 @@
 添加 `.alert-dismissible` 类并加入关闭按钮，可以创建可关闭的警告框。
 
 ```html
-<div class="alert alert-warning alert-dismissible" role="alert">
-    <button type="button" class="close" data-dismiss="alert"></button>
-    <strong>Warning!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+<div class="alert alert-warning alert-dismissible">
+    <button type="button" class="close"></button>
+    <strong>Warning!</strong> 本项目是一个CSS库，js效果仅为文档演示。
 </div>
 ```
 
