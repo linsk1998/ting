@@ -54,7 +54,8 @@ ${overviewHtml}
 		</div>
 		${footer()}
 	</body>
-</html>`;
+</html>
+`;
 
 	// 写入 docs/{section}/index.html
 	await fs.writeFile(path.join(sectionDir, 'index.html'), html, 'utf-8');

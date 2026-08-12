@@ -53,7 +53,8 @@ ${viewHtml}
 		</div>
 		${footer()}
 	</body>
-</html>`;
+</html>
+`;
 
 	await fs.writeFile(path.join(sectionDir, `${name}.html`), html, 'utf-8');
 
