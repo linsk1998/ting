@@ -2,13 +2,17 @@
 # 项目: ting-ui/css (Common Style Lib)
 # 在线演示: https://linsk1998.github.io/ting/
 # 文件数量: 61 个 .md 文档
-# 生成时间: 2026-08-09
+# 生成时间: 2026-08-12
 # =============================================================================
 
 # =============================================================================
 # 项目概述 (README.md)
 # =============================================================================
 
+
+---
+# 源文件: README.md
+---
 # ting
 
 公共样式库Common Style Lib
@@ -31,7 +35,11 @@ https://linsk1998.github.io/ting/
 
 ### 命名风格
 
-本项目的风格是.{组件}-{状态}、.{组件}-{子元素}风格。示例：`.btn`、`.btn-primary`。以下这种`.btn.primary`组合使用的风格不是本项目的风格。同理，`.btn.is-disabled`、`.btn.disabled`也是一样的。
+本项目的风格是.{组件}-{状态}、.{组件}-{子元素}风格。示例：`.btn`、`.btn-primary`。以下这种`.btn.primary`组合使用的风格不是本项目的风格。同理，`.btn.is-disabled`、`.btn.disabled`也是一样的。但考虑到兼容 bootstrap，我提供了一个全局公用样式`.disabled`，这是公用的，不针对 `.btn`。
+
+### 避免子元素选择器
+
+例如 `.carousel-control>.left` 不是本项目的风格，应该写成 `.carousel-control-prev`。
 
 ### 渐进增强 & 优雅降级
 
@@ -39,7 +47,11 @@ https://linsk1998.github.io/ting/
 
 ### 优先展示
 
-bootstrap是优先隐藏的，比如 bootstrap 的`.collapse`是一个可折叠容器，默认是折叠的，加上`.show`出现。本项目用的是`.collapsible`默认是展开的，加上`.hide`隐藏。当然，也提供了`.collapse`来兼容 bootstrap。
+bootstrap是优先隐藏的，比如 bootstrap 的`.collapse`是一个可折叠容器，默认是折叠的，加上`.show`出现。本项目用的是`.collapsible`默认是展开的，加上`.hide`隐藏。当然，也提供了`.collapse`来兼容 bootstrap。同理还有 `.navbar-collapse`、`.accordion-collapse`等。
+
+### 不包含图标
+
+本项目是纯样式库，样式中避免使用特定图标，有使用图标的地方都放到了 html 中维户，用户可以自己替换。示例中所使用的图标为 fontawesome。
 
 ### 动画支持浏览器关闭
 
@@ -59,14 +71,15 @@ tailwind 只是换了一种方式去写样式，并没帮助开发者屏蔽样�
 
 ting-ui的思想比较接近无头组件库。但是无头组件库是毫无样式的，ting-ui提供了最基本的样式，和开发主题的方案。
 
----
-# 源文件: README.md
----
 
 # =============================================================================
 # 一、起步 (getting-started)
 # =============================================================================
 
+
+---
+# 源文件: getting-started/index.md
+---
 # 起步
 
 ting.css，有多种使用方式，最简单的方式就是直接引入全量。
@@ -102,6 +115,7 @@ ting.css，有多种使用方式，最简单的方式就是直接引入全量。
 
 如果你的构建工具支持的话，会自动生成到dist目录下。
 
+
 ## 暗黑模式使用
 
 本项目支持部分暗黑模式和全局暗黑模式。假如你把左侧栏设为暗黑模式，在左侧栏的容器上加入`.dark`样式类，左侧栏就会是黑色的。如果要全局使用暗黑模式，在html上加入`.dark`样式类。
@@ -120,14 +134,15 @@ purgecss({
 });
 ```
 
----
-# 源文件: getting-started/index.md
----
 
 # =============================================================================
 # 二、布局 (layout)
 # =============================================================================
 
+
+---
+# 源文件: layout/index.md
+---
 # 布局
 
 一套响应式栅格系统和弹性布局方案，帮助开发者快速构建页面布局。
@@ -136,6 +151,7 @@ purgecss({
 
 包括五个默认断点，断点代表了常见设备尺寸和视口尺寸的子集。
 
+			
 | 断点 | 代号 | 尺寸 | 典型屏幕 |
 |---|---|---|---|
 | 手机 | xs | ~ 576px | 375x667 |
@@ -147,7 +163,7 @@ purgecss({
 ## 布局容器
 
 .container 类用于固定宽度并支持响应式布局的容器。
-
+		
 ```html
 <div class="container">
     ...
@@ -167,7 +183,7 @@ purgecss({
 | .container | 用于固定宽度居中并支持响应式。 |
 | .container-{size} | 直到指定断点为止是 width: 100%。 |
 | .container-fluid | 用于 100% 宽度，占据全部视口（viewport）的容器。 |
-
+		
 | 类 | ~ 576px | 576px ~ 992px | 992px ~ 1400px | 1400px ~ 1700px | 1700px ~ |
 |---|---|---|---|---|---|
 | .container-sm | 100% | 546px | 1002px | 1134px | 1362px |
@@ -260,10 +276,11 @@ purgecss({
 
 [使用方法](./align.md)
 
----
-# 源文件: layout/index.md
----
 
+
+---
+# 源文件: layout/align.md
+---
 # 对齐
 
 多种对齐方式，包括块级居中、垂直对齐等。
@@ -333,10 +350,10 @@ purgecss({
 </div>
 ```
 
----
-# 源文件: layout/align.md
----
 
+---
+# 源文件: layout/ratio.md
+---
 # 固定比例容器
 
 ## 21:9 容器
@@ -379,14 +396,15 @@ purgecss({
 </div>
 ```
 
----
-# 源文件: layout/ratio.md
----
 
 # =============================================================================
 # 三、页面内容 (content)
 # =============================================================================
 
+
+---
+# 源文件: content/index.md
+---
 # 页面内容
 
 丰富的页面内容样式，包括排版、链接、表格、图片、卡片、列表、媒体对象等。
@@ -395,6 +413,7 @@ purgecss({
 
 排版定义了各种标题、段落、列表及其他内联元素的样式，您可以创建标题、段落、列表及其他内联元素。
 
+			
 | 类 | 描述 |
 |---|---|
 | .h1~.h6 | 设置为标题样式 |
@@ -491,6 +510,7 @@ purgecss({
 
 专门解决图文混排、评论列表、消息流、动态信息流等场景的统一排版问题。
 
+			
 | 类 | 描述 |
 |---|---|
 | .media | 媒体组件外层容器，使用弹性布局，统一管理图文间距，支持媒体嵌套 |
@@ -502,6 +522,22 @@ purgecss({
 | .media-middle | 配合 .media-left / .media-right 使用，图片垂直居中对齐 |
 | .media-bottom | 配合 .media-left / .media-right 使用，图片垂直底部对齐 |
 | .media-list | 媒体列表外层，清除列表默认内外边距，批量渲染多条 media 评论/信息流 |
+
+			
+```html
+<div class="media">
+    <div class="media-left">
+        <a href="#"><img class="media-object" src="http://placeholder.qiniudn.com/64x64" width="64" height="64"/></a>
+    </div>
+    <div class="media-right">
+        <a href="#"><img class="media-object" src="http://placeholder.qiniudn.com/64x64" width="64" height="64"/></a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+    </div>
+</div>
+```
 
 [使用方法](./media.md)
 
@@ -524,6 +560,7 @@ purgecss({
 
 通过缩略图组件扩展和栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。
 
+			
 | 类 | 描述 |
 |---|---|
 | .card | 卡片容器 |
@@ -541,6 +578,13 @@ purgecss({
 | .card-header-tabs | 卡片头部的标签页导航样式 |
 | .card-header-pills | 卡片头部的药丸导航样式 |
 | .card-header-indicator | 卡片头部的指示器样式 |
+
+			
+```html
+<a href="#" class="card">
+    <img src="..." alt="...">
+</a>
+```
 
 [效果演示](card.html)
 
@@ -567,6 +611,7 @@ purgecss({
 
 给链接、导航等元素嵌套  元素，可以很醒目的展示新的或未读的信息条目。
 
+			
 | 类 | 描述 |
 |---|---|
 | .badge | 徽章，圆角红色背景，白色文字，最小宽度18px |
@@ -607,10 +652,10 @@ purgecss({
 |---|---|
 | .footer | 网站底部 |
 
----
-# 源文件: content/index.md
----
 
+---
+# 源文件: content/type.md
+---
 # 排版
 
 全局的排版设置，包括标题、段落、列表、引用、代码块等元素的样式。
@@ -757,10 +802,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 </dl>
 ```
 
----
-# 源文件: content/type.md
----
 
+---
+# 源文件: content/link.md
+---
 # 链接
 
 提供多种链接样式，包括语义色、下划线控制、偏移量调整以及拉伸链接。
@@ -817,10 +862,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 </div>
 ```
 
----
-# 源文件: content/link.md
----
 
+---
+# 源文件: content/button.md
+---
 # 按钮
 
 按钮是网页中最基础的交互元素。支持多种 HTML 元素、语境颜色、尺寸以及加载状态。
@@ -928,10 +973,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 <button type="button" class="btn btn-danger btn-loading">加载中</button>
 ```
 
----
-# 源文件: content/button.md
----
 
+---
+# 源文件: content/button-group.md
+---
 # 按钮组
 
 按钮组用于将多个按钮合并为一组，支持横向排列、两端对齐和纵向排列。
@@ -1040,10 +1085,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 </div>
 ```
 
----
-# 源文件: content/button-group.md
----
 
+---
+# 源文件: content/table.md
+---
 # 表格
 
 多种表格样式，包括基础表格、隔行变色、边框、鼠标悬停、紧凑样式、语境色和响应式表格。
@@ -1243,10 +1288,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 </div>
 ```
 
----
-# 源文件: content/table.md
----
 
+---
+# 源文件: content/img.md
+---
 # 图片
 
 为图片提供圆角、圆形、缩略图边框以及响应式缩放等样式。
@@ -1280,10 +1325,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 - `.img-fluid` — 图片宽度始终占满容器，高度自动缩放，适合栅格布局。
 - `.img-responsive` — 图片在容器不够宽时自动缩小（`max-width: 100%`），不会超出容器也不会强制拉伸。
 
----
-# 源文件: content/img.md
----
 
+---
+# 源文件: content/media.md
+---
 # 媒体对象
 
 媒体对象组件用于构建图文混排的布局，适合评论列表、消息流、动态信息流等场景。
@@ -1423,10 +1468,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 </ul>
 ```
 
----
-# 源文件: content/media.md
----
 
+---
+# 源文件: content/well.md
+---
 # 凹陷
 
 使用 `.well` 创建带内阴影的凹陷容器，适合突出显示某段内容或作为内嵌区块使用。
@@ -1448,10 +1493,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 <div class="well well-sm">小号凹陷，内边距更小。</div>
 ```
 
----
-# 源文件: content/well.md
----
 
+---
+# 源文件: content/callout.md
+---
 # 标志
 
 使用 `.callout` 创建带左侧粗边框的标志容器，白色背景加阴影，适合高亮提示信息或强调某段内容。
@@ -1498,10 +1543,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 </div>
 ```
 
----
-# 源文件: content/callout.md
----
 
+---
+# 源文件: content/badge.md
+---
 # 徽章
 
 使用 `.badge` 创建醒目的徽章，适合展示新消息数、未读提醒或状态标记。
@@ -1527,10 +1572,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 <button class="btn btn-danger">错误 <span class="badge">2</span></button>
 ```
 
----
-# 源文件: content/badge.md
----
 
+---
+# 源文件: content/tag.md
+---
 # 标签
 
 提供两种标签风格：空心标签（`.tag`）和实心标签（`.label`）。
@@ -1600,10 +1645,10 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 <span class="label label-danger">Danger</span>
 ```
 
----
-# 源文件: content/tag.md
----
 
+---
+# 源文件: content/alert.md
+---
 # 警告框
 
 警告框用于向用户显示重要信息、警告、错误或成功提示。
@@ -1649,9 +1694,6 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 </div>
 ```
 
----
-# 源文件: content/alert.md
----
 
 # =============================================================================
 # 四、表单 (form)
@@ -1740,7 +1782,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 # 表单组件
 
-以下组件更推荐封装成组件使用
+以下组件更推荐使用 Javascript 框架封装成组件使用。本项目是一个纯 CSS 实现的表单组件，不包含任何 Javascript 代码。
 
 ## 前后缀输入框
 
@@ -3319,7 +3361,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 ### 超出行为
 
-`.tags-input-wrap` 超出换行，`.tags-input-nowrap` 超出不换行（保持单行滚动）。
+`.tags-input-wrap` 超出换行，`.tags-input-nowrap` 超出不换行。
 
 ```html
 <form class="form">
@@ -4028,7 +4070,6 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 ```
 
 
-
 # =============================================================================
 # 五、助手 (helpers)
 # =============================================================================
@@ -4163,7 +4204,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 ---
 # 图标
 
-参考 FontAwesome 提供了一套丰富的图标样式类，包括尺寸缩放、固定宽度、旋转翻转、堆叠组合等功能。
+提供了一套丰富的图标工具类，包括尺寸缩放、固定宽度、旋转翻转、堆叠组合等功能。
 
 ## 基本图标
 
@@ -4306,19 +4347,23 @@ fa-ban on fa-camera
 ```
 
 
-
 # =============================================================================
 # 六、组件 (components)
 # =============================================================================
 
+
+---
+# 源文件: components/index.md
+---
 # 组件
 
-丰富的UI组件，帮助你快速构建页面。
+本章节组件更推荐使用 Javascript 框架封装成组件使用。本项目是一个纯 CSS 实现的表单组件，示例页内的 Javascript 代码，仅为文档演示。
 
 ## 路径导航
 
 breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
+			
 | 类 | 描述 |
 |---|---|
 | .breadcrumb | 路径导航容器，浅灰色背景，使用斜杠分隔各级 |
@@ -4329,6 +4374,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
 导航组件都依赖同一个 .nav 类，状态类也是共用的。改变修饰类可以改变样式。提供了选项卡标签页、药丸标签页、下划线标签页三种。
 
+			
 | 类 | 描述 |
 |---|---|
 | .nav | 导航基础容器，清除列表默认样式 |
@@ -4377,6 +4423,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
 为您的网站或应用提供带有展示页码的分页组件，或者可以使用简单的翻页组件。
 
+			
 | 类 | 描述 |
 |---|---|
 | .pagination | 分页列表容器，内联块级显示 |
@@ -4535,6 +4582,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .modal-center | 使模态内容居中对齐的容器，使用Flexbox布局 |
 | .modal-hit | 模态层的事件捕获层，用于拦截用户点击 |
 
+			
 模态遮罩 模态遮罩加载中...
 
 [使用方法](./modal.html)
@@ -4557,7 +4605,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .dialog-title | 对话框标题 |
 | .dialog-body | 对话框主体内容区域 |
 | .dialog-footer | 对话框底部按钮区域，带顶部边框 |
-| .dialog-close | 对话框右上角的关闭按钮，使用FontAwesome图标 |
+| .dialog-close | 对话框右上角的关闭按钮 |
 | .dialog-rim | 带外边框的对话框样式，半透明黑色外框 |
 | .dialog-primary.dialog-success.dialog-info.dialog-warning.dialog-danger.dialog-dark | 对话框语境色主题，影响头部背景色 |
 
@@ -4621,9 +4669,6 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .panel-warning | 警告状态面板，黄色调 |
 | .panel-danger | 危险状态面板，红色调 |
 
----
-# 源文件: components/index.md
----
 
 ---
 # 源文件: components/accordion.md
@@ -6740,7 +6785,6 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 | `.win-transform-helper` | 拖拽/缩放辅助边框 |
 
 
-
 # =============================================================================
 # 七、工具类 (utilities)
 # =============================================================================
@@ -6755,13 +6799,13 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 ## 语境颜色
 
-| 浅色背景颜色 | 文本颜色 | 背景颜色 | 边框颜色 |
-|---|---|---|---|
-| .primary | .text-primary | .bg-primary | .border-primary |
-| .success | .text-success | .bg-success | .border-success |
-| .info | .text-info | .bg-info | .border-info |
-| .warning | .text-warning | .bg-warning | .border-warning |
-| .danger | .text-danger | .bg-danger | .border-danger |
+| 浅色背景颜色 | 文本颜色 | 背景颜色 | 背景颜色+文字变白 | 边框颜色 |
+|---|---|---|---|---|
+| .primary | .text-primary | .bg-primary | .text-bg-primary | .border-primary |
+| .success | .text-success | .bg-success | .text-bg-success | .border-success |
+| .info | .text-info | .bg-info | .text-bg-info | .border-info |
+| .warning | .text-warning | .bg-warning | .text-bg-warning | .border-warning |
+| .danger | .text-danger | .bg-danger | .text-bg-danger | .border-danger |
 
 [使用方法](./color.md)
 
@@ -6847,7 +6891,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 ## 图标颜色
 
-语境色类同样适用于 FontAwesome 图标等元素。
+语境色类同样适用于字体图标等元素。
 
 ```html
 <div class="dialog dialog-primary">

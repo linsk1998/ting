@@ -28,6 +28,7 @@
 		"build": "node scripts/build.js",
 		"build:shiki": "node scripts/build-shiki.js",
 		"gen:site": "node scripts/gen-site.js",
+		"gen:llms-full": "node scripts/gen-llms-full.js",
 		"serve": "http-server docs -p 3000",
 		"backstop-reference": "backstop reference",
 		"backstop-test": "backstop test",
