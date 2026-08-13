@@ -11332,7 +11332,7 @@ body:last-child .nav-justified, x:-moz-any-link {
     }
   }
 }
-.dark .navbar {
+.dark .navbar, .navbar-dark {
   background: #212529;
 }
 

@@ -48,6 +48,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | 类 | 描述 |
 |---|---|
 | .navbar | 导航栏基础容器，提供基本的定位和布局 |
+| .navbar-dark | 导航栏暗黑模式，一般还要搭配.dark，使得子元素也变暗 |
 | .navbar-fixed-top | 导航栏固定在顶部 |
 | .navbar-sticky-top | 导航栏粘滞在顶部 |
 | .navbar-brand | 导航栏品牌标识区域，通常放置Logo或网站名称 |
