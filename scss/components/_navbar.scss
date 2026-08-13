@@ -273,10 +273,10 @@
 	}
 }
 @if $enable-dark {
+	.dark .navbar, .navbar-dark {
+		background: $dark-body-bg;
+	}
 	.dark {
-		.navbar {
-			background: $dark-body-bg;
-		}
 		.navbar-spacer-top, .navbar-fixed-top, .navbar-sticky-top {
 			border-bottom-color: $dark-divider;
 		}
