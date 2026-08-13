@@ -19,7 +19,7 @@
 			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
 						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
 					</div>
 					<div class="navbar-collapsible">
@@ -129,7 +129,7 @@
 </pre></div>
   </div>
 </div><h2 class="page-header" id="加载中">加载中</h2>
-<p>添加 <code>.switch-loading</code>，在 <code>.switch-thumb</code> 内放 <code>.loading-circular</code>。选中和置灰状态可叠加。</p>
+<p>添加 <code>.switch-loading</code>，在 <code>.switch-thumb</code> 内放 <code>.loading-ring</code>。选中和置灰状态可叠加。</p>
 
 <div class="tabs" role="tabbable">
   <ul class="nav nav-underline">
@@ -139,56 +139,56 @@
   <div class="tabs-content">
     <div class="tabs-pane ting-example active"><label>
     <div class="switch switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     默认状态
 </label>
 <label>
     <div class="switch switch-checked switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     选中
 </label>
 <label>
     <div class="switch switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     默认状态
 </label>
 <label>
     <div class="switch switch-checked switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     选中
 </label></div>
     <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch switch-loading</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-circular</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-ring</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">disabled</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    默认状态</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">&lt;<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch switch-checked switch-loading</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-circular</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-ring</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">disabled</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    选中</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">&lt;<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch switch-disabled switch-loading</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-circular</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-ring</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">disabled</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    默认状态</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">&lt;<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch switch-checked switch-disabled switch-loading</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-circular</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">switch-thumb</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">loading-ring</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">disabled</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    选中</span>

@@ -1,6 +1,6 @@
 @use '../mixins' as *;
 
-.loading-circular,.loading-grow{
+.loading-ring,.loading-grow{
 	display: inline-block;
 	*display: inline; *zoom:1;
 	width:1em; height:1em;
@@ -22,10 +22,10 @@
 	100%{ opacity:0;}
 }
 @media (min-width:0){
-	.loading-circular,.loading-grow{
+	.loading-ring,.loading-grow{
 		@include circle();
 	}
-	.loading-circular{
+	.loading-ring{
 		border: .125em solid currentColor;
 		border-right-color: transparent;
 		@include animation(spin 1s linear infinite);
@@ -37,18 +37,18 @@
 }
 @media (min-width:0\0) and (min-resolution:.001dpcm) {
 	/*ie9*/
-	.loading-circular{
+	.loading-ring{
 		border:0 none;
 		border-radius: 0;
 	}
 	.loading-grow{
 		background: none;
 	}
-	.loading-circular:before,.loading-grow:before{ content:"6";}
+	.loading-ring:before,.loading-grow:before{ content:"6";}
 }
 @media \0screen\,screen\9 {
-	.loading-circular,.loading-grow{
+	.loading-ring,.loading-grow{
 		*zoom:#{"expression(this.runtimeStyle.zoom='1',this.innerHTML='6')"};
 	}
-	.loading-circular:before,.loading-grow:before{ content:"6";}
+	.loading-ring:before,.loading-grow:before{ content:"6";}
 }

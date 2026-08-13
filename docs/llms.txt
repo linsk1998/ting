@@ -55,7 +55,7 @@
 - [路径导航](components/breadcrumb.md): `.breadcrumb` 路径导航组件，浅灰色背景，斜杠分隔。
 - [导航](components/nav.md): `.nav`、`.nav-pills`、`.nav-tabs`、`.nav-underline`、`.nav-justified`、`.nav-tabs-left`/`.nav-tabs-right` 等导航组件。
 - [标签页](components/tabs.md): `.tabs`、`.tabs-content`、`.tabs-pane`、`.tabs-left`/`.tabs-right`/`.tabs-below` 等标签页组件。
-- [导航条](components/navbar.md): `.navbar`、`.navbar-flush`、`.navbar-brand`、`.navbar-nav`、`.navbar-collapse`、`.navbar-toggle`、`.navbar-header`、`.navbar-right`、`.navbar-form`、`.navbar-btn`、`.navbar-text`、`.navbar-link` 等导航条组件。
+- [导航条](components/navbar.md): `.navbar`、`.navbar-flush`、`.navbar-brand`、`.navbar-nav`、`.navbar-collapse`、`.navbar-toggler`、`.navbar-header`、`.navbar-right`、`.navbar-form`、`.navbar-btn`、`.navbar-text`、`.navbar-link` 等导航条组件。
 - [分页](components/pagination.md): `.pagination`、`.pagination-lg`/`.pagination-sm`、`.pagination-gutter`、`.active`、`.disabled` 等分页组件。
 - [列表组](components/list-group.html): `.list-group`、`.list-group-item`、`.list-group-flush`、`.list-group-item-{context}`、`.active` 等列表组 Demo。
 - [进度条](components/progress.md): `.progress`、`.progress-bar`、`.progress-bar-{context}`、`.progress-sm`/`.progress-xs` 等进度条组件。
@@ -96,7 +96,7 @@
 
 - [助手概述](helpers/index.md): 浮动清除、视觉隐藏、显示/隐藏、文本截断、三角标识、关闭按钮、加载指示、图标、动画等助手类速查表。
 - [浮动清除](helpers/float.md): `.pull-left`、`.pull-right`、`.clearfix` 浮动相关类。
-- [加载指示](helpers/loading.md): `.loading-circular`（环形加载）、`.loading-grow`（闪烁加载）使用方法。
+- [加载指示](helpers/loading.md): `.loading-ring`（环形加载）、`.loading-grow`（闪烁加载）使用方法。
 - [图标](helpers/icon.md): `.icon`、`.icon-fw`、`.icon-left`/`.icon-right`、`.icon-lg`~`.icon-5x`、`.icon-rotate-*`、`.icon-flip-*` 等 FontAwesome 图标封装类。
 - [动画](helpers/animation.html): `.animated`、`.animated.infinite`、`.animated.forwards`、`.animated.fast`/`.faster`/`.slower` 等动画类 Demo。
 

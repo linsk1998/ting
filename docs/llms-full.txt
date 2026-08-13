@@ -966,7 +966,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 使用 `.btn-loading` 类标记加载中的按钮。
 
 ```html
-<button type="button" class="btn btn-primary btn-loading"><i class="btn-icon-left loading-circular"></i><span class="btn-label">加载中</span></button>
+<button type="button" class="btn btn-primary btn-loading"><i class="btn-icon-left loading-ring"></i><span class="btn-label">加载中</span></button>
 <button type="button" class="btn btn-success btn-loading">加载中</button>
 <button type="button" class="btn btn-info btn-loading">加载中</button>
 <button type="button" class="btn btn-warning btn-loading">加载中</button>
@@ -2949,7 +2949,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>
@@ -2959,7 +2959,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>
@@ -3077,7 +3077,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>
@@ -3087,7 +3087,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>
@@ -3297,33 +3297,33 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 ## 加载中
 
-添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-circular`。选中和置灰状态可叠加。
+添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-ring`。选中和置灰状态可叠加。
 
 ```html
 <label>
     <div class="switch switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     默认状态
 </label>
 <label>
     <div class="switch switch-checked switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     选中
 </label>
 <label>
     <div class="switch switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     默认状态
 </label>
 <label>
     <div class="switch switch-checked switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-circular"></div></div>
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
         <input type="checkbox" disabled>
     </div>
     选中
@@ -4141,7 +4141,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 | 类 | 描述 |
 |---|---|
-| .loading-circular | 环形加载指示 |
+| .loading-ring | 环形加载指示 |
 | .loading-grow | 闪烁加载指示 |
 
 [使用方法](./loading.md)
@@ -4314,19 +4314,19 @@ fa-ban on fa-camera
 ## 加载中
 
 ```html
-<div class="loading-circular text-primary" role="status">
+<div class="loading-ring text-primary" role="status">
     <span class="sr-only">加载中...</span>
 </div>
-<div class="loading-circular text-info" role="status">
+<div class="loading-ring text-info" role="status">
     <span class="sr-only">加载中...</span>
 </div>
-<div class="loading-circular text-success" role="status">
+<div class="loading-ring text-success" role="status">
     <span class="sr-only">加载中...</span>
 </div>
-<div class="loading-circular text-warning" role="status">
+<div class="loading-ring text-warning" role="status">
     <span class="sr-only">加载中...</span>
 </div>
-<div class="loading-circular text-danger" role="status">
+<div class="loading-ring text-danger" role="status">
     <span class="sr-only">加载中...</span>
 </div>
 <div class="loading-grow text-primary" role="status">
@@ -5516,7 +5516,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 ```html
 <div class="modal modal-loading">
-    <div class="loading-circular" role="status">
+    <div class="loading-ring" role="status">
         <span class="sr-only">加载中...</span>
     </div>
 </div>
@@ -5750,7 +5750,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 导航条在使用前需要了解以下要点：
 
 - 导航条需要包裹一个 `.navbar-header` 和一个 `.navbar-collapsible` 以实现响应式行为。
-- `.navbar-collapsible` 类可在移动端通过 `.navbar-toggle` 按钮展开/折叠。
+- `.navbar-collapsible` 类可在移动端通过 `.navbar-toggler` 按钮展开/折叠。
 
 ## 基本结构
 
@@ -5759,7 +5759,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ```html
 <nav class="navbar" style="z-index:590">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -5779,7 +5779,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ```html
 <nav class="navbar" style="z-index:589">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -5809,7 +5809,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ```html
 <nav class="navbar" style="z-index:588">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -5870,7 +5870,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ```html
 <nav class="navbar" style="z-index:586">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -5894,7 +5894,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ```html
 <nav class="navbar" style="z-index:585">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -5918,7 +5918,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ```html
 <nav class="navbar" style="z-index:584">
     <div class="navbar-header" style="z-index:503">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -5942,7 +5942,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 <nav class="navbar navbar-default" style="z-index:583">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -5972,7 +5972,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 <nav class="navbar navbar-default" style="z-index:582">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -6033,7 +6033,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ```html
 <nav class="navbar">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div id="bs-collapse" class="navbar-collapse collapse">

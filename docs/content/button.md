@@ -98,7 +98,7 @@
 使用 `.btn-loading` 类标记加载中的按钮。
 
 ```html
-<button type="button" class="btn btn-primary btn-loading"><i class="btn-icon-left loading-circular"></i><span class="btn-label">加载中</span></button>
+<button type="button" class="btn btn-primary btn-loading"><i class="btn-icon-left loading-ring"></i><span class="btn-label">加载中</span></button>
 <button type="button" class="btn btn-success btn-loading">加载中</button>
 <button type="button" class="btn btn-info btn-loading">加载中</button>
 <button type="button" class="btn btn-warning btn-loading">加载中</button>

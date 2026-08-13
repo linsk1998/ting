@@ -7,7 +7,7 @@
 导航条在使用前需要了解以下要点：
 
 - 导航条需要包裹一个 `.navbar-header` 和一个 `.navbar-collapsible` 以实现响应式行为。
-- `.navbar-collapsible` 类可在移动端通过 `.navbar-toggle` 按钮展开/折叠。
+- `.navbar-collapsible` 类可在移动端通过 `.navbar-toggler` 按钮展开/折叠。
 
 ## 基本结构
 
@@ -16,7 +16,7 @@
 ```html
 <nav class="navbar" style="z-index:590">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -36,7 +36,7 @@
 ```html
 <nav class="navbar" style="z-index:589">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -66,7 +66,7 @@
 ```html
 <nav class="navbar" style="z-index:588">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -127,7 +127,7 @@
 ```html
 <nav class="navbar" style="z-index:586">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -151,7 +151,7 @@
 ```html
 <nav class="navbar" style="z-index:585">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -175,7 +175,7 @@
 ```html
 <nav class="navbar" style="z-index:584">
     <div class="navbar-header" style="z-index:503">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div class="navbar-collapsible">
@@ -199,7 +199,7 @@
 <nav class="navbar navbar-default" style="z-index:583">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -229,7 +229,7 @@
 <nav class="navbar navbar-default" style="z-index:582">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">首页</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -290,7 +290,7 @@
 ```html
 <nav class="navbar">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
+        <button type="button" class="navbar-toggler fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
         <a class="navbar-brand" href="javascript:void 0">Brand</a>
     </div>
     <div id="bs-collapse" class="navbar-collapse collapse">

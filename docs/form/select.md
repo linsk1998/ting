@@ -69,7 +69,7 @@
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>
@@ -79,7 +79,7 @@
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>
@@ -197,7 +197,7 @@
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>
@@ -207,7 +207,7 @@
         <div class="select select-loading">
             <button type="button" class="select-btn" disabled>
                 <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-circular"></div>
+                <div class="select-icon icon loading-ring"></div>
             </button>
         </div>
     </div>

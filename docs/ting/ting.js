@@ -98,7 +98,7 @@ $(function(){
 			$(this).parents("[role="+dismiss+"]").hide();
 		}
 	});
-	$(document).on('click',".navbar-toggle",function(e){
+	$(document).on('click',".navbar-toggler",function(e){
 		var $this=$(this);
 		var target=$this.attr("data-target");
 		if(target) return;

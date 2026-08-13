@@ -6,7 +6,7 @@
 
 ```html
 <div class="modal modal-loading">
-    <div class="loading-circular" role="status">
+    <div class="loading-ring" role="status">
         <span class="sr-only">加载中...</span>
     </div>
 </div>
