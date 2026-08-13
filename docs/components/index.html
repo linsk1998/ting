@@ -140,10 +140,10 @@
 <td>.navbar-nav</td><td>导航栏内的导航列表容器</td>
 </tr>
 <tr>
-<td>.navbar-collapsible</td><td>响应式折叠区域，在小屏幕时可收起/展开</td>
+<td>.navbar-collapsible</td><td>响应式折叠区域，在小屏幕时可折叠/展开</td>
 </tr>
 <tr>
-<td>.navbar-toggle</td><td>移动端折叠触发按钮</td>
+<td>.navbar-toggler</td><td>移动端折叠触发按钮</td>
 </tr>
 <tr>
 <td>.navbar-header</td><td>导航栏头部，包含品牌标识和移动端切换按钮</td>
@@ -396,16 +396,16 @@
 <td>.accordion-item</td><td>手风琴项目，每个可折叠`区块</td>
 </tr>
 <tr>
-<td>.accordion-collapsed</td><td>一个accordion-item的收起状态</td>
+<td>.accordion-item.collapsed</td><td>一个accordion-item的折叠状态</td>
 </tr>
 <tr>
 <td>.accordion-header</td><td>手风琴头部，包裹触发按钮</td>
 </tr>
 <tr>
-<td>.accordion-button</td><td>触发按钮，点击展开/收起对应内容</td>
+<td>.accordion-button</td><td>触发按钮，点击展开/折叠对应内容</td>
 </tr>
 <tr>
-<td>.accordion-collapsible</td><td>可折叠内容容器，默认展开，父组件可用<code>.accordion-collapsed</code>收起</td>
+<td>.accordion-collapsible</td><td>可折叠内容容器，默认展开，父组件可用<code>.collapsed</code>折叠</td>
 </tr>
 <tr>
 <td>.accordion-body</td><td>手风琴内容正文</td>
@@ -425,13 +425,16 @@
 <td>.tree-icon</td><td>树节点图标，垂直居中对齐</td>
 </tr>
 <tr>
-<td>.tree-expander</td><td>树节点展开/收起三角箭头</td>
+<td>.tree-toggler</td><td>树节点展开/折叠三角箭头</td>
 </tr>
 <tr>
-<td>.tree-collapsed</td><td>收起状态的树节点，隐藏子节点，箭头旋转</td>
+<td>.tree-collapsible</td><td>可折叠内容容器，默认展开，父组件可用<code>.collapsed</code>折叠</td>
 </tr>
 <tr>
-<td>.active</td><td>选中的树节点，使用主题色背景</td>
+<td>.tree li.collapsed</td><td>折叠状态的树节点，隐藏子节点，箭头旋转</td>
+</tr>
+<tr>
+<td>.tree li.active</td><td>选中的树节点，使用主题色背景</td>
 </tr>
 </tbody></table></div>
 <p><a href="./tree.html">使用方法</a></p>
@@ -457,7 +460,7 @@
 <td>.sidebar-item</td><td>导航项</td>
 </tr>
 <tr>
-<td>.sidebar-item-collapsed</td><td>导航项折叠状态</td>
+<td>.sidebar-item.collapsed</td><td>导航项折叠状态</td>
 </tr>
 <tr>
 <td>.sidebar-indicator</td><td>展示折叠状态的图标</td>

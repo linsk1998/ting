@@ -52,8 +52,8 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .navbar-sticky-top | 导航栏粘滞在顶部 |
 | .navbar-brand | 导航栏品牌标识区域，通常放置Logo或网站名称 |
 | .navbar-nav | 导航栏内的导航列表容器 |
-| .navbar-collapsible | 响应式折叠区域，在小屏幕时可收起/展开 |
-| .navbar-toggle | 移动端折叠触发按钮 |
+| .navbar-collapsible | 响应式折叠区域，在小屏幕时可折叠/展开 |
+| .navbar-toggler | 移动端折叠触发按钮 |
 | .navbar-header | 导航栏头部，包含品牌标识和移动端切换按钮 |
 | .navbar-right | 导航栏内容右对齐 |
 | .navbar-form | 导航栏内的表单区域，自动适配间距和对齐 |
@@ -179,10 +179,10 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .accordion-flush | 去除边框，贴紧父容器做到齐平嵌入 |
 | .accordion-dark | 暗黑模式手风琴 |
 | .accordion-item | 手风琴项目，每个可折叠`区块 |
-| .accordion-collapsed | 一个accordion-item的收起状态 |
+| .accordion-item.collapsed | 一个accordion-item的折叠状态 |
 | .accordion-header | 手风琴头部，包裹触发按钮 |
-| .accordion-button | 触发按钮，点击展开/收起对应内容 |
-| .accordion-collapsible | 可折叠内容容器，默认展开，父组件可用`.accordion-collapsed`收起 |
+| .accordion-button | 触发按钮，点击展开/折叠对应内容 |
+| .accordion-collapsible | 可折叠内容容器，默认展开，父组件可用`.collapsed`折叠 |
 | .accordion-body | 手风琴内容正文 |
 
 [使用方法](./accordion.md)
@@ -193,9 +193,10 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 |---|---|
 | .tree | 树组件容器，相对定位，带内边距 |
 | .tree-icon | 树节点图标，垂直居中对齐 |
-| .tree-expander | 树节点展开/收起三角箭头 |
-| .tree-collapsed | 收起状态的树节点，隐藏子节点，箭头旋转 |
-| .active | 选中的树节点，使用主题色背景 |
+| .tree-toggler | 树节点展开/折叠三角箭头 |
+| .tree-collapsible | 可折叠内容容器，默认展开，父组件可用`.collapsed`折叠 |
+| .tree li.collapsed | 折叠状态的树节点，隐藏子节点，箭头旋转 |
+| .tree li.active | 选中的树节点，使用主题色背景 |
 
 [使用方法](./tree.md)
 
@@ -208,7 +209,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .sidebar-collapsed | 折叠状态，折叠后只显示图标 |
 | .sidebar-menu | 一级菜单 |
 | .sidebar-item | 导航项 |
-| .sidebar-item-collapsed | 导航项折叠状态 |
+| .sidebar-item.collapsed | 导航项折叠状态 |
 | .sidebar-indicator | 展示折叠状态的图标 |
 | .sidebar-icon | 导航项图标 |
 | .sidebar-link | 导航项链接 |

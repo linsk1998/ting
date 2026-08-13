@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #2
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #3
@@ -61,10 +61,10 @@
             </button>
         </h2>
         <div class="accordion-collapsible">
-            <div class="accordion-body">收起</div>
+            <div class="accordion-body">折叠</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #2
@@ -86,7 +86,7 @@
             <div class="accordion-body">减号</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #4
@@ -116,7 +116,7 @@
             <div class="accordion-body">1</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #2
@@ -126,7 +126,7 @@
             <div class="accordion-body">2</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #3
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #2
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #3
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #2
@@ -213,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #3
@@ -250,7 +250,7 @@
                 </div>
             </div>
         </div>
-        <div class="accordion-item accordion-collapsed">
+        <div class="accordion-item collapsed">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button">
                     Accordion Item #2
@@ -262,7 +262,7 @@
                 </div>
             </div>
         </div>
-        <div class="accordion-item accordion-collapsed">
+        <div class="accordion-item collapsed">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button">
                     Accordion Item #3

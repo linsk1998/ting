@@ -133,14 +133,14 @@
 	}
 }
 
-.sidebar-item-collapsed .sidebar-collapsible{
+.sidebar .collapsed .sidebar-collapsible{
 	display: none;
 }
 .sidebar-indicator {
 	float: right;
 	@include transform(rotate(180deg));
 }
-.sidebar-item-collapsed>a>.sidebar-indicator{
+.sidebar .collapsed>a>.sidebar-indicator{
 	@include transform(none);
 }
 
@@ -186,7 +186,7 @@
 	.sidebar-indicator {
 		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 	}
-	.sidebar-item-collapsed .sidebar-indicator{
+	.collapsed .sidebar-indicator{
 		filter: none;
 	}
 	.sidebar-collapsed .sidebar-submenu .sidebar-indicator{
@@ -208,7 +208,7 @@
 			overflow-y: hidden;
 			transition: height $collapse-duration;
 		}
-		.sidebar .sidebar-item-collapsed>.sidebar-collapsible{
+		.sidebar .collapsed>.sidebar-collapsible{
 			height: 0;
 		}
 	}

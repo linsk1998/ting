@@ -1632,9 +1632,9 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 <div class="tag tag-info tag-sm">tag-sm标签 <span class="close">&times;</span></div>
 ```
 
-## 实心标签
+# 实心标签
 
-使用 `.label` 创建实心底色白字的标签，适合标记状态或计数。
+使用 `.label` 创建实心底色白字的标签，适合标记状态或计数。这个没什么用，主要是兼容bootstrap。
 
 ```html
 <span class="label label-default">Default</span>
@@ -4405,11 +4405,12 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | 类 | 描述 |
 |---|---|
 | .navbar | 导航栏基础容器，提供基本的定位和布局 |
-| .navbar-flush | 清除导航栏的边框和内边距 |
+| .navbar-fixed-top | 导航栏固定在顶部 |
+| .navbar-sticky-top | 导航栏粘滞在顶部 |
 | .navbar-brand | 导航栏品牌标识区域，通常放置Logo或网站名称 |
 | .navbar-nav | 导航栏内的导航列表容器 |
-| .navbar-collapse | 响应式折叠区域，在小屏幕时可收起/展开 |
-| .navbar-toggle | 移动端折叠触发按钮 |
+| .navbar-collapsible | 响应式折叠区域，在小屏幕时可折叠/展开 |
+| .navbar-toggler | 移动端折叠触发按钮 |
 | .navbar-header | 导航栏头部，包含品牌标识和移动端切换按钮 |
 | .navbar-right | 导航栏内容右对齐 |
 | .navbar-form | 导航栏内的表单区域，自动适配间距和对齐 |
@@ -4535,10 +4536,10 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .accordion-flush | 去除边框，贴紧父容器做到齐平嵌入 |
 | .accordion-dark | 暗黑模式手风琴 |
 | .accordion-item | 手风琴项目，每个可折叠`区块 |
-| .accordion-collapsed | 一个accordion-item的收起状态 |
+| .accordion-item.collapsed | 一个accordion-item的折叠状态 |
 | .accordion-header | 手风琴头部，包裹触发按钮 |
-| .accordion-button | 触发按钮，点击展开/收起对应内容 |
-| .accordion-collapsible | 可折叠内容容器，默认展开，父组件可用`.accordion-collapsed`收起 |
+| .accordion-button | 触发按钮，点击展开/折叠对应内容 |
+| .accordion-collapsible | 可折叠内容容器，默认展开，父组件可用`.collapsed`折叠 |
 | .accordion-body | 手风琴内容正文 |
 
 [使用方法](./accordion.md)
@@ -4549,9 +4550,10 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 |---|---|
 | .tree | 树组件容器，相对定位，带内边距 |
 | .tree-icon | 树节点图标，垂直居中对齐 |
-| .tree-expander | 树节点展开/收起三角箭头 |
-| .tree-collapsed | 收起状态的树节点，隐藏子节点，箭头旋转 |
-| .active | 选中的树节点，使用主题色背景 |
+| .tree-toggler | 树节点展开/折叠三角箭头 |
+| .tree-collapsible | 可折叠内容容器，默认展开，父组件可用`.collapsed`折叠 |
+| .tree li.collapsed | 折叠状态的树节点，隐藏子节点，箭头旋转 |
+| .tree li.active | 选中的树节点，使用主题色背景 |
 
 [使用方法](./tree.md)
 
@@ -4564,7 +4566,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .sidebar-collapsed | 折叠状态，折叠后只显示图标 |
 | .sidebar-menu | 一级菜单 |
 | .sidebar-item | 导航项 |
-| .sidebar-item-collapsed | 导航项折叠状态 |
+| .sidebar-item.collapsed | 导航项折叠状态 |
 | .sidebar-indicator | 展示折叠状态的图标 |
 | .sidebar-icon | 导航项图标 |
 | .sidebar-link | 导航项链接 |
@@ -4695,7 +4697,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
             </div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #2
@@ -4707,7 +4709,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
             </div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #3
@@ -4736,10 +4738,10 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
             </button>
         </h2>
         <div class="accordion-collapsible">
-            <div class="accordion-body">收起</div>
+            <div class="accordion-body">折叠</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #2
@@ -4761,7 +4763,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
             <div class="accordion-body">减号</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #4
@@ -4791,7 +4793,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
             <div class="accordion-body">1</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #2
@@ -4801,7 +4803,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
             <div class="accordion-body">2</div>
         </div>
     </div>
-    <div class="accordion-item accordion-collapsed">
+    <div class="accordion-item collapsed">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button">
                 Accordion Item #3
@@ -4834,7 +4836,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #2
@@ -4846,7 +4848,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #3
@@ -4876,7 +4878,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #2
@@ -4888,7 +4890,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item accordion-collapsed">
+                <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button">
                             Accordion Item #3
@@ -4925,7 +4927,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
                 </div>
             </div>
         </div>
-        <div class="accordion-item accordion-collapsed">
+        <div class="accordion-item collapsed">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button">
                     Accordion Item #2
@@ -4937,7 +4939,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
                 </div>
             </div>
         </div>
-        <div class="accordion-item accordion-collapsed">
+        <div class="accordion-item collapsed">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button">
                     Accordion Item #3
@@ -5070,7 +5072,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ---
 # 折叠块
 
-折叠块用于隐藏/显示内容区域，通过切换 `.show` 类来控制展开和收起。这个类用于兼容 Bootstrap 的 `collapse`，本项目推荐使用 [collapsible](collapsible.md)。
+折叠块用于隐藏/显示内容区域，通过切换 `.show` 类来控制展开和折叠。这个类用于兼容 Bootstrap 的 `collapse`，本项目推荐使用 [collapsible](collapsible.md)。
 
 ## 基本用法
 
@@ -6128,9 +6130,9 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 </nav>
 ```
 
-## 翻页
+# 翻页
 
-`.pager` 提供简洁的前后翻页样式。使用 `.previous` / `.next` 可将链接对齐到两端。
+`.pager` 提供简洁的前后翻页样式。使用 `.previous` / `.next` 可将链接对齐到两端。这个没什么用，主要是兼容bootstrap。
 
 ```html
 <nav>
@@ -6305,7 +6307,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                         <span class="badge pull-right">2</span>
                         <i class="icon-fw fa">&#xf003;</i> 文字超长长长长长长长长长长长长长长长长长长长
                     </a></li>
-                    <li class="sidebar-item-collapsed">
+                    <li class="collapsed">
                         <a href="javascript:;">
                             <i class="sidebar-indicator fa">&#xf107;</i>
                             <i class="icon-fw fa">&#xf003;</i> 深层展开
@@ -6323,7 +6325,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf015;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -6339,7 +6341,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf15c;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -6352,7 +6354,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0f4;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -6365,7 +6367,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0c1;</i>
             <a class="sidebar-link" href="javascript:void(0);">外部连接</a>
         </li>
@@ -6376,10 +6378,10 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ## 折叠
 
 ```html
-<button type="button" class="btn btn-primary btn-square" onclick="$('#sidebar').toggleClass('sidebar-collapsed').find('.sidebar-item').addClass('sidebar-item-collapsed');"><i class="fa">&#xf0c9;</i></button>
+<button type="button" class="btn btn-primary btn-square" onclick="$('#sidebar').toggleClass('sidebar-collapsed').find('.sidebar-item').addClass('collapsed');"><i class="fa">&#xf0c9;</i></button>
 <div id="sidebar" class="sidebar sidebar-collapsed" style="width: 200px; outline: 1px solid #ddd;">
     <ul class="sidebar-menu">
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf013;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -6398,7 +6400,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                         <span class="badge pull-right">2</span>
                         <i class="icon-fw fa">&#xf003;</i> 文字超长长长长长长长长长长长长长长长长长长长
                     </a></li>
-                    <li class="sidebar-item-collapsed">
+                    <li class="collapsed">
                         <a href="javascript:;">
                             <i class="sidebar-indicator fa">&#xf107;</i>
                             <i class="icon-fw fa">&#xf003;</i> 深层展开
@@ -6416,7 +6418,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf015;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -6432,7 +6434,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf15c;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -6445,7 +6447,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0f4;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -6458,7 +6460,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0c1;</i>
             <a class="sidebar-link" href="javascript:void(0);">外部连接</a>
         </li>
@@ -6640,7 +6642,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ---
 # 树
 
-树控件（`.tree`）用于展示层级结构数据，支持节点的展开/收起和选中状态。`tree-collapsed`表示节点折叠。`tree-expander`表示节点展开/收起按钮，需要加上`tabindex="0"`属性。`active`表示节点选中。
+树控件（`.tree`）用于展示层级结构数据，支持节点的展开/折叠和选中状态。`collapsed`表示节点折叠。`tree-toggler`表示节点展开/折叠按钮，需要加上`tabindex="0"`属性。`active`表示节点选中。
 
 ## 基本用法
 
@@ -6648,8 +6650,8 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 <div style="width: 300px; height: 300px; overflow: auto; border: 4px solid #000;">
     <div class="tree">
         <ul>
-            <li class="tree-collapsed">
-                <i class="tree-expander" tabindex="0"></i>
+            <li class="collapsed">
+                <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
@@ -6659,8 +6661,8 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                     <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>国际局势</a></li>
                 </ul>
             </li>
-            <li class="tree-collapsed">
-                <i class="tree-expander" tabindex="0"></i>
+            <li class="collapsed">
+                <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
@@ -6671,7 +6673,7 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
                 </ul>
             </li>
             <li>
-                <i class="tree-expander" tabindex="0"></i>
+                <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>

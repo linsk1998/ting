@@ -26,7 +26,7 @@
                         <span class="badge pull-right">2</span>
                         <i class="icon-fw fa">&#xf003;</i> 文字超长长长长长长长长长长长长长长长长长长长
                     </a></li>
-                    <li class="sidebar-item-collapsed">
+                    <li class="collapsed">
                         <a href="javascript:;">
                             <i class="sidebar-indicator fa">&#xf107;</i>
                             <i class="icon-fw fa">&#xf003;</i> 深层展开
@@ -44,7 +44,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf015;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -60,7 +60,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf15c;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -73,7 +73,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0f4;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -86,7 +86,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0c1;</i>
             <a class="sidebar-link" href="javascript:void(0);">外部连接</a>
         </li>
@@ -97,10 +97,10 @@
 ## 折叠
 
 ```html
-<button type="button" class="btn btn-primary btn-square" onclick="$('#sidebar').toggleClass('sidebar-collapsed').find('.sidebar-item').addClass('sidebar-item-collapsed');"><i class="fa">&#xf0c9;</i></button>
+<button type="button" class="btn btn-primary btn-square" onclick="$('#sidebar').toggleClass('sidebar-collapsed').find('.sidebar-item').addClass('collapsed');"><i class="fa">&#xf0c9;</i></button>
 <div id="sidebar" class="sidebar sidebar-collapsed" style="width: 200px; outline: 1px solid #ddd;">
     <ul class="sidebar-menu">
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf013;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -119,7 +119,7 @@
                         <span class="badge pull-right">2</span>
                         <i class="icon-fw fa">&#xf003;</i> 文字超长长长长长长长长长长长长长长长长长长长
                     </a></li>
-                    <li class="sidebar-item-collapsed">
+                    <li class="collapsed">
                         <a href="javascript:;">
                             <i class="sidebar-indicator fa">&#xf107;</i>
                             <i class="icon-fw fa">&#xf003;</i> 深层展开
@@ -137,7 +137,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf015;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -153,7 +153,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf15c;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -166,7 +166,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0f4;</i>
             <a class="sidebar-link" href="javascript:void(0);">
                 <i class="sidebar-indicator fa">&#xf078;</i>
@@ -179,7 +179,7 @@
                 </ul>
             </div>
         </li>
-        <li class="sidebar-item sidebar-item-collapsed">
+        <li class="sidebar-item collapsed">
             <i class="sidebar-icon fa">&#xf0c1;</i>
             <a class="sidebar-link" href="javascript:void(0);">外部连接</a>
         </li>

@@ -64,9 +64,9 @@
 - [工具提示](components/tooltip.md): `.tooltip`、`.tooltip-inner`、`.tooltip-arrow`、`.tooltip-top`/`.tooltip-right`/`.tooltip-bottom`/`.tooltip-left` 等工具提示组件。
 - [弹出框](components/popover.md): `.popover`、`.popover-arrow`、`.popover-header`、`.popover-body`、`.popover-top`/`.popover-right`/`.popover-bottom`/`.popover-left` 等弹出框组件。
 - [可折叠块](components/collapsible.md): `.collapsible` 可折叠容器，默认展开，`.collapsible.hide` 折叠隐藏。
-- [手风琴](components/accordion.md): `.accordion`、`.accordion-flush`、`.accordion-dark`、`.accordion-fill`、`.accordion-item`、`.accordion-collapsed`、`.accordion-header`、`.accordion-button`、`.accordion-indicator`、`.accordion-collapsible`、`.accordion-body` 等手风琴组件，兼容 Bootstrap `.collapse` 写法。
-- [树](components/tree.md): `.tree`、`.tree-icon`、`.tree-expander`、`.tree-collapsed`、`.active` 等树组件。
-- [侧栏导航](components/sidebar.md): `.sidebar`、`.sidebar-dark`、`.sidebar-collapsed`、`.sidebar-menu`、`.sidebar-item`、`.sidebar-item-collapsed`、`.sidebar-indicator`、`.sidebar-icon`、`.sidebar-link`、`.sidebar-collapsible`、`.sidebar-submenu` 等侧栏导航组件（亮色/暗色主题，支持多级菜单折叠/展开）。
+- [手风琴](components/accordion.md): `.accordion`、`.accordion-flush`、`.accordion-dark`、`.accordion-fill`、`.accordion-item`、`.collapsed`、`.accordion-header`、`.accordion-button`、`.accordion-indicator`、`.accordion-collapsible`、`.accordion-body` 等手风琴组件，兼容 Bootstrap `.collapse` 写法。
+- [树](components/tree.md): `.tree`、`.tree-icon`、`.tree-toggler`、`.collapsed`、`.active` 等树组件。
+- [侧栏导航](components/sidebar.md): `.sidebar`、`.sidebar-dark`、`.sidebar-collapsed`、`.sidebar-menu`、`.sidebar-item`、`.collapsed`、`.sidebar-indicator`、`.sidebar-icon`、`.sidebar-link`、`.sidebar-collapsible`、`.sidebar-submenu` 等侧栏导航组件（亮色/暗色主题，支持多级菜单折叠/展开）。
 - [模态对话框](components/modal.md): `.modal`、`.modal-loading`、`.modal-center`、`.modal-hit` 等模态遮罩层。
 - [提示信息](components/toast.md): `.toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。
 - [对话框](components/dialog.md): `.dialog`、`.dialog-header`、`.dialog-title`、`.dialog-body`、`.dialog-footer`、`.dialog-close`、`.dialog-rim`、`.dialog-{context}` 等对话框组件。

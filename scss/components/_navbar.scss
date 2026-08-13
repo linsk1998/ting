@@ -55,23 +55,27 @@
 	vertical-align: middle;
 	margin-right: 10px;
 }
-.navbar-toggle {
+.navbar-toggle,
+.navbar-toggler {
 	display: none;
 	float: right;
 	text-align: center;
-	width: $navbar-toggle-size;
-	height: $navbar-toggle-size;
-	margin-top: ($navbar-height - $navbar-toggle-size)*.5;
-	border: $navbar-toggle-border-width solid $ctrl-border-color;
+	width: $navbar-toggler-size;
+	height: $navbar-toggler-size;
+	margin-top: ($navbar-height - $navbar-toggler-size)*.5;
+	border: $navbar-toggler-border-width solid $ctrl-border-color;
 }
-.navbar-toggle::-moz-focus-inner,.navbar-toggle::-moz-focus-inner{
+.navbar-toggle::-moz-focus-inner,
+.navbar-toggler::-moz-focus-inner{
 	padding:0;
 	border:0 none;
 }
-.navbar-toggle:hover {
+.navbar-toggle:hover,
+.navbar-toggler:hover {
 	background: #eee;
 }
-.navbar-toggle:focus {
+.navbar-toggle:focus,
+.navbar-toggler:focus {
 	outline: 0;
 }
 
@@ -168,7 +172,7 @@
 
 @media (max-width:$screen-sm){
 	.navbar-header{ float:none;}
-	.navbar-toggle{ display:block;}
+	.navbar-toggle,.navbar-toggler{ display:block;}
 	.navbar-collapsible{
 		display:none;
 		clear:both;
@@ -280,10 +284,10 @@
 		.navbar-brand a:hover, a.navbar-brand:hover {
 			color: $dark-body-text;
 		}
-		.navbar-toggle {
+		.navbar-toggle,.navbar-toggler {
 			border-color: $dark-ctrl-border-color;
 		}
-		.navbar-toggle:hover {
+		.navbar-toggle:hover,.navbar-toggler:hover {
 			background: $dark-secondary-bg;
 		}
 		.navbar-nav .nav-link,

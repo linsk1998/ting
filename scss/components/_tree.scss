@@ -44,7 +44,7 @@
 	display:inline-block;
 	vertical-align:middle;
 }
-.tree-expander{
+.tree-toggler{
 	position:absolute;
 	display: inline-block;
 	font-size: 0;
@@ -70,15 +70,15 @@
 	}
 }
 @media (min-width:0){
-	.tree-expander{ @include transform(rotate(90deg));}
-	.tree-collapsed .tree-expander{ @include transform(rotate(0deg));}
+	.tree-toggler{ @include transform(rotate(90deg));}
+	.collapsed>.tree-toggler{ @include transform(rotate(0deg));}
 }
 @media \0screen\,screen\9 {
-	.tree-expander{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
-	.tree-collapsed .tree-expander{ filter:none;}
+	.tree-toggler{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+	.tree-collapsed .tree-toggler{ filter:none;}
 }
 .tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:$tree-item-height;}
-.tree-collapsed ul{ display:none;}
+.tree .collapsed ul{ display:none;}
 
 @if $enable-dark {
 	.dark {
@@ -89,12 +89,12 @@
 		.tree label:hover,.tree a:hover{ background:#34414c;}
 		.tree .active a, .tree .active a:hover,
 		.tree .active label, .tree .active label:hover { background: $dark-primary; color: #fff;}
-		.tree-expander{ border-left-color: $dark-body-text; color: $dark-body-text;}
+		.tree-toggler{ border-left-color: $dark-body-text; color: $dark-body-text;}
 	}
 }
 @media (prefers-reduced-motion: no-preference) {
 	@supports (height: calc-size(auto, size)) {
-		.tree-expander{
+		.tree-toggler{
 			transition: transform $collapse-duration;
 		}
 		.tree ul{
@@ -104,7 +104,7 @@
 			overflow: hidden;
 			transition: height 0s, display 0s allow-discrete;
 		}
-		.tree-collapsed ul{
+		.tree .collapsed ul{
 			height: 0;
 			display: none;
 		}
@@ -113,7 +113,7 @@
 				height: 0;
 			}
 		}
-		.tree-expander:focus ~ ul{
+		.tree-toggler:focus ~ ul{
 			transition-duration: $collapse-duration;
 		}
 	}

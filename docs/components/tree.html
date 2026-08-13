@@ -49,7 +49,7 @@
 		</header>
 		<div class="container">
 <h1 class="page-header" id="树">树</h1>
-<p>树控件（<code>.tree</code>）用于展示层级结构数据，支持节点的展开/收起和选中状态。<code>tree-collapsed</code>表示节点折叠。<code>tree-expander</code>表示节点展开/收起按钮，需要加上<code>tabindex=&quot;0&quot;</code>属性。<code>active</code>表示节点选中。</p>
+<p>树控件（<code>.tree</code>）用于展示层级结构数据，支持节点的展开/折叠和选中状态。<code>collapsed</code>表示节点折叠。<code>tree-toggler</code>表示节点展开/折叠按钮，需要加上<code>tabindex=&quot;0&quot;</code>属性。<code>active</code>表示节点选中。</p>
 <h2 class="page-header" id="基本用法">基本用法</h2>
 
 <div class="tabs" role="tabbable">
@@ -61,8 +61,8 @@
     <div class="tabs-pane ting-example active"><div style="width: 300px; height: 300px; overflow: auto; border: 4px solid #000;">
     <div class="tree">
         <ul>
-            <li class="tree-collapsed">
-                <i class="tree-expander" tabindex="0"></i>
+            <li class="collapsed">
+                <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
@@ -72,8 +72,8 @@
                     <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>国际局势</a></li>
                 </ul>
             </li>
-            <li class="tree-collapsed">
-                <i class="tree-expander" tabindex="0"></i>
+            <li class="collapsed">
+                <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
@@ -84,7 +84,7 @@
                 </ul>
             </li>
             <li>
-                <i class="tree-expander" tabindex="0"></i>
+                <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>
@@ -100,8 +100,8 @@
     <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px; height: 300px; overflow: auto; border: 4px solid #000;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-expander</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">tabindex</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-toggler</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">tabindex</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
 <span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-icon fa text-yellow</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf07b;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;新闻中心&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
 <span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">ul</span>&gt;</span>
 <span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf016;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;选中效果&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
@@ -111,8 +111,8 @@
 <span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf016;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;国际局势&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
 <span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
 <span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
-<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-expander</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">tabindex</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-toggler</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">tabindex</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
 <span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-icon fa text-yellow</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf07b;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;新闻中心&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
 <span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">ul</span>&gt;</span>
 <span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;长长长长长长长长长长长长长长长长长长长长长长长&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
@@ -123,7 +123,7 @@
 <span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
 <span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
 <span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;</span>
-<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-expander</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">tabindex</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-toggler</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">tabindex</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
 <span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-icon fa text-yellow</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf07b;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;新闻中心&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
 <span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">ul</span>&gt;</span>
 <span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">label</span>&gt;&lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tree-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf016;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;领导活动&lt;/<span class="shiki-entity-name-tag">label</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
