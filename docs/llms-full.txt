@@ -1,7 +1,7 @@
 # Ting CSS 完整文档 (Full Documentation)
 # 项目: ting-ui/css (Common Style Lib)
 # 在线演示: https://linsk1998.github.io/ting/
-# 文件数量: 61 个 .md 文档
+# 文件数量: 60 个 .md 文档
 # 生成时间: 2026-08-15
 # =============================================================================
 
@@ -279,6 +279,52 @@ purgecss({
 
 
 ---
+# 源文件: layout/ratio.md
+---
+# 固定比例容器
+
+## 21:9 容器
+
+```html
+<div style="width: 300px">
+    <div class="ratio ratio-21x9">
+        <img class="ratio-item" src="../images/devices.jpg"/>
+    </div>
+</div>
+```
+
+## 16:9 容器
+
+```html
+<div style="width: 300px">
+    <div class="ratio ratio-16x9">
+        <img class="ratio-item" src="../images/bootstrap.jpg"/>
+    </div>
+</div>
+```
+
+## 4:3 容器
+
+```html
+<div style="width: 300px">
+    <div class="ratio ratio-4x3">
+        <img class="ratio-item" src="../images/functions.jpg"/>
+    </div>
+</div>
+```
+
+## 1:1 容器
+
+```html
+<div style="width: 300px">
+    <div class="ratio ratio-1x1">
+        <img class="ratio-item" src="../images/hole.jpg"/>
+    </div>
+</div>
+```
+
+
+---
 # 源文件: layout/align.md
 ---
 # 对齐
@@ -347,52 +393,6 @@ purgecss({
 <div style="height:80px; background:#eee; margin-bottom:20px;">
     <div class="valign-sibling"></div>
     <div class="valign-bottom">valign-bottom</div>
-</div>
-```
-
-
----
-# 源文件: layout/ratio.md
----
-# 固定比例容器
-
-## 21:9 容器
-
-```html
-<div style="width: 300px">
-    <div class="ratio ratio-21x9">
-        <img class="ratio-item" src="../images/devices.jpg"/>
-    </div>
-</div>
-```
-
-## 16:9 容器
-
-```html
-<div style="width: 300px">
-    <div class="ratio ratio-16x9">
-        <img class="ratio-item" src="../images/bootstrap.jpg"/>
-    </div>
-</div>
-```
-
-## 4:3 容器
-
-```html
-<div style="width: 300px">
-    <div class="ratio ratio-4x3">
-        <img class="ratio-item" src="../images/functions.jpg"/>
-    </div>
-</div>
-```
-
-## 1:1 容器
-
-```html
-<div style="width: 300px">
-    <div class="ratio ratio-1x1">
-        <img class="ratio-item" src="../images/hole.jpg"/>
-    </div>
 </div>
 ```
 
@@ -1881,106 +1881,6 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 
 ---
-# 源文件: form/checkbox.md
----
-# 单选和多选
-
-美化的单选（`.radio`）和多选（`.checkbox`）控件，支持默认、选中、部分选中、禁用和校验状态，以及垂直和水平两种布局。
-
-## 多选
-
-使用 `.checkbox-group` 垂直布局，`.checkbox-group-horizontal` 水平布局。`.checkbox` + `.checkbox-checked` / `.checkbox-indeterminate` 控制状态。
-
-### 垂直布局
-
-```html
-<div class="checkbox-group">
-    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
-</div>
-```
-
-### 水平布局
-
-```html
-<div class="checkbox-group-horizontal">
-    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
-</div>
-```
-
-### 置灰
-
-添加 `.checkbox-disabled`，`<input>` 设置 `disabled`。
-
-```html
-<div class="checkbox-group-horizontal">
-    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
-</div>
-```
-
-### 校验
-
-在容器上添加 `.has-invalid`。
-
-```html
-<div class="checkbox-group-horizontal has-invalid">
-    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
-    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
-    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
-    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
-</div>
-```
-
-## 单选
-
-使用 `.radio-group` 垂直布局，`.radio-group-horizontal` 水平布局。`.radio` + `.radio-checked` 控制状态。
-
-### 垂直布局
-
-```html
-<div class="radio-group">
-    <label><div class="radio"><input type="radio" name="demo"></div>默认状态</label>
-    <label><div class="radio radio-checked"><input type="radio" name="demo"></div>选中</label>
-</div>
-```
-
-### 水平布局
-
-```html
-<div class="radio-group-horizontal">
-    <label><div class="radio"><input type="radio" name="demo2"></div>默认状态</label>
-    <label><div class="radio radio-checked"><input type="radio" name="demo2"></div>选中</label>
-</div>
-```
-
-### 置灰
-
-```html
-<div class="radio-group-horizontal">
-    <label><div class="radio radio-disabled"><input type="radio" name="demo3" disabled></div>默认状态</label>
-    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo3" disabled></div>选中</label>
-</div>
-```
-
-### 校验
-
-```html
-<div class="radio-group-horizontal has-invalid">
-    <label><div class="radio"><input type="radio" name="demo4"></div>默认状态</label>
-    <label><div class="radio radio-checked"><input type="radio" name="demo4"></div>选中</label>
-    <label><div class="radio radio-disabled"><input type="radio" name="demo4" disabled></div>默认状态</label>
-    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo4" disabled></div>选中</label>
-</div>
-```
-
-
----
 # 源文件: form/control.md
 ---
 # 基础控件
@@ -2236,6 +2136,295 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
             </tr>
         </tbody>
     </table>
+</form>
+```
+
+
+---
+# 源文件: form/sizing.md
+---
+# 表单尺寸
+
+通过 `.form-group-lg` / `.form-group-sm` 设置表单项级别尺寸，或 `.form-control-lg` / `.form-control-sm` 控制单个控件尺寸。
+
+## 表单项尺寸
+
+在表单组 `.form-group` 上添加 `.form-group-lg` 或 `.form-group-sm`，标签和控件会同步调整字号与高度。
+
+```html
+<form class="form">
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
+</form>
+```
+
+## 水平表单
+
+表单项尺寸在水平表单 `.form-horizontal` 中同样有效，标签还会自动调整垂直对齐。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
+</form>
+```
+
+## 内联表单
+
+在内联表单 `.form-inline` 中也可正常使用。
+
+```html
+<form class="form-inline">
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+    </div>
+</form>
+```
+
+## 控件尺寸
+
+在控件本身添加 `.form-control-lg` / `.form-control-sm`，只影响控件大小，不影响标签。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">form-control-lg</label>
+        <input class="form-control form-control-lg" type="text">
+    </div>
+    <div class="form-group">
+        <label class="form-label">form-control-sm</label>
+        <input class="form-control form-control-sm" type="text">
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/validation.md
+---
+# 表单校验状态
+
+表单校验的视觉反馈，包括 `.has-valid` 成功和 `.has-invalid` 错误状态，支持图标、文字提示和飘浮气泡。
+
+## 表单组验证
+
+在 `.form-group` 上添加 `.has-valid` 或 `.has-invalid`，控件边框和反馈文字会自动变色。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-text">校验通过</div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+## 添加额外的图标
+
+使用 `.has-feedback-icon` 开启图标反馈，放入 `.feedback-icon` 图标元素。成功和错误状态分别控制图标颜色。
+
+```html
+<form class="form">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <textarea class="form-control"></textarea>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+## 飘浮气泡文字
+
+使用 `.feedback-tooltip` 替代 `.feedback-text`，提示文字将以半透明背景气泡形式飘浮在控件上方。
+
+```html
+<form class="form">
+    <div class="form-group has-valid">
+        <label class="form-label">has-valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">
+            校验通过
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">has-invalid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">请输入活动名称</div>
+    </div>
+</form>
+```
+
+## 水平表单
+
+校验状态在 `.form-horizontal` 中同样可用。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form>
+```
+
+## 内联表单
+
+`.form-inline` 内联表单也可结合校验状态。
+
+```html
+<form class="form-inline">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+## 表单项尺寸
+
+校验状态可与 `.form-group-lg` / `.form-group-sm` 结合使用。
+
+```html
+<form class="form">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+### 水平表单
+
+```html
+<form class="form-horizontal">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+### 内联表单
+
+```html
+<form class="form-inline">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+## 控件尺寸
+
+校验图标也可配合 `.form-control-lg` / `.form-control-sm` 使用。
+
+```html
+<form class="form-inline">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">form-control-lg</label>
+        <input class="form-control form-control-lg" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control form-control-sm" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form>
+```
+
+
+---
+# 源文件: form/static.md
+---
+# 静态控件
+
+如果需要将一行纯文本和 `label` 元素放置于同一行，为 `<p>` 元素添加 `.form-control-static` 类即可。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+</form>
+```
+
+## 静态控件尺寸
+
+`.form-control-static` 会随 `.form-group-lg` / `.form-group-sm` 自动适配字号和间距。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group form-group-lg">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">Text</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
 </form>
 ```
 
@@ -2876,462 +3065,6 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 
 ---
-# 源文件: form/select.md
----
-# 选择按钮
-
-下拉选择按钮（`.select`）提供自定义样式的选择控件，支持下拉菜单、占位、置灰、加载中、错误重试等多种状态。
-
-## 选择按钮的不同状态
-
-### 基本用法
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">基本用法</label>
-        <div class="select dropdown">
-            <input type="hidden">
-            <button type="button" class="select-btn" popovertarget="myPop">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-            <ul id="myPop" class="dropdown-menu" popover>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线咨询</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">领导信箱</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线访谈</button></li>
-                <li role="separator" class="dropdown-divider"></li>
-                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">网站投稿</button></li>
-            </ul>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">空白占位</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="select-icon caret"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">置灰</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">置灰空白占位</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-</form>
-```
-
-### 加载中
-
-```html
-<form class="form">
-    <div class="form-group">
-        <label class="form-label">加载中</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-ring"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">加载中空白占位</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-ring"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">错误重试</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-msg text-danger">网络加载错误</span>
-                <div class="select-icon icon fa fa-refresh"></div>
-            </button>
-        </div>
-    </div>
-</form>
-```
-
-## 组件大小
-
-`.select-lg` / `.select-sm` 控制选择按钮大小，可配合 `.form-group-lg` / `.form-group-sm`（此时 `.select` 无需额外尺寸类）。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">select-lg</label>
-        <div class="select select-lg">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="form-label">select-sm</label>
-        <div class="select select-sm">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-        </div>
-    </div>
-</form>
-```
-
-## 字段校验
-
-在 `.form-group` 上添加 `.has-invalid`，控件边框自动变红。
-
-```html
-<form class="form">
-    <div class="form-group has-invalid">
-        <label class="form-label">基本用法</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">空白占位</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="select-icon caret"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">置灰</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">置灰空白占位</label>
-        <input type="hidden">
-        <div class="select select-disabled">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">请选择XXX</span>
-                <div class="caret select-icon"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">加载中</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon icon loading-ring"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">加载中空白占位</label>
-        <input type="hidden">
-        <div class="select select-loading">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-placeholder">加载中...</span>
-                <div class="select-icon icon loading-ring"></div>
-            </button>
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">错误重试</label>
-        <input type="hidden">
-        <div class="select">
-            <button type="button" class="select-btn" disabled>
-                <span class="select-msg text-danger">网络加载错误</span>
-                <div class="select-icon icon fa fa-refresh"></div>
-            </button>
-        </div>
-    </div>
-</form>
-```
-
-## 表单验证
-
-配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`，`feedback-icon` 和 `control-clear` 放在 `.select` 内。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid has-feedback-icon">
-        <label class="form-label">has-valid</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-            <i class="feedback-icon fa">&#xf00c;</i>
-        </div>
-    </div>
-    <div class="form-group has-invalid has-feedback-icon">
-        <label class="form-label">has-invalid</label>
-        <div class="select">
-            <button type="button" class="select-btn">
-                <span class="select-label">金坷拉</span>
-                <div class="select-icon caret"></div>
-            </button>
-            <button type="button" class="control-clear fa">&#xf057;</button>
-            <i class="feedback-icon fa">&#xf00d;</i>
-        </div>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/sizing.md
----
-# 表单尺寸
-
-通过 `.form-group-lg` / `.form-group-sm` 设置表单项级别尺寸，或 `.form-control-lg` / `.form-control-sm` 控制单个控件尺寸。
-
-## 表单项尺寸
-
-在表单组 `.form-group` 上添加 `.form-group-lg` 或 `.form-group-sm`，标签和控件会同步调整字号与高度。
-
-```html
-<form class="form">
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-    </div>
-</form>
-```
-
-## 水平表单
-
-表单项尺寸在水平表单 `.form-horizontal` 中同样有效，标签还会自动调整垂直对齐。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-    </div>
-</form>
-```
-
-## 内联表单
-
-在内联表单 `.form-inline` 中也可正常使用。
-
-```html
-<form class="form-inline">
-    <div class="form-group form-group-lg">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-    </div>
-</form>
-```
-
-## 控件尺寸
-
-在控件本身添加 `.form-control-lg` / `.form-control-sm`，只影响控件大小，不影响标签。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">form-control-lg</label>
-        <input class="form-control form-control-lg" type="text">
-    </div>
-    <div class="form-group">
-        <label class="form-label">form-control-sm</label>
-        <input class="form-control form-control-sm" type="text">
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/static.md
----
-# 静态控件
-
-如果需要将一行纯文本和 `label` 元素放置于同一行，为 `<p>` 元素添加 `.form-control-static` 类即可。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="form-label">Text</label>
-        <p class="form-control-static">email@example.com</p>
-    </div>
-</form>
-```
-
-## 静态控件尺寸
-
-`.form-control-static` 会随 `.form-group-lg` / `.form-group-sm` 自动适配字号和间距。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group form-group-lg">
-        <label class="form-label">Text</label>
-        <p class="form-control-static">email@example.com</p>
-    </div>
-    <div class="form-group form-group-sm">
-        <label class="form-label">Text</label>
-        <p class="form-control-static">email@example.com</p>
-    </div>
-</form>
-```
-
-
----
-# 源文件: form/switch.md
----
-# 开关按钮
-
-开关按钮（`.switch`）用于布尔值切换的场景，支持选中、禁用和加载中状态。
-
-## 基本用法
-
-`.switch` + `.switch-thumb` 构成开关滑块，配合 `<input type="checkbox">` 和 `<label>`。
-
-```html
-<label>
-    <div class="switch">
-        <div class="switch-thumb"></div>
-        <input type="checkbox">
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked">
-        <div class="switch-thumb"></div>
-        <input type="checkbox">
-    </div>
-    选中
-</label>
-```
-
-## 置灰
-
-添加 `.switch-disabled`，`<input>` 设置 `disabled`。
-
-```html
-<label>
-    <div class="switch switch-disabled">
-        <div class="switch-thumb"></div>
-        <input type="checkbox" disabled>
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked switch-disabled">
-        <div class="switch-thumb"></div>
-        <input type="checkbox" disabled>
-    </div>
-    选中
-</label>
-```
-
-## 加载中
-
-添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-ring`。选中和置灰状态可叠加。
-
-```html
-<label>
-    <div class="switch switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    选中
-</label>
-<label>
-    <div class="switch switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    默认状态
-</label>
-<label>
-    <div class="switch switch-checked switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
-        <input type="checkbox" disabled>
-    </div>
-    选中
-</label>
-```
-
-
----
 # 源文件: form/tags-input.md
 ---
 # 输入框组
@@ -3683,6 +3416,267 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 
 ---
+# 源文件: form/select.md
+---
+# 选择按钮
+
+下拉选择按钮（`.select`）提供自定义样式的选择控件，支持下拉菜单、占位、置灰、加载中、错误重试等多种状态。
+
+## 选择按钮的不同状态
+
+### 基本用法
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">基本用法</label>
+        <div class="select dropdown">
+            <input type="hidden">
+            <button type="button" class="select-btn" popovertarget="myPop">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+            <ul id="myPop" class="dropdown-menu" popover>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线咨询</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">领导信箱</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">在线访谈</button></li>
+                <li role="separator" class="dropdown-divider"></li>
+                <li><button type="button" class="dropdown-item" popovertarget="myPop" popovertargetaction="hide">网站投稿</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">空白占位</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="select-icon caret"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">置灰</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">置灰空白占位</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+</form>
+```
+
+### 加载中
+
+```html
+<form class="form">
+    <div class="form-group">
+        <label class="form-label">加载中</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon icon loading-ring"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">加载中空白占位</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">加载中...</span>
+                <div class="select-icon icon loading-ring"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">错误重试</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-msg text-danger">网络加载错误</span>
+                <div class="select-icon icon fa fa-refresh"></div>
+            </button>
+        </div>
+    </div>
+</form>
+```
+
+## 组件大小
+
+`.select-lg` / `.select-sm` 控制选择按钮大小，可配合 `.form-group-lg` / `.form-group-sm`（此时 `.select` 无需额外尺寸类）。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">select-lg</label>
+        <div class="select select-lg">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">select-sm</label>
+        <div class="select select-sm">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+        </div>
+    </div>
+</form>
+```
+
+## 字段校验
+
+在 `.form-group` 上添加 `.has-invalid`，控件边框自动变红。
+
+```html
+<form class="form">
+    <div class="form-group has-invalid">
+        <label class="form-label">基本用法</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">空白占位</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="select-icon caret"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">置灰</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">置灰空白占位</label>
+        <input type="hidden">
+        <div class="select select-disabled">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">请选择XXX</span>
+                <div class="caret select-icon"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">加载中</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon icon loading-ring"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">加载中空白占位</label>
+        <input type="hidden">
+        <div class="select select-loading">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-placeholder">加载中...</span>
+                <div class="select-icon icon loading-ring"></div>
+            </button>
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">错误重试</label>
+        <input type="hidden">
+        <div class="select">
+            <button type="button" class="select-btn" disabled>
+                <span class="select-msg text-danger">网络加载错误</span>
+                <div class="select-icon icon fa fa-refresh"></div>
+            </button>
+        </div>
+    </div>
+</form>
+```
+
+## 表单验证
+
+配合 `.has-valid` / `.has-invalid` + `.has-feedback-icon`，`feedback-icon` 和 `control-clear` 放在 `.select` 内。
+
+```html
+<form class="form-horizontal">
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+            <i class="feedback-icon fa">&#xf00c;</i>
+        </div>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="select">
+            <button type="button" class="select-btn">
+                <span class="select-label">金坷拉</span>
+                <div class="select-icon caret"></div>
+            </button>
+            <button type="button" class="control-clear fa">&#xf057;</button>
+            <i class="feedback-icon fa">&#xf00d;</i>
+        </div>
+    </div>
+</form>
+```
+
+
+---
 # 源文件: form/textarea.md
 ---
 # 文本域
@@ -3827,6 +3821,191 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 
 ---
+# 源文件: form/checkbox.md
+---
+# 单选和多选
+
+美化的单选（`.radio`）和多选（`.checkbox`）控件，支持默认、选中、部分选中、禁用和校验状态，以及垂直和水平两种布局。
+
+## 多选
+
+使用 `.checkbox-group` 垂直布局，`.checkbox-group-horizontal` 水平布局。`.checkbox` + `.checkbox-checked` / `.checkbox-indeterminate` 控制状态。
+
+### 垂直布局
+
+```html
+<div class="checkbox-group">
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+</div>
+```
+
+### 水平布局
+
+```html
+<div class="checkbox-group-horizontal">
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+</div>
+```
+
+### 置灰
+
+添加 `.checkbox-disabled`，`<input>` 设置 `disabled`。
+
+```html
+<div class="checkbox-group-horizontal">
+    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate checkbox-disabled"><input type="checkbox" disabled></div>部分选中</label>
+</div>
+```
+
+### 校验
+
+在容器上添加 `.has-invalid`。
+
+```html
+<div class="checkbox-group-horizontal has-invalid">
+    <label><div class="checkbox"><input type="checkbox"></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked"><input type="checkbox"></div>选中</label>
+    <label><div class="checkbox checkbox-indeterminate"><input type="checkbox"></div>部分选中</label>
+    <label><div class="checkbox checkbox-disabled"><input type="checkbox" disabled></div>默认状态</label>
+    <label><div class="checkbox checkbox-checked checkbox-disabled"><input type="checkbox" disabled></div>选中</label>
+</div>
+```
+
+## 单选
+
+使用 `.radio-group` 垂直布局，`.radio-group-horizontal` 水平布局。`.radio` + `.radio-checked` 控制状态。
+
+### 垂直布局
+
+```html
+<div class="radio-group">
+    <label><div class="radio"><input type="radio" name="demo"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo"></div>选中</label>
+</div>
+```
+
+### 水平布局
+
+```html
+<div class="radio-group-horizontal">
+    <label><div class="radio"><input type="radio" name="demo2"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo2"></div>选中</label>
+</div>
+```
+
+### 置灰
+
+```html
+<div class="radio-group-horizontal">
+    <label><div class="radio radio-disabled"><input type="radio" name="demo3" disabled></div>默认状态</label>
+    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo3" disabled></div>选中</label>
+</div>
+```
+
+### 校验
+
+```html
+<div class="radio-group-horizontal has-invalid">
+    <label><div class="radio"><input type="radio" name="demo4"></div>默认状态</label>
+    <label><div class="radio radio-checked"><input type="radio" name="demo4"></div>选中</label>
+    <label><div class="radio radio-disabled"><input type="radio" name="demo4" disabled></div>默认状态</label>
+    <label><div class="radio radio-checked radio-disabled"><input type="radio" name="demo4" disabled></div>选中</label>
+</div>
+```
+
+
+---
+# 源文件: form/switch.md
+---
+# 开关按钮
+
+开关按钮（`.switch`）用于布尔值切换的场景，支持选中、禁用和加载中状态。
+
+## 基本用法
+
+`.switch` + `.switch-thumb` 构成开关滑块，配合 `<input type="checkbox">` 和 `<label>`。
+
+```html
+<label>
+    <div class="switch">
+        <div class="switch-thumb"></div>
+        <input type="checkbox">
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked">
+        <div class="switch-thumb"></div>
+        <input type="checkbox">
+    </div>
+    选中
+</label>
+```
+
+## 置灰
+
+添加 `.switch-disabled`，`<input>` 设置 `disabled`。
+
+```html
+<label>
+    <div class="switch switch-disabled">
+        <div class="switch-thumb"></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked switch-disabled">
+        <div class="switch-thumb"></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
+</label>
+```
+
+## 加载中
+
+添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-ring`。选中和置灰状态可叠加。
+
+```html
+<label>
+    <div class="switch switch-loading">
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked switch-loading">
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
+</label>
+<label>
+    <div class="switch switch-disabled switch-loading">
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    默认状态
+</label>
+<label>
+    <div class="switch switch-checked switch-disabled switch-loading">
+        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <input type="checkbox" disabled>
+    </div>
+    选中
+</label>
+```
+
+
+---
 # 源文件: form/toggle-button.md
 ---
 # 开关按钮
@@ -3888,185 +4067,6 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
         <button class="btn btn-toggle btn-toggle-checked">选中</button>
     </div>
 </div>
-```
-
-
----
-# 源文件: form/validation.md
----
-# 表单校验状态
-
-表单校验的视觉反馈，包括 `.has-valid` 成功和 `.has-invalid` 错误状态，支持图标、文字提示和飘浮气泡。
-
-## 表单组验证
-
-在 `.form-group` 上添加 `.has-valid` 或 `.has-invalid`，控件边框和反馈文字会自动变色。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <div class="feedback-text">校验通过</div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">Invalid</label>
-        <input type="text" class="form-control"/>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-## 添加额外的图标
-
-使用 `.has-feedback-icon` 开启图标反馈，放入 `.feedback-icon` 图标元素。成功和错误状态分别控制图标颜色。
-
-```html
-<form class="form">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group has-feedback-icon has-invalid">
-        <label class="form-label">Invalid</label>
-        <textarea class="form-control"></textarea>
-        <i class="feedback-icon fa">&#xf00d;</i>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-## 飘浮气泡文字
-
-使用 `.feedback-tooltip` 替代 `.feedback-text`，提示文字将以半透明背景气泡形式飘浮在控件上方。
-
-```html
-<form class="form">
-    <div class="form-group has-valid">
-        <label class="form-label">has-valid</label>
-        <input type="text" class="form-control"/>
-        <div class="feedback-tooltip">
-            校验通过
-        </div>
-    </div>
-    <div class="form-group has-invalid">
-        <label class="form-label">has-invalid</label>
-        <input type="text" class="form-control"/>
-        <div class="feedback-tooltip">请输入活动名称</div>
-    </div>
-</form>
-```
-
-## 水平表单
-
-校验状态在 `.form-horizontal` 中同样可用。
-
-```html
-<form class="form-horizontal">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group has-feedback-icon has-invalid">
-        <label class="form-label">Invalid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00d;</i>
-        <p class="feedback-text">Example block-level help text here.</p>
-    </div>
-</form>
-```
-
-## 内联表单
-
-`.form-inline` 内联表单也可结合校验状态。
-
-```html
-<form class="form-inline">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">Valid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group has-feedback-icon has-invalid">
-        <label class="form-label">Invalid</label>
-        <input type="text" class="form-control"/>
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-## 表单项尺寸
-
-校验状态可与 `.form-group-lg` / `.form-group-sm` 结合使用。
-
-```html
-<form class="form">
-    <div class="form-group form-group-lg has-feedback-icon has-valid">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-### 水平表单
-
-```html
-<form class="form-horizontal">
-    <div class="form-group form-group-lg has-feedback-icon has-valid">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-### 内联表单
-
-```html
-<form class="form-inline">
-    <div class="form-group form-group-lg has-feedback-icon has-valid">
-        <label class="form-label">form-group-lg</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
-```
-
-## 控件尺寸
-
-校验图标也可配合 `.form-control-lg` / `.form-control-sm` 使用。
-
-```html
-<form class="form-inline">
-    <div class="form-group has-feedback-icon has-valid">
-        <label class="form-label">form-control-lg</label>
-        <input class="form-control form-control-lg" type="text">
-        <i class="feedback-icon fa">&#xf00c;</i>
-    </div>
-    <div class="form-group form-group-sm has-feedback-icon has-invalid">
-        <label class="form-label">form-group-sm</label>
-        <input class="form-control form-control-sm" type="text">
-        <i class="feedback-icon fa">&#xf00d;</i>
-    </div>
-</form>
 ```
 
 
@@ -4200,6 +4200,45 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 
 ---
+# 源文件: helpers/loading.md
+---
+## 加载中
+
+```html
+<div class="loading-ring text-primary" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-ring text-info" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-ring text-success" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-ring text-warning" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-ring text-danger" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-primary" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-info" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-success" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-warning" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+<div class="loading-grow text-danger" role="status">
+    <span class="sr-only">加载中...</span>
+</div>
+```
+
+
+---
 # 源文件: helpers/icon.md
 ---
 # 图标
@@ -4305,45 +4344,6 @@ fa-ban on fa-camera
 <button type="button" class="btn btn-default">
     <i class="fa" aria-hidden="true">&#xf005;</i> Star
 </button>
-```
-
-
----
-# 源文件: helpers/loading.md
----
-## 加载中
-
-```html
-<div class="loading-ring text-primary" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-ring text-info" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-ring text-success" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-ring text-warning" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-ring text-danger" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-primary" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-info" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-success" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-warning" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
-<div class="loading-grow text-danger" role="status">
-    <span class="sr-only">加载中...</span>
-</div>
 ```
 
 
@@ -4576,19 +4576,15 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
 [使用方法](./sidebar.html)
 
-## 模态对话框
+## 覆盖层
 
 | 类 | 描述 |
 |---|---|
-| .modal | 模态遮罩层容器，固定定位覆盖整个视口，半透明黑色背景 |
-| .modal-loading | 加载中状态的模态遮罩，带旋转加载动画 |
-| .modal-center | 使模态内容居中对齐的容器，使用Flexbox布局 |
-| .modal-hit | 模态层的事件捕获层，用于拦截用户点击 |
+| .overlay | 覆盖层容器，覆盖所属容器，半透明黑色背景 |
+| .overlay-viewport | 覆盖层容器，覆盖整个视口 |
+| .overlay-blocker | 覆盖层的事件捕获层，用于拦截用户点击 |
 
-			
-模态遮罩 模态遮罩加载中...
-
-[使用方法](./modal.html)
+[使用方法](./overlay.md)
 
 ## 提示信息
 
@@ -4674,335 +4670,6 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
 
 ---
-# 源文件: components/accordion.md
----
-# 手风琴
-
-手风琴（`.accordion`）将多个可折叠面板组织在一起。
-
-## 基本用法
-
-`.accordion` 容器内包含多个 `.accordion-item`，每个含头部（`.accordion-header` + `.accordion-button`）和可折叠内容（`.accordion-collapsible` + `.accordion-body`）。
-
-```html
-<div class="accordion">
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #1
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item collapsed">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #2
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item collapsed">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #3
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-## 使用图标
-
-可以用`.accordion-indicator`将图标定位到特定位置。
-
-```html
-<div class="accordion">
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #1
-                <i class="accordion-indicator fa">&#xf077;</i>
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">折叠</div>
-        </div>
-    </div>
-    <div class="accordion-item collapsed">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #2
-                <i class="accordion-indicator fa">&#xf078;</i>
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">展开</div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #3
-                <i class="accordion-indicator fa">&#xf068;</i>
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">减号</div>
-        </div>
-    </div>
-    <div class="accordion-item collapsed">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #4
-                <i class="accordion-indicator fa">&#xf067;</i>
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">加号</div>
-        </div>
-    </div>
-</div>
-```
-
-## 去除边框
-
-可以用`.accordion-flush`可以去除四周边框，可以放入已有边框的容器中。
-
-```html
-<div class="accordion accordion-flush">
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #1
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">1</div>
-        </div>
-    </div>
-    <div class="accordion-item collapsed">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #2
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">2</div>
-        </div>
-    </div>
-    <div class="accordion-item collapsed">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
-                Accordion Item #3
-            </button>
-        </h2>
-        <div class="accordion-collapsible">
-            <div class="accordion-body">3</div>
-        </div>
-    </div>
-</div>
-```
-
-## 适配容器高度
-
-
-```html
-<div class="row">
-    <div class="col-md-6">
-        <div style="width: 300px; height: 400px; overflow-y: auto;">
-            <div class="accordion accordion-fill">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button">
-                            包含边框
-                        </button>
-                    </h2>
-                    <div class="accordion-collapsible">
-                        <div class="accordion-body">
-                            很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item collapsed">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div class="accordion-collapsible">
-                        <div class="accordion-body">
-                            少内容
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item collapsed">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div class="accordion-collapsible">
-                        <div class="accordion-body">
-                            少内容
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div style="width: 300px; height: 400px; overflow-y: auto;">
-            <div class="accordion accordion-flush accordion-fill">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button">
-                            去除边框
-                        </button>
-                    </h2>
-                    <div class="accordion-collapsible">
-                        <div class="accordion-body">
-                            很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item collapsed">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div class="accordion-collapsible">
-                        <div class="accordion-body">
-                            少内容
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item collapsed">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div class="accordion-collapsible">
-                        <div class="accordion-body">
-                            少内容
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-## 黑暗模式
-
-使用`.accordion-dark`或容器上使用`.dark`可以开启黑暗模式。如果使用`.accordion-dark`一般还要额外添加`.dark`，使得子组件也是黑暗模式。
-
-```html
-<div style="width: 300px; border: 4px solid #000;">
-    <div class="accordion accordion-dark dark">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button">
-                    Accordion Item #1
-                </button>
-            </h2>
-            <div class="accordion-collapsible">
-                <div class="accordion-body">
-                    1
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item collapsed">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div class="accordion-collapsible">
-                <div class="accordion-body">
-                    2
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item collapsed">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div class="accordion-collapsible">
-                <div class="accordion-body">
-                    3
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-## 兼容 bootstrap 写法
-
-bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-collapsible`。bootstrap 没有 `accordion-fill` 功能。
-
-```html
-<div class="accordion" id="bs-accordion">
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion1">
-                Accordion Item #1
-            </button>
-        </h2>
-        <div id="accordion1" class="accordion-collapse collapse show">
-            <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion2">
-                Accordion Item #2
-            </button>
-        </h2>
-        <div id="accordion2" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion3">
-                Accordion Item #3
-            </button>
-        </h2>
-        <div id="accordion3" class="accordion-collapse collapse">
-            <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-
----
 # 源文件: components/breadcrumb.md
 ---
 ```html
@@ -5019,657 +4686,6 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
     <span>Data</span>
 </nav>
 ```
-
-
----
-# 源文件: components/carousel.md
----
-# 轮播图
-
-轮播图用于循环展示一系列内容，支持图片轮播、指示器导航和前后切换。
-
-## 基本用法
-
-`.carousel` 容器内包含图片、文字说明（`.carousel-caption`）、前后控制按钮（`.carousel-control-prev` / `.carousel-control-next`）和底部指示器（`.carousel-indicators`）。
-
-```html
-<div class="carousel" role="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img width="100%" src="../images/functions.jpg"/>
-            <div class="carousel-caption">
-                <h3>金坷垃</h3>
-                <p>肥料掺了金坷垃，一袋能顶两袋撒。来自美国的金坷垃是美国肥料研究中心CNT的最新科技成果。</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img width="100%" src="../images/github.jpg"/>
-            <div class="carousel-caption">
-                <h3>金氮丹</h3>
-                <p>金氮丹是来自大洋彼岸的美国品牌，含有β乳胶剂,与土壤合为一体，下雨不流失，日晒不挥发，从而使肥料的利用率大幅增加，是全球唯一不怕日晒雨淋的肥料，让世界农民刮目相看。</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img width="100%" src="../images/devices.jpg"/>
-            <div class="carousel-caption">
-                <h3>凭良心</h3>
-                <p>本品是国际最安全环保型的广谱专用杀虫剂，采用国际领先生产设备。</p>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev fa" href="javascript:;">&#xf104;</a>
-    <a class="carousel-control-next fa" href="javascript:;">&#xf105;</a>
-    <ol class="carousel-indicators">
-        <li class="active fa">&#xf111;</li>
-        <li class="fa">&#xf111;</li>
-        <li class="fa">&#xf111;</li>
-    </ol>
-</div>
-```
-
-
----
-# 源文件: components/collapse.md
----
-# 折叠块
-
-折叠块用于隐藏/显示内容区域，通过切换 `.show` 类来控制展开和折叠。这个类用于兼容 Bootstrap 的 `collapse`，本项目推荐使用 [collapsible](collapsible.md)。
-
-## 基本用法
-
-`.collapse` 默认隐藏，添加 `.show` 后内容展开。
-
-```html
-<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
-    切换折叠
-</button>
-<div id="demo" class="collapse">
-    <div class="well m-0">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-    </div>
-</div>
-```
-
-## 默认展开的可折叠内容。
-
-```html
-<div class="collapse show">
-    <div class="well m-0">
-        默认展开的可折叠内容。
-    </div>
-</div>
-```
-
-## 水平可折叠块
-
-```html
-<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">
-    切换折叠
-</button>
-<div id="demo2" class="collapse-horizontal">
-    <div class="well m-0" style="width: 300px;">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-    </div>
-</div>
-```
-
-
----
-# 源文件: components/collapsible.md
----
-# 可折叠块
-
-`.collapsible` = "可被折叠的" = 现在开着，但能关上。通过切换 `.hide` 类来控制开启和关上。
-
-```html
-<button type="button" class="btn btn-primary" onclick="$('#demo').toggleClass('hide')">
-    切换折叠
-</button>
-<div id="demo" class="collapsible">
-    <div class="well m-0">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-    </div>
-</div>
-```
-
-## 隐藏状态
-
-```html
-<div id="demo" class="collapsible hide">
-    <div class="well m-0">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-    </div>
-</div>
-```
-
-## 水平可折叠块
-
-```html
-<button type="button" class="btn btn-primary" onclick="$('#demo2').toggleClass('hide')">
-    切换折叠
-</button>
-<div id="demo2" class="collapsible-horizontal">
-    <div class="well m-0" style="width: 300px;">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-    </div>
-</div>
-```
-
-
----
-# 源文件: components/dialog.md
----
-# 对话框
-
-对话框（`.dialog`）用于在页面中弹出浮层进行内容展示或交互，支持多种语境色主题。
-
-## 基本用法
-
-```html
-<div class="dialog">
-    <div class="dialog-header">
-        <span class="dialog-title">对话框标题</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body">
-        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-    </div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-primary">确定</button>
-    </div>
-</div>
-```
-
-## 语境色
-
-### 主题色对话框
-
-```html
-<div class="dialog dialog-primary">
-    <div class="dialog-header">
-        <span class="dialog-title">primary对话框</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body"><p>内容</p></div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-primary">确定</button>
-    </div>
-</div>
-```
-
-### 成功对话框
-
-```html
-<div class="dialog dialog-success">
-    <div class="dialog-header">
-        <span class="dialog-title">success对话框</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body"><p>内容</p></div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-success">确定</button>
-    </div>
-</div>
-```
-
-### 信息对话框
-
-```html
-<div class="dialog dialog-info">
-    <div class="dialog-header">
-        <span class="dialog-title">info对话框</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body"><p>内容</p></div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-info">确定</button>
-    </div>
-</div>
-```
-
-### 警告对话框
-
-```html
-<div class="dialog dialog-warning">
-    <div class="dialog-header">
-        <span class="dialog-title">warning对话框</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body"><p>内容</p></div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-warning">确定</button>
-    </div>
-</div>
-```
-
-### 危险对话框
-
-```html
-<div class="dialog dialog-danger">
-    <div class="dialog-header">
-        <span class="dialog-title">danger对话框</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body"><p>内容</p></div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-danger">确定</button>
-    </div>
-</div>
-```
-
-### 暗色对话框
-
-```html
-<div class="dialog dialog-dark">
-    <div class="dialog-header">
-        <span class="dialog-title">dark对话框</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body"><p>内容</p></div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-dark">确定</button>
-    </div>
-</div>
-```
-
-## 带外边框
-
-使用 `.dialog-rim` 为对话框添加额外的外层边框。
-
-```html
-<div class="dialog dialog-rim">
-    <div class="dialog-header">
-        <span class="dialog-title">带外边框</span>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="dialog-body"><p>内容</p></div>
-    <div class="dialog-footer">
-        <button type="button" class="btn btn-primary">确定</button>
-    </div>
-</div>
-```
-
-## 核心类
-
-| 类 | 描述 |
-|---|---|
-| `.dialog` | 对话框容器 |
-| `.dialog-header` | 头部区域 |
-| `.dialog-title` | 标题文字 |
-| `.dialog-body` | 主体内容 |
-| `.dialog-footer` | 底部按钮区 |
-| `.dialog-primary` / `.dialog-success` / `.dialog-info` / `.dialog-warning` / `.dialog-danger` / `.dialog-dark` | 语境色主题 |
-| `.dialog-rim` | 外边框样式 |
-
-
----
-# 源文件: components/dropdown.md
----
-# 下拉菜单
-
-下拉菜单（`.dropdown`）配合按钮组可实现弹出菜单，支持多种状态、方向控制和多级子菜单。
-
-## 状态
-
-菜单项支持默认、置灰（`disabled`）、激活（`.active`）三种状态，以及分组标题（`.dropdown-header`）和分割线（`.dropdown-divider`）。
-
-```html
-<div class="btn-group dropdown">
-    <button class="btn btn-default" type="button" popovertarget="dropdownMenu3">
-        状态
-        <span class="caret"></span>
-    </button>
-    <ul id="dropdownMenu3" class="dropdown-menu" popover>
-        <li class="dropdown-header">分组标题</li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">默认状态</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide" disabled>置灰状态</button></li>
-        <li class="dropdown-header">分组标题</li>
-        <li><button type="button" class="dropdown-item active" popovertarget="dropdownMenu3" popovertargetaction="hide">激活状态</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">分割线</button></li>
-    </ul>
-</div>
-```
-
-## 按钮组
-
-使用 `.dropdown-toggle-split` 将按钮与下拉触发器分离，实现左右分区的按钮组。
-
-```html
-<div class="btn-group dropdown">
-    <button class="btn btn-default" type="button">
-        按钮组
-    </button>
-    <button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu4">
-        <span class="caret"></span>
-    </button>
-    <ul id="dropdownMenu4" class="dropdown-menu" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Separated link</button></li>
-    </ul>
-</div>
-```
-
-## 对齐
-
-使用 `.dropdown-menu-right` 让菜单向右对齐容器的右边界。
-
-```html
-<div class="btn-group dropdown">
-    <button class="btn btn-default" type="button">
-        对齐
-    </button>
-    <button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu5">
-        <span class="caret"></span>
-    </button>
-    <ul id="dropdownMenu5" class="dropdown-menu dropdown-menu-right" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Separated link</button></li>
-    </ul>
-</div>
-```
-
-## 方向
-
-通过 `.dropdown`（下拉）、`.dropup`（上拉）、`.dropright`（右拉）、`.dropleft`（左拉）控制菜单弹出方向。
-
-```html
-<div class="dropdown btn-group">
-    <button class="btn btn-default" type="button" popovertarget="dropdownMenu1">
-        下拉
-        <i class="btn-icon-right fa">&#xf0d7;</i>
-    </button>
-    <ul id="dropdownMenu1" class="dropdown-menu" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Separated link</button></li>
-    </ul>
-</div>
-<div class="dropup btn-group">
-    <button class="btn btn-default" type="button" popovertarget="dropupMenu1">
-        上拉
-        <i class="btn-icon-right fa">&#xf0d8;</i>
-    </button>
-    <ul id="dropupMenu1" class="dropdown-menu" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Separated link</button></li>
-    </ul>
-</div>
-<div class="dropright btn-group">
-    <button class="btn btn-default" type="button" popovertarget="droprightMenu1">
-        右拉
-        <i class="btn-icon-right fa">&#xf0da;</i>
-    </button>
-    <ul id="droprightMenu1" class="dropdown-menu" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Separated link</button></li>
-    </ul>
-</div>
-<div class="dropleft btn-group">
-    <button class="btn btn-default" type="button" popovertarget="dropleftMenu1">
-        <i class="btn-icon-left fa">&#xf0d9;</i>
-        左拉
-    </button>
-    <ul id="dropleftMenu1" class="dropdown-menu" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Separated link</button></li>
-    </ul>
-</div>
-```
-
-## 子菜单
-
-使用 `.dropright-submenu` 可实现多级子菜单。支持点击（`popovertarget`）和经过（`interestfor`）两种触发方式。
-
-```html
-<div class="dropdown btn-group">
-    <button class="btn btn-default" type="button" popovertarget="firstMenu1">
-        点击展开
-        <span class="caret"></span>
-    </button>
-    <ul id="firstMenu1" class="dropdown-menu" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li class="dropright-submenu">
-            <button type="button" class="dropdown-item" popovertarget="secondMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-            <ul id="secondMenu1" class="dropdown-menu" popover>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
-                <li class="dropright-submenu">
-                    <button type="button" class="dropdown-item" popovertarget="thirdMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-                    <ul id="thirdMenu1" class="dropdown-menu" popover>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<div class="dropdown btn-group">
-    <button class="btn btn-default" type="button" interestfor="firstMenu2">
-        经过展开(实验性)
-        <span class="caret"></span>
-    </button>
-    <ul id="firstMenu2" class="dropdown-menu" popover>
-        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Another action</button></li>
-        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Something else here</button></li>
-        <li role="separator" class="dropdown-divider"></li>
-        <li class="dropright-submenu">
-            <button type="button" class="dropdown-item" interestfor="secondMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-            <ul id="secondMenu2" class="dropdown-menu" popover>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
-                <li class="dropright-submenu">
-                    <button type="button" class="dropdown-item" interestfor="thirdMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
-                    <ul id="thirdMenu2" class="dropdown-menu" popover>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
-```
-
-
----
-# 源文件: components/modal-loading.md
----
-# 模态遮罩 - 加载中
-
-模态遮罩的加载中变体，在遮罩中央显示环形加载动画，适用于后台处理状态的展示。
-
-## 基本用法
-
-```html
-<div class="modal modal-loading">
-    <div class="loading-ring" role="status">
-        <span class="sr-only">加载中...</span>
-    </div>
-</div>
-```
-
-## 核心类
-
-| 类 | 描述 |
-|---|---|
-| `.modal-loading` | 加载中的模态遮罩，带旋转动画 |
-
-
----
-# 源文件: components/modal.md
----
-# 模态遮罩
-
-模态遮罩（`.modal`）用于覆盖整个页面，阻止用户与背景内容交互，常用于配合对话框、加载等场景。
-
-## 基本用法
-
-```html
-<div class="modal">
-    <div class="modal-center">
-        <div class="dialog">
-            <div class="dialog-header">
-                <span class="dialog-title">标题</span>
-                <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-            </div>
-            <div class="dialog-body"><p>模态遮罩内容</p></div>
-            <div class="dialog-footer">
-                <button type="button" class="btn btn-default">取消</button>
-                <button type="button" class="btn btn-primary">确定</button>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-## 核心类
-
-| 类 | 描述 |
-|---|---|
-| `.modal` | 模态遮罩层，固定定位覆盖整个视口 |
-| `.modal-center` | 居中对齐内容的容器 |
-| `.modal-hit` | 事件捕获层，拦截点击关闭 |
-
-
----
-# 源文件: components/msgbox.md
----
-# 消息框
-
-消息框（`.msgbox`）是一种特殊的对话框，左侧带有图标，适用于操作确认和状态提示。支持多种尺寸和语境色主题。
-
-## 基本用法
-
-```html
-<div class="msgbox">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-warning">&#xf06a;</i>
-        <h4 class="msgbox-title">提示标题</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body">
-        <p>您确定要执行此操作吗？</p>
-    </div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-primary">确定</button>
-    </div>
-</div>
-```
-
-## 语境色
-
-### 信息消息框
-
-```html
-<div class="msgbox msgbox-info">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-info">&#xf05a;</i>
-        <h4 class="msgbox-title">信息</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>这是一条提示信息。</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-info">确定</button>
-    </div>
-</div>
-```
-
-### 成功消息框
-
-```html
-<div class="msgbox msgbox-success">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-success">&#xf058;</i>
-        <h4 class="msgbox-title">成功</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>操作已成功完成！</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-success">确定</button>
-    </div>
-</div>
-```
-
-### 警告消息框
-
-```html
-<div class="msgbox msgbox-warning">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-warning">&#xf06a;</i>
-        <h4 class="msgbox-title">警告</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>此操作不可撤销！</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-warning">确定</button>
-    </div>
-</div>
-```
-
-### 危险消息框
-
-```html
-<div class="msgbox msgbox-danger">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-danger">&#xf057;</i>
-        <h4 class="msgbox-title">错误</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>操作失败，请重试。</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-danger">确定</button>
-    </div>
-</div>
-```
-
-## 核心类
-
-| 类 | 描述 |
-|---|---|
-| `.msgbox` | 消息框容器，顶部带4px语境色边框 |
-| `.msgbox-lg` / `.msgbox-md` / `.msgbox-sm` | 尺寸 |
-| `.msgbox-header` | 头部区域 |
-| `.msgbox-title` | 标题 |
-| `.msgbox-body` | 主体内容 |
-| `.msgbox-footer` | 底部按钮区 |
-| `.msgbox-info` / `.msgbox-success` / `.msgbox-warning` / `.msgbox-danger` | 语境色 |
 
 
 ---
@@ -5735,6 +4751,100 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
         <a class="nav-item nav-link" href="javascript:void 0">个人设置</a>
         <a class="nav-item nav-link" href="javascript:void 0">消息</a>
     </nav>
+</div>
+```
+
+
+---
+# 源文件: components/tabs.md
+---
+# 标签页
+
+标签页（`.tabs`）配合导航组件实现内容面板的切换展示。
+
+## 基本用法
+
+`.tabs` 容器内包含 `.nav-tabs` 导航和 `.tabs-content` 内容面板，`.tabs-pane` + `.active` 标记当前激活面板。
+
+```html
+<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs" role="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
+    </div>
+</div>
+```
+
+## 变换方向的标签页
+
+### 左排 (.tabs-left)
+
+导航在左侧，内容在右侧。
+
+```html
+<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs tabs-left" role="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
+    </div>
+</div>
+```
+
+### 右排 (.tabs-right)
+
+导航在右侧，内容在左侧。
+
+```html
+<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs tabs-right" role="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
+    </div>
+</div>
+```
+
+### 下排 (.tabs-below)
+
+导航在内容下方，`.tabs-content` 需放在 `.nav-tabs` 前面。
+
+```html
+<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs tabs-below" role="tabbable">
+        <div class="tabs-content">
+            <div class="tabs-pane active">111</div>
+            <div class="tabs-pane">222</div>
+            <div class="tabs-pane">333</div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+    </div>
 </div>
 ```
 
@@ -6152,6 +5262,331 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 
 ---
+# 源文件: components/progress.md
+---
+# 进度条
+
+进度条用于展示任务完成的进度，支持多种语境色和尺寸。
+
+## 基本用法
+
+```html
+<div class="progress">
+    <div class="progress-bar" style="width:26%">26%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" style="width:26%">26%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-info" style="width:16%">18%</div><div class="progress-bar progress-bar-danger" style="width:5%">5%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-warning" style="width:26%">26%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-danger" style="width:26%">26%</div>
+</div>
+<div class="progress progress-sm">
+    <div class="progress-bar progress-bar-danger" style="width:26%"></div>
+</div>
+<div class="progress progress-xs">
+    <div class="progress-bar progress-bar-danger" style="width:26%"></div>
+</div>
+```
+
+
+---
+# 源文件: components/carousel.md
+---
+# 轮播图
+
+轮播图用于循环展示一系列内容，支持图片轮播、指示器导航和前后切换。
+
+## 基本用法
+
+`.carousel` 容器内包含图片、文字说明（`.carousel-caption`）、前后控制按钮（`.carousel-control-prev` / `.carousel-control-next`）和底部指示器（`.carousel-indicators`）。
+
+```html
+<div class="carousel" role="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img width="100%" src="../images/functions.jpg"/>
+            <div class="carousel-caption">
+                <h3>金坷垃</h3>
+                <p>肥料掺了金坷垃，一袋能顶两袋撒。来自美国的金坷垃是美国肥料研究中心CNT的最新科技成果。</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img width="100%" src="../images/github.jpg"/>
+            <div class="carousel-caption">
+                <h3>金氮丹</h3>
+                <p>金氮丹是来自大洋彼岸的美国品牌，含有β乳胶剂,与土壤合为一体，下雨不流失，日晒不挥发，从而使肥料的利用率大幅增加，是全球唯一不怕日晒雨淋的肥料，让世界农民刮目相看。</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img width="100%" src="../images/devices.jpg"/>
+            <div class="carousel-caption">
+                <h3>凭良心</h3>
+                <p>本品是国际最安全环保型的广谱专用杀虫剂，采用国际领先生产设备。</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev fa" href="javascript:;">&#xf104;</a>
+    <a class="carousel-control-next fa" href="javascript:;">&#xf105;</a>
+    <ol class="carousel-indicators">
+        <li class="active fa">&#xf111;</li>
+        <li class="fa">&#xf111;</li>
+        <li class="fa">&#xf111;</li>
+    </ol>
+</div>
+```
+
+
+---
+# 源文件: components/dropdown.md
+---
+# 下拉菜单
+
+下拉菜单（`.dropdown`）配合按钮组可实现弹出菜单，支持多种状态、方向控制和多级子菜单。
+
+## 状态
+
+菜单项支持默认、置灰（`disabled`）、激活（`.active`）三种状态，以及分组标题（`.dropdown-header`）和分割线（`.dropdown-divider`）。
+
+```html
+<div class="btn-group dropdown">
+    <button class="btn btn-default" type="button" popovertarget="dropdownMenu3">
+        状态
+        <span class="caret"></span>
+    </button>
+    <ul id="dropdownMenu3" class="dropdown-menu" popover>
+        <li class="dropdown-header">分组标题</li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">默认状态</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide" disabled>置灰状态</button></li>
+        <li class="dropdown-header">分组标题</li>
+        <li><button type="button" class="dropdown-item active" popovertarget="dropdownMenu3" popovertargetaction="hide">激活状态</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu3" popovertargetaction="hide">分割线</button></li>
+    </ul>
+</div>
+```
+
+## 按钮组
+
+使用 `.dropdown-toggle-split` 将按钮与下拉触发器分离，实现左右分区的按钮组。
+
+```html
+<div class="btn-group dropdown">
+    <button class="btn btn-default" type="button">
+        按钮组
+    </button>
+    <button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu4">
+        <span class="caret"></span>
+    </button>
+    <ul id="dropdownMenu4" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu4" popovertargetaction="hide">Separated link</button></li>
+    </ul>
+</div>
+```
+
+## 对齐
+
+使用 `.dropdown-menu-right` 让菜单向右对齐容器的右边界。
+
+```html
+<div class="btn-group dropdown">
+    <button class="btn btn-default" type="button">
+        对齐
+    </button>
+    <button class="btn btn-default dropdown-toggle-split" type="button" popovertarget="dropdownMenu5">
+        <span class="caret"></span>
+    </button>
+    <ul id="dropdownMenu5" class="dropdown-menu dropdown-menu-right" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu5" popovertargetaction="hide">Separated link</button></li>
+    </ul>
+</div>
+```
+
+## 方向
+
+通过 `.dropdown`（下拉）、`.dropup`（上拉）、`.dropright`（右拉）、`.dropleft`（左拉）控制菜单弹出方向。
+
+```html
+<div class="dropdown btn-group">
+    <button class="btn btn-default" type="button" popovertarget="dropdownMenu1">
+        下拉
+        <i class="btn-icon-right fa">&#xf0d7;</i>
+    </button>
+    <ul id="dropdownMenu1" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropdownMenu1" popovertargetaction="hide">Separated link</button></li>
+    </ul>
+</div>
+<div class="dropup btn-group">
+    <button class="btn btn-default" type="button" popovertarget="dropupMenu1">
+        上拉
+        <i class="btn-icon-right fa">&#xf0d8;</i>
+    </button>
+    <ul id="dropupMenu1" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropupMenu1" popovertargetaction="hide">Separated link</button></li>
+    </ul>
+</div>
+<div class="dropright btn-group">
+    <button class="btn btn-default" type="button" popovertarget="droprightMenu1">
+        右拉
+        <i class="btn-icon-right fa">&#xf0da;</i>
+    </button>
+    <ul id="droprightMenu1" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="droprightMenu1" popovertargetaction="hide">Separated link</button></li>
+    </ul>
+</div>
+<div class="dropleft btn-group">
+    <button class="btn btn-default" type="button" popovertarget="dropleftMenu1">
+        <i class="btn-icon-left fa">&#xf0d9;</i>
+        左拉
+    </button>
+    <ul id="dropleftMenu1" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li><button type="button" class="dropdown-item" popovertarget="dropleftMenu1" popovertargetaction="hide">Separated link</button></li>
+    </ul>
+</div>
+```
+
+## 子菜单
+
+使用 `.dropright-submenu` 可实现多级子菜单。支持点击（`popovertarget`）和经过（`interestfor`）两种触发方式。
+
+```html
+<div class="dropdown btn-group">
+    <button class="btn btn-default" type="button" popovertarget="firstMenu1">
+        点击展开
+        <span class="caret"></span>
+    </button>
+    <ul id="firstMenu1" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li class="dropright-submenu">
+            <button type="button" class="dropdown-item" popovertarget="secondMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+            <ul id="secondMenu1" class="dropdown-menu" popover>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Second level link</button></li>
+                <li class="dropright-submenu">
+                    <button type="button" class="dropdown-item" popovertarget="thirdMenu1">点击展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+                    <ul id="thirdMenu1" class="dropdown-menu" popover>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu1" popovertargetaction="hide">Third level link</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="dropdown btn-group">
+    <button class="btn btn-default" type="button" interestfor="firstMenu2">
+        经过展开(实验性)
+        <span class="caret"></span>
+    </button>
+    <ul id="firstMenu2" class="dropdown-menu" popover>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Another action</button></li>
+        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Something else here</button></li>
+        <li role="separator" class="dropdown-divider"></li>
+        <li class="dropright-submenu">
+            <button type="button" class="dropdown-item" interestfor="secondMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+            <ul id="secondMenu2" class="dropdown-menu" popover>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+                <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Second level link</button></li>
+                <li class="dropright-submenu">
+                    <button type="button" class="dropdown-item" interestfor="thirdMenu2">经过展开<i class="dropdown-item-right fa">&#xf0da;</i></button>
+                    <ul id="thirdMenu2" class="dropdown-menu" popover>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+                        <li><button type="button" class="dropdown-item" popovertarget="firstMenu2" popovertargetaction="hide">Third level link</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+```
+
+
+---
+# 源文件: components/tooltip.md
+---
+# 工具提示
+
+工具提示（`.tooltip`）用于在元素旁边显示提示气泡，支持上、右、下、左四个弹出方向。
+
+## 样式用法
+
+<style>
+  .ting-example .tooltip {
+    position: relative;
+  }
+</style>
+
+```html
+<div class="tooltip tooltip-left">
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the left
+    </div>
+</div>
+<div class="tooltip tooltip-top">
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the top
+    </div>
+</div>
+<div class="tooltip tooltip-bottom">
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the bottom
+    </div>
+</div>
+<div class="tooltip tooltip-right">
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Tooltip on the right
+    </div>
+</div>
+```
+
+
+---
 # 源文件: components/popover.md
 ---
 # 弹出框
@@ -6199,77 +5634,467 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 
 ---
-# 源文件: components/progress.md
+# 源文件: components/collapsible.md
 ---
-# 进度条
+# 可折叠块
 
-进度条用于展示任务完成的进度，支持多种语境色和尺寸。
-
-## 基本用法
+`.collapsible` = "可被折叠的" = 现在开着，但能关上。通过切换 `.hide` 类来控制开启和关上。
 
 ```html
-<div class="progress">
-    <div class="progress-bar" style="width:26%">26%</div>
+<button type="button" class="btn btn-primary" onclick="$('#demo').toggleClass('hide')">
+    切换折叠
+</button>
+<div id="demo" class="collapsible">
+    <div class="well m-0">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    </div>
 </div>
-<div class="progress">
-    <div class="progress-bar progress-bar-success" style="width:26%">26%</div>
+```
+
+## 隐藏状态
+
+```html
+<div id="demo" class="collapsible hide">
+    <div class="well m-0">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    </div>
 </div>
-<div class="progress">
-    <div class="progress-bar progress-bar-info" style="width:16%">18%</div><div class="progress-bar progress-bar-danger" style="width:5%">5%</div>
-</div>
-<div class="progress">
-    <div class="progress-bar progress-bar-warning" style="width:26%">26%</div>
-</div>
-<div class="progress">
-    <div class="progress-bar progress-bar-danger" style="width:26%">26%</div>
-</div>
-<div class="progress progress-sm">
-    <div class="progress-bar progress-bar-danger" style="width:26%"></div>
-</div>
-<div class="progress progress-xs">
-    <div class="progress-bar progress-bar-danger" style="width:26%"></div>
+```
+
+## 水平可折叠块
+
+```html
+<button type="button" class="btn btn-primary" onclick="$('#demo2').toggleClass('hide')">
+    切换折叠
+</button>
+<div id="demo2" class="collapsible-horizontal">
+    <div class="well m-0" style="width: 300px;">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    </div>
 </div>
 ```
 
 
 ---
-# 源文件: components/select-list.md
+# 源文件: components/collapse.md
 ---
-# 可选列表
+# 折叠块
 
-可选列表（`.select-list`）是一种带复选框、拖动手柄和操作工具的可选择列表项容器。
+折叠块用于隐藏/显示内容区域，通过切换 `.show` 类来控制展开和折叠。这个类用于兼容 Bootstrap 的 `collapse`，本项目推荐使用 [collapsible](collapsible.md)。
 
 ## 基本用法
 
-每个 `<li>` 内包含操作工具（`.select-list-tools`，悬停显示）、拖动手柄（`.select-list-drag`）、复选框和标签文字。
+`.collapse` 默认隐藏，添加 `.show` 后内容展开。
 
 ```html
-<div class="row row-gx-4 mb-4">
-    <div class="col-md-3 col-gx-4">
-        <ul class="select-list">
-            <li>
-                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-                <input type="checkbox" value=""/>
-                <span class="valign-middle">环境变量设</span>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+    切换折叠
+</button>
+<div id="demo" class="collapse">
+    <div class="well m-0">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    </div>
+</div>
+```
+
+## 默认展开的可折叠内容。
+
+```html
+<div class="collapse show">
+    <div class="well m-0">
+        默认展开的可折叠内容。
+    </div>
+</div>
+```
+
+## 水平可折叠块
+
+```html
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">
+    切换折叠
+</button>
+<div id="demo2" class="collapse-horizontal">
+    <div class="well m-0" style="width: 300px;">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+    </div>
+</div>
+```
+
+
+---
+# 源文件: components/accordion.md
+---
+# 手风琴
+
+手风琴（`.accordion`）将多个可折叠面板组织在一起。
+
+## 基本用法
+
+`.accordion` 容器内包含多个 `.accordion-item`，每个含头部（`.accordion-header` + `.accordion-button`）和可折叠内容（`.accordion-collapsible` + `.accordion-body`）。
+
+```html
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+## 使用图标
+
+可以用`.accordion-indicator`将图标定位到特定位置。
+
+```html
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #1
+                <i class="accordion-indicator fa">&#xf077;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">折叠</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #2
+                <i class="accordion-indicator fa">&#xf078;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">展开</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #3
+                <i class="accordion-indicator fa">&#xf068;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">减号</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #4
+                <i class="accordion-indicator fa">&#xf067;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">加号</div>
+        </div>
+    </div>
+</div>
+```
+
+## 去除边框
+
+可以用`.accordion-flush`可以去除四周边框，可以放入已有边框的容器中。
+
+```html
+<div class="accordion accordion-flush">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">1</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">2</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">3</div>
+        </div>
+    </div>
+</div>
+```
+
+## 适配容器高度
+
+
+```html
+<div class="row">
+    <div class="col-md-6">
+        <div style="width: 300px; height: 400px; overflow-y: auto;">
+            <div class="accordion accordion-fill">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            包含边框
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div style="width: 300px; height: 400px; overflow-y: auto;">
+            <div class="accordion accordion-flush accordion-fill">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            去除边框
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+## 黑暗模式
+
+使用`.accordion-dark`或容器上使用`.dark`可以开启黑暗模式。如果使用`.accordion-dark`一般还要额外添加`.dark`，使得子组件也是黑暗模式。
+
+```html
+<div style="width: 300px; border: 4px solid #000;">
+    <div class="accordion accordion-dark dark">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    1
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    2
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    3
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+## 兼容 bootstrap 写法
+
+bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-collapsible`。bootstrap 没有 `accordion-fill` 功能。
+
+```html
+<div class="accordion" id="bs-accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion1">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div id="accordion1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion2">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div id="accordion2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion3">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="accordion3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+
+---
+# 源文件: components/tree.md
+---
+# 树
+
+树控件（`.tree`）用于展示层级结构数据，支持节点的展开/折叠和选中状态。`collapsed`表示节点折叠。`tree-toggler`表示节点展开/折叠按钮，需要加上`tabindex="0"`属性。`active`表示节点选中。
+
+## 基本用法
+
+```html
+<div style="width: 300px; height: 300px; overflow: auto; border: 4px solid #000;">
+    <div class="tree">
+        <ul>
+            <li class="collapsed">
+                <i class="tree-toggler" tabindex="0"></i>
+                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <ul>
+                    <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>重要会议</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>视频新闻</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>各地要闻</a></li>
+                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>国际局势</a></li>
+                </ul>
+            </li>
+            <li class="collapsed">
+                <i class="tree-toggler" tabindex="0"></i>
+                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <ul>
+                    <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
+                    <li><a href="javascript:void 0">重要会议</a></li>
+                    <li><a href="javascript:void 0">视频新闻</a></li>
+                    <li><a href="javascript:void 0">各地要闻</a></li>
+                    <li><a href="javascript:void 0">国际局势</a></li>
+                </ul>
             </li>
             <li>
-                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-                <input type="checkbox" value=""/>
-                <span class="valign-middle">环境变量设</span>
-            </li>
-            <li>
-                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-                <input type="checkbox" value=""/>
-                <span class="valign-middle">环境变量设</span>
-            </li>
-            <li>
-                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
-                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
-                <input type="checkbox" value=""/>
-                <span class="valign-middle">环境变量设</span>
+                <i class="tree-toggler" tabindex="0"></i>
+                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <ul>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>重要会议</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>视频新闻</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>各地要闻</label></li>
+                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>国际局势</label></li>
+                </ul>
             </li>
         </ul>
     </div>
@@ -6471,95 +6296,17 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 
 ---
-# 源文件: components/tabs.md
+# 源文件: components/overlay.md
 ---
-# 标签页
+# 覆盖层
 
-标签页（`.tabs`）配合导航组件实现内容面板的切换展示。
+模态遮罩（`.overlay`）用于覆盖当前容器，配合（`.overlay-blocker`）阻止用户与背景内容交互，常用于配合对话框、加载等场景。
 
 ## 基本用法
 
-`.tabs` 容器内包含 `.nav-tabs` 导航和 `.tabs-content` 内容面板，`.tabs-pane` + `.active` 标记当前激活面板。
-
 ```html
-<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-    <div class="tabs" role="tabbable">
-        <ul class="nav nav-tabs">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-        </ul>
-        <div class="tabs-content">
-            <div class="tabs-pane active">111</div>
-            <div class="tabs-pane">222</div>
-            <div class="tabs-pane">333</div>
-        </div>
-    </div>
-</div>
-```
-
-## 变换方向的标签页
-
-### 左排 (.tabs-left)
-
-导航在左侧，内容在右侧。
-
-```html
-<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-    <div class="tabs tabs-left" role="tabbable">
-        <ul class="nav nav-tabs">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-        </ul>
-        <div class="tabs-content">
-            <div class="tabs-pane active">111</div>
-            <div class="tabs-pane">222</div>
-            <div class="tabs-pane">333</div>
-        </div>
-    </div>
-</div>
-```
-
-### 右排 (.tabs-right)
-
-导航在右侧，内容在左侧。
-
-```html
-<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-    <div class="tabs tabs-right" role="tabbable">
-        <ul class="nav nav-tabs">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-        </ul>
-        <div class="tabs-content">
-            <div class="tabs-pane active">111</div>
-            <div class="tabs-pane">222</div>
-            <div class="tabs-pane">333</div>
-        </div>
-    </div>
-</div>
-```
-
-### 下排 (.tabs-below)
-
-导航在内容下方，`.tabs-content` 需放在 `.nav-tabs` 前面。
-
-```html
-<div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
-    <div class="tabs tabs-below" role="tabbable">
-        <div class="tabs-content">
-            <div class="tabs-pane active">111</div>
-            <div class="tabs-pane">222</div>
-            <div class="tabs-pane">333</div>
-        </div>
-        <ul class="nav nav-tabs">
-            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
-        </ul>
-    </div>
+<div style="width:300px; height:300px; position: relative;">
+    <div class="overlay"></div>
 </div>
 ```
 
@@ -6596,98 +6343,258 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 
 ---
-# 源文件: components/tooltip.md
+# 源文件: components/dialog.md
 ---
-# 工具提示
+# 对话框
 
-工具提示（`.tooltip`）用于在元素旁边显示提示气泡，支持上、右、下、左四个弹出方向。
-
-## 样式用法
-
-<style>
-  .ting-example .tooltip {
-    position: relative;
-  }
-</style>
-
-```html
-<div class="tooltip tooltip-left">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-        Tooltip on the left
-    </div>
-</div>
-<div class="tooltip tooltip-top">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-        Tooltip on the top
-    </div>
-</div>
-<div class="tooltip tooltip-bottom">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-        Tooltip on the bottom
-    </div>
-</div>
-<div class="tooltip tooltip-right">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-        Tooltip on the right
-    </div>
-</div>
-```
-
-
----
-# 源文件: components/tree.md
----
-# 树
-
-树控件（`.tree`）用于展示层级结构数据，支持节点的展开/折叠和选中状态。`collapsed`表示节点折叠。`tree-toggler`表示节点展开/折叠按钮，需要加上`tabindex="0"`属性。`active`表示节点选中。
+对话框（`.dialog`）用于在页面中弹出浮层进行内容展示或交互，支持多种语境色主题。
 
 ## 基本用法
 
 ```html
-<div style="width: 300px; height: 300px; overflow: auto; border: 4px solid #000;">
-    <div class="tree">
-        <ul>
-            <li class="collapsed">
-                <i class="tree-toggler" tabindex="0"></i>
-                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
-                <ul>
-                    <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>重要会议</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>视频新闻</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>各地要闻</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>国际局势</a></li>
-                </ul>
-            </li>
-            <li class="collapsed">
-                <i class="tree-toggler" tabindex="0"></i>
-                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
-                <ul>
-                    <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
-                    <li><a href="javascript:void 0">重要会议</a></li>
-                    <li><a href="javascript:void 0">视频新闻</a></li>
-                    <li><a href="javascript:void 0">各地要闻</a></li>
-                    <li><a href="javascript:void 0">国际局势</a></li>
-                </ul>
-            </li>
-            <li>
-                <i class="tree-toggler" tabindex="0"></i>
-                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
-                <ul>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>重要会议</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>视频新闻</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>各地要闻</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>国际局势</label></li>
-                </ul>
-            </li>
-        </ul>
+<div class="dialog">
+    <div class="dialog-header">
+        <span class="dialog-title">对话框标题</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body">
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+    </div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
     </div>
 </div>
 ```
+
+## 语境色
+
+### 主题色对话框
+
+```html
+<div class="dialog dialog-primary">
+    <div class="dialog-header">
+        <span class="dialog-title">primary对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+    </div>
+</div>
+```
+
+### 成功对话框
+
+```html
+<div class="dialog dialog-success">
+    <div class="dialog-header">
+        <span class="dialog-title">success对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-success">确定</button>
+    </div>
+</div>
+```
+
+### 信息对话框
+
+```html
+<div class="dialog dialog-info">
+    <div class="dialog-header">
+        <span class="dialog-title">info对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-info">确定</button>
+    </div>
+</div>
+```
+
+### 警告对话框
+
+```html
+<div class="dialog dialog-warning">
+    <div class="dialog-header">
+        <span class="dialog-title">warning对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-warning">确定</button>
+    </div>
+</div>
+```
+
+### 危险对话框
+
+```html
+<div class="dialog dialog-danger">
+    <div class="dialog-header">
+        <span class="dialog-title">danger对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-danger">确定</button>
+    </div>
+</div>
+```
+
+### 暗色对话框
+
+```html
+<div class="dialog dialog-dark">
+    <div class="dialog-header">
+        <span class="dialog-title">dark对话框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-dark">确定</button>
+    </div>
+</div>
+```
+
+## 带外边框
+
+使用 `.dialog-rim` 为对话框添加额外的外层边框。
+
+```html
+<div class="dialog dialog-rim">
+    <div class="dialog-header">
+        <span class="dialog-title">带外边框</span>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="dialog-body"><p>内容</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary">确定</button>
+    </div>
+</div>
+```
+
+## 核心类
+
+| 类 | 描述 |
+|---|---|
+| `.dialog` | 对话框容器 |
+| `.dialog-header` | 头部区域 |
+| `.dialog-title` | 标题文字 |
+| `.dialog-body` | 主体内容 |
+| `.dialog-footer` | 底部按钮区 |
+| `.dialog-primary` / `.dialog-success` / `.dialog-info` / `.dialog-warning` / `.dialog-danger` / `.dialog-dark` | 语境色主题 |
+| `.dialog-rim` | 外边框样式 |
+
+
+---
+# 源文件: components/msgbox.md
+---
+# 消息框
+
+消息框（`.msgbox`）是一种特殊的对话框，左侧带有图标，适用于操作确认和状态提示。支持多种尺寸和语境色主题。
+
+## 基本用法
+
+```html
+<div class="msgbox">
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-warning">&#xf06a;</i>
+        <h4 class="msgbox-title">提示标题</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body">
+        <p>您确定要执行此操作吗？</p>
+    </div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+    </div>
+</div>
+```
+
+## 语境色
+
+### 信息消息框
+
+```html
+<div class="msgbox msgbox-info">
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-info">&#xf05a;</i>
+        <h4 class="msgbox-title">信息</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>这是一条提示信息。</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-info">确定</button>
+    </div>
+</div>
+```
+
+### 成功消息框
+
+```html
+<div class="msgbox msgbox-success">
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-success">&#xf058;</i>
+        <h4 class="msgbox-title">成功</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>操作已成功完成！</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-success">确定</button>
+    </div>
+</div>
+```
+
+### 警告消息框
+
+```html
+<div class="msgbox msgbox-warning">
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-warning">&#xf06a;</i>
+        <h4 class="msgbox-title">警告</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>此操作不可撤销！</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-default">取消</button>
+        <button type="button" class="btn btn-warning">确定</button>
+    </div>
+</div>
+```
+
+### 危险消息框
+
+```html
+<div class="msgbox msgbox-danger">
+    <div class="msgbox-header">
+        <i class="fa icon-4x text-danger">&#xf057;</i>
+        <h4 class="msgbox-title">错误</h4>
+        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+    </div>
+    <div class="msgbox-body"><p>操作失败，请重试。</p></div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-danger">确定</button>
+    </div>
+</div>
+```
+
+## 核心类
+
+| 类 | 描述 |
+|---|---|
+| `.msgbox` | 消息框容器，顶部带4px语境色边框 |
+| `.msgbox-lg` / `.msgbox-md` / `.msgbox-sm` | 尺寸 |
+| `.msgbox-header` | 头部区域 |
+| `.msgbox-title` | 标题 |
+| `.msgbox-body` | 主体内容 |
+| `.msgbox-footer` | 底部按钮区 |
+| `.msgbox-info` / `.msgbox-success` / `.msgbox-warning` / `.msgbox-danger` | 语境色 |
 
 
 ---
@@ -6786,6 +6693,51 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 | `.win-disabled` | 禁用状态 |
 | `.win-hit` | 禁用遮罩层 |
 | `.win-transform-helper` | 拖拽/缩放辅助边框 |
+
+
+---
+# 源文件: components/select-list.md
+---
+# 可选列表
+
+可选列表（`.select-list`）是一种带复选框、拖动手柄和操作工具的可选择列表项容器。
+
+## 基本用法
+
+每个 `<li>` 内包含操作工具（`.select-list-tools`，悬停显示）、拖动手柄（`.select-list-drag`）、复选框和标签文字。
+
+```html
+<div class="row row-gx-4 mb-4">
+    <div class="col-md-3 col-gx-4">
+        <ul class="select-list">
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="valign-middle">环境变量设</span>
+            </li>
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="valign-middle">环境变量设</span>
+            </li>
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="valign-middle">环境变量设</span>
+            </li>
+            <li>
+                <div class="select-list-tools"><a href="#" class="fa">&#xf014;</a></div>
+                <i class="select-list-drag fa">&#xf142; &#xf142;</i>
+                <input type="checkbox" value=""/>
+                <span class="valign-middle">环境变量设</span>
+            </li>
+        </ul>
+    </div>
+</div>
+```
 
 
 # =============================================================================

@@ -22,12 +22,12 @@
 ## 布局
 
 - [布局概述](layout/index.md): 响应式栅格系统（12 列，5 个断点 xs/sm/md/lg/xl）、布局容器（`.container`/`.container-fluid`/`.container-{size}`）、栅格系统（`.row`/`.col-{size}-{width}` 含 offset/push/pull 和间隙支持）、弹性布局（`.flex`/`.row-flex`/`.col-flex`/`.col-left`/`.col-right`/`.col-center`）、固定比例容器（`.ratio-16x9` 等）、对齐工具（`.center-block`/`.valign`/`.valign-middle`/`.valign-bottom`/`.valign-sibling`）。
-- [栅格系统演示](layout/grid.html): 栅格系统交互式 Demo。
 - [布局容器演示](layout/container.html): 布局容器交互式 Demo。
+- [栅格系统演示](layout/grid.html): 栅格系统交互式 Demo。
 - [高度适应示例](layout/layout-vbox.html): 弹性高度适应布局 Demo。
 - [综合布局示例](layout/layout-border.html): 综合弹性布局 Demo。
-- [对齐](layout/align.md): `.center-block` 块级居中、`.valign`/`.valign-middle`/`.valign-bottom`/`.valign-sibling`/`.valign-top` 垂直对齐工具类的详细使用方法。
 - [固定比例容器](layout/ratio.md): `.ratio-21x9`、`.ratio-16x9`、`.ratio-4x3`、`.ratio-1x1` 等固定比例容器的使用方法。
+- [对齐](layout/align.md): `.center-block` 块级居中、`.valign`/`.valign-middle`/`.valign-bottom`/`.valign-sibling`/`.valign-top` 垂直对齐工具类的详细使用方法。
 
 ## 页面内容
 
@@ -39,8 +39,8 @@
 - [表格](content/table.md): `.table`、`.table-striped`、`.table-bordered`、`.table-hover`、`.table-sm`、`.table-subtle`/`.table-inverse`、`.table-{context}`、`.table-active`、`.table-responsive`、`.table-fixed` 等表格样式类。
 - [图片](content/img.md): `.img-rounded`、`.img-circle`、`.img-thumbnail`、`.img-fluid`、`.img-responsive` 等图片样式类。
 - [媒体对象](content/media.md): `.media`、`.media-left`、`.media-right`、`.media-body`、`.media-object`、`.media-heading`、`.media-middle`/`.media-bottom`、`.media-list` 等图文混排组件使用方法。
-- [卡片](content/card.html): `.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-indicator` 等卡片组件 Demo。
 - [列表](content/list.html): `.list`、`.list-dashed`、`.list-flush`、`.list-bordered`、`.list-striped`、`.list-hover`、`.list-item-{context}`、`.active` 等列表样式 Demo。
+- [卡片](content/card.html): `.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-indicator` 等卡片组件 Demo。
 - [凹陷容器](content/well.md): `.well`、`.well-lg`、`.well-sm` 凹陷容器样式。
 - [标志](content/callout.md): `.callout`、`.callout-{context}` 标志容器。
 - [徽章](content/badge.md): `.badge` 徽章样式（圆角红色背景，最小宽度 18px）。
@@ -92,7 +92,7 @@
 - [手风琴](components/accordion.md): `.accordion`、`.accordion-flush`、`.accordion-dark`、`.accordion-fill`、`.accordion-item`、`.collapsed`、`.accordion-header`、`.accordion-button`、`.accordion-indicator`、`.accordion-collapsible`、`.accordion-body` 等手风琴组件，兼容 Bootstrap `.collapse` 写法。
 - [树](components/tree.md): `.tree`、`.tree-icon`、`.tree-toggler`、`.collapsed`、`.active` 等树组件。
 - [侧栏导航](components/sidebar.md): `.sidebar`、`.sidebar-dark`、`.sidebar-collapsed`、`.sidebar-menu`、`.sidebar-item`、`.collapsed`、`.sidebar-indicator`、`.sidebar-icon`、`.sidebar-link`、`.sidebar-collapsible`、`.sidebar-submenu` 等侧栏导航组件（亮色/暗色主题，支持多级菜单折叠/展开）。
-- [模态对话框](components/modal.md): `.modal`、`.modal-loading`、`.modal-center`、`.modal-hit` 等模态遮罩层。
+- [覆盖层](components/overlay.md): `.overlay` 覆盖层容器（覆盖所属容器，半透明黑色背景）、`.overlay-viewport` 覆盖层容器（覆盖整个视口）、`.overlay-blocker` 事件捕获层（拦截用户点击）等覆盖层组件。
 - [提示信息](components/toast.md): `.toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。
 - [对话框](components/dialog.md): `.dialog`、`.dialog-header`、`.dialog-title`、`.dialog-body`、`.dialog-footer`、`.dialog-close`、`.dialog-rim`、`.dialog-{context}` 等对话框组件。
 - [消息框](components/msgbox.md): `.msgbox`、`.msgbox-lg`/`.msgbox-md`/`.msgbox-sm`、`.msgbox-header`、`.msgbox-title`、`.msgbox-body`、`.msgbox-footer`、`.msgbox-{context}` 等消息框组件。

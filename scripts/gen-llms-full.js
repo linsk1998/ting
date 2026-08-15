@@ -21,7 +21,7 @@ const sections = [
   { title: '一、起步 (getting-started)', files: ['getting-started/index.md'] },
   {
     title: '二、布局 (layout)',
-    files: ['layout/index.md', 'layout/align.md', 'layout/ratio.md'],
+    files: ['layout/index.md', 'layout/ratio.md', 'layout/align.md'],
   },
   {
     title: '三、页面内容 (content)',
@@ -35,27 +35,27 @@ const sections = [
   {
     title: '四、表单 (form)',
     files: [
-      'form/index.md', 'form/checkbox.md', 'form/control.md', 'form/form.md',
-      'form/input-group.md', 'form/input.md', 'form/select.md', 'form/sizing.md',
-      'form/static.md', 'form/switch.md', 'form/tags-input.md', 'form/textarea.md',
-      'form/toggle-button.md', 'form/validation.md',
+      'form/index.md', 'form/control.md', 'form/form.md', 'form/sizing.md',
+      'form/validation.md', 'form/static.md', 'form/input-group.md', 'form/input.md',
+      'form/tags-input.md', 'form/select.md', 'form/textarea.md', 'form/checkbox.md',
+      'form/switch.md', 'form/toggle-button.md',
     ],
   },
   {
     title: '五、助手 (helpers)',
-    files: ['helpers/index.md', 'helpers/float.md', 'helpers/icon.md', 'helpers/loading.md'],
+    files: ['helpers/index.md', 'helpers/float.md', 'helpers/loading.md', 'helpers/icon.md'],
   },
   {
     title: '六、组件 (components)',
     files: [
-      'components/index.md', 'components/accordion.md', 'components/breadcrumb.md',
-      'components/carousel.md', 'components/collapse.md', 'components/collapsible.md',
-      'components/dialog.md', 'components/dropdown.md', 'components/msgbox.md',
-      'components/nav.md', 'components/navbar.md', 'components/overlay.md',
-      'components/pagination.md', 'components/popover.md',
-      'components/progress.md', 'components/select-list.md', 'components/sidebar.md',
-      'components/tabs.md', 'components/toast.md', 'components/tooltip.md',
-      'components/tree.md', 'components/window.md',
+      'components/index.md', 'components/breadcrumb.md', 'components/nav.md',
+      'components/tabs.md', 'components/navbar.md', 'components/pagination.md',
+      'components/progress.md', 'components/carousel.md', 'components/dropdown.md',
+      'components/tooltip.md', 'components/popover.md', 'components/collapsible.md',
+      'components/collapse.md', 'components/accordion.md', 'components/tree.md',
+      'components/sidebar.md', 'components/overlay.md', 'components/toast.md',
+      'components/dialog.md', 'components/msgbox.md', 'components/window.md',
+      'components/select-list.md',
     ],
   },
   {
