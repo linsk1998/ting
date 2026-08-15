@@ -1,69 +1,71 @@
 @use '../variables' as *;
 
 .overlay {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, $overlay-alpha);
 	position: absolute;
 	z-index: $level-dialog;
 	text-align: center;
 	left: 0;
-	width: 100%;
 	top: 0;
+	width: 100%;
 	height: 100%;
 	overflow: auto;
 }
-
 @media \0screen\,screen\9 {
 	.overlay {
-		filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#66000000, endcolorstr=#66000000);
+		filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#{ie-hex-str(rgba(0, 0, 0, $overlay-alpha))}, endcolorstr=#{ie-hex-str(rgba(0, 0, 0, $overlay-alpha))});
 	}
 }
+.overlay-viewport{
+	position:fixed;
+	_position:absolute;
+	_height:#{"expression(document.body.scrollHeight)"};
+	_padding-top:#{"expression(eval(document.body.scrollTop))"};
+}
 
-.overlay-hit {
-	background: #000;
-	filter: alpha(opacity=1);
+.overlay-blocker {
+	background: #000000;
 	position: absolute;
 	z-index: $level-dialog;
+	visibility: hidden;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-	opacity: .01;
 }
 
-
-@-moz-keyframes overlayIn{
-	0%{ background: rgba(0, 0, 0, 0);}
-	100%{ background: rgba(0, 0, 0, 0.4);}
-}
 @-webkit-keyframes overlayIn{
 	0%{ background: rgba(0, 0, 0, 0);}
-	100%{ background: rgba(0, 0, 0, 0.4);}
+	100%{ background: rgba(0, 0, 0, $overlay-alpha);}
+}
+@-moz-keyframes overlayIn{
+	0%{ background: rgba(0, 0, 0, 0);}
+	100%{ background: rgba(0, 0, 0, $overlay-alpha);}
 }
 @keyframes overlayIn{
 	0%{ background: rgba(0, 0, 0, 0);}
-	100%{ background: rgba(0, 0, 0, 0.4);}
+	100%{ background: rgba(0, 0, 0, $overlay-alpha);}
 }
 .overlayIn{
-	-moz-animation-name:overlayIn;
-	-webkit-animation-name:overlayIn;
-	animation-name:overlayIn;
+	-webkit-animation: overlayIn 0.3s ease-in-out forwards;
+	-moz-animation: overlayIn 0.3s ease-in-out forwards;
+	animation: overlayIn 0.3s ease-in-out forwards;
 }
 
-
-@-moz-keyframes overlayOut{
-	0%{ background: rgba(0, 0, 0, 0.4);}
+@-webkit-keyframes overlayOut{
+	0%{ background: rgba(0, 0, 0, $overlay-alpha);}
 	100%{ background: rgba(0, 0, 0, 0);}
 }
-@-webkit-keyframes overlayOut{
-	0%{ background: rgba(0, 0, 0, 0.4);}
+@-moz-keyframes overlayOut{
+	0%{ background: rgba(0, 0, 0, $overlay-alpha);}
 	100%{ background: rgba(0, 0, 0, 0);}
 }
 @keyframes overlayOut{
-	0%{ background: rgba(0, 0, 0, 0.4);}
+	0%{ background: rgba(0, 0, 0, $overlay-alpha);}
 	100%{ background: rgba(0, 0, 0, 0);}
 }
 .overlayOut{
-	-moz-animation-name:overlayOut;
-	-webkit-animation-name:overlayOut;
-	animation-name:overlayOut;
+	-webkit-animation: overlayOut 0.3s ease-in-out forwards;
+	-moz-animation: overlayOut 0.3s ease-in-out forwards;
+	animation: overlayOut 0.3s ease-in-out forwards;
 }

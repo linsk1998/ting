@@ -499,4 +499,5 @@ $dark-sidebar-subitem-hover-color: $dark-body-text !default;
 $dark-sidebar-subitem-active-bg: mix($dark-primary, $dark-body-bg, 10%) !default;
 $dark-sidebar-subitem-active-color: $dark-primary !default;
 
-$modal-alpha: 0.4 !default; //模不透明度
+$overlay-alpha: 0.4 !default; //遮罩层不透明度
+$overlay-duration: 0.3s !default; //遮罩层动画时长

@@ -165,12 +165,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://linsk1998.github.io/ting/components/modal.html</loc>
+    <loc>https://linsk1998.github.io/ting/components/overlay.html</loc>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://linsk1998.github.io/ting/components/modal-loading.html</loc>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://linsk1998.github.io/ting/components/toast.html</loc>

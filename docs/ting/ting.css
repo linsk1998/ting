@@ -13611,8 +13611,8 @@ html .dropdown-item[disabled] {
   z-index: 1000;
   text-align: center;
   left: 0;
-  width: 100%;
   top: 0;
+  width: 100%;
   height: 100%;
   overflow: auto;
 }
@@ -13622,19 +13622,25 @@ html .dropdown-item[disabled] {
     filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#66000000, endcolorstr=#66000000);
   }
 }
-.overlay-hit {
-  background: #000;
-  filter: alpha(opacity=1);
+.overlay-viewport {
+  position: fixed;
+  _position: absolute;
+  _height: expression(document.body.scrollHeight);
+  _padding-top: expression(eval(document.body.scrollTop));
+}
+
+.overlay-blocker {
+  background: #000000;
   position: absolute;
   z-index: 1000;
+  visibility: hidden;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  opacity: 0.01;
 }
 
-@-moz-keyframes overlayIn {
+@-webkit-keyframes overlayIn {
   0% {
     background: rgba(0, 0, 0, 0);
   }
@@ -13642,7 +13648,7 @@ html .dropdown-item[disabled] {
     background: rgba(0, 0, 0, 0.4);
   }
 }
-@-webkit-keyframes overlayIn {
+@-moz-keyframes overlayIn {
   0% {
     background: rgba(0, 0, 0, 0);
   }
@@ -13659,12 +13665,12 @@ html .dropdown-item[disabled] {
   }
 }
 .overlayIn {
-  -moz-animation-name: overlayIn;
-  -webkit-animation-name: overlayIn;
-  animation-name: overlayIn;
+  -webkit-animation: overlayIn 0.3s ease-in-out forwards;
+  -moz-animation: overlayIn 0.3s ease-in-out forwards;
+  animation: overlayIn 0.3s ease-in-out forwards;
 }
 
-@-moz-keyframes overlayOut {
+@-webkit-keyframes overlayOut {
   0% {
     background: rgba(0, 0, 0, 0.4);
   }
@@ -13672,7 +13678,7 @@ html .dropdown-item[disabled] {
     background: rgba(0, 0, 0, 0);
   }
 }
-@-webkit-keyframes overlayOut {
+@-moz-keyframes overlayOut {
   0% {
     background: rgba(0, 0, 0, 0.4);
   }
@@ -13689,97 +13695,11 @@ html .dropdown-item[disabled] {
   }
 }
 .overlayOut {
-  -moz-animation-name: overlayOut;
-  -webkit-animation-name: overlayOut;
-  animation-name: overlayOut;
+  -webkit-animation: overlayOut 0.3s ease-in-out forwards;
+  -moz-animation: overlayOut 0.3s ease-in-out forwards;
+  animation: overlayOut 0.3s ease-in-out forwards;
 }
 
-.modal-center {
-  text-align: center;
-  position: relative;
-  display: -moz-box;
-  -moz-box-pack: center;
-  -moz-box-align: center;
-  display: -webkit-box;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  display: -ms-flexbox;
-  -ms-flex-pack: center;
-  -ms-flex-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal {
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  _position: absolute;
-  z-index: 1000;
-  text-align: left;
-  left: 0;
-  width: 100%;
-  top: 0;
-  height: 100%;
-  overflow: auto;
-  _height: expression(document.body.scrollHeight);
-  _padding-top: expression(eval(document.body.scrollTop));
-}
-
-.modal-loading {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media \0 screen\,screen\9  {
-  .modal {
-    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#66000000,endcolorstr=#66000000);
-  }
-  .modal-loading {
-    background-color: #000;
-    filter: alpha(opacity=50);
-  }
-  .modal-hit {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 0 none;
-    background: #000;
-    filter: alpha(opacity=1);
-  }
-}
-@media (min-width: 0) {
-  .modal-loading {
-    background: rgba(0, 0, 0, 0.4);
-  }
-  .modal-loading:after {
-    content: " ";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100px;
-    padding-bottom: 100px;
-    margin-left: -50px;
-    margin-top: -50px;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    border-radius: 10%;
-    background: center no-repeat #000;
-    background-size: 80%;
-  }
-}
-@media (max-width: 767px) and (orientation: portrait) {
-  .modal-loading:after {
-    width: 30%;
-    padding-bottom: 30%;
-    margin-left: -15%;
-    margin-top: -15%;
-  }
-}
 .dialog {
   text-align: left;
   display: inline-block;

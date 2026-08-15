@@ -50,9 +50,9 @@ const sections = [
     files: [
       'components/index.md', 'components/accordion.md', 'components/breadcrumb.md',
       'components/carousel.md', 'components/collapse.md', 'components/collapsible.md',
-      'components/dialog.md', 'components/dropdown.md', 'components/modal-loading.md',
-      'components/modal.md', 'components/msgbox.md', 'components/nav.md',
-      'components/navbar.md', 'components/pagination.md', 'components/popover.md',
+      'components/dialog.md', 'components/dropdown.md', 'components/msgbox.md',
+      'components/nav.md', 'components/navbar.md', 'components/overlay.md',
+      'components/pagination.md', 'components/popover.md',
       'components/progress.md', 'components/select-list.md', 'components/sidebar.md',
       'components/tabs.md', 'components/toast.md', 'components/tooltip.md',
       'components/tree.md', 'components/window.md',
@@ -72,7 +72,7 @@ const today = new Date().toISOString().slice(0, 10);
 let content = `# Ting CSS 完整文档 (Full Documentation)\n`;
 content += `# 项目: ting-ui/css (Common Style Lib)\n`;
 content += `# 在线演示: https://linsk1998.github.io/ting/\n`;
-content += `# 文件数量: 61 个 .md 文档\n`;
+content += `# 文件数量: 60 个 .md 文档\n`;
 content += `# 生成时间: ${today}\n`;
 content += `# =============================================================================\n`;
 
