@@ -50,7 +50,7 @@ tailwind 只是换了一种方式去写样式，并没帮助开发者屏蔽样�
 
 和 bootstrap 比较：
 
-定位和bootstrap有些不同。1. bootstrap 对自身的定位更顷向于直接使用bootstrap 本体，ting-ui的更顷向于提供一套标准的编码规范，由不同主题来具体实现。2. bootstrap 越来越希望用工具类组合来解决问题，写的是这个元素有什么样式，ting-ui则写的是这个元素是什么？
+定位和bootstrap有些不同。1. bootstrap 对自身的定位更倾向于直接使用bootstrap 本体，ting-ui的更倾向于提供一套标准的编码规范，由不同主题来具体实现。2. bootstrap 越来越希望用工具类组合来解决问题，写的是这个元素有什么样式，ting-ui则写的是这个元素是什么？
 
 和无头组件库比较：
 

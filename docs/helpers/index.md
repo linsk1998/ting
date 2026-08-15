@@ -8,7 +8,7 @@
 |---|---|
 | .pull-left | 元素浮动到左边 |
 | .pull-right | 元素浮动到右边 |
-| .clearfix | 清除容器内的浮动浮动 |
+| .clearfix | 清除容器内的浮动 |
 
 [使用方法](./float.md)
 
