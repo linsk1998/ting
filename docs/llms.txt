@@ -49,6 +49,31 @@
 - [巨幕](content/index.md): `.jumbotron` 巨幕组件，延伸至整个浏览器视口展示关键内容。
 - [网站底部](content/index.md): `.footer` 网站底部样式。
 
+## 表单
+
+- [表单概述](form/index.md): 基础控件、布局、尺寸、校验、静态控件、输入框组的 CSS 类速查表，以及前后缀输入框、标签输入框、下拉按钮、文本域、单选/多选框、开关、开关按钮等表单组件速查表。
+- [基础控件](form/control.md): `.form-control`、`.form-check`、`.form-check-inline`、`.form-text` 等基础表单控件使用方法。
+- [表单布局](form/form.md): `.form`、`.form-inline`、`.form-horizontal`、`.form-group`、`.form-label` 等表单布局类。
+- [控件大小](form/sizing.md): `.form-group-lg`/`.form-group-sm`、`.form-control-lg`/`.form-control-sm` 等控件尺寸类。
+- [字段校验](form/validation.md): `.has-valid`、`.has-invalid`、`.has-feedback-icon`、`.feedback-icon`、`.feedback-text`、`.feedback-tooltip` 等字段校验样式。
+- [静态控件](form/static.md): `.form-control-static` 静态控件使用方法。
+- [输入框组](form/input-group.md): `.input-group`、`.input-group-prepend`、`.input-group-append`、`.input-group-body`、`.input-group-text`、`.input-group-lg`/`.input-group-sm` 等输入框组。
+- [前后缀输入框](form/input.md): `.input`、`.input-prefix`、`.input-suffix`、`.input-body`、`.control-clear`、`.input-counter`、`.input-lg`/`.input-sm`、`.input-disabled` 等前后缀输入框使用方法（含校验、内联表单、组件尺寸等完整用法）。
+- [标签输入框](form/tags-input.md): `.tags-input`、`.tags-input-placeholder`、`.tags-input-nowrap`/`.tags-input-wrap`、`.tags-input-lg`/`.tags-input-sm`、`.tags-input-disabled` 等标签输入框。
+- [下拉按钮](form/select.md): `.select`、`.select-label`、`.select-placeholder`、`.select-icon`、`.select-disabled`、`.select-loading`、`.select-lg`/`.select-sm` 等下拉按钮。
+- [文本域](form/textarea.md): `.textarea`、`.textarea-counter`、`.textarea-lg`/`.textarea-sm` 等文本域。
+- [单选/多选框](form/checkbox.md): `.checkbox-group`/`.radio-group`、`.checkbox-group-horizontal`/`.radio-group-horizontal`、`.checkbox`/`.radio`、`.checkbox-checked`/`.radio-checked`、`.checkbox-disabled`/`.radio-disabled`、`.checkbox-indeterminate` 等单选和多选框。
+- [开关](form/switch.md): `.switch`、`.switch-checked`、`.switch-disabled`、`.switch-loading` 等开关按钮。
+- [开关按钮](form/toggle-button.md): `.btn-toggle`、`.btn-toggle-checked` 开关按钮使用方法。
+
+## 助手
+
+- [助手概述](helpers/index.md): 浮动清除、视觉隐藏、显示/隐藏、文本截断、三角标识、关闭按钮、加载指示、图标、动画等助手类速查表。
+- [浮动清除](helpers/float.md): `.pull-left`、`.pull-right`、`.clearfix` 浮动相关类。
+- [加载指示](helpers/loading.md): `.loading-ring`（环形加载）、`.loading-grow`（闪烁加载）使用方法。
+- [图标](helpers/icon.md): `.icon`、`.icon-fw`、`.icon-left`/`.icon-right`、`.icon-lg`~`.icon-5x`、`.icon-rotate-*`、`.icon-flip-*` 等 FontAwesome 图标封装类。
+- [动画](helpers/animation.html): `.animated`、`.animated.infinite`、`.animated.forwards`、`.animated.fast`/`.faster`/`.slower` 等动画类 Demo。
+
 ## 组件
 
 - [组件概述](components/index.md): 全部 UI 组件的 CSS 类速查表，包括路径导航、导航、标签页、导航条、分页、列表组、进度条、轮播图、下拉菜单、工具提示、弹出框、可折叠块、手风琴、树、侧栏导航、模态对话框、提示信息、对话框、消息框、窗口、可选列表、面板等 23 个组件。
@@ -74,31 +99,6 @@
 - [窗口](components/window.md): `.win`、`.win-header`、`.win-title`、`.win-btn-group`、`.win-close`、`.win-body`、`.win-resize`、`.win-maximized`、`.win-active`、`.win-disabled`、`.win-hit`、`.win-transform-helper` 等可拖动窗口组件。
 - [可选列表](components/select-list.md): `.select-list`、`.select-list-drag`、`.select-list-tools` 等可选列表组件。
 - [面板](components/index.md): `.panel`、`.panel-heading`、`.panel-title`、`.panel-body`、`.panel-default`、`.panel-primary`、`.panel-success`、`.panel-info`、`.panel-warning`、`.panel-danger` 等面板组件。
-
-## 表单
-
-- [表单概述](form/index.md): 基础控件、布局、尺寸、校验、静态控件、输入框组的 CSS 类速查表，以及前后缀输入框、标签输入框、下拉按钮、文本域、单选/多选框、开关、开关按钮等表单组件速查表。
-- [基础控件](form/control.md): `.form-control`、`.form-check`、`.form-check-inline`、`.form-text` 等基础表单控件使用方法。
-- [表单布局](form/form.md): `.form`、`.form-inline`、`.form-horizontal`、`.form-group`、`.form-label` 等表单布局类。
-- [控件大小](form/sizing.md): `.form-group-lg`/`.form-group-sm`、`.form-control-lg`/`.form-control-sm` 等控件尺寸类。
-- [字段校验](form/validation.md): `.has-valid`、`.has-invalid`、`.has-feedback-icon`、`.feedback-icon`、`.feedback-text`、`.feedback-tooltip` 等字段校验样式。
-- [静态控件](form/static.md): `.form-control-static` 静态控件使用方法。
-- [输入框组](form/input-group.md): `.input-group`、`.input-group-prepend`、`.input-group-append`、`.input-group-body`、`.input-group-text`、`.input-group-lg`/`.input-group-sm` 等输入框组。
-- [前后缀输入框](form/input.md): `.input`、`.input-prefix`、`.input-suffix`、`.input-body`、`.control-clear`、`.input-counter`、`.input-lg`/`.input-sm`、`.input-disabled` 等前后缀输入框使用方法（含校验、内联表单、组件尺寸等完整用法）。
-- [标签输入框](form/tags-input.md): `.tags-input`、`.tags-input-placeholder`、`.tags-input-nowrap`/`.tags-input-wrap`、`.tags-input-lg`/`.tags-input-sm`、`.tags-input-disabled` 等标签输入框。
-- [下拉按钮](form/select.md): `.select`、`.select-label`、`.select-placeholder`、`.select-icon`、`.select-disabled`、`.select-loading`、`.select-lg`/`.select-sm` 等下拉按钮。
-- [文本域](form/textarea.md): `.textarea`、`.textarea-counter`、`.textarea-lg`/`.textarea-sm` 等文本域。
-- [单选/多选框](form/checkbox.md): `.checkbox-group`/`.radio-group`、`.checkbox-group-horizontal`/`.radio-group-horizontal`、`.checkbox`/`.radio`、`.checkbox-checked`/`.radio-checked`、`.checkbox-disabled`/`.radio-disabled`、`.checkbox-indeterminate` 等单选和多选框。
-- [开关](form/switch.md): `.switch`、`.switch-checked`、`.switch-disabled`、`.switch-loading` 等开关按钮。
-- [开关按钮](form/toggle-button.md): `.btn-toggle`、`.btn-toggle-checked` 开关按钮使用方法。
-
-## 助手
-
-- [助手概述](helpers/index.md): 浮动清除、视觉隐藏、显示/隐藏、文本截断、三角标识、关闭按钮、加载指示、图标、动画等助手类速查表。
-- [浮动清除](helpers/float.md): `.pull-left`、`.pull-right`、`.clearfix` 浮动相关类。
-- [加载指示](helpers/loading.md): `.loading-ring`（环形加载）、`.loading-grow`（闪烁加载）使用方法。
-- [图标](helpers/icon.md): `.icon`、`.icon-fw`、`.icon-left`/`.icon-right`、`.icon-lg`~`.icon-5x`、`.icon-rotate-*`、`.icon-flip-*` 等 FontAwesome 图标封装类。
-- [动画](helpers/animation.html): `.animated`、`.animated.infinite`、`.animated.forwards`、`.animated.fast`/`.faster`/`.slower` 等动画类 Demo。
 
 ## 工具类
 
