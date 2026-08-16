@@ -1,5 +1,4 @@
 @use './components/button-group';
-@use './components/loading';
 @use './components/toolbar';
 @use './components/breadcrumb';
 @use './components/nav';
@@ -13,7 +12,7 @@
 @use './components/tooltip';
 @use './components/popover';
 @use './components/dropdown';
-@use './components/toast';
+@use './components/msg';
 @use './components/accordion';
 @use './components/tree';
 @use './components/sidebar';
