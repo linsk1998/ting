@@ -121,6 +121,7 @@ html .dropdown-item[disabled] {
 	height: $caret-height;
 	overflow: hidden;
 	font-size: 0;
+	line-height: 0;
 	margin-left: $caret-gap;
 	vertical-align: middle;
 	border: $caret-width * 0.5 solid transparent;
@@ -147,6 +148,7 @@ html .dropdown-item[disabled] {
 	width: $caret-height;
 	overflow: hidden;
 	font-size: 0;
+	line-height: 0;
 	margin-right: $caret-gap;
 	vertical-align: middle;
 	border: $caret-width * 0.5 solid transparent;

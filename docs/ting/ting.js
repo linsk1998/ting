@@ -397,7 +397,7 @@ $(function(){
 		var $darkCheck;
 		ul.append(
 			$dropdown=$('<li class="dropdown"></li>').append(
-				$('<a class="dropdown-toggle px-2" href="javascript:void 0"></a>').append(
+				$('<a class="px-2" href="javascript:void 0"></a>').append(
 					$icon=$('<i class="icon-fw icon-lg fa"></i>').text(dark?'\uf186':'\uf185'),
 					$('<span class="fa">&#xf0d7;</span>')
 				),
