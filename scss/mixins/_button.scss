@@ -146,18 +146,6 @@
 		z-index: $level-item-active;
 	}
 }
-@mixin btn-dark{
-	color: #fff;
-	background-color:$dark;
-	border-color: darken($dark, 5%);
-	z-index: $level-item-active;
-	&:hover{
-		color: #fff;
-		background-color: darken($dark, 10%);
-		border-color: darken($dark, 17%);
-		z-index: $level-item-active;
-	}
-}
 @mixin btn-block{
 	display:block;
 	width:100%;

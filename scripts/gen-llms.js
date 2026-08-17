@@ -120,7 +120,7 @@ const SECTIONS = [
 			{ file: 'components/tree.md', title: '树', desc: '`.tree`、`.tree-icon`、`.tree-toggler`、`.collapsed`、`.active` 等树组件。' },
 			{ file: 'components/sidebar.md', title: '侧栏导航', desc: '`.sidebar`、`.sidebar-dark`、`.sidebar-collapsed`、`.sidebar-menu`、`.sidebar-item`、`.collapsed`、`.sidebar-indicator`、`.sidebar-icon`、`.sidebar-link`、`.sidebar-collapsible`、`.sidebar-submenu` 等侧栏导航组件（亮色/暗色主题，支持多级菜单折叠/展开）。' },
 			{ file: 'components/overlay.md', title: '覆盖层', desc: '`.overlay` 覆盖层容器（覆盖所属容器，半透明黑色背景）、`.overlay-viewport` 覆盖层容器（覆盖整个视口）、`.overlay-blocker` 事件捕获层（拦截用户点击）等覆盖层组件。' },
-			{ file: 'components/toast.md', title: '提示信息', desc: '`.toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。' },
+			{ file: 'components/msg.md', title: '提示信息', desc: '`.msg-toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。' },
 			{ file: 'components/dialog.md', title: '对话框', desc: '`.dialog`、`.dialog-header`、`.dialog-title`、`.dialog-body`、`.dialog-footer`、`.dialog-close`、`.dialog-rim`、`.dialog-{context}` 等对话框组件。' },
 			{ file: 'components/msgbox.md', title: '消息框', desc: '`.msgbox`、`.msgbox-lg`/`.msgbox-md`/`.msgbox-sm`、`.msgbox-header`、`.msgbox-title`、`.msgbox-body`、`.msgbox-footer`、`.msgbox-{context}` 等消息框组件。' },
 			{ file: 'components/window.md', title: '窗口', desc: '`.win`、`.win-header`、`.win-title`、`.win-btn-group`、`.win-close`、`.win-body`、`.win-resize`、`.win-maximized`、`.win-active`、`.win-disabled`、`.win-hit`、`.win-transform-helper` 等可拖动窗口组件。' },

@@ -76,8 +76,11 @@ $(function(){
 			}
 		});
 	});
-	$(document).on("click",".dropdown .dropdown-toggle",function(e){
-		$(this).closest(".dropdown").toggleClass("open");
+	$(document).on("click",".dropdown>a,.dropdown>button",function(e){
+		var $this=$(this);
+		if(!$this.attr("popovertarget")) {
+			$this.closest(".dropdown").toggleClass("open");
+		}
 	});
 	$(document).on("mousedown",function(e){
 		$(".dropdown.open").each(function(){

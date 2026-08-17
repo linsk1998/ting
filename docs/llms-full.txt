@@ -2,7 +2,7 @@
 # 项目: ting-ui/css (Common Style Lib)
 # 在线演示: https://linsk1998.github.io/ting/
 # 文件数量: 60 个 .md 文档
-# 生成时间: 2026-08-15
+# 生成时间: 2026-08-17
 # =============================================================================
 
 # =============================================================================
@@ -1079,7 +1079,7 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 ```html
 <div class="btn-group">
     <button type="button" class="btn btn-primary">Action</button>
-    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split">
+    <button type="button" class="btn btn-primary dropdown-toggle-split">
         <i class="fa">&#xf0d7;</i>
     </button>
 </div>
@@ -4482,7 +4482,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .dropdown-menu | 下拉菜单列表，绝对定位，默认隐藏 |
 | .dropdown-menu-right | 右对齐的下拉菜单 |
 | .dropdown-item | 下拉菜单项，支持悬停效果 |
-| .dropdown-list | 下拉列表样式，使用在原生select |
+| .dropdown-toggle | 把一个按钮或链接转换为下拉菜单风格 |
 | .dropup、.dropleft、.dropright | 弹出的菜单方向 |
 | .dropdown-toggle-split | 下拉按钮分隔样式 |
 | .dropright-submenu | 二级子菜单容器 |
@@ -4574,7 +4574,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .sidebar-collapsible | 折叠容器 |
 | .sidebar-submenu | 二级及以下子菜单 |
 
-[使用方法](./sidebar.html)
+[使用方法](./sidebar.md)
 
 ## 覆盖层
 
@@ -4588,12 +4588,18 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
 ## 提示信息
 
+提示信息用于在操作完成后向用户反馈结果。
+
 | 类 | 描述 |
 |---|---|
-| .toast | 半透明黑色背景的提示信息框，白色文字，圆角显示 |
-| .msg | 白色背景的消息提示框，带边框和圆角 |
+| .msg | 消息提示容器 |
+| .msg-toast | 半透明提示，黑色半透明背景 |
+| .msg-icon | 消息提示图标 |
+| .msg-label | 消息提示文本 |
+| .msg-vertical | 垂直排列的提示信息 |
+| .msg-square | 方形提示，合纯图标加载中场景 |
 
-[使用方法](./toast.html)
+[使用方法](./msg.md)
 
 ## 对话框
 
@@ -4896,7 +4902,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
     <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     js下拉
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -4957,7 +4963,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
         </ul>
         <ul class="navbar-nav navbar-right">
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     右侧菜单
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -5093,7 +5099,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
             <li><a href="javascript:void 0">信息公开</a></li>
             <li><a href="javascript:void 0">网上办事</a></li>
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     公众参与
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -5118,7 +5124,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
                 <a href="javascript:void 0">友情链接</a>
             </li>
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     公共服务
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -5541,6 +5547,24 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
     </ul>
 </div>
 ```
+
+## 把一个按钮或链接转换为下拉菜单风格
+
+```html
+<div class="dropdown btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">下拉</button>
+</div>
+<div class="dropup btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">上拉</button>
+</div>
+<div class="dropright btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">右拉</button>
+</div>
+<div class="dropleft btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">左拉</button>
+</div>
+```
+
 
 
 ---
@@ -6312,34 +6336,75 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 
 
 ---
-# 源文件: components/toast.md
+# 源文件: components/msg.md
 ---
 # 提示信息
 
-提示信息用于在操作完成后向用户反馈结果，包含半透明黑底提示（`.toast`）和白色消息提示（`.msg`）两种样式。
+提示信息用于在操作完成后向用户反馈结果。
 
-## 半透明提示 (.toast)
-
-```html
-<div class="toast">
-    恭喜提交成功！<a href="#">编辑</a>
-</div>
-```
-
-## 消息提示 (.msg)
+## 消息提示
 
 ```html
 <div class="msg">
-    恭喜提交成功！<a href="#">编辑</a>
+    提示提示提示
 </div>
 ```
 
-## 核心类
+## 半透明提示
 
-| 类 | 描述 |
-|---|---|
-| `.toast` | 半透明黑色背景提示，白色文字 |
-| `.msg` | 白色背景消息提示，带边框和圆角 |
+```html
+<div class="msg msg-toast">提示提示提示</div>
+```
+
+## 消息提示带图标
+
+```html
+<div class="msg">
+    <i class="msg-icon icon-lg text-success fa">&#xf058;</i>
+    <span class="msg-label">测试中</span>
+</div>
+<div class="msg msg-toast">
+    <i class="msg-icon icon-lg fa">&#xf058;</i>
+    <span class="msg-label">测试中</span>
+</div>
+```
+
+## 消息提示带图标垂直
+
+```html
+<div class="msg msg-vertical">
+    <i class="msg-icon icon-2x text-success fa">&#xf058;</i>
+    <span class="msg-label">测试中</span>
+</div>
+<div class="msg msg-toast msg-vertical">
+    <i class="msg-icon icon-2x fa">&#xf058;</i>
+    <span class="msg-label">测试中</span>
+</div>
+```
+
+## 消息提示带加载图标垂直
+
+```html
+<div class="msg msg-vertical">
+    <div class="msg-icon icon-2x loading-ring text-info"></div>
+    <span class="msg-label">测试中</span>
+</div>
+<div class="msg msg-toast msg-vertical">
+    <div class="msg-icon icon-2x loading-ring"></div>
+    <span class="msg-label">测试中</span>
+</div>
+```
+
+## 纯图标加载中
+
+```html
+<div class="msg msg-square">
+    <div class="msg-icon icon-3x loading-ring text-info"></div>
+</div>
+<div class="msg msg-toast msg-square">
+    <div class="msg-icon icon-3x loading-ring"></div>
+</div>
+```
 
 
 ---

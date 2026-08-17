@@ -42,7 +42,7 @@
     <div class="navbar-collapsible">
         <ul class="navbar-nav">
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     js下拉
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -103,7 +103,7 @@
         </ul>
         <ul class="navbar-nav navbar-right">
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     右侧菜单
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -239,7 +239,7 @@
             <li><a href="javascript:void 0">信息公开</a></li>
             <li><a href="javascript:void 0">网上办事</a></li>
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     公众参与
                     <span class="fa">&#xf0d7;</span>
                 </a>
@@ -264,7 +264,7 @@
                 <a href="javascript:void 0">友情链接</a>
             </li>
             <li class="dropdown">
-                <a href="javascript:void 0" class="dropdown-toggle">
+                <a href="javascript:void 0">
                     公共服务
                     <span class="fa">&#xf0d7;</span>
                 </a>

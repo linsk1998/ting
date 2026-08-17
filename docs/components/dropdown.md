@@ -194,3 +194,21 @@
     </ul>
 </div>
 ```
+
+## 把一个按钮或链接转换为下拉菜单风格
+
+```html
+<div class="dropdown btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">下拉</button>
+</div>
+<div class="dropup btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">上拉</button>
+</div>
+<div class="dropright btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">右拉</button>
+</div>
+<div class="dropleft btn-group">
+    <button class="btn btn-default dropdown-toggle" type="button">左拉</button>
+</div>
+```
+

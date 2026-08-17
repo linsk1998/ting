@@ -100,7 +100,7 @@
 ```html
 <div class="btn-group">
     <button type="button" class="btn btn-primary">Action</button>
-    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split">
+    <button type="button" class="btn btn-primary dropdown-toggle-split">
         <i class="fa">&#xf0d7;</i>
     </button>
 </div>

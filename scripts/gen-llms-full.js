@@ -53,7 +53,7 @@ const sections = [
       'components/progress.md', 'components/carousel.md', 'components/dropdown.md',
       'components/tooltip.md', 'components/popover.md', 'components/collapsible.md',
       'components/collapse.md', 'components/accordion.md', 'components/tree.md',
-      'components/sidebar.md', 'components/overlay.md', 'components/toast.md',
+      'components/sidebar.md', 'components/overlay.md', 'components/msg.md',
       'components/dialog.md', 'components/msgbox.md', 'components/window.md',
       'components/select-list.md',
     ],

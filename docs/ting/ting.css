@@ -12604,6 +12604,53 @@ html .dropdown-item[disabled] {
   display: block;
 }
 
+.dropdown-toggle:after {
+  content: "▴";
+  width: 8px;
+  height: 4px;
+  overflow: hidden;
+  font-size: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border: 4px solid transparent;
+  border-bottom: 0 none;
+  border-top: 4px solid #212121;
+}
+
+.dropup > .dropdown-toggle:after {
+  content: "▾";
+  border: 4px solid transparent;
+  border-top: 0 none;
+  border-bottom: 4px solid #212121;
+}
+
+.dropright > .dropdown-toggle:after {
+  content: "▸";
+  height: 8px;
+  width: 4px;
+  border: 4px solid transparent;
+  border-right: 0 none;
+  border-left: 4px solid #212121;
+}
+
+.dropleft > .dropdown-toggle:before {
+  content: "◂";
+  height: 8px;
+  width: 4px;
+  overflow: hidden;
+  font-size: 0;
+  margin-right: 2px;
+  vertical-align: middle;
+  border: 4px solid transparent;
+  border-left: 0 none;
+  border-right: 4px solid #212121;
+}
+
+.dropleft > .dropdown-toggle:after {
+  content: none;
+  display: none;
+}
+
 .dropdown-list {
   width: 100%;
   appearance: none;
@@ -12699,6 +12746,10 @@ html .dropdown-item[disabled] {
 
 .dark .dropdown-header {
   color: #8a9198;
+}
+
+.dark .dropdown-toggle:after {
+  border-top-color: #adb5bd;
 }
 
 .msg {
