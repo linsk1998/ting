@@ -1,42 +1,128 @@
-
 @use '../variables' as *;
+@use '../mixins' as *;
 
-.dialog{ text-align:left; display:inline-block;*zoom:1;*display:inline; background:#FFF; box-shadow:1px 1px 50px rgba(0,0,0,.3); position:relative;}
-.dialog-header{ background:#F8F8F8; border-bottom:1px solid #eee; padding:8px 16px; *zoom:1;}
-.dialog-header .close{ float:right;}
+$dialog-border-width: 1px;
+$dialog-box-shadow: 0 0 10px rgba(0,0,0,.2);
+$dialog-header-padding-x: 16px;
+$dialog-header-padding-y: 8px;
+$dialog-body-padding-x: 16px;
+$dialog-body-padding-y: 8px;
+$dialog-footer-padding-x: 16px;
+$dialog-footer-padding-y: 12px;
+
+.dialog{
+	text-align:left;
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+	background:$light-body-bg;
+	vertical-align: middle;
+	position:relative;
+	border:$dialog-border-width solid $light-divider;
+	@include box-shadow(0 0 10px rgba(0,0,0,.2));
+	margin: 20px;
+	padding: 0;
+}
+.dialog-header{
+	background:$light-tertiary-bg;
+	border-bottom:$dialog-border-width solid $light-divider;
+	padding:$dialog-header-padding-y $dialog-header-padding-x;
+	padding-right: $dialog-header-padding-x + $font-size-base;
+}
+.dialog-header .close{
+	position: absolute;
+	top: $dialog-header-padding-y + ($line-height-base - $font-size-base) * .5;
+	right: $dialog-header-padding-x;
+}
 .dialog-title{ margin:0;}
 
-.dialog-body{ padding:16px;}
-.dialog-footer{ border-top:1px solid #eee; padding:12px 16px; margin:0;}
-.dialog-primary .dialog-header{ color:#fff; background-color:$light-primary; border-color:$light-primary;}
-html body .dialog-danger .dialog-header{ color:#fff; background-color:$light-danger; border-color:$light-danger;}
-html body .dialog-warning .dialog-header{ color:#fff; background-color:$light-warning; border-color:$light-warning;}
-html body .dialog-success .dialog-header{ color:#fff; background-color:$light-success; border-color:$light-success;}
-html body .dialog-info .dialog-header{ color:#fff; background-color:$light-info; border-color:$light-info;}
+.dialog-body{
+	padding:$dialog-body-padding-y $dialog-body-padding-x;
+}
+.dialog-footer{
+	border-top:$dialog-border-width solid $light-divider;
+	padding:$dialog-footer-padding-y $dialog-footer-padding-x;
+	margin:0;
+}
+.dialog-primary .dialog-header{
+	color:$light-body-bg;
+	background-color:$light-primary;
+	border-color:$light-primary;
+}
+.dialog-danger .dialog-header{ color:$light-body-bg; background-color:$light-danger; border-color:$light-danger;}
+.dialog-warning .dialog-header{ color:$light-body-bg; background-color:$light-warning; border-color:$light-warning;}
+.dialog-success .dialog-header{ color:$light-body-bg; background-color:$light-success; border-color:$light-success;}
+.dialog-info .dialog-header{ color:$light-body-bg; background-color:$light-info; border-color:$light-info;}
+
 .dialog-primary .dialog-header .close,
 .dialog-danger .dialog-header .close,
 .dialog-warning .dialog-header .close,
 .dialog-success .dialog-header .close,
 .dialog-info .dialog-header .close,
-.dialog-dark .dialog-header .close{ color:#EEE; &:hover{ color:#FFF;}}
-.dialog-rim{ box-shadow:none; background:none; background:rgba(0,0,0,0.5); padding:6px; -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
-.dialog-rim .dialog-body,.dialog-rim .dialog-footer{ background:#fff;}
-.dialog-close{ font-size:24px; display:inline-block; width:24px; line-height:24px; color:#777;
-position:absolute; top:0; right:0; margin-top:-12px; margin-right:-13px;
--webkit-text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
--moz-text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
-text-shadow:-3px 0 #fff,0 3px #fff,3px 0 #fff,0 -3px #fff;
--webkit-filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));
-filter:drop-shadow(0 2px 2px rgba(0,0,0,0.5));}
-.dialog-close:hover{ text-decoration:none; color:#333;}
-.dialog-close{ font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-*zoom:#{"expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#xf057;')"};}
-.dialog-close:before{content:"\f057";}
+.dialog-dark .dialog-header .close{ color:$light-secondary-bg; &:hover{ color:$light-body-bg;}}
 
-@media \0screen\,screen\9 {
-	.dialog{ border:1px solid #ccc;}
-	.dialog-rim{ border:0 none;}
-	.dialog-rim,.toast{ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
+@if $enable-dark {
+	.dark {
+		.dialog {
+			background: $dark-body-bg;
+			border-color: $dark-divider;
+			@include box-shadow(0 0 10px rgba($dark-divider, .5));
+		}
+		.dialog-header {
+			background: $dark-tertiary-bg;
+			border-bottom-color: $dark-divider;
+		}
+		.dialog-footer {
+			border-top-color: $dark-divider;
+		}
+		.dialog-primary .dialog-header {
+			color: $dark-body-bg;
+			background: $dark-primary;
+			border-color: $dark-primary;
+		}
+		.dialog-danger .dialog-header {
+			color: $dark-body-bg;
+			background: $dark-danger;
+			border-color: $dark-danger;
+		}
+		.dialog-warning .dialog-header {
+			color: $dark-body-bg;
+			background: $dark-warning;
+			border-color: $dark-warning;
+		}
+		.dialog-success .dialog-header {
+			color: $dark-body-bg;
+			background: $dark-success;
+			border-color: $dark-success;
+		}
+		.dialog-info .dialog-header {
+			color: $dark-body-bg;
+			background: $dark-info;
+			border-color: $dark-info;
+		}
+		.dialog-primary .dialog-header .close,
+		.dialog-danger .dialog-header .close,
+		.dialog-warning .dialog-header .close,
+		.dialog-success .dialog-header .close,
+		.dialog-info .dialog-header .close {
+			color: $dark-secondary-bg;
+			&:hover {
+				color: $dark-body-bg;
+			}
+		}
+	}
 }
 
-.modal-center .dialog{ margin-top:10px; margin-bottom:20px;}
+dialog.dialog {
+	display: none;
+}
+dialog.dialog[open] {
+	display: block;
+	margin: auto;
+	position: fixed;
+}
+.overlay dialog.dialog {
+	display: inline-block;
+	*zoom:1;
+	*display:inline;
+}

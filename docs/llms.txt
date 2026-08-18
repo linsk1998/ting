@@ -93,6 +93,7 @@
 - [树](components/tree.md): `.tree`、`.tree-icon`、`.tree-toggler`、`.collapsed`、`.active` 等树组件。
 - [侧栏导航](components/sidebar.md): `.sidebar`、`.sidebar-dark`、`.sidebar-collapsed`、`.sidebar-menu`、`.sidebar-item`、`.collapsed`、`.sidebar-indicator`、`.sidebar-icon`、`.sidebar-link`、`.sidebar-collapsible`、`.sidebar-submenu` 等侧栏导航组件（亮色/暗色主题，支持多级菜单折叠/展开）。
 - [覆盖层](components/overlay.md): `.overlay` 覆盖层容器（覆盖所属容器，半透明黑色背景）、`.overlay-viewport` 覆盖层容器（覆盖整个视口）、`.overlay-blocker` 事件捕获层（拦截用户点击）等覆盖层组件。
+- [提示信息](components/msg.md): `.msg-toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。
 - [对话框](components/dialog.md): `.dialog`、`.dialog-header`、`.dialog-title`、`.dialog-body`、`.dialog-footer`、`.dialog-close`、`.dialog-rim`、`.dialog-{context}` 等对话框组件。
 - [消息框](components/msgbox.md): `.msgbox`、`.msgbox-lg`/`.msgbox-md`/`.msgbox-sm`、`.msgbox-header`、`.msgbox-title`、`.msgbox-body`、`.msgbox-footer`、`.msgbox-{context}` 等消息框组件。
 - [窗口](components/window.md): `.win`、`.win-header`、`.win-title`、`.win-btn-group`、`.win-close`、`.win-body`、`.win-resize`、`.win-maximized`、`.win-active`、`.win-disabled`、`.win-hit`、`.win-transform-helper` 等可拖动窗口组件。

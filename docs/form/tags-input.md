@@ -16,8 +16,8 @@
 <div class="tags-input">
     <div class="tags-input-wrap">
         <div class="tag tag-default">金坷垃</div>
-        <div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div>
-        <div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div>
+        <div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div>
+        <div class="tag tag-default"><span>农业发达</span><button type="button" class="close"></button></div>
     </div>
     <button type="button" class="control-clear fa">&#xf057;</button>
 </div>
@@ -36,11 +36,11 @@
                 <div class="tags-input">
                     <div class="tags-input-wrap"
                         ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close"></button></div
                         ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close"></button></div
                     ></div>
                 </div>
             </div>
@@ -51,11 +51,11 @@
                 <div class="tags-input">
                     <div class="tags-input-nowrap"
                         ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close"></button></div
                         ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close"></button></div
                     ></div>
                 </div>
             </div>
@@ -80,11 +80,11 @@
                 <div class="tags-input">
                     <div class="tags-input-wrap"
                         ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close"></button></div
                         ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close"></button></div
                     ></div>
                     <button type="button" class="control-clear fa">&#xf057;</button>
                 </div>
@@ -103,11 +103,11 @@
                         <div class="tags-input">
                             <div class="tags-input-wrap"
                                 ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close"></button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close"></button></div
                                 ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close"></button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close"></button></div
                             ></div>
                             <button type="button" class="control-clear fa">&#xf057;</button>
                         </div>
@@ -126,11 +126,11 @@
                         <div class="tags-input">
                             <div class="tags-input-nowrap"
                                 ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">金坷垃</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">氮磷钾</a><button type="button" class="close"></button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">农业发达</a><button type="button" class="close"></button></div
                                 ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">两米下</a><button class="close" type="button">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close">✕</button></div
-                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close">✕</button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">种庄稼</a><button type="button" class="close"></button></div
+                                ><div class="tag tag-default"><i class="icon-left fa fa-paperclip"></i><a href="javascript:;">资源缺乏</a><button type="button" class="close"></button></div
                             ></div>
                             <button type="button" class="control-clear fa">&#xf057;</button>
                         </div>
@@ -153,7 +153,7 @@
         <div class="tags-input">
             <div class="tags-input-wrap"
                 ><div class="tag tag-default">金坷垃</div
-                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
             ></div>
             <input type="text" placeholder="请输入内容">
             <button type="button" class="control-clear fa">&#xf057;</button>
@@ -163,7 +163,7 @@
         <div class="tags-input">
             <div class="tags-input-nowrap"
                 ><div class="tag tag-default">金坷垃</div
-                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
             ></div>
             <input type="text" placeholder="请输入内容">
             <button type="button" class="control-clear fa">&#xf057;</button>
@@ -176,11 +176,11 @@
                 <div class="tags-input">
                     <div class="tags-input-wrap"
                         ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close"></button></div
                         ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close"></button></div
                     ></div>
                     <input type="text" placeholder="请输入内容">
                     <button type="button" class="control-clear fa">&#xf057;</button>
@@ -193,11 +193,11 @@
                 <div class="tags-input">
                     <div class="tags-input-nowrap"
                         ><div class="tag tag-default">金坷垃</div
-                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close"></button></div
                         ><div class="tag tag-default">两米下</div
-                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                        ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close"></button></div
+                        ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close"></button></div
                     ></div>
                     <input type="text" placeholder="请输入内容">
                     <button type="button" class="control-clear fa">&#xf057;</button>
@@ -219,8 +219,8 @@
         <div class="tags-input tags-input-lg">
             <div class="tags-input-wrap"
                 ><div class="tag tag-lg tag-default">金坷垃</div
-                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close"></button></div
             ></div>
             <button type="button" class="control-clear fa">&#xf057;</button>
         </div>
@@ -230,8 +230,8 @@
         <div class="tags-input tags-input-sm">
             <div class="tags-input-wrap"
                 ><div class="tag tag-sm tag-default">金坷垃</div
-                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close"></button></div
             ></div>
             <button type="button" class="control-clear fa">&#xf057;</button>
         </div>
@@ -241,8 +241,8 @@
         <div class="tags-input">
             <div class="tags-input-wrap"
                 ><div class="tag tag-lg tag-default">金坷垃</div
-                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-lg tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                ><div class="tag tag-lg tag-default"><span>农业发达</span><button type="button" class="close"></button></div
             ></div>
             <button type="button" class="control-clear fa">&#xf057;</button>
         </div>
@@ -252,8 +252,8 @@
         <div class="tags-input">
             <div class="tags-input-wrap"
                 ><div class="tag tag-sm tag-default">金坷垃</div
-                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-sm tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                ><div class="tag tag-sm tag-default"><span>农业发达</span><button type="button" class="close"></button></div
             ></div>
             <button type="button" class="control-clear fa">&#xf057;</button>
         </div>
@@ -289,11 +289,11 @@
         <div class="tags-input tags-input-disabled">
             <div class="tags-input-wrap"
                 ><div class="tag tag-default">金坷垃</div
-                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>氮磷钾</span><button type="button" class="close"></button></div
+                ><div class="tag tag-default"><span>农业发达</span><button type="button" class="close"></button></div
                 ><div class="tag tag-default">两米下</div
-                ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close">✕</button></div
-                ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close">✕</button></div
+                ><div class="tag tag-default"><span>种庄稼</span><button type="button" class="close"></button></div
+                ><div class="tag tag-default"><span>资源缺乏</span><button type="button" class="close"></button></div
             ></div>
             <input type="text" placeholder="请输入内容" disabled>
             <button type="button" class="control-clear fa">&#xf057;</button>

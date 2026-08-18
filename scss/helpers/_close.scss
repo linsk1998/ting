@@ -3,11 +3,18 @@
 
 .close{
 	width:1em; height: 1em; line-height: 1em; text-align:center; display:inline-block;
-	*zoom:#{'expression(this.runtimeStyle["zoom"]="1",this.innerHTML="×")'};
+	*zoom:#{'expression(this.runtimeStyle["zoom"]="1",this.innerHTML="✕")'};
+	*font-family: Georgia,"Times New Roman",Times,SimSun,serif;
 }
-.close:empty:before{ content:"✕";}
-.close,a.close{ color:$light-tertiary-text;}
-.close:hover{ text-decoration:none; cursor:pointer; color:$light-emphasis-text;}
+.close:before{ content:"✕";}
+.close,a.close{
+	color:$light-tertiary-text;
+	cursor:pointer;
+}
+.close:hover,a.close:hover{
+	text-decoration:none;
+	color:$light-emphasis-text;
+}
 button.close{
 	margin:0; padding:0;
 	outline:none;
@@ -16,7 +23,9 @@ button.close{
 		padding:0;
 		border:0 none;
 	}
-	cursor:pointer; background:transparent; border:0 none;
+	cursor:pointer;
+	background:transparent;
+	border:0 none;
 }
 
 @if $enable-dark {

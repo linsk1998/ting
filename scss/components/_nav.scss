@@ -2,7 +2,7 @@
 @use '../mixins' as *;
 @use '../functions' as *;
 
-.nav{ list-style:none; margin:$nav-margin; padding:0;}
+.nav{ list-style:none; margin:$nav-margin; padding:0; position: relative;}
 .nav .nav-item{ display: inline-block; *display: inline; *zoom:1;}
 
 .nav-link { border: 0 none; background: none; cursor: pointer;}

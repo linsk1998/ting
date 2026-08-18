@@ -325,22 +325,9 @@ $(function(){
 		// Initialize auto-play
 		resetTimer();
 	});
-	if('popover' in document.body) {
-		$(document).on('mousedown',function(e) {
-			$("[popover]").each(function() {
-				if(!this.contains(e.target)) {
-					this.hidePopover();
-				}
-			});
-		});
-	} else {
+	if(!window.HTMLButtonElement || !('popoverTargetElement' in HTMLButtonElement.prototype)) {
 		$(document).on('click',"[popovertarget]",function(e) {
 			var popoverTargetId = $(this).attr('popovertarget');
-			var $popoverTarget = $(document.getElementById(popoverTargetId));
-			$popoverTarget.css('display', 'block');
-		});
-		$(document).on('mouseenter',"[interestfor]",function(e) {
-			var popoverTargetId = $(this).attr('interestfor');
 			var $popoverTarget = $(document.getElementById(popoverTargetId));
 			$popoverTarget.css('display', 'block');
 		});
@@ -349,6 +336,21 @@ $(function(){
 			var $popoverTarget = $(document.getElementById(popoverTargetId));
 			$popoverTarget.css('display', 'none');
 		});
+	} else {
+		$(document).on('mousedown',function(e) {
+			$("[popover]").each(function() {
+				if(!this.contains(e.target)) {
+					this.hidePopover();
+				}
+			});
+		});
+	}
+	if(!window.HTMLButtonElement || !('interestTargetElement' in HTMLButtonElement.prototype)) {
+		$(document).on('mouseenter',"[interestfor]",function(e) {
+			var popoverTargetId = $(this).attr('interestfor');
+			var $popoverTarget = $(document.getElementById(popoverTargetId));
+			$popoverTarget.css('display', 'block');
+		});
 		$(document).on('mousedown',function(e) {
 			if($(e.target).is('[interestfor],[interestfor] *')) return;
 			$("[popover]").each(function() {
@@ -356,6 +358,34 @@ $(function(){
 					$(this).css('display', 'none');
 				}
 			});
+		});
+	}
+	if(!window.HTMLButtonElement || !('commandForElement' in HTMLButtonElement.prototype)) {
+		$(document).on('click',"[command=show-modal]",function(e) {
+			var commandForId = $(this).attr('commandfor');
+			var commandFor = document.getElementById(commandForId);
+			if(commandFor.showModal) {
+				commandFor.showModal();
+			} else {
+				var $dropback = $('<div class="overlay overlay-viewport"><div class="valign-sibling"></div></div>');
+				$(document.body).append(
+					$dropback.append(commandFor)
+				);
+				commandFor.close = function() {
+					document.body.appendChild(this);
+					$dropback.remove();
+					this.close = undefined;
+				}
+			}
+		});
+		$(document).on('click',"[command=close]",function(e) {
+			var commandForId = $(this).attr('commandfor');
+			var commandFor = document.getElementById(commandForId);
+			if(commandFor.close) {
+				commandFor.close();
+			} else {
+				console.log("close failed");
+			}
 		});
 	}
 });

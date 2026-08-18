@@ -2993,7 +2993,7 @@ dialog {
   height: -webkit-fit-content;
   height: fit-content;
   margin: auto;
-  border-width: 3px solid #000;
+  border: 3px solid #000;
   padding: 1em;
   background: white;
 }
@@ -3012,7 +3012,7 @@ dialog {
   height: -webkit-fit-content;
   height: fit-content;
   margin: auto;
-  border-width: 3px solid #000;
+  border: 3px solid #000;
   padding: 0.25em;
   background: white;
   overflow: auto;
@@ -10562,6 +10562,7 @@ button.btn-toggle-checked {
   list-style: none;
   margin: 10px 0;
   padding: 0;
+  position: relative;
 }
 
 .nav .nav-item {
@@ -12610,6 +12611,7 @@ html .dropdown-item[disabled] {
   height: 4px;
   overflow: hidden;
   font-size: 0;
+  line-height: 0;
   margin-left: 2px;
   vertical-align: middle;
   border: 4px solid transparent;
@@ -12639,6 +12641,7 @@ html .dropdown-item[disabled] {
   width: 4px;
   overflow: hidden;
   font-size: 0;
+  line-height: 0;
   margin-right: 2px;
   vertical-align: middle;
   border: 4px solid transparent;
@@ -13698,20 +13701,29 @@ html .dropdown-item[disabled] {
   display: inline-block;
   *zoom: 1;
   *display: inline;
-  background: #FFF;
-  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  vertical-align: middle;
   position: relative;
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 0;
 }
 
 .dialog-header {
-  background: #F8F8F8;
-  border-bottom: 1px solid #eee;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
   padding: 8px 16px;
-  *zoom: 1;
+  padding-right: 30px;
 }
 
 .dialog-header .close {
-  float: right;
+  position: absolute;
+  top: 11px;
+  right: 16px;
 }
 
 .dialog-title {
@@ -13719,41 +13731,41 @@ html .dropdown-item[disabled] {
 }
 
 .dialog-body {
-  padding: 16px;
+  padding: 8px 16px;
 }
 
 .dialog-footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e0e0e0;
   padding: 12px 16px;
   margin: 0;
 }
 
 .dialog-primary .dialog-header {
-  color: #fff;
+  color: #ffffff;
   background-color: #4472c4;
   border-color: #4472c4;
 }
 
-html body .dialog-danger .dialog-header {
-  color: #fff;
+.dialog-danger .dialog-header {
+  color: #ffffff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
 
-html body .dialog-warning .dialog-header {
-  color: #fff;
+.dialog-warning .dialog-header {
+  color: #ffffff;
   background-color: #ffc107;
   border-color: #ffc107;
 }
 
-html body .dialog-success .dialog-header {
-  color: #fff;
+.dialog-success .dialog-header {
+  color: #ffffff;
   background-color: #70ad47;
   border-color: #70ad47;
 }
 
-html body .dialog-info .dialog-header {
-  color: #fff;
+.dialog-info .dialog-header {
+  color: #ffffff;
   background-color: #458ccf;
   border-color: #458ccf;
 }
@@ -13764,7 +13776,7 @@ html body .dialog-info .dialog-header {
 .dialog-success .dialog-header .close,
 .dialog-info .dialog-header .close,
 .dialog-dark .dialog-header .close {
-  color: #EEE;
+  color: #eeeeee;
 }
 
 .dialog-primary .dialog-header .close:hover,
@@ -13773,73 +13785,87 @@ html body .dialog-info .dialog-header {
 .dialog-success .dialog-header .close:hover,
 .dialog-info .dialog-header .close:hover,
 .dialog-dark .dialog-header .close:hover {
-  color: #FFF;
+  color: #ffffff;
 }
 
-.dialog-rim {
-  box-shadow: none;
-  background: none;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 6px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+.dark .dialog {
+  background: #212529;
+  border-color: #495057;
+  -webkit-box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
+  -o-box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
+  box-shadow: 0 0 10px rgba(73, 80, 87, 0.5);
 }
 
-.dialog-rim .dialog-body, .dialog-rim .dialog-footer {
-  background: #fff;
+.dark .dialog-header {
+  background: #343a40;
+  border-bottom-color: #495057;
 }
 
-.dialog-close {
-  font-size: 24px;
+.dark .dialog-footer {
+  border-top-color: #495057;
+}
+
+.dark .dialog-primary .dialog-header {
+  color: #212529;
+  background: #6ea8fe;
+  border-color: #6ea8fe;
+}
+
+.dark .dialog-danger .dialog-header {
+  color: #212529;
+  background: #ea868f;
+  border-color: #ea868f;
+}
+
+.dark .dialog-warning .dialog-header {
+  color: #212529;
+  background: #ffda6a;
+  border-color: #ffda6a;
+}
+
+.dark .dialog-success .dialog-header {
+  color: #212529;
+  background: #75b798;
+  border-color: #75b798;
+}
+
+.dark .dialog-info .dialog-header {
+  color: #212529;
+  background: #6edff6;
+  border-color: #6edff6;
+}
+
+.dark .dialog-primary .dialog-header .close,
+.dark .dialog-danger .dialog-header .close,
+.dark .dialog-warning .dialog-header .close,
+.dark .dialog-success .dialog-header .close,
+.dark .dialog-info .dialog-header .close {
+  color: #2b3035;
+}
+
+.dark .dialog-primary .dialog-header .close:hover,
+.dark .dialog-danger .dialog-header .close:hover,
+.dark .dialog-warning .dialog-header .close:hover,
+.dark .dialog-success .dialog-header .close:hover,
+.dark .dialog-info .dialog-header .close:hover {
+  color: #212529;
+}
+
+dialog.dialog {
+  display: none;
+}
+
+dialog.dialog[open] {
+  display: block;
+  margin: auto;
+  position: fixed;
+}
+
+.overlay dialog.dialog {
   display: inline-block;
-  width: 24px;
-  line-height: 24px;
-  color: #777;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: -12px;
-  margin-right: -13px;
-  -webkit-text-shadow: -3px 0 #fff, 0 3px #fff, 3px 0 #fff, 0 -3px #fff;
-  -moz-text-shadow: -3px 0 #fff, 0 3px #fff, 3px 0 #fff, 0 -3px #fff;
-  text-shadow: -3px 0 #fff, 0 3px #fff, 3px 0 #fff, 0 -3px #fff;
-  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
-}
-
-.dialog-close:hover {
-  text-decoration: none;
-  color: #333;
-}
-
-.dialog-close {
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  *zoom: expression(this.runtimeStyle['zoom']='1',this.innerHTML='&#xf057;');
-}
-
-.dialog-close:before {
-  content: "\f057";
-}
-
-@media \0 screen\,screen\9  {
-  .dialog {
-    border: 1px solid #ccc;
-  }
-  .dialog-rim {
-    border: 0 none;
-  }
-  .dialog-rim, .toast {
-    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
-  }
-}
-.modal-center .dialog {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  *zoom: 1;
+  *display: inline;
 }
 
 .msgbox {
@@ -14408,20 +14434,21 @@ html body .msgbox-danger {
   line-height: 1em;
   text-align: center;
   display: inline-block;
-  *zoom: expression(this.runtimeStyle["zoom"]="1",this.innerHTML="×");
+  *zoom: expression(this.runtimeStyle["zoom"]="1",this.innerHTML="✕");
+  *font-family: Georgia, "Times New Roman", Times, SimSun, serif;
 }
 
-.close:empty:before {
+.close:before {
   content: "✕";
 }
 
 .close, a.close {
   color: #909090;
+  cursor: pointer;
 }
 
-.close:hover {
+.close:hover, a.close:hover {
   text-decoration: none;
-  cursor: pointer;
   color: #111111;
 }
 
