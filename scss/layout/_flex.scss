@@ -12,7 +12,7 @@ body.layout-full{ text-align:left;}
 
 .col-flex.row-grow{ min-height:0;}
 .row-flex.col-center{ min-width:0;}
-.row-grow,.col-center,.col-left,.col-right,.col-sider{ position: relative; overflow:auto;}
+.row-grow,.col-center,.col-left,.col-right,.col-sider{ position: relative;}
 .row-shrink{ position: relative;}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none), (-webkit-min-device-pixel-ratio:0) {

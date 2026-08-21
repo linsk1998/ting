@@ -54,13 +54,13 @@
 <h3 id="单独使用">单独使用</h3>
 <p><code>.input-prefix</code> 前置图标，<code>.input-suffix</code> 后置图标，控件必须放在 <code>.input-body</code> 内。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><div class="input">
+    <div class="tabs-pane ting-example"><div class="input">
     <div class="input-prefix"
         ><span class="valign-sibling"></span
         ><i class="icon fa">&#xf002;</i
@@ -74,7 +74,7 @@
         <input type="text"/>
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-prefix</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
 <span class="shiki-line">        &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">valign-sibling</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">span</span></span>
 <span class="shiki-line">        &gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf002;</span>&lt;/<span class="shiki-entity-name-tag">i</span></span>
@@ -93,13 +93,13 @@
 </div><h3 id="配合inputgroup使用">配合 input-group 使用</h3>
 <p><code>.input</code> 可嵌套在 <code>.input-group</code> 中，形成输入框组 + 前后缀的复合结构。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><div class="input-group">
+    <div class="tabs-pane ting-example"><div class="input-group">
     <div class="input-group-prepend">
         <div class="input-group-text">█</div>
     </div>
@@ -123,7 +123,7 @@
         </div>
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-prepend</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;█&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
@@ -152,13 +152,13 @@
 </div><h2 class="page-header" id="清空图标">清空图标</h2>
 <p>在 <code>.input-body</code> 或 <code>.input-suffix</code> 中放入 <code>.control-clear</code> 清空按钮。当没有后缀时放在 <code>.input-body</code> 内，有后缀时可放在 <code>.input-suffix</code> 中。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><!-- 没有后缀 -->
+    <div class="tabs-pane ting-example"><!-- 没有后缀 -->
 <div class="input">
     <div class="input-prefix"
         ><span class="valign-sibling"></span
@@ -209,7 +209,7 @@
         ><button type="button" class="control-clear fa">&#xf057;</button
     ></div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line"><span class="shiki-punctuation-definition-comment">&lt;!--</span><span class="shiki-comment"> 没有后缀 </span><span class="shiki-punctuation-definition-comment">--&gt;</span></span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line"><span class="shiki-punctuation-definition-comment">&lt;!--</span><span class="shiki-comment"> 没有后缀 </span><span class="shiki-punctuation-definition-comment">--&gt;</span></span>
 <span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-prefix</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
 <span class="shiki-line">        &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">valign-sibling</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">span</span></span>
@@ -265,13 +265,13 @@
 </div><h2 class="page-header" id="置灰状态">置灰状态</h2>
 <p>在 <code>.input</code> 上添加 <code>.input-disabled</code>，同时给 <code>&lt;input&gt;</code> 设置 <code>disabled</code> 属性。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><div class="input-group">
+    <div class="tabs-pane ting-example"><div class="input-group">
     <div class="input-group-prepend">
         <div class="input-group-text">█</div>
     </div>
@@ -300,7 +300,7 @@
         </div>
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-prepend</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;█&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
@@ -334,13 +334,13 @@
 </div><h2 class="page-header" id="内联表单">内联表单</h2>
 <p><code>.input</code> 可在 <code>.form-inline</code> 内联表单中使用，配合 <code>.input-group</code> 组合更复杂的场景。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><form class="form-inline">
+    <div class="tabs-pane ting-example"><form class="form-inline">
     <div class="form-group">
         <label class="form-label">Name</label>
         <input style="width:160px;" type="text" class="form-control" placeholder="Jane Doe">
@@ -392,7 +392,7 @@
         </div>
     </div>
 </form></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-inline</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-inline</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Name&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width:160px;</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">Jane Doe</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
@@ -449,13 +449,13 @@
 </div><h2 class="page-header" id="组件大小">组件大小</h2>
 <p><code>.input</code> 支持 <code>.input-lg</code> / <code>.input-sm</code>，<code>.input-group</code> 支持 <code>.input-group-lg</code> / <code>.input-group-sm</code>，还可配合 <code>.form-group-lg</code> / <code>.form-group-sm</code> 实现表单项级别的尺寸控制。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><form class="form-horizontal">
+    <div class="tabs-pane ting-example"><form class="form-horizontal">
     <div class="form-group">
         <label class="form-label">input-lg</label>
         <div class="input input-lg">
@@ -566,7 +566,7 @@
         </div>
     </div>
 </form></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;input-lg&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input input-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
@@ -682,13 +682,13 @@
 </div><h2 class="page-header" id="校验">校验</h2>
 <p><code>.input</code> 可配合 <code>.has-valid</code> / <code>.has-invalid</code> 校验状态，<code>.feedback-icon</code> 和 <code>.control-clear</code> 共存于 <code>.input-body</code> 内。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><form class="form-horizontal">
+    <div class="tabs-pane ting-example"><form class="form-horizontal">
     <div class="form-group has-valid has-feedback-icon">
         <label class="form-label">has-valid</label>
         <div class="input">
@@ -770,7 +770,7 @@
         <p class="feedback-text">有后缀</p>
     </div>
 </form></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-valid has-feedback-icon</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;has-valid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>

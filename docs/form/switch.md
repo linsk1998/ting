@@ -46,33 +46,33 @@
 
 ## 加载中
 
-添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-ring`。选中和置灰状态可叠加。
+添加 `.switch-loading`，在 `.switch-thumb` 内放 `.loading-spin`。选中和置灰状态可叠加。
 
 ```html
 <label>
     <div class="switch switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <div class="switch-thumb"><div class="loading-spin"></div></div>
         <input type="checkbox" disabled>
     </div>
     默认状态
 </label>
 <label>
     <div class="switch switch-checked switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <div class="switch-thumb"><div class="loading-spin"></div></div>
         <input type="checkbox" disabled>
     </div>
     选中
 </label>
 <label>
     <div class="switch switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <div class="switch-thumb"><div class="loading-spin"></div></div>
         <input type="checkbox" disabled>
     </div>
     默认状态
 </label>
 <label>
     <div class="switch switch-checked switch-disabled switch-loading">
-        <div class="switch-thumb"><div class="loading-ring"></div></div>
+        <div class="switch-thumb"><div class="loading-spin"></div></div>
         <input type="checkbox" disabled>
     </div>
     选中

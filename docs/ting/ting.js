@@ -112,25 +112,28 @@ $(function(){
 			$dropdown.addClass("show").removeClass("hide");
 		}
 	});
-	$(document).on('click',"[role=tabbable]>.nav>li",function(e){
+	$(document).on('click',".tabs>.nav>li",function(e){
 		$(this.parentNode).children().removeClass("active");
 		var index=$(this).index();
 		var $content=$(this.parentNode.parentNode).children(".tabs-content");
 		$(this).addClass("active");
-		$content.children().removeClass("active");
-		$content.children(".tabs-pane").eq(index).addClass("active");
+		$content.children().addClass("hide");
+		$content.children(".tabs-pane").eq(index).removeClass("hide");
 	});
-	$(document).on('click',"[role=presentation]",function(e){
+	$(document).on('click',"[data-toggle=tab]",function(e){
 		if(e.target.tagName=="A") {
 			e.preventDefault();
 		}
 		var $this=$(this);
-		if($this.hasClass("active")) return;
+		var $li=$this.closest("li");
+		if($li.hasClass("active")) return;
+		var $nav = $this.closest(".nav");
+		$nav.find("li").removeClass("active");
+		$li.addClass("active");
 		var $target=$(e.target);
 		var target = $target.attr("data-target") || $target.attr("href");
 		if(target){
 			$this.siblings().removeClass("active");
-			$this.addClass("active");
 		}
 	});
 	$(document).on('click',"[role=sidebar-nav]>.sidebar-nav-header",function(e){
@@ -345,7 +348,7 @@ $(function(){
 			});
 		});
 	}
-	if(!window.HTMLButtonElement || !('interestTargetElement' in HTMLButtonElement.prototype)) {
+	if(!window.HTMLButtonElement || !('interestForElement' in HTMLButtonElement.prototype)) {
 		$(document).on('mouseenter',"[interestfor]",function(e) {
 			var popoverTargetId = $(this).attr('interestfor');
 			var $popoverTarget = $(document.getElementById(popoverTargetId));

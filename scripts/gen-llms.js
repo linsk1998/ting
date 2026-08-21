@@ -61,7 +61,7 @@ const SECTIONS = [
 			{ file: 'content/img.md', title: '图片', desc: '`.img-rounded`、`.img-circle`、`.img-thumbnail`、`.img-fluid`、`.img-responsive` 等图片样式类。' },
 			{ file: 'content/media.md', title: '媒体对象', desc: '`.media`、`.media-left`、`.media-right`、`.media-body`、`.media-object`、`.media-heading`、`.media-middle`/`.media-bottom`、`.media-list` 等图文混排组件使用方法。' },
 			{ file: 'content/list.html', title: '列表', desc: '`.list`、`.list-dashed`、`.list-flush`、`.list-bordered`、`.list-striped`、`.list-hover`、`.list-item-{context}`、`.active` 等列表样式 Demo。' },
-			{ file: 'content/card.html', title: '卡片', desc: '`.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-indicator` 等卡片组件 Demo。' },
+			{ file: 'content/card.html', title: '卡片', desc: '`.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-underline` 等卡片组件 Demo。' },
 			{ file: 'content/well.md', title: '凹陷容器', desc: '`.well`、`.well-lg`、`.well-sm` 凹陷容器样式。' },
 			{ file: 'content/callout.md', title: '标志', desc: '`.callout`、`.callout-{context}` 标志容器。' },
 			{ file: 'content/badge.md', title: '徽章', desc: '`.badge` 徽章样式（圆角红色背景，最小宽度 18px）。' },
@@ -95,7 +95,7 @@ const SECTIONS = [
 		pages: [
 			{ file: 'helpers/index.md', title: '助手概述', desc: '浮动清除、视觉隐藏、显示/隐藏、文本截断、三角标识、关闭按钮、加载指示、图标、动画等助手类速查表。' },
 			{ file: 'helpers/float.md', title: '浮动清除', desc: '`.pull-left`、`.pull-right`、`.clearfix` 浮动相关类。' },
-			{ file: 'helpers/loading.md', title: '加载指示', desc: '`.loading-ring`（环形加载）、`.loading-grow`（闪烁加载）使用方法。' },
+			{ file: 'helpers/loading.md', title: '加载指示', desc: '`.loading-spin`（环形加载）、`.loading-grow`（闪烁加载）使用方法。' },
 			{ file: 'helpers/icon.md', title: '图标', desc: '`.icon`、`.icon-fw`、`.icon-left`/`.icon-right`、`.icon-lg`~`.icon-5x`、`.icon-rotate-*`、`.icon-flip-*` 等 FontAwesome 图标封装类。' },
 			{ file: 'helpers/animation.html', title: '动画', desc: '`.animated`、`.animated.infinite`、`.animated.forwards`、`.animated.fast`/`.faster`/`.slower` 等动画类 Demo。' },
 		],

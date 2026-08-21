@@ -25,7 +25,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .nav-tabs | 选项卡导航，底部边框，激活项带边框和白色背景 |
 | .nav-underline | 指示器导航，底部边框，激活项底部显示主题色指示线 |
 | .nav-justified | 两端对齐导航，导航项平均分配宽度 |
-| .nav-tabs-left<br/>.nav-tabs-right | 左侧/右侧垂直选项卡导航 |
+| .nav-flush | 可以使选项卡组紧贴容器 |
 
 [使用方法](./nav.md)
 
@@ -33,13 +33,13 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 
 | 类 | 描述 |
 |---|---|
-| .tabs | tab切换框总容器 |
-| .tabs-content | tab内容容器 |
-| .tabs-pane | tab内容面板，默认隐藏 |
-| .active | 激活的tab面板 |
-| .tabs-left | 导航左排 |
-| .tabs-right | 导航右排 |
-| .tabs-below | 导航下排，content需放在nav前面 |
+| .tabs | 标签页组总容器 |
+| .tabs-nav | 标签页导航容器 |
+| .tabs-content | 标签页内容容器 |
+| .tabs-pane | 标签页内容面板，默认隐藏 |
+| .tabs-nav-left | 导航左排 |
+| .tabs-nav-right | 导航右排 |
+| .tabs-nav-below | 导航下排 |
 
 [使用方法](./tabs.md)
 

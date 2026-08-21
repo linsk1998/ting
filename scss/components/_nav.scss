@@ -2,33 +2,33 @@
 @use '../mixins' as *;
 @use '../functions' as *;
 
-.nav{ list-style:none; margin:$nav-margin; padding:0; position: relative;}
+.nav{ list-style:none; margin:$nav-margin-y 0; padding:0; position: relative;}
 .nav .nav-item{ display: inline-block; *display: inline; *zoom:1;}
 
-.nav-link { border: 0 none; background: none; cursor: pointer;}
+.nav-link { border: 0 none; background: none; cursor: pointer; display: inline-block; *zoom:1;}
 button.nav-link, input.nav-link { cursor: pointer;}
 .nav-link::-moz-focus-inner{ padding:0; border:0 none;}
 
 .nav-pills{ margin-left:0;}
-.nav-pills .nav-item{ display: inline-block; *display: inline; *zoom:1; vertical-align: bottom;}
-.nav-pills .nav-link{ color:$nav-pills-color; padding:$nav-pills-padding-y $nav-pills-padding-x; display: inline-block;}
+.nav-pills .nav-item{ vertical-align: bottom;}
+.nav-pills .nav-link{ color:$nav-pills-color; padding:$nav-pills-padding-y $nav-pills-padding-x;}
 .nav-pills .nav-link:hover{ color:$nav-pills-hover-color; background-color:$nav-pills-hover-bg; text-decoration:none;}
 .nav-pills .active .nav-link, .nav-pills a.active,
 .nav-pills .active .nav-link:hover, .nav-pills a.active:hover{ background-color:$nav-pills-active-bg; color:$nav-pills-active-color;}
 
 .nav-underline{ margin-left:0; border-bottom:1px solid $light-divider;}
-.nav-underline .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
-.nav-underline .nav-link{ color:$nav-underline-color; padding:$nav-underline-padding-y $nav-underline-padding-x; display: inline-block; *zoom:1;}
+.nav-underline .nav-item{ vertical-align: bottom;}
+.nav-underline .nav-link{ color:$nav-underline-color; padding:$nav-underline-padding-y $nav-underline-padding-x;}
 .nav-underline .nav-link:hover{ color:$nav-underline-color-hover; text-decoration:none;}
 .nav-underline .active{ border-bottom:1px solid $nav-underline-active-color; margin-bottom:-1px;}
 .nav-underline .active .nav-link, .nav-underline a.active,
 .nav-underline .active .nav-link:hover, .nav-underline a.active:hover{ color:$nav-underline-active-color;}
 
 .nav-tabs{ margin-left:0; border-bottom:1px solid $light-divider;}
-.nav-tabs .nav-item{ display: inline-block; *display:inline; *zoom:1; vertical-align: bottom;}
-.nav-tabs .nav-link{ color:$light-secondary-text; padding:$nav-tabs-padding-y $nav-tabs-padding-x; display: inline-block;}
+.nav-tabs .nav-item{ vertical-align: bottom;}
+.nav-tabs .nav-link{ color:$light-secondary-text; padding:$nav-tabs-padding-y $nav-tabs-padding-x;}
 .nav-tabs .nav-link:hover{ color:$light-primary; text-decoration: none;}
-.nav-tabs .active{ border:1px solid $light-divider; border-bottom: 0 none; background:#fff; margin-bottom:-1px;}
+.nav-tabs .active{ border:1px solid $light-divider; border-bottom: 0 none; background:$light-body-bg; margin-bottom:-1px;}
 .nav-tabs .active .nav-link, .nav-tabs a.active{ padding:$nav-tabs-padding-y - 1px $nav-tabs-padding-x - 1px $nav-tabs-padding-y + 1px;}
 .nav-tabs .active .nav-link, .nav-tabs a.active,
 .nav-tabs .active .nav-link:hover, .nav-tabs a.active:hover{ color:$light-body-text;}
@@ -59,62 +59,10 @@ body:last-child .nav-justified, x:-moz-any-link {
 	.nav-justified .nav-item{ display:inline-block; *display:inline; *zoom:1;}
 }
 
-.tabs-left .nav { float: left; }
-.tabs-right .nav { float: right;}
-.tabs-left,.tabs-right {
-	@include clearfix;
+.nav-flush{
+	padding-left: $container-padding;
+	padding-right: $container-padding;
 }
-.nav-tabs-left,.nav-tabs-right,
-.tabs-left .nav,.tabs-right .nav,.tabs-below .nav{
-	border-bottom: 0 none;
-}
-.nav-tabs-left,.nav-tabs-right,
-.tabs-left .nav,.tabs-right .nav
-{ overflow:visible; *width:$nav-tabs-horizontal-side-width;}
-.nav-tabs-left,
-.tabs-left .nav{
-	border-right:1px solid $light-divider;
-	margin:0 $nav-tabs-horizontal-gutter 0 0;
-}
-.nav-tabs-right,
-.tabs-right .nav{
-	border-left:1px solid $light-divider;
-	margin:0 0 0 $nav-tabs-horizontal-gutter;
-}
-.tabs-below .nav{
-	border-top:1px solid $light-divider;
-	margin:0 0 $nav-tabs-horizontal-gutter;
-}
-.nav-tabs-left .nav-item,.nav-tabs-right .nav-item,
-.tabs-left .nav-item,.tabs-right .nav-item
-{ display:block; margin-bottom: 0;}
-.nav-tabs-left .active,.nav-tabs-right .active,
-.tabs-left .nav .active,.tabs-right .nav .active,.tabs-below .nav .active
-{ border:1px solid $light-divider;}
-.nav-tabs-left .active .nav-link,.nav-tabs-right .active .nav-link,
-.tabs-left .nav .active .nav-link,.tabs-right .nav .active .nav-link,
-.nav-tabs-left a.active,.nav-tabs-right a.active,
-.tabs-left .nav a.active,.tabs-right .nav a.active
-{ padding-top:$nav-tabs-padding-y - 1px; padding-bottom:$nav-tabs-padding-y - 1px}
-.nav-tabs-left .active .nav-link,.tabs-left .nav .active .nav-link,
-.nav-tabs-left a.active,.tabs-left .nav a.active
-{ padding-left:$nav-tabs-padding-x - 2px; padding-right: $nav-tabs-padding-x + 1px;}
-.nav-tabs-right .active .nav-link,.tabs-right .nav .active .nav-link,
-.nav-tabs-left a.active,.tabs-right .nav a.active
-{ padding-left:$nav-tabs-padding-x + 1px; padding-right: $nav-tabs-padding-x - 2px;}
-.nav-tabs-left .active,.tabs-left .nav .active
-{ border-right:0 none; position: relative; left: 1px;}
-.nav-tabs-right .active,.tabs-right .nav .active
-{ border-left:0 none; position: relative; left: -1px;}
-.tabs-below .nav .active .nav-link,.tabs-below .nav a.active
-{ padding-top:$nav-tabs-padding-y + 1px; padding-bottom: $nav-tabs-padding-y - 1px;}
-.tabs-below .nav .nav-item 
-{ vertical-align: top;}
-.tabs-below .nav .active
-{ border-top:0 none; margin-top: -1px;  margin-bottom: 0;}
-
-.tabs-pane,.tab-pane{ display:none;}
-.tabs-active { display:block;}
 
 @if $enable-dark {
 	.dark {

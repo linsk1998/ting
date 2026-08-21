@@ -136,14 +136,14 @@ function createRenderer(options = {}) {
 			});
 			if(lang === 'html' && htmlPreview) {
 				return `
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active">${text}</div>
-    <div class="tabs-pane"><pre class="code shiki m-0">${html}</pre></div>
+    <div class="tabs-pane ting-example">${text}</div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0">${html}</pre></div>
   </div>
 </div>`;
 			}

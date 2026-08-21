@@ -46,11 +46,11 @@
 
 ```html
 <div class="msg msg-vertical">
-    <div class="msg-icon icon-2x loading-ring text-info"></div>
+    <div class="msg-icon icon-2x loading-spin text-info"></div>
     <span class="msg-label">测试中</span>
 </div>
 <div class="msg msg-toast msg-vertical">
-    <div class="msg-icon icon-2x loading-ring"></div>
+    <div class="msg-icon icon-2x loading-spin"></div>
     <span class="msg-label">测试中</span>
 </div>
 ```
@@ -59,9 +59,9 @@
 
 ```html
 <div class="msg msg-square">
-    <div class="msg-icon icon-3x loading-ring text-info"></div>
+    <div class="msg-icon icon-3x loading-spin text-info"></div>
 </div>
 <div class="msg msg-toast msg-square">
-    <div class="msg-icon icon-3x loading-ring"></div>
+    <div class="msg-icon icon-3x loading-spin"></div>
 </div>
 ```

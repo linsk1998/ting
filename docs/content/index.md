@@ -13,8 +13,6 @@
 | .small、.mark | 和HTML有相同样式的class |
 | .pre、.nobr | 和HTML有相同样式的class |
 | .u、.s、.i、.b | 和HTML有相同样式的class |
-| .text-body | 正文文本 |
-| .text-muted | 减弱文本 |
 | .list-unstyled | 移除默认的列表样式 |
 | .list-inline<br/>.list-inline-item | 将所有列表项放置同一行 |
 
@@ -79,7 +77,7 @@
 | .table-bordered | 为所有表格的单元格添加边框 |
 | .table-hover | 在  内的任一行启用鼠标悬停状态 |
 | .table-sm | 让表格更加紧凑 |
-| .table-subtle<br/>.table-inverse | 表头 |
+| .thead-subtle<br/>.thead-inverse | 表头 |
 | .table-{context} | 语境类，可以用于整个表格，也可以用于整行，也可以用于单个单元格 |
 | .table-active | 激活状态 |
 | .table-responsive | 响应式表格 |
@@ -170,7 +168,7 @@
 | .card-img-overlay | 覆盖在图片上方的内容层，用于图文叠加 |
 | .card-header-tabs | 卡片头部的标签页导航样式 |
 | .card-header-pills | 卡片头部的药丸导航样式 |
-| .card-header-indicator | 卡片头部的指示器样式 |
+| .card-header-underline | 卡片头部的下划线导航样式 |
 
 			
 ```html

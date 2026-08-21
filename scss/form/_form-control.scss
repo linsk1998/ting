@@ -2,7 +2,7 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
-.form-control {
+.form-control,.form-select {
 	font-size: $ctrl-fontsize-md;
 	line-height: $ctrl-line-height;
 	color: $input-value-color;
@@ -21,10 +21,10 @@
 	cursor: not-allowed;
 	background-color: $input-disabled-bg;
 }
-input.form-control,select.form-control{
+input.form-control,select.form-control, .form-select{
 	*margin-top:-1px; *margin-bottom:-1px;
 }
-select.form-control{
+select.form-control, .form-select{
 	&::-ms-expand{ border:0; background-color:transparent;}
 }
 textarea.form-control {

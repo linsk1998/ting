@@ -28,6 +28,9 @@
 | .text-lowercase | 转化为小写 |
 | .text-uppercase | 转化为大写 |
 | .text-capitalize | 首字母转化为大写 |
+| .text-body | 正文文本 |
+| .text-secondary | 减弱文本 |
+| .text-tertiary | 三级减弱文本 |
 
 ## 字体
 

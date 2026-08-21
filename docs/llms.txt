@@ -40,7 +40,7 @@
 - [图片](content/img.md): `.img-rounded`、`.img-circle`、`.img-thumbnail`、`.img-fluid`、`.img-responsive` 等图片样式类。
 - [媒体对象](content/media.md): `.media`、`.media-left`、`.media-right`、`.media-body`、`.media-object`、`.media-heading`、`.media-middle`/`.media-bottom`、`.media-list` 等图文混排组件使用方法。
 - [列表](content/list.html): `.list`、`.list-dashed`、`.list-flush`、`.list-bordered`、`.list-striped`、`.list-hover`、`.list-item-{context}`、`.active` 等列表样式 Demo。
-- [卡片](content/card.html): `.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-indicator` 等卡片组件 Demo。
+- [卡片](content/card.html): `.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-underline` 等卡片组件 Demo。
 - [凹陷容器](content/well.md): `.well`、`.well-lg`、`.well-sm` 凹陷容器样式。
 - [标志](content/callout.md): `.callout`、`.callout-{context}` 标志容器。
 - [徽章](content/badge.md): `.badge` 徽章样式（圆角红色背景，最小宽度 18px）。
@@ -70,7 +70,7 @@
 
 - [助手概述](helpers/index.md): 浮动清除、视觉隐藏、显示/隐藏、文本截断、三角标识、关闭按钮、加载指示、图标、动画等助手类速查表。
 - [浮动清除](helpers/float.md): `.pull-left`、`.pull-right`、`.clearfix` 浮动相关类。
-- [加载指示](helpers/loading.md): `.loading-ring`（环形加载）、`.loading-grow`（闪烁加载）使用方法。
+- [加载指示](helpers/loading.md): `.loading-spin`（环形加载）、`.loading-grow`（闪烁加载）使用方法。
 - [图标](helpers/icon.md): `.icon`、`.icon-fw`、`.icon-left`/`.icon-right`、`.icon-lg`~`.icon-5x`、`.icon-rotate-*`、`.icon-flip-*` 等 FontAwesome 图标封装类。
 - [动画](helpers/animation.html): `.animated`、`.animated.infinite`、`.animated.forwards`、`.animated.fast`/`.faster`/`.slower` 等动画类 Demo。
 

@@ -41,19 +41,20 @@
 	height: 100%;
 	padding: $card-img-overlay-padding-y $card-img-overlay-padding-x;
 }
-.card .card-header-tabs, .card .card-header-indicator {
+.card .card-header-tabs, .card .card-header-underline {
 	margin-top: 0;
 	margin-right: - $card-cap-padding-x;
 	margin-bottom: - $card-cap-padding-y;
-	margin-left: - $card-cap-padding-x + 10px;
+	margin-left: - $card-cap-padding-x + $card-cap-padding-y;
 	border-bottom: 0;
 }
-.card .card-header-indicator {
-	margin-top: -6px; // TODO
+.card .card-header-underline {
+	// 向上偏移 = 下划线导航内边距 - 卡片边框宽度（7px - 1px = 6px）
+	margin-top: - $nav-underline-padding-y + $card-border-width;
 }
 .card .card-header-pills {
-	margin-top: - $card-cap-padding-y + 8px;
-	margin-bottom: - $card-cap-padding-y + 8px;
+	margin-top: - $card-cap-padding-y + $nav-pills-padding-y + $card-border-width;
+	margin-bottom: - $card-cap-padding-y + $nav-pills-padding-y + $card-border-width;
 	margin-right: - $card-cap-padding-x + $card-cap-padding-y;
 	margin-left: - $card-cap-padding-x + $card-cap-padding-y;
 }

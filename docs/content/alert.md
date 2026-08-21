@@ -7,16 +7,16 @@
 通过 `.alert` 和语境色类（如 `.alert-success`、`.alert-info`、`.alert-warning`、`.alert-danger`）可以创建不同颜色的警告框。
 
 ```html
-<div class="alert alert-success" role="alert">
+<div class="alert alert-success">
     <strong>Well done!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
-<div class="alert alert-info" role="alert">
+<div class="alert alert-info">
     <strong>Heads up!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
-<div class="alert alert-warning" role="alert">
+<div class="alert alert-warning">
     <strong>Warning!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger">
     <strong>Oh snap!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
 </div>
 ```
@@ -35,7 +35,7 @@
 ## 带标题和内容的警告框
 
 ```html
-<div class="alert alert-success" role="alert">
+<div class="alert alert-success">
     <h4 class="alert-heading">Well done!</h4>
     <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
     <hr>

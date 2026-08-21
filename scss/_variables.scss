@@ -116,11 +116,6 @@ $container-width-md: 1002px !default;
 $container-width-lg: 1134px !default;
 $container-width-xl: 1362px !default;
 $container-padding: 15px !default;
-$container-padding-xs: $container-padding !default;
-$container-padding-sm: $container-padding !default;
-$container-padding-md: $container-padding !default;
-$container-padding-lg: $container-padding !default;
-$container-padding-xl: $container-padding !default;
 
 $grid-columns: 12 !default;
 $grid-columns-list: 5 7 8 !default; //支持哪些N等分网格
@@ -376,7 +371,7 @@ $dark-breadcrumb-bg: $dark-secondary-bg !default;
 $dark-breadcrumb-color: $dark-secondary-text !default;
 $dark-breadcrumb-spliter-color: $dark-tertiary-text !default;
 
-$nav-margin: $margin-base 0 !default;
+$nav-margin-y: $margin-base !default;
 $nav-padding: 10px 0 !default;
 $nav-pills-padding-y: 7px !default;
 $nav-pills-padding-x: 15px !default;
@@ -390,13 +385,15 @@ $nav-underline-padding-x: 15px !default;
 $nav-underline-color: $light-secondary-text !default;
 $nav-underline-color-hover: $light-secondary-text !default;
 $nav-underline-active-color: $light-primary !default;
-$nav-tabs-horizontal-side-width: 200px !default;
-$nav-tabs-horizontal-gutter: 20px !default;
 $nav-tabs-padding-y: 6px !default;
 $nav-tabs-padding-x: 16px !default;
 $dark-nav-underline-color: $dark-secondary-text !default;
 $dark-nav-underline-color-hover: $dark-secondary-text !default;
 $dark-nav-underline-active-color: $dark-primary !default;
+
+$tabs-gutter: 20px !default;
+$tabs-horizontal-gutter-y: $margin-base !default;
+$tabs-horizontal-gutter-x: 20px !default;
 
 $navbar-height: 50px !default;
 $navbar-border-width: 1px !default;

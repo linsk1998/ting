@@ -53,13 +53,13 @@
 <h2 class="page-header" id="基本用法">基本用法</h2>
 <p><code>.collapse</code> 默认隐藏，添加 <code>.show</code> 后内容展开。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+    <div class="tabs-pane ting-example"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
     切换折叠
 </button>
 <div id="demo" class="collapse">
@@ -67,7 +67,7 @@
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#demo</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#demo</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    切换折叠</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
 <span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">demo</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
@@ -79,18 +79,18 @@
   </div>
 </div><h2 class="page-header" id="默认展开的可折叠内容">默认展开的可折叠内容。</h2>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><div class="collapse show">
+    <div class="tabs-pane ting-example"><div class="collapse show">
     <div class="well m-0">
         默认展开的可折叠内容。
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse show</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse show</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">well m-0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        默认展开的可折叠内容。</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
@@ -99,13 +99,13 @@
   </div>
 </div><h2 class="page-header" id="水平可折叠块">水平可折叠块</h2>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">
+    <div class="tabs-pane ting-example"><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">
     切换折叠
 </button>
 <div id="demo2" class="collapse-horizontal">
@@ -113,7 +113,7 @@
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
     </div>
 </div></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#demo2</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#demo2</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    切换折叠</span>
 <span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
 <span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">demo2</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>

@@ -53,13 +53,13 @@
 <h2 class="page-header" id="基本用法">基本用法</h2>
 <p><code>.pagination</code> 配合 <code>&lt;nav&gt;</code> 包裹，使用 <code>.disabled</code> 禁用指定页、<code>.active</code> 标记当前页。禁用项用 <code>&lt;span&gt;</code> 替代 <code>&lt;a&gt;</code>。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><nav>
+    <div class="tabs-pane ting-example"><nav>
     <ul class="pagination">
         <li><a href="#">&laquo;</a></li>
         <li><a href="#">1</a></li>
@@ -81,7 +81,7 @@
         <li><a href="#">&raquo;</a></li>
     </ul>
 </nav></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">pagination</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;laquo;</span>&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;1&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
@@ -108,13 +108,13 @@
 </div><h2 class="page-header" id="带间隙">带间隙</h2>
 <p>使用 <code>.pagination-gutter</code> 为分页项之间添加间距。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><nav>
+    <div class="tabs-pane ting-example"><nav>
     <ul class="pagination pagination-gutter">
         <li><a href="#">&laquo;</a></li>
         <li class="disabled"><span>1</span></li>
@@ -125,7 +125,7 @@
         <li><a href="#">&raquo;</a></li>
     </ul>
 </nav></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">pagination pagination-gutter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;laquo;</span>&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">disabled</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">span</span>&gt;1&lt;/<span class="shiki-entity-name-tag">span</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
@@ -141,13 +141,13 @@
 </div><h2 class="page-header" id="不同尺寸">不同尺寸</h2>
 <p><code>.pagination-lg</code> / <code>.pagination-sm</code> 控制分页大小。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><nav>
+    <div class="tabs-pane ting-example"><nav>
     <ul class="pagination pagination-lg">
         <li><a href="#">&laquo;</a></li>
         <li class="active"><span>1</span></li>
@@ -169,7 +169,7 @@
         <li><a href="#">&raquo;</a></li>
     </ul>
 </nav></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">pagination pagination-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;laquo;</span>&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">span</span>&gt;1&lt;/<span class="shiki-entity-name-tag">span</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
@@ -196,13 +196,13 @@
 </div><h1 class="page-header" id="翻页">翻页</h1>
 <p><code>.pager</code> 提供简洁的前后翻页样式。使用 <code>.previous</code> / <code>.next</code> 可将链接对齐到两端。这个没什么用，主要是兼容bootstrap。</p>
 
-<div class="tabs" role="tabbable">
+<div class="tabs">
   <ul class="nav nav-underline">
     <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><nav>
+    <div class="tabs-pane ting-example"><nav>
     <ul class="pager">
         <li><a href="#">Previous</a></li>
         <li><a href="#">Next</a></li>
@@ -214,7 +214,7 @@
         <li class="next"><a href="#">Newer &rarr;</a></li>
     </ul>
 </nav></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">pager</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Previous&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
 <span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Next&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
