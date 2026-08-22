@@ -66,11 +66,21 @@ body:last-child .nav-justified, x:-moz-any-link {
 
 @if $enable-dark {
 	.dark {
+		.nav-pills .nav-link{ color:$dark-nav-pills-color;}
+		.nav-pills .nav-link:hover{ color:$dark-nav-pills-hover-color; background:$dark-nav-pills-hover-bg;}
+		.nav-pills .active .nav-link, .nav-pills a.active,
+		.nav-pills .active .nav-link:hover, .nav-pills a.active:hover{ background:$dark-nav-pills-active-bg; color:$dark-nav-pills-active-color;}
 		.nav-underline{ border-bottom-color:$dark-divider;}
 		.nav-underline .nav-link{ color:$dark-nav-underline-color;}
 		.nav-underline .nav-link:hover{ color:$dark-nav-underline-color-hover;}
 		.nav-underline .active{ border-bottom-color:$dark-nav-underline-active-color;}
 		.nav-underline .active .nav-link, .nav-underline a.active,
 		.nav-underline .active .nav-link:hover, .nav-underline a.active:hover{ color:$dark-nav-underline-active-color;}
+		.nav-tabs{ border-bottom-color:$dark-divider;}
+		.nav-tabs .nav-link{ color:$dark-secondary-text;}
+		.nav-tabs .nav-link:hover{ color:$dark-primary;}
+		.nav-tabs .active{ border-color:$dark-divider; background:$dark-body-bg;}
+		.nav-tabs .active .nav-link, .nav-tabs a.active,
+		.nav-tabs .active .nav-link:hover, .nav-tabs a.active:hover{ color:$dark-body-text;}
 	}
 }

@@ -10659,6 +10659,21 @@ body:last-child .nav-justified, x:-moz-any-link {
   padding-right: 15px;
 }
 
+.dark .nav-pills .nav-link {
+  color: #8a9198;
+}
+
+.dark .nav-pills .nav-link:hover {
+  color: #6ea8fe;
+  background: #2b3035;
+}
+
+.dark .nav-pills .active .nav-link, .dark .nav-pills a.active,
+.dark .nav-pills .active .nav-link:hover, .dark .nav-pills a.active:hover {
+  background: #6ea8fe;
+  color: #212529;
+}
+
 .dark .nav-underline {
   border-bottom-color: #495057;
 }
@@ -10678,6 +10693,28 @@ body:last-child .nav-justified, x:-moz-any-link {
 .dark .nav-underline .active .nav-link, .dark .nav-underline a.active,
 .dark .nav-underline .active .nav-link:hover, .dark .nav-underline a.active:hover {
   color: #6ea8fe;
+}
+
+.dark .nav-tabs {
+  border-bottom-color: #495057;
+}
+
+.dark .nav-tabs .nav-link {
+  color: #8a9198;
+}
+
+.dark .nav-tabs .nav-link:hover {
+  color: #6ea8fe;
+}
+
+.dark .nav-tabs .active {
+  border-color: #495057;
+  background: #212529;
+}
+
+.dark .nav-tabs .active .nav-link, .dark .nav-tabs a.active,
+.dark .nav-tabs .active .nav-link:hover, .dark .nav-tabs a.active:hover {
+  color: #adb5bd;
 }
 
 .tabs-nav-left {
