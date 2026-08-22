@@ -2983,9 +2983,7 @@ dialog {
   position: absolute;
   position: fixed;
   left: 0px;
-  right: 0px;
   top: 0;
-  bottom: 0;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -3002,9 +3000,7 @@ dialog {
   position: absolute;
   position: fixed;
   left: 0px;
-  right: 0px;
   top: 0;
-  bottom: 0;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
