@@ -75,7 +75,7 @@
 }
 @media \0screen\,screen\9 {
 	.tree-toggler{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
-	.tree-collapsed .tree-toggler{ filter:none;}
+	.collapsed .tree-toggler{ filter:none;}
 }
 .tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:$tree-item-height;}
 .tree .collapsed ul{ display:none;}

@@ -13184,7 +13184,7 @@ html .dropdown-item[disabled] {
   .tree-toggler {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   }
-  .tree-collapsed .tree-toggler {
+  .collapsed .tree-toggler {
     filter: none;
   }
 }
