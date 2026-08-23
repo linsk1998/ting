@@ -179,6 +179,15 @@
 
 [效果演示](card.html)
 
+## 缩略图卡片
+
+| 类 | 描述 |
+|---|---|
+| .thumbnail | 卡片容器 |
+| .thumbnail .caption | 卡片主体内容区域 |
+
+[效果演示](thumbnail.md)
+
 ## 凹陷
 
 | 类 | 描述 |

@@ -7336,6 +7336,29 @@ video.embed-responsive-item {
   border-color: #495057;
 }
 
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin: 10px 0;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail .caption {
+  padding: 9px;
+  color: #595959;
+}
+
+a.thumbnail:hover {
+  border-color: #4472c4;
+}
+
 .well {
   min-height: 20px;
   padding: 15px;
@@ -8878,7 +8901,7 @@ html body .btn-disabled .caret {
 .dark .btn-default,
 .dark .btn-loading.btn-default {
   color: #f8f9fa;
-  background: #212529;
+  background: #343a40;
   border-color: #495057;
 }
 
@@ -9029,7 +9052,7 @@ html body .btn-disabled .caret {
 
 .dark input.btn:focus,
 .dark button.btn:focus {
-  outline-color: #fff;
+  outline-color: #f8f9fa;
 }
 
 html.dark .btn-disabled,

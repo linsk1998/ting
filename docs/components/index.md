@@ -37,6 +37,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .tabs-nav | 标签页导航容器 |
 | .tabs-content | 标签页内容容器 |
 | .tabs-pane | 标签页内容面板，默认隐藏 |
+| .tabs-horizontal | 导航水平布局 |
 | .tabs-nav-left | 导航左排 |
 | .tabs-nav-right | 导航右排 |
 | .tabs-nav-below | 导航下排 |

@@ -186,7 +186,7 @@ html body .btn-disabled{
 		}
 		input.btn:focus,
 		button.btn:focus {
-			outline-color: #fff;
+			outline-color: $dark-emphasis-text;
 		}
 	}
 	html.dark .btn-disabled,
