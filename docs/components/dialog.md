@@ -79,15 +79,80 @@
 ## 原生 dialog 渐进增强
 
 ```html
-<button type="button" class="btn btn-primary" commandfor="dialog1" command="show-modal">打开对话框</button>
-<dialog class="dialog" id="dialog1">
+<button type="button" class="btn btn-primary" commandfor="dialog" command="show-modal">打开对话框</button>
+<dialog class="dialog" id="dialog">
     <div class="dialog-header">
         <span class="dialog-title">标题</span>
-        <button type="button" class="close" commandfor="dialog1" command="close"></button>
+        <button type="button" class="close" commandfor="dialog" command="close"></button>
     </div>
     <div class="dialog-body"><p>原生 dialog</p></div>
     <div class="dialog-footer">
-        <button type="button" class="btn btn-primary" commandfor="dialog1" command="close">确定</button>
+        <button type="button" class="btn btn-primary" commandfor="dialog" command="close">确定</button>
+    </div>
+</dialog>
+```
+
+
+## 预设尺寸
+
+```html
+<button type="button" class="btn btn-primary" commandfor="dialog-xs" command="show-modal">xs</button>
+<dialog class="dialog dialog-xs" id="dialog-xs">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-xs" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-xs</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-xs" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-sm" command="show-modal">sm</button>
+<dialog class="dialog dialog-sm" id="dialog-sm">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-sm" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-sm</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-sm" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-md" command="show-modal">md</button>
+<dialog class="dialog dialog-md" id="dialog-md">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-md" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-md</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-md" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-lg" command="show-modal">lg</button>
+<dialog class="dialog dialog-lg" id="dialog-lg">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-lg" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-lg</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-lg" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-xl" command="show-modal">xl</button>
+<dialog class="dialog dialog-xl" id="dialog-xl">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-xl" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-xl</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-xl" command="close">确定</button>
     </div>
 </dialog>
 ```

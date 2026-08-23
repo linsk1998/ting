@@ -13716,6 +13716,7 @@ html .dropdown-item[disabled] {
   width: 100%;
   height: 100%;
   overflow: auto;
+  padding: 10px 15px 20px;
 }
 
 @media \0 screen\,screen\9  {
@@ -13814,7 +13815,6 @@ html .dropdown-item[disabled] {
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 20px;
   padding: 0;
 }
 
@@ -13879,8 +13879,7 @@ html .dropdown-item[disabled] {
 .dialog-danger .dialog-header .close,
 .dialog-warning .dialog-header .close,
 .dialog-success .dialog-header .close,
-.dialog-info .dialog-header .close,
-.dialog-dark .dialog-header .close {
+.dialog-info .dialog-header .close {
   color: #eeeeee;
 }
 
@@ -13888,9 +13887,34 @@ html .dropdown-item[disabled] {
 .dialog-danger .dialog-header .close:hover,
 .dialog-warning .dialog-header .close:hover,
 .dialog-success .dialog-header .close:hover,
-.dialog-info .dialog-header .close:hover,
-.dialog-dark .dialog-header .close:hover {
+.dialog-info .dialog-header .close:hover {
   color: #ffffff;
+}
+
+.dialog-xs {
+  width: 300px;
+}
+
+.dialog-sm {
+  width: 500px;
+  max-width: 100%;
+}
+
+.dialog-md {
+  width: 800px;
+  max-width: 100%;
+}
+
+.dialog-lg {
+  width: 1200px;
+  max-width: 100%;
+  _width: 100%;
+}
+
+.dialog-xl {
+  width: 1600px;
+  max-width: 100%;
+  _width: 100%;
 }
 
 .dark .dialog {

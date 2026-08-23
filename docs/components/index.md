@@ -254,6 +254,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .dialog-body | 对话框主体内容区域 |
 | .dialog-footer | 对话框底部按钮区域，带顶部边框 |
 | .dialog-{context} | 对话框语境色主题，影响头部背景色 |
+| .dialog-{size} | 预设大小 |
 
 [使用方法](./dialog.md)
 

@@ -2,7 +2,7 @@
 # 项目: ting-ui/css (Common Style Lib)
 # 在线演示: https://linsk1998.github.io/ting/
 # 文件数量: 60 个 .md 文档
-# 生成时间: 2026-08-21
+# 生成时间: 2026-08-23
 # =============================================================================
 
 # =============================================================================
@@ -4609,6 +4609,7 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .dialog-body | 对话框主体内容区域 |
 | .dialog-footer | 对话框底部按钮区域，带顶部边框 |
 | .dialog-{context} | 对话框语境色主题，影响头部背景色 |
+| .dialog-{size} | 预设大小 |
 
 [使用方法](./dialog.md)
 
@@ -6656,15 +6657,80 @@ bootstrap 使用 `accordion-collapse collapse`，ting-ui 使用 `accordion-colla
 ## 原生 dialog 渐进增强
 
 ```html
-<button type="button" class="btn btn-primary" commandfor="dialog1" command="show-modal">打开对话框</button>
-<dialog class="dialog" id="dialog1">
+<button type="button" class="btn btn-primary" commandfor="dialog" command="show-modal">打开对话框</button>
+<dialog class="dialog" id="dialog">
     <div class="dialog-header">
         <span class="dialog-title">标题</span>
-        <button type="button" class="close" commandfor="dialog1" command="close"></button>
+        <button type="button" class="close" commandfor="dialog" command="close"></button>
     </div>
     <div class="dialog-body"><p>原生 dialog</p></div>
     <div class="dialog-footer">
-        <button type="button" class="btn btn-primary" commandfor="dialog1" command="close">确定</button>
+        <button type="button" class="btn btn-primary" commandfor="dialog" command="close">确定</button>
+    </div>
+</dialog>
+```
+
+
+## 预设尺寸
+
+```html
+<button type="button" class="btn btn-primary" commandfor="dialog-xs" command="show-modal">xs</button>
+<dialog class="dialog dialog-xs" id="dialog-xs">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-xs" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-xs</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-xs" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-sm" command="show-modal">sm</button>
+<dialog class="dialog dialog-sm" id="dialog-sm">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-sm" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-sm</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-sm" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-md" command="show-modal">md</button>
+<dialog class="dialog dialog-md" id="dialog-md">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-md" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-md</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-md" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-lg" command="show-modal">lg</button>
+<dialog class="dialog dialog-lg" id="dialog-lg">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-lg" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-lg</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-lg" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="dialog-xl" command="show-modal">xl</button>
+<dialog class="dialog dialog-xl" id="dialog-xl">
+    <div class="dialog-header">
+        <span class="dialog-title">标题</span>
+        <button type="button" class="close" commandfor="dialog-xl" command="close"></button>
+    </div>
+    <div class="dialog-body"><p>dialog-xl</p></div>
+    <div class="dialog-footer">
+        <button type="button" class="btn btn-primary" commandfor="dialog-xl" command="close">确定</button>
     </div>
 </dialog>
 ```

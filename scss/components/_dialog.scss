@@ -9,6 +9,11 @@ $dialog-body-padding-x: 16px;
 $dialog-body-padding-y: 8px;
 $dialog-footer-padding-x: 16px;
 $dialog-footer-padding-y: 12px;
+$dialog-width-xs: 300px;
+$dialog-width-sm: 500px;
+$dialog-width-md: 800px;
+$dialog-width-lg: 1200px;
+$dialog-width-xl: 1600px;
 
 .dialog{
 	text-align:left;
@@ -20,7 +25,6 @@ $dialog-footer-padding-y: 12px;
 	position:relative;
 	border:$dialog-border-width solid $light-divider;
 	@include box-shadow(0 0 10px rgba(0,0,0,.2));
-	margin: 20px;
 	padding: 0;
 }
 .dialog-header{
@@ -58,8 +62,13 @@ $dialog-footer-padding-y: 12px;
 .dialog-danger .dialog-header .close,
 .dialog-warning .dialog-header .close,
 .dialog-success .dialog-header .close,
-.dialog-info .dialog-header .close,
-.dialog-dark .dialog-header .close{ color:$light-secondary-bg; &:hover{ color:$light-body-bg;}}
+.dialog-info .dialog-header .close{ color:$light-secondary-bg; &:hover{ color:$light-body-bg;}}
+
+.dialog-xs{ width:$dialog-width-xs;}
+.dialog-sm{ width:$dialog-width-sm; max-width: 100%;}
+.dialog-md{ width:$dialog-width-md; max-width: 100%;}
+.dialog-lg{ width:$dialog-width-lg; max-width: 100%; _width:100%;}
+.dialog-xl{ width:$dialog-width-xl; max-width: 100%; _width:100%;}
 
 @if $enable-dark {
 	.dark {
