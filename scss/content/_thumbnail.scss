@@ -24,3 +24,18 @@ $thumbnail-caption-padding: 9px !default;
 a.thumbnail:hover {
 	border-color: $light-primary;
 }
+
+@if $enable-dark {
+	.dark {
+		.thumbnail {
+			background: $dark-body-bg;
+			border-color: $dark-divider;
+		}
+		.thumbnail .caption {
+			color: $dark-secondary-text;
+		}
+		a.thumbnail:hover {
+			border-color: $dark-primary;
+		}
+	}
+}
