@@ -7359,6 +7359,19 @@ a.thumbnail:hover {
   border-color: #4472c4;
 }
 
+.dark .thumbnail {
+  background: #212529;
+  border-color: #495057;
+}
+
+.dark .thumbnail .caption {
+  color: #8a9198;
+}
+
+.dark a.thumbnail:hover {
+  border-color: #6ea8fe;
+}
+
 .well {
   min-height: 20px;
   padding: 15px;
@@ -13834,11 +13847,16 @@ html .dropdown-item[disabled] {
   vertical-align: middle;
   position: relative;
   border: 1px solid #e0e0e0;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   padding: 0;
+  margin-bottom: 20px;
+}
+
+.overlay .dialog {
+  border: 0 none;
 }
 
 .dialog-header {
@@ -13874,18 +13892,6 @@ html .dropdown-item[disabled] {
   border-color: #4472c4;
 }
 
-.dialog-danger .dialog-header {
-  color: #ffffff;
-  background-color: #dc3545;
-  border-color: #dc3545;
-}
-
-.dialog-warning .dialog-header {
-  color: #ffffff;
-  background-color: #ffc107;
-  border-color: #ffc107;
-}
-
 .dialog-success .dialog-header {
   color: #ffffff;
   background-color: #70ad47;
@@ -13896,6 +13902,18 @@ html .dropdown-item[disabled] {
   color: #ffffff;
   background-color: #458ccf;
   border-color: #458ccf;
+}
+
+.dialog-warning .dialog-header {
+  color: #ffffff;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.dialog-danger .dialog-header {
+  color: #ffffff;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 .dialog-primary .dialog-header .close,
@@ -13940,6 +13958,27 @@ html .dropdown-item[disabled] {
   _width: 100%;
 }
 
+dialog.dialog {
+  display: none;
+}
+
+dialog.dialog[open] {
+  display: block;
+  margin: auto;
+  position: fixed;
+}
+
+dialog.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay dialog.dialog {
+  border: 0 none;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
 .dark .dialog {
   background: #212529;
   border-color: #495057;
@@ -13960,32 +13999,32 @@ html .dropdown-item[disabled] {
 
 .dark .dialog-primary .dialog-header {
   color: #212529;
-  background: #6ea8fe;
+  background-color: #6ea8fe;
   border-color: #6ea8fe;
-}
-
-.dark .dialog-danger .dialog-header {
-  color: #212529;
-  background: #ea868f;
-  border-color: #ea868f;
-}
-
-.dark .dialog-warning .dialog-header {
-  color: #212529;
-  background: #ffda6a;
-  border-color: #ffda6a;
 }
 
 .dark .dialog-success .dialog-header {
   color: #212529;
-  background: #75b798;
+  background-color: #75b798;
   border-color: #75b798;
 }
 
 .dark .dialog-info .dialog-header {
   color: #212529;
-  background: #6edff6;
+  background-color: #6edff6;
   border-color: #6edff6;
+}
+
+.dark .dialog-warning .dialog-header {
+  color: #212529;
+  background-color: #ffda6a;
+  border-color: #ffda6a;
+}
+
+.dark .dialog-danger .dialog-header {
+  color: #212529;
+  background-color: #ea868f;
+  border-color: #ea868f;
 }
 
 .dark .dialog-primary .dialog-header .close,
@@ -14004,48 +14043,48 @@ html .dropdown-item[disabled] {
   color: #212529;
 }
 
-dialog.dialog {
-  display: none;
-}
-
-dialog.dialog[open] {
-  display: block;
-  margin: auto;
-  position: fixed;
-}
-
-.overlay dialog.dialog {
-  display: inline-block;
-  *zoom: 1;
-  *display: inline;
-}
-
 .msgbox {
   position: relative;
   max-width: 90%;
-  background: #fff;
+  background: #ffffff;
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  border-top: 4px solid #4472c4;
+  border: 0 none;
+  border-top: 4px solid #999;
   padding: 8px 12px;
   text-align: center;
   margin-bottom: 20px;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-.msgbox-lg {
-  width: 90%;
-}
-
-.msgbox-md {
-  width: 600px;
+.msgbox-xs {
+  width: 300px;
 }
 
 .msgbox-sm {
-  width: 400px;
+  width: 500px;
+  max-width: 100%;
+}
+
+.msgbox-md {
+  width: 700px;
+  max-width: 100%;
+}
+
+.msgbox-lg {
+  width: 900px;
+  max-width: 100%;
+  _width: 100%;
+}
+
+.msgbox-xl {
+  width: 1100px;
+  max-width: 100%;
+  _width: 100%;
 }
 
 .msgbox-header {
@@ -14075,6 +14114,7 @@ dialog.dialog[open] {
 
 .msgbox-body {
   margin: 12px 56px;
+  text-align: left;
   overflow: auto;
 }
 
@@ -14087,28 +14127,84 @@ dialog.dialog[open] {
   min-width: 60px;
 }
 
-html body .msgbox-info {
-  border-top-color: #458ccf;
+.msgbox-primary {
+  border-top-color: #4472c4;
 }
 
-html body .msgbox-success {
+.msgbox-success {
   border-top-color: #70ad47;
 }
 
-html body .msgbox-warning {
+.msgbox-info {
+  border-top-color: #458ccf;
+}
+
+.msgbox-warning {
   border-top-color: #ffc107;
 }
 
-html body .msgbox-danger {
+.msgbox-danger {
   border-top-color: #dc3545;
 }
 
 @media \0 screen\,screen\9  {
-  .msgbox-body {
-    text-align: left;
-  }
   .msgbox {
     filter: progid:DXImageTransform.Microsoft.Glow(color='#666666', Strength='1');
+  }
+}
+dialog.msgbox {
+  display: none;
+}
+
+dialog.msgbox[open] {
+  display: block;
+  margin: auto;
+  position: fixed;
+}
+
+dialog.msgbox::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay dialog.msgbox {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  filter: none;
+}
+
+.dark .msgbox {
+  background: #212529;
+  border-top-color: #495057;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.dark .msgbox-primary {
+  border-top-color: #6ea8fe;
+}
+
+.dark .msgbox-success {
+  border-top-color: #75b798;
+}
+
+.dark .msgbox-info {
+  border-top-color: #6edff6;
+}
+
+.dark .msgbox-warning {
+  border-top-color: #ffda6a;
+}
+
+.dark .msgbox-danger {
+  border-top-color: #ea868f;
+}
+
+@media \0 screen\,screen\9  {
+  .dark .msgbox {
+    filter: progid:DXImageTransform.Microsoft.Glow(color='#495057', Strength='1');
   }
 }
 .win {

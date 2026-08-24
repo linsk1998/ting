@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../functions' as *;
 @use '../mixins' as *;
 
 $dialog-border-width: 1px;
@@ -24,8 +25,12 @@ $dialog-width-xl: 1600px;
 	vertical-align: middle;
 	position:relative;
 	border:$dialog-border-width solid $light-divider;
-	@include box-shadow(0 0 10px rgba(0,0,0,.2));
+	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.3));
 	padding: 0;
+	margin-bottom:20px;
+}
+.overlay .dialog{
+	border: 0 none;
 }
 .dialog-header{
 	background:$light-tertiary-bg;
@@ -48,15 +53,14 @@ $dialog-width-xl: 1600px;
 	padding:$dialog-footer-padding-y $dialog-footer-padding-x;
 	margin:0;
 }
-.dialog-primary .dialog-header{
-	color:$light-body-bg;
-	background-color:$light-primary;
-	border-color:$light-primary;
+
+@each $key, $color in $context{
+	.dialog-#{$key} .dialog-header{
+		color:$light-body-bg;
+		background-color:$color;
+		border-color:$color;
+	}
 }
-.dialog-danger .dialog-header{ color:$light-body-bg; background-color:$light-danger; border-color:$light-danger;}
-.dialog-warning .dialog-header{ color:$light-body-bg; background-color:$light-warning; border-color:$light-warning;}
-.dialog-success .dialog-header{ color:$light-body-bg; background-color:$light-success; border-color:$light-success;}
-.dialog-info .dialog-header{ color:$light-body-bg; background-color:$light-info; border-color:$light-info;}
 
 .dialog-primary .dialog-header .close,
 .dialog-danger .dialog-header .close,
@@ -69,6 +73,24 @@ $dialog-width-xl: 1600px;
 .dialog-md{ width:$dialog-width-md; max-width: 100%;}
 .dialog-lg{ width:$dialog-width-lg; max-width: 100%; _width:100%;}
 .dialog-xl{ width:$dialog-width-xl; max-width: 100%; _width:100%;}
+
+dialog.dialog {
+	display: none;
+}
+dialog.dialog[open] {
+	display: block;
+	margin: auto;
+	position: fixed;
+}
+dialog.dialog::backdrop{
+	background-color: rgba(0,0,0,$overlay-alpha);
+}
+.overlay dialog.dialog {
+	border: 0 none;
+	display: inline-block;
+	*zoom:1;
+	*display:inline;
+}
 
 @if $enable-dark {
 	.dark {
@@ -84,30 +106,12 @@ $dialog-width-xl: 1600px;
 		.dialog-footer {
 			border-top-color: $dark-divider;
 		}
-		.dialog-primary .dialog-header {
-			color: $dark-body-bg;
-			background: $dark-primary;
-			border-color: $dark-primary;
-		}
-		.dialog-danger .dialog-header {
-			color: $dark-body-bg;
-			background: $dark-danger;
-			border-color: $dark-danger;
-		}
-		.dialog-warning .dialog-header {
-			color: $dark-body-bg;
-			background: $dark-warning;
-			border-color: $dark-warning;
-		}
-		.dialog-success .dialog-header {
-			color: $dark-body-bg;
-			background: $dark-success;
-			border-color: $dark-success;
-		}
-		.dialog-info .dialog-header {
-			color: $dark-body-bg;
-			background: $dark-info;
-			border-color: $dark-info;
+		@each $key, $color in $dark-context{
+			.dialog-#{$key} .dialog-header{
+				color:$dark-body-bg;
+				background-color:$color;
+				border-color:$color;
+			}
 		}
 		.dialog-primary .dialog-header .close,
 		.dialog-danger .dialog-header .close,
@@ -120,18 +124,4 @@ $dialog-width-xl: 1600px;
 			}
 		}
 	}
-}
-
-dialog.dialog {
-	display: none;
-}
-dialog.dialog[open] {
-	display: block;
-	margin: auto;
-	position: fixed;
-}
-.overlay dialog.dialog {
-	display: inline-block;
-	*zoom:1;
-	*display:inline;
 }

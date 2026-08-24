@@ -50,7 +50,8 @@
 		<div class="container">
 <h1 class="page-header" id="消息框">消息框</h1>
 <p>消息框（<code>.msgbox</code>）是一种特殊的对话框，左侧带有图标，适用于操作确认和状态提示。支持多种尺寸和语境色主题。</p>
-<h2 class="page-header" id="基本用法">基本用法</h2>
+<h2 class="page-header" id="消息提示">消息提示</h2>
+<p>最简单的消息框，直接在 <code>.msgbox</code> 内放置文字和图标，配合语境色类即可显示不同的提示样式。可以通过 <code>msgbox-lg</code>、<code>msgbox-md</code>、<code>msgbox-sm</code> 设置固定尺寸。</p>
 
 <div class="tabs">
   <ul class="nav nav-underline">
@@ -58,196 +59,228 @@
     <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
   </ul>
   <div class="tabs-content">
-    <div class="tabs-pane ting-example"><div class="msgbox">
+    <div class="tabs-pane ting-example"><div class="text-center">
+    <div class="msgbox msgbox-info"><i class="icon text-info fa">&#xf05a;</i> <span class="valign-middle">自适应消息框</span></div>
+</div>
+<div class="text-center">
+    <div class="msgbox msgbox-lg msgbox-success"><i class="icon text-success fa">&#xf058;</i> <span class="valign-middle">大消息框</span></div>
+</div>
+<div class="text-center">
+    <div class="msgbox msgbox-md msgbox-warning"><i class="icon text-warning fa">&#xf06a;</i> <span class="valign-middle">中消息框</span></div>
+</div>
+<div class="text-center">
+    <div class="msgbox msgbox-sm msgbox-danger"><i class="icon text-danger fa">&#xf057;</i> <span class="valign-middle">小消息框</span></div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text-center</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon text-info fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf05a;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">valign-middle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;自适应消息框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text-center</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-lg msgbox-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon text-success fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf058;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">valign-middle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;大消息框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text-center</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-md msgbox-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon text-warning fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf06a;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">valign-middle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;中消息框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text-center</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-sm msgbox-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon text-danger fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">valign-middle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;小消息框&lt;/<span class="shiki-entity-name-tag">span</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="消息对话框">消息对话框</h2>
+<p>使用 <code>.msgbox-header</code>、<code>.msgbox-body</code>、<code>.msgbox-footer</code> 构成完整的消息对话框，头部可放置标题和关闭按钮，底部放置操作按钮。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="text-center">
+    <div class="msgbox msgbox-primary">
+        <div class="msgbox-header">
+            <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+            <h3 class="msgbox-title">嗨</h3>
+        </div>
+        <div class="msgbox-body pre-wrap">小朋友们 大家好</p></div>
+        <div class="msgbox-footer">
+            <button type="button" class="btn btn-primary">确定</button>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text-center</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">h3</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;嗨&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body pre-wrap</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;小朋友们 大家好&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="弹出消息框">弹出消息框</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><button type="button" class="btn btn-primary" commandfor="msgbox-confirm" command="show-modal">确认框</button>
+<dialog id="msgbox-confirm" class="msgbox msgbox-md msgbox-info">
     <div class="msgbox-header">
-        <i class="fa icon-4x text-warning">&#xf06a;</i>
-        <h4 class="msgbox-title">提示标题</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
+        <i class="icon fa text-info">&#xf059;</i>
+        <button type="button" class="close" commandfor="msgbox-confirm" command="close"></button>
+        <h3 class="msgbox-title">还记得我是谁吗</h3>
     </div>
     <div class="msgbox-body">
-        <p>您确定要执行此操作吗？</p>
+        <pre class="pre-wrap">对了我就是为蓝猫配音的演员葛平
+今天呐我特别的要向秦皇岛市的小朋友们石家庄市的小朋友们还有河南安阳的小朋友们问声好
+为什么呢
+因为我们在二零零二年十月份来到了秦皇岛石家庄为小朋友们做现场的表演在这次活动中呢发生了一个非常有趣的事</pre>
     </div>
     <div class="msgbox-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-primary">确定</button>
+        <button type="button" class="btn btn-info" commandfor="msgbox-confirm" command="close">记得</button>
+        <button type="button" class="btn btn-default" commandfor="msgbox-confirm" command="close">忘了</button>
     </div>
-</div></div>
-    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="msgbox-info" command="show-modal">信息框</button>
+<dialog id="msgbox-info" class="msgbox msgbox-md msgbox-info">
+    <div class="msgbox-header">
+        <i class="icon fa text-info">&#xf05a;</i>
+        <button type="button" class="close" commandfor="msgbox-info" command="close"></button>
+        <h3 class="msgbox-title">下面我就跟大家讲一讲</h3>
+    </div>
+    <div class="msgbox-body">
+        <pre class="pre-wrap">当时我们在石家庄表演的时候我说小朋友们谁愿意跟我蓝猫学一句配音呐
+只听见下面有一个我来
+这时候我一看小朋友们人群当中钻出了一个光头</pre>
+    </div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-default" commandfor="msgbox-info" command="close">确定</button>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="msgbox-prompt" command="show-modal">提示词</button>
+<dialog id="msgbox-prompt" class="msgbox msgbox-md msgbox-info">
+    <div class="msgbox-header">
+        <i class="icon fa text-info">&#xf059;</i>
+        <button type="button" class="close" commandfor="msgbox-prompt" command="close"></button>
+        <h3 class="msgbox-title">哇</h3>
+    </div>
+    <div class="msgbox-body">
+        <pre class="pre-wrap">他全身穿的都是我们蓝猫品牌的衣服特别显眼我一把就把他抱了
+起来我说你叫什么名字他说我叫吴克你今年多大啦他说他五岁这个小朋友非常喜欢我抱着我啊
+非要学我配音我说好好好好好别着急啊
+我当时就说了一句</pre>
+    </div>
+    <div class="msgbox-footer">
+        <div class="input-group">
+            <div class="input-group-append input-group-btn">
+                <button class="btn btn-default" type="button" commandfor="msgbox-prompt" command="close">确定</button>
+            </div>
+            <div class="input-group-body">
+                <input type="text" class="form-control" placeholder="说了一句什么" value="我是超威蓝猫"/>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+<button type="button" class="btn btn-primary" commandfor="msgbox-success" command="show-modal">成功信息</button>
+<dialog id="msgbox-success" class="msgbox msgbox-md msgbox-success">
+    <div class="msgbox-header">
+        <i class="icon fa text-success">&#xf058;</i>
+        <button type="button" class="close" commandfor="msgbox-success" command="close"></button>
+        <h3 class="msgbox-title">他也跟着我学了一句</h3>
+    </div>
+    <div class="msgbox-body">
+        <p>学的非常像</p>
+    </div>
+    <div class="msgbox-footer">
+        <button type="button" class="btn btn-success" commandfor="msgbox-success" command="close">确定</button>
+    </div>
+</dialog></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-confirm</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">show-modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确认框&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">dialog</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-confirm</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-md msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-4x text-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf06a;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h4</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;提示标题&lt;/<span class="shiki-entity-name-tag">h4</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa text-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf059;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-confirm</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h3</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;还记得我是谁吗&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">p</span>&gt;您确定要执行此操作吗？&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">pre</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">pre-wrap</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;对了我就是为蓝猫配音的演员葛平</span>
+<span class="shiki-line">今天呐我特别的要向秦皇岛市的小朋友们石家庄市的小朋友们还有河南安阳的小朋友们问声好</span>
+<span class="shiki-line">为什么呢</span>
+<span class="shiki-line">因为我们在二零零二年十月份来到了秦皇岛石家庄为小朋友们做现场的表演在这次活动中呢发生了一个非常有趣的事&lt;/<span class="shiki-entity-name-tag">pre</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;取消&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-info</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-confirm</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;记得&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-confirm</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;忘了&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h2 class="page-header" id="语境色">语境色</h2>
-<h3 id="信息消息框">信息消息框</h3>
-
-<div class="tabs">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example"><div class="msgbox msgbox-info">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-info">&#xf05a;</i>
-        <h4 class="msgbox-title">信息</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>这是一条提示信息。</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-info">确定</button>
-    </div>
-</div></div>
-    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">dialog</span>&gt;</span>
+<span class="shiki-line"></span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">show-modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;信息框&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">dialog</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-md msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-4x text-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf05a;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h4</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;信息&lt;/<span class="shiki-entity-name-tag">h4</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa text-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf05a;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h3</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;下面我就跟大家讲一讲&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;这是一条提示信息。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">pre</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">pre-wrap</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;当时我们在石家庄表演的时候我说小朋友们谁愿意跟我蓝猫学一句配音呐</span>
+<span class="shiki-line">只听见下面有一个我来</span>
+<span class="shiki-line">这时候我一看小朋友们人群当中钻出了一个光头&lt;/<span class="shiki-entity-name-tag">pre</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="成功消息框">成功消息框</h3>
-
-<div class="tabs">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example"><div class="msgbox msgbox-success">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-success">&#xf058;</i>
-        <h4 class="msgbox-title">成功</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>操作已成功完成！</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-success">确定</button>
-    </div>
-</div></div>
-    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">dialog</span>&gt;</span>
+<span class="shiki-line"></span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-prompt</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">show-modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;提示词&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">dialog</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-prompt</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-md msgbox-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-4x text-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf058;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h4</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;成功&lt;/<span class="shiki-entity-name-tag">h4</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa text-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf059;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-prompt</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h3</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;哇&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;操作已成功完成！&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">pre</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">pre-wrap</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;他全身穿的都是我们蓝猫品牌的衣服特别显眼我一把就把他抱了</span>
+<span class="shiki-line">起来我说你叫什么名字他说我叫吴克你今年多大啦他说他五岁这个小朋友非常喜欢我抱着我啊</span>
+<span class="shiki-line">非要学我配音我说好好好好好别着急啊</span>
+<span class="shiki-line">我当时就说了一句&lt;/<span class="shiki-entity-name-tag">pre</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-append input-group-btn</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-prompt</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">说了一句什么</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">我是超威蓝猫</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="警告消息框">警告消息框</h3>
-
-<div class="tabs">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example"><div class="msgbox msgbox-warning">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-warning">&#xf06a;</i>
-        <h4 class="msgbox-title">警告</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>此操作不可撤销！</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-default">取消</button>
-        <button type="button" class="btn btn-warning">确定</button>
-    </div>
-</div></div>
-    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">dialog</span>&gt;</span>
+<span class="shiki-line"></span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-success</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">show-modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;成功信息&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">dialog</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-success</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-md msgbox-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-4x text-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf06a;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h4</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;警告&lt;/<span class="shiki-entity-name-tag">h4</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa text-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf058;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-success</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h3</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;他也跟着我学了一句&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;此操作不可撤销！&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">p</span>&gt;学的非常像&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
 <span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;取消&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-success</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">commandfor</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-success</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">command</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
 <span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">dialog</span>&gt;</span>
 </pre></div>
   </div>
-</div><h3 id="危险消息框">危险消息框</h3>
-
-<div class="tabs">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example"><div class="msgbox msgbox-danger">
-    <div class="msgbox-header">
-        <i class="fa icon-4x text-danger">&#xf057;</i>
-        <h4 class="msgbox-title">错误</h4>
-        <a href="javascript:void 0" class="close" data-dismiss="modal"></a>
-    </div>
-    <div class="msgbox-body"><p>操作失败，请重试。</p></div>
-    <div class="msgbox-footer">
-        <button type="button" class="btn btn-danger">确定</button>
-    </div>
-</div></div>
-    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox msgbox-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-4x text-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h4</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-title</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;错误&lt;/<span class="shiki-entity-name-tag">h4</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-dismiss</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">modal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
-<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">p</span>&gt;操作失败，请重试。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">msgbox-footer</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
-<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;确定&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h2 class="page-header" id="核心类">核心类</h2>
-<div class="table-responsive">
-<table class="table table-sm table-bordered table-striped">
-<thead class="thead-subtle"><tr>
-<th>类</th><th>描述</th></tr></thead>
-<tbody>
-<tr>
-<td><code>.msgbox</code></td><td>消息框容器，顶部带4px语境色边框</td>
-</tr>
-<tr>
-<td><code>.msgbox-lg</code> / <code>.msgbox-md</code> / <code>.msgbox-sm</code></td><td>尺寸</td>
-</tr>
-<tr>
-<td><code>.msgbox-header</code></td><td>头部区域</td>
-</tr>
-<tr>
-<td><code>.msgbox-title</code></td><td>标题</td>
-</tr>
-<tr>
-<td><code>.msgbox-body</code></td><td>主体内容</td>
-</tr>
-<tr>
-<td><code>.msgbox-footer</code></td><td>底部按钮区</td>
-</tr>
-<tr>
-<td><code>.msgbox-info</code> / <code>.msgbox-success</code> / <code>.msgbox-warning</code> / <code>.msgbox-danger</code></td><td>语境色</td>
-</tr>
-</tbody></table></div>
-
+</div>
 		</div>
 		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>

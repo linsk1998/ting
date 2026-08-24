@@ -76,7 +76,7 @@
 </div>
 ```
 
-## 原生 dialog 渐进增强
+## 弹出对话框
 
 ```html
 <button type="button" class="btn btn-primary" commandfor="dialog" command="show-modal">打开对话框</button>
