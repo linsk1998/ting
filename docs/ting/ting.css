@@ -2719,11 +2719,10 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   height: 100%;
-  font-size: 16px;
 }
 
 body, table, button, input, textarea, pre {
-  font-size: 14px;
+  font-size: 100%;
   line-height: 20px;
   font-family: Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   *font-family: "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -2853,6 +2852,7 @@ kbd {
 body {
   *text-align: center;
   background: #ffffff;
+  font-size: 87.5%;
 }
 
 body, button, input, textarea {
@@ -2901,49 +2901,29 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 30px;
+  font-size: 214.2857142857%;
 }
 
 h2, .h2 {
-  font-size: 24px;
+  font-size: 171.4285714286%;
 }
 
 h3, .h3 {
-  font-size: 20px;
+  font-size: 142.8571428571%;
 }
 
 h4, .h4 {
-  font-size: 16px;
+  font-size: 114.2857142857%;
 }
 
 h5, .h5 {
-  font-size: 14px;
+  font-size: 100%;
 }
 
 h6, .h6 {
-  font-size: 12px;
+  font-size: 85.7142857143%;
 }
 
-@media (max-width: 991px) {
-  h1, .h1 {
-    font-size: 30px;
-  }
-  h2, .h2 {
-    font-size: 24px;
-  }
-  h3, .h3 {
-    font-size: 20px;
-  }
-  h4, .h4 {
-    font-size: 17px;
-  }
-  h5, .h5 {
-    font-size: 14px;
-  }
-  h6, .h6 {
-    font-size: 12px;
-  }
-}
 h1 small, h2 small, h3 small {
   font-weight: normal;
   font-size: 65%;
@@ -5881,7 +5861,7 @@ body.layout-full {
 
 .lead {
   margin: 10px 0;
-  font-size: 16px;
+  font-size: 114.2857142857%;
   font-weight: 300;
   line-height: 1.4;
 }
@@ -8550,7 +8530,6 @@ html .has-invalid .feedback-tooltip {
   vertical-align: middle;
   margin: 0;
   line-height: 20px;
-  font-size: 14px;
   border-width: 1px;
   border-style: solid;
   text-align: center;
@@ -12142,7 +12121,7 @@ li:hover > .select-list-tools {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 114.2857142857%;
   color: inherit;
 }
 
@@ -13720,7 +13699,7 @@ html .dropdown-item[disabled] {
 }
 @media (max-width: 480px) {
   .carousel-caption {
-    font-size: 12px;
+    font-size: 85.7142857143%;
     word-wrap: normal;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -14104,7 +14083,7 @@ dialog.dialog::backdrop {
 
 .msgbox-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 142.8571428571%;
   padding: 28px 56px 0;
   margin: 0;
 }
@@ -14262,7 +14241,6 @@ dialog.msgbox::backdrop {
 }
 
 .win-btn-group .icon {
-  font-size: 14px;
   line-height: 24px;
   height: 24px;
   width: 24px;

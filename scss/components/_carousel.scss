@@ -1,4 +1,4 @@
-
+@use "sass:math";
 @use '../variables' as *;
 @use '../mixins' as *;
 
@@ -59,7 +59,7 @@ background:#222; color:#fff; opacity:0.5;}
 	.carousel-caption{ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
 }
 @media (max-width:480px){
-	.carousel-caption{ font-size:12px; word-wrap:normal;white-space:nowrap; text-overflow:ellipsis;overflow:hidden;}
+	.carousel-caption{ font-size:math.div(12px,$font-size-base)*100%; word-wrap:normal;white-space:nowrap; text-overflow:ellipsis;overflow:hidden;}
 	.carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin:10px;}
 }
 @if $enable-dark {

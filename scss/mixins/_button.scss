@@ -1,3 +1,4 @@
+@use "sass:math";
 @use '../variables' as *;
 @use '../functions' as *;
 @use './autoprefixer' as *;
@@ -5,7 +6,6 @@
 @mixin btn{
 	margin:0;
 	line-height:$ctrl-line-height;
-	font-size:$ctrl-fontsize-md;
 	border-width:$btn-border-width;
 	border-style:solid;
 	text-align:center;

@@ -1,4 +1,4 @@
-
+@use "sass:math";
 @use '../variables' as *;
 @use '../mixins' as *;
 
@@ -33,7 +33,7 @@ $msgbox-padding: 8px 12px;
 .msgbox-header{ position:relative; text-align:left;}
 .msgbox-header .icon{ position:absolute; top:24px; left:12px; font-size:42px;}
 .msgbox-header .close{ position:absolute; top:8px; right:12px;}
-.msgbox-title{ font-weight:bold; font-size:20px; padding:28px 56px 0; margin:0;}
+.msgbox-title{ font-weight:bold; font-size:math.div(20px,$font-size-base)*100%; padding:28px 56px 0; margin:0;}
 .msgbox-body{ margin:12px 56px; text-align:left; overflow:auto;}
 .msgbox-footer{ text-align:center; margin:0 56px 12px;}
 .msgbox-footer .btn{ min-width:60px;}
