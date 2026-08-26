@@ -17,90 +17,94 @@
 
 ## 起步
 
-- [起步指南](getting-started/index.md): 快速入门指南，包括通过 `<link>` 标签引入 ting.css、基本 HTML 模板、npm 安装方式 (`npm i @ting-ui/css`)、暗黑模式配置（局部 `.dark` / 全局 `.dark`）、以及配合 postcss-purgecss 按需打包。
+- [起步](getting-started/index.md): ting.css，有多种使用方式，最简单的方式就是直接引入全量。
 
 ## 布局
 
-- [布局概述](layout/index.md): 响应式栅格系统（12 列，5 个断点 xs/sm/md/lg/xl）、布局容器（`.container`/`.container-fluid`/`.container-{size}`）、栅格系统（`.row`/`.col-{size}-{width}` 含 offset/push/pull 和间隙支持）、弹性布局（`.flex`/`.row-flex`/`.col-flex`/`.col-left`/`.col-right`/`.col-center`）、固定比例容器（`.ratio-16x9` 等）、对齐工具（`.center-block`/`.valign`/`.valign-middle`/`.valign-bottom`/`.valign-sibling`）。
-- [布局容器演示](layout/container.html): 布局容器交互式 Demo。
-- [栅格系统演示](layout/grid.html): 栅格系统交互式 Demo。
-- [高度适应示例](layout/layout-vbox.html): 弹性高度适应布局 Demo。
-- [综合布局示例](layout/layout-border.html): 综合弹性布局 Demo。
-- [固定比例容器](layout/ratio.md): `.ratio-21x9`、`.ratio-16x9`、`.ratio-4x3`、`.ratio-1x1` 等固定比例容器的使用方法。
-- [对齐](layout/align.md): `.center-block` 块级居中、`.valign`/`.valign-middle`/`.valign-bottom`/`.valign-sibling`/`.valign-top` 垂直对齐工具类的详细使用方法。
+- [断点](layout/index.md): 包括五个默认断点，断点代表了常见设备尺寸和视口尺寸的子集。
+- [布局容器](layout/container.html): .container、.container-fluid、.container-{size}、.container-sm、.container-md、.container-lg、.container-xl。
+- [栅格系统](layout/grid.html): .row、.col-{width}、.col-4、.col-offset-{width}、.col-push-{width}、.col-pull-{width}、.col-{size}、.col-md-4、.row-gx-{n}、.row-gy-{n}。
+- [高度适应例子](layout/layout-vbox.html): .flex、.row-flex、.col-left、.col-right、.col-center、.col-flex、.row-shrink、.row-grow。
+- [综合例子](layout/layout-border.html): .flex、.row-flex、.col-left、.col-right、.col-center、.col-flex、.row-shrink、.row-grow。
+- [固定比例容器](layout/ratio.md): .ratio、.ratio-21x9、.ratio-16x9、.ratio-4x3、.ratio-1x1、.ratio-item。
+- [对齐](layout/align.md): .center-block、.valign、.valign-sibling、.valign-top、.valign-middle、.valign-bottom。
 
 ## 页面内容
 
-- [页面内容概述](content/index.md): 排版、页头、链接、按钮、表格、图片、媒体对象、列表、卡片、well 凹陷、callout 标志、badge 徽章、tag 标签、alert 警告框、jumbotron 巨幕、footer 网站底部等全部内容样式类速查表。
-- [排版](content/type.md): `.h1`~`.h6`、`.text-body`、`.text-muted`、`.list-unstyled`、`.list-inline`、`.small`、`.mark`、`.pre`、`.nobr`、`.u`、`.s`、`.i`、`.b` 等排版相关 CSS 类。
-- [链接](content/link.md): `.link-primary`、`.link-secondary`、`.link-disabled`、`.link-offset-*`、`.link-stretched` 等链接样式类。
-- [按钮](content/button.md): `.btn`、`.btn-default`、`.btn-{context}`、`.btn-outline`、`.btn-{size}`、`.btn-block`、`.btn-round`、`.btn-square`、`.btn-label`、`.btn-icon-left`/`.btn-icon-right`、`.btn-loading`、`.btn-disabled` 等按钮样式类。
-- [按钮组](content/button-group.md): `.btn-toolbar`、`.btn-group`、`.btn-group-justified`、`.btn-group-vertical` 等按钮布局类。
-- [表格](content/table.md): `.table`、`.table-striped`、`.table-bordered`、`.table-hover`、`.table-sm`、`.table-subtle`/`.table-inverse`、`.table-{context}`、`.table-active`、`.table-responsive`、`.table-fixed` 等表格样式类。
-- [图片](content/img.md): `.img-rounded`、`.img-circle`、`.img-thumbnail`、`.img-fluid`、`.img-responsive` 等图片样式类。
-- [媒体对象](content/media.md): `.media`、`.media-left`、`.media-right`、`.media-body`、`.media-object`、`.media-heading`、`.media-middle`/`.media-bottom`、`.media-list` 等图文混排组件使用方法。
-- [列表](content/list.html): `.list`、`.list-dashed`、`.list-flush`、`.list-bordered`、`.list-striped`、`.list-hover`、`.list-item-{context}`、`.active` 等列表样式 Demo。
-- [卡片](content/card.html): `.card`、`.card-body`、`.card-header`、`.card-footer`、`.card-title`、`.card-subtitle`、`.card-text`、`.card-link`、`.card-img-top`/`.card-img-bottom`、`.card-img-overlay`、`.card-header-tabs`/`.card-header-pills`/`.card-header-underline` 等卡片组件 Demo。
-- [凹陷容器](content/well.md): `.well`、`.well-lg`、`.well-sm` 凹陷容器样式。
-- [标志](content/callout.md): `.callout`、`.callout-{context}` 标志容器。
-- [徽章](content/badge.md): `.badge` 徽章样式（圆角红色背景，最小宽度 18px）。
-- [标签](content/tag.md): `.tag`、`.tag-{context}`、`.tag-{size}` 标签样式。
-- [警告框](content/alert.md): `.alert`、`.alert-{context}`、`.alert-dismissible`、`.alert-link`、`.alert-heading` 警告框样式。
-- [巨幕](content/index.md): `.jumbotron` 巨幕组件，延伸至整个浏览器视口展示关键内容。
-- [网站底部](content/index.md): `.footer` 网站底部样式。
+- [文章排版](content/type.md): .h1、.h6、.small、.mark、.pre、.nobr、.u、.s、.i、.b、.list-unstyled、.list-inline、.list-inline-item。
+- [超级链接](content/link.md): .link-primary、.link-secondary、.link-disabled、.link-offset-、.link-stretched。
+- [页头](content/index.md): 页头组件能够为 `h1` 标签增加适当的空间，并且与页面的其他部分形成一定的分隔。
+- [按钮](content/button.md): .btn、.btn-default、.btn-{context}、.btn-outline-{context}、.btn-{size}、.btn-block、.btn-round、.btn-square、.btn-label、.btn-icon-left、.btn-icon-right、.btn-loading、.btn-disabled。
+- [按钮布局](content/button-group.md): .btn-toolbar、.btn-group、.btn-group-justified、.btn-group-vertical。
+- [表格](content/table.md): .table、.table-striped、.table-bordered、.table-hover、.table-sm、.thead-subtle、.thead-inverse、.table-{context}、.table-active、.table-responsive、.table-fixed。
+- [图片](content/img.md): .img-rounded、.img-circle、.img-thumbnail、.img-fluid、.img-responsive。
+- [媒体对象](content/media.md): .media、.media-left、.media-right、.media-body、.media-object、.media-heading、.media-middle、.media-bottom、.media-list。
+- [列表](content/list.html): .list、.list-dashed、.list-flush、.list-bordered、.list-striped、.list-hover、.list-item-{context}、.active。
+- [卡片](content/card.html): .card、.card-body、.card-header、.card-footer、.card-title、.card-subtitle、.card-text、.card-link、.card-img-top、.card-img-bottom、.card-img、.card-img-overlay、.card-header-tabs、.card-header-pills、.card-header-underline。
+- [缩略图卡片](content/thumbnail.md): .thumbnail、.caption。
+- [凹陷](content/well.md): .well、.well-lg、.well-sm。
+- [标志](content/callout.md): .callout、.callout-{context}。
+- [徽章](content/badge.md): .badge。
+- [标签](content/tag.md): .tag、.tag-{context}、.tag-{size}。
+- [警告框](content/alert.md): .alert、.alert-{context}、.alert-dismissible、.alert-link、.alert-heading。
+- [巨幕](content/index.md): .jumbotron。
+- [网站底部](content/index.md): .footer。
 
 ## 表单
 
-- [表单概述](form/index.md): 基础控件、布局、尺寸、校验、静态控件、输入框组的 CSS 类速查表，以及前后缀输入框、标签输入框、下拉按钮、文本域、单选/多选框、开关、开关按钮等表单组件速查表。
-- [基础控件](form/control.md): `.form-control`、`.form-check`、`.form-check-inline`、`.form-text` 等基础表单控件使用方法。
-- [表单布局](form/form.md): `.form`、`.form-inline`、`.form-horizontal`、`.form-group`、`.form-label` 等表单布局类。
-- [控件大小](form/sizing.md): `.form-group-lg`/`.form-group-sm`、`.form-control-lg`/`.form-control-sm` 等控件尺寸类。
-- [字段校验](form/validation.md): `.has-valid`、`.has-invalid`、`.has-feedback-icon`、`.feedback-icon`、`.feedback-text`、`.feedback-tooltip` 等字段校验样式。
-- [静态控件](form/static.md): `.form-control-static` 静态控件使用方法。
-- [输入框组](form/input-group.md): `.input-group`、`.input-group-prepend`、`.input-group-append`、`.input-group-body`、`.input-group-text`、`.input-group-lg`/`.input-group-sm` 等输入框组。
-- [前后缀输入框](form/input.md): `.input`、`.input-prefix`、`.input-suffix`、`.input-body`、`.control-clear`、`.input-counter`、`.input-lg`/`.input-sm`、`.input-disabled` 等前后缀输入框使用方法（含校验、内联表单、组件尺寸等完整用法）。
-- [标签输入框](form/tags-input.md): `.tags-input`、`.tags-input-placeholder`、`.tags-input-nowrap`/`.tags-input-wrap`、`.tags-input-lg`/`.tags-input-sm`、`.tags-input-disabled` 等标签输入框。
-- [下拉按钮](form/select.md): `.select`、`.select-label`、`.select-placeholder`、`.select-icon`、`.select-disabled`、`.select-loading`、`.select-lg`/`.select-sm` 等下拉按钮。
-- [文本域](form/textarea.md): `.textarea`、`.textarea-counter`、`.textarea-lg`/`.textarea-sm` 等文本域。
-- [单选/多选框](form/checkbox.md): `.checkbox-group`/`.radio-group`、`.checkbox-group-horizontal`/`.radio-group-horizontal`、`.checkbox`/`.radio`、`.checkbox-checked`/`.radio-checked`、`.checkbox-disabled`/`.radio-disabled`、`.checkbox-indeterminate` 等单选和多选框。
-- [开关](form/switch.md): `.switch`、`.switch-checked`、`.switch-disabled`、`.switch-loading` 等开关按钮。
-- [开关按钮](form/toggle-button.md): `.btn-toggle`、`.btn-toggle-checked` 开关按钮使用方法。
+- [基础控件](form/control.md): .form-control、.form-check、.form-check-inline、.form-text。
+- [布局](form/form.md): .form、.form-inline、.form-horizontal、.form-group、.form-label、.form-control。
+- [控件大小](form/sizing.md): .form-group-lg、.form-group-sm、.form-control-lg、.form-control-sm。
+- [字段校验](form/validation.md): .has-valid、.has-invalid、.has-feedback-icon、.feedback-icon、.feedback-text、.feedback-tooltip。
+- [静态控件](form/static.md): .form-control-static。
+- [输入框组](form/input-group.md): .input-group、.input-group-prepend、.input-group-append、.input-group-body、.input-group-text、.input-group-lg、.input-group-sm。
+- [前后缀输入框](form/input.md): .input、.input-prefix、.input-suffix、.input-body、.input-lg、.input-sm、.input-disabled、.input-counter。
+- [标签输入框](form/tags-input.md): .tags-input、.tags-input-placeholder、.tags-input-nowrap、.tags-input-wrap、.tags-input-lg、.tags-input-sm、.tags-input-disabled。
+- [下拉按钮](form/select.md): .select、.select-label、.select-placeholder、.select-icon、.select-disabled、.select-loading、.select-lg、.select-sm。
+- [文本域](form/textarea.md): .textarea、.textarea-counter、.textarea-lg、.textarea-sm。
+- [单选、多选框](form/checkbox.md): .checkbox-group、.radio-group、.checkbox-group-horizontal、.radio-group-horizontal、.checkbox、.radio、.checkbox-disabled、.radio-disabled、.checkbox-checked、.radio-checked、.checkbox-indeterminate。
+- [开关](form/switch.md): .switch、.switch-checked、.switch-disabled、.switch-loading。
+- [开关按钮](form/toggle-button.md): .btn-toggle、.btn-toggle-checked。
 
 ## 助手
 
-- [助手概述](helpers/index.md): 浮动清除、视觉隐藏、显示/隐藏、文本截断、三角标识、关闭按钮、加载指示、图标、动画等助手类速查表。
-- [浮动清除](helpers/float.md): `.pull-left`、`.pull-right`、`.clearfix` 浮动相关类。
-- [加载指示](helpers/loading.md): `.loading-spin`（环形加载）、`.loading-grow`（闪烁加载）使用方法。
-- [图标](helpers/icon.md): `.icon`、`.icon-fw`、`.icon-left`/`.icon-right`、`.icon-lg`~`.icon-5x`、`.icon-rotate-*`、`.icon-flip-*` 等 FontAwesome 图标封装类。
-- [动画](helpers/animation.html): `.animated`、`.animated.infinite`、`.animated.forwards`、`.animated.fast`/`.faster`/`.slower` 等动画类 Demo。
+- [清除浮动](helpers/float.md): .pull-left、.pull-right、.clearfix。
+- [视觉隐藏](helpers/index.md): .sr-only。
+- [显示](helpers/index.md): .hidden-xl、.hidden-lg、.hidden-md、.hidden-sm、.hidden-xs、.hidden、.block、.inline-block、.inline、.invisible、.visible。
+- [文本截断](helpers/index.md): .line-{n}、.line-max-{n}、.line-min-{n}。
+- [三角标识](helpers/index.md): .caret。
+- [关闭按钮](helpers/index.md): .close。
+- [加载中](helpers/loading.md): .loading-spin、.loading-grow。
+- [图标](helpers/icon.md): .icon、.icon-fw、.icon-left、.icon-right、.icon-lg、.icon-2x、.icon-3x、.icon-4x、.icon-5x、.icon-rotate-、.icon-flip-。
+- [动画](helpers/animation.html): .animated、.infinite、.forwards、.fast、.faster、.slower。
 
 ## 组件
 
-- [组件概述](components/index.md): 全部 UI 组件的 CSS 类速查表，包括路径导航、导航、标签页、导航条、分页、列表组、进度条、轮播图、下拉菜单、工具提示、弹出框、可折叠块、手风琴、树、侧栏导航、模态对话框、提示信息、对话框、消息框、窗口、可选列表、面板等 23 个组件。
-- [路径导航](components/breadcrumb.md): `.breadcrumb` 路径导航组件，浅灰色背景，斜杠分隔。
-- [导航](components/nav.md): `.nav`、`.nav-pills`、`.nav-tabs`、`.nav-underline`、`.nav-justified`、`.nav-tabs-left`/`.nav-tabs-right` 等导航组件。
-- [标签页](components/tabs.md): `.tabs`、`.tabs-content`、`.tabs-pane`、`.tabs-left`/`.tabs-right`/`.tabs-below` 等标签页组件。
-- [导航条](components/navbar.md): `.navbar`、`.navbar-flush`、`.navbar-brand`、`.navbar-nav`、`.navbar-collapse`、`.navbar-toggler`、`.navbar-header`、`.navbar-right`、`.navbar-form`、`.navbar-btn`、`.navbar-text`、`.navbar-link` 等导航条组件。
-- [分页](components/pagination.md): `.pagination`、`.pagination-lg`/`.pagination-sm`、`.pagination-gutter`、`.active`、`.disabled` 等分页组件。
-- [列表组](components/list-group.html): `.list-group`、`.list-group-item`、`.list-group-flush`、`.list-group-item-{context}`、`.active` 等列表组 Demo。
-- [进度条](components/progress.md): `.progress`、`.progress-bar`、`.progress-bar-{context}`、`.progress-sm`/`.progress-xs` 等进度条组件。
-- [轮播图](components/carousel.md): `.carousel`、`.carousel-indicators`、`.carousel-inner`、`.carousel-item`、`.carousel-control-prev`/`.carousel-control-next`、`.carousel-caption` 等轮播图组件。
-- [下拉菜单](components/dropdown.md): `.dropdown`、`.dropdown-menu`、`.dropdown-menu-right`、`.dropdown-item`、`.dropdown-list`、`.dropup`/`.dropleft`/`.dropright`、`.dropdown-toggle-split`、`.dropright-submenu`、`.dropdown-header`、`.dropdown-divider` 等下拉菜单组件。
-- [工具提示](components/tooltip.md): `.tooltip`、`.tooltip-inner`、`.tooltip-arrow`、`.tooltip-top`/`.tooltip-right`/`.tooltip-bottom`/`.tooltip-left` 等工具提示组件。
-- [弹出框](components/popover.md): `.popover`、`.popover-arrow`、`.popover-header`、`.popover-body`、`.popover-top`/`.popover-right`/`.popover-bottom`/`.popover-left` 等弹出框组件。
-- [可折叠块](components/collapsible.md): `.collapsible` 可折叠容器，默认展开，`.collapsible.hide` 折叠隐藏。
-- [手风琴](components/accordion.md): `.accordion`、`.accordion-flush`、`.accordion-dark`、`.accordion-fill`、`.accordion-item`、`.collapsed`、`.accordion-header`、`.accordion-button`、`.accordion-indicator`、`.accordion-collapsible`、`.accordion-body` 等手风琴组件，兼容 Bootstrap `.collapse` 写法。
-- [树](components/tree.md): `.tree`、`.tree-icon`、`.tree-toggler`、`.collapsed`、`.active` 等树组件。
-- [侧栏导航](components/sidebar.md): `.sidebar`、`.sidebar-dark`、`.sidebar-collapsed`、`.sidebar-menu`、`.sidebar-item`、`.collapsed`、`.sidebar-indicator`、`.sidebar-icon`、`.sidebar-link`、`.sidebar-collapsible`、`.sidebar-submenu` 等侧栏导航组件（亮色/暗色主题，支持多级菜单折叠/展开）。
-- [覆盖层](components/overlay.md): `.overlay` 覆盖层容器（覆盖所属容器，半透明黑色背景）、`.overlay-viewport` 覆盖层容器（覆盖整个视口）、`.overlay-blocker` 事件捕获层（拦截用户点击）等覆盖层组件。
-- [提示信息](components/msg.md): `.msg-toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。
-- [对话框](components/dialog.md): `.dialog`、`.dialog-header`、`.dialog-title`、`.dialog-body`、`.dialog-footer`、`.dialog-close`、`.dialog-rim`、`.dialog-{context}` 等对话框组件。
-- [消息框](components/msgbox.md): `.msgbox`、`.msgbox-lg`/`.msgbox-md`/`.msgbox-sm`、`.msgbox-header`、`.msgbox-title`、`.msgbox-body`、`.msgbox-footer`、`.msgbox-{context}` 等消息框组件。
-- [可选列表](components/select-list.md): `.select-list`、`.select-list-drag`、`.select-list-tools` 等可选列表组件。
-- [面板](components/index.md): `.panel`、`.panel-heading`、`.panel-title`、`.panel-body`、`.panel-default`、`.panel-primary`、`.panel-success`、`.panel-info`、`.panel-warning`、`.panel-danger` 等面板组件。
+- [路径导航](components/breadcrumb.md): .breadcrumb。
+- [导航](components/nav.md): .nav、.nav-pills、.nav-tabs、.nav-underline、.nav-justified、.nav-flush。
+- [标签页](components/tabs.md): .tabs、.tabs-nav、.tabs-content、.tabs-pane、.tabs-horizontal、.tabs-nav-left、.tabs-nav-right、.tabs-nav-below、.tabs-flush、.tabs-fill。
+- [导航条](components/navbar.md): .navbar、.navbar-dark、.dark、.navbar-fixed-top、.navbar-sticky-top、.navbar-brand、.navbar-nav、.navbar-collapsible、.navbar-toggler、.navbar-header、.navbar-right、.navbar-form、.navbar-btn、.navbar-text、.navbar-link。
+- [分页](components/pagination.md): .pagination、.pagination-lg、.pagination-sm、.pagination-gutter、.active、.disabled。
+- [列表组](components/list-group.html): .list-group、.list-group-item、.list-group-flush、.list-group-item-{context}、.active。
+- [进度条](components/progress.md): .progress、.progress-bar、.progress-bar-{context}、.progress-sm、.progress-xs。
+- [轮播图](components/carousel.md): .carousel、.carousel-indicators、.carousel-inner、.carousel-item、.carousel-control-prev、.carousel-control-next、.carousel-caption。
+- [下拉菜单](components/dropdown.md): .dropdown、.dropdown-menu、.dropdown-menu-right、.dropdown-item、.dropdown-toggle、.dropup、.dropleft、.dropright、.dropdown-toggle-split、.dropright-submenu、.dropdown-header、.dropdown-divider。
+- [工具提示](components/tooltip.md): .tooltip、.tooltip-inner、.tooltip-arrow、.tooltip-top、.tooltip-right、.tooltip-bottom、.tooltip-left。
+- [弹出框](components/popover.md): .popover、.popover-arrow、.popover-header、.popover-body、.popover-top、.popover-right、.popover-bottom、.popover-left。
+- [可折叠块](components/collapsible.md): .collapsible、.hide。
+- [手风琴](components/accordion.md): .accordion、.accordion-flush、.accordion-dark、.accordion-item、.collapsed、.accordion-header、.accordion-button、.accordion-collapsible、.accordion-body。
+- [树](components/tree.md): .tree、.tree-icon、.tree-toggler、.tree-collapsible、.collapsed、.active。
+- [侧栏导航](components/sidebar.md): .sidebar、.sidebar-dark、.dark、.sidebar-collapsed、.sidebar-menu、.sidebar-item、.collapsed、.sidebar-indicator、.sidebar-icon、.sidebar-link、.sidebar-collapsible、.sidebar-submenu。
+- [覆盖层](components/overlay.md): .overlay、.overlay-viewport、.overlay-blocker。
+- [提示信息](components/msg.md): .msg、.msg-toast、.msg-icon、.msg-label、.msg-vertical、.msg-square。
+- [对话框](components/dialog.md): .dialog、.dialog-header、.dialog-title、.dialog-body、.dialog-footer、.dialog-{context}、.dialog-{size}。
+- [消息框](components/msgbox.md): .msgbox、.msgbox-{size}、.msgbox-header、.msgbox-title、.msgbox-body、.msgbox-footer、.msgbox-{context}。
+- [窗口](components/window.html): .win、.win-header、.win-title、.win-btn-group、.win-close、.win-body、.win-resizer、.win-blocker、.win-maximized、.win-inactive、.win-disabled、.win-drag-rect。
+- [面版](components/index.md): .panel、.panel-heading、.panel-title、.panel-body、.panel-default、.panel-primary、.panel-success、.panel-info、.panel-warning、.panel-danger。
 
 ## 工具类
 
-- [工具类概述](utilities/index.md): 语境颜色（primary/success/info/warning/danger）、文本对齐与转换、字体族（sans/serif/cursive/monospace）、间距（margin/padding）等工具类速查表。
-- [颜色](utilities/color.md): `.text-{context}`、`.bg-{context}`、`.border-{context}` 语境颜色的详细使用方法。
-- [字体](utilities/font.md): `.font-sans`、`.font-serif`、`.font-cursive`、`.font-monospace` 字体族类的使用方法。
+- [语境颜色](utilities/color.md): .primary、.text-primary、.bg-primary、.text-bg-primary、.border-primary、.success、.text-success、.bg-success、.text-bg-success、.border-success、.info、.text-info、.bg-info、.text-bg-info、.border-info、.warning、.text-warning、.bg-warning、.text-bg-warning、.border-warning、.danger、.text-danger、.bg-danger、.text-bg-danger、.border-danger。
+- [文本](utilities/index.md): .text-left、.text-center、.text-right、.text-justify、.text-break、.text-nowrap、.text-hide、.text-lowercase、.text-uppercase、.text-capitalize、.text-body、.text-secondary、.text-tertiary。
+- [字体](utilities/font.md): .font-sans、.font-serif、.font-cursive、.font-monospace。
+- [尺寸](utilities/index.md): .m-{size}、.p-{size}、.ml-{size}、.pl-{size}、.mr-{size}、.pr-{size}、.mt-{size}、.pt-{size}、.mb-{size}、.pb-{size}、.mx-{size}、.px-{size}、.my-{size}、.py-{size}。

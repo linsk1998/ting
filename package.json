@@ -1,6 +1,6 @@
 {
 	"name": "@ting-ui/css",
-	"version": "1.0.0",
+	"version": "1.0.0-alpha.1",
 	"description": "common style lib",
 	"style": "all.css",
 	"keywords": [

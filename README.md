@@ -6,6 +6,8 @@
 
 https://linsk1998.github.io/ting/
 
+http://raw.githack.com/linsk1998/ting/master/index.html
+
 ## 设计理念
 
 - 统一命名方式
