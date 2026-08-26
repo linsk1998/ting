@@ -15,7 +15,6 @@ html{ -webkit-min-font-size:0 !important; -webkit-text-size-adjust:100%; -ms-tex
 body,table,button,input,textarea,pre{ font-size:$font-size-base; line-height:$line-height-base; font-family:Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; *font-family:"Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
 h1,h2,h3{ *font-family: "Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",SimHei,sans-serif;}
 body,dd,dl{margin:0; padding:0;}
-body.app{ height:100%;}
 html,body,img{border:0;}
 article{ text-align:left;}
 p,pre{ margin:$margin-base 0;}
@@ -39,7 +38,7 @@ code{ direction:ltr; text-align:left; white-space:pre;}
 kbd{ padding:2px 4px; font-size:90%; color:$dark-heading-text; background-color:$light-inverse; @include rounded(3px); margin-left:4px; margin-right:4px;}
 [hidden]{ display:none;}
 
-body{ *text-align:center;}
+body{ *text-align:center; background: $light-body-bg;}
 body,button,input,textarea{ color:$light-body-text;}
 
 a{ color:$light-primary; text-decoration:none; cursor:pointer; outline:none;}

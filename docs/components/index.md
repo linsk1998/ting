@@ -41,6 +41,8 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .tabs-nav-left | 导航左排 |
 | .tabs-nav-right | 导航右排 |
 | .tabs-nav-below | 导航下排 |
+| .tabs-flush | 标签页组紧贴容器 |
+| .tabs-fill | 标签页组填充容器 |
 
 [使用方法](./tabs.md)
 
@@ -283,24 +285,14 @@ breadcrumb在一个带有层次的导航结构中标明当前页面的位置。
 | .win-btn-group | 窗口标题栏右侧的按钮组（最小化、最大化、关闭） |
 | .win-close | 窗口关闭按钮，红色背景 |
 | .win-body | 窗口主体内容区域，可滚动 |
-| .win-resize | 窗口右下角的缩放手柄 |
+| .win-resizer | 窗口右下角的缩放手柄 |
+| .win-blocker | 窗口遮罩层，禁用时阻挡点击 |
 | .win-maximized | 最大化状态的窗口，占满整个视口 |
-| .win-active | 激活状态的窗口，标题栏使用主题色 |
+| .win-inactive | 未激活状态的窗口 |
 | .win-disabled | 禁用状态的窗口，不可操作，显示半透明遮罩 |
-| .win-hit | 窗口禁用时的遮罩层，拦截用户操作 |
-| .win-transform-helper | 窗口拖拽/缩放时的辅助边框 |
+| .win-drag-rect | 窗口拖拽/缩放时的辅助边框 |
 
 [使用方法](./window.html)
-
-## 可选列表
-
-| 类 | 描述 |
-|---|---|
-| .select-list | 可选列表容器，浅灰色背景，左侧带2px边框 |
-| .select-list-drag | 列表项拖动手柄，可移动光标 |
-| .select-list-tools | 列表项操作工具区，悬停时显示 |
-
-[使用方法](./select-list.md)
 
 ## 面版
 

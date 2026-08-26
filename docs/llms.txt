@@ -96,7 +96,6 @@
 - [提示信息](components/msg.md): `.msg-toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。
 - [对话框](components/dialog.md): `.dialog`、`.dialog-header`、`.dialog-title`、`.dialog-body`、`.dialog-footer`、`.dialog-close`、`.dialog-rim`、`.dialog-{context}` 等对话框组件。
 - [消息框](components/msgbox.md): `.msgbox`、`.msgbox-lg`/`.msgbox-md`/`.msgbox-sm`、`.msgbox-header`、`.msgbox-title`、`.msgbox-body`、`.msgbox-footer`、`.msgbox-{context}` 等消息框组件。
-- [窗口](components/window.md): `.win`、`.win-header`、`.win-title`、`.win-btn-group`、`.win-close`、`.win-body`、`.win-resize`、`.win-maximized`、`.win-active`、`.win-disabled`、`.win-hit`、`.win-transform-helper` 等可拖动窗口组件。
 - [可选列表](components/select-list.md): `.select-list`、`.select-list-drag`、`.select-list-tools` 等可选列表组件。
 - [面板](components/index.md): `.panel`、`.panel-heading`、`.panel-title`、`.panel-body`、`.panel-default`、`.panel-primary`、`.panel-success`、`.panel-info`、`.panel-warning`、`.panel-danger` 等面板组件。
 

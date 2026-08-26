@@ -123,7 +123,6 @@ const SECTIONS = [
 			{ file: 'components/msg.md', title: '提示信息', desc: '`.msg-toast`（半透明黑色背景提示框）、`.msg`（白色背景消息提示）使用方法。' },
 			{ file: 'components/dialog.md', title: '对话框', desc: '`.dialog`、`.dialog-header`、`.dialog-title`、`.dialog-body`、`.dialog-footer`、`.dialog-close`、`.dialog-rim`、`.dialog-{context}` 等对话框组件。' },
 			{ file: 'components/msgbox.md', title: '消息框', desc: '`.msgbox`、`.msgbox-lg`/`.msgbox-md`/`.msgbox-sm`、`.msgbox-header`、`.msgbox-title`、`.msgbox-body`、`.msgbox-footer`、`.msgbox-{context}` 等消息框组件。' },
-			{ file: 'components/window.md', title: '窗口', desc: '`.win`、`.win-header`、`.win-title`、`.win-btn-group`、`.win-close`、`.win-body`、`.win-resize`、`.win-maximized`、`.win-active`、`.win-disabled`、`.win-hit`、`.win-transform-helper` 等可拖动窗口组件。' },
 			{ file: 'components/select-list.md', title: '可选列表', desc: '`.select-list`、`.select-list-drag`、`.select-list-tools` 等可选列表组件。' },
 			{ file: 'components/index.md', title: '面板', desc: '`.panel`、`.panel-heading`、`.panel-title`、`.panel-body`、`.panel-default`、`.panel-primary`、`.panel-success`、`.panel-info`、`.panel-warning`、`.panel-danger` 等面板组件。' },
 		],

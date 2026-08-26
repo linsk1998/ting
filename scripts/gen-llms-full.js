@@ -54,7 +54,7 @@ const sections = [
       'components/tooltip.md', 'components/popover.md', 'components/collapsible.md',
       'components/collapse.md', 'components/accordion.md', 'components/tree.md',
       'components/sidebar.md', 'components/overlay.md', 'components/msg.md',
-      'components/dialog.md', 'components/msgbox.md', 'components/window.md',
+      'components/dialog.md', 'components/msgbox.md',
       'components/select-list.md',
     ],
   },

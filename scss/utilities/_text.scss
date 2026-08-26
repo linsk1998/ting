@@ -25,6 +25,13 @@
 
 .text-decoration-none { text-decoration: none !important;}
 
+.user-select-none {
+	@include user-select(none);
+}
+.user-select-all {
+	@include user-select(all);
+}
+
 @if $enable-dark {
 	.dark {
 		.text-heading{ color:$dark-heading-text;}

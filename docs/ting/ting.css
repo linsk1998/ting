@@ -2738,10 +2738,6 @@ body, dd, dl {
   padding: 0;
 }
 
-body.app {
-  height: 100%;
-}
-
 html, body, img {
   border: 0;
 }
@@ -2856,6 +2852,7 @@ kbd {
 
 body {
   *text-align: center;
+  background: #ffffff;
 }
 
 body, button, input, textarea {
@@ -14208,11 +14205,17 @@ dialog.msgbox::backdrop {
   }
 }
 .win {
-  border: 2px solid #7E95BD;
+  border: 2px solid #4472c4;
   background: #fff;
   position: absolute;
   text-align: left;
   padding-top: 36px;
+  z-index: 1000;
+}
+
+.win-header {
+  background: #4472c4;
+  border-color: #4472c4;
 }
 
 .win-maximized {
@@ -14228,8 +14231,8 @@ dialog.msgbox::backdrop {
   height: 36px;
   padding: 0 10px;
   color: #fff;
-  background: #7E95BD;
-  border-bottom: 2px solid #7E95BD;
+  background: #4472c4;
+  border-bottom: 2px solid #4472c4;
   cursor: move;
   overflow: hidden;
 }
@@ -14259,7 +14262,7 @@ dialog.msgbox::backdrop {
 }
 
 .win-btn-group .icon {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   height: 24px;
   width: 24px;
@@ -14293,7 +14296,7 @@ dialog.msgbox::backdrop {
   height: 100% !important;
 }
 
-.win-resize {
+.win-resizer {
   position: absolute;
   right: 2px;
   bottom: 2px;
@@ -14307,31 +14310,31 @@ dialog.msgbox::backdrop {
   outline: none;
   -webkit-appearance: none;
   background: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
-.win-resize:hover {
+.win-resizer:hover {
   border-bottom-color: #333;
   border-right-color: #333;
 }
 
-.win-resize {
+.win-resizer {
   border-top-color: transparent;
   border-left-color: transparent;
   _border-top-style: dotted;
   _border-left-style: dotted;
 }
 
-.win-hit {
-  display: none;
+.win-inactive {
+  border-color: #7E95BD;
 }
 
-.win-active {
-  border-color: #4472c4;
-}
-
-.win-active .win-header {
-  background: #4472c4;
-  border-color: #4472c4;
+.win-inactive .win-header {
+  background: #7E95BD;
+  border-color: #7E95BD;
 }
 
 .win-disabled {
@@ -14339,7 +14342,11 @@ dialog.msgbox::backdrop {
   cursor: not-allowed;
 }
 
-.win-disabled .win-hit {
+.win-blocker {
+  display: none;
+}
+
+.win-disabled .win-blocker {
   display: block;
   position: absolute;
   top: 0;
@@ -14352,16 +14359,26 @@ dialog.msgbox::backdrop {
 }
 
 @media \0 screen\,screen\9  {
-  .win-disabled .win-hit {
+  .win-disabled .win-blocker {
     filter: Alpha(opacity=50);
   }
 }
-.win-transform-helper {
+.win-drag-rect {
   position: absolute;
-  z-index: 1000;
-  border: 5px solid red;
+  z-index: 2147483647;
+  color: #000;
+  outline: 4px solid;
+  outline-color: invert;
+  outline-offset: -4px;
+  _border: 4px solid #000;
 }
 
+@supports (mix-blend-mode: difference) {
+  .win-drag-rect {
+    outline-color: #fff;
+    mix-blend-mode: difference;
+  }
+}
 .dark {
   color-scheme: dark;
   color: #adb5bd;
@@ -15098,6 +15115,20 @@ button.close {
 
 .text-decoration-none {
   text-decoration: none !important;
+}
+
+.user-select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.user-select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -o-user-select: all;
+  user-select: all;
 }
 
 .dark .text-heading {

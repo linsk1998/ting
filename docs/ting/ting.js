@@ -148,8 +148,104 @@ $(function(){
 			$next.removeClass('collapsed');
 		}
 	});
+	var nextLevel = 1500;
+	$(document).on("mousedown",".win>",function(e){
+		var $win=$(this).closest(".win");
+		if($win.hasClass("win-inactive")) {
+			$(".win").addClass("win-inactive");
+			$win.removeClass("win-inactive");
+			$win.css("z-index",nextLevel++);
+		}
+	});
 	$(document).on('click',".tree-toggler",function(e){
 		$(this).parent().toggleClass("collapsed");
+	});
+	var rectDX=0,rectDY=0,rectDW=0,rectDH=0;
+	if(!('outlineOffset' in document.body.style)) {
+		rectDX=4; rectDY=4; rectDW=-8; rectDH=-8;
+	}
+	function blockSelect(){return false;}
+	// 窗口拖拽移动与调整大小（事件代理）
+	$(document).on("mousedown",".win>.win-header",function(e){
+		if(e.which && e.which!==1) return;
+		var $win=$(this).closest(".win");
+		if($win.hasClass("win-disabled")||$win.hasClass("win-maximized")) return;
+		// 点击标题栏按钮组不触发拖拽
+		if(e.target !== this) return;
+		$(document.body).addClass("user-select-none");
+		$(document).on("selectstart",blockSelect);
+		var startX=e.pageX,startY=e.pageY;
+		var left=$win.position().left,top=$win.position().top;
+		var width=$win.outerWidth(),height=$win.outerHeight();
+		var $rect=null;
+		// 移动超过阈值才算真正拖动，此时才创建预览矩形，松开后再应用到真实窗口
+		function ensureRect(dx,dy){
+			if($rect) return;
+			if(Math.abs(dx)<3&&Math.abs(dy)<3) return;
+			$rect=$('<div class="win-drag-rect"></div>')
+				.css({left:left+rectDX,top:top+rectDY,width:width+rectDW,height:height+rectDH})
+				.appendTo(document.body);
+		}
+		function setRect(dx,dy){
+			$rect.css({left:left+dx+rectDX,top:top+dy+rectDY});
+		}
+		function onMove(ev){
+			if(ev.which && ev.which!==1) return onUp(ev);
+			var dx=ev.pageX-startX,dy=ev.pageY-startY;
+			ensureRect(dx,dy);
+			if($rect) setRect(dx,dy);
+		}
+		function onUp(ev){
+			$(document.body).removeClass("user-select-none");
+			if($rect){
+				var dx=ev.pageX-startX,dy=ev.pageY-startY;
+				$win.css({left:left+dx,top:top+dy});
+				$rect.remove();
+			}
+			$(document).off("selectstart",blockSelect);
+			$(document).off("mousemove",onMove).off("mouseup",onUp);
+		}
+		$(document).on("mousemove",onMove).on("mouseup",onUp);
+	});
+	// 窗口拖拽移动与调整大小（事件代理）
+	$(document).on("mousedown",".win>.win-resizer",function(e){
+		if(e.which && e.which!==1) return;
+		var $win=$(this).closest(".win");
+		if($win.hasClass("win-disabled")||$win.hasClass("win-maximized")) return;
+		$(document.body).addClass("user-select-none");
+		$(document).on("selectstart",blockSelect);
+		var startX=e.pageX,startY=e.pageY;
+		var left=$win.position().left,top=$win.position().top;
+		var width=$win.outerWidth(),height=$win.outerHeight();
+		var $rect=null;
+		// 移动超过阈值才算真正拖动，此时才创建预览矩形，松开后再应用到真实窗口
+		function ensureRect(dx,dy){
+			if($rect) return;
+			if(Math.abs(dx)<3&&Math.abs(dy)<3) return;
+			$rect=$('<div class="win-drag-rect"></div>')
+				.css({left:left+rectDX,top:top+rectDY,width:width+rectDW,height:height+rectDH})
+				.appendTo(document.body);
+		}
+		function setRect(dx,dy){
+			$rect.css({width:Math.max(180,width+dx)+rectDW,height:Math.max(80,height+dy)+rectDH});
+		}
+		function onMove(ev){
+			if(ev.which && ev.which!==1) return onUp(ev);
+			var dx=ev.pageX-startX,dy=ev.pageY-startY;
+			ensureRect(dx,dy);
+			if($rect) setRect(dx,dy);
+		}
+		function onUp(ev){
+			$(document.body).removeClass("user-select-none");
+			if($rect){
+				var dx=ev.pageX-startX,dy=ev.pageY-startY;
+				$win.css({width:Math.max(180,width+dx),height:Math.max(80,height+dy)});
+				$rect.remove();
+			}
+			$(document).off("selectstart",blockSelect);
+			$(document).off("mousemove",onMove).off("mouseup",onUp);
+		}
+		$(document).on("mousemove",onMove).on("mouseup",onUp);
 	});
 	if(document.addEventListener){
 		$(document).on('click',"[role=radio]>label",function(e){

@@ -1,12 +1,18 @@
 @use '../variables' as *;
+@use '../mixins' as *;
 @use '../functions' as *;
 
 .win {
-	border:2px solid desaturate(lighten($light-primary,10%),20%);
+	border:2px solid $light-primary;
 	background:#fff;
 	position:absolute;
 	text-align:left;
 	padding-top:36px;
+	z-index: $level-dialog;
+}
+.win-header {
+	background:$light-primary;
+	border-color:$light-primary;
 }
 .win-maximized {
 	top: 0 !important;
@@ -20,8 +26,8 @@
 	height: 36px;
 	padding: 0 10px;
 	color: #fff;
-	background: desaturate(lighten($light-primary,10%),20%);
-	border-bottom:2px solid desaturate(lighten($light-primary,10%),20%);
+	background: $light-primary;
+	border-bottom:2px solid $light-primary;
 	cursor: move;
 	overflow: hidden;
 }
@@ -44,7 +50,7 @@
 	font-size:0; line-height:0;
 	float:right;
 	.icon{
-		font-size:16px;
+		font-size:14px;
 		line-height:24px;
 		height:24px;
 		width:24px;
@@ -73,7 +79,7 @@
 .win-maximized .win-body {
 	height: 100% !important;
 }
-.win-resize {
+.win-resizer {
 	position: absolute;
 	right: 2px;
 	bottom: 2px;
@@ -87,32 +93,33 @@
 	outline: none;
 	-webkit-appearance: none;
 	background: none;
+	@include user-select(none);
 }
-.win-resize:hover {
+.win-resizer:hover {
 	border-bottom-color: #333;
 	border-right-color: #333;
 }
-.win-resize {
+.win-resizer {
 	border-top-color: transparent;
 	border-left-color: transparent;
 	_border-top-style: dotted;
 	_border-left-style: dotted;
 }
-.win-hit {
-	display: none;
-}
-.win-active {
-	border-color:$light-primary;
+.win-inactive {
+	border-color: desaturate(lighten($light-primary,10%),20%);
 	.win-header {
-		background:$light-primary;
-		border-color:$light-primary;
+		background:desaturate(lighten($light-primary,10%),20%);
+		border-color:desaturate(lighten($light-primary,10%),20%);
 	}
 }
 .win-disabled {
 	border-color:mix($light-primary,#FFF);
 	cursor: not-allowed;
 }
-.win-disabled .win-hit {
+.win-blocker {
+	display: none;
+}
+.win-disabled .win-blocker {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -124,12 +131,22 @@
 	z-index: $level-dialog;
 }
 @media \0screen\,screen\9 {
-	.win-disabled .win-hit {
+	.win-disabled .win-blocker {
 		filter: Alpha(opacity=50);
 	}
 }
-.win-transform-helper {
+.win-drag-rect {
 	position: absolute;
-	z-index: $level-dialog;
-	border: 5px solid red;
+	z-index: 2147483647;
+	color: #000;
+	outline: 4px solid;
+	outline-color: invert;
+	outline-offset: -4px;
+	_border: 4px solid #000;
+}
+@supports(mix-blend-mode: difference) {
+	.win-drag-rect {
+		outline-color: #fff;
+		mix-blend-mode: difference;
+	}
 }
