@@ -1,8 +1,9 @@
 @use 'sass:meta';
 @use './variables' as *;
 @use './mixins';
-
-@include meta.load-css('./animation');
+@if $enable-animation {
+	@include meta.load-css('./animation');
+}
 @include meta.load-css('./reset');
 @include meta.load-css('./layout');
 @include meta.load-css('./content');

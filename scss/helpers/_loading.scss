@@ -1,4 +1,5 @@
 @use '../mixins' as *;
+@use '../animation/spin';
 
 .loading-spin,.loading-grow{
 	display: inline-block;

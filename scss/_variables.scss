@@ -2,10 +2,11 @@
 @use 'functions' as *;
 
 //=============================== 全局公用 ======================================
-$enable-components: true !default; // 启用组件
 $enable-dark: true !default; // 保持暗黑模式开启
 $enable-rounded: false !default; // 保持圆角开启
+$enable-animation: true !default; 
 $enable-feedback-icon: true !default; // 保持反馈图标开启
+$enable-components: true !default; // 启用组件
 
 $margin-base: 10px !default;
 $padding-base: 8px 15px !default;

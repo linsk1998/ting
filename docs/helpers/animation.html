@@ -13,6 +13,80 @@
 	<script src="../ting/html5.js"></script>
 	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
+	<style>
+	#fadeIn:focus{ animation:fadeIn .6s ease-out forwards;}
+	#fadeInUp:focus{ animation:fadeInUp .6s ease-out forwards;}
+	#fadeInRight:focus{ animation:fadeInRight .6s ease-out forwards;}
+	#fadeInDown:focus{ animation:fadeInDown .6s ease-out forwards;}
+	#fadeInLeft:focus{ animation:fadeInLeft .6s ease-out forwards;}
+	#fadeOut:focus{ animation:fadeOut .6s ease-in forwards;}
+	#fadeOutUp:focus{ animation:fadeOutUp .6s ease-in forwards;}
+	#fadeOutRight:focus{ animation:fadeOutRight .6s ease-in forwards;}
+	#fadeOutDown:focus{ animation:fadeOutDown .6s ease-in forwards;}
+	#fadeOutLeft:focus{ animation:fadeOutLeft .6s ease-in forwards;}
+	
+	#bounceIn:focus{ animation:bounceIn .6s ease-out forwards;}
+	#bounceInUp:focus{ animation:bounceInUp .6s ease-out forwards;}
+	#bounceInDown:focus{ animation:bounceInDown .6s ease-out forwards;}
+	#bounceInLeft:focus{ animation:bounceInLeft .6s ease-out forwards;}
+	#bounceInRight:focus{ animation:bounceInRight .6s ease-out forwards;}
+	#bounceOut:focus{ animation:bounceOut .6s ease-in forwards;}
+	#bounceOutUp:focus{ animation:bounceOutUp .6s ease-in forwards;}
+	#bounceOutDown:focus{ animation:bounceOutDown .6s ease-in forwards;}
+	#bounceOutLeft:focus{ animation:bounceOutLeft .6s ease-in forwards;}
+	#bounceOutRight:focus{ animation:bounceOutRight .6s ease-in forwards;}
+	#slideInLeft:focus{ animation:slideInLeft .6s ease-out forwards;}
+	#slideInRight:focus{ animation:slideInRight .6s ease-out forwards;}
+	#slideInUp:focus{ animation:slideInUp .6s ease-out forwards;}
+	#slideInDown:focus{ animation:slideInDown .6s ease-out forwards;}
+	#slideOutLeft:focus{ animation:slideOutLeft .6s ease-in forwards;}
+	#slideOutRight:focus{ animation:slideOutRight .6s ease-in forwards;}
+	#slideOutUp:focus{ animation:slideOutUp .6s ease-in forwards;}
+	#slideOutDown:focus{ animation:slideOutDown .6s ease-in forwards;}
+	#flyInLeft:focus{ animation:flyInLeft .6s ease-out forwards;}
+	#flyInRight:focus{ animation:flyInRight .6s ease-out forwards;}
+	#flyInUp:focus{ animation:flyInUp .6s ease-out forwards;}
+	#flyInDown:focus{ animation:flyInDown .6s ease-out forwards;}
+	#flyOutLeft:focus{ animation:flyOutLeft .6s ease-in forwards;}
+	#flyOutRight:focus{ animation:flyOutRight .6s ease-in forwards;}
+	#flyOutUp:focus{ animation:flyOutUp .6s ease-in forwards;}
+	#flyOutDown:focus{ animation:flyOutDown .6s ease-in forwards;}
+	#zoomIn:focus{ animation:zoomIn .6s ease-out forwards;}
+	#zoomInLeft:focus{ animation:zoomInLeft .6s ease-out forwards;}
+	#zoomInRight:focus{ animation:zoomInRight .6s ease-out forwards;}
+	#zoomInUp:focus{ animation:zoomInUp .6s ease-out forwards;}
+	#zoomInDown:focus{ animation:zoomInDown .6s ease-out forwards;}
+	#zoomOut:focus{ animation:zoomOut .6s ease-in forwards;}
+	#zoomOutLeft:focus{ animation:zoomOutLeft .6s ease-in forwards;}
+	#zoomOutRight:focus{ animation:zoomOutRight .6s ease-in forwards;}
+	#zoomOutUp:focus{ animation:zoomOutUp .6s ease-in forwards;}
+	#zoomOutDown:focus{ animation:zoomOutDown .6s ease-in forwards;}
+	#rotateIn:focus{ animation:rotateIn .6s linear forwards;}
+	#rotateInUpRight:focus{ animation:rotateInUpRight .6s linear forwards;}
+	#rotateInUpLeft:focus{ animation:rotateInUpLeft .6s linear forwards;}
+	#rotateInDownLeft:focus{ animation:rotateInDownLeft .6s linear forwards;}
+	#rotateInDownRight:focus{ animation:rotateInDownRight .6s linear forwards;}
+	#rotateOut:focus{ animation:rotateOut .6s linear forwards;}
+	#rotateOutUpRight:focus{ animation:rotateOutUpRight .6s linear forwards;}
+	#rotateOutUpLeft:focus{ animation:rotateOutUpLeft .6s linear forwards;}
+	#rotateOutDownLeft:focus{ animation:rotateOutDownLeft .6s linear forwards;}
+	#rotateOutDownRight:focus{ animation:rotateOutDownRight .6s linear forwards;}
+	#flip:focus{ animation:flip 1s forwards;}
+	#flipInX:focus{ animation:flipInX 1s ease-out forwards;}
+	#flipInY:focus{ animation:flipInY 1s ease-out forwards;}
+	#flipOutX:focus{ animation:flipOutX .4s ease-in forwards;}
+	#flipOutY:focus{ animation:flipOutY .4s ease-in forwards;}
+	
+	#bounce:focus{ animation:bounce 1s linear forwards;}
+	#flash:focus{ animation:flash 1s linear forwards;}
+	#shake:focus{ animation:shake 1s linear forwards;}
+	#swing:focus{ animation:swing 1s linear forwards;}
+	#wobble:focus{ animation:wobble 1s linear forwards;}
+	#tada:focus{ animation:tada 1s linear forwards;}
+	#pulse:focus{ animation:pulse 1s linear forwards;}
+	#flip:focus{ animation:flip 1s linear forwards;}
+	#spin:focus{ animation:spin 1s linear infinite;}
+	</style>
 	</head>
 	<body>
 		<header>
@@ -48,306 +122,246 @@
 			</div>
 		</header>
 		<div class="container">
-<h1 class="page-header" id="动画">动画</h1>
-<p>内置了多种 CSS3 动画效果，包括进入动画、退出动画和强调动画，可通过添加对应的类名来触发。</p>
-<p>使用 <code>.animated</code> 作为动画基础类，配合具体的动画名称类即可。可以结合 <code>.infinite</code>（循环）、<code>.forwards</code>（保持结束状态）、<code>.fast</code>/<code>.faster</code>/<code>.slower</code>（速度控制）等修饰类使用。</p>
-<h2 class="page-header" id="进入动画">进入动画</h2>
-<p>进入动画使元素从隐藏状态过渡显示，通常配合点击等交互触发。</p>
-<h3 id="fade系列">fade 系列</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">fadeIn</button>
-<button type="button" class="btn btn-primary">fadeInUp</button>
-<button type="button" class="btn btn-primary">fadeInDown</button>
-<button type="button" class="btn btn-primary">fadeInLeft</button>
-<button type="button" class="btn btn-primary">fadeInRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeIn&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeInUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeInDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeInLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeInRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="bounce系列">bounce 系列</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">bounceIn</button>
-<button type="button" class="btn btn-primary">bounceInUp</button>
-<button type="button" class="btn btn-primary">bounceInDown</button>
-<button type="button" class="btn btn-primary">bounceInLeft</button>
-<button type="button" class="btn btn-primary">bounceInRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceIn&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceInUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceInDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceInLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceInRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="zoom系列">zoom 系列</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">zoomIn</button>
-<button type="button" class="btn btn-primary">zoomInUp</button>
-<button type="button" class="btn btn-primary">zoomInDown</button>
-<button type="button" class="btn btn-primary">zoomInLeft</button>
-<button type="button" class="btn btn-primary">zoomInRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomIn&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomInUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomInDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomInLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomInRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="rotate系列">rotate 系列</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">rotateIn</button>
-<button type="button" class="btn btn-primary">rotateInUpLeft</button>
-<button type="button" class="btn btn-primary">rotateInDownLeft</button>
-<button type="button" class="btn btn-primary">rotateInUpRight</button>
-<button type="button" class="btn btn-primary">rotateInDownRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateIn&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateInUpLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateInDownLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateInUpRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateInDownRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="slide系列">slide 系列</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">slideInUp</button>
-<button type="button" class="btn btn-primary">slideInDown</button>
-<button type="button" class="btn btn-primary">slideInLeft</button>
-<button type="button" class="btn btn-primary">slideInRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideInUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideInDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideInLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideInRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="fly系列">fly 系列</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">flyInUp</button>
-<button type="button" class="btn btn-primary">flyInDown</button>
-<button type="button" class="btn btn-primary">flyInLeft</button>
-<button type="button" class="btn btn-primary">flyInRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyInUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyInDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyInLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyInRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="flip进入">flip 进入</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">flipInX</button>
-<button type="button" class="btn btn-primary">flipInY</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flipInX&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flipInY&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h2 class="page-header" id="退出动画">退出动画</h2>
-<p>退出动画使元素从显示状态过渡到隐藏，与进入动画一一对应。</p>
-<h3 id="fade退出">fade 退出</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">fadeOut</button>
-<button type="button" class="btn btn-primary">fadeOutUp</button>
-<button type="button" class="btn btn-primary">fadeOutRight</button>
-<button type="button" class="btn btn-primary">fadeOutDown</button>
-<button type="button" class="btn btn-primary">fadeOutLeft</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeOut&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeOutUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeOutRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeOutDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;fadeOutLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="bounce退出">bounce 退出</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">bounceOut</button>
-<button type="button" class="btn btn-primary">bounceOutUp</button>
-<button type="button" class="btn btn-primary">bounceOutDown</button>
-<button type="button" class="btn btn-primary">bounceOutLeft</button>
-<button type="button" class="btn btn-primary">bounceOutRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceOut&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceOutUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceOutDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceOutLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounceOutRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="rotate退出">rotate 退出</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">rotateOut</button>
-<button type="button" class="btn btn-primary">rotateOutUpLeft</button>
-<button type="button" class="btn btn-primary">rotateOutDownLeft</button>
-<button type="button" class="btn btn-primary">rotateOutUpRight</button>
-<button type="button" class="btn btn-primary">rotateOutDownRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateOut&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateOutUpLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateOutDownLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateOutUpRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;rotateOutDownRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="zoom退出">zoom 退出</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">zoomOut</button>
-<button type="button" class="btn btn-primary">zoomOutUp</button>
-<button type="button" class="btn btn-primary">zoomOutDown</button>
-<button type="button" class="btn btn-primary">zoomOutLeft</button>
-<button type="button" class="btn btn-primary">zoomOutRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomOut&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomOutUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomOutDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomOutLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;zoomOutRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="slide退出">slide 退出</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">slideOutUp</button>
-<button type="button" class="btn btn-primary">slideOutDown</button>
-<button type="button" class="btn btn-primary">slideOutLeft</button>
-<button type="button" class="btn btn-primary">slideOutRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideOutUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideOutDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideOutLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;slideOutRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="fly退出">fly 退出</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">flyOutUp</button>
-<button type="button" class="btn btn-primary">flyOutDown</button>
-<button type="button" class="btn btn-primary">flyOutLeft</button>
-<button type="button" class="btn btn-primary">flyOutRight</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyOutUp&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyOutDown&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyOutLeft&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flyOutRight&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h3 id="flip退出">flip 退出</h3>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">flipOutX</button>
-<button type="button" class="btn btn-primary">flipOutY</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flipOutX&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flipOutY&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><h2 class="page-header" id="强调动画">强调动画</h2>
-<p>强调动作用于吸引用户注意力，适合需要突出展示的场景。</p>
-
-<div class="tabs" role="tabbable">
-  <ul class="nav nav-underline">
-    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
-    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
-  </ul>
-  <div class="tabs-content">
-    <div class="tabs-pane ting-example active"><button type="button" class="btn btn-primary">bounce</button>
-<button type="button" class="btn btn-primary">flash</button>
-<button type="button" class="btn btn-primary">shake</button>
-<button type="button" class="btn btn-primary">swing</button>
-<button type="button" class="btn btn-primary">wobble</button>
-<button type="button" class="btn btn-primary">tada</button>
-<button type="button" class="btn btn-primary">pulse</button>
-<button type="button" class="btn btn-primary">flip</button>
-<button type="button" class="btn btn-primary">spin</button></div>
-    <div class="tabs-pane"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;bounce&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flash&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;shake&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;swing&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;wobble&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;tada&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;pulse&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;flip&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-primary</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;spin&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
-</pre></div>
-  </div>
-</div><blockquote>
-<p><strong>提示</strong>：CSS3 动画不支持 IE9 及以下浏览器。</p>
-</blockquote>
-
+			<h2 class="page-header">进入</h2>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeIn" class="btn btn-primary btn-block">fadeIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeInUp" class="btn btn-primary btn-block">fadeInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeInDown" class="btn btn-primary btn-block">fadeInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeInLeft" class="btn btn-primary btn-block">fadeInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeInRight" class="btn btn-primary btn-block">fadeInRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceIn" class="btn btn-primary btn-block">bounceIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceInUp" class="btn btn-primary btn-block">bounceInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceInDown" class="btn btn-primary btn-block">bounceInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceInLeft" class="btn btn-primary btn-block">bounceInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceInRight" class="btn btn-primary btn-block">bounceInRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomIn" class="btn btn-primary btn-block">zoomIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomInUp" class="btn btn-primary btn-block">zoomInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomInDown" class="btn btn-primary btn-block">zoomInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomInLeft" class="btn btn-primary btn-block">zoomInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomInRight" class="btn btn-primary btn-block">zoomInRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateIn" class="btn btn-primary btn-block">rotateIn</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateInUpLeft" class="btn btn-primary btn-block">rotateInUpLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateInDownLeft" class="btn btn-primary btn-block">rotateInDownLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateInUpRight" class="btn btn-primary btn-block">rotateInUpRight</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateInDownRight" class="btn btn-primary btn-block">rotateInDownRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideInUp" class="btn btn-primary btn-block">slideInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideInDown" class="btn btn-primary btn-block">slideInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideInLeft" class="btn btn-primary btn-block">slideInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideInRight" class="btn btn-primary btn-block">slideInRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyInUp" class="btn btn-primary btn-block">flyInUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyInDown" class="btn btn-primary btn-block">flyInDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyInLeft" class="btn btn-primary btn-block">flyInLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyInRight" class="btn btn-primary btn-block">flyInRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flipInX" class="btn btn-primary btn-block">flipInX</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flipInY" class="btn btn-primary btn-block">flipInY</button>
+				</div>
+			</div>
+			<h2 class="page-header">退出</h2>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeOut" class="btn btn-primary btn-block">fadeOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeOutUp" class="btn btn-primary btn-block">fadeOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeOutRight" class="btn btn-primary btn-block">fadeOutRight</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeOutDown" class="btn btn-primary btn-block">fadeOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="fadeOutLeft" class="btn btn-primary btn-block">fadeOutLeft</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceOut" class="btn btn-primary btn-block">bounceOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceOutUp" class="btn btn-primary btn-block">bounceOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceOutDown" class="btn btn-primary btn-block">bounceOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceOutLeft" class="btn btn-primary btn-block">bounceOutLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="bounceOutRight" class="btn btn-primary btn-block">bounceOutRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateOut" class="btn btn-primary btn-block">rotateOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateOutUpLeft" class="btn btn-primary btn-block">rotateOutUpLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateOutDownLeft" class="btn btn-primary btn-block">rotateOutDownLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateOutUpRight" class="btn btn-primary btn-block">rotateOutUpRight</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="rotateOutDownRight" class="btn btn-primary btn-block">rotateOutDownRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomOut" class="btn btn-primary btn-block">zoomOut</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomOutUp" class="btn btn-primary btn-block">zoomOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomOutDown" class="btn btn-primary btn-block">zoomOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomOutLeft" class="btn btn-primary btn-block">zoomOutLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="zoomOutRight" class="btn btn-primary btn-block">zoomOutRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideOutUp" class="btn btn-primary btn-block">slideOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideOutDown" class="btn btn-primary btn-block">slideOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideOutLeft" class="btn btn-primary btn-block">slideOutLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="slideOutRight" class="btn btn-primary btn-block">slideOutRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyOutUp" class="btn btn-primary btn-block">flyOutUp</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyOutDown" class="btn btn-primary btn-block">flyOutDown</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyOutLeft" class="btn btn-primary btn-block">flyOutLeft</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flyOutRight" class="btn btn-primary btn-block">flyOutRight</button>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flipOutX" class="btn btn-primary btn-block">flipOutX</button>
+				</div>
+				<div class="col-md-1/5 col-xs-12 col-gx-4">
+					<button type="button" id="flipOutY" class="btn btn-primary btn-block">flipOutY</button>
+				</div>
+			</div>
+			<h2 class="page-header">强调</h2>
+			<div class="row row-gx-4">
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="bounce" class="btn btn-primary btn-block">bounce</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="flash" class="btn btn-primary btn-block">flash</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="shake" class="btn btn-primary btn-block">shake</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="swing" class="btn btn-primary btn-block">swing</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="wobble" class="btn btn-primary btn-block">wobble</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="tada" class="btn btn-primary btn-block">tada</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="pulse" class="btn btn-primary btn-block">pulse</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="flip" class="btn btn-primary btn-block">flip</button>
+				</div>
+				<div class="col-md-2 col-gx-4">
+					<button type="button" id="spin" class="btn btn-primary btn-block">spin</button>
+				</div>
+			</div>
 		</div>
 		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>

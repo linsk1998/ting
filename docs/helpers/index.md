@@ -88,5 +88,5 @@
 | .animated.fast | 快速。 |
 | .animated.faster | 更快。 |
 | .animated.slower | 更慢。 |
-[使用方法](./animation.html)
 
+[使用方法](./animation.html)
