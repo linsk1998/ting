@@ -34,8 +34,6 @@
 - [文章排版](content/type.md): .h1、.h6、.small、.mark、.pre、.nobr、.u、.s、.i、.b、.list-unstyled、.list-inline、.list-inline-item。
 - [超级链接](content/link.md): .link-primary、.link-secondary、.link-disabled、.link-offset-、.link-stretched。
 - [页头](content/index.md): 页头组件能够为 `h1` 标签增加适当的空间，并且与页面的其他部分形成一定的分隔。
-- [按钮](content/button.md): .btn、.btn-default、.btn-{context}、.btn-outline-{context}、.btn-{size}、.btn-block、.btn-round、.btn-square、.btn-label、.btn-icon-left、.btn-icon-right、.btn-loading、.btn-disabled。
-- [按钮布局](content/button-group.md): .btn-toolbar、.btn-group、.btn-group-justified、.btn-group-vertical。
 - [表格](content/table.md): .table、.table-striped、.table-bordered、.table-hover、.table-sm、.thead-subtle、.thead-inverse、.table-{context}、.table-active、.table-responsive、.table-fixed。
 - [图片](content/img.md): .img-rounded、.img-circle、.img-thumbnail、.img-fluid、.img-responsive。
 - [媒体对象](content/media.md): .media、.media-left、.media-right、.media-body、.media-object、.media-heading、.media-middle、.media-bottom、.media-list。
@@ -80,6 +78,8 @@
 
 ## 组件
 
+- [按钮](components/button.md): .btn、.btn-default、.btn-{context}、.btn-outline-{context}、.btn-{size}、.btn-block、.btn-round、.btn-square、.btn-label、.btn-icon-left、.btn-icon-right、.btn-loading、.btn-disabled。
+- [按钮布局](components/button-group.md): .btn-toolbar、.btn-group、.btn-group-justified、.btn-group-vertical。
 - [路径导航](components/breadcrumb.md): .breadcrumb。
 - [导航](components/nav.md): .nav、.nav-pills、.nav-tabs、.nav-underline、.nav-justified、.nav-flush。
 - [标签页](components/tabs.md): .tabs、.tabs-nav、.tabs-content、.tabs-pane、.tabs-horizontal、.tabs-nav-left、.tabs-nav-right、.tabs-nav-below、.tabs-flush、.tabs-fill。

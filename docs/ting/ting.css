@@ -2996,6 +2996,10 @@ dialog {
   interest-delay: 0.125s 0.125s;
 }
 
+.dark body {
+  background: #212529;
+}
+
 .dark body, .dark button, .dark input, .dark textarea {
   color: #adb5bd;
 }

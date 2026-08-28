@@ -26,8 +26,8 @@ const sections = [
   {
     title: '三、页面内容 (content)',
     files: [
-      'content/index.md', 'content/type.md', 'content/link.md', 'content/button.md',
-      'content/button-group.md', 'content/table.md', 'content/img.md', 'content/media.md',
+      'content/index.md', 'content/type.md', 'content/link.md',
+      'content/table.md', 'content/img.md', 'content/media.md',
       'content/well.md', 'content/callout.md', 'content/badge.md', 'content/tag.md',
       'content/alert.md',
     ],
@@ -48,13 +48,13 @@ const sections = [
   {
     title: '六、组件 (components)',
     files: [
-      'components/index.md', 'components/breadcrumb.md', 'components/nav.md',
-      'components/tabs.md', 'components/navbar.md', 'components/pagination.md',
-      'components/progress.md', 'components/carousel.md', 'components/dropdown.md',
-      'components/tooltip.md', 'components/popover.md', 'components/collapsible.md',
-      'components/collapse.md', 'components/accordion.md', 'components/tree.md',
-      'components/sidebar.md', 'components/overlay.md', 'components/msg.md',
-      'components/dialog.md', 'components/msgbox.md',
+      'components/index.md', 'components/button.md','components/button-group.md',
+      'components/breadcrumb.md', 'components/nav.md', 'components/tabs.md', 'components/navbar.md',
+      'components/pagination.md', 'components/progress.md', 'components/carousel.md',
+      'components/dropdown.md', 'components/tooltip.md', 'components/popover.md',
+      'components/collapsible.md', 'components/collapse.md', 'components/accordion.md',
+      'components/tree.md', 'components/sidebar.md',
+      'components/overlay.md', 'components/msg.md', 'components/dialog.md', 'components/msgbox.md',
       'components/select-list.md',
     ],
   },

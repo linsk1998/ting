@@ -2,6 +2,36 @@
 
 本章节组件更推荐使用 Javascript 框架封装成组件使用。本项目是一个纯 CSS 实现的表单组件，示例页内的 Javascript 代码，仅为文档演示。
 
+## 按钮
+
+| 类 | 描述 |
+|---|---|
+| .btn | 为按钮添加基本样式 |
+| .btn-default | 默认/标准按钮 |
+| .btn-{context} | 语境色按钮 |
+| .btn-outline-{context} | 边框按钮 |
+| .btn-{size} | 按钮大小：大、小、超小 |
+| .btn-block | 块级按钮(拉伸至父元素100%的宽度) |
+| .btn-round | 圆角按钮 |
+| .btn-square | 正方形按钮，不同尺寸 |
+| .btn-label | 按钮内部文字 |
+| .btn-icon-left<br/>.btn-icon-right | 按钮内部图标 |
+| .btn-loading | 加载状态按钮，禁用点击，半透明显示 |
+| .btn-disabled | 禁用状态按钮，灰色背景，不可点击 |
+
+[使用方法](./button.md)
+
+## 按钮布局
+
+| 类 | 描述 |
+|---|---|
+| .btn-toolbar | 按钮工具栏容器，管理按钮组的间距 |
+| .btn-group | 按钮组容器，将多个按钮合并为一组 |
+| .btn-group-justified | 宽度均分按钮组，按钮平均分配容器宽度 |
+| .btn-group-vertical | 垂直排列按钮组，按钮纵向堆叠 |
+
+[使用方法](./button-group.md)
+
 ## 路径导航
 
 breadcrumb在一个带有层次的导航结构中标明当前页面的位置。

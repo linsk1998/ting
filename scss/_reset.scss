@@ -75,6 +75,7 @@ overflow: auto; display: none;}
 
 @if $enable-dark {
 	.dark{
+		body{ background: $dark-body-bg;}
 		body,button,input,textarea{ color:$dark-body-text;}
 		h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{ color: $dark-heading-text;}
 		a{ color:$dark-primary;}
