@@ -45,6 +45,7 @@
 - [徽章](content/badge.md): .badge。
 - [标签](content/tag.md): .tag、.tag-{context}、.tag-{size}。
 - [警告框](content/alert.md): .alert、.alert-{context}、.alert-dismissible、.alert-link、.alert-heading。
+- [描述列表​](content/descriptions.md): .descriptions、.descriptions-header、.descriptions-table、.descriptions-row、.descriptions-label、.descriptions-content、.descriptions-bordered、.descriptions-sm。
 - [巨幕](content/index.md): .jumbotron。
 - [网站底部](content/index.md): .footer。
 

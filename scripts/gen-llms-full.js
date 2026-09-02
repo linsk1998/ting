@@ -28,8 +28,9 @@ const sections = [
     files: [
       'content/index.md', 'content/type.md', 'content/link.md',
       'content/table.md', 'content/img.md', 'content/media.md',
-      'content/well.md', 'content/callout.md', 'content/badge.md', 'content/tag.md',
-      'content/alert.md',
+      'content/thumbnail.md', 'content/well.md', 'content/callout.md',
+      'content/badge.md', 'content/tag.md', 'content/alert.md',
+      'content/descriptions.md',
     ],
   },
   {
@@ -67,12 +68,13 @@ const sections = [
 const resolveFile = (rel) =>
   rel === 'README.md' ? path.join(ROOT_DIR, rel) : path.join(DOCS_DIR, rel);
 
-// 头部
+// 头部（文件数量按实际存在的文件动态统计，不再写死）
 const today = new Date().toISOString().slice(0, 10);
+const totalMd = sections.flatMap((s) => s.files).filter((f) => fs.existsSync(resolveFile(f))).length;
 let content = `# Ting CSS 完整文档 (Full Documentation)\n`;
 content += `# 项目: ting-ui/css (Common Style Lib)\n`;
 content += `# 在线演示: https://linsk1998.github.io/ting/\n`;
-content += `# 文件数量: 60 个 .md 文档\n`;
+content += `# 文件数量: ${totalMd} 个 .md 文档\n`;
 content += `# 生成时间: ${today}\n`;
 content += `# =============================================================================\n`;
 

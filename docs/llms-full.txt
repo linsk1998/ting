@@ -1,8 +1,8 @@
 # Ting CSS 完整文档 (Full Documentation)
 # 项目: ting-ui/css (Common Style Lib)
 # 在线演示: https://linsk1998.github.io/ting/
-# 文件数量: 60 个 .md 文档
-# 生成时间: 2026-08-28
+# 文件数量: 62 个 .md 文档
+# 生成时间: 2026-09-02
 # =============================================================================
 
 # =============================================================================
@@ -619,6 +619,23 @@ purgecss({
 
 [使用方法](./alert.html)
 
+## 描述列表​
+
+以表格形式展示一组键值对信息，常用于详情页、个人中心等场景。
+
+| 类 | 描述 |
+|---|---|
+| .descriptions | 描述列表容器 |
+| .descriptions-header | 描述列表头部 |
+| .descriptions-table | 内部的表格 |
+| .descriptions-row | 表格行 |
+| .descriptions-label | 标签列 |
+| .descriptions-content | 内容列 |
+| .descriptions-bordered | 带边框样式，标签列带浅色背景 |
+| .descriptions-sm | 表格紧凑 |
+
+[使用方法](./descriptions.md)
+
 ## 巨幕
 
 | 类 | 描述 |
@@ -1226,6 +1243,61 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
 
 
 ---
+# 源文件: content/thumbnail.md
+---
+# 缩略图
+
+通过缩略图组件扩展和栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。
+
+## 链接缩略图
+
+使用 `.thumbnail` 将整张图片作为链接，配合栅格系统可在一行内排列多个缩略图。
+
+```html
+<div class="row row-gx-4">
+	<div class="col-md-4 col-gx-4">
+		<a href="#" class="thumbnail"><img src="../images/devices.jpg"/></a>
+	</div>
+	<div class="col-md-4 col-gx-4">
+		<a href="#" class="thumbnail"><img src="../images/devices.jpg"/></a>
+	</div>
+	<div class="col-md-4 col-gx-4">
+		<a href="#" class="thumbnail"><img src="../images/devices.jpg"/></a>
+	</div>
+</div>
+```
+
+## 带说明文字的缩略图
+
+在 `.thumbnail` 内使用 `.caption` 承载标题、描述和操作按钮等内容。
+
+```html
+<div class="row row-gx-4">
+	<div class="col-md-4 col-gx-4">
+        <div class="thumbnail">
+            <img src="../images/devices.jpg"/>
+            <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+        </div>
+	</div>
+	<div class="col-md-4 col-gx-4">
+        <div class="thumbnail">
+            <img src="../images/devices.jpg"/>
+        </div>
+	</div>
+	<div class="col-md-4 col-gx-4">
+        <div class="thumbnail">
+            <img src="../images/devices.jpg"/>
+        </div>
+	</div>
+</div>
+```
+
+
+---
 # 源文件: content/well.md
 ---
 # 凹陷
@@ -1448,6 +1520,173 @@ HTML 中的所有标题标签 `<h1>` 到 `<h6>` 均可使用。另外还提供�
     <hr>
     <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 </div>
+```
+
+
+---
+# 源文件: content/descriptions.md
+---
+# 描述列表
+
+列表形式展示多个字段。通过 `.descriptions` 以表格的形式展示一组键值对信息，常用于详情页、个人中心等场景。
+
+## 基础用法
+
+`.descriptions` 默认以表格形式展示，每个字段由标签（`.descriptions-label`）和内容（`.descriptions-content`）组成，标签与内容依次排列。标签使用语义化的 `th` 元素，便于屏幕阅读器识别。
+
+```html
+<div class="descriptions">
+    <table class="descriptions-table">
+        <colgroup>
+            <col width="20%">
+            <col>
+            <col width="20%">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">用户名</th>
+                <td class="descriptions-content">king</td>
+                <th class="descriptions-label">邮箱</th>
+                <td class="descriptions-content">king@example.com</td>
+            </tr>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">状态</th>
+                <td class="descriptions-content">正常</td>
+                <th class="descriptions-label">注册时间</th>
+                <td class="descriptions-content">2020-01-01</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+```
+
+## 带边框
+
+添加 `.descriptions-bordered` 为每个单元格添加边框，标签列带有浅色背景，更适合信息密集的展示场景。
+
+```html
+<div class="descriptions descriptions-bordered">
+    <table class="descriptions-table">
+        <colgroup>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">用户名</th>
+                <td class="descriptions-content">king</td>
+                <th class="descriptions-label">邮箱</th>
+                <td class="descriptions-content">king@example.com</td>
+                <th class="descriptions-label">状态</th>
+                <td class="descriptions-content">正常</td>
+            </tr>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">注册时间</th>
+                <td class="descriptions-content">2020-01-01</td>
+                <th class="descriptions-label">最后登录</th>
+                <td class="descriptions-content">2026-08-01</td>
+                <th class="descriptions-label">所属部门</th>
+                <td class="descriptions-content">研发部</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+```
+
+## 标题
+
+```html
+<div class="descriptions descriptions-bordered">
+    <div class="descriptions-header">用户信息</div>
+    <table class="descriptions-table">
+        <colgroup>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">用户名</th>
+                <td class="descriptions-content">king</td>
+                <th class="descriptions-label">邮箱</th>
+                <td class="descriptions-content">king@example.com</td>
+                <th class="descriptions-label">状态</th>
+                <td class="descriptions-content">正常</td>
+            </tr>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">注册时间</th>
+                <td class="descriptions-content">2020-01-01</td>
+                <th class="descriptions-label">最后登录</th>
+                <td class="descriptions-content">2026-08-01</td>
+                <th class="descriptions-label">所属部门</th>
+                <td class="descriptions-content">研发部</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+```
+
+## 紧凑
+
+添加 `.descriptions-sm` 紧凑的展示形式，适合表单的展示场景。
+
+```html
+<form class="form">
+    <div class="descriptions descriptions-bordered descriptions-sm">
+        <div class="descriptions-header">用户信息</div>
+        <table class="descriptions-table">
+            <colgroup>
+                <col width="15%">
+                <col>
+                <col width="15%">
+                <col>
+                <col width="15%">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr class="descriptions-row">
+                    <th class="descriptions-label">用户名</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="king">
+                    </td>
+                    <th class="descriptions-label">邮箱</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="king@example.com">
+                    </td>
+                    <th class="descriptions-label">状态</th>
+                    <td class="descriptions-content">
+                        <select class="form-control">
+                            <option value="0">正常</option>
+                            <option value="1">禁用</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="descriptions-row">
+                    <th class="descriptions-label">注册时间</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="2020-01-01">
+                    </td>
+                    <th class="descriptions-label">最后登录</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="2026-08-01">
+                    </td>
+                    <th class="descriptions-label">所属部门</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="研发部">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
 ```
 
 

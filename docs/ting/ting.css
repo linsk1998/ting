@@ -8038,6 +8038,85 @@ a.thumbnail:hover {
   color: #FAE2E4;
 }
 
+.descriptions {
+  margin: 10px 0;
+}
+
+.descriptions-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 1px;
+  *border-collapse: collapse;
+  *border: 1px solid #e0e0e0;
+}
+
+.descriptions-row td,
+.descriptions-row th {
+  padding: 8px;
+  *border: 1px solid #e0e0e0;
+}
+
+.descriptions-bordered .descriptions-table {
+  background: #e0e0e0;
+}
+
+.descriptions-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.descriptions-label {
+  color: #595959;
+  white-space: pre-wrap;
+  background: #ffffff;
+}
+
+.descriptions-bordered .descriptions-label {
+  background: #f8f8f8;
+}
+
+.descriptions-content {
+  color: #212121;
+  background: #ffffff;
+}
+
+.descriptions-sm .descriptions-label, .descriptions-sm .descriptions-content {
+  padding: 4px;
+}
+
+.descriptions-xs .descriptions-label, .descriptions-xs .descriptions-content {
+  padding: 2px;
+}
+
+.dark .descriptions-table {
+  *border: 1px solid #495057;
+}
+
+.dark .descriptions-row td,
+.dark .descriptions-row th {
+  *border: 1px solid #495057;
+}
+
+.dark .descriptions-bordered .descriptions-table {
+  background: #495057;
+}
+
+.dark .descriptions-label {
+  color: #8a9198;
+  background: #212529;
+}
+
+.dark .descriptions-bordered .descriptions-label {
+  background: #343a40;
+}
+
+.dark .descriptions-content {
+  color: #adb5bd;
+  background: #212529;
+}
+
 .jumbotron {
   padding: 40px 0;
   background: #2d3e50;

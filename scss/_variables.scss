@@ -149,6 +149,21 @@ $dark-table-thead-inverse-bg: $dark-inverse !default;
 $dark-table-thead-subtle-bg: $dark-secondary-bg !default;
 $dark-table-active: #a5a5a5 !default;
 
+$descriptions-bg: $light-body-bg !default;
+$descriptions-cell-padding: 8px !default;
+$descriptions-cell-padding-sm: 4px !default;
+$descriptions-cell-padding-xs: 2px !default;
+$descriptions-label-color: $light-secondary-text !default;
+$descriptions-content-color: $light-body-text !default;
+$descriptions-label-bg: $light-tertiary-bg !default;
+$descriptions-border-width: $table-border-width !default;
+$descriptions-border-color: $table-border-color !default;
+$dark-descriptions-bg: $dark-body-bg !default;
+$dark-descriptions-label-color: $dark-secondary-text !default;
+$dark-descriptions-content-color: $dark-body-text !default;
+$dark-descriptions-label-bg: $dark-tertiary-bg !default;
+$dark-descriptions-border-color: $dark-divider !default;
+
 $img-thumbnail-padding: 4px !default;
 $img-thumbnail-rounded: $border-radius !default;
 

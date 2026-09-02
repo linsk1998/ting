@@ -210,6 +210,23 @@
 
 [使用方法](./alert.html)
 
+## 描述列表​
+
+以表格形式展示一组键值对信息，常用于详情页、个人中心等场景。
+
+| 类 | 描述 |
+|---|---|
+| .descriptions | 描述列表容器 |
+| .descriptions-header | 描述列表头部 |
+| .descriptions-table | 内部的表格 |
+| .descriptions-row | 表格行 |
+| .descriptions-label | 标签列 |
+| .descriptions-content | 内容列 |
+| .descriptions-bordered | 带边框样式，标签列带浅色背景 |
+| .descriptions-sm | 表格紧凑 |
+
+[使用方法](./descriptions.md)
+
 ## 巨幕
 
 | 类 | 描述 |

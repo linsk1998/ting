@@ -1,0 +1,81 @@
+@use 'sass:math';
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.descriptions {
+    margin: $margin-base 0;
+}
+
+.descriptions-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: $descriptions-border-width;
+    *border-collapse: collapse;
+    *border: $descriptions-border-width solid $descriptions-border-color;
+}
+
+.descriptions-row td,
+.descriptions-row th {
+    padding: $descriptions-cell-padding;
+    *border: $descriptions-border-width solid $descriptions-border-color;
+}
+
+.descriptions-bordered .descriptions-table {
+    background: $descriptions-border-color;
+}
+
+.descriptions-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+.descriptions-label {
+    color: $descriptions-label-color;
+    white-space: pre-wrap;
+    background: $descriptions-bg;
+}
+
+.descriptions-bordered .descriptions-label {
+    background: $descriptions-label-bg;
+}
+
+.descriptions-content {
+    color: $descriptions-content-color;
+    background: $descriptions-bg;
+}
+
+.descriptions-sm .descriptions-label, .descriptions-sm .descriptions-content {
+    padding: $descriptions-cell-padding-sm;
+}
+.descriptions-xs .descriptions-label, .descriptions-xs .descriptions-content {
+    padding: $descriptions-cell-padding-xs;
+}
+
+@if $enable-dark {
+    .dark {
+        .descriptions-table {
+            *border: $descriptions-border-width solid $dark-descriptions-border-color;
+        }
+        .descriptions-row td,
+        .descriptions-row th {
+            *border: $descriptions-border-width solid $dark-descriptions-border-color;
+        }
+        .descriptions-bordered .descriptions-table {
+            background: $dark-descriptions-border-color;
+        }
+        .descriptions-label {
+            color: $dark-descriptions-label-color;
+            background: $dark-descriptions-bg;
+        }
+        .descriptions-bordered .descriptions-label {
+            background: $dark-descriptions-label-bg;
+        }
+        .descriptions-content {
+            color: $dark-descriptions-content-color;
+            background: $dark-descriptions-bg;
+        }
+    }
+}
