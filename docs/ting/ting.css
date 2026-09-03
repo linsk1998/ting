@@ -15736,6 +15736,182 @@ a.text-danger:hover, .text-danger a:hover {
   color: #212121;
 }
 
+.color-folder {
+  color: #fb9600;
+}
+
+.color-firefox {
+  color: #ff7139;
+}
+
+.color-ie {
+  color: #0076d6;
+}
+
+.color-edge {
+  color: #0078d7;
+}
+
+.color-opera {
+  color: #ff1b2d;
+}
+
+.color-safari {
+  color: #006cff;
+}
+
+.color-chrome {
+  color: #4285f4;
+}
+
+.color-html5 {
+  color: #e34f26;
+}
+
+.color-css3 {
+  color: #1572b6;
+}
+
+.color-js {
+  color: #f7df1e;
+}
+
+.color-android {
+  color: #3ddc84;
+}
+
+.color-windows {
+  color: #0078d6;
+}
+
+.color-linux {
+  color: #fcc624;
+}
+
+.color-apple {
+  color: #555555;
+}
+
+.color-google {
+  color: #4285f4;
+}
+
+.color-weixin {
+  color: #07c160;
+}
+
+.color-qq {
+  color: #eb1923;
+}
+
+.color-word {
+  color: #2b579a;
+}
+
+.color-excel {
+  color: #217346;
+}
+
+.color-powerpoint {
+  color: #d24726;
+}
+
+.color-pdf {
+  color: #ee3f24;
+}
+
+.color-zip {
+  color: #e8a33d;
+}
+
+.bg-folder {
+  background: #fb9600;
+}
+
+.bg-firefox {
+  background: #ff7139;
+}
+
+.bg-ie {
+  background: #0076d6;
+}
+
+.bg-edge {
+  background: #0078d7;
+}
+
+.bg-opera {
+  background: #ff1b2d;
+}
+
+.bg-safari {
+  background: #006cff;
+}
+
+.bg-chrome {
+  background: #4285f4;
+}
+
+.bg-html5 {
+  background: #e34f26;
+}
+
+.bg-css3 {
+  background: #1572b6;
+}
+
+.bg-js {
+  background: #f7df1e;
+}
+
+.bg-android {
+  background: #3ddc84;
+}
+
+.bg-windows {
+  background: #0078d6;
+}
+
+.bg-linux {
+  background: #fcc624;
+}
+
+.bg-apple {
+  background: #555555;
+}
+
+.bg-google {
+  background: #4285f4;
+}
+
+.bg-weixin {
+  background: #07c160;
+}
+
+.bg-qq {
+  background: #eb1923;
+}
+
+.bg-word {
+  background: #2b579a;
+}
+
+.bg-excel {
+  background: #217346;
+}
+
+.bg-powerpoint {
+  background: #d24726;
+}
+
+.bg-pdf {
+  background: #ee3f24;
+}
+
+.bg-zip {
+  background: #e8a33d;
+}
+
 .dark .primary {
   background-color: #162233 !important;
 }

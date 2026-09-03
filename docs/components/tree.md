@@ -10,7 +10,7 @@
         <ul>
             <li class="collapsed">
                 <i class="tree-toggler" tabindex="0"></i>
-                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <a href="javascript:void 0"><i class="tree-icon fa color-folder">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
                     <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>重要会议</a></li>
@@ -21,7 +21,7 @@
             </li>
             <li class="collapsed">
                 <i class="tree-toggler" tabindex="0"></i>
-                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <a href="javascript:void 0"><i class="tree-icon fa color-folder">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
                     <li><a href="javascript:void 0">重要会议</a></li>
@@ -32,7 +32,7 @@
             </li>
             <li>
                 <i class="tree-toggler" tabindex="0"></i>
-                <a href="javascript:void 0"><i class="tree-icon fa text-yellow">&#xf07b;</i>新闻中心</a>
+                <a href="javascript:void 0"><i class="tree-icon fa color-folder">&#xf07b;</i>新闻中心</a>
                 <ul>
                     <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>
                     <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>重要会议</label></li>
