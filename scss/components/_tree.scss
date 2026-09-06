@@ -105,7 +105,7 @@
 			overflow: hidden;
 			transition: height 0s, display 0s allow-discrete;
 		}
-		.tree .collapsed .tree-collapsible{
+		.collapsed>.tree-collapsible{
 			height: 0;
 			display: none;
 		}
