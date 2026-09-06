@@ -11,22 +11,22 @@
 }
 @media (prefers-reduced-motion: no-preference) {
 	@supports (height: calc-size(auto, size)) {
-		/* 折叠状态 */
+		/* 展开状态 */
 		.collapsible {
 			height: calc-size(auto, size);
 			transition: height $collapse-duration;
 		}
-		/* 展开状态 */
+		/* 折叠状态 */
 		.collapsible.hide {
 			display: block;
 			height: 0;
 		}
-		/* 折叠状态 */
+		/* 展开状态 */
 		.collapsible-horizontal {
 			width: calc-size(auto, size);
 			transition: width $collapse-duration;
 		}
-		/* 展开状态 */
+		/* 折叠状态 */
 		.collapsible-horizontal.hide {
 			display: block;
 			width: 0;
