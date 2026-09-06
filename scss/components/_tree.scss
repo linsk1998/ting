@@ -78,7 +78,7 @@
 	.collapsed .tree-toggler{ filter:none;}
 }
 .tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:$tree-item-height;}
-.tree .collapsed ul{ display:none;}
+.tree .collapsed .tree-collapsible{ display:none;}
 
 @if $enable-dark {
 	.dark {
@@ -97,23 +97,24 @@
 		.tree-toggler{
 			transition: transform $collapse-duration;
 		}
-		.tree ul{
-			display: block;
+		.tree li {
 			min-width: fit-content;
+		}
+		.tree .tree-collapsible{
 			height: calc-size(auto, size);
 			overflow: hidden;
 			transition: height 0s, display 0s allow-discrete;
 		}
-		.tree .collapsed ul{
+		.tree .collapsed .tree-collapsible{
 			height: 0;
 			display: none;
 		}
 		@starting-style {
-			.tree ul{
+			.tree .tree-collapsible{
 				height: 0;
 			}
 		}
-		.tree-toggler:focus ~ ul{
+		.tree-toggler:focus ~ .tree-collapsible{
 			transition-duration: $collapse-duration;
 		}
 	}

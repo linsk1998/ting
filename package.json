@@ -2,7 +2,7 @@
 	"name": "@ting-ui/css",
 	"version": "1.0.0-alpha.1",
 	"description": "common style lib",
-	"style": "all.css",
+	"style": "dist/ting.all.css",
 	"keywords": [
 		"css",
 		"ui",
@@ -18,9 +18,9 @@
 	],
 	"exports": {
 		"./package.json": "./package.json",
-		".": "./all.css",
+		".": "./dist/ting.all.css",
 		"./all.css": "./dist/ting.all.css",
-		"./no-component": "./dist/ting.no-component.css",
+		"./no-component.css": "./dist/ting.no-component.css",
 		"./scss/*": "./scss/*",
 		"./dist/*": "./dist/*"
 	},

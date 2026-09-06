@@ -11,35 +11,41 @@
             <li class="collapsed">
                 <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa color-folder">&#xf07b;</i>新闻中心</a>
-                <ul>
-                    <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>重要会议</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>视频新闻</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>各地要闻</a></li>
-                    <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>国际局势</a></li>
-                </ul>
+                <div class="tree-collapsible">
+                    <ul>
+                        <li class="active"><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>选中效果</a></li>
+                        <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>重要会议</a></li>
+                        <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>视频新闻</a></li>
+                        <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>各地要闻</a></li>
+                        <li><a href="javascript:void 0"><i class="tree-icon fa">&#xf016;</i>国际局势</a></li>
+                    </ul>
+                </div>
             </li>
             <li class="collapsed">
                 <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa color-folder">&#xf07b;</i>新闻中心</a>
-                <ul>
-                    <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
-                    <li><a href="javascript:void 0">重要会议</a></li>
-                    <li><a href="javascript:void 0">视频新闻</a></li>
-                    <li><a href="javascript:void 0">各地要闻</a></li>
-                    <li><a href="javascript:void 0">国际局势</a></li>
-                </ul>
+                <div class="tree-collapsible">
+                    <ul>
+                        <li><a href="javascript:void 0">长长长长长长长长长长长长长长长长长长长长长长长</a></li>
+                        <li><a href="javascript:void 0">重要会议</a></li>
+                        <li><a href="javascript:void 0">视频新闻</a></li>
+                        <li><a href="javascript:void 0">各地要闻</a></li>
+                        <li><a href="javascript:void 0">国际局势</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <i class="tree-toggler" tabindex="0"></i>
                 <a href="javascript:void 0"><i class="tree-icon fa color-folder">&#xf07b;</i>新闻中心</a>
-                <ul>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>重要会议</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>视频新闻</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>各地要闻</label></li>
-                    <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>国际局势</label></li>
-                </ul>
+                <div class="tree-collapsible">
+                    <ul>
+                        <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>领导活动</label></li>
+                        <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>重要会议</label></li>
+                        <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>视频新闻</label></li>
+                        <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>各地要闻</label></li>
+                        <li><label><input type="checkbox"/><i class="tree-icon fa">&#xf016;</i>国际局势</label></li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>

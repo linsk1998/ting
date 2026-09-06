@@ -13289,7 +13289,7 @@ html .dropdown-item[disabled] {
   line-height: 26px;
 }
 
-.tree .collapsed ul {
+.tree .collapsed .tree-collapsible {
   display: none;
 }
 
@@ -13318,23 +13318,24 @@ html .dropdown-item[disabled] {
     .tree-toggler {
       transition: transform 0.3s;
     }
-    .tree ul {
-      display: block;
+    .tree li {
       min-width: fit-content;
+    }
+    .tree .tree-collapsible {
       height: calc-size(auto, size);
       overflow: hidden;
       transition: height 0s, display 0s allow-discrete;
     }
-    .tree .collapsed ul {
+    .tree .collapsed .tree-collapsible {
       height: 0;
       display: none;
     }
     @starting-style {
-      .tree ul {
+      .tree .tree-collapsible {
         height: 0;
       }
     }
-    .tree-toggler:focus ~ ul {
+    .tree-toggler:focus ~ .tree-collapsible {
       transition-duration: 0.3s;
     }
   }
@@ -13582,22 +13583,22 @@ html .dropdown-item[disabled] {
 
 @media (prefers-reduced-motion: no-preference) {
   @supports (height: calc-size(auto, size)) {
-    /* 折叠状态 */
+    /* 展开状态 */
     .collapsible {
       height: calc-size(auto, size);
       transition: height 0.3s;
     }
-    /* 展开状态 */
+    /* 折叠状态 */
     .collapsible.hide {
       display: block;
       height: 0;
     }
-    /* 折叠状态 */
+    /* 展开状态 */
     .collapsible-horizontal {
       width: calc-size(auto, size);
       transition: width 0.3s;
     }
-    /* 展开状态 */
+    /* 折叠状态 */
     .collapsible-horizontal.hide {
       display: block;
       width: 0;
@@ -15801,7 +15802,7 @@ a.text-danger:hover, .text-danger a:hover {
 }
 
 .color-qq {
-  color: #eb1923;
+  color: #12b7f5;
 }
 
 .color-word {
@@ -15889,7 +15890,7 @@ a.text-danger:hover, .text-danger a:hover {
 }
 
 .bg-qq {
-  background: #eb1923;
+  background: #12b7f5;
 }
 
 .bg-word {
