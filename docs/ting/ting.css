@@ -9857,8 +9857,7 @@ html .dark .btn-disabled:focus {
 
 .textarea {
   position: relative;
-  font-size: 0;
-  line-height: 0;
+  *zoom: 1;
 }
 
 .textarea textarea {
@@ -9944,7 +9943,7 @@ html .dark .btn-disabled:focus {
 
 .textarea-counter {
   position: absolute;
-  right: 8px;
+  right: 18px;
   bottom: 2px;
   color: #909090;
   font-size: 12px;
@@ -10387,8 +10386,6 @@ button.btn-toggle-checked {
 }
 
 .btn-toolbar {
-  font-size: 0;
-  *font-size: 14px;
   margin: 10px 0;
 }
 
@@ -10418,7 +10415,6 @@ button.btn-toggle-checked {
   padding-right: 1px;
   *display: inline;
   *zoom: 1;
-  font-size: 0;
 }
 
 .btn-group .btn {
@@ -12739,11 +12735,6 @@ html body .progress-bar-danger {
   margin: 0 2px 0 0;
 }
 
-.dropdown-submenu, .dropup-submenu, .dropleft-submenu, .dropright-submenu {
-  font-size: 0;
-  line-height: 0;
-}
-
 .dropdown-menu a, .dropdown-item {
   display: block;
   *zoom: 1;
@@ -13328,7 +13319,6 @@ html .dropdown-item[disabled] {
     }
     .collapsed > .tree-collapsible {
       height: 0;
-      display: none;
     }
     @starting-style {
       .tree .tree-collapsible {

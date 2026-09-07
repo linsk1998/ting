@@ -3,8 +3,7 @@
 
 .textarea{
 	position: relative;
-	font-size: 0;
-	line-height: 0;
+	*zoom: 1;
 }
 .textarea textarea {
 	font-size: $ctrl-fontsize-md;
@@ -66,7 +65,7 @@
 }
 .textarea-counter {
 	position: absolute;
-	right: 8px;
+	right: 18px;
 	bottom: 2px;
 	color: $input-counter-color;
 	font-size: $input-counter-fontsize;

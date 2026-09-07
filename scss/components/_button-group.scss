@@ -1,7 +1,7 @@
 
 @use '../variables' as *;
 
-.btn-toolbar{ font-size:0; *font-size:$font-size-base; margin:$margin-base 0;}
+.btn-toolbar{ margin:$margin-base 0;}
 .btn-toolbar .btn,
 .btn-toolbar .btn-group{
 	margin-left:0;
@@ -24,7 +24,6 @@
 	padding-right:1px;
 	*display: inline;
 	*zoom: 1;
-	font-size: 0;
 }
 .btn-group .btn{
 	float: left;
