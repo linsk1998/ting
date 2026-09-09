@@ -24,6 +24,11 @@
 	-o-transform:$value;
 	transform:$value;
 }
+@mixin transition($value...){
+	-webkit-transition:$value;
+	-o-transition:$value;
+	transition:$value;
+}
 @mixin user-select($value){
 	-webkit-user-select:$value;
 	-moz-user-select:$value;

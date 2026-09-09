@@ -489,12 +489,14 @@ $tree-item-height: 26px !default;
 $tree-item-hover: #CFDDEF !default;
 $tree-icon-size: 16px !default;
 
-$sidebar-collapsed-width: 300px !default;
+$sidebar-popover-width: 300px !default;
 $sidebar-color: $light-emphasis-text !default;
 $sidebar-bg: $light-body-bg !default;
-$sidebar-icon-width: 40px !default;          // 图标列宽度
+$sidebar-collapsed-width: 48px !default;          // 图标列宽度
 $sidebar-icon-size: 14px !default;           // 图标字号
-$sidebar-item-height: $sidebar-icon-width !default;
+$sidebar-brand-size: 32px !default;          
+$sidebar-header-padding: ($sidebar-collapsed-width - $sidebar-brand-size) *.5 !default;
+$sidebar-item-height: 40px !default;
 $sidebar-item-hover-bg: mix($light-primary, $sidebar-bg, 5%) !default;
 $sidebar-item-hover-color: $light-body-text !default;
 $sidebar-link-padding-x: 10px !default;

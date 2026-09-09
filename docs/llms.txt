@@ -95,7 +95,7 @@
 - [可折叠块](components/collapsible.md): .collapsible、.hide。
 - [手风琴](components/accordion.md): .accordion、.accordion-flush、.accordion-dark、.accordion-item、.collapsed、.accordion-header、.accordion-button、.accordion-collapsible、.accordion-body。
 - [树](components/tree.md): .tree、.tree-icon、.tree-toggler、.tree-collapsible、.collapsed、.active。
-- [侧栏导航](components/sidebar.md): .sidebar、.sidebar-dark、.dark、.sidebar-collapsed、.sidebar-menu、.sidebar-item、.collapsed、.sidebar-indicator、.sidebar-icon、.sidebar-link、.sidebar-collapsible、.sidebar-submenu。
+- [侧栏导航](components/sidebar.md): .sidebar、.sidebar-dark、.dark、.sidebar-collapsed、.sidebar-header、.sidebar-footer、.sidebar-body、.sidebar-brand、.sidebar-group、.sidebar-group-label、.sidebar-menu、.sidebar-item、.collapsed、.sidebar-indicator、.sidebar-icon、.sidebar-link、.sidebar-collapsible、.sidebar-submenu。
 - [覆盖层](components/overlay.md): .overlay、.overlay-viewport、.overlay-blocker。
 - [提示信息](components/msg.md): .msg、.msg-toast、.msg-icon、.msg-label、.msg-vertical、.msg-square。
 - [对话框](components/dialog.md): .dialog、.dialog-header、.dialog-title、.dialog-body、.dialog-footer、.dialog-{context}、.dialog-{size}。
