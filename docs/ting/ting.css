@@ -6750,6 +6750,36 @@ table.table-danger .thead-subtle,
   float: right;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .media {
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+  }
+  .media::after {
+    display: none;
+  }
+  .media-left, .media-right {
+    float: none;
+    -ms-flex-item-align: start;
+  }
+  .media-left {
+    -ms-flex-order: -1;
+  }
+  .media-body {
+    min-width: 0;
+    -ms-flex-order: 0;
+    -ms-flex: 1;
+  }
+  .media-right {
+    -ms-flex-order: 1;
+  }
+  .media-middle {
+    -ms-flex-item-align: center;
+  }
+  .media-bottom {
+    -ms-flex-item-align: end;
+  }
+}
 @supports (display: flex) {
   .media {
     display: flex;
@@ -13333,6 +13363,10 @@ html .dropdown-item[disabled] {
 .sidebar {
   position: relative;
   background: #ffffff;
+  overflow: auto;
+}
+
+.sidebar-fill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13341,14 +13375,15 @@ html .dropdown-item[disabled] {
   flex-direction: column;
 }
 
-.sidebar a, .sidebar a:hover {
-  text-decoration: none;
-}
-
-.sidebar-body {
+.sidebar-fill .sidebar-body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  overflow: auto;
+}
+
+.sidebar a, .sidebar a:hover {
+  text-decoration: none;
 }
 
 .sidebar-header {
@@ -13421,9 +13456,6 @@ html .dropdown-item[disabled] {
 
 .sidebar-link {
   font-weight: bold;
-  -webkit-transition: padding 0.3s;
-  -o-transition: padding 0.3s;
-  transition: padding 0.3s;
 }
 
 .sidebar-submenu, .sidebar-submenu li {
@@ -13489,28 +13521,61 @@ html .dropdown-item[disabled] {
   transform: none;
 }
 
-.sidebar-group-label {
+.sidebar-heading {
   padding: 0 8px;
   margin: 8px 8px 4px;
   color: #595959;
   overflow: hidden;
-  height: 20px;
-  -webkit-transition: margin 0.3s, height 0.3s, border-color 0.3s, font-size 0.3s;
-  -o-transition: margin 0.3s, height 0.3s, border-color 0.3s, font-size 0.3s;
-  transition: margin 0.3s, height 0.3s, border-color 0.3s, font-size 0.3s;
 }
 
-.sidebar-group + .sidebar-group > .sidebar-group-label {
-  height: 21px;
+.sidebar-body > .sidebar-heading {
   border-top: 1px solid transparent;
+}
+
+.sidebar-body > .sidebar-heading:first-child {
+  border-top: 0 none;
+}
+
+.sidebar-group + .sidebar-group > .sidebar-heading {
+  border-top: 1px solid transparent;
+}
+
+.sidebar-media {
+  padding: 8px 0;
+}
+
+.sidebar-media .media-left {
+  width: 48px;
+  text-align: center;
+  margin-right: 0;
+  _margin-right: -3px;
+}
+
+.sidebar-media .media-object {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.sidebar-media .media-body {
+  line-height: 16px;
+  overflow: hidden;
 }
 
 .sidebar-collapsed {
   width: 48px !important;
+  overflow: visible;
 }
 
 .sidebar-collapsed .sidebar-brand {
   padding: 0;
+}
+
+.sidebar-collapsed .sidebar-body {
+  overflow: visible;
 }
 
 .sidebar-collapsed .sidebar-link .sidebar-indicator {
@@ -13545,22 +13610,31 @@ html .dropdown-item[disabled] {
   transform: rotate(-90deg);
 }
 
-.sidebar-collapsed .sidebar-group > .sidebar-group-label {
+.sidebar-collapsed .sidebar-heading {
+  _display: none;
+}
+
+.sidebar-collapsed .sidebar-body > .sidebar-heading,
+.sidebar-collapsed .sidebar-group > .sidebar-heading {
   border-top-color: #e0e0e0;
   margin: 0 8px 0;
   height: 0;
   font-size: 0;
 }
 
-.sidebar-media .media-left {
-  width: 48px;
-  padding: 8px 0;
-  text-align: center;
+.sidebar-collapsed .sidebar-group > .sidebar-heading:after {
+  content: " ";
+  display: block;
+  height: 1px;
+  background: #e0e0e0;
 }
 
-.sidebar-media .media-body {
-  line-height: 16px;
-  overflow: hidden;
+.sidebar-collapsed .sidebar-media .media-left {
+  margin-right: 0;
+}
+
+.sidebar-collapsed .sidebar-media .media-body {
+  display: none;
 }
 
 .dark .sidebar {
@@ -13596,11 +13670,11 @@ html .dropdown-item[disabled] {
   border-color: #495057;
 }
 
-.dark .sidebar-group-label {
+.dark .sidebar-heading {
   color: #8a9198;
 }
 
-.dark .sidebar-collapsed .sidebar-group > .sidebar-group-label {
+.dark .sidebar-collapsed .sidebar-group > .sidebar-heading {
   border-top-color: #495057;
 }
 
@@ -13622,6 +13696,15 @@ html .dropdown-item[disabled] {
   .sidebar .sidebar-indicator {
     transition: transform 0.3s;
   }
+  .sidebar-link {
+    transition: padding 0.3s;
+  }
+  .sidebar-heading {
+    transition: margin 0.3s, height 0.3s, border-color 0.3s, font-size 0.3s;
+  }
+  .sidebar-collapsed .sidebar-media .media-body {
+    display: block;
+  }
   @supports (height: calc-size(auto, size)) {
     .sidebar:not(.sidebar-collapsed) .sidebar-collapsible {
       display: block;
@@ -13631,6 +13714,9 @@ html .dropdown-item[disabled] {
     }
     .sidebar .collapsed > .sidebar-collapsible {
       height: 0;
+    }
+    .sidebar-heading {
+      height: calc-size(auto, size);
     }
   }
 }

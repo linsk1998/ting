@@ -55,3 +55,7 @@
 	-webkit-touch-action:$value;
 	touch-action:$value;
 }
+@mixin object-fit($value){
+	-o-object-fit:$value;
+	object-fit:$value;
+}
