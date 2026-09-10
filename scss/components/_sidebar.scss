@@ -1,30 +1,314 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
 
-
-.sidebar{ background:#fcfcfc;}
-.sidebar-nav-header{ border-left:5px solid #337ab7; background:#f0f0f0; padding:8px 14px; cursor:default;}
-
-
-.sidebar-inverse{ background:#222d32;}
-.sidebar-inverse .sidebar-nav-header{ color:#8aa4af; border-left:0 none; background:#1e282c; color:#f2f8f8;}
-
-.sidebar-nav-header .pull-right{ transition:transform 0.2s; cursor:pointer;}
-@media (min-width:0){
-	.sidebar-nav .expanded .pull-right{ -webkit-transform:scale(1,-1);-moz-transform:scale(1,-1);-ms-transform:scale(1,-1);-o-transform:scale(1,-1);transform:scale(1,-1);}
+// 基础容器
+.sidebar {
+	position: relative;
+	background: $sidebar-bg;
+	overflow: auto;
 }
+.sidebar-fill {
+	display:-webkit-box;display:-ms-flexbox;display:flex;
+	-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column;
+	.sidebar-body {
+		-webkit-box-flex:1;-ms-flex:1;flex:1;
+		overflow: auto;
+	}
+}
+.sidebar a, .sidebar a:hover{
+	text-decoration: none;
+}
+.sidebar-header {
+	padding: $sidebar-header-padding;
+	white-space: nowrap;
+}
+.sidebar-brand {
+	display: block;
+	font-size: 18px;
+	color: $light-body-text;
+	overflow: hidden;
+}
+.sidebar-brand img{
+	width: 32px;
+	height: 32px;
+	margin-right: $sidebar-header-padding;
+}
+.sidebar-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// 导航项
+.sidebar-item {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	*zoom: 1;
+}
+
+// 导航图标
+.sidebar-icon {
+	position: absolute;
+	z-index: 2;
+	left: ($sidebar-collapsed-width - $sidebar-icon-size) * .5;
+	top: ($sidebar-item-height - $sidebar-icon-size) * .5;
+	display: block;
+	width: $sidebar-icon-size;
+	height: $sidebar-icon-size;
+	line-height: $sidebar-icon-size;
+	font-size: $sidebar-icon-size;
+	text-align: center;
+	cursor: pointer;
+	pointer-events: none;
+}
+
+// 导航链接
+.sidebar-link {
+	display: block;
+	position: relative;
+	z-index: 1;
+	padding: ($sidebar-item-height - $line-height-base) * .5 $sidebar-link-padding-x 0 $sidebar-collapsed-width;
+	height: $sidebar-item-height;
+	line-height: $line-height-base;
+	color: $sidebar-color;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	&:hover{
+		color: $sidebar-item-hover-color;
+		background: $sidebar-item-hover-bg;
+	}
+	@if $sidebar-link-bold {
+		font-weight: bold;
+	}
+}
+// 子菜单
+.sidebar-submenu, .sidebar-submenu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sidebar-submenu li {
+	position: relative;
+}
+.sidebar-submenu li a{
+	display: block;
+	padding: ($sidebar-subitem-height - $line-height-base) * .5 $sidebar-link-padding-x;
+	padding-left: $sidebar-collapsed-width - $sidebar-link-padding-x;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	color: $sidebar-subitem-color;
+}
+@for $i from 2 through $sidebar-max-level {
+	$selector: ".sidebar-submenu";
+	@for $j from 2 through $i {
+		$selector: $selector + " ul";
+	}
+	#{$selector} li a{
+		padding-left: $sidebar-collapsed-width - $sidebar-link-padding-x + $sidebar-indent * ($i - 1);
+	}
+}
+.sidebar-submenu a:hover{
+	color: $sidebar-subitem-hover-color;
+	background: $sidebar-subitem-hover-bg;
+}
+.sidebar-submenu .active a, .sidebar-submenu .active a:hover{
+	color: $sidebar-subitem-active-color;
+	background: $sidebar-subitem-active-bg;
+}
+
+.sidebar .collapsed .sidebar-collapsible{
+	display: none;
+}
+.sidebar-indicator {
+	float: right;
+	width: 1em;
+	text-align: center;
+	overflow: hidden;
+	@include transform(rotate(180deg));
+}
+.sidebar .collapsed>*>.sidebar-indicator{
+	@include transform(none);
+}
+.sidebar-heading {
+	padding: 0 8px;
+	margin: 8px 8px 4px;
+	color: $light-secondary-text;
+	overflow: hidden;
+}
+.sidebar-body>.sidebar-heading {
+	border-top: 1px solid transparent;
+}
+.sidebar-body>.sidebar-heading:first-child {
+	border-top: 0 none;
+}
+.sidebar-group + .sidebar-group>.sidebar-heading {
+	border-top: 1px solid transparent;
+}
+.sidebar .media{
+	padding: 8px 0;
+}
+.sidebar .media-left{
+	width: $sidebar-collapsed-width;
+	text-align: center;
+	margin-right: 0;
+	_margin-right: -3px;
+}
+.sidebar .media-object{
+	display: inline-block;
+	vertical-align: top;
+	width: 32px;
+	height: 32px;
+	@include object-fit(cover);
+}
+.sidebar .media-body{
+	line-height: 16px;
+	overflow: hidden;
+}
+.sidebar-collapsed {
+	width: $sidebar-collapsed-width !important;
+	overflow: visible;
+}
+.sidebar-collapsed .sidebar-brand {
+	padding: 0;
+}
+.sidebar-collapsed .sidebar-body {
+	overflow: visible;
+}
+.sidebar-collapsed .sidebar-link .sidebar-indicator {
+	width: 0;
+}
+.sidebar-collapsed .sidebar-link{
+	text-overflow: clip;
+	padding-right: 0;
+}
+.sidebar-collapsed .sidebar-collapsible{
+	position: absolute;
+	left: $sidebar-collapsed-width;
+	margin-left: 2px;
+	top: 0;
+	width: $sidebar-popover-width - $sidebar-collapsed-width;
+	background: $sidebar-bg;
+	border: $popover-border-width solid $popover-border-color;
+}
+.sidebar-collapsed .sidebar-submenu .sidebar-collapsible {
+	left: 100%;
+	top: 0;
+}
+.sidebar-collapsed .sidebar-submenu li a{
+	padding-left: $sidebar-link-padding-x;
+}
+.sidebar-collapsed .sidebar-submenu .sidebar-indicator{
+	transform: rotate(-90deg);
+}
+.sidebar-collapsed .sidebar-heading {
+	_display: none;
+}
+.sidebar-collapsed .sidebar-body>.sidebar-heading,
+.sidebar-collapsed .sidebar-group>.sidebar-heading {
+	border-top-color: $light-divider;
+	margin: 0 8px 0;
+	height: 0;
+	font-size: 0;
+}
+.sidebar-collapsed .sidebar-group>.sidebar-heading:after{
+	content: " ";
+	display: block;
+	height: 1px;
+	background: $light-divider;
+}
+.sidebar-collapsed .sidebar-media .media-left {
+	margin-right: 0;
+}
+.sidebar-collapsed .sidebar-media .media-body {
+	display: none;
+}
+
+@if $enable-dark {
+	.dark {
+		.sidebar {
+			background: $dark-sidebar-bg;
+		}
+		.sidebar-link {
+			color: $dark-sidebar-color;
+			&:hover {
+				color: $dark-sidebar-item-hover-color;
+				background: $dark-sidebar-item-hover-bg;
+			}
+		}
+		.sidebar-submenu li a {
+			color: $dark-sidebar-subitem-color;
+		}
+		.sidebar-submenu a:hover {
+			color: $dark-sidebar-subitem-hover-color;
+			background: $dark-sidebar-subitem-hover-bg;
+		}
+		.sidebar-submenu .active a,
+		.sidebar-submenu .active a:hover {
+			color: $dark-sidebar-subitem-active-color;
+			background: $dark-sidebar-subitem-active-bg;
+		}
+		.sidebar-collapsed .sidebar-collapsible {
+			background: $dark-sidebar-bg;
+			border-color: $dark-popover-border-color;
+		}
+		.sidebar-heading {
+			color: $dark-secondary-text;
+		}
+		.sidebar-collapsed .sidebar-group>.sidebar-heading {
+			border-top-color: $dark-divider;
+		}
+	}
+}
+
 @media \0screen\,screen\9 {
-	.sidebar-nav .expanded .pull-right{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2,mirror=1);}
+	.sidebar-indicator {
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	}
+	.collapsed .sidebar-indicator{
+		filter: none;
+	}
+	.sidebar-collapsed .sidebar-submenu .sidebar-indicator{
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	}
 }
-.sidebar-nav .collapsed{ display:none;}
 
-
-.nav-list{ margin:3px 0; padding-left:0;}
-.nav-list li{ list-style:none;}
-.nav-list-item{ display:block; padding:8px 16px; _zoom:1;}
-a.nav-list-item,.nav-list-item a{ color:#666;}
-a.nav-list-item:hover,.nav-list-item a:hover{ color:#444; text-decoration:none;}
-.nav-list-item small{ color:#999;}
-.inverse .nav-list-item, .inverse .nav-list-item a{
-	color:#999faa;
-	&:hover{ color:#fff;}
-	small{ color:#666f77;}
+@media (prefers-reduced-motion: no-preference) {
+	.sidebar {
+		transition: width $collapse-duration;
+	}
+	.sidebar .sidebar-indicator{
+		transition: transform $collapse-duration;
+	}
+	.sidebar-link {
+		transition: padding $sidebar-duration;
+	}
+	.sidebar-heading {
+		transition: margin $sidebar-duration, height $sidebar-duration, border-color $sidebar-duration, font-size $sidebar-duration;
+	}
+	.sidebar-collapsed .sidebar-media .media-body {
+		display: block;
+	}
+	@supports (height: calc-size(auto, size)) {
+		.sidebar:not(.sidebar-collapsed) .sidebar-collapsible{
+			display: block;
+			height: calc-size(auto, size);
+			overflow-y: hidden;
+			transition: height $collapse-duration;
+		}
+		.sidebar .collapsed>.sidebar-collapsible{
+			height: 0;
+		}
+		.sidebar-heading {
+			height: calc-size(auto, size);
+		}
+	}
 }

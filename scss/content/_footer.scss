@@ -1,2 +1,14 @@
-.footer{ background:#f5f5f5; padding:30px 0; margin-top:16px;}
-.footer p{ color:#666;}
+@use "../variables" as *;
+
+.footer {
+	background: $footer-bg;
+	padding: $footer-padding;
+	margin: $footer-margin;
+	color: $footer-color;
+	text-align: $footer-text-align;
+}
+@if $enable-dark {
+	.dark{
+		.footer{ background: $dark-footer-bg; color: $dark-footer-color; }
+	}
+}

@@ -1,0 +1,79 @@
+
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.badge {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	color: $light-body-bg;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background: $badge-bg;
+	@include rounded(9px);
+	min-width: 18px;
+	_width: 18px;
+}
+.badge:empty{
+	display: none;
+}
+
+.list .active .badge,
+.btn-primary .badge,
+.panel-primary .panel-heading .badge,
+.text-bg-primary .badge{
+	color:$light-primary;
+	background-color:$light-body-bg;
+}
+.btn-primary:hover .badge{
+	color:darken($light-primary,10%);
+}
+@each $key, $color in $context {
+	@if $key != 'primary' {
+		.list>.list-item-#{$key}.active .badge{ color:$color;}
+		.btn-#{$key} .badge,
+		.text-bg-#{$key} .badge {
+			color: $color;
+			background: $light-body-bg;
+		}
+		.btn-#{$key}:hover .badge {
+			color:darken($light-primary,10%);
+		}
+	}
+}
+
+@if $enable-dark {
+	.dark .badge {
+		background: $dark-badge-bg;
+		color: $dark-emphasis-text;
+	}
+	.dark {
+		.list .active .badge,
+		.btn-primary .badge,
+		.panel-primary .panel-heading .badge,
+		.text-bg-primary .badge{
+			color:$dark-primary;
+			background-color:$dark-body-bg;
+		}
+		.btn-primary:hover .badge{
+			color:lighten($dark-primary,10%);
+		}
+		@each $key, $color in $dark-context {
+			@if $key != 'primary' {
+				.list>.list-item-#{$key}.active .badge{ color:$color;}
+				.btn-#{$key} .badge,
+				.text-bg-#{$key} .badge {
+					color: $color;
+					background: $dark-body-bg;
+				}
+				.btn-#{$key}:hover .badge {
+					color:lighten($dark-primary,10%);
+				}
+			}
+		}
+	}
+}

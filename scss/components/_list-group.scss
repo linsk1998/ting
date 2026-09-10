@@ -1,31 +1,41 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+$list-group-bg: $light-body-bg !default;
+$list-group-padding-x: 15px !default;
+$list-group-padding-y: 10px !default;
+$list-group-disabled-color: #777 !default;
+$list-group-disabled-bg: #eee !default;
+
+$dark-list-group-bg: $dark-body-bg !default;
+$dark-list-group-disabled-bg: $dark-secondary-bg !default;
+$dark-list-group-disabled-color: $dark-tertiary-text !default;
+
 .list-group {
 	padding: 0; margin: 0;
 	list-style-type: none;
 	padding-bottom: 1px;
 }
+.list-group a{ color:$light-body-text; text-decoration: none;}
 
 .list-group-item {
-	padding: 10px 15px;
-	background-color: #fff;
+	padding: $list-group-padding-y $list-group-padding-x;
+	background-color: $list-group-bg;
 	margin-bottom:-1px;
-	border: 1px solid $theme-divider;
+	border: 1px solid $light-divider;
 	position: relative;
 	*zoom:1;
 }
-a.list-group-item,button.list-group-item{
+a.list-group-item,
+button.list-group-item{
+	cursor: pointer;
 	display: block;
 }
-a.list-group-item,.list-group-item a{
-	color:$theme-primary-text;
-}
-a.list-group-item:hover,.list-group-item a:hover{
-	color:$theme-primary;
-}
 button.list-group-item{
-	cursor:pointer;
+	width: 100%;
+	text-align: left;
 	outline:none;
-	width:100%;
-	text-align:left;
 	-webkit-appearance:none;
 	@include rounded(0);
 }
@@ -33,69 +43,124 @@ button.list-group-item::-moz-focus-inner{
 	padding:0;
 	border:0 none;
 }
+.list-group-flush {
+	padding-bottom: 0;
+	overflow: hidden;
+	.list-group-item {
+		margin-top: -1px;
+		border-left: 0 none;
+		border-right: 0 none;
+	}
+}
+
+.list-group-item:hover {
+    background-color: darken($list-group-bg, 5%);
+}
+@each $key, $color in $context {
+	$text: light-text($color);
+	$bg: light-bg($color);
+	.list-group .list-group-item-#{$key} { background-color:$bg;}
+	.list-group .list-group-item-#{$key}, .list-group .list-group-item-#{$key} a { color: $text;}
+	.list-group .list-group-item-#{$key}:hover { background-color:darken($bg,5%);}
+	.list-group .list-group-item-#{$key}:hover, .list-group .list-group-item-#{$key} a:hover { color: darken($text, 12%);}
+	.list-group>.list-group-item-#{$key}.active, .list-group>.list-group-item-#{$key}.active:hover { background-color:$color; border-color:$color;}
+}
+.list-group .active,.list-group .active:hover{
+	background-color:$light-primary;
+	border-color:$light-primary;
+	z-index:$level-item-active;
+}
+.list-group .active, .list-group .active a,
+.list-group .active:hover, .list-group .active a:hover {
+	color: $list-group-bg;
+}
+
+.list-group .disabled, .list-group .disabled:focus, .list-group .disabled:hover {
+    cursor: not-allowed;
+    color: $list-group-disabled-color;
+    background-color: $list-group-disabled-bg;
+	opacity: 1;
+}
 
 .list-group-item-heading{ margin-top:0; margin-bottom:5px;}
 .list-group-item-text{ margin:0;}
+.list-group .active .list-group-item-text{ color: mix($light-primary, $list-group-bg, 20%); }
 
-.list-group .list-group-item-success{ background-color:$success-bg;}
-.list-group .list-group-item-success,.list-group-item-success a{ color:$success-text;}
-.list-group .list-group-item-success:hover,.list-group-item-success a:hover,
-.list-group .list-group-item-success:focus,.list-group-item-success a:focus
-{ color:$success-text;}
-.list-group>.list-group-item-success:hover,
-.list-group>.list-group-item-success:focus
-{ background-color:darken($success-bg,5%);}
-.list-group>.list-group-item-success.active
-{ background-color:$success-text; border-color:$success-text;}
-.list-group>.list-group-item-success.active,.list-group>.list-group-item-success a.active
-{ color:#fff;}
-.list-group .list-group-item-info{ background-color:$info-bg;}
-.list-group .list-group-item-info,.list-group-item-info a{ color:$info-text;}
-.list-group .list-group-item-info:hover,.list-group-item-info a:hover,
-.list-group .list-group-item-info:focus,.list-group-item-info a:focus
-{ color:$info-text;}
-.list-group>.list-group-item-info:hover,
-.list-group>.list-group-item-info:focus
-{ background-color:darken($info-bg,5%);}
-.list-group>.list-group-item-info.active
-{ background-color:$info-text; border-color:$info-text;}
-.list-group>.list-group-item-info.active,.list-group>.list-group-item-info a.active
-{ color:#fff;}
-.list-group .list-group-item-warning{ background-color:$warning-bg;}
-.list-group .list-group-item-warning,.list-group-item-warning a{ color:$warning-text;}
-.list-group .list-group-item-warning:hover,.list-group-item-warning a:hover,
-.list-group .list-group-item-warning:focus,.list-group-item-warning a:focus
-{ color:$warning-text;}
-.list-group>.list-group-item-warning:hover,
-.list-group>.list-group-item-warning:focus
-{ background-color:darken($warning-bg,5%);}
-.list-group>.list-group-item-warning.active
-{ background-color:$warning-text; border-color:$warning-text;}
-.list-group>.list-group-item-warning.active,.list-group>.list-group-item-warning a.active
-{ color:#fff;}
-.list-group .list-group-item-danger{ background-color:$danger-bg;}
-.list-group .list-group-item-danger,.list-group-item-danger a{ color:$danger-text;}
-.list-group .list-group-item-danger:hover,.list-group-item-danger a:hover,
-.list-group .list-group-item-danger:focus,.list-group-item-danger a:focus
-{ color:$danger-text;}
-.list-group>.list-group-item-danger:hover,
-.list-group>.list-group-item-danger:focus
-{ background-color:darken($danger-bg,5%);}
-.list-group>.list-group-item-danger.active
-{ background-color:$danger-text; border-color:$danger-text;}
-.list-group>.list-group-item-danger.active,.list-group>.list-group-item-danger a.active
-{ color:#fff;}
+.list-group-item .badge { float: right; }
+.list-group .active .badge{ color: $light-primary; background-color: $list-group-bg;}
 
-
-.list-group .active{
-	background-color:$theme-primary;
-	border-color:$theme-primary;
-	z-index:$level-item-active;
+@each $key, $color in $context {
+	.list-group>.list-group-item-#{$key}.active .list-group-item-text{
+		color:lighten($color, 50%);
+	}
+	.list-group>.list-group-item-#{$key}.active .badge{ color: $color;}
 }
-.list-group .active,.list-group .active a,
-.list-group .active a:hover,.list-group a.active:hover{ color:#fff;}
-.list-group .active .list-group-item-text{color:lighten($theme-primary, 50%);}
+.list-group-horizontal {
+	padding-bottom: 0;
+	padding-right: 1px;
+}
+.list-group-horizontal li{
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: top;
+	margin-bottom: 0;
+	margin-right: -1px;
+}
 
-
-.list-group-unbordered{ border-left:0; border-right:0;}
-.list-group-unbordered .list-group-item{ border-left:0; border-right:0; padding-left:0; padding-right:0;}
+@if $enable-dark {
+	.dark {
+		.list-group a {
+			color: $dark-body-text;
+		}
+		.list-group-item {
+			background: $dark-list-group-bg;
+			border-color: $dark-divider;
+		}
+		.list-group-item:hover {
+			background: $dark-secondary-bg;
+		}
+		@each $key, $color in $dark-context {
+			$text: dark-text($color);
+			$bg: dark-bg($color);
+			.list-group .list-group-item-#{$key} { background: $bg; }
+			.list-group .list-group-item-#{$key},
+			.list-group .list-group-item-#{$key} a { color: $text; }
+			.list-group .list-group-item-#{$key}:hover { background: darken($bg, 5%); }
+			.list-group .list-group-item-#{$key}:hover,
+			.list-group .list-group-item-#{$key} a:hover { color: $color; }
+			.list-group > .list-group-item-#{$key}.active,
+			.list-group > .list-group-item-#{$key}.active:hover {
+				background: $color;
+				border-color: $color;
+			}
+		}
+		.list-group .active,
+		.list-group .active:hover {
+			background: $dark-primary;
+			border-color: $dark-primary;
+			color: $dark-list-group-bg;
+		}
+		.list-group .active a,
+		.list-group .active a:hover {
+			color: $dark-list-group-bg;
+		}
+		.list-group .disabled,
+		.list-group .disabled:focus,
+		.list-group .disabled:hover {
+			color: $dark-list-group-disabled-color;
+			background: $dark-list-group-disabled-bg;
+		}
+		.list-group .active .list-group-item-text {
+			color: mix($dark-primary, $dark-list-group-bg, 20%);
+		}
+		@each $key, $color in $dark-context {
+			.list-group > .list-group-item-#{$key}.active .list-group-item-text {
+				color: $dark-list-group-bg;
+			}
+			.list-group > .list-group-item-#{$key}.active .badge {
+				color: $color;
+			}
+		}
+	}
+}

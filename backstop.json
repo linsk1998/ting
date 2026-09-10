@@ -1,0 +1,221 @@
+{
+  "id": "ting",
+  "viewports": [
+    {
+      "label": "md",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "container",
+      "url": "http://localhost:3000/layout/container.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1,
+      "viewports": [
+        {
+          "label": "xs",
+          "width": 375,
+          "height": 667
+        },
+        {
+          "label": "sm",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "label": "md",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "label": "lg",
+          "width": 1400,
+          "height": 900
+        },
+        {
+          "label": "xl",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "label": "grid",
+      "url": "http://localhost:3000/layout/grid.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1,
+      "viewports": [
+        {
+          "label": "xs",
+          "width": 375,
+          "height": 667
+        },
+        {
+          "label": "sm",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "label": "md",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "label": "lg",
+          "width": 1400,
+          "height": 900
+        },
+        {
+          "label": "xl",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "label": "align",
+      "url": "http://localhost:3000/layout/align.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "content",
+      "url": "http://localhost:3000/content/index.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "type",
+      "url": "http://localhost:3000/content/type.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "button",
+      "url": "http://localhost:3000/components/button.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "button-group",
+      "url": "http://localhost:3000/components/button-group.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "table",
+      "url": "http://localhost:3000/content/table.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "media",
+      "url": "http://localhost:3000/content/media.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "card",
+      "url": "http://localhost:3000/content/card.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "alert",
+      "url": "http://localhost:3000/components/alert.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "control",
+      "url": "http://localhost:3000/form/control.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "form",
+      "url": "http://localhost:3000/form/form.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "sizing",
+      "url": "http://localhost:3000/form/sizing.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "validation",
+      "url": "http://localhost:3000/form/validation.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "static",
+      "url": "http://localhost:3000/form/static.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "input-group",
+      "url": "http://localhost:3000/form/input-group.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "multiple-select",
+      "url": "http://localhost:3000/form/multiple-select.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "toggle-button",
+      "url": "http://localhost:3000/form/toggle-button.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "navs",
+      "url": "http://localhost:3000/components/navs.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "pagination",
+      "url": "http://localhost:3000/components/pagination.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "tags",
+      "url": "http://localhost:3000/components/tags.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "color",
+      "url": "http://localhost:3000/utilities/color.html",
+      "delay": 1000,
+      "misMatchThreshold": 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "onBeforeScript": "freeze-animations",
+  "asyncCaptureLimit": 1,
+  "asyncCompareLimit": 50,
+  "debug": true,
+  "debugWindow": false
+}

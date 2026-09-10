@@ -1,0 +1,87 @@
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.form-control,.form-select {
+	font-size: $ctrl-fontsize-md;
+	line-height: $ctrl-line-height;
+	color: $input-value-color;
+	height: $ctrl-height-md;
+	padding:($ctrl-height-md - 2 * $ctrl-border-width - $ctrl-line-height)*.5 $ctrl-padding-x-md;
+	border: $ctrl-border-width solid $ctrl-border-color;
+	@if($enable-rounded) {
+		@include rounded($border-radius);
+	}
+	@else {
+		@include rounded(0);
+	}
+	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+}
+.form-control[disabled] {
+	cursor: not-allowed;
+	background-color: $input-disabled-bg;
+}
+input.form-control,select.form-control, .form-select{
+	*margin-top:-1px; *margin-bottom:-1px;
+}
+select.form-control, .form-select{
+	&::-ms-expand{ border:0; background-color:transparent;}
+}
+textarea.form-control {
+	min-height: $ctrl-height-md;
+}
+.form-control:focus{
+	outline: 0;
+	border-color: $input-focus-color;
+	z-index: $level-item-focus;
+}
+.form-control{
+	@include placeholder($input-placeholder-color);
+}
+
+button.control-clear{
+	padding:0;
+	outline:none;
+	-webkit-appearance:none;
+	appearance:none;
+	&::-moz-focus-inner{
+		padding:0;
+		border:0 none;
+	}
+	cursor:pointer;
+	background:transparent;
+	border:0 none;
+}
+.control-clear{
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	right: $ctrl-clear-right;
+	top: 50%;
+	margin-top: -.5em;
+	@include opacity(0.5);
+	font-size: $ctrl-clear-size;
+	display: none;
+}
+:hover>.control-clear {
+	display: block;
+}
+
+@if $enable-dark {
+	.dark {
+		.form-control {
+			background: $dark-body-bg;
+		}
+		.form-control {
+			color: $dark-input-value-color;
+			border-color: $dark-ctrl-border-color;
+		}
+		.form-control[disabled] {
+			background: $dark-input-disabled-bg;
+		}
+		.form-control:focus {
+			border-color: $dark-input-focus-color;
+		}
+	}
+}

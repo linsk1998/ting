@@ -1,18 +1,47 @@
+@use '../variables' as *;
 
+.block, .d-block, .d-flex{ display:block !important;}
+.inline-block, .d-inline-flex{ display:inline-block !important; *zoom:1; *display:inline-block !important;}
+.inline{ display:inline !important;}
+// .d-flex 和 .d-inline-flex 的兼容代码在 _flex.scss 中
 
+.visible{ visibility: visible; }
+
+@media (min-width:$screen-sm) {
+	.visible-desktop { display:block !important;}
+}
 @media \0screen\,screen\9 {
-	.hidden-desktop{ display:none;}
+	.visible-block-md,.d-block-md, .d-flex-md { display:block !important;}
+	.visible-inline-block-md, .d-inline-flex-md { display:inline-block !important; *zoom:1; *display:inline-block !important;}
+	.visible-inline-md,.d-inline-md { display:inline !important;}
 }
-@media (min-width:971px) {
-	.hidden-desktop{ display:none;}
+@media (min-width:$screen-sm) and (max-width:($screen-lg - 1px)) {
+	.visible-block-md,.d-block-md, .d-flex-md { display:block !important;}
+	.visible-inline-block-md, .d-inline-flex-md { display:inline-block !important;}
+	.visible-inline-md,.d-inline-md { display:inline !important;}
+	// .d-flex 和 .d-inline-flex 的兼容代码在 _flex.scss 中
 }
-@media (min-width:641px) and (max-width:970px){
-	.hidden-mobile,.hidden-tablet{ display:none;}
+@media (min-width:$screen-lg) and (max-width:($screen-xl - 1px)) {
+	.visible-block-lg,.d-block-lg, .d-flex-lg { display:block !important;}
+	.visible-inline-block-lg, .d-inline-flex-lg { display:inline-block !important;}
+	.visible-inline-lg,.d-inline-lg { display:inline !important;}
+	// .d-flex 和 .d-inline-flex 的兼容代码在 _flex.scss 中
 }
-@media (max-width:640px){
-	.hidden-mobile,.hidden-phone{ display:none;}
+@media (min-width:$screen-xl) {
+	.visible-block-xl,.d-block-xl, .d-flex-xl { display:block !important;}
+	.visible-inline-block-xl, .d-inline-flex-xl { display:inline-block !important;}
+	.visible-inline-xl,.d-inline-xl { display:inline !important;}
+	// .d-flex 和 .d-inline-flex 的兼容代码在 _flex.scss 中
 }
-.hidden{ display:none;}
-.block{ display:block;}
-.inline-block{ display:inline-block; *zoom:1; *display:inline-block;}
-.inline{ display:inline;}
+@media (min-width:($screen-xs + 1px)) and (max-width:$screen-sm) {
+	.visible-tablet,.visible-block-sm,.d-block-sm { display:block !important;}
+	.visible-inline-block-sm, .d-inline-flex-sm { display:inline-block !important;}
+	.visible-inline-sm,.d-inline-sm { display:inline !important;}
+	// .d-flex 和 .d-inline-flex 的兼容代码在 _flex.scss 中
+}
+@media (max-width:$screen-xs) {
+	.visible-phone,.visible-block-xs,.d-block-xs { display:block !important;}
+	.visible-inline-block-xs, .d-inline-flex-xs { display:inline-block !important;}
+	.visible-inline-xs,.d-inline-xs { display:inline !important;}
+	// .d-flex 和 .d-inline-flex 的兼容代码在 _flex.scss 中
+}

@@ -1,0 +1,41 @@
+@use '../variables' as *;
+
+$thumbnail-padding: 4px !default;
+$thumbnail-caption-padding: 9px !default;
+
+.thumbnail {
+	display: block;
+	padding: $thumbnail-padding;
+	margin: $margin-base 0;
+	background: $light-body-bg;
+	border: 1px solid $light-divider;
+}
+.thumbnail img {
+	display: block;
+    width: 100%;
+	height: auto;
+}
+
+.thumbnail .caption {
+	padding: $thumbnail-caption-padding;
+	color: $light-secondary-text;
+}
+
+a.thumbnail:hover {
+	border-color: $light-primary;
+}
+
+@if $enable-dark {
+	.dark {
+		.thumbnail {
+			background: $dark-body-bg;
+			border-color: $dark-divider;
+		}
+		.thumbnail .caption {
+			color: $dark-secondary-text;
+		}
+		a.thumbnail:hover {
+			border-color: $dark-primary;
+		}
+	}
+}

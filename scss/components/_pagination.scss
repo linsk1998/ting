@@ -1,4 +1,7 @@
 
+@use '../variables' as *;
+@use '../functions' as *;
+
 .pagination{
 	display:inline-block; *zoom:1; *display:inline;
 	padding:0;
@@ -18,23 +21,23 @@
 }
 .pagination li a,.pagination li span{
 	display: block;
-	padding:($pagination-size - 2px - $line-height-base)*.5 ($pagination-size - 2px - $font-size-base*.5)*.5;
-	color:$theme-primary-text;
+	padding:($ctrl-height-md - 2px - $line-height-base)*.5 ($ctrl-height-md - 2px - $font-size-base*.5)*.5;
+	color:$light-body-text;
 	text-decoration:none;
 }
 .pagination li:hover{
-	background-color:#eee;
+	background: $light-secondary-bg;
 }
 .pagination li a:hover{
-	color:darken($theme-primary,15%);
+	color:darken($light-primary,15%);
 }
 .pagination li.active{
 	z-index:$level-item-active;
-	background-color:$theme-primary;
-	border-color:$theme-primary;
+	background:$light-primary;
+	border-color:$light-primary;
 }
 .pagination li.active,.pagination li.active *,.pagination li.active a:hover{
-	color:#fff;
+	color: $light-body-bg;
 }
 .pagination li.disabled{
 	border:0 none;
@@ -48,11 +51,38 @@
 .pagination-gutter{ margin-right:-5px;}
 .pagination-lg li{
 	a,span{
-		padding:($pagination-size-lg - 2px - $line-height-base)*.5 ($pagination-size-lg - 2px - $font-size-base*.5)*.5;
+		padding:($ctrl-height-lg - 2px - $line-height-base)*.5 ($ctrl-height-lg - 2px - $font-size-base*.5)*.5;
 	}
 }
 .pagination-sm li{
 	a,span{
-		padding:($pagination-size-sm - 2px - $line-height-base)*.5 ($pagination-size-sm - 2px - $font-size-base*.5)*.5;
+		padding:($ctrl-height-sm - 2px - $line-height-base)*.5 ($ctrl-height-sm - 2px - $font-size-base*.5)*.5;
+	}
+}
+
+@if $enable-dark {
+	.dark {
+		.pagination li {
+			border-color: $dark-ctrl-border-color;
+		}
+		.pagination li a,
+		.pagination li span {
+			color: $dark-body-text;
+		}
+		.pagination li:hover {
+			background: $dark-secondary-bg;
+		}
+		.pagination li a:hover {
+			color: lighten($dark-primary, 15%);
+		}
+		.pagination li.active {
+			background: $dark-primary;
+			border-color: $dark-primary;
+		}
+		.pagination li.active,
+		.pagination li.active *,
+		.pagination li.active a:hover {
+			color: $dark-body-bg;
+		}
 	}
 }

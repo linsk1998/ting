@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="true" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>表单</title>
-	<!-- InstanceEndEditable -->
+	<title>表单校验状态 - 表单 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">表单</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li class="active"><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,196 +47,335 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">表单组验证</h1>
-			<form class="form-horizontal">
-				<div class="form-group has-success">
-					<label class="form-label">Success</label>
-					<input type="text" class="form-control"/>
-				</div>
-				<div class="form-group has-warning">
-					<label class="form-label">Warning</label>
-					<input type="text" class="form-control"/>
-					<p class="help-block">Example block-level help text here.</p>
-				</div>
-				<div class="form-group has-error">
-					<label class="form-label">Error</label>
-					<input type="text" class="form-control"/>
-					<p class="help-block">Example block-level help text here.</p>
-				</div>
-			</form>
-			<h2 class="page-header">添加额外的图标</h2>
-			<form class="form">
-				<div class="form-group has-success has-feedback">
-					<label class="form-label">Success</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group has-warning has-feedback">
-					<label class="form-label">Warning</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf071;</i>
-					<p class="help-block">Example block-level help text here.</p>
-				</div>
-				<div class="form-group has-error has-feedback">
-					<label class="form-label">Error</label>
-					<textarea class="form-control"></textarea>
-					<i class="form-control-feedback fa">&#xf00d;</i>
-					<p class="help-block">Example block-level help text here.</p>
-				</div>
-			</form>
-			<h2 class="page-header">水平表单</h2>
-			<form class="form-horizontal">
-				<div class="form-group has-success has-feedback">
-					<label class="form-label">Success</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group has-warning has-feedback">
-					<label class="form-label">Warning</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf071;</i>
-					<p class="help-block">Example block-level help text here.</p>
-				</div>
-				<div class="form-group has-error has-feedback">
-					<label class="form-label">Error</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf00d;</i>
-					<p class="help-block">Example block-level help text here.</p>
-				</div>
-			</form>
-			<h2 class="page-header">内联表单</h2>
-			<form class="form-inline">
-				<div class="form-group has-success has-feedback">
-					<label class="form-label">Success</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group has-warning has-feedback">
-					<label class="form-label">Warning</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf071;</i>
-				</div>
-				<div class="form-group has-error has-feedback">
-					<label class="form-label">Error</label>
-					<input type="text" class="form-control"/>
-					<i class="form-control-feedback fa">&#xf00d;</i>
-				</div>
-			</form>
-			<h2 class="page-header">表单项尺寸</h1>
-			<form class="form">
-				<div class="form-group form-group-lg has-success has-feedback">
-					<label class="form-label">form-group-lg</label>
-					<input class="form-control" type="text">
-					<i class="form-control-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group form-group-sm has-error has-feedback">
-					<label class="form-label">form-group-sm</label>
-					<input class="form-control" type="text">
-					<i class="form-control-feedback fa">&#xf00d;</i>
-				</div>
-			</form>
-			<h3 class="page-header">水平表单</h3>
-			<form class="form-horizontal">
-				<div class="form-group form-group-lg has-success has-feedback">
-					<label class="form-label">form-group-lg</label>
-					<input class="form-control" type="text">
-					<i class="form-control-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group form-group-sm has-error has-feedback">
-					<label class="form-label">form-group-sm</label>
-					<input class="form-control" type="text">
-					<i class="form-control-feedback fa">&#xf00d;</i>
-				</div>
-			</form>
-			<h3 class="page-header">内联表单</h3>
-			<form class="form-inline">
-				<div class="form-group form-group-lg has-success has-feedback">
-					<label class="form-label">form-group-lg</label>
-					<input class="form-control" type="text">
-					<i class="form-control-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group form-group-sm has-error has-feedback">
-					<label class="form-label">form-group-sm</label>
-					<input class="form-control" type="text">
-					<i class="form-control-feedback fa">&#xf00d;</i>
-				</div>
-			</form>
-			<h2 class="page-header">控件尺寸</h1>
-			<form class="form-inline">
-				<div class="form-group has-success has-feedback">
-					<label class="form-label">form-control-lg</label>
-					<input class="form-control form-control-lg" type="text">
-					<i class="form-control-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group form-group-sm has-error has-feedback">
-					<label class="form-label">form-group-sm</label>
-					<input class="form-control form-control-sm" type="text">
-					<i class="form-control-feedback fa">&#xf00d;</i>
-				</div>
-			</form>
-			<h1 class="page-header">控件验证</h1>
-			<form class="form-horizontal was-validated ">
-				<div class="form-group">
-					<label class="form-label">valid</label>
-					<input type="text" class="form-control is-valid"/>
-				</div>
-				<div class="form-group">
-					<label class="form-label">invalid</label>
-					<input type="text" class="form-control is-invalid"/>
-					<p class="help-block invalid-feedback">Example block-level help text here.</p>
-				</div>
-			</form>
-			<h2 class="page-header">添加额外的图标</h2>
-			<form class="form-horizontal was-validated">
-				<div class="form-group has-feedback">
-					<label class="form-label">is-valid</label>
-					<input type="text" class="form-control is-valid"/>
-					<i class="form-control-feedback valid-feedback fa">&#xf00c;</i>
-				</div>
-				<div class="form-group has-feedback">
-					<label class="form-label">is-invalid</label>
-					<input type="text" class="form-control is-invalid"/>
-					<i class="form-control-feedback invalid-feedback fa">&#xf00d;</i>
-					<p class="help-block invalid-feedback">Example block-level help text here.</p>
-				</div>
-			</form>
-			<h1 class="page-header">飘浮提示文字</h1>
-			<form class="form-horizontal was-validated">
-				<div class="form-group">
-					<label class="form-label">is-valid</label>
-					<input type="text" class="form-control is-valid"/>
-					<div class="valid-explain">
-						校验通过
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">is-invalid</label>
-					<input type="text" class="form-control is-invalid"/>
-					<div class="invalid-explain">请输入活动名称</div>
-				</div>
-			</form>
-			<h1 class="page-header">飘浮气泡文字</h1>
-			<form class="form was-validated">
-				<div class="form-group">
-					<label class="form-label">is-valid</label>
-					<input type="text" class="form-control is-valid"/>
-					<div class="valid-tooltip">
-						校验通过
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="form-label">is-invalid</label>
-					<input type="text" class="form-control is-invalid"/>
-					<div class="invalid-tooltip">请输入活动名称</div>
-				</div>
-			</form>
+<h1 class="page-header" id="表单校验状态">表单校验状态</h1>
+<p>表单校验的视觉反馈，包括 <code>.has-valid</code> 成功和 <code>.has-invalid</code> 错误状态，支持图标、文字提示和飘浮气泡。</p>
+<h2 class="page-header" id="表单组验证">表单组验证</h2>
+<p>在 <code>.form-group</code> 上添加 <code>.has-valid</code> 或 <code>.has-invalid</code>，控件边框和反馈文字会自动变色。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-horizontal">
+    <div class="form-group has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-text">校验通过</div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Valid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;校验通过&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Invalid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">p</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Example block-level help text here.&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="添加额外的图标">添加额外的图标</h2>
+<p>使用 <code>.has-feedback-icon</code> 开启图标反馈，放入 <code>.feedback-icon</code> 图标元素。成功和错误状态分别控制图标颜色。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <textarea class="form-control"></textarea>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-feedback-icon has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Valid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-feedback-icon has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Invalid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">p</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Example block-level help text here.&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="飘浮气泡文字">飘浮气泡文字</h2>
+<p>使用 <code>.feedback-tooltip</code> 替代 <code>.feedback-text</code>，提示文字将以半透明背景气泡形式飘浮在控件上方。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form">
+    <div class="form-group has-valid">
+        <label class="form-label">has-valid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">
+            校验通过
+        </div>
+    </div>
+    <div class="form-group has-invalid">
+        <label class="form-label">has-invalid</label>
+        <input type="text" class="form-control"/>
+        <div class="feedback-tooltip">请输入活动名称</div>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;has-valid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-tooltip</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            校验通过</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;has-invalid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-tooltip</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;请输入活动名称&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="水平表单">水平表单</h2>
+<p>校验状态在 <code>.form-horizontal</code> 中同样可用。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-horizontal">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+        <p class="feedback-text">Example block-level help text here.</p>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-feedback-icon has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Valid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-feedback-icon has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Invalid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">p</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Example block-level help text here.&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="内联表单">内联表单</h2>
+<p><code>.form-inline</code> 内联表单也可结合校验状态。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-inline">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">Valid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group has-feedback-icon has-invalid">
+        <label class="form-label">Invalid</label>
+        <input type="text" class="form-control"/>
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-inline</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-feedback-icon has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Valid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-feedback-icon has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Invalid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="表单项尺寸">表单项尺寸</h2>
+<p>校验状态可与 <code>.form-group-lg</code> / <code>.form-group-sm</code> 结合使用。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-lg has-feedback-icon has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-lg&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-sm has-feedback-icon has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-sm&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="水平表单">水平表单</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-horizontal">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-lg has-feedback-icon has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-lg&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-sm has-feedback-icon has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-sm&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="内联表单">内联表单</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-inline">
+    <div class="form-group form-group-lg has-feedback-icon has-valid">
+        <label class="form-label">form-group-lg</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-inline</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-lg has-feedback-icon has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-lg&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-sm has-feedback-icon has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-sm&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="控件尺寸">控件尺寸</h2>
+<p>校验图标也可配合 <code>.form-control-lg</code> / <code>.form-control-sm</code> 使用。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-inline">
+    <div class="form-group has-feedback-icon has-valid">
+        <label class="form-label">form-control-lg</label>
+        <input class="form-control form-control-lg" type="text">
+        <i class="feedback-icon fa">&#xf00c;</i>
+    </div>
+    <div class="form-group form-group-sm has-feedback-icon has-invalid">
+        <label class="form-label">form-group-sm</label>
+        <input class="form-control form-control-sm" type="text">
+        <i class="feedback-icon fa">&#xf00d;</i>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-inline</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-feedback-icon has-valid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-control-lg&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control form-control-lg</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-sm has-feedback-icon has-invalid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-sm&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control form-control-sm</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

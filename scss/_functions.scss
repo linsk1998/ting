@@ -1,0 +1,63 @@
+@use 'sass:color';
+@use "sass:meta";
+@use "sass:math";
+
+@function type-of($value) {
+	@return meta.type-of($value);
+}
+
+@function darken($color, $darkness) {
+	@return color.adjust($color, $lightness: -$darkness);
+}
+
+@function adjust-hue($color, $hue) {
+	@return color.adjust($color, $hue: $hue);
+}
+
+@function lighten($color, $lightness) {
+	@return color.adjust($color, $lightness: $lightness);
+}
+
+@function desaturate($color, $saturation) {
+	@return color.adjust($color, $saturation: -$saturation);
+}
+
+@function scale-color($color, $lightness) {
+	@return color.scale($color, $lightness: $lightness);
+}
+
+@function mix($color1, $color2, $weight: 50%) {
+	@return color.mix($color1, $color2, $weight);
+}
+@function ceil($number) {
+	@return math.ceil($number);
+}
+@function floor($number) {
+	@return math.floor($number);
+}
+// 加白色提亮
+@function tint-color($color, $weight) {
+	@return mix(white, $color, $weight);
+}
+// 加黑色压暗
+@function shade-color($color, $weight) {
+	@return mix(black, $color, $weight);
+}
+@function light-text($color) {
+	@return shade-color($color, 60%);
+}
+@function light-bg($color) {
+	@return tint-color($color, 80%);
+}
+@function light-border($color) {
+	@return tint-color(adjust-hue($color, -10), 60%);
+}
+@function dark-text($color) {
+	@return tint-color($color, 40%);
+}
+@function dark-bg($color) {
+	@return shade-color($color, 80%);
+}
+@function dark-border($color) {
+	@return shade-color(adjust-hue($color, -10), 40%);
+}

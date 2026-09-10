@@ -1,0 +1,685 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>手风琴 - 组件 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/jquery.js"></script>
+	<script src="../ting/ting.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li class="active"><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-spacer-top"></div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+<h1 class="page-header" id="手风琴">手风琴</h1>
+<p>手风琴（<code>.accordion</code>）将多个可折叠面板组织在一起。</p>
+<h2 class="page-header" id="基本用法">基本用法</h2>
+<p><code>.accordion</code> 容器内包含多个 <code>.accordion-item</code>，每个含头部（<code>.accordion-header</code> + <code>.accordion-button</code>）和可折叠内容（<code>.accordion-collapsible</code> + <code>.accordion-body</code>）。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #1</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the first item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #2</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the second item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #3</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the third item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="使用图标">使用图标</h2>
+<p>可以用<code>.accordion-indicator</code>将图标定位到特定位置。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #1
+                <i class="accordion-indicator fa">&#xf077;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">折叠</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #2
+                <i class="accordion-indicator fa">&#xf078;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">展开</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #3
+                <i class="accordion-indicator fa">&#xf068;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">减号</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #4
+                <i class="accordion-indicator fa">&#xf067;</i>
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">加号</div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #1</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-indicator fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf077;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;折叠&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #2</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-indicator fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf078;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;展开&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #3</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-indicator fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf068;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;减号&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #4</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-indicator fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf067;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;加号&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="去除边框">去除边框</h2>
+<p>可以用<code>.accordion-flush</code>可以去除四周边框，可以放入已有边框的容器中。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="accordion accordion-flush">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">1</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">2</div>
+        </div>
+    </div>
+    <div class="accordion-item collapsed">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div class="accordion-collapsible">
+            <div class="accordion-body">3</div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion accordion-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #1</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;1&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #2</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;2&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #3</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;3&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="适配容器高度">适配容器高度</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="row">
+    <div class="col-md-6">
+        <div style="width: 300px; height: 400px; overflow-y: auto;">
+            <div class="accordion accordion-fill">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            包含边框
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div style="width: 300px; height: 400px; overflow-y: auto;">
+            <div class="accordion accordion-flush accordion-fill">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            去除边框
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            很多内容：<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item collapsed">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div class="accordion-collapsible">
+                        <div class="accordion-body">
+                            少内容
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-6</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px; height: 400px; overflow-y: auto;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion accordion-fill</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            包含边框</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            很多内容：&lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the first item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            Accordion Item #2</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            少内容</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            Accordion Item #3</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            少内容</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-6</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px; height: 400px; overflow-y: auto;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion accordion-flush accordion-fill</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            去除边框</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            很多内容：&lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the first item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            Accordion Item #2</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            少内容</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            Accordion Item #3</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            少内容</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="黑暗模式">黑暗模式</h2>
+<p>使用<code>.accordion-dark</code>或容器上使用<code>.dark</code>可以开启黑暗模式。如果使用<code>.accordion-dark</code>一般还要额外添加<code>.dark</code>，使得子组件也是黑暗模式。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div style="width: 300px; border: 4px solid #000;">
+    <div class="accordion accordion-dark dark">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    1
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    2
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item collapsed">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div class="accordion-collapsible">
+                <div class="accordion-body">
+                    3
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width: 300px; border: 4px solid #000;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion accordion-dark dark</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    Accordion Item #1</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    1</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    Accordion Item #2</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    2</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    Accordion Item #3</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    3</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="兼容bootstrap写法">兼容 bootstrap 写法</h2>
+<p>bootstrap 使用 <code>accordion-collapse collapse</code>，ting-ui 使用 <code>accordion-collapsible</code>。bootstrap 没有 <code>accordion-fill</code> 功能。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="accordion" id="bs-accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion1">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div id="accordion1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion2">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div id="accordion2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-parent="#bs-accordion" data-target="#accordion3">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="accordion3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">bs-accordion</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-parent</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#bs-accordion</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#accordion1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #1</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion1</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapse collapse show</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the first item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-parent</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#bs-accordion</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#accordion2</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #2</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion2</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapse collapse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the second item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h2</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-button collapsed</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-parent</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#bs-accordion</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#accordion3</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                Accordion Item #3</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion3</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-collapse collapse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">accordion-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">strong</span>&gt;This is the third item&#39;s accordion body.&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#39;s also worth noting that just about any HTML can go within the &lt;<span class="shiki-entity-name-tag">code</span>&gt;.accordion-body&lt;/<span class="shiki-entity-name-tag">code</span>&gt;, though the transition does limit overflow.</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
+		</div>
+		<footer class="footer">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+</html>

@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="true" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>表单</title>
-	<!-- InstanceEndEditable -->
+	<title>开关按钮 - 表单 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">表单</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li class="active"><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,50 +47,125 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">开关按钮</h1>
-			<div class="btn-toolbar">
-				<label class="btn btn-toggle">
-					<input class="radio-input" name="radio1" type="radio">
-					未选中
-				</label>
-				<label class="btn btn-toggle btn-toggle-checked">
-					<input class="radio-input" name="radio1" type="radio">
-					选中
-				</label>
-				<label class="btn btn-toggle">
-					<input class="visually-hidden" name="radio1" type="radio">
-					未选中
-				</label>
-				<label class="btn btn-toggle btn-toggle-checked">
-					<input class="visually-hidden" name="radio1" type="radio">
-					选中
-				</label>
-			</div>
-			<div class="btn-toolbar">
-				<label class="btn btn-toggle">
-					<input class="checkbox-input" name="check1" type="checkbox">
-					未选中
-				</label>
-				<label class="btn btn-toggle btn-toggle-checked">
-					<input class="checkbox-input" name="check1" type="checkbox">
-					选中
-				</label>
-				<label class="btn btn-toggle">
-					<input class="visually-hidden" name="check1" type="checkbox">
-					未选中
-				</label>
-				<label class="btn btn-toggle btn-toggle-checked">
-					<input class="visually-hidden" name="check1" type="checkbox">
-					选中
-				</label>
-			</div>
+<h1 class="page-header" id="开关按钮">开关按钮</h1>
+<p>开关按钮（<code>.btn-toggle</code>）提供按钮形式的开关交互，适用于需要在两个状态间切换的场景。支持独立使用、放入按钮组、内含 checkbox / radio 等形态。</p>
+<h2 class="page-header" id="基本用法">基本用法</h2>
+<p><code>.btn-toggle</code> 可作用于 <code>&lt;label&gt;</code>（内含 <code>.checkbox</code> 或 <code>.radio</code>）或 <code>&lt;button&gt;</code>。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="btn-toolbar">
+    <label class="btn btn-toggle">
+        <div class="checkbox"><input type="checkbox"></div>
+        未选中
+    </label>
+    <label class="btn btn-toggle btn-toggle-checked">
+        <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+        选中
+    </label>
+    <button class="btn btn-toggle">未选中</button>
+    <button class="btn btn-toggle btn-toggle-checked">选中</button>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn-toolbar</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        未选中</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle btn-toggle-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox checkbox-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        选中</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;未选中&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle btn-toggle-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;选中&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="含radio单选">含 radio 单选</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="btn-toolbar">
+    <label class="btn btn-toggle">
+        <div class="radio"><input type="radio" name="radio-group"></div>
+        未选中
+    </label>
+    <label class="btn btn-toggle btn-toggle-checked">
+        <div class="radio radio-checked"><input type="radio" name="radio-group"></div>
+        选中
+    </label>
+    <button class="btn btn-toggle">未选中</button>
+    <button class="btn btn-toggle btn-toggle-checked">选中</button>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn-toolbar</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">radio</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">radio</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">name</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">radio-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        未选中</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle btn-toggle-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">radio radio-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">radio</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">name</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">radio-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        选中</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;未选中&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle btn-toggle-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;选中&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="放入按钮组">放入按钮组</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="btn-toolbar">
+    <div class="btn-group">
+        <label class="btn btn-toggle">
+            <div class="checkbox"><input type="checkbox"></div>
+            未选中
+        </label>
+        <label class="btn btn-toggle btn-toggle-checked">
+            <div class="checkbox checkbox-checked"><input type="checkbox"></div>
+            选中
+        </label>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-toggle">未选中</button>
+        <button class="btn btn-toggle btn-toggle-checked">选中</button>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn-toolbar</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            未选中</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle btn-toggle-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox checkbox-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">checkbox</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            选中</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;未选中&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-toggle btn-toggle-checked</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;选中&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

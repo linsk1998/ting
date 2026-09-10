@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="true" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>布局</title>
-	<!-- InstanceEndEditable -->
+	<title>布局 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">布局</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li class="active"><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,172 +47,226 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">布局</h1>
-			<h2>布局容器</h2>
-			<p><code>.container</code> 类用于固定宽度并支持响应式布局的容器。</p>
-			<pre class="code">&lt;div class="container"&gt;
-  ...
-&lt;/div&gt;</pre>
-			<p><code>.container-fluid</code> 类用于 100% 宽度，占据全部视口（viewport）的容器。</p>
-			<pre class="code">&lt;div class="container-fluid"&gt;
-  ...
-&lt;/div&gt;</pre>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.container</td>
-					<td>用于固定宽度居中并支持响应式。</td>
-				</tr>
-				<tr>
-					<td>.container-fluid</td>
-					<td>用于 100% 宽度，占据全部视口（viewport）的容器。</td>
-				</tr>
-			</tbody></table>
-			<p><a href="container.html">例子</a></p>
-			<h2>栅格系统</h2>
-			<p>不带间隔支持响应式的布局样式类。由于使用的是border-box，因此可以加入padding，实现固定宽度间隙。</p>
-			<pre class="code">&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;row&quot;&gt;
-		&lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;col-md-10&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</pre>
-			<p>加入宽度为24px的间隙。</p>
-			<pre class="code">&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;row row-gx-4&quot;&gt;
-		&lt;div class=&quot;col-md-2 col-gx-4&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;col-md-10 col-gx-4&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</pre>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.row</td>
-					<td>网格中的行，用于包裹列，清除列的浮动。里面的列没有间隔。</td>
-				</tr>
-				<tr>
-					<td>.col-{width}</td>
-					<td>列的宽度。如<code>.col-4</code>默认为12等分。<code>.col-4/5</code>五分之四宽度。</td>
-				</tr>
-				<tr>
-					<td>.col-offset-{width}</td>
-					<td>列偏移</td>
-				</tr>
-				<tr>
-					<td>.col-push-{width}</td>
-					<td>右移动偏移</td>
-				</tr>
-				<tr>
-					<td>.col-pull-{width}</td>
-					<td>左移动偏移</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-{width}</td>
-					<td>不同设备尺寸的列宽度，如<code>.col-md-4</code><code>.col-md-4/5</code>。size可以为md、lg、sm、xs。</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-offset-{width}</td>
-					<td>列偏移</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-push-{width}</td>
-					<td>右移动偏移</td>
-				</tr>
-				<tr>
-					<td>.col-{size}-pull-{width}</td>
-					<td>左移动偏移</td>
-				</tr>
-				<tr>
-					<td>.row-gx-{space}</td>
-					<td>带padding间隔的行。</td>
-				</tr>
-				<tr>
-					<td>.col-gx-{space}</td>
-					<td>带padding间隔的列。</td>
-				</tr>
-			</tbody></table>
-			<p><a href="grid.html">例子</a></p>
-			<h2>宽度高度适应</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.flex</td>
-					<td>最外层宽度100%的弹性布局容器。</td>
-				</tr>
-				<tr>
-					<td>.row-flex</td>
-					<td>一行弹性布局容器。</td>
-				</tr>
-				<tr>
-					<td>.col-left</td>
-					<td>一行内的左列（固定宽度）。</td>
-				</tr>
-				<tr>
-					<td>.col-right</td>
-					<td>一行内的右列（固定宽度）。</td>
-				</tr>
-				<tr>
-					<td>.col-center</td>
-					<td>一行内的中间列（宽度自适应剩余宽度）。</td>
-				</tr>
-				<tr>
-					<td>.col-flex</td>
-					<td>一列弹性布局容器。</td>
-				</tr>
-				<tr>
-					<td>.row-shrink</td>
-					<td>一列中的高度为内容高度行（或高度固定）。</td>
-				</tr>
-				<tr>
-					<td>.row-grow</td>
-					<td>一列中的高度适应剩余高度行。</td>
-				</tr>
-			</table>
-			<p><a href="./layout-vbox.html" target="_blank">高度适应例子</a> <a href="./layout-border.html" target="_blank">综合例子</a></p>
-			<h2>对齐</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.center-block</td>
-					<td>设置元素为 display:block 并居中显示</td>
-				</tr>
-				<tr>
-					<td>.vertical-align</td>
-					<td>垂直对齐容器。</td>
-				</tr>
-				<tr>
-					<td>.vertical-align-middle</td>
-					<td>垂直居中内容。</td>
-				</tr>
-				<tr>
-					<td>.vertical-align-bottom</td>
-					<td>底部对齐内容。</td>
-				</tr>
-				<!-- <tr>
-					<td>.line-middle</td>
-					<td>单行文本垂直居中。</td>
-				</tr> -->
-			</table>
-			<p><a href="./align.html">例子</a></p>
+<h1 class="page-header" id="布局">布局</h1>
+<p>一套响应式栅格系统和弹性布局方案，帮助开发者快速构建页面布局。</p>
+<h2 class="page-header" id="断点">断点</h2>
+<p>包括五个默认断点，断点代表了常见设备尺寸和视口尺寸的子集。</p>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>断点</th><th>代号</th><th>尺寸</th><th>典型屏幕</th></tr></thead>
+<tbody>
+<tr>
+<td>手机</td><td>xs</td><td>~ 576px</td><td>375x667</td>
+</tr>
+<tr>
+<td>平板</td><td>sm</td><td>576px ~ 992px</td><td>800x1280</td>
+</tr>
+<tr>
+<td>小屏</td><td>md</td><td>992px ~ 1400px</td><td>1024x768</td>
+</tr>
+<tr>
+<td>中屏</td><td>lg</td><td>1400px ~ 1700px</td><td>1600x900</td>
+</tr>
+<tr>
+<td>大屏</td><td>xl</td><td>1700px ~</td><td>1920x1080</td>
+</tr>
+</tbody></table></div>
+<h2 class="page-header" id="布局容器">布局容器</h2>
+<p>.container 类用于固定宽度并支持响应式布局的容器。
+		</p>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    ...</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre><p>.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。</p>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container-fluid</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    ...</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre><div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.container</td><td>用于固定宽度居中并支持响应式。</td>
+</tr>
+<tr>
+<td>.container-{size}</td><td>直到指定断点为止是 width: 100%。</td>
+</tr>
+<tr>
+<td>.container-fluid</td><td>用于 100% 宽度，占据全部视口（viewport）的容器。</td>
+</tr>
+</tbody></table></div>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>~ 576px</th><th>576px ~ 992px</th><th>992px ~ 1400px</th><th>1400px ~ 1700px</th><th>1700px ~</th></tr></thead>
+<tbody>
+<tr>
+<td>.container-sm</td><td>100%</td><td>546px</td><td>1002px</td><td>1134px</td><td>1362px</td>
+</tr>
+<tr>
+<td>.container-md, .container</td><td>100%</td><td>100%</td><td>1002px</td><td>1134px</td><td>1362px</td>
+</tr>
+<tr>
+<td>.container-lg</td><td>100%</td><td>100%</td><td>100%</td><td>1134px</td><td>1362px</td>
+</tr>
+<tr>
+<td>.container-xl</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>1362px</td>
+</tr>
+<tr>
+<td>.container-fluid</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td>
+</tr>
+</tbody></table></div>
+<p><a href="container.html">例子</a></p>
+<h2 class="page-header" id="栅格系统">栅格系统</h2>
+<p>不带间隔支持响应式的布局样式类。由于使用的是border-box，因此可以加入padding，实现固定宽度间隙。</p>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-10</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre><p>加入宽度为16px的间隙。</p>
+<pre class="code shiki"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">container</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">row row-gx-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-2 col-gx-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">col-md-10 col-gx-4</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre><div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.row</td><td>网格中的行，用于包裹列，清除列的浮动。里面的列没有间隔。</td>
+</tr>
+<tr>
+<td>.col-{width}</td><td>列的宽度。如<code>.col-4</code>默认为12等分。<code>.col-4/5</code>五分之四宽度。</td>
+</tr>
+<tr>
+<td>.col-offset-{width}</td><td>列偏移</td>
+</tr>
+<tr>
+<td>.col-push-{width}</td><td>右移动偏移</td>
+</tr>
+<tr>
+<td>.col-pull-{width}</td><td>左移动偏移</td>
+</tr>
+<tr>
+<td>.col-{size}-{width}</td><td>不同设备尺寸的列宽度，如<code>.col-md-4</code> <code>.col-md-4/5</code>。size可以为md、lg、sm、xs。</td>
+</tr>
+<tr>
+<td>.col-{size}-offset-{width}</td><td>列偏移</td>
+</tr>
+<tr>
+<td>.col-{size}-push-{width}</td><td>右移动偏移</td>
+</tr>
+<tr>
+<td>.col-{size}-pull-{width}</td><td>左移动偏移</td>
+</tr>
+<tr>
+<td>.col-{size}-{width}-{gap}</td><td>间隙尺寸，gap为0~5可选</td>
+</tr>
+<tr>
+<td>.row-gx-{n}</td><td>间隙调整，n为0~5可选</td>
+</tr>
+<tr>
+<td>.row-gy-{n}</td><td>垂直间隙</td>
+</tr>
+</tbody></table></div>
+<p><a href="grid.html">例子</a></p>
+<h2 class="page-header" id="宽度高度适应">宽度高度适应</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.flex</td><td>最外层宽度100%的弹性布局容器。</td>
+</tr>
+<tr>
+<td>.row-flex</td><td>一行弹性布局容器。</td>
+</tr>
+<tr>
+<td>.col-left</td><td>一行内的左列（固定宽度）。</td>
+</tr>
+<tr>
+<td>.col-right</td><td>一行内的右列（固定宽度）。</td>
+</tr>
+<tr>
+<td>.col-center</td><td>一行内的中间列（宽度自适应剩余宽度）。</td>
+</tr>
+<tr>
+<td>.col-flex</td><td>一列弹性布局容器。</td>
+</tr>
+<tr>
+<td>.row-shrink</td><td>一列中的高度为内容高度行（或高度固定）。</td>
+</tr>
+<tr>
+<td>.row-grow</td><td>一列中的高度适应剩余高度行。</td>
+</tr>
+</tbody></table></div>
+<p><a href="layout-vbox.html">高度适应例子</a> <a href="layout-border.html">综合例子</a></p>
+<h2 class="page-header" id="固定比例容器">固定比例容器</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.ratio</td><td>固定比例媒体容器</td>
+</tr>
+<tr>
+<td>.ratio-21x9</td><td>21:9容器</td>
+</tr>
+<tr>
+<td>.ratio-16x9</td><td>16:9容器</td>
+</tr>
+<tr>
+<td>.ratio-4x3</td><td>4:3容器</td>
+</tr>
+<tr>
+<td>.ratio-1x1</td><td>1:1容器</td>
+</tr>
+<tr>
+<td>.ratio-item</td><td>媒体内容</td>
+</tr>
+</tbody></table></div>
+<p><a href="./ratio.html">使用方法</a></p>
+<h2 class="page-header" id="对齐">对齐</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.center-block</td><td>设置元素为 display:block 并居中显示</td>
+</tr>
+<tr>
+<td>.valign</td><td>使子元素垂直对齐容器。</td>
+</tr>
+<tr>
+<td>.valign-sibling</td><td>使兄弟元素垂直对齐</td>
+</tr>
+<tr>
+<td>.valign-top</td><td>顶部对齐内容。</td>
+</tr>
+<tr>
+<td>.valign-middle</td><td>垂直居中内容。</td>
+</tr>
+<tr>
+<td>.valign-bottom</td><td>底部对齐内容。</td>
+</tr>
+</tbody></table></div>
+<p><a href="./align.html">使用方法</a></p>
+
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

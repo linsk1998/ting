@@ -1,23 +1,59 @@
 {
 	"name": "@ting-ui/css",
-	"version": "0.1.6",
+	"version": "1.0.0-alpha.1",
 	"description": "common style lib",
-	"scripts": {
-		"build:all": "sass scss/all.scss all.css --no-source-map",
-		"build:no-component": "sass scss/no-component.scss no-component.css --no-source-map",
-		"build:docs": "sass scss/all.scss docs/ting/ting.css --no-source-map",
-		"build:theme:default:blue": "sass theme/default/blue.scss docs/theme/default/blue.css --no-source-map",
-		"build:theme:default:red": "sass theme/default/red.scss docs/theme/default/red.css --no-source-map",
-		"build:theme:default:teal": "sass theme/default/teal.scss docs/theme/default/teal.css --no-source-map",
-		"build:theme:default:indigo": "sass theme/default/indigo.scss docs/theme/default/indigo.css --no-source-map"
-	},
+	"style": "dist/ting.all.css",
+	"keywords": [
+		"css",
+		"ui",
+		"style",
+		"scss",
+		"bootstrap"
+	],
 	"author": "linsk",
 	"license": "MIT",
 	"files": [
-		"scss/",
-		"images/",
-		"all.css",
-		"no-component.css",
-		"README.md"
+		"dist/",
+		"scss/"
+	],
+	"exports": {
+		"./package.json": "./package.json",
+		".": "./dist/ting.all.css",
+		"./all.css": "./dist/ting.all.css",
+		"./no-component.css": "./dist/ting.no-component.css",
+		"./scss/*": "./scss/*",
+		"./dist/*": "./dist/*"
+	},
+	"scripts": {
+		"build": "node scripts/build.js",
+		"build:shiki": "node scripts/build-shiki.js",
+		"gen:site": "node scripts/gen-site.js",
+		"gen:llms-full": "node scripts/gen-llms-full.js",
+		"gen:llms": "node scripts/gen-llms.js",
+		"serve": "http-server docs -p 3000",
+		"backstop-reference": "backstop reference",
+		"backstop-test": "backstop test",
+		"backstop-approve": "backstop approve",
+		"backstop:reference": "start-server-and-test serve http://localhost:3000 backstop-reference",
+		"backstop:test": "start-server-and-test serve http://localhost:3000 backstop-test",
+		"test": "npm run backstop:test"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.20",
+		"backstopjs": "^6.3.0",
+		"color-convert": "^2.0.1",
+		"escape-html": "^1.0.3",
+		"github-vscode-themes": "^6.3.4",
+		"http-server": "^14.1.0",
+		"marked": "^17.0.0",
+		"postcss": "^8.4.49",
+		"postcss-cli": "^11.0.0",
+		"postcss-functions": "^4.0.2",
+		"sass": "^1.80.0",
+		"shiki": "^4.3.1",
+		"start-server-and-test": "^2.0.0"
+	},
+	"browserslist": [
+		"<= 100%"
 	]
 }

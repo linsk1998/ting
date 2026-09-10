@@ -1,0 +1,78 @@
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.help-block,.form-text,.feedback-text{
+	display:block;
+	margin-top:0;
+	margin-bottom:0;
+	color:$light-body-text;
+}
+.feedback-tooltip{
+	position: absolute;
+	margin-top: $feedback-tooltip-margin-top;
+	max-width: 100%;
+	line-height: $feedback-tooltip-line-height;
+	padding: $feedback-tooltip-padding;
+	z-index: $level-popover;
+	@include rounded($feedback-tooltip-rounded);
+}
+
+@if($enable-feedback-icon) {
+	.has-feedback-icon{
+		position: relative; *zoom:1;
+		.form-control {
+			padding-right: $input-has-feedback-padding-right;
+		}
+		textarea.form-control{
+			overflow-y: scroll;
+		}
+		textarea.form-control~.feedback-icon{
+			right:17px;
+		}
+		.control-clear{
+			right: $feedback-icon-width * .5 + $feedback-icon-size * .5 + $ctrl-clear-right;
+		}
+	}
+	.feedback-icon{
+		display:block;
+		position: absolute;
+		top:0; right:0;
+		width:$ctrl-height-md;
+		line-height: $ctrl-height-md;
+		text-align: center;
+		font-size:$feedback-icon-size;
+	}
+	.form-group-lg .feedback-icon{
+		line-height: $ctrl-height-lg;
+	}
+	.form-group-sm .feedback-icon{
+		line-height: $ctrl-height-sm;
+	}
+	.form-control-lg~.feedback-icon{
+		line-height: $ctrl-height-lg;
+	}
+	.form-control-sm~.feedback-icon{
+		line-height: $ctrl-height-sm;
+	}
+	.form .form-label~.feedback-icon,
+	.form .control-label~.feedback-icon{
+		top:$line-height-base + 5px;
+	}
+	.form .feedback-icon{
+		*top:auto;
+	}
+}
+@else {
+	.feedback-icon{
+		display:none;
+	}
+}
+
+@if $enable-dark {
+	.dark .help-block,
+	.dark .form-text,
+	.dark .feedback-text {
+		color: $dark-secondary-text;
+	}
+}

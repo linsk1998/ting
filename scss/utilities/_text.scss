@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .text-left{ text-align:left;}
 .text-center{ text-align:center;}
 .text-right{ text-align:right;}
@@ -10,9 +13,39 @@
 .text-bottom{ vertical-align:bottom;}
 
 .text-hide{ font:0/0 a; color:transparent; text-shadow:none; background-color:transparent; border:0;}
-.text-muted{ color:$theme-secondary-text;}
-.text-body{ color:$theme-primary-text;}
+.text-heading{ color:$light-heading-text;}
+.text-emphasis{ color:$light-emphasis-text;}
+.text-body{ color:$light-body-text;}
+.text-secondary,.text-muted,.muted{ color:$light-secondary-text;}
+.text-tertiary{ color:$light-tertiary-text;}
 
 .text-capitalize { text-transform: capitalize;}
 .text-lowercase { text-transform: lowercase;}
 .text-uppercase { text-transform: uppercase;}
+
+.text-decoration-none { text-decoration: none !important;}
+
+.user-select-none {
+	@include user-select(none);
+}
+.user-select-all {
+	@include user-select(all);
+}
+
+@if $enable-dark {
+	.dark {
+		.text-heading{ color:$dark-heading-text;}
+		.text-emphasis{ color:$dark-emphasis-text;}
+		.text-body {
+			color: $dark-body-text;
+		}
+		.text-secondary,
+		.text-muted,
+		.muted {
+			color: $dark-secondary-text;
+		}
+		.text-tertiary {
+			color: $dark-tertiary-text;
+		}
+	}
+}

@@ -1,12 +1,21 @@
+@use '../mixins' as *;
+
 .img-circle{
 	@include img-circle;
 }
 .img-rounded{
 	@include img-rounded;
 }
-.img-thumbnail{
+.img-thumbnail, .img-polaroid{
 	@include img-thumbnail;
 }
-.img-fluid{ 
-	@include img-fluid;
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
 }

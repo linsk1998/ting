@@ -1,0 +1,188 @@
+@use 'sass:math';
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.popover {
+	position: absolute;
+	z-index: $level-popover;
+	max-width: $popover-max-width;
+	font-size: $font-size-base;
+	background-color: $popover-bg;
+	border: $popover-border-width solid $popover-border-color;
+    @if $enable-rounded {
+		@include rounded($border-radius);
+	}
+	@if $popover-box-shadow != none{
+		@include box-shadow($popover-box-shadow);
+	}
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	z-index: $level-popover;
+}
+.popover-arrow {
+	position: absolute;
+	line-height: 0;
+	font-size: 0;
+	_overflow: hidden;
+	_width: $popover-arrow-size * 2;
+	_height: $popover-arrow-size * 2;
+	_border: $popover-arrow-size dotted #fff;
+}
+.popover-arrow:before,
+.popover-arrow:after{
+	content: " ";
+	display: block;
+	width: $popover-arrow-size * 2;
+	height: $popover-arrow-size * 2;
+	border: $popover-arrow-size solid transparent;
+	overflow: hidden;
+}
+.popover-arrow:after {
+	position: absolute;
+}
+.popover-top {
+	margin-bottom: $popover-arrow-size;
+}
+.popover-left {
+	margin-right: $popover-arrow-size;
+}
+.popover-right {
+	margin-left: $popover-arrow-size;
+}
+.popover-bottom {
+	margin-top: $popover-arrow-size;
+}
+$popover-border-width-ie: math.div($popover-border-width,1px);
+.popover-top .popover-arrow {
+	top: 100%;
+	left: 50%;
+	margin-left: -$popover-arrow-size;
+	_border-top: $popover-arrow-size solid $popover-bg;
+	_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$popover-border-color},offx=0,offy=#{$popover-border-width-ie},strength=#{$popover-border-width-ie});
+}
+.popover-right .popover-arrow {
+	right: 100%;
+	top: 50%;
+	margin-top: -$popover-arrow-size;
+	_border-right: $popover-arrow-size solid $popover-bg;
+	_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$popover-border-color},offx=-#{$popover-border-width-ie},offy=0,strength=#{$popover-border-width-ie});
+}
+.popover-bottom .popover-arrow {
+	bottom: 100%;
+	left: 50%;
+	margin-left: -$popover-arrow-size;
+	_border-bottom: $popover-arrow-size solid $popover-bg;
+	_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$popover-border-color},offx=0,offy=-#{$popover-border-width-ie},strength=#{$popover-border-width-ie});
+}
+.popover-left .popover-arrow {
+	left: 100%;
+	top: 50%;
+	margin-top: -$popover-arrow-size;
+	_border-left: $popover-arrow-size solid $popover-bg;
+	_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$popover-border-color},offx=#{$popover-border-width-ie},offy=0,strength=#{$popover-border-width-ie});
+}
+.popover-top .popover-arrow:before{
+	border-top: $popover-arrow-size solid $popover-border-color;
+	margin-top: $popover-border-width;
+}
+.popover-top .popover-arrow:after{
+	border-top: $popover-arrow-size solid $popover-bg;
+	left: 0;
+	top: 0;
+}
+.popover-right .popover-arrow:before{
+	border-right: $popover-arrow-size solid $popover-border-color;
+	margin-right: $popover-border-width;
+}
+.popover-right .popover-arrow:after{
+	border-right: $popover-arrow-size solid $popover-bg;
+	right: 0;
+	top: 0;
+}
+.popover-left .popover-arrow:before{
+	border-left: $popover-arrow-size solid $popover-border-color;
+	margin-left: $popover-border-width;
+}
+.popover-left .popover-arrow:after{
+	border-left: $popover-arrow-size solid $popover-bg;
+	left: 0;
+	top: 0;
+}
+.popover-bottom .popover-arrow:before{
+	border-bottom: $popover-arrow-size solid $popover-border-color;
+	margin-bottom: $popover-border-width;
+}
+.popover-bottom .popover-arrow:after{
+	border-bottom: $popover-arrow-size solid $popover-bg;
+	left: 0;
+	bottom: 0;
+}
+
+.popover-header, .popover-title {
+    margin: 0;
+	padding: $popover-header-padding;
+	background-color: $popover-header-bg;
+	border-bottom: $popover-border-width solid $light-divider;
+    @if $enable-rounded {
+	    @include radius($border-radius, $border-radius, 0, 0);
+	}
+}
+
+.popover-body, .popover-content {
+	padding: $popover-body-padding;
+}
+
+@if $enable-dark {
+	.dark {
+		.popover {
+			background: $dark-popover-bg;
+			border-color: $dark-popover-border-color;
+		}
+		.popover-top .popover-arrow {
+			_border-top: $popover-arrow-size solid $dark-popover-bg;
+			_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$dark-popover-border-color},offx=0,offy=#{$popover-border-width-ie},strength=#{$popover-border-width-ie});
+		}
+		.popover-right .popover-arrow {
+			_border-right: $popover-arrow-size solid $dark-popover-bg;
+			_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$dark-popover-border-color},offx=-#{$popover-border-width-ie},offy=0,strength=#{$popover-border-width-ie});
+		}
+		.popover-bottom .popover-arrow {
+			_border-bottom: $popover-arrow-size solid $dark-popover-bg;
+			_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$dark-popover-border-color},offx=0,offy=-#{$popover-border-width-ie},strength=#{$popover-border-width-ie});
+		}
+		.popover-left .popover-arrow {
+			_border-left: $popover-arrow-size solid $dark-popover-bg;
+			_filter: progid:DXImageTransform.Microsoft.DropShadow(color=#{$dark-popover-border-color},offx=#{$popover-border-width-ie},offy=0,strength=#{$popover-border-width-ie});
+		}
+		.popover-top .popover-arrow:after {
+			border-top-color: $dark-popover-bg;
+		}
+		.popover-top .popover-arrow:before {
+			border-top-color: $dark-popover-border-color;
+		}
+		.popover-right .popover-arrow:after {
+			border-right-color: $dark-popover-bg;
+		}
+		.popover-right .popover-arrow:before {
+			border-right-color: $dark-popover-border-color;
+		}
+		.popover-bottom .popover-arrow:after {
+			border-bottom-color: $dark-popover-bg;
+		}
+		.popover-bottom .popover-arrow:before {
+			border-bottom-color: $dark-popover-border-color;
+		}
+		.popover-left .popover-arrow:after {
+			border-left-color: $dark-popover-bg;
+		}
+		.popover-left .popover-arrow:before {
+			border-left-color: $dark-popover-border-color;
+		}
+		.popover-header, .popover-title {
+			background: $dark-popover-header-bg;
+			border-color: $dark-divider;
+		}
+	}
+}

@@ -1,5 +1,7 @@
-.page-header{ padding-bottom:9px; border-bottom:1px solid $theme-divider;}
-.page-header-dot{
-	border-left:6px solid $theme-primary; padding-left:0.5em;
-	*display: inline; *zoom: 1;
+@use "../variables" as *;
+
+.page-header{ padding-bottom:9px; border-bottom:1px solid $light-divider;}
+
+@if $enable-dark {
+	.dark .page-header{ border-bottom-color: $dark-divider;}
 }

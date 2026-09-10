@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="true" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>工具类</title>
-	<!-- InstanceEndEditable -->
+	<title>工具类 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">工具类</a></li>
-						
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li class="active"><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,235 +47,132 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">工具类</h1>
-			<h2>语境颜色</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>浅色背景颜色</th>
-					<th>文本颜色</th>
-					<th>背景颜色</th>
-					<th>边框颜色</th>
-				</tr>
-				<tr>
-					<td>.primary</td>
-					<td>.text-primary</td>
-					<td>.bg-primary</td>
-					<td>.border-primary</td>
-				</tr>
-				<tr>
-					<td>.success</td>
-					<td>.text-success</td>
-					<td>.bg-success</td>
-					<td>.border-success</td>
-				</tr>
-				<tr>
-					<td>.info</td>
-					<td>.text-info</td>
-					<td>.bg-info</td>
-					<td>.border-info</td>
-				</tr>
-				<tr>
-					<td>.warning</td>
-					<td>.text-warning</td>
-					<td>.bg-warning</td>
-					<td>.border-warning</td>
-				</tr>
-				<tr>
-					<td>.danger</td>
-					<td>.text-danger</td>
-					<td>.bg-danger</td>
-					<td>.border-danger</td>
-				</tr>
-			</table>
-			<p><a href="./color.html">例子</a></p>
-			<h2>主题颜色</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>文本颜色</th>
-					<th>背景颜色</th>
-					<th>边框颜色</th>
-				</tr>
-				<tr>
-					<td>.text-teal</td>
-					<td>.bg-teal</td>
-					<td>.border-teal</td>
-				</tr>
-				<tr>
-					<td>.text-blue</td>
-					<td>.bg-blue</td>
-					<td>.border-blue</td>
-				</tr>
-				<tr>
-					<td>.text-indigo</td>
-					<td>.bg-indigo</td>
-					<td>.border-indigo</td>
-				</tr>
-				<tr>
-					<td>.text-purple</td>
-					<td>.bg-purple</td>
-					<td>.border-purple</td>
-				</tr>
-				<tr>
-					<td>.text-red</td>
-					<td>.bg-red</td>
-					<td>.border-red</td>
-				</tr>
-				<tr>
-					<td>.text-maroon</td>
-					<td>.bg-maroon</td>
-					<td>.border-maroon</td>
-				</tr>
-				<tr>
-					<td>.text-orange</td>
-					<td>.bg-orange</td>
-					<td>.border-orange</td>
-				</tr>
-				<tr>
-					<td>.text-yellow</td>
-					<td>.bg-yellow</td>
-					<td>.border-yellow</td>
-				</tr>
-				<tr>
-					<td>.text-brown</td>
-					<td>.bg-brown</td>
-					<td>.border-brown</td>
-				</tr>
-				<tr>
-					<td>.text-green</td>
-					<td>.bg-green</td>
-					<td>.border-green</td>
-				</tr>
-			</table>
-			<h2>文本</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.text-left</td>
-					<td class="text-left">文字居左</td>
-				</tr>
-				<tr>
-					<td>.text-center</td>
-					<td class="text-center">文字居中</td>
-				</tr>
-				<tr>
-					<td>.text-right</td>
-					<td class="text-right">文字居右</td>
-				</tr>
-				<tr>
-					<td>.text-justify</td>
-					<td class="text-justify">两&#8203;端&#8203;对&#8203;齐</td>
-				</tr>
-				<tr>
-					<td>.text-break</td>
-					<td>强制断行</td>
-				</tr>
-				<tr>
-					<td>.text-nowrap</td>
-					<td>强制不换行</td>
-				</tr>
-				<tr>
-					<td>.text-hide</td>
-					<td>文本隐藏</td>
-				</tr>
-				<tr>
-					<td>.text-lowercase</td>
-					<td>转化为小写</td>
-				</tr>
-				<tr>
-					<td>.text-uppercase</td>
-					<td>转化为大写</td>
-				</tr>
-				<tr>
-					<td>.text-capitalize</td>
-					<td>首字母转化为大写</td>
-				</tr>
-			</table>
-			<div class="row row-gx-4">
-				<div class="col-md-4 col-gx-4">
-					<h4>单行超出出现省略号</h4>
-					<p class="text-truncate">Singapore may be small,but packs in quite a punch.Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer.Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<h4>强制断词换行</h4>
-					<p class="text-break">Singapore may be small,but packs in quite a punch. Only about 655 square kilometers in area. hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
-				</div>
-				<div class="col-md-4 col-gx-4">
-					<h4>多行超出出现省略号</h4>
-					<p class="line-3">Singapore may be small,but packs in quite a punch. Only about 655 square kilometers in area,it is one of the most densely populated cities in the world,with about 6430 people per square kilometer. Although it is one of the 20 smallest countries in the world,its economy is a world leader,and has the world's busiest port in terms of tonnage handled.</p>
-				</div>
-			</div>
-			<h2>字体</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.font-sans</td>
-					<td>非衬线字体(黑)，通常在标题使用。</td>
-				</tr>
-				<tr>
-					<td>.font-serif</td>
-					<td>衬线字体(宋)，通常在正文使用。</td>
-				</tr>
-				<tr>
-					<td>.font-cursive</td>
-					<td>手写体(楷)，通常在横幅使用。</td>
-				</tr>
-				<tr>
-					<td>.font-monospace</td>
-					<td>等宽字体，通常在代码使用。</td>
-				</tr>
-			</table>
-			<p><a href="./font.html">例子</a></p>
-			<h2>尺寸</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>外边距</th>
-					<th>内边距</th>
-				</tr>
-				<tr>
-					<td>.m-{size}</td>
-					<td>.p-{size}</td>
-				</tr>
-				<tr>
-					<td>.ml-{size}</td>
-					<td>.pl-{size}</td>
-				</tr>
-				<tr>
-					<td>.mr-{size}</td>
-					<td>.pr-{size}</td>
-				</tr>
-				<tr>
-					<td>.mt-{size}</td>
-					<td>.pt-{size}</td>
-				</tr>
-				<tr>
-					<td>.mb-{size}</td>
-					<td>.pb-{size}</td>
-				</tr>
-				<tr>
-					<td>.mx-{size}</td>
-					<td>.px-{size}</td>
-				</tr>
-				<tr>
-					<td>.my-{size}</td>
-					<td>.py-{size}</td>
-				</tr>
-				<tr>
-					<td colspan="2">其中 {size} 可以为 0, 1, 2, 3, 4, 5</td>
-				</tr>
-			</table>
+<h1 class="page-header" id="工具类">工具类</h1>
+<p>一系列实用的工具类，用于快速设置颜色、文本、字体和尺寸等样式。</p>
+<h2 class="page-header" id="语境颜色">语境颜色</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>浅色背景颜色</th><th>文本颜色</th><th>背景颜色</th><th>背景颜色+文字变白</th><th>边框颜色</th></tr></thead>
+<tbody>
+<tr>
+<td>.primary</td><td>.text-primary</td><td>.bg-primary</td><td>.text-bg-primary</td><td>.border-primary</td>
+</tr>
+<tr>
+<td>.success</td><td>.text-success</td><td>.bg-success</td><td>.text-bg-success</td><td>.border-success</td>
+</tr>
+<tr>
+<td>.info</td><td>.text-info</td><td>.bg-info</td><td>.text-bg-info</td><td>.border-info</td>
+</tr>
+<tr>
+<td>.warning</td><td>.text-warning</td><td>.bg-warning</td><td>.text-bg-warning</td><td>.border-warning</td>
+</tr>
+<tr>
+<td>.danger</td><td>.text-danger</td><td>.bg-danger</td><td>.text-bg-danger</td><td>.border-danger</td>
+</tr>
+</tbody></table></div>
+<p><a href="./color.html">使用方法</a></p>
+<h2 class="page-header" id="文本">文本</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.text-left</td><td>文字居左</td>
+</tr>
+<tr>
+<td>.text-center</td><td>文字居中</td>
+</tr>
+<tr>
+<td>.text-right</td><td>文字居右</td>
+</tr>
+<tr>
+<td>.text-justify</td><td>两&#8203;端&#8203;对&#8203;齐</td>
+</tr>
+<tr>
+<td>.text-break</td><td>强制断行</td>
+</tr>
+<tr>
+<td>.text-nowrap</td><td>强制不换行</td>
+</tr>
+<tr>
+<td>.text-hide</td><td>文本隐藏</td>
+</tr>
+<tr>
+<td>.text-lowercase</td><td>转化为小写</td>
+</tr>
+<tr>
+<td>.text-uppercase</td><td>转化为大写</td>
+</tr>
+<tr>
+<td>.text-capitalize</td><td>首字母转化为大写</td>
+</tr>
+<tr>
+<td>.text-body</td><td>正文文本</td>
+</tr>
+<tr>
+<td>.text-secondary</td><td>减弱文本</td>
+</tr>
+<tr>
+<td>.text-tertiary</td><td>三级减弱文本</td>
+</tr>
+</tbody></table></div>
+<h2 class="page-header" id="字体">字体</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.font-sans</td><td>非衬线字体(黑)，通常在标题使用。</td>
+</tr>
+<tr>
+<td>.font-serif</td><td>衬线字体(宋)，通常在正文使用。</td>
+</tr>
+<tr>
+<td>.font-cursive</td><td>手写体(楷)，通常在横幅使用。</td>
+</tr>
+<tr>
+<td>.font-monospace</td><td>等宽字体，通常在代码使用。</td>
+</tr>
+</tbody></table></div>
+<p><a href="./font.html">使用方法</a></p>
+<h2 class="page-header" id="尺寸">尺寸</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>外边距</th><th>内边距</th></tr></thead>
+<tbody>
+<tr>
+<td>.m-{size}</td><td>.p-{size}</td>
+</tr>
+<tr>
+<td>.ml-{size}</td><td>.pl-{size}</td>
+</tr>
+<tr>
+<td>.mr-{size}</td><td>.pr-{size}</td>
+</tr>
+<tr>
+<td>.mt-{size}</td><td>.pt-{size}</td>
+</tr>
+<tr>
+<td>.mb-{size}</td><td>.pb-{size}</td>
+</tr>
+<tr>
+<td>.mx-{size}</td><td>.px-{size}</td>
+</tr>
+<tr>
+<td>.my-{size}</td><td>.py-{size}</td>
+</tr>
+</tbody></table></div>
+<p>其中 {size} 可以为 0, 1, 2, 3, 4, 5, 6</p>
+
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

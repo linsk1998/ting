@@ -1,0 +1,317 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>文本域 - 表单 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/jquery.js"></script>
+	<script src="../ting/ting.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li class="active"><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-spacer-top"></div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+<h1 class="page-header" id="文本域">文本域</h1>
+<p>文本域（<code>.textarea</code>）封装了多行文本输入控件，支持字数计数、清空按钮、置灰、大小控制和校验反馈。</p>
+<h2 class="page-header" id="基本用法">基本用法</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form">
+    <div class="form-group">
+        <label class="form-label">基本用法</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+        ></div>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;基本用法&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="字数与清空">字数与清空</h2>
+<p>使用 <code>.textarea-counter</code> 显示字数，<code>.control-clear</code> 清空按钮。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form">
+    <div class="form-group">
+        <label class="form-label">显示字数、清空按钮</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;显示字数、清空按钮&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="置灰">置灰</h2>
+<p>添加 <code>.textarea-disabled</code>，<code>&lt;textarea&gt;</code> 设置 <code>disabled</code>。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form">
+    <div class="form-group">
+        <label class="form-label">置灰</label>
+        <div class="textarea textarea-disabled"
+            ><textarea placeholder="请输入XXX" disabled></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;置灰&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea textarea-disabled</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">disabled</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="内联表单">内联表单</h2>
+<p><code>.textarea</code> 可在 <code>.form-inline</code> 中使用。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-inline"
+    ><div class="form-group">
+        <label class="form-label" for="exampleInputName2">Name</label>
+        <input style="width:160px;" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    </div
+    ><div class="form-group">
+        <label class="form-label" for="exampleInputEmail2">文本域</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div
+></form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-inline</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">    &gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">for</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">exampleInputName2</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Name&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">width:160px;</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">exampleInputName2</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">Jane Doe</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span></span>
+<span class="shiki-line">    &gt;&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">for</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">exampleInputEmail2</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;文本域&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span></span>
+<span class="shiki-line">&gt;&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="组件大小">组件大小</h2>
+<p><code>.textarea-lg</code> / <code>.textarea-sm</code> 控制文本域大小，可配合 <code>.form-group-lg</code> / <code>.form-group-sm</code>（此时 <code>.textarea</code> 无需额外尺寸类）。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-horizontal">
+    <div class="form-group">
+        <label class="form-label">textarea-lg</label>
+        <div class="textarea textarea-lg"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+    <div class="form-group">
+        <label class="form-label">textarea-sm</label>
+        <div class="textarea textarea-sm"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="form-label">form-group-lg</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="form-label">form-group-sm</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+        ></div>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;textarea-lg&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea textarea-lg</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;textarea-sm&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea textarea-sm</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-lg&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group form-group-sm</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;form-group-sm&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="表单验证">表单验证</h2>
+<p>配合 <code>.has-valid</code> / <code>.has-invalid</code> + <code>.has-feedback-icon</code>。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form-horizontal">
+    <div class="form-group has-valid has-feedback-icon">
+        <label class="form-label">has-valid</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+            ><i class="feedback-icon fa">&#xf00c;</i
+        ></div>
+    </div>
+    <div class="form-group has-invalid has-feedback-icon">
+        <label class="form-label">has-invalid</label>
+        <div class="textarea"
+            ><textarea placeholder="请输入XXX"></textarea
+            ><span class="textarea-counter">0/100</span
+            ><button type="button" class="control-clear fa">&#xf057;</button
+            ><i class="feedback-icon fa">&#xf00d;</i
+        ></div>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-valid has-feedback-icon</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;has-valid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00c;</span>&lt;/<span class="shiki-entity-name-tag">i</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group has-invalid has-feedback-icon</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;has-invalid&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea</span><span class="shiki-punctuation-definition-string">&quot;</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">textarea</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入XXX</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">textarea</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">textarea-counter</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;0/100&lt;/<span class="shiki-entity-name-tag">span</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">control-clear fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf057;</span>&lt;/<span class="shiki-entity-name-tag">button</span></span>
+<span class="shiki-line">            &gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">feedback-icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf00d;</span>&lt;/<span class="shiki-entity-name-tag">i</span></span>
+<span class="shiki-line">        &gt;&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
+		</div>
+		<footer class="footer">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+</html>

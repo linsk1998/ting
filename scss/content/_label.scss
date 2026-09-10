@@ -1,0 +1,41 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
+
+.label {
+	display: inline-block;
+	padding: 0.25em 0.6em 0.25em;
+	font-size: 75%;
+	font-weight: bold;
+	color: $light-body-bg;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	@include rounded(0.25em);
+}
+
+.label-default{ background-color:#777;}
+.label-default[href]:hover,.label-default[href]:focus{ background-color:#5e5e5e;}
+
+@each $key, $color in $context {
+	.label-#{$key} { background: $color; }
+	.label-#{$key}[href]:hover,
+	.label-#{$key}[href]:focus { background: darken($color, 10%); }
+}
+
+@if $enable-dark {
+	.dark {
+		.label-default {
+			background: $dark-body-bg;
+		}
+		.label-default[href]:hover,
+		.label-default[href]:focus {
+			background: lighten($dark-divider, 10%);
+		}
+		@each $key, $color in $dark-context {
+			.label-#{$key} { background: $color; }
+			.label-#{$key}[href]:hover,
+			.label-#{$key}[href]:focus { background: lighten($color, 10%); }
+		}
+	}
+}

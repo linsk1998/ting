@@ -1,6 +1,12 @@
 
-.btn-toolbar{ font-size:0; *font-size:$font-size-base; margin:$margin-base 0; line-height:40px;}
-.btn-toolbar .btn,.btn-toolbar .btn-group{ margin-left:0; margin-right:5px;}
+@use '../variables' as *;
+
+.btn-toolbar{ margin:$margin-base 0;}
+.btn-toolbar .btn,
+.btn-toolbar .btn-group{
+	margin-left:0;
+	margin-right:5px;
+}
 .btn-toolbar>:last-child{ margin-right:0;}
 
 .btn-toolbar .pull-right .btn,
@@ -18,9 +24,8 @@
 	padding-right:1px;
 	*display: inline;
 	*zoom: 1;
-	font-size: 0;
 }
-.btn-group .btn {
+.btn-group .btn{
 	float: left;
 	margin-left: 0;
 	margin-right: -1px;

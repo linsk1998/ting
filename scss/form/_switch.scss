@@ -1,0 +1,84 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.switch{
+	position: relative;
+	font-size: 0;
+	line-height: 0;
+	width: $switch-width;
+	height: $switch-height;
+	display: inline-block;
+	vertical-align: middle;
+	@include rounded($switch-height * .5);
+	background: $switch-bg;
+	*display: inline;
+	*zoom: 1;
+}
+.switch-thumb {
+	position: absolute;
+	top: ($switch-height - $switch-thumb-size) * .5;
+	left: ($switch-height - $switch-thumb-size) * .5;
+	width: $switch-thumb-size;
+	height: $switch-thumb-size;
+	overflow: hidden;
+	@include rounded($switch-thumb-size * .5);
+	background: $switch-thumb-bg;
+	line-height: 0;
+	font-size: $switch-thumb-fontsize;
+	color: $switch-disabled-bg;
+	text-align: center;
+	padding-top: ($switch-thumb-size - $switch-thumb-fontsize) * .5;
+}
+.switch input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	z-index: 1;
+	cursor: pointer;
+	@include opacity(.01);
+}
+.switch-checked {
+	border-color: $light-info;
+	background: $light-info;
+}
+.switch-checked .switch-thumb {
+	left: $switch-width - $switch-thumb-size - ($switch-height - $switch-thumb-size) *.5;
+}
+.switch-disabled {
+	background: $switch-disabled-bg;
+	.switch-thumb {
+		background: $switch-thumb-disabled-bg;
+	}
+}
+.switch-disabled input {
+	cursor: not-allowed;
+}
+.switch-loading{
+	.switch-thumb {
+		width: $switch-thumb-loading-width;
+		left: ($switch-width - $switch-thumb-loading-width) * .5;
+	}
+	input {
+		cursor: wait;
+	}
+}
+
+@if $enable-dark {
+	.dark {
+		.switch {
+			background: $dark-switch-bg;
+		}
+		.switch-thumb {
+			background: $dark-switch-thumb-bg;
+		}
+		.switch-disabled {
+			background: $dark-switch-disabled-bg;
+			.switch-thumb {
+				background: $dark-switch-thumb-disabled-bg;
+			}
+		}
+	}
+}

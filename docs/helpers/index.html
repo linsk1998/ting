@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="true" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>助手</title>
-	<!-- InstanceEndEditable -->
+	<title>助手 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">助手</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li class="active"><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,174 +47,181 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">助手</h1>
-			<h2>清除浮动</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.pull-left</td>
-					<td>元素浮动到左边</td>
-				</tr>
-				<tr>
-					<td>.pull-right</td>
-					<td>元素浮动到右边</td>
-				</tr>
-				<tr>
-					<td>.clearfix</td>
-					<td>清除容器内的浮动浮动</td>
-				</tr>
-			</table>
-			<p><a href="./float.html">例子</a></p>
-			<h2>视觉隐藏</h2>
-			<p>通过 .visually-hidden 类在视觉上隐藏某个元素的同时，仍然能够被辅助技术识别。</p>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.visually-hidden</td>
-					<td>在视觉上隐藏某个元素。</td>
-				</tr>
-			</table>
-			<div class="btn-toolbar">
-				<label class="btn btn-primary">
-					<input type="file" name="file" class="visually-hidden"/>
-					上传按钮
-				</label>
-			</div>
-			<h2>显示</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.hidden-desktop</td>
-					<td>在电脑上隐藏隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-mobile</td>
-					<td>在手机或平板上隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-phone</td>
-					<td>在手机隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-tablet</td>
-					<td>在平板隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-lg</td>
-					<td>在大屏幕隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-md</td>
-					<td>在中隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-sm</td>
-					<td>在略小隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden-xs</td>
-					<td>在小隐藏</td>
-				</tr>
-				<tr>
-					<td>.hidden</td>
-					<td>强制元素隐藏</td>
-				</tr>
-				<tr>
-					<td>.block</td>
-					<td>将元素显示为block</td>
-				</tr>
-				<tr>
-					<td>.inline-block</td>
-					<td>将元素显示为inline-block</td>
-				</tr>
-				<tr>
-					<td>.inline</td>
-					<td>将元素显示为inline</td>
-				</tr>
-			</table>
-			<h2>文本截断</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tbody><tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.line-{n}</td>
-					<td>强制高度为n行，n为0~9。</td>
-				</tr>
-				<tr>
-					<td>.line-max-{n}</td>
-					<td>高度不得超过n行，n为0~9。</td>
-				</tr>
-				<tr>
-					<td>.line-min-{n}</td>
-					<td>高度不得低于n行，n为0~9。</td>
-				</tr>
-			</tbody></table>
-			<h2>图标</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.icon</td>
-					<td>表示一个图标，生成一个方形inline-block。</td>
-				</tr>
-				<tr>
-					<td>.icon-fw</td>
-					<td>可以将图标设置为一个固定宽度。</td>
-				</tr>
-				<tr>
-					<td>.icon-lg .icon-2x .icon-3x .icon-4x</td>
-					<td>大字体图标。</td>
-				</tr>
-				<tr>
-					<td>.icon-rotate-* .icon-flip-*</td>
-					<td>对图标进行旋转和翻转</td>
-				</tr>
-			</table>
-			<p><a href="icon.html">使用方法</a></p>
-			<h2>动画</h2>
-			<table class="table table-bordered table-striped table-sm">
-				<tr class="table-primary">
-					<th>类</th>
-					<th>描述</th>
-				</tr>
-				<tr>
-					<td>.animated</td>
-					<td>动画基础类。</td>
-				</tr>
-				<tr>
-					<td>.animated.infinite</td>
-					<td>循环动画。</td>
-				</tr>
-				<tr>
-					<td>.animated.fast</td>
-					<td>快速。</td>
-				</tr>
-				<tr>
-					<td>.animated.slow</td>
-					<td>慢速。</td>
-				</tr>
-			</table>
-			<p><a href="animation.html">使用方法</a></p>
+<h1 class="page-header" id="助手">助手</h1>
+<p>助手类，帮助你快速完成常见的前端任务，包括浮动清除、显示隐藏、文本截断、图标、动画、加载指示等。</p>
+<h2 class="page-header" id="清除浮动">清除浮动</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.pull-left</td><td>元素浮动到左边</td>
+</tr>
+<tr>
+<td>.pull-right</td><td>元素浮动到右边</td>
+</tr>
+<tr>
+<td>.clearfix</td><td>清除容器内的浮动</td>
+</tr>
+</tbody></table></div>
+<p><a href="./float.html">使用方法</a></p>
+<h2 class="page-header" id="视觉隐藏">视觉隐藏</h2>
+<p>通过 .sr-only 类在视觉上隐藏某个元素的同时，仍然能够被辅助技术识别。</p>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.sr-only</td><td>在视觉上隐藏某个元素。</td>
+</tr>
+</tbody></table></div>
+<h2 class="page-header" id="显示">显示</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.hidden-xl</td><td>在超大屏幕隐藏</td>
+</tr>
+<tr>
+<td>.hidden-lg</td><td>在大屏幕隐藏</td>
+</tr>
+<tr>
+<td>.hidden-md</td><td>在中隐藏</td>
+</tr>
+<tr>
+<td>.hidden-sm</td><td>在略小隐藏</td>
+</tr>
+<tr>
+<td>.hidden-xs</td><td>在小隐藏</td>
+</tr>
+<tr>
+<td>.hidden</td><td>强制元素隐藏</td>
+</tr>
+<tr>
+<td>.block</td><td>将元素显示为block</td>
+</tr>
+<tr>
+<td>.inline-block</td><td>将元素显示为inline-block</td>
+</tr>
+<tr>
+<td>.inline</td><td>将元素显示为inline</td>
+</tr>
+<tr>
+<td>.invisible</td><td>将元素设为不可见（仍然占据体积）</td>
+</tr>
+<tr>
+<td>.visible</td><td>将元素设为可见（与invisible相对）</td>
+</tr>
+</tbody></table></div>
+<h2 class="page-header" id="文本截断">文本截断</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.line-{n}</td><td>强制高度为n行，n为1~6。</td>
+</tr>
+<tr>
+<td>.line-max-{n}</td><td>高度不得超过n行，n为1~6。</td>
+</tr>
+<tr>
+<td>.line-min-{n}</td><td>高度不得低于n行，n为1~6。</td>
+</tr>
+</tbody></table></div>
+<h2 class="page-header" id="三角标识">三角标识</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.caret</td><td>向下三角标识，常用于下拉菜单按钮旁</td>
+</tr>
+</tbody></table></div>
+<h2 class="page-header" id="关闭按钮">关闭按钮</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.close</td><td>关闭按钮，显示&quot;✕&quot;符号，悬停变深</td>
+</tr>
+</tbody></table></div>
+<h2 class="page-header" id="加载中">加载中</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.loading-spin</td><td>环形加载指示</td>
+</tr>
+<tr>
+<td>.loading-grow</td><td>闪烁加载指示</td>
+</tr>
+</tbody></table></div>
+<p><a href="./loading.html">使用方法</a></p>
+<h2 class="page-header" id="图标">图标</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.icon</td><td>表示一个图标，生成一个方形inline-block。</td>
+</tr>
+<tr>
+<td>.icon-fw</td><td>可以将图标设置为一个固定宽度。</td>
+</tr>
+<tr>
+<td>.icon-left<br/>.icon-right</td><td>左侧的图标。右侧的图标。</td>
+</tr>
+<tr>
+<td>.icon-lg<br/>.icon-2x<br/>.icon-3x<br/>.icon-4x<br/>.icon-5x</td><td>大字体图标。</td>
+</tr>
+<tr>
+<td>.icon-rotate-* .icon-flip-*</td><td>对图标进行旋转和翻转</td>
+</tr>
+</tbody></table></div>
+<p><a href="./icon.html">使用方法</a></p>
+<h2 class="page-header" id="动画">动画</h2>
+<div class="table-responsive">
+<table class="table table-sm table-bordered table-striped">
+<thead class="thead-subtle"><tr>
+<th>类</th><th>描述</th></tr></thead>
+<tbody>
+<tr>
+<td>.animated</td><td>动画基础类。</td>
+</tr>
+<tr>
+<td>.animated.infinite</td><td>循环动画。</td>
+</tr>
+<tr>
+<td>.animated.forwards</td><td>动画结束后保持最后一个帧。</td>
+</tr>
+<tr>
+<td>.animated.fast</td><td>快速。</td>
+</tr>
+<tr>
+<td>.animated.faster</td><td>更快。</td>
+</tr>
+<tr>
+<td>.animated.slower</td><td>更慢。</td>
+</tr>
+</tbody></table></div>
+<p><a href="./animation.html">使用方法</a></p>
+
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>
