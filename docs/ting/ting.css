@@ -13540,18 +13540,18 @@ html .dropdown-item[disabled] {
   border-top: 1px solid transparent;
 }
 
-.sidebar-media {
+.sidebar .media {
   padding: 8px 0;
 }
 
-.sidebar-media .media-left {
+.sidebar .media-left {
   width: 48px;
   text-align: center;
   margin-right: 0;
   _margin-right: -3px;
 }
 
-.sidebar-media .media-object {
+.sidebar .media-object {
   display: inline-block;
   vertical-align: top;
   width: 32px;
@@ -13560,7 +13560,7 @@ html .dropdown-item[disabled] {
   object-fit: cover;
 }
 
-.sidebar-media .media-body {
+.sidebar .media-body {
   line-height: 16px;
   overflow: hidden;
 }

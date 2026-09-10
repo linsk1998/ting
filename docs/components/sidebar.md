@@ -198,9 +198,9 @@
         </li>
     </ul>
     <div class="sidebar-footer">
-        <a class="sidebar-media media" href="http://www.linsk.net" target="_blank">
+        <a class="media" href="http://www.linsk.net" target="_blank">
             <div class="media-left">
-                <img class="media-object img-circle" src="../images/github.jpg">
+                <img class="media-object img-circle" src="../images/author.jpg">
             </div>
             <div class="media-body media-middle">
                 <div>linsk</div>
@@ -321,9 +321,9 @@
         </div>
     </div>
     <div class="sidebar-footer">
-        <a class="sidebar-media media" href="http://www.linsk.net" target="_blank">
+        <a class="media" href="http://www.linsk.net" target="_blank">
             <div class="media-left">
-                <img class="media-object img-circle" src="../images/github.jpg">
+                <img class="media-object img-circle" src="../images/author.jpg">
             </div>
             <div class="media-body media-middle">
                 <div>linsk</div>
@@ -418,9 +418,9 @@
         </div>
     </div>
     <div class="sidebar-footer">
-        <a class="sidebar-media media" href="http://www.linsk.net" target="_blank">
+        <a class="media" href="http://www.linsk.net" target="_blank">
             <div class="media-left">
-                <img class="media-object img-circle" src="../images/github.jpg">
+                <img class="media-object img-circle" src="../images/author.jpg">
             </div>
             <div class="media-body media-middle">
                 <div>linsk</div>
