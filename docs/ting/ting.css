@@ -13367,6 +13367,7 @@ html .dropdown-item[disabled] {
 }
 
 .sidebar-fill {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13620,13 +13621,6 @@ html .dropdown-item[disabled] {
   margin: 0 8px 0;
   height: 0;
   font-size: 0;
-}
-
-.sidebar-collapsed .sidebar-group > .sidebar-heading:after {
-  content: " ";
-  display: block;
-  height: 1px;
-  background: #e0e0e0;
 }
 
 .sidebar-collapsed .sidebar-media .media-left {

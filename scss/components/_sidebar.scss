@@ -9,6 +9,7 @@
 	overflow: auto;
 }
 .sidebar-fill {
+	height: 100%;
 	display:-webkit-box;display:-ms-flexbox;display:flex;
 	-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column;
 	.sidebar-body {
@@ -218,12 +219,6 @@
 	margin: 0 8px 0;
 	height: 0;
 	font-size: 0;
-}
-.sidebar-collapsed .sidebar-group>.sidebar-heading:after{
-	content: " ";
-	display: block;
-	height: 1px;
-	background: $light-divider;
 }
 .sidebar-collapsed .sidebar-media .media-left {
 	margin-right: 0;
