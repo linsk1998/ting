@@ -5650,7 +5650,7 @@ body.layout-full {
   min-width: 0;
 }
 
-.row-grow, .col-center, .col-left, .col-right, .col-sider {
+.row-grow, .col-center, .col-left, .col-right, .col-sider, .col-aside {
   position: relative;
 }
 
@@ -5671,7 +5671,7 @@ body.layout-full {
     -ms-flex-order: 1;
     order: 1;
   }
-  .col-left, .col-right, .col-sider, .row-shrink {
+  .col-left, .col-right, .col-aside, .row-shrink {
     flex-shrink: 0;
   }
   .row-grow, .col-center {
@@ -5708,7 +5708,7 @@ body.layout-full {
     float: none;
     order: 1;
   }
-  .col-left, .col-right, .col-sider, .row-shrink {
+  .col-left, .col-right, .col-aside, .row-shrink {
     flex-shrink: 0;
   }
   .row-grow, .col-center {
@@ -15183,11 +15183,35 @@ button.close {
 }
 
 .icon-rotate-270 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.icon-rotate--90 {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.icon-rotate--180 {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.icon-rotate--270 {
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  transform: rotate(-270deg);
 }
 
 .icon-flip-horizontal {
@@ -15207,13 +15231,13 @@ button.close {
 }
 
 @media \0 screen\,screen\9  {
-  .icon-rotate-90 {
+  .icon-rotate-90, .icon-rotate--270 {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   }
-  .icon-rotate-180 {
+  .icon-rotate-180, .icon-rotate--180 {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   }
-  .icon-rotate-270 {
+  .icon-rotate-270, .icon-rotate--90 {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   }
   .icon-flip-horizontal {
@@ -15472,7 +15496,7 @@ button.close {
   display: flex !important;
 }
 
-.flex, .d-inline-flex {
+.inline-flex, .d-inline-flex {
   display: -moz-inline-box !important;
   display: -webkit-inline-box !important;
   display: -ms-inline-flexbox !important;

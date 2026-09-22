@@ -12,13 +12,13 @@ body.layout-full{ text-align:left;}
 
 .col-flex.row-grow{ min-height:0;}
 .row-flex.col-center{ min-width:0;}
-.row-grow,.col-center,.col-left,.col-right,.col-sider{ position: relative;}
+.row-grow,.col-center,.col-left,.col-right,.col-sider, .col-aside{ position: relative;}
 .row-shrink{ position: relative;}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none), (-webkit-min-device-pixel-ratio:0) {
 	.col-left{float:none; -webkit-box-ordinal-group:-1;-ms-flex-order:-1;order:-1;}
 	.col-right{float:none; -webkit-box-ordinal-group:1;-ms-flex-order:1;order:1;}
-	.col-left,.col-right,.col-sider,.row-shrink{ flex-shrink:0;}
+	.col-left,.col-right,.col-aside,.row-shrink{ flex-shrink:0;}
 	.row-grow,.col-center{-webkit-box-flex:1;-ms-flex:1;flex:1;}
 	.col-flex{ overflow:hidden; display:-webkit-box;display:-ms-flexbox;display:flex;
 	-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column;}
@@ -29,7 +29,7 @@ body.layout-full{ text-align:left;}
 @supports (display:flex){
 	.col-left{float:none; order:-1;}
 	.col-right{float:none; order:1;}
-	.col-left,.col-right,.col-sider,.row-shrink{flex-shrink:0;}
+	.col-left,.col-right,.col-aside,.row-shrink{flex-shrink:0;}
 	.row-grow,.col-center{flex:1;}
 	.col-flex{ display:flex; flex-direction:column;}
 	.row-flex{ display:flex; flex-direction:row;}

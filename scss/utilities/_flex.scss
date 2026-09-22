@@ -1,7 +1,7 @@
 @use "../variables" as *;
 
 .flex, .d-flex{ width:100%; display:-moz-box !important; display:-webkit-box !important; display:-ms-flexbox !important; display:-webkit-flex !important; display:flex !important;}
-.flex, .d-inline-flex{ display:-moz-inline-box !important; display:-webkit-inline-box !important; display:-ms-inline-flexbox !important; display:-webkit-inline-flex !important; display:inline-flex !important;}
+.inline-flex, .d-inline-flex{ display:-moz-inline-box !important; display:-webkit-inline-box !important; display:-ms-inline-flexbox !important; display:-webkit-inline-flex !important; display:inline-flex !important;}
 .flex-row{ -moz-box-orient:horizontal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;-webkit-flex-direction:row;flex-direction:row;}
 .flex-column{ -moz-box-orient:vertical;-moz-box-direction:normal;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
 
