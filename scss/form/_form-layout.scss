@@ -1,0 +1,83 @@
+
+@use '../variables' as *;
+
+.form-label,.control-label{
+	font-weight:bold;
+}
+.form .row{
+	.form-label,.control-label{
+		padding-top:($ctrl-height-md - $ctrl-line-height)*.5;
+	}
+}
+
+.form{
+	.form-group,.control-group{
+		margin-bottom: $form-group-margin-bottom;
+	}
+	.form-label,.control-label{
+		margin-bottom: $form-label-margin-bottom; 
+		display: block;
+	}
+	.form-control{ width: 100%;}
+	input[type=file]{ width: 100%;}
+}
+.form-horizontal{
+	.form-group,.control-group{ padding-left:$form-horizontal-left; margin-bottom:20px; *zoom:1;}
+	.form-group:after,.control-group:after{ display:block; content:""; height:0; overflow: hidden; clear: both;}
+	.form-control{ width: 100%;}
+	.form-label,.control-label{ margin-left:-$form-horizontal-left; float:left; padding-top:($ctrl-height-md - $ctrl-line-height)*.5; padding-right:$form-horizontal-gutter; display:block; _display:inline; _zoom:1; width:$form-horizontal-left; text-align: $form-horizontal-label-align; font-weight:bold;}
+	@media (max-width:$screen-sm){
+		.form-group,.control-group{ padding-left:0;}
+		.form-label,.control-label{ margin-left:0; padding-top:0; margin-bottom:5px; float:none; width:auto; text-align: left;}
+		.form-label~.feedback-icon,
+		.control-label~.feedback-icon{
+			top:$line-height-base + 5px;
+		}
+	}
+}
+.form, .form-horizontal {
+	textarea.form-control {
+		height: auto;
+		resize: vertical;
+	}
+}
+.form-inline{
+	position: relative;
+	display: inline-block;
+	*zoom: 1;
+	.form-group,.control-group {
+		display: inline-block;
+		vertical-align: middle;
+		margin: $form-inline-group-margin;
+		*display: inline;
+		*zoom: 1;
+	}
+	.form-label,.control-label{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: $form-inline-group-gutter;
+	}
+	.input-group,.input,.select,.form-control {
+		display: inline-block;
+		vertical-align: middle;
+		*display: inline;
+		*zoom: 1;
+	}
+	.checkbox-group,.radio-group,
+	.checkbox-group-horizontal,.radio-group-horizontal{
+		display: inline-block;
+		label {
+			display: inline;
+		}
+	}
+	.form-check,.checkbox,.radio {
+		display: inline;
+	}
+}
+@supports (align-items: stretch) {
+	.form-inline{
+		.input-group,.input {
+			display: inline-flex;
+		}
+	}
+}

@@ -1,0 +1,369 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>描述列表 - 页面内容 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/jquery.js"></script>
+	<script src="../ting/ting.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li class="active"><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-spacer-top"></div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+<h1 class="page-header" id="描述列表">描述列表</h1>
+<p>列表形式展示多个字段。通过 <code>.descriptions</code> 以表格的形式展示一组键值对信息，常用于详情页、个人中心等场景。</p>
+<h2 class="page-header" id="基础用法">基础用法</h2>
+<p><code>.descriptions</code> 默认以表格形式展示，每个字段由标签（<code>.descriptions-label</code>）和内容（<code>.descriptions-content</code>）组成，标签与内容依次排列。标签使用语义化的 <code>th</code> 元素，便于屏幕阅读器识别。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="descriptions">
+    <table class="descriptions-table">
+        <colgroup>
+            <col width="20%">
+            <col>
+            <col width="20%">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">用户名</th>
+                <td class="descriptions-content">king</td>
+                <th class="descriptions-label">邮箱</th>
+                <td class="descriptions-content">king@example.com</td>
+            </tr>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">状态</th>
+                <td class="descriptions-content">正常</td>
+                <th class="descriptions-label">注册时间</th>
+                <td class="descriptions-content">2020-01-01</td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">table</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-table</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">20%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">20%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;用户名&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;king&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;邮箱&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;king@example.com&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;状态&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;正常&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;注册时间&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;2020-01-01&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">table</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="带边框">带边框</h2>
+<p>添加 <code>.descriptions-bordered</code> 为每个单元格添加边框，标签列带有浅色背景，更适合信息密集的展示场景。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="descriptions descriptions-bordered">
+    <table class="descriptions-table">
+        <colgroup>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">用户名</th>
+                <td class="descriptions-content">king</td>
+                <th class="descriptions-label">邮箱</th>
+                <td class="descriptions-content">king@example.com</td>
+                <th class="descriptions-label">状态</th>
+                <td class="descriptions-content">正常</td>
+            </tr>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">注册时间</th>
+                <td class="descriptions-content">2020-01-01</td>
+                <th class="descriptions-label">最后登录</th>
+                <td class="descriptions-content">2026-08-01</td>
+                <th class="descriptions-label">所属部门</th>
+                <td class="descriptions-content">研发部</td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions descriptions-bordered</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">table</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-table</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;用户名&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;king&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;邮箱&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;king@example.com&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;状态&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;正常&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;注册时间&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;2020-01-01&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;最后登录&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;2026-08-01&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;所属部门&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;研发部&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">table</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="标题">标题</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="descriptions descriptions-bordered">
+    <div class="descriptions-header">用户信息</div>
+    <table class="descriptions-table">
+        <colgroup>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+            <col width="15%">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">用户名</th>
+                <td class="descriptions-content">king</td>
+                <th class="descriptions-label">邮箱</th>
+                <td class="descriptions-content">king@example.com</td>
+                <th class="descriptions-label">状态</th>
+                <td class="descriptions-content">正常</td>
+            </tr>
+            <tr class="descriptions-row">
+                <th class="descriptions-label">注册时间</th>
+                <td class="descriptions-content">2020-01-01</td>
+                <th class="descriptions-label">最后登录</th>
+                <td class="descriptions-content">2026-08-01</td>
+                <th class="descriptions-label">所属部门</th>
+                <td class="descriptions-content">研发部</td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions descriptions-bordered</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;用户信息&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">table</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-table</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;用户名&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;king&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;邮箱&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;king@example.com&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;状态&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;正常&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;注册时间&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;2020-01-01&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;最后登录&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;2026-08-01&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;所属部门&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;研发部&lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">table</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="紧凑">紧凑</h2>
+<p>添加 <code>.descriptions-sm</code> 紧凑的展示形式，适合表单的展示场景。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><form class="form">
+    <div class="descriptions descriptions-bordered descriptions-sm">
+        <div class="descriptions-header">用户信息</div>
+        <table class="descriptions-table">
+            <colgroup>
+                <col width="15%">
+                <col>
+                <col width="15%">
+                <col>
+                <col width="15%">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr class="descriptions-row">
+                    <th class="descriptions-label">用户名</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="king">
+                    </td>
+                    <th class="descriptions-label">邮箱</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="king@example.com">
+                    </td>
+                    <th class="descriptions-label">状态</th>
+                    <td class="descriptions-content">
+                        <select class="form-control">
+                            <option value="0">正常</option>
+                            <option value="1">禁用</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="descriptions-row">
+                    <th class="descriptions-label">注册时间</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="2020-01-01">
+                    </td>
+                    <th class="descriptions-label">最后登录</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="2026-08-01">
+                    </td>
+                    <th class="descriptions-label">所属部门</th>
+                    <td class="descriptions-content">
+                        <input class="form-control" type="text" value="研发部">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions descriptions-bordered descriptions-sm</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;用户信息&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">table</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-table</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">col</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">15%</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">col</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">colgroup</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;用户名&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">king</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;邮箱&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">king@example.com</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;状态&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">select</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                            &lt;<span class="shiki-entity-name-tag">option</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;正常&lt;/<span class="shiki-entity-name-tag">option</span>&gt;</span>
+<span class="shiki-line">                            &lt;<span class="shiki-entity-name-tag">option</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">1</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;禁用&lt;/<span class="shiki-entity-name-tag">option</span>&gt;</span>
+<span class="shiki-line">                        &lt;/<span class="shiki-entity-name-tag">select</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">tr</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-row</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;注册时间&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">2020-01-01</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;最后登录&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">2026-08-01</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">th</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;所属部门&lt;/<span class="shiki-entity-name-tag">th</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">td</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">descriptions-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                        &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">value</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">研发部</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;/<span class="shiki-entity-name-tag">td</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">tr</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">tbody</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">table</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
+		</div>
+		<footer class="footer">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+</html>

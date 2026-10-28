@@ -1,0 +1,149 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>链接 - 页面内容 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/jquery.js"></script>
+	<script src="../ting/ting.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li class="active"><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-spacer-top"></div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+<h1 class="page-header" id="链接">链接</h1>
+<p>提供多种链接样式，包括语义色、下划线控制、偏移量调整以及拉伸链接。</p>
+<h2 class="page-header" id="语义色链接">语义色链接</h2>
+<p>使用 <code>.link</code> 作为基础类，配合 <code>.link-{context}</code> 设置链接颜色。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><a class="link link-primary" href="#">主要链接</a>
+<a class="link link-secondary" href="#">次级链接</a>
+<a class="link link-success" href="#">成功链接</a>
+<a class="link link-info" href="#">信息链接</a>
+<a class="link link-warning" href="#">警告链接</a>
+<a class="link link-danger" href="#">危险链接</a></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-primary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;主要链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-secondary</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;次级链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-success</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;成功链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-info</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;信息链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-warning</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;警告链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-danger</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;危险链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="禁用链接">禁用链接</h2>
+<p>使用 <code>.link-disabled</code> 禁用链接交互。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><a class="link link-disabled" href="javascript:void 0">禁用链接</a></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-disabled</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;禁用链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="下划线控制">下划线控制</h2>
+<p>使用 <code>.u</code> 强制显示下划线。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><a class="link u" href="#">始终显示下划线</a></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link u</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;始终显示下划线&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="下划线偏移量">下划线偏移量</h2>
+<p>使用 <code>.link-offset-{n}</code> 调整下划线偏移距离（<code>n</code> 为 1 或 2）。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><a class="link u link-offset-1" href="#">偏移量 1</a>
+<a class="link u link-offset-2" href="#">偏移量 2</a></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link u link-offset-1</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;偏移量 1&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link u link-offset-2</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;偏移量 2&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="拉伸链接">拉伸链接</h2>
+<p>使用 <code>.link-stretched</code> 将链接点击区域拉伸至整个父容器，父容器需设置 <code>position: relative</code>。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="card" style="position:relative">
+    <div class="card-body">
+        <h3>卡片标题</h3>
+        <p>卡片的描述文字...</p>
+        <a class="link link-stretched" href="#">拉伸链接</a>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">card</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">position:relative</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">card-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">h3</span>&gt;卡片标题&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">p</span>&gt;卡片的描述文字...&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">link link-stretched</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;拉伸链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
+		</div>
+		<footer class="footer">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+</html>

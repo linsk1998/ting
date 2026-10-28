@@ -1,0 +1,43 @@
+
+
+@use '../variables' as *;
+@use '../functions' as *;
+
+
+html .has-valid{
+	.feedback-icon,.feedback-text,.help-block{
+		color:$light-success;
+	}
+	.form-control,.input,.tags-input,.select-btn,.textarea textarea{
+		border-color:$light-success;
+	}
+	.feedback-tooltip{
+		color: #fff;
+		background: rgba($light-success, .9);
+	}
+}
+html .has-invalid{
+	.feedback-icon,.feedback-text,.help-block{
+		color:$light-danger;
+	}
+	.form-control,.input,.tags-input,.select-btn,.textarea textarea{
+		border-color:$light-danger;
+	}
+	.feedback-tooltip{
+		color: #fff;
+		background: rgba($light-danger, .9);
+	}
+}
+
+@if $enable-dark {
+	.dark {
+		.has-valid .feedback-text,
+		.has-valid .help-block {
+			color: tint-color($light-success, 60%);
+		}
+		.has-invalid .feedback-text,
+		.has-invalid .help-block {
+			color: tint-color($light-danger, 60%);
+		}
+	}
+}

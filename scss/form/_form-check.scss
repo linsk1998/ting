@@ -1,0 +1,22 @@
+@use '../variables' as *;
+
+.form-check {
+	display: block;
+	margin-top: $check-gap-y;
+	margin-bottom:$check-gap-y;
+	font-weight: normal;
+	
+	input {
+		vertical-align: middle;
+		margin:2px 3px 3px; *margin:0;
+	}
+}
+.form-check-inline {
+	display:inline-block;
+	font-weight:normal;
+	vertical-align:middle;
+	margin-right:$check-gap-x;
+	&:last-child{
+		margin-right:0;
+	}
+}

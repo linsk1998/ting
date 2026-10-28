@@ -6,5 +6,6 @@
 		}
 	],
 	"easysass.targetDir": "./ting/",
-	"easysass.excludeRegex": "^((?!(ting\\.scss|ting-quirks\\.scss)).)*$"
+	"easysass.excludeRegex": "^((?!(ting\\.scss|ting-quirks\\.scss)).)*$",
+	"files.insertFinalNewline": true
 }

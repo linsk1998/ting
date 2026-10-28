@@ -1,0 +1,31 @@
+@use '../variables' as *;
+@use 'radius' as *;
+
+@mixin img-circle {
+	@include circle();
+	-o-object-fit:cover;
+	object-fit: cover;
+}
+@mixin img-rounded($r:$img-thumbnail-rounded){
+	@include rounded($r);
+}
+@mixin img-thumbnail($padding:$img-thumbnail-padding){
+	max-width: 100%;
+	height: auto;
+	padding: $padding;
+	background-color: #fff;
+	border: 1px solid $light-divider;
+	@if($enable-rounded) {
+		@include rounded($img-thumbnail-rounded);
+	}
+}
+@mixin img-fluid {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+@mixin img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

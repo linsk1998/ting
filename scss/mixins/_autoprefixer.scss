@@ -1,0 +1,61 @@
+
+@mixin box-shadow($value){
+	-webkit-box-shadow:$value;
+	-moz-box-shadow:$value;
+	-o-box-shadow:$value;
+	box-shadow:$value;
+}
+@mixin shadow($x, $y, $blur, $color){
+	-webkit-box-shadow: $x $y $blur $color;
+	-moz-box-shadow: $x $y $blur $color;
+	-o-box-shadow: $x $y $blur $color;
+	box-shadow: $x $y $blur $color;
+}
+@mixin inset-shadow($x, $y, $blur, $color){
+	-webkit-box-shadow:inset $x $y $blur $color;
+	-moz-box-shadow:inset $x $y $blur $color;
+	-o-box-shadow:inset $x $y $blur $color;
+	box-shadow:inset $x $y $blur $color;
+}
+@mixin transform($value){
+	-webkit-transform:$value;
+	-moz-transform:$value;
+	-ms-transform:$value;
+	-o-transform:$value;
+	transform:$value;
+}
+@mixin transition($value...){
+	-webkit-transition:$value;
+	-o-transition:$value;
+	transition:$value;
+}
+@mixin user-select($value){
+	-webkit-user-select:$value;
+	-moz-user-select:$value;
+	-o-user-select:$value;
+	user-select:$value;
+}
+@mixin placeholder($color){
+	&::-moz-placeholder{ color:$color; opacity:1;}
+	&::-webkit-input-placeholder{ color:$color;}
+	&:-ms-input-placeholder{ color:$color;}
+}
+@mixin opacity($value){
+	-moz-opacity:$value;
+	opacity:$value;
+	@media \0screen\,screen\9 {
+		filter: alpha(opacity=#{$value*100});
+	}
+}
+@mixin appearance($value){
+	-webkit-appearance:$value;
+	appearance:$value;
+}
+@mixin touch-action($value){
+	-webkit-touch-action:$value;
+	touch-action:$value;
+}
+@mixin object-fit($value){
+	-o-object-fit:$value;
+	object-fit:$value;
+}

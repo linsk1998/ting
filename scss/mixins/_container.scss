@@ -1,0 +1,19 @@
+@use '../variables' as *;
+@use '../functions' as *;
+
+@mixin container($width:auto, $padding: 15px){
+	width: $width;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: $padding;
+	padding-left: $padding;
+	position:relative; *zoom:1;
+	*text-align: left;
+}
+@mixin container-fluid($width:auto, $padding: 15px){
+	width: $width;
+	padding-right: $padding;
+	padding-left: $padding;
+	position:relative; *zoom:1;
+	*text-align: left;
+}

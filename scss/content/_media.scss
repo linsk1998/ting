@@ -1,8 +1,41 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
 .media{
 	@include clearfix;
 }
-.media-left{ margin-right:10px; _margin-right:7px; float:left;}
-.media-right{ margin-left:10px; _margin-left:7px; float:right;}
+.media-left{ margin-right:$media-gutter; _margin-right:$media-gutter - 3px; float:left;}
+.media-right{ margin-left:$media-gutter; _margin-left:$media-gutter - 3px; float:right;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.media{
+		display:-ms-flexbox;
+		-ms-flex-direction:row;
+	}
+	.media::after{
+		display:none;
+	}
+	.media-left,.media-right{
+		float:none;
+		-ms-flex-item-align:start;
+	}
+	.media-left{
+		-ms-flex-order:-1;
+	}
+	.media-body{
+		min-width:0;
+		-ms-flex-order:0; 
+		-ms-flex:1;
+	}
+	.media-right{
+		-ms-flex-order:1;
+	}
+	.media-middle{
+		-ms-flex-item-align:center;
+	}
+	.media-bottom{
+		-ms-flex-item-align:end;
+	}
+}
 @supports (display:flex) {
 	.media{
 		display:flex;
@@ -19,7 +52,7 @@
 	.media-left{
 		order:-1;
 	}
-	.media-center,.media-body{
+	.media-body{
 		min-width:0;
 		order:0; 
 		flex-grow:1;
@@ -34,7 +67,7 @@
 		align-self:flex-end;
 	}
 }
-.media-center,.media-body{ overflow:auto;}
+.media-body{ overflow:auto;}
 .media-object{ @include media-object;}
 .media-heading{ @include media-heading;}
 .media-list{ @include media-list;}

@@ -1,0 +1,55 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.collapsible,.collapse{
+	overflow-y: hidden;
+	*zoom: 1;
+}
+.collapsible-horizontal,.collapse-horizontal{
+	overflow-x: hidden;
+	*zoom: 1;
+}
+@media (prefers-reduced-motion: no-preference) {
+	@supports (height: calc-size(auto, size)) {
+		/* 展开状态 */
+		.collapsible {
+			height: calc-size(auto, size);
+			transition: height $collapse-duration;
+		}
+		/* 折叠状态 */
+		.collapsible.hide {
+			display: block;
+			height: 0;
+		}
+		/* 展开状态 */
+		.collapsible-horizontal {
+			width: calc-size(auto, size);
+			transition: width $collapse-duration;
+		}
+		/* 折叠状态 */
+		.collapsible-horizontal.hide {
+			display: block;
+			width: 0;
+		}
+		/* 折叠状态 */
+		.collapse {
+			display: block;
+			height: 0;
+			transition: height $collapse-duration;
+		}
+		/* 展开状态 */
+		.collapse.show {
+			height: calc-size(auto, size);
+		}
+		/* 折叠状态 */
+		.collapse-horizontal {
+			display: block;
+			width: 0;
+			transition: width $collapse-duration;
+		}
+		/* 展开状态 */
+		.collapse-horizontal.show {
+			width: calc-size(auto, size);
+		}
+	}
+}

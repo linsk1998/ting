@@ -1,3 +1,7 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../functions" as *;
+
 .table{
 	margin:$margin-base 0;
 
@@ -5,117 +9,106 @@
 	max-width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
-	background-color: #fff;
+	background-color: $table-bg;
 
 	td,th{
 		// relative会导致出现2重border
-		padding:8px;
+		padding:$table-cell-padding;
 		line-height:$line-height-base;
-		border-top:1px solid #ddd;
+		border-bottom:$table-border-width solid $table-border-color;
+		background-clip:padding-box;
 	}
-	&>thead{ border-bottom:2px solid #ddd;}
-	&>tfoot{ border-top:2px solid #ddd;}
-	&>*:first-child>tr:first-child>*{ border-top:0;}
-}
-
-
-.table caption {
-	padding: 6px 12px;
-	text-align: left;
-	background-color: $theme-primary;
-	color: #fff;
 }
 
 .table-sm,.table-condensed{
-	td,th{ padding:5px;}
+	td,th{ padding:$table-cell-padding-sm;}
 }
+.table-xs {
+	td,th{ padding:$table-cell-padding-xs;}
+}
+td,th {
+	&.table-sm,&.table-condensed{
+		padding:$table-cell-padding-sm;
+	}
+}
+td,th {
+	&.table-xs{
+		padding:$table-cell-padding-xs;
+	}
+}
+
 .table-bordered{
-	&,& td, & th{ border:1px solid #ddd;}
+	&,& td, & th{ border:$table-border-width solid $table-border-color;}
+}
+@each $key, $color in $context {
+	.table-#{$key}{ background-color:mix($color, $table-bg, 12%);}
+}
+@each $key, $color in $context {
+	table.table-#{$key}{ background-color:mix($color, $table-bg, 1%);}
+}
+.table-active {
+	background-color:mix($table-active, $table-bg, 12%);
 }
 
-.table-active{ background-color:$secondary-bg; background-clip:padding-box;}
-.table-primary{ background-color:$primary-bg; background-clip:padding-box;}
-html body .table-success{ background-color:$success-bg; background-clip:padding-box;}
-html body .table-info{ background-color:$info-bg; background-clip:padding-box;}
-html body .table-warning{ background-color:$warning-bg; background-clip:padding-box;}
-html body .table-danger{ background-color:$danger-bg; background-clip:padding-box;}
+.table-hover>tbody>tr:hover{
+	background-color:darken($table-bg,4%);
+}
+@each $key, $color in $context {
+	.table-hover>tbody>tr:hover>.table-#{$key},
+	.table-hover>tbody>tr.table-#{$key}:hover{
+		background-color:mix($color, $table-bg, 22%);
+	}
+	.table-#{$key}.table-hover>tbody>tr:hover,.table-#{$key}>tbody.table-hover>tr:hover{
+		background-color:mix($color, $table-bg, 6%);
+	}
+}
 
-.table-hover tr:hover{
-	background-color:darken(#fff,4%);
-	&.table-active,.table-active{ background-color:darken($secondary-bg,4%);}
-	&.table-primary,.table-primary{ background-color:darken($primary-bg,4%);}
-	&.table-success,.table-success{ background-color:darken($success-bg,4%);}
-	&.table-info,.table-info{ background-color:darken($info-bg,4%);}
-	&.table-warning,.table-warning{ background-color:darken($warning-bg,4%);}
-	&.table-danger,.table-danger{ background-color:darken($danger-bg,4%);}
+.table-hover>tbody>tr:hover>.table-active,
+.table-hover>tbody>tr.table-active:hover{
+	background-color:mix($table-active, $table-bg, 26%);
 }
-.table-hover{
-	.table-active:hover{ background-color:darken($secondary-bg,4%);}
-	.table-primary:hover{ background-color:darken($primary-bg,4%);}
-	.table-success:hover{ background-color:darken($success-bg,4%);}
-	.table-info:hover{ background-color:darken($info-bg,4%);}
-	.table-warning:hover{ background-color:darken($warning-bg,4%);}
-	.table-danger:hover{ background-color:darken($danger-bg,4%);}
-}
-.table-odd{ background-color:darken(#fff,1%); background-clip:padding-box;}
-.table-odd-hover{ background-color:darken(#fff,5%); background-clip:padding-box;}
-.table-odd-active{background-color:darken($secondary-bg,1%); background-clip:padding-box;}
-.table-odd-primary{ background-color:darken($primary-bg,1%); background-clip:padding-box;}
-html body .table-odd-success{ background-color:darken($success-bg,1%); background-clip:padding-box;}
-html body .table-odd-info{ background-color:darken($info-bg,1%); background-clip:padding-box;}
-html body .table-odd-warning{ background-color:darken($warning-bg,1%); background-clip:padding-box;}
-html body .table-odd-danger{ background-color:darken($danger-bg,1%); background-clip:padding-box;}
-.table-odd-active-hover{background-color:darken($secondary-bg,5%); background-clip:padding-box;}
-.table-odd-primary-hover{ background-color:darken($primary-bg,5%); background-clip:padding-box;}
-html body .table-odd-success-hover{ background-color:darken($success-bg,5%); background-clip:padding-box;}
-html body .table-odd-info-hover{ background-color:darken($info-bg,5%); background-clip:padding-box;}
-html body .table-odd-warning-hover{ background-color:darken($warning-bg,5%); background-clip:padding-box;}
-html body .table-odd-danger-hover{ background-color:darken($danger-bg,5%); background-clip:padding-box;}
 
 .table-striped>tbody>tr:nth-of-type(odd){
-	@extend .table-odd;
-	.table-active,&.table-active{
-		@extend .table-odd-active;
+	background:darken($table-bg,1%);
+}
+@each $key, $color in $context {
+	.table-striped>tbody>tr:nth-of-type(odd)>.table-#{$key},
+	.table-striped>tbody>tr.table-#{$key}:nth-of-type(odd){
+		background:mix($color, $table-bg, 14%);
 	}
-	.table-primary,&.table-primary{
-		@extend .table-odd-primary;
-	}
-	.table-success,&.table-success{
-		@extend .table-odd-success;
-	}
-	.table-info,&.table-info{
-		@extend .table-odd-info;
-	}
-	.table-warning,&.table-warning{
-		@extend .table-odd-warning;
-	}
-	.table-danger,&.table-danger{
-		@extend .table-odd-danger;
+	.table-#{$key}.table-striped>tbody>tr:nth-of-type(odd){
+		background:mix($color, $table-bg, 4%);
 	}
 }
-.table-striped.table-hover>tbody>tr:nth-of-type(odd),
-.table-striped>tbody.table-hover>tr:nth-of-type(odd){
-	&:hover{
-		@extend .table-odd-hover;
-		.table-active,&.table-active{
-			@extend .table-odd-active-hover;
-		}
-		.table-primary,&.table-primary{
-			@extend .table-odd-primary-hover;
-		}
-		.table-success,&.table-success{
-			@extend .table-odd-success-hover;
-		}
-		.table-info,&.table-info{
-			@extend .table-odd-info-hover;
-		}
-		.table-warning,&.table-warning{
-			@extend .table-odd-warning-hover;
-		}
-		.table-danger,&.table-danger{
-			@extend .table-odd-danger-hover;
-		}
+.table-striped>tbody>tr:nth-of-type(odd)>.table-active,
+.table-striped>tbody>tr.table-active:nth-of-type(odd){
+	background:mix($table-active, $table-bg, 16%);
+}
+
+.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover{
+	background:darken($table-bg,6%);
+}
+@each $key, $color in $context {
+	.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover>.table-#{$key},
+	.table-striped.table-hover>tbody>tr.table-#{$key}:nth-of-type(odd):hover{
+		background:mix($color, $table-bg, 24%);
 	}
+	.table-#{$key}.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover{
+		background:mix($color, $table-bg, 8%);
+	}
+}
+.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover>.table-active,
+.table-striped.table-hover>tbody>tr.table-active:nth-of-type(odd):hover{
+	background:mix($table-active, $table-bg, 30%);
+}
+
+.thead-inverse,.thead-dark{ background-color:$table-thead-inverse-bg; color: $dark-emphasis-text;}
+.thead-subtle, .thead-light{ background-color:$table-thead-subtle-bg;}
+@each $key, $color in $context {
+	table.table-#{$key} .thead-inverse,
+	.thead-inverse .table-#{$key} { background-color:$color; }
+	table.table-#{$key} .thead-subtle,
+	.thead-subtle .table-#{$key} { background-color:mix($color, #fff, 11%); }
 }
 
 .table-responsive {
@@ -124,28 +117,106 @@ html body .table-odd-danger-hover{ background-color:darken($danger-bg,5%); backg
 	overflow-x: auto;
 	overflow-y: hidden;
 	margin: $margin-base 0;
-	border:1px solid #ddd;
+	border:$table-border-width solid $table-border-color;
 }
 
 .table-responsive .table {
+	margin: -1px 0;
+}
+.table-responsive .table-bordered {
 	margin: -1px;
 }
-.table-responsive>.table-bordered {
+.table-responsive>.table {
 	margin: 0;
 	border: 0 none;
 }
-
-.table-responsive>.table-bordered>*>tr>*:last-child{
+.table-responsive>.table>*>tr>*:last-child{
 	border-right: 0 none;
 }
-.table-responsive>.table-bordered>*>tr>*:first-child{
+.table-responsive>.table>*>tr>*:first-child{
 	border-left: 0 none;
 }
-.table-responsive>.table-bordered>*>tr:first-child>*{
+.table-responsive>.table>:first-child>tr:first-child>*{
 	border-top: 0 none;
 }
-.table-responsive>.table-bordered>*>tr:last-child>*{
+.table-responsive>.table>:last-child>tr:last-child>*{
 	border-bottom: 0 none;
 }
 
 .table-fixed{ table-layout: fixed;}
+
+@if $enable-dark {
+	.dark {
+		.table{ background: $dark-table-bg;}
+		.table-responsive,.table, .table td, .table th{ border-color: $dark-table-border-color;}
+
+		@each $key, $color in $dark-context {
+			.table-#{$key}{ background-color:mix($color, $dark-table-bg, 12%);}
+		}
+		@each $key, $color in $dark-context {
+			table.table-#{$key}{ background-color:mix($color, $dark-table-bg, 1%);}
+		}
+		.table-active {
+			background-color:mix($table-active, $dark-table-bg, 12%);
+		}
+
+		.table-hover>tbody>tr:hover{
+			background-color:lighten($dark-table-bg,4%);
+		}
+		@each $key, $color in $dark-context {
+			.table-hover>tbody>tr:hover>.table-#{$key},
+			.table-hover>tbody>tr.table-#{$key}:hover{
+				background-color:mix($color, $dark-table-bg, 22%);
+			}
+			.table-#{$key}.table-hover>tbody>tr:hover,.table-#{$key}>tbody.table-hover>tr:hover{
+				background-color:mix($color, $dark-table-bg, 6%);
+			}
+		}
+
+		.table-hover>tbody>tr:hover>.table-active,
+		.table-hover>tbody>tr.table-active:hover{
+			background-color:mix($table-active, $dark-table-bg, 26%);
+		}
+		.table-striped>tbody>tr:nth-of-type(odd){
+			background:lighten($dark-table-bg,1%);
+		}
+		@each $key, $color in $dark-context {
+			.table-striped>tbody>tr:nth-of-type(odd)>.table-#{$key},
+			.table-striped>tbody>tr.table-#{$key}:nth-of-type(odd){
+				background:mix($color, $dark-table-bg, 14%);
+			}
+			.table-#{$key}.table-striped>tbody>tr:nth-of-type(odd){
+				background:mix($color, $dark-table-bg, 4%);
+			}
+		}
+		.table-striped>tbody>tr:nth-of-type(odd)>.table-active,
+		.table-striped>tbody>tr.table-active:nth-of-type(odd){
+			background:mix($table-active, $dark-table-bg, 16%);
+		}
+
+		.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover{
+			background:lighten($dark-table-bg,6%);
+		}
+		@each $key, $color in $dark-context {
+			.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover>.table-#{$key},
+			.table-striped.table-hover>tbody>tr.table-#{$key}:nth-of-type(odd):hover{
+				background:mix($color, $dark-table-bg, 24%);
+			}
+			.table-#{$key}.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover{
+				background:mix($color, $dark-table-bg, 8%);
+			}
+		}
+		.table-striped.table-hover>tbody>tr:nth-of-type(odd):hover>.table-active,
+		.table-striped.table-hover>tbody>tr.table-active:nth-of-type(odd):hover{
+			background:mix($table-active, $dark-table-bg, 30%);
+		}
+		.thead-inverse{ background-color: $dark-table-thead-inverse-bg; color: $dark-body-bg;}
+		.thead-subtle{ background-color:$dark-table-thead-subtle-bg;}
+		@each $key, $color in $dark-context {
+			table.table-#{$key} .thead-inverse,
+			.thead-inverse .table-#{$key} { background-color:$color; }
+			table.table-#{$key} .thead-subtle,
+			.thead-subtle .table-#{$key} { background-color:mix($color, #fff, 11%); }
+		}
+	}
+}

@@ -1,2 +1,4 @@
-.vscode/
-docs/
+/.vscode/
+/docs/
+/backstop_data/
+/scripts/

@@ -1,26 +1,120 @@
-/* CSS Document */
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../functions' as *;
 
-
-.tree{ position: relative; padding:3px;}
+.tree{
+	position: relative;
+	padding: $tree-padding;
+}
 .tree ul{ margin:0; padding:0;}
-.tree li{ position:relative; padding-left:22px; list-style:none; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
-.tree label,.tree a{ padding-left:5px; line-height:26px; display:block; _zoom:1;}
-.tree label:hover,.tree a:hover{ background:#CFDDEF;}
-.tree a,.tree a:hover{ color:#333; text-decoration:none;}
-.tree a.active { background: $theme-primary; color: #fff;}
-.tree-icon{ margin-right:5px; line-height:26px; font-size:16px; display:inline-block; vertical-align:middle;}
-.tree-caret{ position:absolute; margin-left:-18px; width:22px; text-align:center; line-height:26px; cursor:pointer; transition:transform 0.2s;
- font-family:FontAwesome; font-style:normal; font-weight:normal; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-*zoom:#{"expression( this.runtimeStyle['zoom']='1',this.innerHTML='&#xf0d7;')"};}
-.tree-caret:before{ content:"\f0d7";}
-.tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:26px;}
-.tree .collapse ul{ display:none;}
+.tree li{
+	position:relative;
+	margin:0; padding:0;
+	padding-left:$tree-indent;
+	list-style:none;
+	white-space:nowrap;
+}
+.tree label,.tree a{
+	padding-left:5px;
+	line-height:$tree-item-height;
+	display:block;
+	_zoom:1;
+}
+.tree .active a, .tree .active a:hover,
+.tree .active label, .tree .active label:hover {
+	background: $light-primary;
+	color: #fff;
+}
+.tree .active u label,.tree .active u a,
+.tree label,.tree a,
+.tree label:hover,.tree a:hover{
+	color: $light-body-text;
+}
+.tree .active u label:hover,.tree .active u a:hover,
+.tree label:hover,.tree a:hover{
+	background:$tree-item-hover;
+}
+.tree a,.tree a:hover{
+	text-decoration:none;
+}
+.tree-icon{
+	margin-right:5px;
+	line-height:$tree-item-height;
+	font-size:$tree-icon-size;
+	display:inline-block;
+	vertical-align:middle;
+}
+.tree-toggler{
+	position:absolute;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	width: 4px;
+	height: 8px;
+	border: 4px solid transparent;
+  	_border-style: dotted;
+	border-right: 0 none;
+	border-left: 4px solid $light-body-text;
+	color: $light-body-text;
+	left: $tree-indent * .5 - 2px;
+	*left: $tree-indent * .5 - 2px - $tree-indent;
+    top: $tree-item-height * .5 - 4px;
+	cursor:pointer;
+	&:after {
+		content: " ";
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		left: -10px;
+		top: -8px;
+	}
+}
 @media (min-width:0){
-	.tree .collapse .tree-caret{ -webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg);}
+	.tree-toggler{ @include transform(rotate(90deg));}
+	.collapsed>.tree-toggler{ @include transform(rotate(0deg));}
 }
 @media \0screen\,screen\9 {
-	.tree .collapse .tree-caret{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+	.tree-toggler{ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+	.collapsed .tree-toggler{ filter:none;}
 }
-.inverse .tree a,.inverse .tree a:hover{ color:#ccc;}
-.inverse .tree label:hover,.inverse .tree a:hover{ background:#34414c;}
-.inverse .tree-caret{ color:#fff;}
+.tree input{ vertical-align:middle; margin:-2px 5px 0 -1px; line-height:$tree-item-height;}
+.tree .collapsed .tree-collapsible{ display:none;}
+
+@if $enable-dark {
+	.dark {
+		.tree label,.tree a,
+		.tree label:hover,.tree a:hover{
+			color: $dark-body-text;
+		}
+		.tree label:hover,.tree a:hover{ background:#34414c;}
+		.tree .active a, .tree .active a:hover,
+		.tree .active label, .tree .active label:hover { background: $dark-primary; color: #fff;}
+		.tree-toggler{ border-left-color: $dark-body-text; color: $dark-body-text;}
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+	@supports (height: calc-size(auto, size)) {
+		.tree-toggler{
+			transition: transform $collapse-duration;
+		}
+		.tree li {
+			min-width: fit-content;
+		}
+		.tree .tree-collapsible{
+			height: calc-size(auto, size);
+			overflow: hidden;
+			transition: height 0s, display 0s allow-discrete;
+		}
+		.collapsed>.tree-collapsible{
+			height: 0;
+		}
+		@starting-style {
+			.tree .tree-collapsible{
+				height: 0;
+			}
+		}
+		.tree-toggler:focus ~ .tree-collapsible{
+			transition-duration: $collapse-duration;
+		}
+	}
+}

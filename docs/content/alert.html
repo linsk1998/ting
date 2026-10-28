@@ -1,0 +1,136 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>警告框 - 页面内容 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/jquery.js"></script>
+	<script src="../ting/ting.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li class="active"><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-spacer-top"></div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+<h1 class="page-header" id="警告框">警告框</h1>
+<p>警告框用于向用户显示重要信息、警告、错误或成功提示。</p>
+<h2 class="page-header" id="基础用法">基础用法</h2>
+<p>通过 <code>.alert</code> 和语境色类（如 <code>.alert-success</code>、<code>.alert-info</code>、<code>.alert-warning</code>、<code>.alert-danger</code>）可以创建不同颜色的警告框。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="alert alert-success">
+    <strong>Well done!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+</div>
+<div class="alert alert-info">
+    <strong>Heads up!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+</div>
+<div class="alert alert-warning">
+    <strong>Warning!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+</div>
+<div class="alert alert-danger">
+    <strong>Oh snap!</strong> 这是一行文字。这是<a href="#" class="alert-link">链接</a>。
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert alert-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">strong</span>&gt;Well done!&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; 这是一行文字。这是&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert-link</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;。</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert alert-info</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">strong</span>&gt;Heads up!&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; 这是一行文字。这是&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert-link</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;。</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert alert-warning</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">strong</span>&gt;Warning!&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; 这是一行文字。这是&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert-link</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;。</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert alert-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">strong</span>&gt;Oh snap!&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; 这是一行文字。这是&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert-link</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;。</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="可关闭的警告框">可关闭的警告框</h2>
+<p>添加 <code>.alert-dismissible</code> 类并加入关闭按钮，可以创建可关闭的警告框。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="alert alert-warning alert-dismissible">
+    <button type="button" class="close"></button>
+    <strong>Warning!</strong> 本项目是一个CSS库，js效果仅为文档演示。
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert alert-warning alert-dismissible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">close</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">strong</span>&gt;Warning!&lt;/<span class="shiki-entity-name-tag">strong</span>&gt; 本项目是一个CSS库，js效果仅为文档演示。</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="带标题和内容的警告框">带标题和内容的警告框</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="alert alert-success">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert alert-success</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">h4</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">alert-heading</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Well done!&lt;/<span class="shiki-entity-name-tag">h4</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">p</span>&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">hr</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">p</span>&gt;Whenever you need to, be sure to use margin utilities to keep things nice and tidy.&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
+		</div>
+		<footer class="footer">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+</html>

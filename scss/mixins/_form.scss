@@ -1,0 +1,12 @@
+
+
+@use '../variables' as *;
+
+
+@mixin text-input($border){
+	font-size: $ctrl-fontsize-md;
+	line-height: $ctrl-line-height;
+	border: $border solid $ctrl-border-color;
+	background-image: none;
+	*margin-top:-1px; *margin-bottom:-1px;
+}

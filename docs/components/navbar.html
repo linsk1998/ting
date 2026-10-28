@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="true" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>导航条</title>
-	<!-- InstanceEndEditable -->
+	<title>导航条 - 组件 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">组件</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li class="active"><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,104 +47,575 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-					<a class="navbar-brand" href="javascript:void 0">首页</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="navbar-collapse collapse">
-					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link" href="#">新闻中心</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">信息公开</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">网上办事</a></li>
-						<li class="nav-item dropdown">
-							<a href="javascript:void 0" class="nav-link dropdown-toggle">
-								公众参与
-								<span class="fa">&#xf0d7;</span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">在线咨询</a></li>
-								<li><a href="#">领导信箱</a></li>
-								<li><a href="#">在线访谈</a></li>
-								<li class="divider"></li>
-								<li><a href="#">网站投稿</a></li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<label class="control-label">搜索：</label>
-							<input type="text" class="form-control" placeholder="请输入关键词">
-						</div><button type="submit" class="btn btn-default">搜索</button>
-					</form>
-					<ul class="navbar-nav navbar-right">
-						<li class="nav-item">
-							<a class="nav-link" href="#">友情链接</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a href="javascript:void 0" class="nav-link dropdown-toggle">
-								公共服务
-								<span class="fa">&#xf0d7;</span>
-							</a>
-							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a href="#">申请服务</a></li>
-								<li><a href="#">咨询服务</a></li>
-								<li><a href="#">视频会议</a></li>
-								<li><a href="#">办公平台</a></li>
-								<li><a href="#">行政审批</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-					<a class="navbar-brand" href="#">首页</a></div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="navbar-collapse collapse">
-					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link" href="#">新闻中心</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">信息公开</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">网上办事</a></li>
-						<li class="nav-item dropdown">
-							<a href="javascript:void 0" class="nav-link dropdown-toggle">
-								公众参与
-								<span class="fa">&#xf0d7;</span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">在线咨询</a></li>
-								<li><a href="#">领导信箱</a></li>
-								<li><a href="#">在线访谈</a></li>
-								<li class="divider"></li>
-								<li><a href="#">网站投稿</a></li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-right">
-						<div class="input-group">
-							<div class="input-group-right input-group-btn">
-								<button class="btn btn-default" type="button">搜索</button>
-							</div>
-							<div class="input-group-center">
-								<input type="text" class="form-control" placeholder="关键词"/>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</nav>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<div class="container">
+<h1 class="page-header" id="导航条">导航条</h1>
+<p>导航条（<code>.navbar</code>）用作站点的导航头部。它内置了响应式折叠、品牌标识、导航链接、表单、下拉菜单等支持。</p>
+<h2 class="page-header" id="工作原理">工作原理</h2>
+<p>导航条在使用前需要了解以下要点：</p>
+<ul>
+<li>导航条需要包裹一个 <code>.navbar-header</code> 和一个 <code>.navbar-collapsible</code> 以实现响应式行为。</li>
+<li><code>.navbar-collapsible</code> 类可在移动端通过 <code>.navbar-toggler</code> 按钮展开/折叠。</li>
+</ul>
+<h2 class="page-header" id="基本结构">基本结构</h2>
+<p>一个典型的导航条包含品牌标识、导航链接和表单：</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar" style="z-index:590">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:590</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;关于&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="带下拉菜单的导航链接">带下拉菜单的导航链接</h2>
+<p>在 <code>.nav-item</code> 上添加 <code>.dropdown</code> 类，并嵌入下拉菜单：</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar" style="z-index:589">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="dropdown">
+                <a href="javascript:void 0">
+                    js下拉
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:589</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    js下拉</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0d7;</span>&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-menu</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;申请服务&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;咨询服务&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;视频会议&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;办公平台&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;行政审批&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="表单">表单</h2>
+<p><code>.navbar-form</code> 用于在导航条中放置内联表单元素，如表单控件和按钮：</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar" style="z-index:588">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <label class="form-label">搜索：</label>
+                <input type="text" class="form-control" placeholder="请输入关键词">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:588</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;关于&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-form navbar-left</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;搜索：&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入关键词</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">submit</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;搜索&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="对齐方式">对齐方式</h2>
+<p>使用 <code>.navbar-left</code> 和 <code>.navbar-right</code> 可将导航元素浮动到导航条左侧或右侧：</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar" style="z-index:587">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="javascript:void 0">
+                    右侧菜单
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:587</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;关于&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav navbar-right</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    右侧菜单</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0d7;</span>&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-menu dropdown-menu-right</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;申请服务&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;咨询服务&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;视频会议&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;办公平台&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;行政审批&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="按钮">按钮</h2>
+<p>可以直接在导航条内放置 <code>.btn</code> 按钮，配合内边距与导航条高度对齐。使用 <code>.navbar-btn</code> 类可获得更好的垂直对齐：</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar" style="z-index:586">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+            <button type="button" class="btn btn-default navbar-btn">登录(左)</button>
+        </ul>
+        <div class="navbar-right">
+            <button type="button" class="btn btn-default navbar-btn">登录(右)</button>
+        </div>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:586</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;关于&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default navbar-btn</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;登录(左)&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-right</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default navbar-btn</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;登录(右)&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="纯文本">纯文本</h2>
+<p><code>.navbar-text</code> 用于在导航条内展示纯文本内容，保持与导航链接一致的行高和对齐：</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar" style="z-index:585">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+        <span class="navbar-text">欢迎您，用户名(左)</span>
+        <div class="navbar-right">
+            <span class="navbar-text">欢迎您，用户名(右)</span>
+        </div>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:585</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;关于&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;欢迎您，用户名(左)&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-right</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;欢迎您，用户名(右)&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="非导航的链接">非导航的链接</h2>
+<p>或许你希望在标准的导航组件之外添加标准链接，那么，使用 <code>.navbar-link</code> 类可以让链接有正确的默认颜色和反色设置。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar" style="z-index:584">
+    <div class="navbar-header" style="z-index:503">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+        <span class="navbar-text">欢迎您，<a href="index.html" class="navbar-link">用户名</a></span>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:584</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:503</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;关于&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-text</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;欢迎您，&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">index.html</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-link</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;用户名&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="完整示例">完整示例</h2>
+<p>以下展示了两个典型的导航条用法，涵盖下拉菜单、搜索表单和右侧对齐等常见场景。</p>
+<h3 id="示例一搜索框">示例一：搜索框</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar navbar-default" style="z-index:583">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">首页</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">新闻中心</a></li>
+            <li><a href="javascript:void 0">信息公开</a></li>
+            <li><a href="javascript:void 0">网上办事</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+            <div class="input-group">
+                <div class="input-group-append input-group-btn">
+                    <button class="btn btn-default" type="button">搜索</button>
+                </div>
+                <div class="input-group-body">
+                    <input type="text" class="form-control" placeholder="关键词"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar navbar-default</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:583</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    <span class="shiki-punctuation-definition-comment">&lt;!--</span><span class="shiki-comment"> Brand and toggle get grouped for better mobile display </span><span class="shiki-punctuation-definition-comment">--&gt;</span></span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    <span class="shiki-punctuation-definition-comment">&lt;!--</span><span class="shiki-comment"> Collect the nav links, forms, and other content for toggling </span><span class="shiki-punctuation-definition-comment">--&gt;</span></span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;新闻中心&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;信息公开&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;网上办事&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-form navbar-right</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-append input-group-btn</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;搜索&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">input-group-body</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">关键词</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="示例二多区域导航右侧下拉">示例二：多区域导航 + 右侧下拉</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar navbar-default" style="z-index:582">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">首页</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapsible">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">新闻中心</a></li>
+            <li><a href="javascript:void 0">信息公开</a></li>
+            <li><a href="javascript:void 0">网上办事</a></li>
+            <li class="dropdown">
+                <a href="javascript:void 0">
+                    公众参与
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void 0">在线咨询</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">领导信箱</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">在线访谈</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">网站投稿</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <label class="form-label">搜索：</label>
+                <input type="text" class="form-control" placeholder="请输入关键词">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+        <ul class="navbar-nav navbar-right">
+            <li>
+                <a href="javascript:void 0">友情链接</a>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void 0">
+                    公共服务
+                    <span class="fa">&#xf0d7;</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="javascript:void 0">申请服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">咨询服务</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">视频会议</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">办公平台</a></li>
+                    <li><a class="dropdown-item" href="javascript:void 0">行政审批</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar navbar-default</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">z-index:582</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    <span class="shiki-punctuation-definition-comment">&lt;!--</span><span class="shiki-comment"> Brand and toggle get grouped for better mobile display </span><span class="shiki-punctuation-definition-comment">--&gt;</span></span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    <span class="shiki-punctuation-definition-comment">&lt;!--</span><span class="shiki-comment"> Collect the nav links, forms, and other content for toggling </span><span class="shiki-punctuation-definition-comment">--&gt;</span></span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapsible</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;新闻中心&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;信息公开&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;网上办事&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    公众参与</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0d7;</span>&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-menu</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;在线咨询&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;领导信箱&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;在线访谈&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-divider</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;网站投稿&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">form</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-form navbar-left</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">label</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-label</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;搜索：&lt;/<span class="shiki-entity-name-tag">label</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">input</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">text</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">form-control</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">placeholder</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">请输入关键词</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">submit</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;搜索&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">form</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav navbar-right</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;友情链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    公共服务</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0d7;</span>&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-menu dropdown-menu-right</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;申请服务&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;咨询服务&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;视频会议&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;办公平台&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                    &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">dropdown-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;行政审批&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">                &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div><p>此示例展示了更复杂的导航条结构：左侧导航 + 左侧表单（带标签的搜索框）+ 右侧导航链接和下拉菜单。右侧下拉菜单使用 <code>.dropdown-menu-right</code> 确保下拉内容在右侧对齐，避免溢出。</p>
+<h2 class="page-header" id="兼容bootstrap写法">兼容 bootstrap 写法</h2>
+<p>在 bootstrap 中，导航条使用 <code>navbar-collapse collapse</code> 来实现折叠效果。ting-ui 中，使用 <code>.navbar-collapsible</code> 来实现折叠效果。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><nav class="navbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler fa icon-lg" data-toggle="collapse" data-target="#bs-collapse">&#xf0c9;</button>
+        <a class="navbar-brand" href="javascript:void 0">Brand</a>
+    </div>
+    <div id="bs-collapse" class="navbar-collapse collapse">
+        <ul class="navbar-nav">
+            <li class="active"><a href="javascript:void 0">首页</a></li>
+            <li><a href="javascript:void 0">链接</a></li>
+            <li><a href="javascript:void 0">关于</a></li>
+        </ul>
+    </div>
+</nav></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">nav</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-header</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-toggler fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-target</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#bs-collapse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c9;</span>&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-brand</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Brand&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">bs-collapse</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-collapse collapse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">navbar-nav</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;首页&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;链接&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;关于&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">nav</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
+		</div>
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

@@ -1,0 +1,21 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.well {
+	min-height: $line-height-base;
+	padding: $well-padding;
+	margin: $margin-base 0;
+	background-color: $well-bg;
+	border: $well-border-width solid $well-border-color;
+	@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.05));
+}
+.well blockquote{ border-color:#ddd; border-color:rgba(0,0,0,.15);}
+.well-lg{ padding: $well-padding-lg;}
+.well-sm{ padding: $well-padding-sm;}
+
+@if $enable-dark {
+	.dark .well {
+		background: $dark-well-bg;
+		border-color: $dark-well-border-color;
+	}
+}

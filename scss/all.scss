@@ -1,12 +1,17 @@
-/*! autoprefixer: off */
-@import './variables';
-@import './mixin';
-@import './animation';
-@import './reset';
-@import './layout';
-@import './content';
-@import './form';
-@import './components';
-@import './dark';
-@import './helpers';
-@import './utilities';
+@use 'sass:meta';
+@use './variables' as *;
+@use './mixins';
+@if $enable-animation {
+	@include meta.load-css('./animation');
+}
+@include meta.load-css('./reset');
+@include meta.load-css('./layout');
+@include meta.load-css('./content');
+@include meta.load-css('./form');
+@if $enable-components {
+	@include meta.load-css('./components');
+}
+@include meta.load-css('./dark');
+@include meta.load-css('./helpers');
+@include meta.load-css('./utilities');
+@include meta.load-css('./status');

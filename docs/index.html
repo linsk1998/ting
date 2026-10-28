@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>Ting</title>
-	<!-- InstanceEndEditable -->
-	<link href="ting/ting.css" rel="stylesheet"/>
-	<link rel="stylesheet" type="text/css" href="ting/font-awesome.css"/>
-	<script src="ting/html5.js"></script>
-	<script src="ting/sky-query.js"></script>
-	<script src="ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<title>Ting UI</title>
+	<link href="./ting/shiki.css" rel="stylesheet"/>
+	<link href="./ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="./ting/font-awesome.css"/>
+	<script src="./ting/html5.js"></script>
+	<script src="./ting/jquery.js"></script>
+	<script src="./ting/ting.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="index.html" class="navbar-brand"><img height="37" src="images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="index.html" class="navbar-brand"><img height="37" src="images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="utilities/index.html">工具类</a></li>
-						
+							<li><a href="getting-started/index.html">起步</a></li>
+							<li><a href="layout/index.html">布局</a></li>
+							<li><a href="content/index.html">页面内容</a></li>
+							<li><a href="form/index.html">表单</a></li>
+							<li><a href="helpers/index.html">助手</a></li>
+							<li><a href="components/index.html">组件</a></li>
+							<li><a href="utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,13 +47,12 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
 			<h1>本项目是一个公共css库。</h1>
 			<h3>包含了常用的基础样式。您可直接使用里面声明的class样式。</h3>
 			<div class="row row-gx-4">
 				<div class="col-gx-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<div class="thumbnail">
 						<img src="images/github.jpg" width="100%"/>
 						<div class="caption">
 							<h3>开放源代码</h3>
@@ -88,7 +61,7 @@
 					</div>
 				</div>
 				<div class="col-gx-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<div class="thumbnail">
 						<img src="images/devices.jpg" width="100%"/>
 						<div class="caption">
 							<h3>一个框架、多种设备</h3>
@@ -97,16 +70,16 @@
 					</div>
 				</div>
 				<div class="col-gx-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<div class="thumbnail">
 						<img src="images/functions.jpg" width="100%"/>
 						<div class="caption">
 							<h3>丰富的功能</h3>
-							<p>全局使用传统盒型，不再为box-sizing烦恼。还有12列的响应式栅格结构和丰富的组件。</p>
+							<p>全局使用border-box，不再为box-sizing烦恼。还有12列的栅格结构和丰富的组件。</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-gx-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<div class="thumbnail">
 						<img src="images/bootstrap.jpg" width="100%"/>
 						<div class="caption">
 							<h3>简单易学</h3>
@@ -115,7 +88,7 @@
 					</div>
 				</div>
 				<div class="col-gx-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<div class="thumbnail">
 						<img src="images/purgecss.png" width="100%"/>
 						<div class="caption">
 							<h3>支持按需打包</h3>
@@ -124,7 +97,7 @@
 					</div>
 				</div>
 				<div class="col-gx-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<div class="thumbnail">
 						<img src="images/hole.jpg" width="100%"/>
 						<div class="caption">
 							<h3>持续更新</h3>
@@ -134,10 +107,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

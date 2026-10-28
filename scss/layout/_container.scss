@@ -1,25 +1,34 @@
-.container{
-	@include container(1000px,15px);
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.container,
+.container-md,
+.container-sm {
+	@include container($container-width-md);
 }
-@media (min-width:$screen-lg){
-	.container{ width:$screen-lg - 30px;}
+.container-fluid,
+.container-lg,
+.container-xl {
+	@include container-fluid(auto);
 }
-@media (max-width:$screen-md){
-	.container{ width:$screen-sm;}
+@media (min-width: $screen-lg) {
+	.container,
+	.container-md,
+	.container-lg { width: $container-width-lg; }
 }
-@media (min-width: 720px) and (max-width: $screen-md) {
-	@-ms-viewport { width: 720px; }
-	@-o-viewport { width: 720px; }
-	@viewport { width: 720px; }
+@media (min-width: $screen-xl) {
+	.container,
+	.container-md,
+	.container-lg,
+	.container-xl { width: $container-width-xl; }
 }
-@media (min-width: $screen-xs) and (max-width: $screen-sm) {
-	@-ms-viewport { width: $screen-xs; }
-	@-o-viewport { width:$screen-xs; }
-	@viewport { width:$screen-xs; }
+@media (max-width: $screen-sm) {
+	.container,
+	.container-md,
+	.container-lg,
+	.container-xl { width:auto; }
+	.container-sm { width:$container-width-sm; }
 }
-@media (max-width:$screen-sm){
-	.container{ width:auto;}
-}
-.container-fluid {
-	@include container(auto,20px);
+@media (max-width: $screen-xs) {
+	.container-sm { width:$container-width-xs; }
 }

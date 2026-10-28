@@ -1,0 +1,190 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>组件 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/jquery.js"></script>
+	<script src="../ting/ting.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li class="active"><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-spacer-top"></div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<h1 class="page-header">列表</h1>
+			<div class="row row-gx-4">
+				<div class="col-md-3 col-gx-4">
+					<h2>基本列表</h2>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#">Cras justo odio</a></li>
+						<li class="list-group-item active"><a href="#">Dapibus ac facilisis in</a></li>
+						<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+						<li class="list-group-item"><a href="#">Porta ac consectetur ac</a></li>
+						<li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
+						<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-gx-4">
+					<h2>链接列表</h2>
+					<div class="list-group">
+						<a href="#" class="list-group-item">Cras justo odio</a>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item active">Cras sit amet nibh libero</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+						<a href="#" class="list-group-item disabled">Morbi leo risus</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-gx-4">
+					<h2>按钮列表</h2>
+					<div class="list-group">
+						<button type="button" class="list-group-item">Cras justo odio</button>
+						<button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+						<button type="button" class="list-group-item active">Morbi leo risus</button>
+						<button type="button" class="list-group-item">Porta ac consectetur ac</button>
+						<button type="button" class="list-group-item">Vestibulum at eros</button>
+						<button type="button" class="list-group-item disabled" disabled>Morbi leo risus</button>
+					</div>
+				</div>
+				<div class="col-md-3 col-gx-4">
+					<h2>徽章</h2>
+					<ul class="list-group">
+						<li class="list-group-item active">
+							<span class="badge">14</span>
+							<a href="#">Cras justo odio</a>
+						</li>
+						<li class="list-group-item">
+							<span class="badge">14</span>
+							<a href="#">Dapibus ac facilisis in</a>
+						</li>
+						<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+						<li class="list-group-item"><a href="#">Porta ac consectetur ac</a></li>
+						<li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
+						<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row row-gx-4">
+				<div class="col-md-3 col-gx-4">
+					<h2>情境类</h2>
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-success active">
+							<span class="badge">14</span>
+							Dapibus ac facilisis in
+						</a>
+						<a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+						<a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-gx-4">
+					<h2>去除周围边框</h2>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Cras justo odio</li>
+						<li class="list-group-item">Dapibus ac facilisis in</li>
+						<li class="list-group-item">Morbi leo risus</li>
+						<li class="list-group-item">Porta ac consectetur ac</li>
+						<li class="list-group-item">Vestibulum at eros</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-gx-4">
+					<h2>列表内容</h2>
+					<ul class="list-group">
+						<li class="list-group-item active">
+							<h4 class="list-group-item-heading line-1"><a href="#">List group item heading</a></h4>
+							<p class="list-group-item-text line-2">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</li>
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading line-1"><a href="#">List group item heading</a></h4>
+							<p class="list-group-item-text line-2">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</li>
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading line-1"><a href="#">List group item heading</a></h4>
+							<p class="list-group-item-text line-2">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-gx-4">
+					<h2>列表 + media</h2>
+					<ul class="list-group">
+						<li class="list-group-item media">
+							<div class="media-left">
+								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading line-1"><a href="#">Media heading</a></h4>
+								<p class="list-group-item-text line-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
+							</div>
+						</li>
+						<li class="list-group-item media">
+							<div class="media-left">
+								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading line-1"><a href="#">Media heading</a></h4>
+								<p class="list-group-item-text line-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
+							</div>
+						</li>
+						<li class="list-group-item media">
+							<div class="media-left">
+								<a href="#"><img class="media-object" src="../images/logo.png" width="64" height="64"/></a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading line-1"><a href="#">Media heading</a></h4>
+								<p class="list-group-item-text line-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2 class="page-header">Horizontal列表</h2>
+			<ul class="list-group list-group-horizontal"
+				><li class="list-group-item">An item</li
+				><li class="list-group-item">A second item</li
+				><li class="list-group-item">A third item</li
+			></ul>
+		</div>
+		<footer class="footer">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+</html>

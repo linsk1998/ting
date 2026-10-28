@@ -1,11 +1,12 @@
 
-@import './utilities/text';
-@import './utilities/white-space';
-@import './utilities/vertical-align';
-@import './utilities/overflow';
-@import './utilities/font';
-@import './utilities/flex';
-@import './utilities/position';
-@import './utilities/border';
-@import './utilities/color';
-@import './utilities/size';
+@use './utilities/text';
+@use './utilities/white-space';
+@use './utilities/vertical-align';
+@use './utilities/overflow';
+@use './utilities/font';
+@use './utilities/flex';
+@use './utilities/position';
+@use './utilities/border';
+@use './utilities/color';
+@use './utilities/size';
+@use './utilities/z';

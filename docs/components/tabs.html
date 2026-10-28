@@ -1,0 +1,501 @@
+<!--BORDERBOX-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>标签页 - 组件 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
+	<link href="../ting/ting.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
+	<script src="../ting/html5.js"></script>
+	<script src="../ting/jquery.js"></script>
+	<script src="../ting/ting.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
+						<ul class="navbar-nav">
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li class="active"><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
+						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
+						</ul>
+						<script>initDarkLi()</script>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-spacer-top"></div>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="h1">Ting Web UI</h1>
+					<p>简洁、直观、强悍、跨浏览器的前端开发框架，让web开发更迅速、简单。</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+<h1 class="page-header" id="标签页">标签页</h1>
+<p>标签页（<code>.tabs</code>）配合导航组件实现内容面板的切换展示。</p>
+<h2 class="page-header" id="基本用法">基本用法</h2>
+<p><code>.tabs</code> 容器内包含 <code>.nav-tabs</code> 导航和 <code>.tabs-content</code> 内容面板，<code>.tabs-pane</code> + <code>.active</code> 标记当前激活面板。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs">
+        <ul class="tabs-nav nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666; padding:20px;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav nav nav-tabs</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="变换方向的标签页">变换方向的标签页</h2>
+<h3 id="左排">左排</h3>
+<p>导航在左侧，内容在右侧。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs tabs-horizontal">
+        <ul class="tabs-nav-left nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666; padding:20px;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav-left nav nav-tabs</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="右排">右排</h3>
+<p>导航在右侧，内容在左侧。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs tabs-horizontal">
+        <ul class="tabs-nav-right nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666; padding:20px;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav-right nav nav-tabs</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="下排">下排</h3>
+<p>导航在内容下方，<code>.tabs-content</code> 需放在 <code>.nav-tabs</code> 前面。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div style="_width:480px; max-width:480px; border:1px solid #666; padding:20px;">
+    <div class="tabs">
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+        <ul class="tabs-nav-below nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666; padding:20px;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav-below nav nav-tabs</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="紧贴容器">紧贴容器</h2>
+<p><code>.tabs-flush</code> 状态可以使选项卡组紧贴容器。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div style="_width:480px; max-width:480px; border:1px solid #666;">
+    <div class="tabs tabs-flush">
+        <ul class="tabs-nav nav nav-tabs nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div>
+<div style="_width:480px; max-width:480px; border:1px solid #666;">
+    <div class="tabs tabs-horizontal tabs-flush">
+        <ul class="nav nav-tabs tabs-nav-left nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222<br>222<br>222<br>222<br>222<br>222<br>222<br>222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div>
+<div style="_width:480px; max-width:480px; border:1px solid #666;">
+    <div class="tabs tabs-horizontal tabs-flush">
+        <ul class="nav nav-tabs tabs-nav-right nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222<br>222<br>222<br>222<br>222<br>222<br>222<br>222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div>
+<div style="_width:480px; max-width:480px; border:1px solid #666;">
+    <div class="tabs tabs-flush">
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+        <ul class="nav nav-tabs tabs-nav-below nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav nav nav-tabs nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-horizontal tabs-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav nav-tabs tabs-nav-left nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-horizontal tabs-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav nav-tabs tabs-nav-right nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav nav-tabs tabs-nav-below nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="适应容器高度">适应容器高度</h2>
+<p><code>.tabs-fill</code> 状态可以使选项卡组紧贴容器。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div style="_width:480px; max-width:480px; height:200px; overflow:auto; border:1px solid #666;">
+    <div class="tabs tabs-flush tabs-fill">
+        <ul class="tabs-nav nav nav-tabs nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div>
+<div style="_width:480px; max-width:480px; height:140px; overflow:auto; border:1px solid #666;">
+    <div class="tabs tabs-horizontal tabs-flush tabs-fill">
+        <ul class="tabs-nav-left nav nav-tabs nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div>
+<div style="_width:480px; max-width:480px; height:140px; overflow:auto; border:1px solid #666;">
+    <div class="tabs tabs-horizontal tabs-flush tabs-fill">
+        <ul class="tabs-nav-right nav nav-tabs nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+    </div>
+</div>
+<div style="_width:480px; max-width:480px; height:200px; overflow:auto; border:1px solid #666;">
+    <div class="tabs tabs-flush tabs-fill">
+        <div class="tabs-content">
+            <div class="tabs-pane">111</div>
+            <div class="tabs-pane hide">222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222<br>222</div>
+            <div class="tabs-pane hide">333</div>
+        </div>
+        <ul class="tabs-nav-below nav nav-tabs nav-flush">
+            <li class="nav-item active"><a class="nav-link" href="javascript:void 0">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void 0">Messages</a></li>
+        </ul>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; height:200px; overflow:auto; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-flush tabs-fill</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav nav nav-tabs nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; height:140px; overflow:auto; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-horizontal tabs-flush tabs-fill</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav-left nav nav-tabs nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; height:140px; overflow:auto; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-horizontal tabs-flush tabs-fill</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav-right nav nav-tabs nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">style</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">_width:480px; max-width:480px; height:200px; overflow:auto; border:1px solid #666;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs tabs-flush tabs-fill</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;111&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;<span class="shiki-entity-name-tag">br</span>&gt;222&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-pane hide</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;333&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabs-nav-below nav nav-tabs nav-flush</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:void 0</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="兼容bootstrap写法">兼容 bootstrap 写法</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="tabbable">
+    <ul class="nav nav-tabs">
+        <li class="nav-item active"><a class="nav-link" href="#home" data-toggle="tab">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile" data-toggle="tab">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#messages" data-toggle="tab">Messages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">home</div>
+        <div class="tab-pane" id="profile">profile</div>
+        <div class="tab-pane" id="messages">messages</div>
+        <div class="tab-pane" id="settings">settings</div>
+    </div>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tabbable</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav nav-tabs</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#home</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#profile</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Profile&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#messages</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Messages&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">nav-link</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#settings</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">data-toggle</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;Settings&lt;/<span class="shiki-entity-name-tag">a</span>&gt;&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab-content</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab-pane active</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">home</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;home&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab-pane</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">profile</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;profile&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab-pane</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">messages</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;messages&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">tab-pane</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">id</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">settings</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;settings&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
+		</div>
+		<footer class="footer">
+			<p>本项目是一个全局公用CSS库.</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+		</footer>
+	</body>
+</html>

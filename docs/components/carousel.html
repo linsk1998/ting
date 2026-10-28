@@ -1,72 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="true" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>轮播</title>
-	<!-- InstanceEndEditable -->
+	<title>轮播图 - 组件 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" -->
-	<!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">组件</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li class="active"><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -74,49 +47,89 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
-		<div class="container box-p0">
-			<div class="carousel" role="carousel">
-				<!-- Carousel items -->
-				<div class="carousel-inner">
-					<div class="active item">
-						<img width="100%" src="http://iph.href.lu/720x360?bg=44aa99"/>
-						<div class="carousel-caption">
-							<h3>金坷垃</h3>
-							<p>肥料掺了金坷垃，一袋能顶两袋撒。来自美国的金坷垃是美国肥料研究中心CNT的最新科技成果。</p>
-						</div>
-					</div>
-					<div class="item">
-						<img width="100%" src="http://iph.href.lu/720x360?bg=4499aa"/>
-						<div class="carousel-caption">
-							<h3>金氮丹</h3>
-							<p>金氮丹是来自大洋彼岸的美国品牌，含有β乳胶剂,与土壤合为一体，下雨不流失，日晒不挥发，从而使肥料的利用率大幅增加，是全球唯一不怕日晒雨淋的肥料，让世界农民刮目相看。</p>
-						</div>
-					</div>
-					<div class="item">
-						<img width="100%" src="http://iph.href.lu/720x360?bg=aa9944"/>
-						<div class="carousel-caption">
-							<h3>凭良心</h3>
-							<p>本品是国际最安全环保型的广谱专用杀虫剂，采用国际领先生产设备。</p>
-						</div>
-					</div>
-				</div>
-				<!-- Carousel nav -->
-				<div class="carousel-control">
-					<a class="left fa" href="javascript:;">&#xf104;</a>
-					<a class="right fa" href="javascript:;">&#xf105;</a>
-				</div>
-				<ol class="carousel-indicators">
-					<li class="active fa">&#xf111;</li>
-					<li class="fa">&#xf111;</li>
-					<li class="fa">&#xf111;</li>
-				</ol>
-			</div>
+		<div class="container">
+<h1 class="page-header" id="轮播图">轮播图</h1>
+<p>轮播图用于循环展示一系列内容，支持图片轮播、指示器导航和前后切换。</p>
+<h2 class="page-header" id="基本用法">基本用法</h2>
+<p><code>.carousel</code> 容器内包含图片、文字说明（<code>.carousel-caption</code>）、前后控制按钮（<code>.carousel-control-prev</code> / <code>.carousel-control-next</code>）和底部指示器（<code>.carousel-indicators</code>）。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="carousel" role="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img width="100%" src="../images/functions.jpg"/>
+            <div class="carousel-caption">
+                <h3>金坷垃</h3>
+                <p>肥料掺了金坷垃，一袋能顶两袋撒。来自美国的金坷垃是美国肥料研究中心CNT的最新科技成果。</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img width="100%" src="../images/github.jpg"/>
+            <div class="carousel-caption">
+                <h3>金氮丹</h3>
+                <p>金氮丹是来自大洋彼岸的美国品牌，含有β乳胶剂,与土壤合为一体，下雨不流失，日晒不挥发，从而使肥料的利用率大幅增加，是全球唯一不怕日晒雨淋的肥料，让世界农民刮目相看。</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img width="100%" src="../images/devices.jpg"/>
+            <div class="carousel-caption">
+                <h3>凭良心</h3>
+                <p>本品是国际最安全环保型的广谱专用杀虫剂，采用国际领先生产设备。</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev fa" href="javascript:;">&#xf104;</a>
+    <a class="carousel-control-next fa" href="javascript:;">&#xf105;</a>
+    <ol class="carousel-indicators">
+        <li class="active fa">&#xf111;</li>
+        <li class="fa">&#xf111;</li>
+        <li class="fa">&#xf111;</li>
+    </ol>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">role</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-inner</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-item active</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">100%</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/functions.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-caption</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">h3</span>&gt;金坷垃&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">p</span>&gt;肥料掺了金坷垃，一袋能顶两袋撒。来自美国的金坷垃是美国肥料研究中心CNT的最新科技成果。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">100%</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/github.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-caption</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">h3</span>&gt;金氮丹&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">p</span>&gt;金氮丹是来自大洋彼岸的美国品牌，含有β乳胶剂,与土壤合为一体，下雨不流失，日晒不挥发，从而使肥料的利用率大幅增加，是全球唯一不怕日晒雨淋的肥料，让世界农民刮目相看。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">img</span> <span class="shiki-entity">width</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">100%</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">src</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">../images/devices.jpg</span><span class="shiki-punctuation-definition-string">&quot;</span>/&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-caption</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">h3</span>&gt;凭良心&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
+<span class="shiki-line">                &lt;<span class="shiki-entity-name-tag">p</span>&gt;本品是国际最安全环保型的广谱专用杀虫剂，采用国际领先生产设备。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">            &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-control-prev fa</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf104;</span>&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-control-next fa</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">javascript:;</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf105;</span>&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">ol</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">carousel-indicators</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">active fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf111;</span>&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf111;</span>&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf111;</span>&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">ol</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

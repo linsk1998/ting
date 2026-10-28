@@ -1,9 +1,6 @@
+@use '../variables' as *;
 @use 'sass:math';
-$aspect-ratios:(
-	(16 9),
-	(4 3),
-	(1 1)
-) !default;
+@use 'sass:list';
 
 .ratio,
 .embed-responsive {
@@ -15,8 +12,8 @@ $aspect-ratios:(
 	*zoom: 1;
 }
 
-.embed-responsive-item,
-.ratio-item {
+.ratio-item,
+.embed-responsive-item {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -36,16 +33,14 @@ video.embed-responsive-item{
 }
 
 @each $aspect-ratio in $aspect-ratios {
-	$ratio-x: nth($aspect-ratio, 1);
-	$ratio-y: nth($aspect-ratio, 2);
+	$ratio-x: list.nth($aspect-ratio, 1);
+	$ratio-y: list.nth($aspect-ratio, 2);
 	.ratio-#{$ratio-x}x#{$ratio-y},
-	.ratio-#{$ratio-x}\/#{$ratio-y},
-	.embed-responsive-#{$ratio-x}by#{$ratio-y},
-	.embed-responsive-#{$ratio-x}\/#{$ratio-y} {
+	.embed-responsive-#{$ratio-x}by#{$ratio-y} {
 		padding-bottom: math.div($ratio-y, $ratio-x) * 100%;
 	}
-	.ratio-#{$ratio-x}x#{$ratio-y} .ratio-item, .ratio-#{$ratio-x}\/#{$ratio-y} .ratio-item,
-	.embed-responsive-#{$ratio-x}by#{$ratio-y} .embed-responsive-item, .embed-responsive-#{$ratio-x}\/#{$ratio-y} .embed-responsive-item {
+	.ratio-#{$ratio-x}x#{$ratio-y} .ratio-item,
+	.embed-responsive-#{$ratio-x}by#{$ratio-y} .embed-responsive-item {
 		*height: #{'expression(this.offsetWidth*' + math.div($ratio-y, $ratio-x) + '+"px")'};
 	}
 }

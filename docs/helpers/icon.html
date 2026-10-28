@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="false" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="true" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>图标</title>
-	<!-- InstanceEndEditable -->
+	<title>图标 - 助手 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../content/index.html">页面内容</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">助手</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li class="active"><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,194 +47,194 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h2 class="page-header">基本图标</h2>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-12 col-gx-4">
-					<p><i class="icon fa">&#xf004;</i></p>
-					<p><i class="icon fa fa-heart"></i></p>
-				</div>
-				<div class="col-md-9 col-sm-12 col-gx-4">
-					<p>
-						使用样式类<code>icon</code> 生成一个方形inline-block。
-					</p>
-					<pre class="code">&lt;i class="icon fa"&gt;&amp;#xf004;&lt;/i&gt;</pre>
-					<pre class="code">&lt;i class="icon fa fa-heart"&gt;&lt;/i&gt;</pre>
-				</div>
-			</div>
-			<h2 id="larger" class="page-header">大图标</h2>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-12 col-gx-4">
-					<p>
-						<i class="fa icon-lg">&#xf083;</i>
-						<i class="fa icon-2x">&#xf083;</i>
-						<i class="fa icon-3x">&#xf083;</i>
-						<i class="fa icon-4x">&#xf083;</i>
-						<i class="fa icon-5x">&#xf083;</i>
-					</p>
-				</div>
-				<div class="col-md-9 col-sm-12 col-gx-4">
-					<p>
-						使用 <code>icon-lg</code> (33%递增)、<code>icon-2x</code>、
-						<code>icon-3x</code>、<code>icon-4x</code>，或者 <code>icon-5x</code> 类 来放大图标。
-					</p>
-					<div class="highlight">
-						<pre class="code">&lt;i class=&quot;fa icon-lg&quot;&gt;&amp;#xf083;&lt;/i&gt;
-&lt;i class=&quot;fa icon-2x&quot;&gt;&amp;#xf083;&lt;/i&gt;
-&lt;i class=&quot;fa icon-3x&quot;&gt;&amp;#xf083;&lt;/i&gt;
-&lt;i class=&quot;fa icon-4x&quot;&gt;&amp;#xf083;&lt;/i&gt;
-&lt;i class=&quot;fa icon-5x&quot;&gt;&amp;#xf083;&lt;/i&gt;</pre>
-					</div>
-				</div>
-			</div>
-			<h2 class="page-header">固定宽度</h1>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-12 col-gx-4">
-					<div class="list-group">
-						<a class="list-group-item" href="#"><i class="fa icon-fw">&#xf015;</i> Home</a>
-						<a class="list-group-item" href="#"><i class="fa icon-fw">&#xf02d;</i> Library</a>
-						<a class="list-group-item" href="#"><i class="fa icon-fw">&#xf040;</i> Applications</a>
-						<a class="list-group-item" href="#"><i class="fa icon-fw">&#xf013;</i> Settings</a>
-					</div>
-				</div>
-				<div class="col-md-9 col-sm-12 col-gx-4">
-					<p>
-						使用 <code>icon-fw</code> 可以将图标设置为一个固定宽度。主要用于不同宽度图标无法对齐的情况。
-						尤其在列表或导航时起到重要作用。
-					</p>
-					<pre class="code">&lt;div class=&quot;list-group&quot;&gt;
-	&lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa icon-fw&quot;&gt;&amp;#xf015;&lt;/i&gt; Home&lt;/a&gt;
-	&lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa icon-fw&quot;&gt;&amp;#xf02d;&lt;/i&gt; Library&lt;/a&gt;
-	&lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa icon-fw&quot;&gt;&amp;#xf040;&lt;/i&gt; Applications&lt;/a&gt;
-	&lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa icon-fw&quot;&gt;&amp;#xf013;&lt;/i&gt; Settings&lt;/a&gt;
-&lt;/div&gt;</pre>
-				</div>
-			</div>
-			<h2 class="page-header">动画</h1>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-12 col-gx-4">
-					<i class="fa icon-spin icon-3x">&#xf110;</i>
-					<i class="fa icon-spin icon-3x">&#xf1ce;</i>
-					<i class="fa icon-spin icon-3x">&#xf013;</i>
-					<i class="fa icon-spin icon-3x">&#xf021;</i>
-					<i class="fa icon-pulse icon-3x">&#xf110;</i>
-				</div>
-				<div class="col-md-9 col-sm-12 col-gx-4">
-					<p>
-						使用 <code>icon-spin</code> 类来使任意图标旋转，现在您还可以使用 <code>icon-pulse</code> 来使其进行8方位旋转。尤其适合<i class="fa">&#xf110;</i> <i class="fa">&#xf021;</i> <i class="fa">&#xf013;</i> 。
-					</p>
-					<pre class="code">&lt;i class=&quot;fa icon-spin&quot;&gt;&amp;#xf110;&lt;/i&gt;
-&lt;i class=&quot;fa icon-spin&quot;&gt;&amp;#xf1ce;&lt;/i&gt;
-&lt;i class=&quot;fa icon-spin&quot;&gt;&amp;#xf013;&lt;/i&gt;
-&lt;i class=&quot;fa icon-spin&quot;&gt;&amp;#xf021;&lt;/i&gt;
-&lt;i class=&quot;fa icon-pulse&quot;&gt;&amp;#xf110;&lt;/i&gt;</pre>
-					<p class="alert alert-warning">
-						<i class="fa">&#xf05a;</i> CSS3动画不支持IE9以下。
-					</p>
-				</div>
-			</div>
-			<h2 class="page-header">旋转和翻转</h1>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-12 col-gx-4">
-					<i class="icon fa">&#xf132;</i> normal<br>
-					<i class="icon fa icon-rotate-90">&#xf132;</i> icon-rotate-90<br>
-					<i class="icon fa icon-rotate-180">&#xf132;</i> icon-rotate-180<br>
-					<i class="icon fa icon-rotate-270">&#xf132;</i> icon-rotate-270<br>
-					<i class="icon fa icon-flip-horizontal">&#xf132;</i> icon-flip-horizontal<br>
-					<i class="icon fa icon-flip-vertical">&#xf132;</i> icon-flip-vertical
-				</div>
-				<div class="col-md-9 col-sm-12 col-gx-4">
-					<p>
-						若要对图标进行任意旋转和翻转, 可以使用 <code>icon-rotate-*</code> 和 <code>icon-flip-*</code> 类。
-					</p>
-					<pre class="code">&lt;i class=&quot;icon fa&quot;&gt;&amp;#xf132;&lt;/i&gt;
-&lt;i class=&quot;icon fa icon-rotate-90&quot;&gt;&amp;#xf132;&lt;/i&gt;
-&lt;i class=&quot;icon fa icon-rotate-180&quot;&gt;&amp;#xf132;&lt;/i&gt;
-&lt;i class=&quot;icon fa icon-rotate-270&quot;&gt;&amp;#xf132;&lt;/i&gt;
-&lt;i class=&quot;icon fa icon-flip-horizontal&quot;&gt;&amp;#xf132;&lt;/i&gt;
-&lt;i class=&quot;icon fa icon-flip-vertical&quot;&gt;&amp;#xf132;&lt;/i&gt;</pre>
-				</div>
-			</div>
-			<h2 class="page-header">组合使用</h1>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-12 col-gx-4">
-					<span class="icon-stack icon-lg">
-						<i class="fa icon-stack-2x">&#xf096;</i>
-						<i class="fa icon-stack-1x">&#xf099;</i>
-					</span>
-					fa-twitter on fa-square-o<br>
-					<span class="icon-stack icon-lg">
-						<i class="fa icon-stack-2x">&#xf111;</i>
-						<i class="fa icon-stack-1x icon-inverse">&#xf024;</i>
-					</span>
-					fa-flag on fa-circle<br>
-					<span class="icon-stack icon-lg">
-						<i class="fa icon-stack-2x">&#xf0c8;</i>
-						<i class="fa icon-stack-1x icon-inverse">&#xf120;</i>
-					</span>
-					fa-terminal on fa-square<br>
-					<span class="icon-stack icon-lg">
-						<i class="fa icon-stack-1x">&#xf030;</i>
-						<i class="fa icon-stack-2x text-danger">&#xf05e;</i>
-					</span>
-					fa-ban on fa-camera
-				</div>
-				<div class="col-md-9 col-sm-12 col-gx-4">
-					<p>
-						如果想要将多个图标组合起来，使用 <code>icon-stack</code> 类作为父容器， <code>icon-stack-1x</code> 作为正常比例的图标，
-						<code>icon-stack-2x</code> 作为大一些的图标。还可以使用 <code>icon-inverse</code> 类来切换图标颜色。您可以在父容器中
-						通过添加 <a href="#larger">大图标</a> 类来控制整体大小。
-					</p>
-					<pre class="code">&lt;span class=&quot;fa-stack icon-lg&quot;&gt;
-	&lt;i class=&quot;fa icon-stack-2x&quot;&gt;&amp;#xf096;&lt;/i&gt;
-	&lt;i class=&quot;fa icon-stack-1x&quot;&gt;&amp;#xf099;&lt;/i&gt;
-&lt;/span&gt;
-fa-twitter on fa-square-o&lt;br&gt;
-&lt;span class=&quot;icon-stack icon-lg&quot;&gt;
-	&lt;i class=&quot;fa icon-stack-2x&quot;&gt;&amp;#xf111;&lt;/i&gt;
-	&lt;i class=&quot;fa icon-stack-1x icon-inverse&quot;&gt;&amp;#xf024;&lt;/i&gt;
-&lt;/span&gt;
-fa-flag on fa-circle&lt;br&gt;
-&lt;span class=&quot;icon-stack icon-lg&quot;&gt;
-	&lt;i class=&quot;fa icon-stack-2x&quot;&gt;&amp;#xf0c8;&lt;/i&gt;
-	&lt;i class=&quot;fa icon-stack-1x icon-inverse&quot;&gt;&amp;#xf120;&lt;/i&gt;
-&lt;/span&gt;
-fa-terminal on fa-square&lt;br&gt;
-&lt;span class=&quot;icon-stack icon-lg&quot;&gt;
-	&lt;i class=&quot;fa icon-stack-1x&quot;&gt;&amp;#xf030;&lt;/i&gt;
-	&lt;i class=&quot;fa icon-stack-2x text-danger&quot;&gt;&amp;#xf05e;&lt;/i&gt;
-&lt;/span&gt;
-fa-ban on fa-camera</pre>
-				</div>
-			</div>
-			<h2 class="page-header">图标的可访问性</h1>
-			<div class="row row-gx-4">
-				<div class="col-md-3 col-sm-12 col-gx-4">
-					<button type="button" class="btn btn-default" aria-label="Left Align">
-						<i class="fa" aria-hidden="true">&#xf036;</i>
-					</button>
-					<button type="button" class="btn btn-default">
-						<i class="fa" aria-hidden="true">&#xf005;</i> Star
-					</button>
-				</div>
-				<div class="col-md-9 col-sm-12 col-gx-4">
-					<p>
-						使用 <code>aria-hidden</code> 可以禁止屏幕朗读工具作用。使用 <code>aria-label</code>可以让屏幕朗读工具读指定的东西。
-					</p>
-					<pre class="code">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; aria-label=&quot;Left Align&quot;&gt;
-	&lt;i class=&quot;fa&quot; aria-hidden=&quot;true&quot;&gt;&amp;#xf036;&lt;/i&gt;
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;
-	&lt;i class=&quot;fa&quot; aria-hidden=&quot;true&quot;&gt;&amp;#xf005;&lt;/i&gt; Star
-&lt;/button&gt;</pre>
-				</div>
-			</div>
+<h1 class="page-header" id="图标">图标</h1>
+<p>提供了一套丰富的图标工具类，包括尺寸缩放、固定宽度、旋转翻转、堆叠组合等功能。</p>
+<h2 class="page-header" id="基本图标">基本图标</h2>
+<p>使用样式类 <code>.icon</code> 生成一个方形 inline-block。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><i class="icon fa">&#xf004;</i>
+<i class="icon fa fa-heart"></i></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf004;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa fa-heart</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="大图标">大图标</h2>
+<p>使用 <code>icon-lg</code>（33% 递增）、<code>icon-2x</code>、<code>icon-3x</code>、<code>icon-4x</code> 或 <code>icon-5x</code> 类来放大图标。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><i class="fa icon-lg">&#xf083;</i>
+<i class="fa icon-2x">&#xf083;</i>
+<i class="fa icon-3x">&#xf083;</i>
+<i class="fa icon-4x">&#xf083;</i>
+<i class="fa icon-5x">&#xf083;</i></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf083;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-2x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf083;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-3x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf083;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-4x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf083;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-5x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf083;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="固定宽度">固定宽度</h2>
+<p>使用 <code>icon-fw</code> 可以将图标设置为一个固定宽度，主要用于不同宽度图标无法对齐的情况，尤其在列表或导航时起到重要作用。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><div class="list-group">
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf015;</i> Home</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf02d;</i> Library</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf040;</i> Applications</a>
+    <a class="list-group-item" href="#"><i class="fa icon-fw">&#xf013;</i> Settings</a>
+</div></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">div</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-group</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-group-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-fw</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf015;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; Home&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-group-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-fw</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf02d;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; Library&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-group-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-fw</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf040;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; Applications&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">a</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-group-item</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">href</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">#</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-fw</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf013;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; Settings&lt;/<span class="shiki-entity-name-tag">a</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">div</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="动画">动画</h2>
+<p>使用 <code>icon-spin</code> 类来使任意图标旋转，也可以使用 <code>icon-pulse</code> 来使其进行8方位旋转。尤其适合加载中和设置类图标。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><i class="fa icon-spin">&#xf110;</i>
+<i class="fa icon-spin">&#xf1ce;</i>
+<i class="fa icon-spin">&#xf013;</i>
+<i class="fa icon-spin">&#xf021;</i>
+<i class="fa icon-pulse">&#xf110;</i></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-spin</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf110;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-spin</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf1ce;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-spin</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf013;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-spin</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf021;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-pulse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf110;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+</pre></div>
+  </div>
+</div><blockquote>
+<p><strong>提示</strong>：CSS3 动画不支持 IE9 以下。</p>
+</blockquote>
+<h2 class="page-header" id="旋转和翻转">旋转和翻转</h2>
+<p>使用 <code>icon-rotate-*</code> 和 <code>icon-flip-*</code> 类对图标进行任意旋转和翻转。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><i class="icon fa">&#xf132;</i> normal
+<i class="icon fa icon-rotate-90">&#xf132;</i> icon-rotate-90
+<i class="icon fa icon-rotate-180">&#xf132;</i> icon-rotate-180
+<i class="icon fa icon-rotate-270">&#xf132;</i> icon-rotate-270
+<i class="icon fa icon-flip-horizontal">&#xf132;</i> icon-flip-horizontal
+<i class="icon fa icon-flip-vertical">&#xf132;</i> icon-flip-vertical</div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf132;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; normal</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa icon-rotate-90</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf132;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; icon-rotate-90</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa icon-rotate-180</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf132;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; icon-rotate-180</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa icon-rotate-270</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf132;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; icon-rotate-270</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa icon-flip-horizontal</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf132;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; icon-flip-horizontal</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon fa icon-flip-vertical</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf132;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; icon-flip-vertical</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="组合使用">组合使用</h2>
+<p>使用 <code>icon-stack</code> 类作为父容器，<code>icon-stack-1x</code> 作为正常比例的图标，<code>icon-stack-2x</code> 作为大一些的图标。还可以使用 <code>icon-inverse</code> 类来切换图标颜色。可通过添加大图标类来控制整体大小。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><span class="icon-stack icon-lg">
+    <i class="fa icon-stack-2x">&#xf096;</i>
+    <i class="fa icon-stack-1x">&#xf099;</i>
+</span>
+fa-twitter on fa-square-o
+<span class="icon-stack icon-lg">
+    <i class="fa icon-stack-2x">&#xf111;</i>
+    <i class="fa icon-stack-1x icon-inverse">&#xf024;</i>
+</span>
+fa-flag on fa-circle
+<span class="icon-stack icon-lg">
+    <i class="fa icon-stack-2x">&#xf0c8;</i>
+    <i class="fa icon-stack-1x icon-inverse">&#xf120;</i>
+</span>
+fa-terminal on fa-square
+<span class="icon-stack icon-lg">
+    <i class="fa icon-stack-1x">&#xf030;</i>
+    <i class="fa icon-stack-2x text-danger">&#xf05e;</i>
+</span>
+fa-ban on fa-camera</div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon-stack icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-2x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf096;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-1x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf099;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">fa-twitter on fa-square-o</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon-stack icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-2x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf111;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-1x icon-inverse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf024;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">fa-flag on fa-circle</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon-stack icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-2x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf0c8;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-1x icon-inverse</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf120;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">fa-terminal on fa-square</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">span</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">icon-stack icon-lg</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-1x</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf030;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa icon-stack-2x text-danger</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf05e;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">span</span>&gt;</span>
+<span class="shiki-line">fa-ban on fa-camera</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="可访问性">可访问性</h2>
+<p>使用 <code>aria-hidden</code> 可以禁止屏幕朗读工具作用，使用 <code>aria-label</code> 可以让屏幕朗读工具读指定的内容。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><button type="button" class="btn btn-default" aria-label="Left Align">
+    <i class="fa" aria-hidden="true">&#xf036;</i>
+</button>
+<button type="button" class="btn btn-default">
+    <i class="fa" aria-hidden="true">&#xf005;</i> Star
+</button></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">aria-label</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">Left Align</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">aria-hidden</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">true</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf036;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">button</span> <span class="shiki-entity">type</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">button</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">btn btn-default</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">i</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">fa</span><span class="shiki-punctuation-definition-string">&quot;</span> <span class="shiki-entity">aria-hidden</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">true</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;<span class="shiki-constant">&amp;#xf005;</span>&lt;/<span class="shiki-entity-name-tag">i</span>&gt; Star</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">button</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

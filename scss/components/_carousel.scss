@@ -1,11 +1,14 @@
+@use "sass:math";
+@use '../variables' as *;
+@use '../mixins' as *;
 
 .carousel{ position:relative;}
 .carousel-indicators{ margin:0; padding:0; list-style:none; position:absolute; top:75%; left:0; width:100%; text-align:center; font-size:0;}
 .carousel-indicators li{ display:inline; margin:0 0.3em; color:#fff; cursor:pointer; opacity:0.5; font-size:14px;}
 .carousel-indicators li.active{ opacity:0.9;}
 .carousel-inner{ position:relative; font-size:0; overflow:hidden; width:100%; white-space:nowrap;}
-.carousel-inner .item{ position:relative; width:100%; display:inline-block; *display:inline; *zoom:1; vertical-align:top;}
-.carousel-inner .item>img{-o-object-fit:cover;object-fit:cover;}
+.carousel-inner .item, .carousel-inner .carousel-item{ position:relative; width:100%; display:inline-block; *display:inline; *zoom:1; vertical-align:top;}
+.carousel-inner .item>img, .carousel-inner .carousel-item>img{-o-object-fit:cover;object-fit:cover;}
 .carousel-control{ position:absolute; width:100%; top:50%; left:0;}
 .carousel-control .left,.carousel-control .right{ top:-60px; position:absolute;
 display:block; width:46px; line-height:120px; font-size:40px; text-align:center;
@@ -13,6 +16,39 @@ background:#222; color:#fff; opacity:0.5;}
 .carousel-control .left{ left:0;}
 .carousel-control .right{ right:0;}
 .carousel-control .left:hover,.carousel-control .right:hover{ opacity:0.9; text-decoration:none; color:#fff;}
+.carousel-control-next,.carousel-control-prev{
+	@include appearance(none);
+	background: none;
+	border: 0 none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-size: 48px;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	overflow: hidden;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	cursor: pointer;
+}
+.carousel-control-next,.carousel-control-prev,
+.carousel-control-next a,.carousel-control-prev a,
+.carousel-control-next:hover,.carousel-control-prev:hover,
+.carousel-control-next a:hover,.carousel-control-prev a:hover
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+.carousel-control-prev{
+	left: 0;
+}
+.carousel-control-next{
+	right: 0;
+}
 .carousel-caption{ white-space:normal; font-size:$font-size-base; left:0; bottom:0; position:absolute; width:100%; color:#FFFFFF; background:rgba(0,0,0,0.5);}
 .carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin-left:10px; margin-right:10px;}
 @media \0screen\,screen\9{
@@ -23,6 +59,18 @@ background:#222; color:#fff; opacity:0.5;}
 	.carousel-caption{ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);}
 }
 @media (max-width:480px){
-	.carousel-caption{ font-size:12px; word-wrap:normal;white-space:nowrap; text-overflow:ellipsis;overflow:hidden;}
+	.carousel-caption{ font-size:math.div(12px,$font-size-base)*100%; word-wrap:normal;white-space:nowrap; text-overflow:ellipsis;overflow:hidden;}
 	.carousel-caption h3,.carousel-caption h4,.carousel-caption p{ margin:10px;}
+}
+@if $enable-dark {
+	.dark {
+		.carousel-control .left,.carousel-control .right,
+		.carousel-control .left:hover,.carousel-control .right:hover,
+		.carousel-control-next,.carousel-control-prev,
+		.carousel-control-next a,.carousel-control-prev a,
+		.carousel-control-next:hover,.carousel-control-prev:hover,
+		.carousel-control-next a:hover,.carousel-control-prev a:hover{
+			color: #ffffff;
+		}
+	}
 }

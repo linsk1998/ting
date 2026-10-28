@@ -1,0 +1,21 @@
+@use '../variables' as *;
+
+.caret {
+	display: inline-block;
+	width: $caret-width;
+	height: $caret-height;
+	overflow: hidden;
+	font-size: 0;
+	margin-left: $caret-gap;
+	vertical-align: middle;
+	border: $caret-width * 0.5 solid transparent;
+	_border-style: dotted;
+	border-bottom: 0 none;
+	border-top: $caret-height solid $light-body-text;
+}
+
+@if $enable-dark {
+	.dark .caret {
+		border-top-color: $dark-body-text;
+	}
+}

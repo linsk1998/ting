@@ -1,4 +1,8 @@
 
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
 .text-truncate{ @include text-truncate;}
 .line-1,.line-max-1{
 	@extend .text-truncate;
@@ -18,14 +22,14 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-@for $i from 2 through 9 {
+@for $i from 2 through 6 {
 	.line-#{$i} {
 		@extend .line-n;
 		-webkit-line-clamp: $i;
 		height: $line-height-base * $i;
 	}
 }
-@for $i from 2 through 9 {
+@for $i from 2 through 6 {
 	.line-max-#{$i} {
 		@extend .line-max-n;
 		-webkit-line-clamp: $i;
@@ -33,7 +37,7 @@
 		_height: $line-height-base * $i;
 	}
 }
-@for $i from 1 through 9 {
+@for $i from 1 through 6 {
 	.line-min-#{$i} {
 		min-height: $line-height-base * $i;
 		_height: $line-height-base * $i;

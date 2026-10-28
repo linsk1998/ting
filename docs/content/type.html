@@ -1,71 +1,45 @@
 <!--BORDERBOX-->
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/tingAll.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="renderer" content="webkit"/>
-	<!-- InstanceParam name="getting-started" type="boolean" value="false" -->
-	<!-- InstanceParam name="layout" type="boolean" value="false" -->
-	<!-- InstanceParam name="content" type="boolean" value="true" -->
-	<!-- InstanceParam name="form" type="boolean" value="false" -->
-	<!-- InstanceParam name="helpers" type="boolean" value="false" -->
-	<!-- InstanceParam name="components" type="boolean" value="false" -->
-	<!-- InstanceParam name="utilities" type="boolean" value="false" -->
-	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>排版</title>
-	<!-- InstanceEndEditable -->
+	<title>排版 - 页面内容 - Ting UI</title>
+	<link href="../ting/shiki.css" rel="stylesheet"/>
 	<link href="../ting/ting.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../ting/font-awesome.css"/>
 	<script src="../ting/html5.js"></script>
-	<script src="../ting/sky-query.js"></script>
+	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
-	<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 	</head>
 	<body>
 		<header>
-			<div class="navbar navbar-top" role="navbar">
+			<div class="navbar navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle fa icon-lg">&#xf0c9;</button>
-						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="line-middle">Ting Web UI</span></a>					</div>
-					<div class="navbar-collapse collapse">
+						<button type="button" class="navbar-toggler fa icon-lg">&#xf0c9;</button>
+						<a href="../index.html" class="navbar-brand"><img height="37" src="../images/logo.png"/><span class="valign-sibling">Ting Web UI</span></a>
+					</div>
+					<div class="navbar-collapsible">
 						<ul class="navbar-nav">
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../getting-started/index.html">起步</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../layout/index.html">布局</a></li>
-						
-						
-							<li class="nav-item active"><a class="nav-link" href="index.html">页面内容</a></li>
-						
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../form/index.html">表单</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../helpers/index.html">助手</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../components/index.html">组件</a></li>
-						
-						
-						
-							<li class="nav-item"><a class="nav-link" href="../utilities/index.html">工具类</a></li>
-						
+							<li><a href="../getting-started/index.html">起步</a></li>
+							<li><a href="../layout/index.html">布局</a></li>
+							<li class="active"><a href="../content/index.html">页面内容</a></li>
+							<li><a href="../form/index.html">表单</a></li>
+							<li><a href="../helpers/index.html">助手</a></li>
+							<li><a href="../components/index.html">组件</a></li>
+							<li><a href="../utilities/index.html">工具类</a></li>
 						</ul>
-						<ul class="navbar-nav navbar-right hidden-mobile">
+						<ul class="navbar-nav navbar-right">
+							<li><a class="px-2" href="https://github.com/linsk1998/ting/" target="_blank"><i class="icon-fw icon-lg fa">&#xf09b;</i></a></li>
 						</ul>
+						<script>initDarkLi()</script>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer-top"></div>
 			<div class="jumbotron">
 				<div class="container">
 					<h1 class="h1">Ting Web UI</h1>
@@ -73,102 +47,277 @@
 				</div>
 			</div>
 		</header>
-		<!-- InstanceBeginEditable name="main" -->
 		<div class="container">
-			<h1 class="page-header">排版</h1>
-			<h2>标题</h2>
-			<p>HTML 中的所有标题标签，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外，还提供了 <code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。</p>
-			<p>在标题内还可以包含 <code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。</p>
-			<h1>我是1级标题 <small>我是标题后的小字</small></h1>
-			<h2>我是2级标题 <small>我是标题后的小字</small></h2>
-			<h3>我是3级标题 <small>我是标题后的小字</small></h3>
-			<h4>我是4级标题 <small>我是标题后的小字</small></h4>
-			<h5>我是5级标题 <small>我是标题后的小字</small></h5>
-			<h6>我是6级标题 <small>我是标题后的小字</small></h6>
-			<h2>段落</h2>
-			<p>这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不见了；妻在屋里拍着闰儿，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。</p>
-			<h2>分隔线</h2>
-			<hr/>
-			<h2>缩略语</h2>
-			<p><abbr title="HyperText Markup Language">HTML</abbr> is the best thing since sliced bread.</p>
-			<h2>键盘文本</h2>
-			<p>按<kbd>ctrl</kbd>+<kbd>v</kbd>可以复制。</p>
-			<h2>引用</h2>
-			<blockquote>
-				<p>好好学习，天天向上。</p>
-				<footer>——毛泽东</footer>
-			</blockquote>
-			<h3>代码块</h3>
-			<pre><code>alert(1)</code></pre>
-			<h2>列表</h2>
-			<h3>无序列表</h3>
-			<ul>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Consectetur adipiscing elit</li>
-				<li>Integer molestie lorem at massa</li>
-					<ul>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-					</ul>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-			</ul>
-			<h3>有序列表</h3>
-			<ol>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Consectetur adipiscing elit</li>
-				<li>Integer molestie lorem at massa</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-			</ol>
-			<h3>无样式列表</h3>
-			<ul class="list-unstyled">
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Consectetur adipiscing elit</li>
-				<li>Integer molestie lorem at massa</li>
-				<li>Facilisis in pretium nisl aliquet</li>
-				<li>Nulla volutpat aliquam velit
-					<ul>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-						<li>Ac tristique libero volutpat at</li>
-					</ul>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-				<li>Eget porttitor lorem</li>
-			</ul>
-			<h3>内联列表</h3>
-			<p>通过设置 <code>display: inline-block;</code> 并添加少量的内补（padding），将所有元素放置于同一行。</p>
-			<p>
-				<ul class="list-inline">
-					<li class="list-inline-item">论坛</li>
-					<li class="list-inline-item">案例</li>
-					<li class="list-inline-item">捐赠</li>
-					<li class="list-inline-item">联系</li>
-				</ul>
-			</p>
-			<h3>描述</h3>
-			<p>使用<code>dl</code><code>dt</code><code>dd</code>的列表</p>
-			<p>
-				<dl>
-					<dt>Description lists</dt>
-					<dd>A description list is perfect for defining terms.</dd>
-					<dt>Euismod</dt>
-					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
-					<dt>Malesuada porta</dt>
-					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-				</dl>
-			</p>
+<h1 class="page-header" id="排版">排版</h1>
+<p>全局的排版设置，包括标题、段落、列表、引用、代码块等元素的样式。</p>
+<h2 class="page-header" id="标题">标题</h2>
+<p>HTML 中的所有标题标签 <code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外还提供了 <code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。</p>
+<p>在标题内还可以包含 <code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><h1>我是1级标题 <small>我是标题后的小字</small></h1>
+<h2>我是2级标题 <small>我是标题后的小字</small></h2>
+<h3>我是3级标题 <small>我是标题后的小字</small></h3>
+<h4>我是4级标题 <small>我是标题后的小字</small></h4>
+<h5>我是5级标题 <small>我是标题后的小字</small></h5>
+<h6>我是6级标题 <small>我是标题后的小字</small></h6></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">h1</span>&gt;我是1级标题 &lt;<span class="shiki-entity-name-tag">small</span>&gt;我是标题后的小字&lt;/<span class="shiki-entity-name-tag">small</span>&gt;&lt;/<span class="shiki-entity-name-tag">h1</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">h2</span>&gt;我是2级标题 &lt;<span class="shiki-entity-name-tag">small</span>&gt;我是标题后的小字&lt;/<span class="shiki-entity-name-tag">small</span>&gt;&lt;/<span class="shiki-entity-name-tag">h2</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">h3</span>&gt;我是3级标题 &lt;<span class="shiki-entity-name-tag">small</span>&gt;我是标题后的小字&lt;/<span class="shiki-entity-name-tag">small</span>&gt;&lt;/<span class="shiki-entity-name-tag">h3</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">h4</span>&gt;我是4级标题 &lt;<span class="shiki-entity-name-tag">small</span>&gt;我是标题后的小字&lt;/<span class="shiki-entity-name-tag">small</span>&gt;&lt;/<span class="shiki-entity-name-tag">h4</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">h5</span>&gt;我是5级标题 &lt;<span class="shiki-entity-name-tag">small</span>&gt;我是标题后的小字&lt;/<span class="shiki-entity-name-tag">small</span>&gt;&lt;/<span class="shiki-entity-name-tag">h5</span>&gt;</span>
+<span class="shiki-line">&lt;<span class="shiki-entity-name-tag">h6</span>&gt;我是6级标题 &lt;<span class="shiki-entity-name-tag">small</span>&gt;我是标题后的小字&lt;/<span class="shiki-entity-name-tag">small</span>&gt;&lt;/<span class="shiki-entity-name-tag">h6</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="导语">导语</h2>
+<p>使用 <code>.lead</code> 类让段落突出显示。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><p class="lead">有人说："诗歌如跳舞，散文如散步。"读朱自清的散文，就像是在月下进行一场心灵的漫步。在这篇《荷塘月色》中，先生以细腻的笔触，将客观的自然之景与主观的内心之情完美交融。</p></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">p</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">lead</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;有人说：&quot;诗歌如跳舞，散文如散步。&quot;读朱自清的散文，就像是在月下进行一场心灵的漫步。在这篇《荷塘月色》中，先生以细腻的笔触，将客观的自然之景与主观的内心之情完美交融。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="段落">段落</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><p>这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不见了；妻在屋里拍着闰儿，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。</p></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">p</span>&gt;这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不见了；妻在屋里拍着闰儿，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="分隔线">分隔线</h2>
+<p>使用 <code>&lt;hr&gt;</code> 元素：</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><hr/></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">hr</span>/&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="缩略语">缩略语</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><p><abbr title="HyperText Markup Language">HTML</abbr> is the best thing since sliced bread.</p></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">p</span>&gt;&lt;<span class="shiki-entity-name-tag">abbr</span> <span class="shiki-entity">title</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">HyperText Markup Language</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;HTML&lt;/<span class="shiki-entity-name-tag">abbr</span>&gt; is the best thing since sliced bread.&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="键盘文本">键盘文本</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><p>按<kbd>ctrl</kbd>+<kbd>v</kbd>可以复制。</p></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">p</span>&gt;按&lt;<span class="shiki-entity-name-tag">kbd</span>&gt;ctrl&lt;/<span class="shiki-entity-name-tag">kbd</span>&gt;+&lt;<span class="shiki-entity-name-tag">kbd</span>&gt;v&lt;/<span class="shiki-entity-name-tag">kbd</span>&gt;可以复制。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="引用">引用</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><blockquote>
+    <p>好好学习，天天向上。</p>
+    <footer>——毛泽东</footer>
+</blockquote></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">blockquote</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">p</span>&gt;好好学习，天天向上。&lt;/<span class="shiki-entity-name-tag">p</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">footer</span>&gt;——毛泽东&lt;/<span class="shiki-entity-name-tag">footer</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">blockquote</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="代码块">代码块</h2>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><pre><code>alert(1)</code></pre></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">pre</span>&gt;&lt;<span class="shiki-entity-name-tag">code</span>&gt;alert(1)&lt;/<span class="shiki-entity-name-tag">code</span>&gt;&lt;/<span class="shiki-entity-name-tag">pre</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h2 class="page-header" id="列表">列表</h2>
+<h3 id="无序列表">无序列表</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><ul>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa
+        <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+        </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+</ul></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Consectetur adipiscing elit&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Integer molestie lorem at massa</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;Phasellus iaculis neque&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;Purus sodales ultricies&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;Vestibulum laoreet porttitor sem&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Aenean sit amet erat nunc&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="有序列表">有序列表</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><ol>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+</ol></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">ol</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Consectetur adipiscing elit&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Integer molestie lorem at massa&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Aenean sit amet erat nunc&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">ol</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="无样式列表">无样式列表</h3>
+<p>使用 <code>.list-unstyled</code> 移除默认的 <code>list-style</code> 和左侧外边距（只对直接子项生效）。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><ul class="list-unstyled">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa
+        <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+        </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+</ul></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-unstyled</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Consectetur adipiscing elit&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Integer molestie lorem at massa</span>
+<span class="shiki-line">        &lt;<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;Phasellus iaculis neque&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">            &lt;<span class="shiki-entity-name-tag">li</span>&gt;Purus sodales ultricies&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">        &lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+<span class="shiki-line">    &lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span>&gt;Aenean sit amet erat nunc&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="内联列表">内联列表</h3>
+<p>通过 <code>.list-inline</code> 和 <code>.list-inline-item</code> 将所有元素放置于同一行。</p>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><ul class="list-inline">
+    <li class="list-inline-item">论坛</li>
+    <li class="list-inline-item">案例</li>
+    <li class="list-inline-item">捐赠</li>
+    <li class="list-inline-item">联系</li>
+</ul></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">ul</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-inline</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-inline-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;论坛&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-inline-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;案例&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-inline-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;捐赠&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">li</span> <span class="shiki-entity">class</span>=<span class="shiki-punctuation-definition-string">&quot;</span><span class="shiki-string">list-inline-item</span><span class="shiki-punctuation-definition-string">&quot;</span>&gt;联系&lt;/<span class="shiki-entity-name-tag">li</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">ul</span>&gt;</span>
+</pre></div>
+  </div>
+</div><h3 id="描述列表">描述列表</h3>
+
+<div class="tabs">
+  <ul class="nav nav-underline">
+    <li class="nav-item active"><a class="nav-link" href="javascript:void(0)">演示</a></li>
+    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">代码</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-pane ting-example"><dl>
+    <dt>Description lists</dt>
+    <dd>A description list is perfect for defining terms.</dd>
+    <dt>Euismod</dt>
+    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+    <dt>Malesuada porta</dt>
+    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+</dl></div>
+    <div class="tabs-pane hide"><pre class="code shiki m-0"><span class="shiki-line">&lt;<span class="shiki-entity-name-tag">dl</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">dt</span>&gt;Description lists&lt;/<span class="shiki-entity-name-tag">dt</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">dd</span>&gt;A description list is perfect for defining terms.&lt;/<span class="shiki-entity-name-tag">dd</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">dt</span>&gt;Euismod&lt;/<span class="shiki-entity-name-tag">dt</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">dd</span>&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/<span class="shiki-entity-name-tag">dd</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">dd</span>&gt;Donec id elit non mi porta gravida at eget metus.&lt;/<span class="shiki-entity-name-tag">dd</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">dt</span>&gt;Malesuada porta&lt;/<span class="shiki-entity-name-tag">dt</span>&gt;</span>
+<span class="shiki-line">    &lt;<span class="shiki-entity-name-tag">dd</span>&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/<span class="shiki-entity-name-tag">dd</span>&gt;</span>
+<span class="shiki-line">&lt;/<span class="shiki-entity-name-tag">dl</span>&gt;</span>
+</pre></div>
+  </div>
+</div>
 		</div>
-		<!-- InstanceEndEditable -->
-		<footer class="footer text-center">
+		<footer class="footer">
 			<p>本项目是一个全局公用CSS库.</p>
-			<p>源码基于 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
+			<p>源码基于 <a rel="license" href="https://github.com/linsk1998/ting/blob/master/LICENSE" target="_blank">MIT</a>开源协议。</p>
 		</footer>
 	</body>
-<!-- InstanceEnd --></html>
+</html>

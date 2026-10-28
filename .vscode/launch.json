@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "gen current page",
+			"program": "${workspaceFolder}/scripts/gen-page.js",
+			"args": [
+				"${file}"
+			],
+			"cwd": "${workspaceFolder}",
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen"
+		}
+	]
+}
