@@ -46,6 +46,7 @@ async function genSiteList(section, names) {
 	<script src="../ting/html5.js"></script>
 	<script src="../ting/jquery.js"></script>
 	<script src="../ting/ting.js"></script>
+	<script src="../ting/docs.js"></script>
 	</head>
 	<body>
 		${header(section)}

@@ -13,6 +13,8 @@
 	background: $switch-bg;
 	*display: inline;
 	*zoom: 1;
+	transition-duration: $switch-duration;
+	transition-property: background-color;
 }
 .switch-thumb {
 	position: absolute;
@@ -28,6 +30,8 @@
 	color: $switch-disabled-bg;
 	text-align: center;
 	padding-top: ($switch-thumb-size - $switch-thumb-fontsize) * .5;
+	transition-duration: $switch-duration;
+	transition-property: left, background-color, width;
 }
 .switch input {
 	position: absolute;
